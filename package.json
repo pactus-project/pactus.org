@@ -6,7 +6,8 @@
   "repository": "https://github.com/zarbchain/zarb.network",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "cname": "echo zarb.network>>docs/.vuepress/dist/CNAME"
   },
   "license": "MIT",
   "devDependencies": {

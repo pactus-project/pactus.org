@@ -1,7 +1,6 @@
 name: Deploy to GitHub pages
 on:
   push:
-    # this might change depending on whether you are publishing a site for a normal repo or a user/organization repo
     branches: [ main ]
 jobs:
   build:
@@ -15,7 +14,7 @@ jobs:
       with:
         node-version: '12.x'
     - run: yarn install
-    - run: yarn build
+    - run: yarn build && cname
 
     - name: Init new repo in dist folder and commit generated files
       run: |
@@ -30,7 +29,6 @@ jobs:
       uses: ad-m/github-push-action@v0.5.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        # this might change depending on whether you are publishing a site for a normal repo or a user/organization repo
         branch: gh-pages
         force: true
         directory: ./docs/.vuepress/dist
