@@ -21,4 +21,3 @@ Chain params for mainnet are:
     "WiredrawStakeInterval": 181440, // 21 days
 }
 ```
-##

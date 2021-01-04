@@ -27,11 +27,13 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
+    repo: 'https://github.com/zarbchain/zarb.network',
     docsDir: '',
-    editLinkText: '',
     lastUpdated: false,
+    smoothScroll: true,
+    editLinks: true,
+    editLinkText: 'Help us improve this page!',
+    lastUpdated: 'Last Updated',
     nav: [
       {
         text: 'Run a node',
@@ -75,4 +77,12 @@ module.exports = {
       ],
     }
   },
+
+  /**
+   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
+   */
+  plugins: [
+    '@vuepress/plugin-back-to-top',
+    '@vuepress/plugin-medium-zoom',
+  ]
 }

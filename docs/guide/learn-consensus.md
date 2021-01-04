@@ -50,4 +50,3 @@ Using VRF (Verifiable Random Function) we can implement a dynamic validator set.
 
 If the result is less than the validator stake, then this validator is eligible to enter to the set for the next height. The validator needs to send a Sortition transaction with the proof of VRF. This transaction is valid for 21 blocks. When a validator enters the set the lasts validator should leave the set to make it balance.
 
-##

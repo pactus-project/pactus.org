@@ -18,5 +18,3 @@ Zarb is a Proof-of-Stake blockchain which is not holding any ICOs and has no pre
 
     Validators need to stake some tokens to participate in the network and get block rewards.
 
-
-##
