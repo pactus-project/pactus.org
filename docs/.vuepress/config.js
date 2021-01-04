@@ -69,8 +69,9 @@ module.exports = {
             'learn-index',
             'learn-cryptography',
             'learn-serialization',
-            'learn-params',
             'learn-consensus',
+            'learn-params',
+            'learn-address',
             'learn-account',
             'learn-validator',
           ]
