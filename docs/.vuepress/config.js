@@ -27,8 +27,9 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'https://github.com/zarbchain/zarb.network',
-    docsDir: '',
+    docsRepo: 'https://github.com/zarbchain/zarb.network',
+    docsDir: 'docs',
+    docsBranch: 'main',
     lastUpdated: false,
     smoothScroll: true,
     editLinks: true,
@@ -66,10 +67,10 @@ module.exports = {
           collapsable: false,
           children: [
             'learn-index',
-            'learn-consensus',
             'learn-cryptography',
             'learn-serialization',
             'learn-params',
+            'learn-consensus',
             'learn-account',
             'learn-validator',
           ]

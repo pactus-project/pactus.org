@@ -3,12 +3,13 @@ id: learn-serialization
 title: Data serialization
 ---
 
-We are using  [CBOR](https://tools.ietf.org/html/rfc7049) for serialization and deserialization of everything in Zarb including deterministic stuff like block and transaction or temporary stuff like network messaging.
+# CBOR as data serialization
 
-Key as integer:
-Key is always integer (Regardless of the variable name). This id is immutable and always is the same.
+We are using  [CBOR](https://tools.ietf.org/html/rfc7049) for serialization and deserialization of everything in Zarb including deterministic stuff like blocks and transactions or temporary stuff like network messaging.
 
-Example:
+Key as integer: Key is always integer (Regardless of the variable name). This id is immutable and always is the same.
+
+Example of defining a CBOR tags in go lang:
 
 ```go
 type Account struct {
@@ -19,4 +20,4 @@ type Account struct {
 }
 ```
 
-Check http://cbor.me/ for the conversion.
+Check [http://cbor.me/](http://cbor.me/) for diagnosing the binary data.

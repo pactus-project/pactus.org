@@ -6,7 +6,7 @@ title: Validator-info
 # Validator info
 
 
-Validator structure is used to hold the stake and sequence number of any address.
+Validator structure is used to hold the stake and sequence number of validators.
 ```go
 type Validator struct {
    PublicKey       crypto.PublicKey `cbor:"1,keyasint"`

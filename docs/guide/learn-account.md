@@ -6,8 +6,7 @@ title: Account info
 
 # Account info
 
-Account structure is used to hold the balance and sequence number of any address. In future we might have storages root under account struct to support smart contracts.
-
+Account structure is used to hold the balance and sequence number of accounts.
 ```go
 type Account struct {
    Address  crypto.Address `cbor:"1,keyasint"`
