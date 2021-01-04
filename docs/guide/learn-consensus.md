@@ -31,11 +31,13 @@ Picture below shows the operation of the algorithm in the normal case of no prim
 
 The main idea is based on preparing the block with some sequence (increasing on each round) and stages for voting and committing the proposed block. To commit a block at least 2/3 of validators should sign the proposal block.
 
+![Zarb consensus mechanism](..//assets/images/zarb-consensus.png)
+
+
 
 ### No-Delegation
 
-In PoW nodes are competing with each other to mine a new block. In PoS nodes are collaborating to mint a block. This collaboration can not be endless. You can’t open the parliament door (Majlis) and ask anyone to join. The size of validator set should be fix and pre-defined. In the other hand having fixed validator set will cause delegation mechanism. After a while no one can join to the set, and finally some delegators will control the blockchain. People with more money have more power. Ridiculously EOS has constitution paper.
-Even Cosmos which is using Tendermint as its consensus engine is a dPoS (delegated PoS) blockchain. Zarb solved this problem by introducing flexible and dynamic validator set: Byzantine agreement of Prof of Stake .
+In PoW nodes are competing with each other to mine a new block. In PoS nodes are collaborating to mint a block. This collaboration can not be endless. You can’t open the parliament door (Majlis) and ask anyone to join. The size of validator set should be fix and pre-defined. In the other hand having fixed validator set will cause delegation mechanism. After a while no one can join to the set, and finally some delegators will control the blockchain. People with more money have more power. Zarb solved this problem by introducing flexible and dynamic validator set: Byzantine agreement of Prof of Stake .
 Using VRF (Verifiable Random Function) we can implement a dynamic validator set. In each round each validator outside the set runs a VRF function which the seed is the previous block id. The result is deterministic and Zero Knowledge provable. A validator based on its stake and its chance can enter the set for the next round. The formula is quite simple:
 
 <img src="https://render.githubusercontent.com/render/math?math=R\=V\times S_{t}">
