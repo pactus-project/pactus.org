@@ -64,6 +64,12 @@ module.exports = {
           collapsable: false,
           children: [
             'learn-index',
+            'learn-consensus',
+            'learn-cryptography',
+            'learn-serialization',
+            'learn-params',
+            'learn-account',
+            'learn-validator',
           ]
         },
       ],
