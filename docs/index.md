@@ -9,7 +9,7 @@ features:
 - title: Run
   details: Learn how to run Zarb blockchain
 - title: Contribute
-  details: Contribute on Zarb project
-footer: Made by  with ❤️
+  details: Contribute to Zarb project
+footer: Made with ❤️
 ---
 
