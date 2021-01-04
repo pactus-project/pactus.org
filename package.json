@@ -5,8 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/zarbchain/zarb.network",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
