@@ -17,7 +17,7 @@ type blockData struct {
 }
 ```
 
-### Header
+## Header
 Header includes main information about the block.
 
 ```go
@@ -34,7 +34,7 @@ type Header struct {
 }
 ```
 
-### Last Commit
+## Last Commit
 
 Here is the commit format:
 
@@ -79,7 +79,7 @@ Which can be interpreted in CBOR format:
 ```
 
 
-### Transaction IDs
+## Transaction IDs
 
 ```go
 type TxHashes struct {

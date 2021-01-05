@@ -74,6 +74,18 @@ module.exports = {
             'learn-address',
             'learn-account',
             'learn-validator',
+            {
+              title: 'Transactions',
+              collapsable: false,
+              children: [
+                'transaction-stamping.md',
+                'transaction-format.md',
+                'transaction-send.md',
+                'transaction-bond.md',
+                'transaction-sortition.md',
+              ]
+            },
+            'learn-block',
           ]
         },
       ],
