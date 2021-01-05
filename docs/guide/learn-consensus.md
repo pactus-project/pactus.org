@@ -74,3 +74,6 @@ In each height validators outside the set run a VRF function which the seed is t
 
 If the result is less than the validator stake, then this validator is eligible to enter to the set for the next height. The validator needs to send a Sortition transaction with the proof of VRF. This transaction is valid for 21 blocks. When a validator enters the set the latest validator should leave the set to make it balance.
 
+## References
+* [PracticalByzantineFaultTolerance](http://pmg.csail.mit.edu/papers/osdi99.pdf)
+* [Tendermint:  Consensus without Mining](https://tendermint.com/static/docs/tendermint.pdf)
