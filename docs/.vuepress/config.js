@@ -76,13 +76,20 @@ module.exports = {
             'learn-validator',
             {
               title: 'Transactions',
-              collapsable: false,
+              collapsable: true,
               children: [
                 'transaction-stamping.md',
                 'transaction-format.md',
                 'transaction-send.md',
                 'transaction-bond.md',
                 'transaction-sortition.md',
+              ]
+            },
+            {
+              title: 'Genesis',
+              collapsable: true,
+              children: [
+                'genesis.md',
               ]
             },
             'learn-block',
