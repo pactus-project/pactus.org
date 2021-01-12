@@ -85,13 +85,7 @@ module.exports = {
                 'transaction-sortition.md',
               ]
             },
-            {
-              title: 'Genesis',
-              collapsable: true,
-              children: [
-                'genesis.md',
-              ]
-            },
+            'learn-genesis',
             'learn-block',
           ]
         },
@@ -105,5 +99,9 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/google-analytics',
+    {
+      'ga': 'G-0L4CRMG416'
+    }
   ]
 }

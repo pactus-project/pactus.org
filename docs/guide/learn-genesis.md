@@ -5,7 +5,7 @@ title: Genesis info
 
 # Genesis info
 
-The genesis file is the main file for zarb which create the first block. With this file, the user will get the information of zarb block structure.
+The genesis file is the main file for Zarb which create the first block. With this file, the user will get the information of Zarb block structure.
 
 ```go
 {
@@ -30,5 +30,3 @@ The genesis file is the main file for zarb which create the first block. With th
    "Validators":[]
 }
 ```
-
-> Note: Above genesis file for are same for Testnet and mainent.
