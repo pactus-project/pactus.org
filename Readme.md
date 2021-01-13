@@ -5,7 +5,7 @@ This repository contains all the information about zarb blockchain. You might ch
 
 ## Contributing to Documentation
 
-Please feel free to open a pull request if you see if you notice typos or grammatical errors. Any
+Please feel free to open a pull request if you notice typos or grammatical errors. Any
 contributions on this wiki are welcomed.
 
 ## Running Locally
