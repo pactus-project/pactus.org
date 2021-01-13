@@ -5,8 +5,8 @@ title: Chain params
 
 # Chain Params
 
-Chain params are fixed values for making better consensus between the nodes.
-Chain params for mainnet are:
+Chain params are fixed values for making better consensus between the nodes. Chain params for
+mainnet are:
 
 ```go
 "Params":{

@@ -5,8 +5,8 @@ title: Bond transaction
 
 # Bond transaction
 
-Bond transaction is used to bond stake to a validator. If validator doesn't exist it will be created.
-
+Bond transaction is used to bond stake to a validator. If validator doesn't exist it will be
+created.
 
 Bond transaction has a payload like below:
 
@@ -25,6 +25,7 @@ a90101025820401a78337d2715db2a69916bbedbbb0a44336915fa1e5938b5b9cf350c340bb60318
 ```
 
 Which can be interpreted in CBOR format:
+
 ```
 {
     1: 1,
@@ -44,9 +45,11 @@ Which can be interpreted in CBOR format:
 ```
 
 Transaction id for above transaction is:
+
 ```
 ID: de6aab10430fa115d59a72dbff5a046f8be9a200c1941106641a4b691a3bf0bc
 ```
 
 Comments:
+
 - Fee for bond transaction is zero

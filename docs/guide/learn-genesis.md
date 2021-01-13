@@ -5,7 +5,8 @@ title: Genesis info
 
 # Genesis info
 
-The genesis file is the main file for Zarb which create the first block. With this file, the user will get the information of Zarb block structure.
+The genesis file is the main file for Zarb which create the first block. With this file, the user
+will get the information of Zarb block structure.
 
 ```go
 {

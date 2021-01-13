@@ -5,8 +5,8 @@ title: Sortition transaction
 
 # Sortition transaction
 
-Sortition transaction is used to enter a validator in the set for the next run. Sortition transaction are valid for 21 height.
-
+Sortition transaction is used to enter a validator in the set for the next run. Sortition
+transaction are valid for 21 height.
 
 Sortition transaction has a payload like below:
 
@@ -17,6 +17,6 @@ type SortitionPayload struct {
 }
 ```
 
-
 Comments:
+
 - Fee for sortition transaction is zero

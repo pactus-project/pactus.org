@@ -3,10 +3,10 @@ id: learn-account
 title: Account info
 ---
 
-
 # Account info
 
 Account structure is used to hold the balance and sequence number of accounts.
+
 ```go
 type Account struct {
    Address  Address `cbor:"1,keyasint"`
@@ -16,13 +16,14 @@ type Account struct {
 }
 ```
 
-Example:
-Account can be serialized like this:
+Example: Account can be serialized like this:
+
 ```
 a401540c9819c4d4b1edb7b70e6665287d4ce95401a37702191bd7031823041a007f5535
 ```
 
 Which can be interpreted like this:
+
 ```
 {
     1: h'0C9819C4D4B1EDB7B70E6665287D4CE95401A377',
@@ -32,12 +33,12 @@ Which can be interpreted like this:
 }
 ```
 
-
-
 Comments:
+
 - Keys are fixed.
 - int64 is enough for holding balance
 - To generate hash we are using the cbor serialized data. For above example hash is:
+
 ```
 Hash: 8a010969c3bf76f764bcf6cf230b1fbc55e5c07b954dbf5595e59b854e97ce7c
 ```

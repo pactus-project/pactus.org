@@ -31,9 +31,8 @@ const (
 )
 ```
 
-
 Comment:
+
 - The payload will be decoded based on payload type
 - Sign bytes are CBOR data of tx without public key and signature
 - Transaction id is the hash of sign bytes
-

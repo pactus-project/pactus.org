@@ -3,10 +3,10 @@ id: transaction-send
 title: Send transaction
 ---
 
-
 # Send transaction
 
-Send transaction is used to send values between the accounts. If receiver account doesn't exists it will be created.
+Send transaction is used to send values between the accounts. If receiver account doesn't exists it
+will be created.
 
 Send transaction has a payload like below:
 
@@ -19,6 +19,7 @@ type SendPayload struct {
 ```
 
 For example a raw send transaction will look like this:
+
 ```
 a9010102582008f7d9c21fdaa4a4147e60a0f3933c850b0c0d9af6b2a308c0a7b5639a7e49d603186e040a050106a301548dfaf698d3889b13251529ff971277305fbf1f440254bdd1540a13d82c38e5b4dfbd7b5b2bcab5fb5f290318640767746573742074781458603846ed5d519e51f6dd63e552ac410c531d5436c726475f6f8fb51c1133b07e32bd3bc4c674359546a1145cb1935a3c0621fc5329c6039707445e472a73d857d8eff832b971838b21c53baa090d90b02f6d2c5a1e9358e46f4f4955ff737c08991558309e6b99c60cf5ccb551efc793ec2bedd66070bde8fbddeb8305c5f670a21532304775637f9e622d5212f34c9479d12d11
 ```
@@ -61,24 +62,13 @@ A9                                      # map(9)
       9E6B99C60CF5CCB551EFC793EC2BEDD66070BDE8FBDDEB8305C5F670A21532304775637F9E622D5212F34C9479D12D11 #
 ```
 
-
 Transaction id for above transaction is:
+
 ```
 ID: 38ea1ad335bbfd84641a34b6af3332810aef8e52da08897273f187fd6059c50a
 ```
 
-
-
-
-
-
-
-
-Comments:
-Fee are calculated based on fee structure we have
-Fee for mintbase transaction (subsidy tx) is zero
-Amount for subsidy transaction is reward + accumulated fee
-Only one subsidy transaction per block
-Subsidy transaction should be the first transaction
-Each block should have one subsidy transaction
-Receiver for subsidy transaction can be any address
+Comments: Fee are calculated based on fee structure we have Fee for mintbase transaction (subsidy
+tx) is zero Amount for subsidy transaction is reward + accumulated fee Only one subsidy transaction
+per block Subsidy transaction should be the first transaction Each block should have one subsidy
+transaction Receiver for subsidy transaction can be any address

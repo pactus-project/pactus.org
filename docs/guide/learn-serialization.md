@@ -5,9 +5,12 @@ title: Data serialization
 
 # CBOR as data serialization
 
-We are using "Concise Binary Object Representation" or [CBOR](https://tools.ietf.org/html/rfc7049) for data serialization in Zarb including deterministic stuff like blocks and transactions or temporary stuff like network messaging.
+We are using "Concise Binary Object Representation" or [CBOR](https://tools.ietf.org/html/rfc7049)
+for data serialization in Zarb including deterministic stuff like blocks and transactions or
+temporary stuff like network messaging.
 
-Key as integer: Key is always integer (Regardless of the variable name). This id is immutable and always is the same.
+Key as integer: Key is always integer (Regardless of the variable name). This id is immutable and
+always is the same.
 
 Example of defining a CBOR tags in go lang:
 

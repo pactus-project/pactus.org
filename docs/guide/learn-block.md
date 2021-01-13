@@ -3,9 +3,7 @@ id: learn-block
 title: Block details
 ---
 
-
 # Block details
-
 
 Block has three main parts:
 
@@ -18,6 +16,7 @@ type blockData struct {
 ```
 
 ## Header
+
 Header includes main information about the block.
 
 ```go
@@ -47,6 +46,7 @@ type Commit struct {
 ```
 
 And Committer format:
+
 ```go
 const (
    CommitNotSigned = 0
@@ -60,11 +60,13 @@ type Committer struct {
 ```
 
 Example of commit:
+
 ```
 a301020258304e02ec725dd2b2ae23fc6a90bb391e3a61c1488eb0bffdffb75088da8dc7e9b267f396898dbe3e7971dd2af9395200810384a20154a7dd14a976e2894602a0c04081b66258bd930faa0201a20154f2150d173fdf8e5435712e3731237e4751675ef30201a20154c1ecaa8747f46553556d484d1345f7e152eddee20201a20154817a3ea1b55ebb68c29d45592d41da6bedb7f3350200
 ```
 
 Which can be interpreted in CBOR format:
+
 ```
 {
     1: 2,
@@ -78,7 +80,6 @@ Which can be interpreted in CBOR format:
 }
 ```
 
-
 ## Transaction IDs
 
 ```go
@@ -86,4 +87,3 @@ type TxHashes struct {
    Hashes []Hash `cbor:"1,keyasint"`
 }
 ```
-
