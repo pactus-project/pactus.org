@@ -7,26 +7,39 @@ title: Consensus Engine
 
 ## Practical Byzantine Fault Tolerant
 
-Zarb is based on Proof-of-Stake and uses Practical Byzantine Fault Tolerant (PBFT) for its consensus
-engine. There are other protocols for consensus engine like Paxos and Raft. However Paxos and Raft
-protocols aren’t Byzantine fault tolerant. The original paper is published on 1999. "This paper
-presents a new, practical algorithm for state machine replication that tolerates Byzantine faults."
+The Zarb Consensus algorithm is spired by Practical Byzantine Fault Tolerant (PBFT) alghorithm.
+Practical Byzantine Fault Tolerant, or in short PBFT "presents a new, practical algorithm for state
+machine replication that tolerates Byzantine faults."
 
-In PBFT
+Normal-Case Operation of PBFT includes these steps:
 
-1. A client sends a request to invoke a service operation to the primary (P)
-2. The primary multicasts the request to the backups
-3. Replicas execute the request and send a reply to the client
-4. The client waits for 3f+1 replies from different replicas with the same result; this is the
-   result of the operation.
+There are _R = 3f+1_ replicas. where _f_ is the maximum number of replicas that may be faulty or
+byzantine. For example if there is one faulty replica or node, the resiliency of the algorithm is
+optimal if we have at least 3 non-faulty nodes. So the minimum number of replicas should be 3+1=4.
 
-3f+1 means if there are f nodes that has a byzantine failure, there has to be more than 3f+1 nodes
-in order for the system to be byzantine fault tolerant.
+- A primary node (_P_) receives a request _m_ from a client
+- Primary node start executing three phases protocol. These three phases are `pre-prepare`,
+  `prepare`, and `commit`.
+- In `pre-prepare` phase, primary node (_P_) sign and multicasts a `pre-prepare` message with _m_
+  piggybacked to all the nodes. The message has the form
+  <img src="https://render.githubusercontent.com/render/math?math=<<PRE-PREPARE,d>_{\sigma p}, m>">
+  where _d_ is _m_’s digest.
+- In `prepare` phase, node _i_ accepts
+  <img src="https://render.githubusercontent.com/render/math?math=<<PRE-PREPARE,d>_{\sigma p}, m>">
+  message and signs and multicasts a
+  <img src="https://render.githubusercontent.com/render/math?math=<PREPARE,d>_{\sigma i}>"> message
+  to all other nodes.
+- If node _i_ received _2f+1_ prepared messages from other nodes (possibly including its own), it is
+  prepared and goes to commit phase.
+- In `commit` phase, node _i_ signs and multicasts a
+  <img src="https://render.githubusercontent.com/render/math?math=<COMMIT,d>_{\sigma i}>"> to the
+  other nodes.
+- Each node executes request _m_ after receiving _2f+1_ commit messages (possibly including its
+  own).
 
-When the primary receives a client request it starts a three-phase protocol to atomically multicast
-the request to the replicas. The three phases are pre-prepare, prepare, and commit.
-
-The algorithm provides both safety and liveness assuming no more than 3f+1 replicas are faulty.
+All the message in above steps are cryptographically signed and All replicas know the others’ public
+keys to verify signatures. For sake of simplicity we didn't mention about view and sequence numbers
+in above steps. However you can take a look at PBFT paper for more details.
 
 Picture below shows the operation of the algorithm in the normal case of no primary faults. Replica
 0 is the primary, replica 3 is faulty, and C is the client.
@@ -40,7 +53,7 @@ block to validators. Validators validate, execute and vote for the incoming bloc
 of validators vote for a block, the block will be committed otherwise validators move to the next
 round or view.
 
-The three phases in Zarb consensus are Prepare and precommit and commit
+The three phases in Zarb consensus are `Propose` and `Prepare` and `Precommit`.
 ![Zarb consensus mechanism](../assets/images/zarb-consensus.png)
 
 ## A paradox
