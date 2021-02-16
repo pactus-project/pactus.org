@@ -28,9 +28,9 @@ Zarb starts at zero value and has two major phases:
 
 - **Starting phase**:
 
-  In this early phase; anyone can join the network without holding any stake.
+  In this early phase; anyone can join the network minimum stake.
 
 - **Securing phase**:
 
-  For securing the blockchain validators need to stake some tokens to participate in the network and
+  For securing the blockchain more validators need to stake tokens to participate in the network and
   get block rewards.
