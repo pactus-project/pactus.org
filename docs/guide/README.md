@@ -24,13 +24,6 @@ In a nutshell, Zarb is Bitcoin but in Proof of Stake.
 | Transaction fee is based on transfer amount      | Transaction fee is arbitrary                 |
 | Maximum 1000 transaction per block               | Maximum block size is 1 mega byte            |
 
-Zarb starts at zero value and has two major phases:
-
-- **Starting phase**:
-
-  In this early phase; anyone can join the network minimum stake.
-
-- **Securing phase**:
-
-  For securing the blockchain more validators need to stake tokens to participate in the network and
-  get block rewards.
+Zarb starts at zero value.
+Anyone can join the network with staking some tokens.
+The stake will be bonded and can't be touched.
