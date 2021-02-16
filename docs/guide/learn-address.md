@@ -8,7 +8,7 @@ title: Address conversion
 Address in zarb is hash of public key (same as bitcoin):
 
 ```go
-Addr = Hash160(Hash256(pb.RawBytes()))
+Address = Hash160(Hash256(PublicKey))
 ```
 
 Example:
@@ -21,7 +21,7 @@ Address: (20 bytes)
 f6edd7e1d53d730a3ae0d44e6b6ce5dc102c0b63
 ```
 
-Comment: We have a reserved address for the treasury account.
+Treasury address in Zarb is defined like below:
 
 ```
 TreasuryAddress: 0000000000000000000000000000000000000000
