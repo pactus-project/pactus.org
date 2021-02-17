@@ -53,6 +53,8 @@ block to validators. Validators validate, execute and vote for the incoming bloc
 of validators vote for a block, the block will be committed otherwise validators move to the next
 round or view.
 
+To ensure safety, moving the next run, 2/3+ validator should vote `Null` and sign it. 
+
 The three phases in Zarb consensus are `Propose` and `Prepare` and `Precommit`.
 ![Zarb consensus mechanism](../assets/images/zarb-consensus.png)
 
@@ -102,8 +104,7 @@ validator starts running a Verifiable Random Function (VRF) in order to self-cho
 VRF is absolutely random and the result can be verified cryptographically. Based on their stake and
 their chance, a validator can be in the set for the next run. Once a validator enters the set, the
 oldest validator in the set exits. So we can always guarantee that validators are in the set for a
-certain amount of time. In the set, validators have equal power and it helps to make a fully
-democratic set for the blockchain.
+certain amount of time. In the set, validators vote is weighted by their stake.
 
 ![Zarb Proof of Stake](../assets/images/zarb_validator_pool.jpg)
 
@@ -124,4 +125,4 @@ leave the set to make it balance.
 
 ## References
 
-- [PracticalByzantineFaultTolerance](http://pmg.csail.mit.edu/papers/osdi99.pdf)
+- [Practical Byzantine Fault Tolerance - whitepaper](http://pmg.csail.mit.edu/papers/osdi99.pdf)
