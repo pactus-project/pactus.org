@@ -7,8 +7,10 @@ title: Cryptography
 
 ## Hashing Algorithm
 
-The hashing algorithm used in Zarb is Blake2b. Blake2 is considered to be a very fast cryptographic
-hash function that is also used in the cryptocurrency Zcash.
+The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be a very fast cryptographic
+hash function that is also used in the Zcash blockchain.
+
+For 160bits hashing, Zarb is using [Ripemd160](https://en.wikipedia.org/wiki/RIPEMD).
 
 Example:
 
@@ -19,7 +21,7 @@ Hash160: e93efc0c83176034cb828e39435eeecc07a29298
 ```
 
 We have also a reserved hash which we call it UndefHash. `UndefHash` used to refer to the genesis
-block. When a validator sees an invalid block it votes to `Undefhash`
+block. When a validator sees an invalid block it votes to `Undefhash`.
 
 ```
 UndefHash: 0000000000000000000000000000000000000000000000000000000000000000
