@@ -26,14 +26,14 @@ To run the Zarb using docker you need to pull the docker first.
 docker pull zarb/zarb
 ```
 
-Now let's create a workspace for the testnet:
+Now let's create a workspace at `c:\zarb\testnet` for the testnet:
 ```
-docker run -it --rm -v ~/zarb/testnet:/zarb zarb/zarb init -w /zarb --test-net
+docker run -it --rm -v c:\zarb\testnet:/zarb zarb/zarb init -w /zarb --test-net
 ```
 
 Now we can run the zarb and join the testnet:
 ```
-docker run -it -v ~/zarb/testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
+docker run -it -v c:\zarb\testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
 ```
 
 check "http://localhost:8080" for the list of APIs.
