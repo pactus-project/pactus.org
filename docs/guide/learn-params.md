@@ -10,14 +10,15 @@ mainnet are:
 
 ```go
 "Params":{
-    "BlockTimeInSecond":10,
-    "MaximumTransactionPerBlock":1000,
-    "MaximumPower":21,
-    "SubsidyReductionInterval":4200000,
-    "MaximumMemoLength":1024,
-    "FeeFraction":0.001,
-    "MinimumFee":1000,
-    "TransactionToLiveInterval": 8640, // one days
-    "WiredrawStakeInterval": 181440, // 21 days
+   "BlockVersion":1,
+   "BlockTimeInSecond":10,
+   "CommitteeSize":21,
+   "SubsidyReductionInterval":4200000,
+   "TransactionToLiveInterval":8640,
+   "UnbondInterval":181440,
+   "MaximumTransactionPerBlock":1000,
+   "MaximumMemoLength":1024,
+   "FeeFraction":0.001,
+   "MinimumFee":1000
 }
 ```
