@@ -6,8 +6,7 @@ title: Compile Zarb
 # Compile Zarb
 
 ::: warning
-Unfortunately Zarb is not able to compile on Windows.
-However you can run the Zarb using [docker](./run-docker.md)
+Unfortunately you can't compile Zarb on Windows. However still you can run the Zarb using [docker](./run-docker.md)
 :::
 
 
@@ -33,15 +32,21 @@ zarb version
 
 ## Joining the Testnet
 
-After compiling the Zarb you join the test-net. Let do it.
-First you need to create a workspace for test-net. Like this:
+Let's join the testnet now. First you need to create a workspace for test-net. Like this:
 
 ```
 zarb init -w ~/zarb/testnet --test-net
 ```
 
-Now you can join the test-net:
+This creates a folder at `~/zarb/testnet`. It cointains:
+- Validator private key
+- Genesis file
+- config file
+
+Feel free to take a look at these files. Now you can join the test-net. Simply run this command:
 
 ```
 zarb start -w ~/zarb/testnet
 ```
+
+Have fun ;)
