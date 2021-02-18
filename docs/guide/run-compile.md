@@ -32,13 +32,13 @@ zarb version
 
 ## Joining the Testnet
 
-Let join the testnet now. First you need to create a workspace for test-net. Like this:
+Let's join the testnet now. First you need to create a workspace for test-net. Like this:
 
 ```
 zarb init -w ~/zarb/testnet --test-net
 ```
 
-This create a folder at `~/zarb/testnet`. It cointains:
+This creates a folder at `~/zarb/testnet`. It cointains:
 - Validator private key
 - Genesis file
 - config file
