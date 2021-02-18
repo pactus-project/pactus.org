@@ -10,7 +10,7 @@ Welcome to the Zarb Wiki!
 
 Zarb is a Proof-of-Stake blockchain which is not holding any ICOs and has no pre-minted tokens
 (unlike most of PoS blockchains). The participants of the blockchain collect rewards based on their
-availability and honestly.
+availability and honesty.
 
 In a nutshell, Zarb is Bitcoin but in Proof of Stake.
 
@@ -24,6 +24,6 @@ In a nutshell, Zarb is Bitcoin but in Proof of Stake.
 | Transaction fee is based on transfer amount      | Transaction fee is arbitrary                 |
 | Maximum 1000 transaction per block               | Maximum block size is 1 mega byte            |
 
-Zarb starts at zero value.
-Anyone can join the network with staking some tokens.
-The stake will be bonded and can't be touched.
+Zarb starts at zero value and with only 4 bootstrap validators. After that anyone can join the network with staking some tokens. The stake will be bonded and can't be touched.
+A set of 21 Validators, secure the network and validate blocks. However unlike Delegated Proof-Of-Stake (dPoS) blockchais, this set is not fixed.
+Zarb indeed solves validators scalibility problem with a clever and secure mechanism. Validator set in Zarb is **dynamic** and flexible instead of fix and governed set of validators. 
