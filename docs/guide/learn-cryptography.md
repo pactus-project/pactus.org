@@ -29,7 +29,7 @@ UndefHash: 0000000000000000000000000000000000000000000000000000000000000000
 
 ## Keypairs and Signing
 
-Zarb is using BLS threshold signature (Boneh–Lynn–Shacham) for cryptographic signing and
+Zarb is using [BLS](https://en.wikipedia.org/wiki/BLS_digital_signature) threshold signature (Boneh–Lynn–Shacham) for cryptographic signing and
 verification. [Herumi](https://github.com/herumi/bls) is an implementation of BLS threshold
 signature, which we are using in Zarb blockchain.
 
@@ -51,6 +51,4 @@ Message:
 
 ## Signature aggregation
 
-Using bls signature we can aggregate two or more signatures and have an aggregated signature.
-
-We have implemented aggregated methods for aggregating public keys and signatures.
+One of the advantages of BLS (Boneh, Lynn and Shacham) Signatures instead of the ECDSA, is signature aggregation. Ib short in BLS individual signatures can be combined into a single aggregate signature so that overall the size does not grow beyond 1 signature..
