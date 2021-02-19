@@ -7,7 +7,8 @@ title: Compile Zarb
 
 ::: warning Compiling on Windows
 
-Unfortunately you can't compile Zarb on Windows. However still you can run the Zarb using [docker](./run-docker.md)
+Unfortunately you can't compile Zarb on Windows. However still you can run the Zarb using
+[docker](./run-docker.md)
 
 :::
 

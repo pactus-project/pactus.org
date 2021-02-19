@@ -102,7 +102,12 @@ module.exports = config({
     fullscreen: false,
     darkmode: "auto-switch",
     mdEnhance: {
-      enableAll: true,
+      align: false,
+      lineNumbers: true,
+      sup: true,
+      sub: true,
+      footnote: true,
+      tex: true,
     },
     pageInfo: ['Time', 'ReadTime'],
   },
