@@ -92,12 +92,17 @@ module.exports = config({
     },
 
     // https://vuepress-theme-hope.github.io/ settings
+    hostname: "https://zarb.netwotk/",
+    footer: {
+      display: true,
+    },
     themeColor: false,
     fullscreen: false,
     darkmode: "auto-switch",
     mdEnhance: {
       enableAll: true,
     },
+    pageInfo: ['Time', 'ReadTime'],
   },
 
   /**
