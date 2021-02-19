@@ -7,9 +7,9 @@ title: Consensus Engine
 
 ## Practical Byzantine Fault Tolerant
 
-The Zarb Consensus algorithm is spired by Practical Byzantine Fault Tolerant (PBFT)[^first] alghorithm.
-Practical Byzantine Fault Tolerant, or in short PBFT "presents a new, practical algorithm for state
-machine replication that tolerates Byzantine faults."
+The Zarb Consensus algorithm is spired by Practical Byzantine Fault Tolerant (PBFT)[^first]
+alghorithm. Practical Byzantine Fault Tolerant, or in short PBFT "presents a new, practical
+algorithm for state machine replication that tolerates Byzantine faults."
 
 Normal-Case Operation of PBFT includes these steps:
 
@@ -125,4 +125,5 @@ leave the set to make it balance.
 
 ## References
 
-[^first]: [Practical Byzantine Fault Tolerance - whitepaper](http://pmg.csail.mit.edu/papers/osdi99.pdf)
+[^first]:
+    [Practical Byzantine Fault Tolerance - whitepaper](http://pmg.csail.mit.edu/papers/osdi99.pdf)

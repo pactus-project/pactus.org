@@ -7,8 +7,8 @@ title: Cryptography
 
 ## Hashing Algorithm
 
-The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be a very fast cryptographic
-hash function that is also used in the Zcash blockchain.
+The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be
+a very fast cryptographic hash function that is also used in the Zcash blockchain.
 
 For 160bits hashing, Zarb is using [Ripemd160](https://en.wikipedia.org/wiki/RIPEMD).
 
@@ -29,9 +29,10 @@ UndefHash: 0000000000000000000000000000000000000000000000000000000000000000
 
 ## Keypairs and Signing
 
-Zarb is using [BLS](https://en.wikipedia.org/wiki/BLS_digital_signature) threshold signature (Boneh–Lynn–Shacham) for cryptographic signing and
-verification. [Herumi](https://github.com/herumi/bls) is an implementation of BLS threshold
-signature, which we are using in Zarb blockchain.
+Zarb is using [BLS](https://en.wikipedia.org/wiki/BLS_digital_signature) threshold signature
+(Boneh–Lynn–Shacham) for cryptographic signing and verification.
+[Herumi](https://github.com/herumi/bls) is an implementation of BLS threshold signature, which we
+are using in Zarb blockchain.
 
 ### Example:
 
@@ -51,4 +52,6 @@ Message:
 
 ## Signature aggregation
 
-One of the advantages of BLS (Boneh, Lynn and Shacham) Signatures instead of the ECDSA, is signature aggregation. Ib short in BLS individual signatures can be combined into a single aggregate signature so that overall the size does not grow beyond 1 signature..
+One of the advantages of BLS (Boneh, Lynn and Shacham) Signatures instead of the ECDSA, is signature
+aggregation. Ib short in BLS individual signatures can be combined into a single aggregate signature
+so that overall the size does not grow beyond 1 signature..
