@@ -91,10 +91,12 @@ module.exports = config({
       ],
     },
 
-    // https://vuepress-theme-hope.github.io/ settings
+    // vuepress-theme-hope configs
+    // https://vuepress-theme-hope.github.io/config/
     hostname: "https://zarb.netwotk/",
     footer: {
       display: true,
+      content: "Made with ❤️"
     },
     themeColor: false,
     fullscreen: false,

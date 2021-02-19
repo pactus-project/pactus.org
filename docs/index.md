@@ -8,16 +8,16 @@ action:
 features:
   - title: Run
     details: Learn how to build Zarb blockchain
-    link: https://zarb.network/guide/run-index/
+    link: guide/run-index/
   - title: Learn
     details: Learn how to run Zarb blockchain
-    link: https://zarb.network/guide/learn-index/
+    link: guide/learn-index/
   - title: Contribute
     details: Contribute to Zarb project
     link: https://github.com/zarbchain/
 
 copyrightText: false
-footer: Made with ❤️
+footerText: true
 ---
 
 <div class="discord">

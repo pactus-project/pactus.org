@@ -5,8 +5,11 @@ title: Compile Zarb
 
 # Compile Zarb
 
-::: warning Unfortunately you can't compile Zarb on Windows. However still you can run the Zarb
-using [docker](./run-docker.md) :::
+::: warning Compiling on Windows
+
+Unfortunately you can't compile Zarb on Windows. However still you can run the Zarb using [docker](./run-docker.md)
+
+:::
 
 Compiling Zarb is easy. The only thing you need is downloading and installing
 [go](https://golang.org/doc/install).
