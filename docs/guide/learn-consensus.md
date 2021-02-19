@@ -7,7 +7,7 @@ title: Consensus Engine
 
 ## Practical Byzantine Fault Tolerant
 
-The Zarb Consensus algorithm is spired by Practical Byzantine Fault Tolerant (PBFT) alghorithm.
+The Zarb Consensus algorithm is spired by Practical Byzantine Fault Tolerant (PBFT)[^first] alghorithm.
 Practical Byzantine Fault Tolerant, or in short PBFT "presents a new, practical algorithm for state
 machine replication that tolerates Byzantine faults."
 
@@ -53,7 +53,7 @@ block to validators. Validators validate, execute and vote for the incoming bloc
 of validators vote for a block, the block will be committed otherwise validators move to the next
 round or view.
 
-To ensure safety, moving the next run, 2/3+ validator should vote `Null` and sign it. 
+To ensure safety, moving the next run, 2/3+ validator should vote `Null` and sign it.
 
 The three phases in Zarb consensus are `Propose` and `Prepare` and `Precommit`.
 ![Zarb consensus mechanism](../assets/images/zarb-consensus.png)
@@ -125,4 +125,4 @@ leave the set to make it balance.
 
 ## References
 
-- [Practical Byzantine Fault Tolerance - whitepaper](http://pmg.csail.mit.edu/papers/osdi99.pdf)
+[^first]: [Practical Byzantine Fault Tolerance - whitepaper](http://pmg.csail.mit.edu/papers/osdi99.pdf)

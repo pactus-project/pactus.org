@@ -1,6 +1,7 @@
 const { description } = require("../../package");
+const { config } = require("vuepress-theme-hope");
 
-module.exports = {
+module.exports = config({
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -89,6 +90,14 @@ module.exports = {
         },
       ],
     },
+
+    // https://vuepress-theme-hope.github.io/ settings
+    themeColor: false,
+    fullscreen: false,
+    darkmode: "auto-switch",
+    mdEnhance: {
+      enableAll: true,
+    },
   },
 
   /**
@@ -98,4 +107,4 @@ module.exports = {
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
   ],
-};
+});

@@ -25,5 +25,6 @@ In a nutshell, Zarb is Bitcoin but in Proof of Stake.
 | Maximum 1000 transaction per block               | Maximum block size is 1 mega byte            |
 
 Zarb starts at zero value and with only 4 bootstrap validators. After that anyone can join the network with staking some tokens. The stake will be bonded and can't be touched.
+
 A set of 21 Validators, secure the network and validate blocks. However unlike Delegated Proof-Of-Stake (dPoS) blockchais, this set is not fixed.
-Zarb indeed solves validators scalibility problem with a clever and secure mechanism. Validator set in Zarb is **dynamic** and flexible instead of fix and governed set of validators. 
+Zarb indeed solves validators scalibility problem with a clever and secure mechanism. Validator set in Zarb is **dynamic** and flexible instead of fix and governed set of validators.
