@@ -3,7 +3,7 @@ id: learn-serialization
 title: Data serialization
 ---
 
-# CBOR as data serialization
+## CBOR as data serialization
 
 We are using "Concise Binary Object Representation" or [CBOR](https://tools.ietf.org/html/rfc7049)
 for data serialization in Zarb. All data structures like [blocks](./learn-block) or
