@@ -46,7 +46,7 @@ This creates a folder at `~/zarb/testnet`. It cointains:
 
 - Validator private key
 - Genesis file
-- config file
+- Config file
 
 Feel free to take a look at these files. Now you can join the test-net. Simply run this command:
 
