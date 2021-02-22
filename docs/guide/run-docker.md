@@ -25,6 +25,7 @@ From [opensource.com](https://opensource.com/resources/what-docker):
 ## Requirment
 
 The only thing you need is [installing docker](https://docs.docker.com/get-docker/) in your machine.
+Please mke sure you have unsabled WSL.
  
 ## Docker images
 
