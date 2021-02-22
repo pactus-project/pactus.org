@@ -1,12 +1,11 @@
 ---
 id: learn-params
-title: Chain params
+title: Consensus params
 ---
 
-# Chain Params
+# Consensus Parameters
 
-Chain params are fixed values for making better consensus between the nodes. Chain params for
-mainnet are:
+Consensus parameters are Test net define like this:
 
 ```go
 "Params":{
