@@ -102,7 +102,7 @@ module.exports = config({
     fullscreen: false,
     darkmode: "auto-switch",
     mdEnhance: {
-      align: false,
+      align: true,
       lineNumbers: true,
       sup: true,
       sub: true,
