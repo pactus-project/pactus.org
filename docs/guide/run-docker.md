@@ -21,30 +21,61 @@ From [opensource.com](https://opensource.com/resources/what-docker):
 > running on the host computer. This gives a significant performance boost and reduces the size of
 > the application. Zarb is designed to run in any environment using docker.
 
-## Running Zarb using Docker
 
-Please make sure you have installed the [Docker](https://docs.docker.com/get-docker/) To run the
-Zarb using docker you need to pull the docker first.
+## Requirment
+
+The only thing you need is [installing docker](https://docs.docker.com/get-docker/) in your machine.
+ 
+## Docker images
+
+The Zarb docker images are available on [Docker Hub](https://hub.docker.com/r/zarb/zarb).
+
+You can pull the lates image by this command:
 
 ```
 docker pull zarb/zarb
 ```
 
-Now let's create a workspace at `c:\zarb\testnet` for the testnet:
 
+## Running Zarb 
+
+Let's run the Zarb and join the TestNet. First we need to create a workspace for the TestNet. 
+
+For Windows, we create a workspace at `c:\zarb\testnet`. Run:
 ```
 docker run -it --rm -v c:\zarb\testnet:/zarb zarb/zarb init -w /zarb --test-net
 ```
 
-Now we can run the zarb and join the testnet:
+For Linux and Mac, we create a workspace at `~/zarb/testnet`. Run:
+```
+docker run -it --rm -v ~/zarb/testnet:/zarb zarb/zarb init -w /zarb --test-net
+```
 
+This command will create your workpsapce. It cointains:
+
+- Validator's private key
+- Genesis file
+- Config file
+
+Feel free to take a look at these files. 
+
+Now you can join the TestNet. 
+
+For Windows, simply run:
 ```
 docker run -it -v c:\zarb\testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
 ```
 
-check "http://localhost:8080" for the list of APIs.
+For Linux and Mac, simply run:
+```
+docker run -it -v ~/zarb/testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
+```
 
-Also you can stop/start docker:
+Now you can check "[http://localhost:8080](http://localhost:8080)" for the list of APIs.
+
+## Stoping docker 
+
+You can also stop/start the docker container:
 
 ```
 docker stop zarb-testnet
