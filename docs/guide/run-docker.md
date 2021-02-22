@@ -21,12 +21,11 @@ From [opensource.com](https://opensource.com/resources/what-docker):
 > running on the host computer. This gives a significant performance boost and reduces the size of
 > the application. Zarb is designed to run in any environment using docker.
 
-
 ## Requirment
 
 The only thing you need is [installing docker](https://docs.docker.com/get-docker/) in your machine.
 Please mke sure you have unsabled WSL.
- 
+
 ## Docker images
 
 The Zarb docker images are available on [Docker Hub](https://hub.docker.com/r/zarb/zarb).
@@ -37,17 +36,18 @@ You can pull the lates image by this command:
 docker pull zarb/zarb
 ```
 
+## Running Zarb
 
-## Running Zarb 
-
-Let's run the Zarb and join the TestNet. First we need to create a workspace for the TestNet. 
+Let's run the Zarb and join the TestNet. First we need to create a workspace for the TestNet.
 
 For Windows, we create a workspace at `c:\zarb\testnet`. Run:
+
 ```
 docker run -it --rm -v c:\zarb\testnet:/zarb zarb/zarb init -w /zarb --test-net
 ```
 
 For Linux and Mac, we create a workspace at `~/zarb/testnet`. Run:
+
 ```
 docker run -it --rm -v ~/zarb/testnet:/zarb zarb/zarb init -w /zarb --test-net
 ```
@@ -58,23 +58,25 @@ This command will create your workpsapce. It cointains:
 - Genesis file
 - Config file
 
-Feel free to take a look at these files. 
+Feel free to take a look at these files.
 
-Now you can join the TestNet. 
+Now you can join the TestNet.
 
 For Windows, simply run:
+
 ```
 docker run -it -v c:\zarb\testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
 ```
 
 For Linux and Mac, simply run:
+
 ```
 docker run -it -v ~/zarb/testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
 ```
 
 Now you can check "[http://localhost:8080](http://localhost:8080)" for the list of APIs.
 
-## Stoping docker 
+## Stoping docker
 
 You can also stop/start the docker container:
 

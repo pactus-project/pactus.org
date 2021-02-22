@@ -99,8 +99,8 @@ centralized which is against the blockchain philosophy. Nothing should be centra
 ## Delegated Proof of Stake
 
 Some blockchain solves this paradox by defining delegation. In Delegated Proof of Stake (dPoS)
-people put their stakes in the hands of a group of ‘delegates’ and these delegates validate transactions
-and produce blocks.
+people put their stakes in the hands of a group of ‘delegates’ and these delegates validate
+transactions and produce blocks.
 
 But how can voters trust a delegate? If a delegate is acting badly, what will happen? You can stake
 your token in favor of good actors. But you still need a minimum trust on this platform. We know in
@@ -139,14 +139,14 @@ R = V {\times} S_t
 $$
 
 _which_
+
 - $V$ is VRF output between 0~1
 - $S_t$ is total stake
 
-If the result is less than the validator's stake, then this validator is eligible to enter to the set
-for the next height. The validator needs to send a Sortition transaction with the proof of VRF. This
-transaction is valid for 7 blocks. When a validator enters the set the latest validator should
+If the result is less than the validator's stake, then this validator is eligible to enter to the
+set for the next height. The validator needs to send a Sortition transaction with the proof of VRF.
+This transaction is valid for 7 blocks. When a validator enters the set the latest validator should
 leave the set to make it balance.
-
 
 [^first]:
     [Practical Byzantine Fault Tolerance - whitepaper](http://pmg.csail.mit.edu/papers/osdi99.pdf)

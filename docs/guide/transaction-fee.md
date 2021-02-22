@@ -20,6 +20,11 @@ $$
 
 $percentage$ and $fee_{min}$ are part of [consensus parameters](./learn-params.md).
 
+For example if Alice is going to pay 20,000 coins, she should pay 20 coins as fee for this
+transaction.
 
-For example if Alice is going to pay 20,000 coins, she should pay 20 coins as fee of the transaction.
+::: info
 
+The fee for [Mintbase](transaction-mintbase.md) and [sortition]](transaction-sortition.md) is zero.
+
+:::

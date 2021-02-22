@@ -82,6 +82,7 @@ module.exports = config({
                 "transaction-stamping.md",
                 "transaction-format.md",
                 "transaction-send.md",
+                "transaction-mintbase.md",
                 "transaction-bond.md",
                 "transaction-sortition.md",
                 "transaction-fee.md",

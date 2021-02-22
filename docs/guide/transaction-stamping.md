@@ -27,9 +27,7 @@ tx is valid if:
 
 $hash(tx) ∊ Block[S:S+N]$
 
-where:
-  $Block[S] = tx.stamp$
-
+where: $Block[S] = tx.stamp$
 
 ### Where stamped transactions will be saved?
 
