@@ -8,7 +8,7 @@ Welcome to the Zarb Wiki!
 
 ## What is Zarb?
 
-Zarb is a Proof-of-Stake blockchain which is not holding any ICOs and has no pre-minted tokens
+[Zarb](https://github.com/zarbchain/) is a Proof-of-Stake blockchain which is not holding any ICOs and has no pre-minted tokens
 (unlike most of PoS blockchains). The participants of the blockchain collect rewards based on their
 availability and honesty.
 
