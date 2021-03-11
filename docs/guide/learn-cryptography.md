@@ -53,5 +53,5 @@ Message:
 ## Signature aggregation
 
 One of the advantages of BLS (Boneh, Lynn and Shacham) Signatures instead of the ECDSA, is signature
-aggregation. Ib short in BLS individual signatures can be combined into a single aggregate signature
+aggregation. In short in BLS individual signatures can be combined into a single aggregate signature
 so that overall the size does not grow beyond 1 signature..
