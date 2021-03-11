@@ -21,7 +21,7 @@ footerText: true
 ---
 
 <div class="discord">
-  <a style="background-color: #1a5276; color: white; padding: 14px 25px; text-align: center; text-decoration: none; display: inline-block;margin-bottom: 5px;" href="https://discord.gg/zPqWqV85ch" target="_blank">Follow Zarb on Discord</a>
+  <a href="https://discord.gg/zPqWqV85ch" target="_blank"><img height=60 src="./assets/images/Discord-Logo+Wordmark-Color.svg" /></a>
 </div>
 
 <br>

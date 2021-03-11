@@ -59,7 +59,7 @@ module.exports = config({
         {
           title: "Run",
           collapsable: false,
-          children: ["run-index", "run-compile", "run-docker", "run-ansible"],
+          children: ["run-index", "run-testnet", "run-compile", "run-docker", "run-ansible"],
         },
         {
           title: "Learn",
@@ -69,6 +69,7 @@ module.exports = config({
             "learn-cryptography",
             "learn-serialization",
             "learn-consensus",
+            "learn-committee",
             "learn-params",
             "learn-genesis",
             "learn-address",
@@ -102,7 +103,7 @@ module.exports = config({
     },
     themeColor: false,
     fullscreen: false,
-    darkmode: "auto-switch",
+    darkmode: "disable",
     mdEnhance: {
       align: true,
       lineNumbers: true,
