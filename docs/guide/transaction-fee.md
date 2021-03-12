@@ -14,7 +14,7 @@ fee = value \times percentage
 fee =
 \begin{cases}
 fee & \\
-fee_{min} & if \quad fee < fee_min
+fee_{min} & if \quad fee < fee_{min}
 \end{cases}
 $$
 
