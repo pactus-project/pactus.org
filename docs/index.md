@@ -26,14 +26,5 @@ footerText: true
 
 <br>
 
-::: center
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l5VEMfDIAmo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-:::
-
-::: center
-
-**[Zarb introduction in Persian](https://www.youtube.com/watch?v=l5VEMfDIAmo)**
 
 :::
