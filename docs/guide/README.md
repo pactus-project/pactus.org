@@ -12,8 +12,6 @@ Welcome to the Zarb Wiki!
 (unlike most of PoS blockchains). The participants of the blockchain collect rewards based on their
 availability and honesty.
 
-In a nutshell, Zarb is a blockchain protocol layer.
-
 Zarb is designed from the ground up to be a “pure” blockchain protocol. Like Bitcoin, Zarb
 has a fixed supply of token generated at genesis which are distributed over time as block
 rewards to well behaving validators who support the network by providing storage and
