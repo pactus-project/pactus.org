@@ -26,5 +26,3 @@ footerText: true
 
 <br>
 
-
-:::
