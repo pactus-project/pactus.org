@@ -25,4 +25,3 @@ footerText: true
 </div>
 
 <br>
-

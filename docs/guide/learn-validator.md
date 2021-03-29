@@ -1,11 +1,19 @@
 ---
 id: learn-validator
-title: Validator-info
+title: Validator
 ---
 
-# Validator info
+# Validator
 
-Validator structure is used to hold the stake and sequence number of validators.
+## What is Validator?
+
+Validator is a full node that participates in the consensus mechanism by broadcasting its votes.
+Validators get rewards for proposing a new blocks. Validators should bond tokens in form of stake
+and they are weighted by their boned stakes.
+
+## Validator structure
+
+Validator structure is used to hold the public key, stake and number of validator.
 
 ```go
 type Validator struct {

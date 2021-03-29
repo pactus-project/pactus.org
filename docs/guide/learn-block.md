@@ -1,17 +1,25 @@
 ---
 id: learn-block
-title: Block details
+title: Block
 ---
 
-# Block details
+# Block
+
+## What is block?
+
+Blocks contains transactions in form of their hashes. Each block in Zarb have a unique certificate
+that is signed by committee members. Blocks are immutable and one change in block will invalid the
+certificate.
+
+## Block structure
 
 Block has three main parts:
 
 ```go
-type blockData struct {
-   Header     Header   `cbor:"1,keyasint"`
-   LastCommit *Commit  `cbor:"2,keyasint"`
-   TxHashes   TxHashes `cbor:"3,keyasint"`
+type Block struct {
+   Header          Header       `cbor:"1,keyasint"`
+   LastCertificate *Certificate `cbor:"2,keyasint"`
+   TxIDs           TxIDs        `cbor:"3,keyasint"`
 }
 ```
 
@@ -21,49 +29,39 @@ Header includes main information about the block.
 
 ```go
 type Header struct {
-   Version          uint    `cbor:"1,keyasint"`
-   UnixTime         int64   `cbor:"2,keyasint"`
-   LastBlockHash    Hash    `cbor:"3,keyasint"`
-   StateHash        Hash    `cbor:"4,keyasint"`
-   TxsHash          Hash    `cbor:"5,keyasint"`
-   LastReceiptsHash Hash    `cbor:"6,keyasint"`
-   LastCommitHash   Hash    `cbor:"7,keyasint"`
-   CommitersHash    Hash    `cbor:"8,keyasint"`
-   ProposerAddress  Address `cbor:"9,keyasint"`
+   Version             int     `cbor:"1,keyasint"`
+   UnixTime            int64   `cbor:"2,keyasint"`
+   LastBlockHash       Hash    `cbor:"3,keyasint"`
+   StateHash           Hash    `cbor:"4,keyasint"`
+   TxIDsHash           Hash    `cbor:"5,keyasint"`
+   LastReceiptsHash    Hash    `cbor:"6,keyasint"`
+   LastCertificateHash Hash    `cbor:"7,keyasint"`
+   CommitteeHash       Hash    `cbor:"8,keyasint"`
+   SortitionSeed       Seed    `cbor:"9,keyasint"`
+   ProposerAddress     Address `cbor:"10,keyasint"`
 }
 ```
 
-## Last Commit
+## Last Certificate
 
-Last commit holds the proof of commitment of the last block:
+Last certificate holds the proof of commitment for the last block:
 
 ```go
 type Commit struct {
-   BlockHash  crypto.Hash      `cbor:"1,keyasint"`
-	Round      int              `cbor:"2,keyasint"`
-	Committers []Committer      `cbor:"3,keyasint"`
-	Signature  crypto.Signature `cbor:"4,keyasint"`
-}
-```
-
-And Committer format:
-
-```go
-const (
-   CommitNotSigned = 0
-   CommitSigned    = 1
-)
-
-type Committer struct {
-   Number int `cbor:"1,keyasint"`
-	Status int `cbor:"2,keyasint"`
+   BlockHash  Hash      `cbor:"1,keyasint"`
+   Round      int       `cbor:"2,keyasint"`
+   Committers []int     `cbor:"3,keyasint"`
+   Absences   []int     `cbor:"4,keyasint"`
+   Signature  Signature `cbor:"8,keyasint"`
 }
 ```
 
 ## Transaction IDs
 
+Transaction IDs contains the list of transaction ids in the block.
+
 ```go
-type TxHashes struct {
-   Hashes []Hash `cbor:"1,keyasint"`
+type TxIDs struct {
+   IDs []tx.ID `cbor:"1,keyasint"`
 }
 ```

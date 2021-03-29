@@ -13,12 +13,12 @@ It ran with 4 validators. The goal was testing stability of consensus engine.
 
 ## TestNet version 2:
 
-It ran with 7 nodes and the [committee](./learn-committee.md) size set to 4. The goal was testing the
-sortition algorithm and networking module. Here is some statistic, after 100,000 blocks:
+It ran with 7 nodes and the [committee](./learn-committee.md) size set to 4. The goal was testing
+the sortition algorithm and networking module. Here is some statistic, after 100,000 blocks:
 
-- Number of block: __100,000 blocks__
-- Total number of transactions: __120,680 transactions__
-- Size of blockchain: __61 MegaBytes__
+- Number of block: **100,000 blocks**
+- Total number of transactions: **120,680 transactions**
+- Size of blockchain: **61 MegaBytes**
 
 ![TestNet v2, Transactions](../assets/images/test_net_v2_transactions.png)
 ![TestNet v2, Blockchain size](../assets/images/test_net_v2_size.png)

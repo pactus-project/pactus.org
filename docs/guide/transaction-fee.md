@@ -25,6 +25,7 @@ transaction.
 
 ::: info
 
-The fee for [Mintbase](transaction-mintbase.md) and [sortition](transaction-sortition.md) transactions is zero.
+The fee for [Mintbase](transaction-mintbase.md) and [sortition](transaction-sortition.md)
+transactions is zero.
 
 :::
