@@ -15,7 +15,7 @@ collect rewards based on their availability and honesty.
 Zarb is designed from the ground up to be a “pure” blockchain protocol. Like Bitcoin, Zarb has a
 fixed supply of token generated at genesis which are distributed over time as block rewards to well
 behaving validators who support the network by providing storage and processing power. However,
-unlike BItcoin the protocol is secured through a novel Proof of Stake consensus mechanism whereby
+unlike Bitcoin the protocol is secured through a novel Proof of Stake consensus mechanism whereby
 stake is locked on the network to prevent any malicious or “Byzantine” behaviours that could
 potentially disrupt network operations. Beyond this, Zarb has extended technology and architecture
 advancement to ensure that it will remain competitive in a saturated marketplace.
