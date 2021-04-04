@@ -69,6 +69,7 @@ module.exports = config({
             "learn-cryptography",
             "learn-serialization",
             "learn-consensus",
+            "learn-sortition",
             "learn-committee",
             "learn-params",
             "learn-genesis",
