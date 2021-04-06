@@ -5,7 +5,7 @@ title: Consensus params
 
 # Consensus Parameters
 
-Consensus parameters are Test net define like this:
+Consensus parameters for the Test-net are defined like this:
 
 ```go
 "Params":{
