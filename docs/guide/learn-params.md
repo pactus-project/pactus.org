@@ -12,7 +12,7 @@ Consensus parameters are Test net define like this:
    "BlockVersion":1,
    "BlockTimeInSecond":10,
    "CommitteeSize":21,
-   "SubsidyReductionInterval":4200000,
+   "BlokReward":100000000,
    "TransactionToLiveInterval":8640,
    "UnbondInterval":181440,
    "MaximumTransactionPerBlock":1000,
