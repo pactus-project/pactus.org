@@ -20,8 +20,8 @@ Hash256: 12b38977f2d67f06f0c0cd54aaf7324cf4fee184398ea33d295e8d1543c2ee1a
 Hash160: e93efc0c83176034cb828e39435eeecc07a29298
 ```
 
-We have also a reserved hash which we call it UndefHash. `UndefHash` used to refer to the genesis
-block. When a validator sees an invalid block it votes to `Undefhash`.
+We have also a reserved hash which we call it UndefHash. `UndefHash` used to refer to an invalid or genesis
+block.
 
 ```
 UndefHash: 0000000000000000000000000000000000000000000000000000000000000000
