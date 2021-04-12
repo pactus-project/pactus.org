@@ -59,7 +59,7 @@ module.exports = config({
         {
           title: "Run",
           collapsable: false,
-          children: ["run-index", "run-testnet", "run-compile", "run-docker", "run-ansible"],
+          children: ["run-index", "run-testnet", "run-compile", "run-docker"],
         },
         {
           title: "Learn",
