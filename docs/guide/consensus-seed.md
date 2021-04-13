@@ -1,6 +1,6 @@
 ---
 id: learn-sortition
-title: Sortition
+title: Sortition Seed
 ---
 
 # How sortition works?
