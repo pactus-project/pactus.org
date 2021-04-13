@@ -9,11 +9,10 @@ In Zarb transactions fee calculates based on the transferee amount. The formula 
 
 $$
 fee = value \times percentage
-\\
-\\
+
 fee =
 \begin{cases}
-fee & \\
+fee & 
 fee_{min} & if \quad fee < fee_{min}
 \end{cases}
 $$
