@@ -11,16 +11,15 @@ to implement and test the state machines is using
 
 ## Consensus states
 
-Consensus protocol in Zarb considered these states:
+Consensus protocol in Zarb includes these states:
 
 - New Height state
-- New Round state
 - Propose state
+- Proposer change state
 - Prepare state
 - Precommit state
 - Commit state
-- Proposer change state
 
 At each time consensus is in one of the these state.
 
-![Zarb consensus states](../assets/images/zarb-states.png)
+![Zarb consensus states](../assets/images/zarb-consensus-states.png)
