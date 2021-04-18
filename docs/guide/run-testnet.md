@@ -35,5 +35,5 @@ faulty situations. The TestNet could successfully commit 130 thousands blocks.
 
 ## TestNet version 4:
 
-Currently we are running testnet version 4 with 1t 15 validators. The goal is testing sortition
+Currently we are running testnet version 4 with 15 validators. The goal is testing sortition
 algorithm in real situation.
