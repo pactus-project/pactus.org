@@ -1,9 +1,15 @@
 ---
 id: learn-account
-title: Account info
+title: Account
 ---
 
-# Account info
+# Account
+
+## What is account?
+
+TODO:
+
+## Account structure
 
 Account structure is used to hold the balance and sequence number of an account. The format of
 account is like below:
