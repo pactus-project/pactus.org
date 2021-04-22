@@ -5,12 +5,11 @@ title: Block certificate
 
 ## What is certificate?
 
-TODO:
+Block certificate holds the proof of commitment for the block.
 
 ## Certificate structure
 
-Block certificate holds the proof of commitment for the block. Each block certificate contains
-following information:
+Each block certificate contains following information:
 
 ```go
 type Certificate struct {

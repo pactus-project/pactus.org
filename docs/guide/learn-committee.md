@@ -3,6 +3,7 @@ id: learn-committee
 title: Committee
 ---
 
-TODO:
+## What is committee?
 
-TODO: http://cbor.me/?bytes=8244F09F988764F09F9887
+Committee is a set of 21 validators that are responsible for producing blocks. The set is not fixed
+and changes randomly.

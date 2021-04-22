@@ -5,12 +5,11 @@ title: Account
 
 ## What is account?
 
-TODO:
+Account structure is used to hold the balance and sequence number of an account.
 
 ## Account structure
 
-Account structure is used to hold the balance and sequence number of an account. The format of
-account is like below:
+The format of account is like below:
 
 ```go
 type Account struct {
