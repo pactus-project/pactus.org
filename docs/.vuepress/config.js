@@ -41,12 +41,12 @@ module.exports = config({
     lastUpdated: "Last Updated",
     nav: [
       {
-        text: "Become a validator",
-        link: "/guide/run-index",
-      },
-      {
         text: "What is Zarb",
         link: "/guide/learn-index",
+      },
+      {
+        text: "Become a validator",
+        link: "/guide/run-index",
       },
       {
         text: "Github",
@@ -73,6 +73,7 @@ module.exports = config({
             "learn-index",
             "learn-cryptography",
             "learn-serialization",
+            "learn-genesis",
             {
               title: "Consensus protocol",
               collapsable: true,
@@ -84,11 +85,8 @@ module.exports = config({
                 "consensus-seed.md",
               ],
             },
-            "learn-address",
-            "learn-params",
             "learn-block",
             "learn-certificate",
-            "learn-genesis",
             "learn-account",
             "learn-validator",
             "learn-committee",

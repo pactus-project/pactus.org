@@ -5,26 +5,26 @@ title: Genesis block
 
 ## What is genesis block
 
-Each blockchain has a Genesis block. The genesis block is the very first block in blockchain.
+The genesis block is the first block in blockchain.
 
 ## Genesis information
 
 In Zarb genesis information is defined inside the `gensis.json` file. It contains the consensus
 parameters like size of validator set or fee settings. It also defines the Treasury account and
-bootstrap validators information. For example this is the `genesis.json` file for TestNet in Zarb:
+bootstrap validators information. Here is the `genesis.json` file for the MainNet in Zarb:
 
 ```json
 {
-  "GenesisTime": "2021-02-17T00:00:00.0+03:30",
+  "GenesisTime": "2021-04-07T00:00:00Z",
   "Params": {
-    "BlockVersion": 1001,
+    "BlockVersion": 1,
     "BlockTimeInSecond": 10,
-    "CommitteeSize": 4,
-    "SubsidyReductionInterval": 4200000,
+    "CommitteeSize": 21,
+    "BlockReward": 100000000,
     "TransactionToLiveInterval": 8640,
     "UnbondInterval": 181440,
     "MaximumTransactionPerBlock": 1000,
-    "MaximumMemoLength": 1024,
+    "MaximumMemoLength": 64,
     "FeeFraction": 0.001,
     "MinimumFee": 1000
   },
@@ -36,16 +36,16 @@ bootstrap validators information. For example this is the `genesis.json` file fo
   ],
   "Validators": [
     {
-      "PublicKey": "230e0c8723a930af757cda3ec7aab45f7a313fb8c8217e600cf1c90b4c12c1a13c0b9d9e68ef5441240e011f13658d0767d3ce405565cc51d8f3be408d594616be55d31f62167583d945f86732e2293374e1aceeb37fce0d4aacb253ceb98303"
+      "PublicKey": "594ac38ee38949356e139340cd9668f48d908e76b44781e7013e3f70b738a9b6b53e95dfcba23bd1bbe923d2df354815986643467f25b755d76a908c0dca20327cc111e16d30f37041a23417f8d7cb446cc891c551176df641f07c1f4e1e068b"
     },
     {
-      "PublicKey": "d4f6c52071b4874142089c7f258aa2baa01460660cbbf1aae6f1c7c836e5ec76bd705eb384849f0316b96d86cb59a512c953af60c761ee8dd65ba87f813e3e7e9723159e46f14b1737fb684680c3cebc9437e55f4164af5978d3b6a46f62cd98"
+      "PublicKey": "332f2f3a6250b7ff955cd73a0b43e567e82b1e6f4e5ace219b74408deefe995b96481d673ce99b20ce62c2177c05880b37b42d3d63f6e7a951492166e74cec3625870582f4a8b8b135abeb4dd171455a2a4a413b79a50b7ace4f8a3123b1ed8f"
     },
     {
-      "PublicKey": "705071243915281c0fd2c4a1186830b016d5d67bb08746fffffa589e21a92496983094996c517ab0f21940c2d635f9059ed25e495f2d384975f9cc2c999f684eee319f365689a8cd0fa6a285197213fa4c1e3c97bfa1478809246bc0fafcf096"
+      "PublicKey": "0fe092c870d0cee720a30388e40f14ec2df38526e3db040efd30d2b59df1afd5b25568b87806799c829cd65659a84e193f1dfbb67e9aea6eefd4fbf9dd6ddaac694d59efba0df6aba336c1e373d0228514481edf9cce376933a05a9d8e60830f"
     },
     {
-      "PublicKey": "3d03bc94da2da41622e4ce5c0bb235db6dba7002e6ed727a5fa583fd980598f74e3ea4cb74734d3e7c64b88b6bf37c132e162e4f154321344ff176cb488cea8e3baf76201167774a8e9147d5f674a8b9496f4c6cecfaa2272fc257400ece7311"
+      "PublicKey": "2a59438cb5790fa9d0d3c584e54dfc6f41f998b0bbd5297ea74d5a1b62b1022f222ee1c966fcc060ef199bd867d0d80b416a10423b070d3dd5d4c8d32678b9a686703fe818ba662162416389965579162134c622a9d90d10fb508eef03c38d92"
     }
   ]
 }
