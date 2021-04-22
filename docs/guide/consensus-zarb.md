@@ -3,13 +3,11 @@ id: learn-consensus
 title: Consensus Mechanism
 ---
 
-# Consensus Mechanism
-
 ## The algorithm
 
-The Zarb Consensus algorithm is highly spired by Practical Byzantine Fault Tolerant (PBFT)[^first]
+The Zarb Consensus algorithm is highly spired by Practical Byzantine Fault Tolerant (PBFT)
 alghorithm. Practical Byzantine Fault Tolerant, or in short PBFT "presents a new, practical
-algorithm for state machine replication that tolerates Byzantine faults."
+algorithm for state machine replication that tolerates Byzantine faults." [^first]
 
 There are $R = 3f+1$ replicas. where $f$ is the maximum number of replicas that may be faulty or
 byzantine. For example if there is one faulty replica, the resiliency of the algorithm is optimal if
@@ -101,4 +99,4 @@ If the proposer for round $r+1$ receives $2f+1$ valid proposer-change messages f
 other validators, it goes to next round and broadcasts proposal message.
 
 [^first]:
-    [Practical Byzantine Fault Tolerance - whitepaper](http://pmg.csail.mit.edu/papers/osdi99.pdf)
+    [Practical Byzantine Fault Tolerance](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/01/thesis-mcastro.pdf)

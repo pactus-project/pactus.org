@@ -3,8 +3,6 @@ id: transaction-stamping
 title: Stamping transactions
 ---
 
-# Stamping transactions
-
 ## What is stamping transaction?
 
 _Stamping a transaction_ simply means putting the previous block hash into the header of the
@@ -29,32 +27,7 @@ $hash(tx) ∊ Block[S:S+N]$
 
 where: $Block[S] = tx.stamp$
 
-### Where stamped transactions will be saved?
-
-Full nodes can have a separate database for saving stamped transactions. This database will only be
-used for querying transactions. A node can choose to save all txs, part of them or nothing. Nodes
-can query transactions by hash from each other. Users also can save their own transactions in their
-own wallets.
-
-### Can a stamped transaction be lost?
-
-Probably yes and it's not a curse. Should we care about a transaction that happened 10 years ago and
-try to keep it in our DB? By decoupling transactions from the block, transactions will have their
-own way to survive.
-
 ## Consequences
-
-- **Reducing the size of blockchain**
-
-  Stamping transactions can reduce the block size dramatically. For keeping a stamped transaction
-  inside a block we need to store only 32 bytes of hash of transaction instead of whole transaction
-  data. In bitcoin, the average transaction size has increased from 450 bytes in Jan 2013 to almost
-  600 bytes in Oct 2015. In the below charts you can see how stamped transaction could reduce the
-  size of bitcoin blockchain if it had applied from the genesis block:
-
-  ![Bitcoin average block size](../assets/images/btc-block-size.png)
-
-  ![Bitcoin blockchain size](../assets/images/btc-blockchain-size.png)
 
 - **Reducing the size of mempool**
 

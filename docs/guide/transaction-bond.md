@@ -3,8 +3,6 @@ id: transaction-bond
 title: Bond transaction
 ---
 
-# Bond transaction
-
 Bond transaction is used to bond stake to a validator. If validator doesn't exist it will be
 created.
 

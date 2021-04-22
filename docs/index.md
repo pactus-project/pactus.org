@@ -3,14 +3,14 @@ home: true
 tagline: Zarb Blockchain
 action:
   - text: Learn more →
-    link: /guide/
+    link: /guide/learn-index
     type: primary
 features:
   - title: Run
-    details: Learn how to build Zarb blockchain
+    details: Learn how to build and run Zarb blockchain
     link: guide/run-index/
   - title: Learn
-    details: Learn how to run Zarb blockchain
+    details: Learn more about Zarb blockchain
     link: guide/learn-index/
   - title: Contribute
     details: Contribute to Zarb project

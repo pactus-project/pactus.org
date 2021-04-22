@@ -3,8 +3,6 @@ id: learn-genesis
 title: Genesis block
 ---
 
-# Genesis block
-
 ## What is genesis block
 
 Each blockchain has a Genesis block. The genesis block is the very first block in blockchain.

@@ -3,8 +3,6 @@ id: transaction-format
 title: Transaction format in Zarb
 ---
 
-# Transactions in Zarb
-
 Transactions in zarb are like below:
 
 ```go

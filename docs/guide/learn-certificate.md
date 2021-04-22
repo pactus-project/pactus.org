@@ -3,8 +3,6 @@ id: learn-certificate
 title: Block certificate
 ---
 
-# Block certificate
-
 ## What is certificate?
 
 TODO:

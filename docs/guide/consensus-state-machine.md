@@ -3,15 +3,10 @@ id: learn-consensus
 title: Consensus as state machine
 ---
 
-# Consensus as state machine
+## State machine
 
-Zarb consensus algorithm is a state machine replication with Byzantine fault tolerance. The best way
-to implement and test the state machines is using
-[state pattern](https://en.wikipedia.org/wiki/State_pattern).
-
-## Consensus states
-
-Consensus protocol in Zarb includes these states:
+Zarb consensus algorithm is a state machine [^first] replication with Byzantine fault tolerance. The
+consensus algorithm is in one the following states [^second] at any given time.
 
 - New Height state
 - Propose state
@@ -20,6 +15,10 @@ Consensus protocol in Zarb includes these states:
 - Precommit state
 - Commit state
 
-At each time consensus is in one of the these state.
-
 ![Zarb consensus states](../assets/images/zarb-consensus-states.png)
+
+[^first]: [State machines](https://en.wikipedia.org/wiki/Finite-state_machine)
+[^second]:
+    [James Rumbaugh](https://en.wikipedia.org/wiki/James_Rumbaugh) defines state that: "A state is
+    an abstraction of the attribute values and links of an object. Sets of values are grouped
+    together into a state according to properties that affect the gross behavior of the object."

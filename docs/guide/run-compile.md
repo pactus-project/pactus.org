@@ -3,7 +3,7 @@ id: run-docker
 title: Compile Zarb
 ---
 
-# Compile Zarb
+## Compile from source code
 
 ::: warning Compiling on Windows
 
@@ -42,13 +42,7 @@ Let's join the testnet now. First you need to create a workspace for test-net. L
 zarb init -w ~/zarb/testnet --test-net
 ```
 
-This creates a folder at `~/zarb/testnet`. It cointains:
-
-- Validator private key
-- Genesis file
-- Config file
-
-Feel free to take a look at these files. Now you can join the test-net. Simply run this command:
+Now you can join the test-net. Simply run this command:
 
 ```
 zarb start -w ~/zarb/testnet

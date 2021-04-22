@@ -3,8 +3,6 @@ id: learn-cryptography
 title: Cryptography
 ---
 
-# Cryptography
-
 ## Hashing Algorithm
 
 The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be

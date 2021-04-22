@@ -1,9 +1,7 @@
 ---
 id: run-tesnt-net
-title: Zarb TestNets
+title: TestNets history
 ---
-
-# The story of TestNets
 
 Here is brief history of Zarb testnets:
 

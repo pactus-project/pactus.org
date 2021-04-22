@@ -41,11 +41,11 @@ module.exports = config({
     lastUpdated: "Last Updated",
     nav: [
       {
-        text: "Run a node",
+        text: "Become a validator",
         link: "/guide/run-index",
       },
       {
-        text: "Learn",
+        text: "What is Zarb",
         link: "/guide/learn-index",
       },
       {
@@ -55,11 +55,16 @@ module.exports = config({
     ],
     sidebar: {
       "/guide/": [
-        "",
         {
           title: "Run",
           collapsable: false,
-          children: ["run-index", "run-testnet", "run-compile", "run-docker"],
+          children: [
+            "run-index",
+            "run-testnet",
+            "run-compile",
+            "run-docker",
+            "run-become-validator"
+          ],
         },
         {
           title: "Learn",
@@ -123,7 +128,7 @@ module.exports = config({
       footnote: true,
       tex: true,
     },
-    pageInfo: ['Time', 'ReadTime'],
+    pageInfo: ['Time'],
   },
 
   /**

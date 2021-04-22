@@ -3,8 +3,6 @@ id: learn-account
 title: Account
 ---
 
-# Account
-
 ## What is account?
 
 TODO:

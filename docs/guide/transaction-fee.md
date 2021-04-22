@@ -3,8 +3,6 @@ id: transaction-fee
 title: Transactions fee
 ---
 
-# Transactions fee
-
 In Zarb transactions fee calculates based on the transferee amount. The formula is quit simple:
 
 $$
@@ -12,7 +10,7 @@ fee = value \times percentage
 
 fee =
 \begin{cases}
-fee & 
+fee &
 fee_{min} & if \quad fee < fee_{min}
 \end{cases}
 $$

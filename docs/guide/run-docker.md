@@ -3,8 +3,6 @@ id: run-docker
 title: Using Docker
 ---
 
-# Running Zarb using Docker
-
 ## What is Docker
 
 [Docker](https://docs.docker.com/get-docker/) is a tool designed to make it easier to create,
@@ -35,7 +33,7 @@ You can pull the lates image by this command:
 docker pull zarb/zarb
 ```
 
-## Running Zarb
+## Running Zarb using Docker
 
 Let's run the Zarb and join the TestNet. First we need to create a workspace for the TestNet.
 
@@ -50,14 +48,6 @@ For Linux and Mac, we create a workspace at `~/zarb/testnet`. Run:
 ```
 docker run -it --rm -v ~/zarb/testnet:/zarb zarb/zarb init -w /zarb --test-net
 ```
-
-This command will create your workpsapce. It cointains:
-
-- Validator's private key
-- Genesis file
-- Config file
-
-Feel free to take a look at these files.
 
 Now you can join the TestNet.
 

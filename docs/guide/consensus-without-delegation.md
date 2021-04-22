@@ -3,8 +3,6 @@ id: learn-consensus
 title: Consensus Without delegation
 ---
 
-# Consensus without delegation
-
 ## Proof of stake
 
 Zarb is a real proof of stake blockchain. Proof of Stake is a way to secure the network through

@@ -1,13 +1,7 @@
 ---
 id: run-index
-title: How to run
+title: Getting started
 ---
 
-# How to run a Zarb node
-
-Zarb is running its testnet right now. Mainnet will be launched soon. Until then you can join the
-test net:
-
-Before joining the test-net you need to [compile](./run-compile.md) the Zarb, however if you have
-Docker in your system, you can simply pull the [Zarb docker](https://hub.docker.com/r/zarb/zarb) and
-start joining the test-net. Read more [here](./run-docker.md).
+Running a full node and becoming a validator in Zarb is easy. In this section you will find
+information and guides to set up a full node and become a validator in Zarb network.
