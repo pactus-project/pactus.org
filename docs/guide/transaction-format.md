@@ -3,6 +3,10 @@ id: transaction-format
 title: Transaction format in Zarb
 ---
 
+## What is transaction?
+
+## Transaction format
+
 Transactions in zarb are like below:
 
 ```go
@@ -34,3 +38,7 @@ Comment:
 - The payload will be decoded based on payload type
 - Sign bytes are CBOR data of tx without public key and signature
 - Transaction id is the hash of sign bytes
+
+## Transaction ID
+
+Transaction ID is the hash of transaction without public key and signature.
