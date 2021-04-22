@@ -3,7 +3,7 @@ id: learn-params
 title: Consensus params
 ---
 
-Consensus parameters for the Test-net are defined like this:
+Consensus parameters for the Testnet are defined like this:
 
 ```go
 "Params":{

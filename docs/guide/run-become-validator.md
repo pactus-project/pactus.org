@@ -29,7 +29,7 @@ Now you need to create a working directory for you validator. A working director
 you save blockchain data, config and key files.
 
 ```
-zarb init -w ~/zarb/mainnet --main-net
+zarb init -w ~/zarb/mainnet --mainnet
 ```
 
 This command creates a folder at `~/zarb`. It contains:

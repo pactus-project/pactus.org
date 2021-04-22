@@ -40,13 +40,13 @@ Let's run the Zarb and join the TestNet. First we need to create a workspace for
 For Windows, we create a workspace at `c:\zarb\testnet`. Run:
 
 ```
-docker run -it --rm -v c:\zarb\testnet:/zarb zarb/zarb init -w /zarb --test-net
+docker run -it --rm -v c:\zarb\testnet:/zarb zarb/zarb init -w /zarb --testnet
 ```
 
 For Linux and Mac, we create a workspace at `~/zarb/testnet`. Run:
 
 ```
-docker run -it --rm -v ~/zarb/testnet:/zarb zarb/zarb init -w /zarb --test-net
+docker run -it --rm -v ~/zarb/testnet:/zarb zarb/zarb init -w /zarb --testnet
 ```
 
 Now you can join the TestNet.

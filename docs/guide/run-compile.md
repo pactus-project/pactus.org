@@ -36,13 +36,13 @@ zarb version
 
 ## Joining the Testnet
 
-Let's join the testnet now. First you need to create a workspace for test-net. Like this:
+Let's join the testnet now. First you need to create a workspace for testnet. Like this:
 
 ```
-zarb init -w ~/zarb/testnet --test-net
+zarb init -w ~/zarb/testnet --testnet
 ```
 
-Now you can join the test-net. Simply run this command:
+Now you can join the testnet. Simply run this command:
 
 ```
 zarb start -w ~/zarb/testnet
