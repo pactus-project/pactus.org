@@ -45,7 +45,7 @@ module.exports = config({
         link: "/guide/learn-index",
       },
       {
-        text: "Become a validator",
+        text: "Get started",
         link: "/guide/run-index",
       },
       {
