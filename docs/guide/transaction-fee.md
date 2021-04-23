@@ -17,7 +17,7 @@ fee_{min} & if \quad fee < fee_{min}
 \end{cases}
 $$
 
-$percentage$ and $fee_{min}$ are part of [consensus parameters](./learn-params.md).
+$percentage$ and $fee_{min}$ are part of [consensus parameters](./learn-genesis.md).
 
 For example if Alice is going to pay 20,000 coins, she should pay 20 coins as fee for this
 transaction.
