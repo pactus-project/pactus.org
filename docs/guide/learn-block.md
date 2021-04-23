@@ -52,7 +52,7 @@ transaction body inside the block. Saving ID is fair enough.
 
 ## Example
 
-Hers is an example of a raw block header data.
+Hers is an example of a block header data.
 
 <hexdump bytes="a80101021a606cf6c8035820b7791c69197a15360d20aba0c822dc2b83eea70026e330a1844a32020a5dc303045820ddc8a4b3bf95e47e6855dcd76d6790e32903b89ce1fbeaf8f1fcbd5189bcd5da055820e85544e771d1ae6057e999a202725e1151a15d81fe9681075bb911be7b246fcd065820fa527f78b78825dca6b9772786d886966adfde66c84edb67a34fcfae291d0a49075830a837496eec9429d099d0759302300347cd2e0c8409fc5b01381599f94bed9337b8170e6b1e0f6acd5acbbf0c85b71f040854436d9a52fd0e4c60ca8dd89f751058cff40edee0" />
 
