@@ -9,13 +9,20 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Generate static vuepress files
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-      - run: yarn install
-      - run: yarn build
-      - run: yarn cname
+
+      - name: Generate static vuepress files
+        run: |
+          yarn install
+          yarn build
+          yarn cname
+
+      - name: Check all markdowns for broken links
+        run: |
+          yarn add check-md -O
+          yarn check-md --ignore-footnotes
 
       - name: Init new repo in dist folder and commit generated files
         run: |
