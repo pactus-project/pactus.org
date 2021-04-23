@@ -16,11 +16,11 @@
     "@vuepress/plugin-medium-zoom": "^1.8.0",
     "@vuepress/plugin-pwa": "^1.8.2",
     "markdown-it-footnote": "^3.0.2",
+    "@iktakahiro/markdown-it-katex": "^4.0.1",
     "prettier": "2.2.1",
     "vuepress": "^1.8.0",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-element-tabs": "^0.2.8",
-    "vuepress-plugin-mathjax": "^1.2.8",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-smooth-scroll": "0.0.10",
     "vuepress-plugin-zooming": "^1.1.8"

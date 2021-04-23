@@ -123,12 +123,6 @@ module.exports = {
       sidebarLinkSelector: '.sidebar-link',
       headerAnchorSelector: '.header-anchor'
     },
-    'vuepress-plugin-mathjax', {
-      target: 'svg',
-      macros: {
-        '*': '\\times',
-      },
-    },
     'sitemap', {
       hostname: 'https://zarb.network'
     },
@@ -149,6 +143,7 @@ module.exports = {
     lineNumbers: false, // Whether to show line numbers to the left of each code blocks.
     extendMarkdown: md => {
       md.use(require('markdown-it-footnote'))
+      md.use(require('@iktakahiro/markdown-it-katex'))
     }
   },
 };
