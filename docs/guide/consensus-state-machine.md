@@ -3,6 +3,8 @@ id: learn-consensus
 title: Consensus as state machine
 ---
 
+# Consensus as state machine
+
 ## State machine
 
 Zarb consensus algorithm is a state machine [^first] replication with Byzantine fault tolerance. The

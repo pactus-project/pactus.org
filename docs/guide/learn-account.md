@@ -3,6 +3,8 @@ id: learn-account
 title: Account
 ---
 
+# Account
+
 ## What is account?
 
 Account structure is used to hold the balance and sequence number of an account.

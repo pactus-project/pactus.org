@@ -3,6 +3,8 @@ id: learn-certificate
 title: Block certificate
 ---
 
+# Block certificate
+
 ## What is certificate?
 
 Block certificate holds the proof of commitment for the block.

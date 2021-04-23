@@ -3,6 +3,8 @@ id: transaction-fee
 title: Transactions fee
 ---
 
+# Transactions fee
+
 In Zarb transactions fee calculates based on the transferee amount. The formula is quit simple:
 
 $$

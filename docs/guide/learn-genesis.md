@@ -3,13 +3,15 @@ id: learn-genesis
 title: Genesis block
 ---
 
+# Genesis block
+
 ## What is genesis block
 
 The genesis block is the first block in blockchain.
 
 ## Genesis information
 
-In Zarb genesis information is defined inside the `gensis.json` file. It contains the consensus
+In Zarb genesis information is defined inside the `genesis.json` file. It contains the consensus
 parameters like size of validator set or fee settings. It also defines the Treasury account and
 bootstrap validators information. Here is the `genesis.json` file for the MainNet in Zarb:
 

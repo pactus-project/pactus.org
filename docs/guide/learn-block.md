@@ -3,6 +3,8 @@ id: learn-block
 title: Block
 ---
 
+# Block
+
 ## What is block?
 
 Blocks contains the header and transactions in form of their IDs. Each block in Zarb have a unique

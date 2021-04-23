@@ -3,6 +3,8 @@ id: learn-cryptography
 title: Cryptography
 ---
 
+# Cryptography and Address format
+
 ## Hashing Algorithm
 
 The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be
@@ -15,7 +17,7 @@ Message: "zarb"
 Hash256: 12b38977f2d67f06f0c0cd54aaf7324cf4fee184398ea33d295e8d1543c2ee1a
 ```
 
-## Cryptography
+## cryptographic signature scheme
 
 Zarb is using [BLS](https://en.wikipedia.org/wiki/BLS_digital_signature) threshold signature
 (Boneh–Lynn–Shacham) for cryptographic signing and verification.

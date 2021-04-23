@@ -1,7 +1,6 @@
 const { description } = require("../../package");
-const { config } = require("vuepress-theme-hope");
 
-module.exports = config({
+module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -11,18 +10,17 @@ module.exports = config({
    */
   description: "Zarb blockchain",
 
-  /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
+  // https://vuepress.vuejs.org/plugin/official/plugin-pwa.html
   head: [
-    ["meta", { name: "theme-color", content: "#3eaf7c" }],
-    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-    [
-      "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
-    ],
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }],
+    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
 
   /**
@@ -31,14 +29,14 @@ module.exports = config({
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    hostname: "https://zarb.netwotk/",
     docsRepo: "https://github.com/zarbchain/zarb.network",
     docsDir: "docs",
     docsBranch: "main",
-    lastUpdated: false,
-    smoothScroll: true,
+    lastUpdated: "Last Updated",
     editLinks: true,
     editLinkText: "Help us improve this page!",
-    lastUpdated: "Last Updated",
+    sidebarDepth:0,
     nav: [
       {
         text: "What is Zarb",
@@ -55,17 +53,6 @@ module.exports = config({
     ],
     sidebar: {
       "/guide/": [
-        {
-          title: "Run",
-          collapsable: false,
-          children: [
-            "run-index",
-            "run-testnet",
-            "run-compile",
-            "run-docker",
-            "run-become-validator"
-          ],
-        },
         {
           title: "Learn",
           collapsable: false,
@@ -105,35 +92,63 @@ module.exports = config({
             },
           ],
         },
+        {
+          title: "Run",
+          collapsable: false,
+          children: [
+            "run-index",
+            "run-testnet",
+            "run-compile",
+            "run-docker",
+            "run-become-validator"
+          ],
+        },
       ],
     },
-
-    // vuepress-theme-hope configs
-    // https://vuepress-theme-hope.github.io/config/
-    hostname: "https://zarb.netwotk/",
-    footer: {
-      display: true,
-      content: "Made with ❤️"
-    },
-    themeColor: false,
-    fullscreen: false,
-    darkmode: "disable",
-    mdEnhance: {
-      align: true,
-      lineNumbers: true,
-      sup: true,
-      sub: true,
-      footnote: true,
-      tex: true,
-    },
-    pageInfo: ['Time'],
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    "@vuepress/plugin-back-to-top",
-    "@vuepress/plugin-medium-zoom",
+    '@vuepress/plugin-back-to-top',
+    '@vuepress/plugin-medium-zoom',
+    'vuepress-plugin-element-tabs',
+    'vuepress-plugin-smooth-scroll',
+    'vuepress-plugin-zooming',
+    '@vuepress/nprogress',
+    '@vuepress/pwa',
+    'vuepress-plugin-code-copy',
+    '@vuepress/active-header-links', {
+      sidebarLinkSelector: '.sidebar-link',
+      headerAnchorSelector: '.header-anchor'
+    },
+    'vuepress-plugin-mathjax', {
+      target: 'svg',
+      macros: {
+        '*': '\\times',
+      },
+    },
+    'sitemap', {
+      hostname: 'https://zarb.network'
+    },
+    [
+      'vuepress-plugin-container', {
+        type: 'right',
+        defaultTitle: '',
+      },
+    ],
+    [
+      'vuepress-plugin-container', {
+        type: 'quote',
+        defaultTitle: '',
+      },
+    ],
   ],
-});
+  markdown: {
+    lineNumbers: false, // Whether to show line numbers to the left of each code blocks.
+    extendMarkdown: md => {
+      md.use(require('markdown-it-footnote'))
+    }
+  },
+};

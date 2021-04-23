@@ -3,6 +3,8 @@ id: run-validator
 title: Become a validator
 ---
 
+# Become a validator
+
 Now, you are ready to create a full node and become a validator in Zarb network.
 
 ## Requirements

@@ -3,6 +3,8 @@ id: run-tesnt-net
 title: TestNets history
 ---
 
+# Story of TestNets
+
 Here is brief history of Zarb testnets:
 
 ## TestNet version 1:

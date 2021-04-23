@@ -3,6 +3,8 @@ id: learn-sortition
 title: Sortition Seed
 ---
 
+# Sortition Seed
+
 ## Sortition Seed
 
 sortition algorithm requires a seed that is random and publicly verifiable. In each height, proposer

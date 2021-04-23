@@ -3,6 +3,8 @@ id: transaction-stamping
 title: Stamping transactions
 ---
 
+# Stamping transactions
+
 ## What is stamping transaction?
 
 _Stamping a transaction_ simply means putting the previous block hash into the header of the

@@ -3,6 +3,8 @@ id: learn-validator
 title: Validator
 ---
 
+# Validator
+
 ## What is Validator?
 
 Validator is a full node that participates in the consensus mechanism by broadcasting its votes.

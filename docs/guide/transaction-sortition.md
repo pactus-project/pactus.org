@@ -3,6 +3,8 @@ id: transaction-sortition
 title: Sortition transaction
 ---
 
+# Sortition transaction
+
 Sortition transaction is used to enter a validator in the set for the next run. Sortition
 transaction are valid for 21 height.
 

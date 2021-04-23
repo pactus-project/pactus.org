@@ -3,6 +3,8 @@ id: transaction-format
 title: Transaction format in Zarb
 ---
 
+# Transaction
+
 ## What is transaction?
 
 ## Transaction format

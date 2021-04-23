@@ -3,11 +3,13 @@ id: learn-incentive
 title: Incentive
 ---
 
+# Incentive
+
 > The incentive may help encourage nodes to stay honest. [^first]
 
 To have better understanding about reward distribution, let do a comparison with bitcoin reward
 distribution. We use this comparison to show the difference. We love bitcoin and bitcoin is the
-king. The way bitcoin distribute the tokens is a good solution for proof of work blockhain. But in
+king. The way bitcoin distribute the tokens is a good solution for proof of work blockchain. But in
 proof of stake we need to distribute tokens more fair. Early contributors in bitcoin collect most of
 the tokens, this scheme in Proof of Stake blockchain will damage the network by powering early
 contributors, simply because the validators are weighed by their stake. More stake, more power.
@@ -25,7 +27,7 @@ The first transaction in each block
 
 To have better understanding about reward distribution, let do a comparison with bitcoin reward
 distribution. We use this comparison to show the difference. We love bitcoin and bitcoin is the
-king. The way bitcoin distribute the tokens is a good solution for proof of work blockhain. But in
+king. The way bitcoin distribute the tokens is a good solution for proof of work blockchain. But in
 proof of stake we need to distribute tokens more fair. Early contributors in bitcoin collect most of
 the tokens, this scheme in Proof of Stake blockchain will damage the network by powering early
 contributors, simply because the validators are weighed by their stake. More stake, more power.

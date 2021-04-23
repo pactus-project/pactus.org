@@ -3,6 +3,8 @@ id: learn-serialization
 title: Data serialization
 ---
 
+# Data serialization
+
 ## CBOR as data serialization
 
 We are using "Concise Binary Object Representation" or [CBOR](https://tools.ietf.org/html/rfc7049)

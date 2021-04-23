@@ -1,13 +1,15 @@
 ---
 id: learn-consensus
-title: Consensus Mechanism
+title: Consensus mechanism
 ---
+
+# Consensus mechanism
 
 ## The algorithm
 
 The Zarb Consensus algorithm is highly spired by Practical Byzantine Fault Tolerant (PBFT)
-alghorithm. Practical Byzantine Fault Tolerant, or in short PBFT "presents a new, practical
-algorithm for state machine replication that tolerates Byzantine faults." [^first]
+algorithm. Practical Byzantine Fault Tolerant, or in short PBFT "presents a new, practical algorithm
+for state machine replication that tolerates Byzantine faults." [^first]
 
 There are $R = 3f+1$ replicas. where $f$ is the maximum number of replicas that may be faulty or
 byzantine. For example if there is one faulty replica, the resiliency of the algorithm is optimal if
@@ -41,7 +43,7 @@ message to all other validators. Otherwise, it does nothing.
 
 Prepare message has this form:
 
-$<PREPARE,h,r,d,i>_{\sigma i}>$
+$<<PREPARE,h,r,d,i>_{\sigma i}>$
 
 If validator $i$ received $2f+1$ prepare messages from other validators (possibly including its
 own), it is **prepared** and enters to precommit phase.
@@ -53,7 +55,7 @@ validators.
 
 Precommit message has this form:
 
-$<PRECOMMIT,h,r,d,i>_{\sigma i}>$
+$<<PRECOMMIT,h,r,d,i>_{\sigma i}>$
 
 Each validator executes and commits block $b$ after receiving $2f+1$ precommit messages (possibly
 including its own) and becomes **committed**.
@@ -93,7 +95,7 @@ block-announce messages) and broadcasts a proposer-change message to all validat
 
 proposer-change message has this form:
 
-$<PROPOSER-CHANGE,h,r,i>_{\sigma i}>$
+$<<PROPOSER-CHANGE,h,r,i>_{\sigma i}>$
 
 If the proposer for round $r+1$ receives $2f+1$ valid proposer-change messages for round $r$ from
 other validators, it goes to next round and broadcasts proposal message.

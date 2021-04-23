@@ -3,6 +3,8 @@ id: learn-consensus
 title: Sortition algorithm
 ---
 
+# Sortition algorithm
+
 ## How VRF works?
 
 In each height validators outside the set run a VRF function which the seed is the previous block

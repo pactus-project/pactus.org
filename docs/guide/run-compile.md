@@ -3,6 +3,8 @@ id: run-docker
 title: Compile Zarb
 ---
 
+# Compile
+
 ## Compile from source code
 
 ::: warning Compiling on Windows

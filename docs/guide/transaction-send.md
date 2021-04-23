@@ -3,6 +3,8 @@ id: transaction-send
 title: Send transaction
 ---
 
+# Send transaction
+
 Send transaction is used to send values between the accounts. If receiver account doesn't exists it
 will be created.
 

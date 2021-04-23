@@ -3,6 +3,8 @@ id: transaction-mintbase
 title: Mintbase transaction
 ---
 
+# Mintbase transaction
+
 Mintbase transaction is the first transaction in each block. The format of mintbase transaction is
 same as [send transaction](./transaction-send.md) but the fee is zero.
 
