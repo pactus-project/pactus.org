@@ -100,7 +100,8 @@ module.exports = {
             "run-testnet",
             "run-compile",
             "run-docker",
-            "run-become-validator"
+            "run-become-validator",
+            "run-ansible"
           ],
         },
       ],

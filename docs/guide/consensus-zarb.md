@@ -66,7 +66,7 @@ keys to verify signatures.
 Picture below shows the operation of the algorithm in the normal case of no primary faults. Replica
 0 is the proposer, replica 3 is faulty.
 
-![Normal execution of the Zarb consensus mechanism](..//assets/images/zarb-normal-execution.png)
+![Normal execution of the Zarb consensus mechanism](../assets/images/zarb-normal-execution.png)
 
 ## Block announcement
 

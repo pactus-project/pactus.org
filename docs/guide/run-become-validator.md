@@ -19,7 +19,7 @@ private server from providers like Amazon, Microsoft, Linde, Alibaba, ArvanCloud
 - Storage: 10 Gigabytes of free space disk
 - Network: A broadband Internet connection
 
-## Securing the server
+## 🛡️ Securing the server
 
 The first step is securing your server. You may read this
 [guid line](https://www.linode.com/docs/guides/securing-your-server/) to learn hot make your sever
@@ -69,4 +69,4 @@ zarb start -w ~/zarb/mainnet
 After syncing with the main net you need to bond some token to enter validator pool and evaluating
 the sortition. After a while you will enter to committee and validating and proposing the blocks.
 
-Good luck ;)
+Good luck 🍀

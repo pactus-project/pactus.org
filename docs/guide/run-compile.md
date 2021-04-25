@@ -3,9 +3,9 @@ id: run-docker
 title: Compile Zarb
 ---
 
-# Compile
+# Compile Zarb
 
-## Compile from source code
+## 🏗️ Compile from source code
 
 ::: warning Compiling on Windows
 
@@ -36,6 +36,26 @@ Run this command to make sure the Zarb is successfully compiled and installed in
 zarb version
 ```
 
+## Key generation and inspection
+
+You can generate new keys or inspect them:
+
+```
+zarb key generate -p ~/zarb/keystore/private_key_1.json
+```
+
+You can inspect the key and check the public key:
+
+```
+zarb inspect ~/zarb/keystore/private_key_1.json
+```
+
+If you want to see the private key, run inspect command with `-e` flag. Run this flag with great
+
+```
+zarb inspect -e ~/zarb/keystore/private_key_1.json
+```
+
 ## Joining the Testnet
 
 Let's join the testnet now. First you need to create a workspace for testnet. Like this:
@@ -50,4 +70,4 @@ Now you can join the testnet. Simply run this command:
 zarb start -w ~/zarb/testnet
 ```
 
-Have fun ;)
+Have fun 😉

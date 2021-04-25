@@ -3,22 +3,16 @@ id: run-docker
 title: Using Docker
 ---
 
-## What is Docker
+# Using Docker
+
+## 🐳 What is Docker
 
 ::: quote
 
-[Docker](https://docs.docker.com/get-docker/) is a tool designed to make it easier to create,
-deploy, and run applications by using containers. Containers allow a developer to package up an
-application with all of the parts it needs, such as libraries and other dependencies, and deploy it
-as one package. By doing so, thanks to the container, the developer can rest assured that the
-application will run on any other Linux machine regardless of any customized settings that machine
-might have that could differ from the machine used for writing and testing the code.
-
-In a way, Docker is a bit like a virtual machine. But unlike a virtual machine, rather than creating
-a whole virtual operating system, Docker allows applications to use the same Linux kernel as the
-system that they're running on and only requires applications be shipped with things not already
-running on the host computer. This gives a significant performance boost and reduces the size of the
-application. Zarb is designed to run in any environment using docker.
+Docker is a tool designed to make it easier to create, deploy, and run applications by using
+containers. Containers allow a developer to package up an application with all of the parts it
+needs, such as libraries and other dependencies, and deploy it as one package. In a way, Docker is a
+bit like a virtual machine, but it isn't!
 
 ::: right
 
@@ -29,7 +23,7 @@ From [OpenSource.com](https://opensource.com/resources/what-docker)
 ## Requirement
 
 The only thing you need is [installing docker](https://docs.docker.com/get-docker/) in your machine.
-If you are using Windows please mke sure you have installed WSL.
+If you are using Windows please make sure you have installed WSL.
 
 ## Docker images
 
@@ -109,7 +103,7 @@ You can use docker to generate new keys or inspect them:
 ::: tab Window
 
 ```
-docker run -i --rm -v c:\zarb\:/root/zarb zarb key generate
+docker run -i --rm -v c:\zarb\:/zarb zarb key generate -p /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -117,7 +111,7 @@ docker run -i --rm -v c:\zarb\:/root/zarb zarb key generate
 ::: tab Linux and Mac
 
 ```
-docker run -i --rm -v ~/zarb/:/root/zarb zarb key generate
+docker run -i --rm -v ~/zarb/:/zarb zarb key generate -p /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -133,7 +127,7 @@ You can also inspect a key:
 ::: tab Window
 
 ```
-docker run -i --rm -v c:\zarb\:/root/zarb zarb key inspect /root/zarb/keystore/<key_filename>.json
+docker run -i --rm -v c:\zarb\:/zarb zarb key inspect /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -141,9 +135,34 @@ docker run -i --rm -v c:\zarb\:/root/zarb zarb key inspect /root/zarb/keystore/<
 ::: tab Linux and Mac
 
 ```
-docker run -i --rm -v ~/zarb/:/root/zarb zarb key inspect /root/zarb/keystore/<key_filename>.json
+docker run -i --rm -v ~/zarb/:/zarb zarb key inspect /zarb/keystore/private_key_1.json
 ```
 
 :::
 
 ::::
+
+If you want to see the private key, run inspect command with `-e` flag. Run this flag with great
+caution.
+
+:::: tabs type:border-card
+
+::: tab Window
+
+```
+docker run -i --rm -v c:\zarb\:/zarb zarb key inspect -e /zarb/keystore/private_key_1.json
+```
+
+:::
+
+::: tab Linux and Mac
+
+```
+docker run -i --rm -v ~/zarb/:/zarb zarb key inspect -e /zarb/keystore/private_key_1.json
+```
+
+:::
+
+::::
+
+Discover more 🧐
