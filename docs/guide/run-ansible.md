@@ -5,8 +5,8 @@ title: Deploy using Ansible
 
 # Deploy using Ansible
 
-In this tutorial you will learn how to deploy Zarb into your private server without compiling Zarb
-and using docker files.
+In this tutorial you will learn how to deploy Zarb into your Virtual Private Server (VPS) without
+compiling Zarb and using docker files.
 
 ## 🎮 What is Ansible?
 
@@ -36,7 +36,7 @@ Make sure you have installed
 [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) in
 your local machine and you have access to your server through ssh.
 
-If you have installed firewall in your virtual server machine (VPS), make sure these port are open:
+If you have installed firewall in your server machine, make sure these port are open:
 
 - 8421 -> for p2p network
 - 8080 -> gRPC gateway
@@ -153,6 +153,7 @@ ansible-playbook --vault-id tasks/vault@prompt tasks/deploy.yml
 
 ```
 
-Now you can check "http://<ip_address>:8080 to see if your node works fine and it's syncing with the main network.
+Now you can check "http://<ip_address>:8080 to see if your node works fine and it's syncing with the
+main network.
 
 Welcome to Zarb network 😍
