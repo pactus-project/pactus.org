@@ -134,7 +134,7 @@ Ansible will encrypt the key and save inside `task/vault.yml`
 You can open the `task/vault.yml` and see the content. It's encrypted.
 
 One more step, open the config file and update `MintbaseAddress`. This can be different than
-validator address.
+validator address. Tou can also change other configs like `Moniker`, etc.
 
 ## Deploy Zarb
 
