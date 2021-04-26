@@ -103,7 +103,7 @@ You can use docker to generate new keys or inspect them:
 ::: tab Window
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb key generate -p /zarb/keystore/private_key_1.json
+docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -111,7 +111,7 @@ docker run -i --rm -v c:\zarb\:/zarb zarb key generate -p /zarb/keystore/private
 ::: tab Linux and Mac
 
 ```
-docker run -i --rm -v ~/zarb/:/zarb zarb key generate -p /zarb/keystore/private_key_1.json
+docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key generate -p /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -127,7 +127,7 @@ You can also inspect a key:
 ::: tab Window
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb key inspect /zarb/keystore/private_key_1.json
+docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -135,7 +135,7 @@ docker run -i --rm -v c:\zarb\:/zarb zarb key inspect /zarb/keystore/private_key
 ::: tab Linux and Mac
 
 ```
-docker run -i --rm -v ~/zarb/:/zarb zarb key inspect /zarb/keystore/private_key_1.json
+docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key inspect /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -150,7 +150,7 @@ caution.
 ::: tab Window
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb key inspect -e /zarb/keystore/private_key_1.json
+docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -158,7 +158,7 @@ docker run -i --rm -v c:\zarb\:/zarb zarb key inspect -e /zarb/keystore/private_
 ::: tab Linux and Mac
 
 ```
-docker run -i --rm -v ~/zarb/:/zarb zarb key inspect -e /zarb/keystore/private_key_1.json
+docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key inspect -e /zarb/keystore/private_key_1.json
 ```
 
 :::
