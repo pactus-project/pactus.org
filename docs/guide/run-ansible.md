@@ -96,8 +96,8 @@ To store and send validator private key to server, we use
 [Ansible vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html). Ansible Vault
 encrypts variables so you can protect sensitive content such as secret keys.
 
-Before creating Ansible Vault, we need to know validator private key. Using `zarb inspect` command
-we can have see the private key:
+Before creating Ansible Vault, you need to know the private key for the validator. Using
+`zarb inspect` command you can see the private key:
 
 :::: tabs type:border-card
 
@@ -142,14 +142,15 @@ The colon must be followed by a space.
 
 :::
 
-Ansible will encrypt the key and save inside `task/vault.yml`. You can open the `task/vault.yml` and see the content. It should be encrypted.
+Ansible will encrypt the key and save inside `task/vault.yml`. You can open the `task/vault.yml` and
+see the content. It should be encrypted.
 
 One more step, open the config file and update `MintbaseAddress`. This can be different from the
 validator address. You can also change other configs like `Moniker`, etc.
 
 ## Deploy Zarb
 
-Now we are ready to deploy the Zarb.
+Now you are ready to deploy the Zarb.
 
 First install the `geerlingguy.docker` plugin. This plugin will install docker for the server
 machine.
@@ -170,6 +171,7 @@ main network.
 
 ## Update Zarb
 
-If you change the configuration or if you want to update the node version, run the deploy playbook again. This will restart the node and update the docker image.
+If you change the configuration or if you want to update the node version, run the deploy playbook
+again. This will restart the node and update the docker image.
 
 Welcome to Zarb network 😍
