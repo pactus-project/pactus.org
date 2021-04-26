@@ -38,6 +38,8 @@ Make sure you have installed
 [Docker](https://docs.docker.com/get-docker/) in your local machine and you have access to your
 server through ssh.
 
+
+
 Also if you have installed firewall in your server machine, make sure these port are open:
 
 - 8421 -> for p2p network
@@ -169,7 +171,7 @@ ansible-galaxy install geerlingguy.docker
 Now you can deploy Zarb by running deploy playbook:
 
 ```
-ansible-playbook --vault-id tasks/vault@prompt tasks/deploy.yml
+ansible-playbook --ask-become-pass --vault-id tasks/vault@prompt tasks/deploy.yml
 
 ```
 
@@ -181,4 +183,4 @@ main network.
 If you change the configuration or if you want to update the node version, run the deploy playbook
 again. This will restart the node and update the docker image.
 
-Welcome to Zarb network 😍
+Welcome to Zarb network 🤝🏼
