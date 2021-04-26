@@ -5,6 +5,9 @@ title: Deploy using Ansible
 
 # Deploy using Ansible
 
+In this tutorial you will learn how to deploy Zarb into your private server without compiling Zarb
+and using docker files.
+
 ## 🎮 What is Ansible?
 
 ::: quote
@@ -29,48 +32,123 @@ TODO:
 
 ## Step by Step
 
-Make sure you have installed Ansible in your local machine and you have access to your server
-through ssh.
+Make sure you have installed
+[Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) in
+your local machine and you have access to your server through ssh.
 
-If you have installed firewall in your server machine, make sure these port are open:
+If you have installed firewall in your virtual server machine (VPS), make sure these port are open:
 
 - 8421 -> for p2p network
 - 8080 -> gRPC gateway
 - 9090 -> gRPC
 
-
-
 First you need to clone this repository:
 
 ```
-
+git clone https://github.com/b00f/zarb-deploy-ansible
+cd zarb-deploy-ansible
 ```
 
-Run `ansible gathering-fact` to make sure ansible works fine.
+Open `inventory.yml` and update `ansible_host` with your server remote ip address. something like:
+`root@11.22.33.44`
+
+Run `ansible all -m gather_facts` to make sure ansible works fine.
 
 Now, you need to generate two keys in your local machine. One for validator and another for
-collecting the rewards. If you have [compiled Zarb](./run-compile.md) you can use Zarb command to
-generate keys, otherwise use [docker](./run-docker.md) file in your local machine.
+collecting the rewards.
 
-Now, let's create ansible Vault. Ansible Vault encrypts variables and files so you can protect
-sensitive content such as secret keys.
+:::: tabs type:border-card
 
-Let's create a vault and add validator private key inside the vault.
-You can use inspect command to copy the private key.
+::: tab Window
 
 ```
-ansible-vault encrypt_string --vault-id key_vault@prompt key_vault.yml
+docker run -i --rm -v c:\zarb\:/zarb zarb key generate -p /zarb/keystore/validator_key.json
+docker run -i --rm -v c:\zarb\:/zarb zarb key generate -p /zarb/keystore/mintbase_key.json
 ```
-Set a strong password for vault and then paste private key.
 
-Ansible will encrypt the key and save inside `key_vault.yml`
+This command will generate new keys and save them at: `c:\zarb\keystore\`
 
-One more step, open the config file and update `MintbaseAddress`.
-This can be different than validator address.
+:::
+
+::: tab Linux and Mac
+
+```
+docker run -i --rm -v ~/zarb/:/zarb zarb key generate -p /zarb/keystore/validator_key.json
+docker run -i --rm -v ~/zarb/:/zarb zarb key generate -p /zarb/keystore/mintbase_key.json
+```
+
+This command will generate new keys and save them at: `~/zarb/keystore/`
+
+:::
+
+::::
+
+To store and send validator's private key to server, we use
+[Ansible vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html). Ansible Vault
+encrypts variables and files so you can protect sensitive content such as secret keys.
+
+Before creating Ansible Vault, we need to know validator's private key. Using `zarb inspect` command
+we can have access to the private key:
+
+:::: tabs type:border-card
+
+::: tab Window
+
+```
+docker run -i --rm -v c:\zarb\:/zarb zarb key inspect -e /zarb/keystore/validator_key.json
+```
+
+:::
+
+::: tab Linux and Mac
+
+```
+docker run -i --rm -v ~/zarb/:/zarb zarb key inspect -e /zarb/keystore/validator_key.json
+```
+
+:::
+
+::::
+
+Let's create a vault and add validator private key inside the vault. You can use inspect command to
+copy the private key.
+
+```
+ansible-vault create --vault-id vault@prompt tasks/vault.yml
+```
+
+Set a strong password for vault.
+
+It opens up an editor. Once you're inside, treat this like a normal variable file: add ---, then a
+new variable:
+
+```
+---
+vault_validator_key: <validator_private_key>
+```
+
+Note: Space after ":" is important.
+
+Ansible will encrypt the key and save inside `task/vault.yml`
+
+You can open the `task/vault.yml` and see the content. It's encrypted.
+
+One more step, open the config file and update `MintbaseAddress`. This can be different than
+validator address.
+
+## Deploy Zarb
 
 Now we are ready to deploy the Zarb.
 
-First make sure ansible works fine:
+First install the `geerlingguy.docker` plugin. This plugin will install docker in server machine.
 
 ```
+ansible-galaxy install geerlingguy.docker
+```
+
+Now you can deploy Zarb by running deploy playbook:
+
+```
+ansible-playbook --vault-id tasks/vault@prompt tasks/deploy.yml
+
 ```
