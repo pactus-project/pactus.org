@@ -152,3 +152,7 @@ Now you can deploy Zarb by running deploy playbook:
 ansible-playbook --vault-id tasks/vault@prompt tasks/deploy.yml
 
 ```
+
+Now you can check "http://<ip_address>:8080 to see if your node works fine and it's syncing with the main network.
+
+Welcome to Zarb network 😍
