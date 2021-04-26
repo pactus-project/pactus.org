@@ -28,7 +28,7 @@ From [OpenSource.com](https://opensource.com/resources/what-ansible)
 
 ## Why ansible?
 
-Deploying Zarb is not a one time task. You make update the node time to time, change the
+Deploying Zarb is not a one time task. You may update the node time to time or change the
 configuration or even restart the node. Using Ansible helps to automate the deployment process.
 
 ## Step by Step
@@ -61,7 +61,7 @@ collecting the rewards.
 
 :::: tabs type:border-card
 
-::: tab Window
+::: tab 🪟 Window
 
 ```
 docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/validator_key.json
@@ -72,7 +72,7 @@ This command will generate new keys and save them at: `c:\zarb\keystore\`
 
 :::
 
-::: tab Linux and Mac
+::: tab 🐧 Linux and 🍏 Mac
 
 ```
 docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key generate -p /zarb/keystore/validator_key.json
@@ -97,11 +97,11 @@ To store and send validator private key to server, we use
 encrypts variables so you can protect sensitive content such as secret keys.
 
 Before creating Ansible Vault, you need to know the private key for the validator. Using
-`zarb inspect` command you can see the private key:
+`zarb inspect` command you can see the private key.
 
 :::: tabs type:border-card
 
-::: tab Window
+::: tab 🪟 Window
 
 ```
 docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/validator_key.json
@@ -109,7 +109,7 @@ docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/val
 
 :::
 
-::: tab Linux and Mac
+::: tab 🐧 Linux and 🍏 Mac
 
 ```
 docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key inspect -e /zarb/keystore/validator_key.json
@@ -119,8 +119,9 @@ docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key inspect -e /zarb/keystore/vali
 
 ::::
 
-Let's create a vault and add the validator private key inside the vault. You can use inspect command
-to copy the private key.
+Copy the private key. You will need to paste in inside Ansible Vault in the next step.
+
+Now let's create a vault and add the validator private key inside the vault.
 
 ```
 ansible-vault create --vault-id vault@prompt tasks/vault.yml
@@ -147,6 +148,12 @@ see the content. It should be encrypted.
 
 One more step, open the config file and update `MintbaseAddress`. This can be different from the
 validator address. You can also change other configs like `Moniker`, etc.
+
+::: tip
+
+Address in Zarb starts with `zrb1...`
+
+:::
 
 ## Deploy Zarb
 

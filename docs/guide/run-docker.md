@@ -41,7 +41,7 @@ Let's run the Zarb and join the TestNet. First we need to create a workspace for
 
 :::: tabs type:border-card
 
-::: tab Window
+::: tab 🪟 Window
 
 Creating workspace at `c:\zarb\testnet`:
 
@@ -51,7 +51,7 @@ docker run -it --rm -v c:\zarb\testnet:/zarb zarb/zarb init -w /zarb --testnet
 
 :::
 
-::: tab Linux and Mac
+::: tab 🐧 Linux and 🍏 Mac
 
 Creating workspace at `~/zarb/testnet`:
 
@@ -67,7 +67,7 @@ Now you can join the TestNet.
 
 :::: tabs type:border-card
 
-::: tab Window
+::: tab 🪟 Window
 
 ```
 docker run -it -v c:\zarb\testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
@@ -75,7 +75,7 @@ docker run -it -v c:\zarb\testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/za
 
 :::
 
-::: tab Linux and Mac
+::: tab 🐧 Linux and 🍏 Mac
 
 ```
 docker run -it -v ~/zarb/testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
@@ -100,7 +100,7 @@ You can use docker to generate new keys or inspect them:
 
 :::: tabs type:border-card
 
-::: tab Window
+::: tab 🪟 Window
 
 ```
 docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/private_key_1.json
@@ -108,7 +108,7 @@ docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/pr
 
 :::
 
-::: tab Linux and Mac
+::: tab 🐧 Linux and 🍏 Mac
 
 ```
 docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key generate -p /zarb/keystore/private_key_1.json
@@ -124,7 +124,7 @@ You can also inspect a key:
 
 :::: tabs type:border-card
 
-::: tab Window
+::: tab 🪟 Window
 
 ```
 docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect /zarb/keystore/private_key_1.json
@@ -132,7 +132,7 @@ docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect /zarb/keystore/privat
 
 :::
 
-::: tab Linux and Mac
+::: tab 🐧 Linux and 🍏 Mac
 
 ```
 docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key inspect /zarb/keystore/private_key_1.json
@@ -147,7 +147,7 @@ caution.
 
 :::: tabs type:border-card
 
-::: tab Window
+::: tab 🪟 Window
 
 ```
 docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/private_key_1.json
@@ -155,7 +155,7 @@ docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/pri
 
 :::
 
-::: tab Linux and Mac
+::: tab 🐧 Linux and 🍏 Mac
 
 ```
 docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key inspect -e /zarb/keystore/private_key_1.json
