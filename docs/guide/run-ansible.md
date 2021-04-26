@@ -24,11 +24,12 @@ From [OpenSource.com](https://opensource.com/resources/what-ansible)
 
 :::
 
-## Why ansible?
-
 ![Deploy Zarb using ansible](../assets/images/zarb-ansible.png)
 
-TODO:
+## Why ansible?
+
+Deploying Zarb is not a one time task. You make update the node time to time, change the
+configuration or even restart the node. Using Ansible helps to automate the deployment process.
 
 ## Step by Step
 
@@ -84,6 +85,13 @@ This command will generate new keys and save them at: `~/zarb/keystore/`
 
 ::::
 
+::: warning
+
+Make sure you write down the Mnemonics for your key. You can recover your keys from Mnemonics, if
+you lose them.
+
+:::
+
 To store and send validator private key to server, we use
 [Ansible vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html). Ansible Vault
 encrypts variables so you can protect sensitive content such as secret keys.
@@ -128,11 +136,13 @@ new variable:
 vault_validator_key: <validator_private_key>
 ```
 
-Note: Space after ":" is important.
+::: tip
 
-Ansible will encrypt the key and save inside `task/vault.yml`
+The colon must be followed by a space.
 
-You can open the `task/vault.yml` and see the content. It's encrypted.
+:::
+
+Ansible will encrypt the key and save inside `task/vault.yml`. You can open the `task/vault.yml` and see the content. It should be encrypted.
 
 One more step, open the config file and update `MintbaseAddress`. This can be different from the
 validator address. You can also change other configs like `Moniker`, etc.
@@ -157,5 +167,9 @@ ansible-playbook --vault-id tasks/vault@prompt tasks/deploy.yml
 
 Now you can check "http://<ip_address>:8080 to see if your node works fine and it's syncing with the
 main network.
+
+## Update Zarb
+
+If you change the configuration or if you want to update the node version, run the deploy playbook again. This will restart the node and update the docker image.
 
 Welcome to Zarb network 😍
