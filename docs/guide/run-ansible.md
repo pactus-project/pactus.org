@@ -85,10 +85,10 @@ This command will generate new keys and save them at: `~/zarb/keystore/`
 
 To store and send validator's private key to server, we use
 [Ansible vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html). Ansible Vault
-encrypts variables and files so you can protect sensitive content such as secret keys.
+encrypts variables so you can protect sensitive content such as secret keys.
 
 Before creating Ansible Vault, we need to know validator's private key. Using `zarb inspect` command
-we can have access to the private key:
+we can have see the private key:
 
 :::: tabs type:border-card
 
