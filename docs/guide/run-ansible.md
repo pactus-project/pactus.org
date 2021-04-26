@@ -92,6 +92,8 @@ This command will generate new keys and save them at: `~/zarb/keystore/`
 Make sure you write down the Mnemonics for your key. You can recover your keys from Mnemonics, if
 you lose them.
 
+You are responsible for the safety of your key.
+
 :::
 
 To store and send validator private key to server, we use
