@@ -48,13 +48,12 @@ Mintbase account is the account that you receive your reward when you propose a 
 don't define a Mintbase address, the rewards will goes to the same account with your validator key.
 We highly recommend you to define separate address to collect your reward.
 
-First you need to generate new key:
+You can generate new key and update `MintbaseAddress` in config file.
 
 ```
 zarb key generate
 ```
 
-The update MintbaseAddress in config file.
 
 ## Syncing blockchain
 
