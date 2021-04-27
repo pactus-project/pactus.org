@@ -42,7 +42,7 @@ This command creates a folder at `~/zarb`. It contains:
 
 Feel free to take a look at these files.
 
-## Create Mintbase account
+## Update Mintbase address
 
 Mintbase account is the account that you receive your reward when you propose a new block. If you
 don't define a Mintbase address, the rewards will goes to the same account with your validator key.
