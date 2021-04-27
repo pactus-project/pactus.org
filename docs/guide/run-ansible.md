@@ -38,8 +38,6 @@ Make sure you have installed
 [Docker](https://docs.docker.com/get-docker/) in your local machine and you have access to your
 server through ssh.
 
-
-
 Also if you have installed firewall in your server machine, make sure these port are open:
 
 - 8421 -> for p2p network
@@ -159,9 +157,9 @@ Address in Zarb starts with `zrb1...`
 
 :::
 
-## Deploy Zarb
+## Installing Ansible plugins
 
-Now you are ready to deploy the Zarb.
+Before deploying Zarb, you have to install two plugins for Ansible.
 
 First install the `geerlingguy.docker` plugin. This plugin will install docker for the server
 machine.
@@ -169,6 +167,15 @@ machine.
 ```
 ansible-galaxy install geerlingguy.docker
 ```
+
+And then install the `geerlingguy.ntp` plugin. This plugin will synchronizing your server Time using
+Network Time Protocol (NTP)).
+
+```
+ansible-galaxy install geerlingguy.ntp
+```
+
+## Deploy Zarb
 
 Now you can deploy Zarb by running deploy playbook:
 
