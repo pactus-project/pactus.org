@@ -54,7 +54,6 @@ You can generate new key and update `MintbaseAddress` in config file.
 zarb key generate
 ```
 
-
 ## Syncing blockchain
 
 Now you can start the node and sync with the mainnet. This may take several hours:
@@ -63,9 +62,16 @@ Now you can start the node and sync with the mainnet. This may take several hour
 zarb start -w ~/zarb/mainnet
 ```
 
-## Bonding tokens
+## Enter committee
 
-After syncing with the main net you need to bond some token to enter validator pool and evaluating
-the sortition. After a while you will enter to committee and validating and proposing the blocks.
+After syncing with the main net, you need to send a [bond transaction](./transaction-bond.md) to
+bond some of your token as stake and enter the validator pool.
+
+After you join the validator pool, the [sortition](./consensus-sortition.md)
+algorithm starts working and after a while you will enter to [committee](./learn-committee).
+
+When you enter the committee, you will have chance to propose and validate the blocks.
+Any time you propose a new block, you will get the [rewards](./learn-incentive.md).
+
 
 Good luck 🍀
