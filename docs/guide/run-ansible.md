@@ -87,10 +87,10 @@ This command will generate new keys and save them at: `~/zarb/keystore/`
 
 ::: warning
 
-Make sure you write down the Mnemonics for your key. You can recover your keys from Mnemonics, if
+Make sure you write down the Mnemonics of your keys. You can recover your keys from Mnemonics, if
 you lose them.
 
-You are responsible for the safety of your key.
+You should know that you are responsible for the safety of your key.
 
 :::
 
