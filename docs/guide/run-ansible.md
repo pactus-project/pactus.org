@@ -184,7 +184,7 @@ ansible-playbook --ask-become-pass --vault-id tasks/vault@prompt tasks/deploy.ym
 
 ```
 
-Now you can check "http://<ip_address>:8080 to see if your node works fine and it's syncing with the
+Now you can check "http://<ip_address>:8080" to see if your node works fine and it's syncing with the
 main network.
 
 ## Update Zarb
