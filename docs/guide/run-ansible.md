@@ -190,6 +190,6 @@ main network.
 ## Update Zarb
 
 If you change the configuration or if you want to update the node version, run the deploy playbook
-again. This will restart the node and update the docker image.
+again. This will update the docker image and restart the node.
 
 Welcome to Zarb network 🤝🏼
