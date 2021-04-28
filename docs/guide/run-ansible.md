@@ -29,7 +29,7 @@ From [OpenSource.com](https://opensource.com/resources/what-ansible)
 ## Why ansible?
 
 Deploying Zarb is not a one time task. You may update the node time to time or change the
-configuration or even restart the node. Using Ansible helps to automate the deployment process.
+configuration or even restart the node. Ansible helps you to automate the deployment process.
 
 ## Step by Step
 
