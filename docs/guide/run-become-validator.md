@@ -67,11 +67,10 @@ zarb start -w ~/zarb/mainnet
 After syncing with the main net, you need to send a [bond transaction](./transaction-bond.md) to
 bond some of your token as stake and enter the validator pool.
 
-After you join the validator pool, the [sortition](./consensus-sortition.md)
-algorithm starts working and after a while you will enter to [committee](./learn-committee).
+After you join the validator pool, the [sortition](./consensus-sortition.md) algorithm starts
+working and after a while you will enter to [committee](./learn-committee).
 
-When you enter the committee, you will have the chance to propose and validate the blocks.
-Any time you propose a new block, you will get the [rewards](./learn-incentive.md).
-
+When you enter the committee, you will have the chance to propose and validate the blocks. Any time
+you propose a new block, you will get the [rewards](./learn-incentive.md).
 
 Good luck 🍀

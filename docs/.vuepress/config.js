@@ -90,6 +90,7 @@ module.exports = {
                 "transaction-fee.md",
               ],
             },
+            "learn-incentive",
           ],
         },
         {

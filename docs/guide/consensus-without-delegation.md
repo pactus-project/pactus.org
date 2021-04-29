@@ -44,21 +44,21 @@ this against blockchain philosophy, trust nobody.
 For example in the EOS blockchain, there is
 [constitution](https://github.com/EOSIO/eos/blob/5068823fbc8a8f7d29733309c0496438c339f7dc/constitution.md)
 for the people participating in the blockchain. This constitution is full of “shall” and “shall
-not”. In the long run, this blockchain will be ruled by a powerful organization and won’t be
+not”. In the long run, the blockchain will be ruled by a powerful organization and won’t be
 decentralized anymore.
 
-![Delegated Proof of Stake](../assets/images/delegated_proof_of_stake.jpg)
+![Delegated Proof of Stake](../assets/images/delegated_proof_of_stake.png)
 
 ## Zarb has no delegation
 
 The solution we are offering in Zarb is creating a **dynamic set** of validators. Validators can be
 changed randomly. Anyone can easily become a validator by staking some tokens. At each height, every
 validator starts running a Verifiable Random Function (VRF) in order to self-choose themselves. The
-VRF is absolutely random and the result can be verified cryptographically.
+VRF is unpredictable and the result can be verified cryptographically by other validators.
 
-Based on their stake and their chance, a validator can be in the set for the next run. Once a
-validator enters the set, the oldest validator in the set exits. So we can always guarantee that
-validators are in the set for a certain amount of time. In the set, validators' vote is weighted by
-their stake.
+Based on their stake and their luck, a validator can be in the [committee](./learn-committee) for
+the next run. Once a validator enters the set, the oldest validator in the set exits. So we can
+always guarantee that validators are in the set for a certain amount of time. In the set,
+validators' vote is weighted by their stake.
 
-![Zarb Proof of Stake](../assets/images/zarb_validator_pool.jpg)
+![Zarb Proof of Stake](../assets/images/zarb_validator_pool.png)
