@@ -36,7 +36,7 @@ configuration or even restart the node. Ansible helps you to automate the deploy
 Make sure you have installed
 [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) and
 [Docker](https://docs.docker.com/get-docker/) in your local machine and you have access to your
-server through ssh.
+server through SSH.
 
 Also if you have installed firewall in your server machine, make sure these port are open:
 
