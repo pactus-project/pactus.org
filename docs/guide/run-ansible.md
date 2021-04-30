@@ -40,9 +40,9 @@ server through SSH.
 
 Also if you have installed firewall in your server machine, make sure these port are open:
 
-- 8421 -> for p2p network
-- 8080 -> gRPC gateway
-- 9090 -> gRPC
+- 8421 for p2p network
+- 8080 for gRPC gateway
+- 9090 for gRPC
 
 First you need to clone this repository:
 
