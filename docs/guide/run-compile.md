@@ -47,13 +47,13 @@ zarb key generate -p ~/zarb/keystore/private_key_1.json
 You can inspect the key and check the public key:
 
 ```
-zarb inspect ~/zarb/keystore/private_key_1.json
+zarb key inspect ~/zarb/keystore/private_key_1.json
 ```
 
 If you want to see the private key, run inspect command with `-e` flag. Run this flag with great
 
 ```
-zarb inspect -e ~/zarb/keystore/private_key_1.json
+zarb key inspect -e ~/zarb/keystore/private_key_1.json
 ```
 
 ## Joining the Testnet
