@@ -169,7 +169,7 @@ ansible-galaxy install geerlingguy.docker
 ```
 
 And then install the `geerlingguy.ntp` plugin. This plugin will synchronizing your server Time using
-Network Time Protocol (NTP)).
+Network Time Protocol (NTP).
 
 ```
 ansible-galaxy install geerlingguy.ntp
