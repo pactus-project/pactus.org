@@ -13,7 +13,7 @@ on this wiki are welcomed.
 You can clone this repository and running it locally by using these commands:
 
 ```zsh
-git clone https://github.com/zarbchain/zarb.network.git`
+git clone https://github.com/zarbchain/zarb.network.git
 cd zarb.network
 yarn install
 yarn dev
