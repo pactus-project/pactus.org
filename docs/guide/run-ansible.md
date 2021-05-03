@@ -64,8 +64,8 @@ collecting the rewards.
 ::: tab 🪟 Window
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/validator_key.json
-docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/mintbase_key.json
+docker run -i --rm -v %USERPROFILE%\zarb:/zarb zarb/zarb key generate -p /zarb/keystore/validator_key.json
+docker run -i --rm -v %USERPROFILE%\zarb:/zarb zarb/zarb key generate -p /zarb/keystore/mintbase_key.json
 ```
 
 This command will generate new keys and save them at: `c:\zarb\keystore\`
