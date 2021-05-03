@@ -26,7 +26,7 @@ git clone https://github.com/zarbchain/zarb-go.git
 Now you can build and test the project like this:
 
 ```
-cd zarb
+cd zarb-go
 make
 ```
 
