@@ -47,7 +47,7 @@ be combined into a single aggregate signature so that overall size does not grow
 
 ## Address conversion
 
-Address in Zarb is 160-bit hash of the public key hash:
+Address in Zarb is 160-bit hash of the public key hash (RIPEMD-160 after Blake2b):
 
 ```go
 AddressBytes = Hash160(Hash256(PublicKey))
