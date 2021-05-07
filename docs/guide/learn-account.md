@@ -22,32 +22,32 @@ type Account struct {
 }
 ```
 
-## Binary format
+- `Address` is the address of account which is 20 bytes in length
+- `Number` is a unique and sequential number for the account
+- `Sequence` increasers anytime user send a transactions to prevent replaying the transaction
+- `Balance` holds the balance of the account
 
-Account can be serialized like this:
+## Example
 
-```
-a401540c9819c4d4b1edb7b70e6665287d4ce95401a37702191bd7031823041a007f5535
-```
+Hers is an example of a account data:
 
-Which can be interpreted like this:
+<hexdump bytes="a40154436d9a52fd0e4c60ca8dd89f751058cff40edee002010300041a1dcd6500" />
+
+Which can be interpreted in
+[CBOR](http://cbor.me/?bytes=a40154436d9a52fd0e4c60ca8dd89f751058cff40edee002010300041a1dcd6500)
+format:
 
 ```
 {
-    1: h'0C9819C4D4B1EDB7B70E6665287D4CE95401A377',
-    2: 7127,
-    3: 35,
-    4: 8344885
+  1: h'436D9A52FD0E4C60CA8DD89F751058CFF40EDEE0',
+  2: 1,
+  3: 0,
+  4: 500000000
 }
 ```
 
-Notes:
-
-- Keys are fixed.
-- `int64` is enough for holding balance
-- To generate hash we are using the cbor serialized data. For above example the hash of above
-  account is:
+Account hash is hash of the account in binary format. For this example the account hash is:
 
 ```
-Hash: 8a010969c3bf76f764bcf6cf230b1fbc55e5c07b954dbf5595e59b854e97ce7c
+0x8b66cb22841238f424835e6e7313cff870dfe9b851e958eb5b3bf842acc20e1d
 ```
