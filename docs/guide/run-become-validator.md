@@ -5,25 +5,9 @@ title: Become a validator
 
 # Become a validator
 
-Now, you are ready to create a full node and become a validator in Zarb network.
-
-## Requirements
-
-Using a linux cloud server is the best way to run a validator in Zarb network. You may get a virtual
-private server from providers like Amazon, Microsoft, Linde, Alibaba, ArvanCloud, etc.
-
-### Recommended hardwares
-
-- Processor: Two dedicated core of CPU
-- Memory: Two gigabyte of RAM
-- Storage: 10 Gigabytes of free space disk
-- Network: A broadband Internet connection
-
-## 🛡️ Securing the server
-
-The first step is securing your server. You may read this
-[guid line](https://www.linode.com/docs/guides/securing-your-server/) to learn hot make your sever
-more secure.
+Now, you are ready to create a full node and become a validator in Zarb network. For running Zarb
+you can either [download](https://github.com/zarbchain/zarb-go/releases) the latest precompiled
+binaries or [compile](./lean-compile.md) it from the source code.
 
 ## Initializing working directory
 
