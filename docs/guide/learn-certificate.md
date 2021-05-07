@@ -25,7 +25,7 @@ type Certificate struct {
 
 ## Certificate verification
 
-For each round validators cast their vote by signing `BlockHash | Round`. A valid certificate should
+For each round validators cast their votes by signing `BlockHash | Round`. A valid certificate should
 have signature from validators with more than 2/3 of the stake for that round. If enough votes are
 collected, the signatures will be aggregated into one single signature. To verify the aggregated
 signature, from `Committers` and `Absentees` the aggregated public key can be formed and therefore
