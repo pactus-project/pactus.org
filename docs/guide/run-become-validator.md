@@ -7,7 +7,7 @@ title: Become a validator
 
 Now, you are ready to create a full node and become a validator in Zarb network. For running Zarb
 you can either [download](https://github.com/zarbchain/zarb-go/releases) the latest precompiled
-binaries or [compile](./lean-compile.md) it from the source code.
+binaries or [compile](./learn-compile.md) it from the source code.
 
 ## Initializing working directory
 
