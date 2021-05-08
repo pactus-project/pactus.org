@@ -63,7 +63,7 @@ Also if you have installed firewall in your server machine, make sure these port
 - 9090 for gRPC
 
 For running Zarb you can either [download](https://github.com/zarbchain/zarb-go/releases) the latest
-precompiled binaries or [compile](./lean-compile.md) it from the source code.
+precompiled binaries or [compile](./run-compile.md) it from the source code.
 
 First you need to clone this repository:
 
