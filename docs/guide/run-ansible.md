@@ -31,12 +31,30 @@ From [OpenSource.com](https://opensource.com/resources/what-ansible)
 Deploying Zarb is not a one time task. You may update the node time to time or change the
 configuration or even restart the node. Ansible helps you to automate the deployment process.
 
+## Requirements
+
+Using a linux cloud server is the best way to run a validator in Zarb network. You may get a virtual
+private server from providers like Amazon, Microsoft, Linde, Alibaba, ArvanCloud, etc.
+
+### Recommended hardwares
+
+- Processor: Two dedicated core of CPU
+- Memory: Two gigabyte of RAM
+- Storage: 10 Gigabytes of free space disk
+- Network: A broadband Internet connection
+
+## 🛡️ Securing the server
+
+The first step is securing your server. You may read this
+[guid line](https://www.linode.com/docs/guides/securing-your-server/) to learn how to setup your
+sever more secure.
+
 ## Step by Step
 
 Make sure you have installed
 [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) and
-[Docker](https://docs.docker.com/get-docker/) in your local machine and you have [access to your
-server through SSH](https://www.google.com/search?q=access+to+your+server+through+SSH).
+[Docker](https://docs.docker.com/get-docker/) in your local machine and you have
+[access to your server through SSH](https://www.google.com/search?q=access+to+your+server+through+SSH).
 
 Also if you have installed firewall in your server machine, make sure these port are open:
 
@@ -44,11 +62,14 @@ Also if you have installed firewall in your server machine, make sure these port
 - 8080 for gRPC gateway
 - 9090 for gRPC
 
+For running Zarb you can either [download](https://github.com/zarbchain/zarb-go/releases) the latest
+precompiled binaries or [compile](./lean-compile.md) it from the source code.
+
 First you need to clone this repository:
 
 ```
-git clone https://github.com/b00f/zarb-deploy-ansible
-cd zarb-deploy-ansible
+git clone https://github.com/zarbchain/zarb-deploy-ansible-example
+cd zarb-deploy-ansible-example
 ```
 
 Open `inventory.yml` and update `ansible_host` with your server remote ip address. something like:
@@ -64,8 +85,8 @@ collecting the rewards.
 ::: tab 🪟 Window
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/validator_key.json
-docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/mintbase_key.json
+zarb key generate -p /zarb/keystore/validator_key.json
+zarb key generate -p /zarb/keystore/mintbase_key.json
 ```
 
 This command will generate new keys and save them at: `c:\zarb\keystore\`
@@ -75,8 +96,8 @@ This command will generate new keys and save them at: `c:\zarb\keystore\`
 ::: tab 🐧 Linux and 🍏 Mac
 
 ```
-docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key generate -p /zarb/keystore/validator_key.json
-docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key generate -p /zarb/keystore/mintbase_key.json
+zarb key generate -p /zarb/keystore/validator_key.json
+zarb key generate -p /zarb/keystore/mintbase_key.json
 ```
 
 This command will generate new keys and save them at: `~/zarb/keystore/`
@@ -106,7 +127,7 @@ Before creating Ansible Vault, you need to know the private key for the validato
 ::: tab 🪟 Window
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/validator_key.json
+zarb key inspect -e /zarb/keystore/validator_key.json
 ```
 
 :::
@@ -114,7 +135,7 @@ docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/val
 ::: tab 🐧 Linux and 🍏 Mac
 
 ```
-docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key inspect -e /zarb/keystore/validator_key.json
+zarb key inspect -e /zarb/keystore/validator_key.json
 ```
 
 :::
@@ -184,8 +205,8 @@ ansible-playbook --ask-become-pass --vault-id tasks/vault@prompt tasks/deploy.ym
 
 ```
 
-Now you can check "http://<ip_address>:8080" to see if your node works fine and it's syncing with the
-main network.
+Now you can check "http://<ip_address>:8080" to see if your node works fine and it's syncing with
+the main network.
 
 ## Update Zarb
 
