@@ -46,8 +46,8 @@ private server from providers like Amazon, Microsoft, Linde, Alibaba, ArvanCloud
 ## 🛡️ Securing the server
 
 The first step is securing your server. You may read this
-[guid line](https://www.linode.com/docs/guides/securing-your-server/) to learn hot make your sever
-more secure.
+[guid line](https://www.linode.com/docs/guides/securing-your-server/) to learn how to setup your
+sever more secure.
 
 ## Step by Step
 
