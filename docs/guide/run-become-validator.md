@@ -14,11 +14,31 @@ binaries or [compile](./run-compile.md) it from the source code.
 Now you need to create a working directory for you validator. A working directory is a place that
 you save blockchain data, config and key files.
 
+:::: tabs type:border-card
+
+::: tab 🪟 Window
+
+```
+zarb init -w c:\zarb\mainnet --mainnet
+```
+
+This command will create the working directory for the mainnet at `c:\zarb\mainnet`.
+
+:::
+
+::: tab 🐧 Linux and 🍏 Mac
+
 ```
 zarb init -w ~/zarb/mainnet --mainnet
 ```
 
-This command creates a folder at `~/zarb`. It contains:
+This command will create the working directory for the mainnet at `~/zarb/mainnet`.
+
+:::
+
+::::
+
+Working directory contains:
 
 - Validator private key
 - Genesis file
@@ -44,9 +64,25 @@ Then update `MintbaseAddress` in config file and set the address.
 
 Now you can start the node and sync with the mainnet. This may take several hours:
 
+:::: tabs type:border-card
+
+::: tab 🪟 Window
+
+```
+zarb start -w c:\zarb\mainnet
+```
+
+:::
+
+::: tab 🐧 Linux and 🍏 Mac
+
 ```
 zarb start -w ~/zarb/mainnet
 ```
+
+:::
+
+::::
 
 ## Enter committee
 
