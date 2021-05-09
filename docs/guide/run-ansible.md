@@ -62,9 +62,6 @@ Also if you have installed firewall in your server machine, make sure these port
 - 8080 for gRPC gateway
 - 9090 for gRPC
 
-For running Zarb you can either [download](https://github.com/zarbchain/zarb-go/releases) the latest
-precompiled binaries or [compile](./run-compile.md) it from the source code.
-
 First you need to clone this repository:
 
 ```
@@ -78,15 +75,17 @@ Open `inventory.yml` and update `ansible_host` with your server remote ip addres
 Run `ansible all -m gather_facts` to make sure ansible works fine.
 
 Now, you need to generate two keys in your local machine. One for the validator and another for
-collecting the rewards.
+collecting the rewards. To generate new keys you needs to execute the Zarb in your local machine.
+You can either [download](https://github.com/zarbchain/zarb-go/releases) the latest precompiled
+binaries or [compile](./run-compile.md) it from the source code.
 
 :::: tabs type:border-card
 
 ::: tab 🪟 Window
 
 ```
-zarb key generate -p /zarb/keystore/validator_key.json
-zarb key generate -p /zarb/keystore/mintbase_key.json
+zarb key generate -p c:\zarb\keystore\validator_key.json
+zarb key generate -p c:\zarb\keystore\mintbase_key.json
 ```
 
 This command will generate new keys and save them at: `c:\zarb\keystore\`
@@ -96,8 +95,8 @@ This command will generate new keys and save them at: `c:\zarb\keystore\`
 ::: tab 🐧 Linux and 🍏 Mac
 
 ```
-zarb key generate -p /zarb/keystore/validator_key.json
-zarb key generate -p /zarb/keystore/mintbase_key.json
+zarb key generate -p ~/zarb/keystore/validator_key.json
+zarb key generate -p ~/zarb/keystore/mintbase_key.json
 ```
 
 This command will generate new keys and save them at: `~/zarb/keystore/`
@@ -127,7 +126,7 @@ Before creating Ansible Vault, you need to know the private key for the validato
 ::: tab 🪟 Window
 
 ```
-zarb key inspect -e /zarb/keystore/validator_key.json
+zarb key inspect -e c:\zarb\keystore\validator_key.json
 ```
 
 :::
@@ -135,7 +134,7 @@ zarb key inspect -e /zarb/keystore/validator_key.json
 ::: tab 🐧 Linux and 🍏 Mac
 
 ```
-zarb key inspect -e /zarb/keystore/validator_key.json
+zarb key inspect -e ~/zarb/keystore/validator_key.json
 ```
 
 :::
