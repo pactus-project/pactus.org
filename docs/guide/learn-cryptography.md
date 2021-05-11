@@ -7,9 +7,8 @@ title: Cryptography
 
 ## Hashing Algorithm
 
-The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be
+The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be 
 a very fast cryptographic hash function.
-
 Example:
 
 ```
@@ -17,13 +16,9 @@ Message: "zarb"
 Hash256: 12b38977f2d67f06f0c0cd54aaf7324cf4fee184398ea33d295e8d1543c2ee1a
 ```
 
-## cryptographic signature scheme
+## Cryptographic Signature Scheme
 
-Zarb is using [BLS](https://en.wikipedia.org/wiki/BLS_digital_signature) threshold signature
-(Boneh–Lynn–Shacham) for cryptographic signing and verification.
-[Herumi](https://github.com/herumi/bls) is an implementation of BLS threshold signature, which we
-are using in Zarb blockchain.
-
+Zarb is using [BLS](https://en.wikipedia.org/wiki/BLS_digital_signature) (Boneh–Lynn–Shacham) threshold signature for cryptographic signing and verification. In Zarb blockchain, we are using [Herumi](https://github.com/herumi/bls), an implementation of BLS threshold signature.
 ### Example
 
 ```
@@ -41,19 +36,18 @@ Message:
 ```
 
 ### Signature aggregation
-
-One of the advantages of BLS Signatures, is signature aggregation. In BLS individual signatures can
-be combined into a single aggregate signature so that overall size does not grow beyond 1 signature.
+One of the advantages of BLS signatures is signature aggregation. 
+BLS individual signatures can be combined into a single aggregate signature so that the overall size does not grow beyond 1 signature.
 
 ## Address conversion
 
-Address in Zarb is 160-bit hash of the public key hash (RIPEMD-160 after Blake2b):
+Address in Zarb is 160-bit hash of the public key hash.(RIPEMD-160 after Blake2b):
 
 ```go
 AddressBytes = Hash160(Hash256(PublicKey))
 ```
 
-The result will convert from byte string into a bech32 [^first] string.
+The result will convert from a byte string into a bech32 [^first] string.
 
 ### Example:
 
@@ -70,7 +64,7 @@ zrb17mka0cw484es5whq638xkm89msgzczmrwy64dy
 
 ### Treasury address
 
-Treasury address in Zarb is defined like below:
+Treasury address in Zarb is defined as seen below:
 
 ```
 TreasuryAddress: 0000000000000000000000000000000000000000
