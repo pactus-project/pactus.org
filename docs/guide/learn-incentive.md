@@ -7,14 +7,16 @@ title: Incentive
 
 ## Deflationary economic model
 
-Zarb is a deflationary blockchain same as Bitcoin. Total number of coin in Zarb is 21 million and it
-set at genesis time. Zarb doesn't have any pre-minted token or privileged account.
+Zarb is a deflationary blockchain, same as in the case of Bitcoin. The total number of coins in Zarb
+is 21 million and it is set at genesis time. Zarb does not have any pre-minted token or privileged
+account.
 
 ## Flat reward
 
-The incentive may help encourage nodes to stay honest[^first]. To have better understanding about
-incentive model in Zarb, let's do a comparison with bitcoin incentive and reward distribution model.
-We use this comparison to show the difference. We love bitcoin and bitcoin is the king.
+The incentive may help encourage nodes to stay honest[^first]. To have a better understanding about
+the incentive model in Zarb, let's do a comparison with the Bitcoin incentive and reward
+distribution model. We will use this comparison to show the difference. We love Bitcoin and Bitcoin
+is the king.
 
 | Zarb                                             | Bitcoin                                      |
 | ------------------------------------------------ | -------------------------------------------- |
