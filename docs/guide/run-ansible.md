@@ -26,10 +26,19 @@ From [OpenSource.com](https://opensource.com/resources/what-ansible)
 
 ![Deploy Zarb using ansible](../assets/images/zarb-ansible.png)
 
+::: warning Ansible on Windows
+
+Unfortunately Windows is
+[not supported](http://blog.rolpdog.com/2020/03/why-no-ansible-controller-for-windows.html) for the
+control node. If you want to run an Ansible controller on Windows, use WSL.
+
+:::
+
 ## Why ansible?
 
 Deploying Zarb is not a one time task. You may update the node time to time or change the
-configuration or even restart the node. Ansible helps you to automate the deployment process.
+configuration or even restart the node. Ansible helps you to automate the deployment process. If you
+are going to run a full node in Zarb, we recommend to use Ansible or Terraform for deploying Zarb.
 
 ## Requirements
 
@@ -79,21 +88,6 @@ collecting the rewards. To generate new keys you needs to execute the Zarb in yo
 You can either [download](https://github.com/zarbchain/zarb-go/releases) the latest precompiled
 binaries or [compile](./run-compile.md) it from the source code.
 
-:::: tabs type:border-card
-
-::: tab 🪟 Window
-
-```
-zarb key generate -p c:\zarb\keystore\validator_key.json
-zarb key generate -p c:\zarb\keystore\mintbase_key.json
-```
-
-This command will generate new keys and save them at: `c:\zarb\keystore\`
-
-:::
-
-::: tab 🐧 Linux and 🍏 Mac
-
 ```
 zarb key generate -p ~/zarb/keystore/validator_key.json
 zarb key generate -p ~/zarb/keystore/mintbase_key.json
@@ -101,9 +95,6 @@ zarb key generate -p ~/zarb/keystore/mintbase_key.json
 
 This command will generate new keys and save them at: `~/zarb/keystore/`
 
-:::
-
-::::
 
 ::: warning
 
@@ -121,25 +112,9 @@ encrypts variables so you can protect sensitive content such as secret keys.
 Before creating Ansible Vault, you need to know the private key for the validator. Using
 `zarb inspect` command you can see the private key.
 
-:::: tabs type:border-card
-
-::: tab 🪟 Window
-
-```
-zarb key inspect -e c:\zarb\keystore\validator_key.json
-```
-
-:::
-
-::: tab 🐧 Linux and 🍏 Mac
-
 ```
 zarb key inspect -e ~/zarb/keystore/validator_key.json
 ```
-
-:::
-
-::::
 
 Copy the private key. You will need to paste in inside Ansible Vault in the next step.
 
@@ -201,7 +176,6 @@ Now you can deploy Zarb by running deploy playbook:
 
 ```
 ansible-playbook --ask-become-pass --vault-id tasks/vault@prompt tasks/deploy.yml
-
 ```
 
 Now you can check "http://<ip_address>:8080" to see if your node works fine and it's syncing with
