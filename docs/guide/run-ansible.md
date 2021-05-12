@@ -61,14 +61,14 @@ collecting the rewards.
 
 :::: tabs type:border-card
 
-::: tab 🪟 Window
+::: tab PowerShell Windows ⊞
 
 ```
-docker run -i --rm -v %USERPROFILE%\zarb:/zarb zarb/zarb key generate -p /zarb/keystore/validator_key.json
-docker run -i --rm -v %USERPROFILE%\zarb:/zarb zarb/zarb key generate -p /zarb/keystore/mintbase_key.json
+docker run -i --rm -v $HOME\zarb:/zarb zarb/zarb key generate -p /zarb/keystore/validator_key.json
+docker run -i --rm -v $HOME\zarb:/zarb zarb/zarb key generate -p /zarb/keystore/mintbase_key.json
 ```
 
-This command will generate new keys and save them at: `c:\zarb\keystore\`
+This command will generate new keys and save them at: `$HOME\zarb\keystore\`
 
 :::
 
@@ -103,10 +103,10 @@ Before creating Ansible Vault, you need to know the private key for the validato
 
 :::: tabs type:border-card
 
-::: tab 🪟 Window
+::: tab PowerShell Windows ⊞
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/validator_key.json
+docker run -i --rm -v $HOME\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/validator_key.json
 ```
 
 :::

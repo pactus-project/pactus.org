@@ -23,7 +23,6 @@ From [OpenSource.com](https://opensource.com/resources/what-docker)
 ## Requirement
 
 The only thing you need is [installing docker](https://docs.docker.com/get-docker/) in your machine.
-If you are using Windows please make sure you have installed WSL.
 
 ## Docker images
 
@@ -41,12 +40,12 @@ Let's run the Zarb and join the TestNet. First we need to create a workspace for
 
 :::: tabs type:border-card
 
-::: tab 🪟 Window
+::: tab PowerShell Windows ⊞
 
-Creating workspace at `c:\zarb\testnet`:
+Creating workspace at `$HOME\zarb\testnet`:
 
 ```
-docker run -it --rm -v c:\zarb\testnet:/zarb zarb/zarb init -w /zarb --testnet
+docker run -it --rm -v $HOME\zarb\testnet:/zarb zarb/zarb init -w /zarb --testnet
 ```
 
 :::
@@ -67,10 +66,10 @@ Now you can join the TestNet.
 
 :::: tabs type:border-card
 
-::: tab 🪟 Window
+::: tab PowerShell Windows ⊞
 
 ```
-docker run -it -v c:\zarb\testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
+docker run -it -v $HOME\zarb\testnet:/zarb -p 8080:8080 --name zarb-testnet zarb/zarb start -w /zarb
 ```
 
 :::
@@ -100,10 +99,10 @@ You can use docker to generate new keys or inspect them:
 
 :::: tabs type:border-card
 
-::: tab 🪟 Window
+::: tab PowerShell Windows ⊞
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/private_key_1.json
+docker run -i --rm -v $HOME\zarb\:/zarb zarb/zarb key generate -p /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -124,10 +123,10 @@ You can also inspect a key:
 
 :::: tabs type:border-card
 
-::: tab 🪟 Window
+::: tab PowerShell Windows ⊞
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect /zarb/keystore/private_key_1.json
+docker run -i --rm -v $HOME\zarb\:/zarb zarb/zarb key inspect /zarb/keystore/private_key_1.json
 ```
 
 :::
@@ -147,10 +146,10 @@ caution.
 
 :::: tabs type:border-card
 
-::: tab 🪟 Window
+::: tab PowerShell Windows ⊞
 
 ```
-docker run -i --rm -v c:\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/private_key_1.json
+docker run -i --rm -v $HOME\zarb\:/zarb zarb/zarb key inspect -e /zarb/keystore/private_key_1.json
 ```
 
 :::
