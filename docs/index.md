@@ -12,14 +12,14 @@ footer: "Made with ❤️"
 
 <div class="features">
   <div class="feature">
-    <a href="guide/run-index/">
+    <a href="/guide/run-index">
       <h2>Run</h2>
       <p>How to build and run Zarb blockchain</p>
     </a>
   </div>
 
   <div class="feature">
-    <a href="guide/learn-index/">
+    <a href="/guide/learn-index">
       <h2>Learn</h2>
       <p>Learn more about Zarb blockchain</p>
     </a>
