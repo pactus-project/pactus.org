@@ -108,7 +108,7 @@ module.exports = {
       ],
       "dev":[
         {
-          title: "Run",
+          title: "Dev",
           collapsable: false,
           children: [
             "index"
