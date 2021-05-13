@@ -1,6 +1,6 @@
 ---
 id: learn-consensus
-title: Sortition algorithm
+title: Sortition Algorithm
 ---
 
 # Sortition Algorithm
