@@ -1,15 +1,16 @@
 ---
 id: learn-certificate
-title: Block certificate
+title: Block Certificate
 ---
 
-# Block certificate
+# Block Certificate
 
-## What is certificate?
+## What Is Certificate?
 
 Block certificate holds the proof of commitment for the block.
 
-## Certificate structure
+
+## Certificate Structure
 
 Each block certificate contains following information:
 
@@ -51,8 +52,7 @@ format:
 }
 ```
 
-Certificate hash is hash of the certificate in binary format. For this example the certificate hash
-is:
+Certificate hash is the hash of the certificate in binary format. For this example, the certificate hash is:
 
 ```
 0x74fabc0be964b5373800026923b1bb66bf4042d6856396511aebe083c773ee9a
