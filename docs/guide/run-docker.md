@@ -20,24 +20,24 @@ From [OpenSource.com](https://opensource.com/resources/what-docker)
 
 :::
 
-## Requirement
+## Requirements
 
 The only thing you need is [installing docker](https://docs.docker.com/get-docker/) in your machine.
 If you are using Windows please make sure you have installed WSL.
 
-## Docker images
+## Docker Images
 
 The Zarb docker images are available at [Docker Hub](https://hub.docker.com/r/zarb/zarb).
 
-You can pull the latest image by this command:
+You can pull the latest image with this command:
 
 ```
 docker pull zarb/zarb
 ```
 
-## Running Zarb using Docker
+## Running Zarb Using Docker
 
-Let's run the Zarb and join the TestNet. First we need to create a workspace for the TestNet.
+Let's run Zarb and join the TestNet. Firstly, we need to create a workspace for the TestNet.
 
 :::: tabs type:border-card
 
@@ -94,7 +94,7 @@ docker stop zarb-testnet
 docker start zarb-testnet
 ```
 
-## Key generation and inspection
+## Key Generation and Inspection
 
 You can use docker to generate new keys or inspect them:
 
@@ -142,8 +142,7 @@ docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key inspect /zarb/keystore/private
 
 ::::
 
-If you want to see the private key, run inspect command with `-e` flag. Run this flag with great
-caution.
+If you want to see the private key, run inspect command with -e flag. Run this flag with great caution.
 
 :::: tabs type:border-card
 
