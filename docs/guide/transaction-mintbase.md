@@ -1,13 +1,14 @@
 ---
 id: transaction-mintbase
-title: Mintbase transaction
+title: Mintbase Transaction
 ---
 
-# Mintbase transaction
+# Mintbase Transaction
 
-Mintbase transaction is the first transaction in each block. The format of mintbase transaction is
-same as [send transaction](./transaction-send.md) but the fee is zero.
+Mintbase transaction is the first transaction in each block. The format of mintbase transaction is 
+the same as [send transaction](./transaction-send.md) but the fee is zero.
 
-Sender address is Treasury address and receiver address defines by the validator. The amount of
-mintbase transaction should be equal to the block rewards plus transactions fee. This amount will go
-to validator account as block reward.
+Sender address is the Treasury address and receiver address is defined by the validator. The amount of 
+mintbase transaction should be equal to the block rewards plus transaction fee. This amount will go 
+to the validator account as block reward.
+
