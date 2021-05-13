@@ -24,7 +24,7 @@ type Certificate struct {
 }
 ```
 
-## Certificate verification
+## Certificate Verification
 
 For each round validators cast their votes by signing `BlockHash | Round`. A valid certificate
 should have signature from validators with more than 2/3 of the stake for that round. If enough
