@@ -5,13 +5,13 @@ title: Account
 
 # Account
 
-## What is account?
+## What is Account?
 
 Account structure is used to hold the balance and sequence number of an account.
 
-## Account structure
+## Account Structure
 
-The format of account is like below:
+The format of the account is as seen below:
 
 ```go
 type Account struct {
@@ -46,7 +46,7 @@ format:
 }
 ```
 
-Account hash is hash of the account in binary format. For this example the account hash is:
+Account Hash is the hash of the account in binary format. For this example the account hash is:
 
 ```
 0x8b66cb22841238f424835e6e7313cff870dfe9b851e958eb5b3bf842acc20e1d
