@@ -5,16 +5,16 @@ title: Block
 
 # Block
 
-## What is block?
+## What Is Block?
 
-Blocks contains the header and transactions in form of their IDs. Each block in Zarb have a unique
-[certificate](./learn-certificate.md) that is signed by committee members. A block will be committed
-if it has a valid certificate. Blocks are immutable and any changes in block will invalidate the
+Blocks contain the header and transactions in the form of their IDs. Each block in Zarb has a unique 
+[certificate](./learn-certificate.md) that is signed by committee members. A block will be committed 
+if it has a valid certificate. Blocks are immutable and any changes in the block will invalidate the 
 certificate.
 
-## Block header
+## Block Header
 
-Header includes main information about the block.
+The header includes the main information about the block.
 
 ```go
 type Header struct {
@@ -31,17 +31,16 @@ type Header struct {
 
 - `Version` starts from 1 for the mainnet and starts from 1001 for the testnet
 - `UnixTime` is the time of block in unix format (seconds from Unix Epoch)
-- `LastBlockHash` is the hash of previous block
-- `StateHash` is the [state merkle root](./learn-state-hash.md) at current height
+- `LastBlockHash` is the hash of the previous block
+- `StateHash` is the [state merkle root](./learn-state-hash.md) at the current height
 - `TxIDsHash` is the merkle root of the transaction IDs included in this block
-- `LastCertificateHash` is the hash of last block certificate. This ensures that previous block has
-  a valid certificate
+- `LastCertificateHash` is the hash of last block certificate. This ensures that the previous block has a valid certificate
 - `SortitionSeed` is the seed for the sortition algorithm and must be signed by the proposer
 - `ProposerAddress` is the address of block proposer
 
 ## Transaction IDs
 
-TxIDs contains the list of transaction IDs in the block.
+TxIDs contain the list of transaction IDs in the block.
 
 ```go
 type TxIDs struct {
@@ -49,8 +48,8 @@ type TxIDs struct {
 }
 ```
 
-Transactions in Zarb are [stamped](./transaction-stamping.md), therefore there is no need to store
-transaction body inside the block. Saving ID is fair enough.
+Transactions in Zarb are [stamped](./transaction-stamping.md),  therefore, 
+there is no need to store the transaction body inside the block. Saving ID is fair enough.
 
 ## Example
 
@@ -75,7 +74,7 @@ format:
 }
 ```
 
-Block hash is hash of the header in binary format. For this example the block hash is:
+Block hash is the hash of the header in binary format. For this example, the block hash is: 
 
 ```
 0x0ca12eee3c791ba4b78439448d59a4b817d1eaec10aa090ea40f9af3d43e6e2b
