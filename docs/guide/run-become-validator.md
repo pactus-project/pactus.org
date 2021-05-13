@@ -1,18 +1,18 @@
 ---
 id: run-validator
-title: Become a validator
+title: Become A Validator
 ---
 
-# Become a validator
+# Become A Validator
 
 Now, you are ready to create a full node and become a validator in Zarb network. For running Zarb
 you can either [download](https://github.com/zarbchain/zarb-go/releases) the latest precompiled
 binaries or [compile](./run-compile.md) it from the source code.
 
-## Initializing working directory
+## Initializing Working Directory
 
-Now you need to create a working directory for you validator. A working directory is a place that
-you save blockchain data, config and key files.
+Now, you need to create a working directory for your validator. A working directory is a place 
+where you save blockchain data, config and key files.
 
 :::: tabs type:border-card
 
@@ -22,7 +22,7 @@ you save blockchain data, config and key files.
 zarb init -w c:\zarb\mainnet --mainnet
 ```
 
-This command will create the working directory for the mainnet at `c:\zarb\mainnet`.
+This command creates a working directory for the mainnet at `c:\zarb\mainnet`.
 
 :::
 
@@ -32,7 +32,7 @@ This command will create the working directory for the mainnet at `c:\zarb\mainn
 zarb init -w ~/zarb/mainnet --mainnet
 ```
 
-This command will create the working directory for the mainnet at `~/zarb/mainnet`.
+This command creates a working working directory for the mainnet at `~/zarb/mainnet`.
 
 :::
 
@@ -46,11 +46,11 @@ Working directory contains:
 
 Feel free to take a look at these files.
 
-## Update Mintbase address
+## Update Mintbase Address
 
-Mintbase account is the account that you receive your reward when you propose a new block. If you
-don't define a Mintbase address, the rewards will goes to the same account with your validator key.
-We highly recommend you to define separate address to collect your reward.
+Mintbase account is the account where you receive your reward when you propose a new block. If you 
+do not define a Mintbase address, the rewards will go to the same account with your validator key. 
+We highly recommend you define a separate address to collect your reward.
 
 You can generate new key like this:
 
@@ -60,7 +60,7 @@ zarb key generate
 
 Then update `MintbaseAddress` in config file and set the address.
 
-## Syncing blockchain
+## Syncing Blockchain
 
 Now you can start the node and sync with the mainnet. This may take several hours:
 
@@ -84,10 +84,10 @@ zarb start -w ~/zarb/mainnet
 
 ::::
 
-## Enter committee
+## Enter Committee
 
 After syncing with the main net, you need to send a [bond transaction](./transaction-bond.md) to
-bond some of your token as stake and enter the validator pool.
+bond some of your tokens as stake and enter the validator pool.
 
 After you join the validator pool, the [sortition](./consensus-sortition.md) algorithm starts
 working and after a while you will enter to [committee](./learn-committee).

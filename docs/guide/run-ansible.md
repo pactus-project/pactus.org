@@ -1,14 +1,13 @@
 ---
 id: run-ansible
-title: Deploy using Ansible
+title: Deploy Using Ansible
 ---
 
-# Deploy using Ansible
+# Deploy Using Ansible
 
-In this tutorial you will learn how to deploy Zarb into your Virtual Private Server (VPS) without
-compiling Zarb and using docker.
+In this tutorial, you will learn how to deploy Zarb into your Virtual Private Server (VPS) without compiling Zarb and using docker.
 
-## 🎮 What is Ansible?
+## 🎮 What Is Ansible?
 
 ::: quote
 
@@ -34,7 +33,7 @@ control node. If you want to run an Ansible controller on Windows, use WSL.
 
 :::
 
-## Why ansible?
+## Why Ansible?
 
 Deploying Zarb is not a one time task. You may update the node time to time or change the
 configuration or even restart the node. Ansible helps you to automate the deployment process. If you
@@ -45,7 +44,7 @@ are going to run a full node in Zarb, we recommend to use Ansible or Terraform f
 Using a linux cloud server is the best way to run a validator in Zarb network. You may get a virtual
 private server from providers like Amazon, Microsoft, Linde, Alibaba, ArvanCloud, etc.
 
-### Recommended hardwares
+### Recommended Hardware
 
 - Processor: Two dedicated core of CPU
 - Memory: Two gigabyte of RAM
@@ -152,7 +151,7 @@ Address in Zarb starts with `zrb1...`
 
 :::
 
-## Installing Ansible plugins
+## Installing Ansible Plugins
 
 Before deploying Zarb, you have to install two plugins for Ansible.
 

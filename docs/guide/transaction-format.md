@@ -5,11 +5,11 @@ title: Transaction format in Zarb
 
 # Transaction
 
-## What is transaction?
+## What Is Transaction?
 
-## Transaction format
+## Transaction Format
 
-Transactions in zarb are like below:
+Transactions in Zarb are as seen below:
 
 ```go
 type Transaction struct {
@@ -39,8 +39,8 @@ Comment:
 
 - The payload will be decoded based on payload type
 - Sign bytes are CBOR data of tx without public key and signature
-- Transaction id is the hash of sign bytes
+- Transaction ID is the hash of sign bytes
 
 ## Transaction ID
 
-Transaction ID is the hash of transaction without public key and signature.
+Transaction ID is the hash of a transaction without a public key and signature.

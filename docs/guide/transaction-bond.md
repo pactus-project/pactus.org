@@ -1,16 +1,17 @@
 ---
 id: transaction-bond
-title: Bond transaction
+title: Bond Transaction
 ---
 
-# Bond transaction
+# Bond Transaction
 
-Bond transaction is used to bond stake to a validator. If validator doesn't exist it will be
+Bond transaction is used to bond stake to a validator. If the validator does not exist, it will be 
 created.
+
 
 # Payload format
 
-Bond transaction has a payload like below:
+Bond transaction has a payload as seen below:
 
 ```go
 type BondPayload struct {
@@ -53,7 +54,7 @@ format:
 }
 ```
 
-Transaction id for above transaction is:
+Transaction ID for the above transaction is:
 
 ```
 ID: fe2c044aa57e473fcf1fb344db515bc0a3fa825e317c772801f75573031a10a0
