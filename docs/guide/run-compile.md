@@ -5,7 +5,7 @@ title: Compile Zarb
 
 # Compile Zarb
 
-## 🏗️ Compile from source code
+## 🏗️ Compile From Source Code
 
 Compiling Zarb is easy. The only thing you need is downloading and installing
 [go](https://golang.org/doc/install).
@@ -29,7 +29,7 @@ Run this command to make sure the Zarb is successfully compiled and installed in
 zarb version
 ```
 
-## Key generation and inspection
+## Key Generation and Inspection
 
 You can generate new keys or inspect them:
 
@@ -43,7 +43,7 @@ You can inspect the key and check the public key:
 zarb key inspect ~/zarb/keystore/private_key_1.json
 ```
 
-If you want to see the private key, run inspect command with `-e` flag. Run this flag with great
+If you want to see the private key, run inspect command with -e flag. Run this flag with great caution.
 
 ```
 zarb key inspect -e ~/zarb/keystore/private_key_1.json
