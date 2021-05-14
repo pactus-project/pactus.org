@@ -36,7 +36,7 @@ module.exports = {
     lastUpdated: "Last Updated",
     editLinks: true,
     editLinkText: "Help us improve this page!",
-    sidebarDepth:0,
+    sidebarDepth: 0,
     nav: [
       {
         text: "What is Zarb",
@@ -112,35 +112,36 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-    'vuepress-plugin-element-tabs',
-    'vuepress-plugin-smooth-scroll',
-    'vuepress-plugin-zooming',
-    '@vuepress/nprogress',
-    '@vuepress/pwa',
-    'vuepress-plugin-code-copy',
-    '@vuepress/active-header-links', {
+  plugins: {
+    '@vuepress/plugin-back-to-top': {},
+    '@vuepress/plugin-medium-zoom': {},
+    'vuepress-plugin-element-tabs': {},
+    'vuepress-plugin-smooth-scroll': {},
+    'vuepress-plugin-zooming': {
+      selector: ' :not(a) > img',
+      options: {
+        margin: 16
+      }
+    },
+    '@vuepress/nprogress': {},
+    '@vuepress/pwa': {},
+    'vuepress-plugin-code-copy': {},
+    '@vuepress/active-header-links': {
       sidebarLinkSelector: '.sidebar-link',
       headerAnchorSelector: '.header-anchor'
     },
-    'sitemap', {
+    'sitemap': {
       hostname: 'https://zarb.network'
     },
-    [
-      'vuepress-plugin-container', {
-        type: 'right',
-        defaultTitle: '',
-      },
-    ],
-    [
-      'vuepress-plugin-container', {
-        type: 'quote',
-        defaultTitle: '',
-      },
-    ],
-  ],
+    'vuepress-plugin-container': {
+      type: 'right',
+      defaultTitle: '',
+    },
+    'vuepress-plugin-container': {
+      type: 'quote',
+      defaultTitle: '',
+    },
+  },
   markdown: {
     lineNumbers: false, // Whether to show line numbers to the left of each code blocks.
     extendMarkdown: md => {
