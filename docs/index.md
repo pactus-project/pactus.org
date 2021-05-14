@@ -7,8 +7,13 @@ footer: "Made with ❤️"
 ---
 
 <div style="text-align: center">
-  <Bit/>
+Blockchain of the people, by the people, for the people
 </div>
+
+<br>
+<br>
+<br>
+<br>
 
 <div class="features">
   <div class="feature">
@@ -31,6 +36,11 @@ footer: "Made with ❤️"
     </a>
   </div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
 
 <div class="discord">
   <a href="https://discord.gg/zPqWqV85ch" target="_blank"><img height=60 src="./assets/images/Discord-Logo+Wordmark-Color.svg" /></a>
