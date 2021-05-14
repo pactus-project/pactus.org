@@ -5,9 +5,8 @@ title: Bond Transaction
 
 # Bond Transaction
 
-Bond transaction is used to bond stake to a validator. If the validator does not exist, it will be 
+Bond transaction is used to bond stake to a validator. If the validator does not exist, it will be
 created.
-
 
 # Payload format
 

@@ -7,9 +7,9 @@ title: Block
 
 ## What Is Block?
 
-Blocks contain the header and transactions in the form of their IDs. Each block in Zarb has a unique 
-[certificate](./learn-certificate.md) that is signed by committee members. A block will be committed 
-if it has a valid certificate. Blocks are immutable and any changes in the block will invalidate the 
+Blocks contain the header and transactions in the form of their IDs. Each block in Zarb has a unique
+[certificate](./learn-certificate.md) that is signed by committee members. A block will be committed
+if it has a valid certificate. Blocks are immutable and any changes in the block will invalidate the
 certificate.
 
 ## Block Header
@@ -34,7 +34,8 @@ type Header struct {
 - `LastBlockHash` is the hash of the previous block
 - `StateHash` is the [state merkle root](./learn-state-hash.md) at the current height
 - `TxIDsHash` is the merkle root of the transaction IDs included in this block
-- `LastCertificateHash` is the hash of last block certificate. This ensures that the previous block has a valid certificate
+- `LastCertificateHash` is the hash of last block certificate. This ensures that the previous block
+  has a valid certificate
 - `SortitionSeed` is the seed for the sortition algorithm and must be signed by the proposer
 - `ProposerAddress` is the address of block proposer
 
@@ -48,8 +49,8 @@ type TxIDs struct {
 }
 ```
 
-Transactions in Zarb are [stamped](./transaction-stamping.md),  therefore, 
-there is no need to store the transaction body inside the block. Saving ID is fair enough.
+Transactions in Zarb are [stamped](./transaction-stamping.md), therefore, there is no need to store
+the transaction body inside the block. Saving ID is fair enough.
 
 ## Example
 
@@ -74,7 +75,7 @@ format:
 }
 ```
 
-Block hash is the hash of the header in binary format. For this example, the block hash is: 
+Block hash is the hash of the header in binary format. For this example, the block hash is:
 
 ```
 0x0ca12eee3c791ba4b78439448d59a4b817d1eaec10aa090ea40f9af3d43e6e2b

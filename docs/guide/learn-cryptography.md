@@ -7,9 +7,8 @@ title: Cryptography
 
 ## Hashing Algorithm
 
-The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be 
-a very fast cryptographic hash function.
-Example:
+The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be
+a very fast cryptographic hash function. Example:
 
 ```
 Message: "zarb"
@@ -18,7 +17,10 @@ Hash256: 12b38977f2d67f06f0c0cd54aaf7324cf4fee184398ea33d295e8d1543c2ee1a
 
 ## Cryptographic Signature Scheme
 
-Zarb is using [BLS](https://en.wikipedia.org/wiki/BLS_digital_signature) (Boneh–Lynn–Shacham) threshold signature for cryptographic signing and verification. In Zarb blockchain, we are using [Herumi](https://github.com/herumi/bls), an implementation of BLS threshold signature.
+Zarb is using [BLS](https://en.wikipedia.org/wiki/BLS_digital_signature) (Boneh–Lynn–Shacham)
+threshold signature for cryptographic signing and verification. In Zarb blockchain, we are using
+[Herumi](https://github.com/herumi/bls), an implementation of BLS threshold signature.
+
 ### Example
 
 ```
@@ -36,8 +38,10 @@ Message:
 ```
 
 ### Signature aggregation
-One of the advantages of BLS signatures is signature aggregation. 
-BLS individual signatures can be combined into a single aggregate signature so that the overall size does not grow beyond 1 signature.
+
+One of the advantages of BLS signatures is signature aggregation. BLS individual signatures can be
+combined into a single aggregate signature so that the overall size does not grow beyond 1
+signature.
 
 ## Address conversion
 

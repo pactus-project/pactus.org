@@ -7,8 +7,8 @@ title: Validator
 
 ## What is Validator?
 
-Validator is a full node that participates in the consensus mechanism by broadcasting its votes. 
-Validators get rewards for proposing new blocks. Validators should bond tokens in the form of stake 
+Validator is a full node that participates in the consensus mechanism by broadcasting its votes.
+Validators get rewards for proposing new blocks. Validators should bond tokens in the form of stake
 and they are weighted by their boned stakes.
 
 ## Validator structure
@@ -57,7 +57,8 @@ format:
 }
 ```
 
-Validator Hash is the hash of the validator in binary format. For this example the validator hash is:
+Validator Hash is the hash of the validator in binary format. For this example the validator hash
+is:
 
 ```
 0xe31bf5a07ce7264cac6e9d4e3a071a4fcf92628b101c13f2e97cd7c34066b308

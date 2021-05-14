@@ -43,7 +43,8 @@ You can inspect the key and check the public key:
 zarb key inspect ~/zarb/keystore/private_key_1.json
 ```
 
-If you want to see the private key, run inspect command with -e flag. Run this flag with great caution.
+If you want to see the private key, run inspect command with -e flag. Run this flag with great
+caution.
 
 ```
 zarb key inspect -e ~/zarb/keystore/private_key_1.json
