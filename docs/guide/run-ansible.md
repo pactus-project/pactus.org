@@ -5,7 +5,8 @@ title: Deploy Using Ansible
 
 # Deploy Using Ansible
 
-In this tutorial, you will learn how to deploy Zarb into your Virtual Private Server (VPS) without compiling Zarb and using docker.
+In this tutorial, you will learn how to deploy Zarb into your Virtual Private Server (VPS) without
+compiling Zarb and using docker.
 
 ## 🎮 What Is Ansible?
 
@@ -60,9 +61,16 @@ sever more secure.
 ## Step by Step
 
 Make sure you have installed
-[Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) and
-[Docker](https://docs.docker.com/get-docker/) in your local machine and you have
+[Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) in
+your local machine and you have
 [access to your server through SSH](https://www.google.com/search?q=access+to+your+server+through+SSH).
+
+::: tip
+
+All the commands in this tutorial will be run in your local machine (probably your laptop) and you
+don't need to ssh into your server.
+
+:::
 
 Also if you have installed firewall in your server machine, make sure these port are open:
 
@@ -93,7 +101,6 @@ zarb key generate -p ~/zarb/keystore/mintbase_key.json
 ```
 
 This command will generate new keys and save them at: `~/zarb/keystore/`
-
 
 ::: warning
 
