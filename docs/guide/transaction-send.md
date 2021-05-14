@@ -5,8 +5,8 @@ title: Send Transaction
 
 # Send Transaction
 
-Send transaction is used to send values between the accounts. If the receiver account does not exist, 
-it will be created.
+Send transaction is used to send values between the accounts. If the receiver account does not
+exist, it will be created.
 
 Send transaction has a payload like below:
 
@@ -68,11 +68,12 @@ Transaction ID for the above transaction is:
 ID: 38ea1ad335bbfd84641a34b6af3332810aef8e52da08897273f187fd6059c50a
 ```
 
-Comments: 
+Comments:
+
 - Fee is calculated based on the fee structure which we have defiend
-- Fee for mintbase transaction (subsidy tx) is zero 
-- Amount for subsidy transaction is reward + accumulated fee 
-- There is only one subsidy transaction per block 
-- Subsidy transaction should be the first transaction 
-- Each block should have one subsidy transaction 
+- Fee for mintbase transaction (subsidy tx) is zero
+- Amount for subsidy transaction is reward + accumulated fee
+- There is only one subsidy transaction per block
+- Subsidy transaction should be the first transaction
+- Each block should have one subsidy transaction
 - Receiver for subsidy transaction can be any address

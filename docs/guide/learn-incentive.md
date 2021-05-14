@@ -7,14 +7,15 @@ title: Incentive
 
 ## Deflationary Economic Model
 
-Zarb is a deflationary blockchain, same as in the case of Bitcoin. The total number of coins in Zarb 
-is 21 million and it is set at genesis time. Zarb does not have any pre-minted token or privileged account.
+Zarb is a deflationary blockchain, same as in the case of Bitcoin. The total number of coins in Zarb
+is 21 million and it is set at genesis time. Zarb does not have any pre-minted token or privileged
+account.
 
 ## Flat Reward
 
-The incentive may help encourage nodes to stay honest[^first]. To have a better understanding about 
-the incentive model in Zarb, let's do a comparison with the Bitcoin incentive and reward 
-distribution model. We will use this comparison to show the difference. We love Bitcoin and Bitcoin 
+The incentive may help encourage nodes to stay honest[^first]. To have a better understanding about
+the incentive model in Zarb, let's do a comparison with the Bitcoin incentive and reward
+distribution model. We will use this comparison to show the difference. We love Bitcoin and Bitcoin
 is the king.
 
 | Zarb                                             | Bitcoin                                      |
@@ -25,18 +26,18 @@ is the king.
 | Always one coin per block                        | Initial block reward is 50 coin              |
 | No halving                                       | Halving happens every 4 years                |
 
-The way Bitcoin distributes the tokens is a good solution for Proof-of-Work blockchain. Early 
-contributors in Bitcoin collect most of the tokens. This scheme in Proof-of-Stake blockchain will 
-damage the network by powering early contributors. Simply because the validators are weighed by 
+The way Bitcoin distributes the tokens is a good solution for Proof-of-Work blockchain. Early
+contributors in Bitcoin collect most of the tokens. This scheme in Proof-of-Stake blockchain will
+damage the network by powering early contributors. Simply because the validators are weighed by
 their stake. More stake, more power.
 
 ![Rewards in Bitcoin](../assets/images/bitcoin_reward.png)
 
 ![Rewards in Zarb](../assets/images/zarb_reward.png)
 
-In Zarb, the token distribution is flat. It means the reward for each block is fixed and does not change 
-over time. There is no halving in Zarb. The flat reward is a part of the consensus parameters and, for
-the main net, it sets one coin per block.
+In Zarb, the token distribution is flat. It means the reward for each block is fixed and does not
+change over time. There is no halving in Zarb. The flat reward is a part of the consensus parameters
+and, for the main net, it sets one coin per block.
 
 ![Token distribution in Bitcoin](../assets/images/bitcoin_token_distribution.png)
 
@@ -44,8 +45,8 @@ the main net, it sets one coin per block.
 
 ## Treasury Account
 
-A Treasury account is a special account and is defined at the genesis time. The treasury account at the 
-genesis time holds the total coins (21 million).
+A Treasury account is a special account and is defined at the genesis time. The treasury account at
+the genesis time holds the total coins (21 million).
 
 ## Reward Transaction
 

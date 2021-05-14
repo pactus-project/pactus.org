@@ -142,7 +142,8 @@ docker run -i --rm -v ~/zarb/:/zarb zarb/zarb key inspect /zarb/keystore/private
 
 ::::
 
-If you want to see the private key, run inspect command with -e flag. Run this flag with great caution.
+If you want to see the private key, run inspect command with -e flag. Run this flag with great
+caution.
 
 :::: tabs type:border-card
 

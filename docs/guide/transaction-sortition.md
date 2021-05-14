@@ -5,7 +5,7 @@ title: Sortition Transaction
 
 # Sortition Transaction
 
-Sortition transaction is used to enter a validator in the set for the next run. Sortition 
+Sortition transaction is used to enter a validator in the set for the next run. Sortition
 transactions are valid for 21 heights.
 
 The sortition transaction has a payload like below:

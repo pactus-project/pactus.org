@@ -11,8 +11,8 @@ binaries or [compile](./run-compile.md) it from the source code.
 
 ## Initializing Working Directory
 
-Now, you need to create a working directory for your validator. A working directory is a place 
-where you save blockchain data, config and key files.
+Now, you need to create a working directory for your validator. A working directory is a place where
+you save blockchain data, config and key files.
 
 :::: tabs type:border-card
 
@@ -48,8 +48,8 @@ Feel free to take a look at these files.
 
 ## Update Mintbase Address
 
-Mintbase account is the account where you receive your reward when you propose a new block. If you 
-do not define a Mintbase address, the rewards will go to the same account with your validator key. 
+Mintbase account is the account where you receive your reward when you propose a new block. If you
+do not define a Mintbase address, the rewards will go to the same account with your validator key.
 We highly recommend you define a separate address to collect your reward.
 
 You can generate new key like this:
