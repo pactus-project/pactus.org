@@ -1,13 +1,13 @@
 ---
 home: true
-tagline: Zarb Blockchain
+heroText: Zarb Blockchain
+tagline: Of the people, By the people, For the people
 actionText: Learn more →
 actionLink: /guide/learn-index
 footer: "Made with ❤️"
 ---
 
 <div style="text-align: center">
-Blockchain of the people, by the people, for the people
 </div>
 
 <br>
