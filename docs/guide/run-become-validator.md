@@ -44,7 +44,32 @@ Working directory contains:
 - Genesis file
 - Config file
 
-Feel free to take a look at these files.
+Feel free to take a look at these files. The validator private key is automatically generated for
+you. If you have another key for the validator you can replace it. To inspect the validator private
+key, run this command:
+
+:::: tabs type:border-card
+
+::: tab 🪟 Window
+
+```
+zarb key inspect c:\zarb\mainnet\validator_key.json
+```
+
+:::
+
+::: tab 🐧 Linux and 🍏 Mac
+
+```
+zarb key inspect ~/zarb/mainnet/validator_key.json
+```
+
+:::
+
+::::
+
+This command shows the address and public key of your validator. You are responsible for the safety
+of your validator key.
 
 ## Update Mintbase Address
 
@@ -58,7 +83,8 @@ You can generate new key like this:
 zarb key generate
 ```
 
-Then update `MintbaseAddress` in config file and set the address.
+Then update `MintbaseAddress` in config file and set the address. Also it's good to give a name or
+moniker to your node by updating the `Moniker` in config file.
 
 ## Syncing Blockchain
 
@@ -94,5 +120,10 @@ working and after a while you will enter to [committee](./learn-committee).
 
 When you enter the committee, you will have the chance to propose and validate the blocks. Any time
 you propose a new block, you will get the [rewards](./learn-incentive.md).
+
+## Find your way
+
+In this document we tried to explain a simple way to run a validator in Zarb network. you may do
+it in a different way. Find your way of deployment. But never forget that security first!
 
 Good luck 🍀
