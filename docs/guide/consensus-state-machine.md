@@ -7,11 +7,9 @@ title: Consensus as state machine
 
 ## State Machine
 
-Zarb consensus algorithm is a state machine [^first] replication with Byzantine fault tolerance. The
-consensus algorithm is in one the following states [^second] at any given time.
-
-The Zarb consensus algorithm is a state machine [^first] replication with Byzantine fault tolerance.
-The consensus algorithm is in one the following states [^second] at any given time.
+Zarb consensus algorithm is a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
+replication with [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault) tolerance. The
+consensus algorithm at any given time is in one the following states:
 
 - New Height state
 - Propose state
@@ -22,9 +20,4 @@ The consensus algorithm is in one the following states [^second] at any given ti
 
 ![Zarb consensus states](../assets/images/zarb-consensus-states.png)
 
-[^first]: [State machines](https://en.wikipedia.org/wiki/Finite-state_machine)
-[^second]:
-    [James Rumbaugh](https://en.wikipedia.org/wiki/James_Rumbaugh) defines state as follows: "A
-    state is an abstraction of the attribute values and links of an object. Sets of values are
-    grouped together into a state according to properties that affect the gross behavior of the
-    object."
+<!-- TODO : explain more -->

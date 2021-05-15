@@ -5,20 +5,20 @@ title: Consensus mechanism
 
 # Consensus mechanism
 
-## The algorithm
+## Practical Byzantine Fault Tolerant
 
-The Zarb consensus algorithm is highly inspired by Practical Byzantine Fault Tolerant (PBFT)
-algorithm. Practical Byzantine Fault Tolerant, in short PBFT, “presents a new, practical algorithm
-for state machine replication that tolerates Byzantine faults." [^first]
+Practical Byzantine Fault Tolerant, in short PBFT, “presents a new, practical algorithm for state
+machine replication that tolerates Byzantine faults." [^first] The Zarb consensus algorithm is
+highly inspired by Practical Byzantine Fault Tolerant (PBFT) algorithm.
+
+## The algorithm
 
 There are $R = 3f+1$ replicas. where $f$ is the maximum number of replicas that may be faulty or
 byzantine. For example, if there is one faulty replica, the resiliency of the algorithm is optimal
 if we have at least 3 non-faulty replicas. So the minimum number of replicas should be $3+1=4$.
 
 In each round, one replica is the proposer and the others are validators. The normal case operation
-of Zarb consensus algorithm includes these three steps: **propose**,
-
-**prepare** and **precommit**
+of Zarb consensus algorithm includes these three steps: **propose**, **prepare** and **precommit**
 
 ### Propose phase
 
@@ -66,7 +66,7 @@ public keys to verify signatures.
 The picture below shows the operation of the algorithm in the normal case of no primary faults.
 Replica 0 is the proposer, replica 3 is faulty.
 
-![Normal execution of the Zarb consensus mechanism](../assets/images/zarb-normal-execution.png)
+![Normal execution](../assets/images/zarb-normal-execution.png)
 
 ## Block announcement
 
@@ -83,22 +83,24 @@ where:
 Validators can move to the next height and clear the message logs after receiving valid
 _block_announce_ message.
 
-## Proposer change
+## Change proposer
 
-The proposer-change protocol provides liveness by allowing the system to make progress when the
-proposer fails. Proposer changes are triggered by timeouts that prevent validators from waiting
+The change-proposer protocol provides liveness by allowing the system to make progress when the
+proposer fails. change-proposers are triggered by timeouts that prevent validators from waiting
 indefinitely for the proposal to execute.
 
-If the timer of validator expires in a round, the validator starts a proposer-change phase to move
-the system to round $r+1$. It stops accepting messages (other than proposer-change and
-block-announce messages) and broadcasts a proposer-change message to all validators.
+If the timer of validator expires in a round, the validator starts a change-proposer phase to move
+the system to round $r+1$. It stops accepting messages (other than change-proposer and
+block-announce messages) and broadcasts a change-proposer message to all validators.
 
-The proposer-change message has this form:
+The change-proposer message has this form:
 
-$<<PROPOSER-CHANGE,h,r,i>_{\sigma i}>$
+$<<CHANGE-PROPOSER,h,r,i>_{\sigma i}>$
 
-If the proposer for round $r+1$ receives $2f+1$ valid proposer-change messages for round $r$ from
+If the proposer for round $r+1$ receives $2f+1$ valid change-proposer messages for round $r$ from
 other validators, it goes to next round and broadcasts proposal message.
+
+![Proposer change](../assets/images/zarb-change-proposer.png)
 
 [^first]:
     [Practical Byzantine Fault Tolerance](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/01/thesis-mcastro.pdf)
