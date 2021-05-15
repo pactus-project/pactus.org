@@ -123,7 +123,7 @@ you propose a new block, you will get the [rewards](./learn-incentive.md).
 
 ## Find your way
 
-In this document we tried to explain a simple way to run a validator in Zarb network. you may do
-it in a different way. Find your way of deployment. But never forget that security first!
+In this document we tried to explain a simple way to run a validator in Zarb network. you may do it
+in a different way. Find your way of deployment. But never forget that security first!
 
 Good luck 🍀
