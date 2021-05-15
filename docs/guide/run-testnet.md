@@ -9,18 +9,18 @@ Here is brief history of Zarb testnets:
 
 ## TestNet Version 1:
 
-The first testNet is launched with only 4 validators. The goal was testing the stability of the
+The first testNet was launched with only 4 validators. The goal was testing the stability of the
 consensus engine
 
 ## TestNet Version 2:
 
-The second testNet is launched with 7 validators and the [committee](./learn-committee.md) size set
+The second testNet wasa launched with 7 validators and the [committee](./learn-committee.md) size set
 to 4. The goal was testing the sortition algorithm, networking and state modules. The Size of
 blockchain was about **60 MegaBytes** after 100,000 blocks.
 
 ## TestNet Version 3:
 
-The third testNet is launched with 11 nodes in different time zones. Some of the nodes are
+The third testNet was launched with 11 nodes in different time zones. Some of the nodes are
 configured to be faulty and send malicious messages. The goal was to test the liveness and stability
 of the network in faulty situations. The TestNet could successfully commit 130 thousands blocks.
 
@@ -28,8 +28,8 @@ of the network in faulty situations. The TestNet could successfully commit 130 t
 
 ## TestNet Version 4:
 
-Currently, we are running testNet version 4 with 15 validators. The goal is to test the sortition
-algorithm and reward distribution in real situations. In this table you can see the statistics after
+TestNet version 4 was launched with 15 validators. The goal was testing the sortition
+algorithm and reward distribution in the real situations. In this table you can see the statistics after
 100,000 blocks:
 
 | Validator    | Stake  | Stake % | Reward | Reward % |
