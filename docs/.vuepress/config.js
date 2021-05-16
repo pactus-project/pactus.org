@@ -8,7 +8,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: "Zarb blockchain",
+  description: "Zarb blockchain, of the people, by the people, for the people",
 
   // https://vuepress.vuejs.org/plugin/official/plugin-pwa.html
   head: [
