@@ -14,8 +14,8 @@ consensus engine
 
 ## TestNet Version 2:
 
-The second testNet wasa launched with 7 validators and the [committee](./learn-committee.md) size set
-to 4. The goal was testing the sortition algorithm, networking and state modules. The Size of
+The second testNet wasa launched with 7 validators and the [committee](./learn-committee.md) size
+set to 4. The goal was testing the sortition algorithm, networking and state modules. The Size of
 blockchain was about **60 MegaBytes** after 100,000 blocks.
 
 ## TestNet Version 3:
@@ -28,9 +28,9 @@ of the network in faulty situations. The TestNet could successfully commit 130 t
 
 ## TestNet Version 4:
 
-TestNet version 4 was launched with 15 validators. The goal was testing the sortition
-algorithm and reward distribution in the real situations. In this table you can see the statistics after
-100,000 blocks:
+TestNet version 4 was launched with 15 validators. The goal was testing the sortition algorithm and
+reward distribution in the real situations. In this table you can see the statistics after 100,000
+blocks:
 
 | Validator    | Stake  | Stake % | Reward | Reward % |
 | ------------ | ------ | ------- | ------ | -------- |
