@@ -55,7 +55,7 @@ $$
 
 _which_
 
-- $V$ is VRF output between 0~1
+- $index$ is VRF output between 0~1
 - $S_{p}$ is sum of the stake in validator pool
 
 Validator pool contains validators that are not in the committee. We can easily calculate the stake
