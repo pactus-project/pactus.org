@@ -28,7 +28,7 @@ of the network in faulty situations. The TestNet could successfully commit 130 t
 
 ## TestNet Version 4:
 
-TestNet version 4 was launched with 15 validators. The goal was testing the sortition algorithm and
+TestNet version 4 was launched with 15 validators and the size of committee set to 7. The goal was testing the sortition algorithm and
 reward distribution in the real situations. In this table you can see the statistics after 100,000
 blocks:
 
