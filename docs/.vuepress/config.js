@@ -50,6 +50,10 @@ module.exports = {
         text: "Github",
         link: "https://github.com/zarbchain/",
       },
+      {
+        text: "Twitter",
+        link: "https://twitter.com/ZarbBlockchain",
+      },
     ],
     sidebar: {
       "/guide/": [
@@ -69,7 +73,6 @@ module.exports = {
                 "consensus-state-machine.md",
                 "consensus-without-delegation.md",
                 "consensus-sortition.md",
-                "consensus-seed.md",
               ],
             },
             "learn-block",
