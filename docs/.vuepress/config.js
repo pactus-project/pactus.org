@@ -116,36 +116,60 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: {
-    '@vuepress/plugin-back-to-top': {},
-    '@vuepress/plugin-medium-zoom': {},
-    'vuepress-plugin-element-tabs': {},
-    'vuepress-plugin-smooth-scroll': {},
-    'vuepress-plugin-zooming': {
-      selector: ' :not(a) > img',
-      options: {
-        margin: 16
+  plugins: [
+    [
+      '@vuepress/plugin-back-to-top', {}
+    ],
+    [
+      '@vuepress/plugin-medium-zoom', {}
+    ],
+    [
+      'vuepress-plugin-element-tabs', {}
+    ],
+    [
+      'vuepress-plugin-smooth-scroll', {}
+    ],
+    [
+      'vuepress-plugin-zooming', {
+        selector: ' :not(a) > img',
+        options: {
+          margin: 16
+        }
       }
-    },
-    '@vuepress/nprogress': {},
-    '@vuepress/pwa': {},
-    'vuepress-plugin-code-copy': {},
-    '@vuepress/active-header-links': {
-      sidebarLinkSelector: '.sidebar-link',
-      headerAnchorSelector: '.header-anchor'
-    },
-    'sitemap': {
-      hostname: 'https://zarb.network'
-    },
-    'vuepress-plugin-container': {
-      type: 'right',
-      defaultTitle: '',
-    },
-    'vuepress-plugin-container': {
-      type: 'quote',
-      defaultTitle: '',
-    },
-  },
+    ],
+    [
+      '@vuepress/nprogress', {}
+    ],
+    [
+      '@vuepress/pwa', {}
+    ],
+    [
+      'vuepress-plugin-code-copy', {}
+    ],
+    [
+      '@vuepress/active-header-links', {
+        sidebarLinkSelector: '.sidebar-link',
+        headerAnchorSelector: '.header-anchor'
+      }
+    ],
+    [
+      'sitemap', {
+        hostname: 'https://zarb.network'
+      }
+    ],
+    [
+      'vuepress-plugin-container', {
+        type: 'quote',
+        defaultTitle: '',
+      },
+    ],
+    [
+      'vuepress-plugin-container', {
+        type: 'right',
+        defaultTitle: '',
+      },
+    ]
+  ],
   markdown: {
     lineNumbers: false, // Whether to show line numbers to the left of each code blocks.
     extendMarkdown: md => {
