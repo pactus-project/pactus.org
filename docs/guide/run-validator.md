@@ -117,8 +117,7 @@ bond some of your tokens as stake and enter the validator pool. If you don't hav
 don't worry. There is a gentlemen agreement between validators in the network to let new validators
 join the validator pool. Just post your validator's public key in Zarb groups like
 [Discord](https://discord.gg/zPqWqV85ch), [Reddit](https://www.reddit.com/r/zarb) or
-[Telegram](https://t.me/zarbblockchain). There is no minimum or maximum amount for new validators to
-enter into validator pool.
+[Telegram](https://t.me/zarbblockchain).
 
 After you join the validator pool, the [sortition](./consensus-sortition.md) algorithm starts
 working and after a while you will enter to [committee](./learn-committee).
