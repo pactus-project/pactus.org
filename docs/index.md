@@ -43,8 +43,15 @@ Number of validators: 21 (4 bootstraps + 17 individuals)
 <br>
 <br>
 
-<div class="discord">
-  <a href="https://discord.gg/zPqWqV85ch" target="_blank"><img height=60 src="./assets/images/Discord-Logo+Wordmark-Color.svg" /></a>
+
+<div align="center" style="margin: 0px auto;">
+  <table>
+    <tr>
+      <td><a href="https://t.me/ZARBBLOCKCHAIN" target="_blank"><img height=60 src="./assets/images/Telegram_logo.svg" /></a></td>
+      <td><a href="https://discord.gg/zPqWqV85ch" target="_blank"><img height=60 src="./assets/images/Discord-Logo+Wordmark-Color.svg" /></a></td>
+      <td><a href="https://www.reddit.com/r/zarb" target="_blank"><img height=60 src="./assets/images/reddit.svg" /></a></td>
+    </tr>
+  </table> 
 </div>
 
 <br>
