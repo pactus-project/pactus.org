@@ -44,14 +44,14 @@ Number of validators: 21 (4 bootstraps + 17 individuals)
 <br>
 
 
-<div align="center" style="margin: 0px auto;">
-  <table>
-    <tr>
-      <td><a href="https://t.me/ZARBBLOCKCHAIN" target="_blank"><img height=60 src="./assets/images/Telegram_logo.svg" /></a></td>
-      <td><a href="https://discord.gg/zPqWqV85ch" target="_blank"><img height=60 src="./assets/images/Discord-Logo+Wordmark-Color.svg" /></a></td>
-      <td><a href="https://www.reddit.com/r/zarb" target="_blank"><img height=60 src="./assets/images/reddit.svg" /></a></td>
+<div style="text-align: center;">
+  <table style="display: inline-block;">
+    <tr style="border-width: 0px">
+      <td style="border-width: 0px"><a href="https://t.me/zarbblockchain" target="_blank"><img alt="Telegram" height=48 width=48 src="./assets/images/telegram-logo.svg" /></a></td>
+      <td style="border-width: 0px"><a href="https://discord.gg/zPqWqV85ch" target="_blank"><img alt="Discord" height=48 width=48 src="./assets/images/discord-logo.svg" /></a></td>
+      <td style="border-width: 0px"><a href="https://www.reddit.com/r/zarb" target="_blank"><img alt="Reddit" height=48 width=48 src="./assets/images/reddit-logo.svg" /></a></td>
     </tr>
-  </table> 
+  </table>
 </div>
 
 <br>
