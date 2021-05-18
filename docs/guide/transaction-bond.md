@@ -24,7 +24,6 @@ type BondPayload struct {
 - `Validator` is the public key of the validator
 - `Stake` is the amount of stake that should be bond
 
-
 ## Example
 
 Hers is an example a raw bond transaction:

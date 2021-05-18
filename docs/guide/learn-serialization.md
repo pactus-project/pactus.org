@@ -26,11 +26,11 @@ type Account struct {
 
 ## CBOR me!
 
-[http://cbor.me/](http://cbor.me/?bytes=a40154436d9a52fd0e4c60ca8dd89f751058cff40edee002010300041a1dcd6500) is a cool tool for digesting the CBOR binary data. You can try to
-decode binary data there, as seen in the following example:
+[http://cbor.me/](http://cbor.me/?bytes=a40154436d9a52fd0e4c60ca8dd89f751058cff40edee002010300041a1dcd6500)
+is a cool tool for digesting the CBOR binary data. You can try to decode binary data there, as seen
+in the following example:
 
 <hexdump bytes="a40154436d9a52fd0e4c60ca8dd89f751058cff40edee002010300041a1dcd6500" />
-
 
 As you may have guessed, this is an example of [account](./learn-account.md) data in Zarb
 blockchain. The first field is a 20 bytes address, then an account number, sequence number and the

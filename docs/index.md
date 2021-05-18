@@ -43,7 +43,6 @@ Number of validators: 21 (4 bootstraps + 17 individuals)
 <br>
 <br>
 
-
 <div style="text-align: center;">
   <table style="display: inline-block;">
     <tr style="border-width: 0px">

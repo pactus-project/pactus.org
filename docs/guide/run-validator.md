@@ -113,7 +113,9 @@ zarb start -w ~/zarb/mainnet
 ## Enter Committee
 
 After syncing with the main net, you need to send a [bond transaction](./transaction-bond.md) to
-bond some of your tokens as stake and enter the validator pool.
+bond some of your tokens as stake and enter the validator pool. If you don't have any token to send
+a bond transaction, don't worry. There is a [gentlemen agreement](https://discord.gg/zPqWqV85ch)
+between validator in the network to let new validators join the validator pool.
 
 After you join the validator pool, the [sortition](./consensus-sortition.md) algorithm starts
 working and after a while you will enter to [committee](./learn-committee).
