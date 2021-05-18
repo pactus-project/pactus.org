@@ -44,9 +44,6 @@ Number of validators: 17 (4 bootstraps + 13 individuals)
 <br>
 
 
-<!-- <center>| ||
-|-|-|-| -->
-
 <div align="center" style="margin: 0px auto;">
   <table>
     <tr>
@@ -56,8 +53,5 @@ Number of validators: 17 (4 bootstraps + 13 individuals)
     </tr>
   </table> 
 </div>
-
-
-<!-- </center> -->
 
 <br>
