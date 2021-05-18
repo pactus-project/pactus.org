@@ -8,7 +8,7 @@ footer: "Made with ❤️"
 ---
 
 <div style="text-align: center">
-Number of validators: 17 (4 bootstraps + 13 individuals)
+Number of validators: 21 (4 bootstraps + 17 individuals)
 </div>
 
 <br>
