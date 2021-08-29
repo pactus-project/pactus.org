@@ -19,20 +19,20 @@ you save blockchain data, config and key files.
 ::: tab 🪟 Window
 
 ```
-zarb init -w c:\zarb\mainnet --mainnet
+zarb init -w c:\zarb\testnet --testnet
 ```
 
-This command creates a working directory for the mainnet at `c:\zarb\mainnet`.
+This command creates a working directory for the testnet at `c:\zarb\testnet`.
 
 :::
 
 ::: tab 🐧 Linux and 🍏 Mac
 
 ```
-zarb init -w ~/zarb/mainnet --mainnet
+zarb init -w ~/zarb/testnet --testnet
 ```
 
-This command creates a working working directory for the mainnet at `~/zarb/mainnet`.
+This command creates a working working directory for the testnet at `~/zarb/testnet`.
 
 :::
 
@@ -53,7 +53,7 @@ key, run this command:
 ::: tab 🪟 Window
 
 ```
-zarb key inspect c:\zarb\mainnet\validator_key.json
+zarb key inspect c:\zarb\testnet\validator_key.json
 ```
 
 :::
@@ -61,7 +61,7 @@ zarb key inspect c:\zarb\mainnet\validator_key.json
 ::: tab 🐧 Linux and 🍏 Mac
 
 ```
-zarb key inspect ~/zarb/mainnet/validator_key.json
+zarb key inspect ~/zarb/testnet/validator_key.json
 ```
 
 :::
@@ -88,14 +88,14 @@ moniker to your node by updating the `Moniker` in config file.
 
 ## Syncing Blockchain
 
-Now you can start the node and sync with the mainnet. This may take several hours:
+Now you can start the node and sync with the testnet. This may take several hours:
 
 :::: tabs type:border-card
 
 ::: tab 🪟 Window
 
 ```
-zarb start -w c:\zarb\mainnet
+zarb start -w c:\zarb\testnet
 ```
 
 :::
@@ -103,7 +103,7 @@ zarb start -w c:\zarb\mainnet
 ::: tab 🐧 Linux and 🍏 Mac
 
 ```
-zarb start -w ~/zarb/mainnet
+zarb start -w ~/zarb/testnet
 ```
 
 :::
@@ -112,7 +112,7 @@ zarb start -w ~/zarb/mainnet
 
 ## Enter Committee
 
-After syncing with the main net, you need to send a [bond transaction](./transaction-bond.md) to
+After syncing with the test net, you need to send a [bond transaction](./transaction-bond.md) to
 bond some of your tokens as stake and enter the validator pool. If you don't have any token yet,
 don't worry. There is a gentlemen agreement between validators in the network to let new validators
 join the validator pool. Just post your validator's public key in Zarb groups like
