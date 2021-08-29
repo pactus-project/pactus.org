@@ -77,6 +77,7 @@ module.exports = {
             },
             "learn-block",
             "learn-certificate",
+            "learn-state-hash",
             "learn-account",
             "learn-validator",
             "learn-committee",
