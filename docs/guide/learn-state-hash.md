@@ -37,8 +37,8 @@ is the hash of two merkle trees: accounts merkle tree and validators merkle tree
 ## Scalability of merkle tree
 
 Using a merkle tree to calculate the state of the blockchain comes with a difficulty: When the
-number of the accounts are big, calculating the root hash is not easy. On the other hand, a simple
-Merkle tree is not scalable for calculating the root hash of many accounts.
+number of the accounts are big, calculating the root hash is not easy. In other words, a simple
+Merkle tree is not scalable for calculating the accounts root hash.
 
 In Zarb, we solved this problem by using account numbers to calculate the hash of leaf nodes. Each
 account in Zarb has a dedicated account number. With using that account number we can make sure that
@@ -47,3 +47,5 @@ merkle tree if an account state is changed. We can simply save the previous merk
 recalculate the parent hashes by fetching neighbor hashes when it’s needed.
 
 ![Account tree](../assets/images/account-tree.png)
+
+In this example, only account 6 has been updated.
