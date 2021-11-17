@@ -9,7 +9,7 @@ title: Stamping Transactions
 
 _Stamping a transaction_ simply means putting the previous block hash into the header of the
 transaction. A stamped transaction, unlike normal transactions, has a lifetime (TTL) and it is only
-valid for a certain time. If $TTL = N$, the stamped transaction after NN blocks will be invalid.
+valid for a certain time. If $TTL = N$, the stamped transaction after N blocks will be invalid.
 
 By stamping transactions, we can decouple transactions from the block. There is no need to save the
 whole transaction inside a block. Keeping the transaction hash is fair enough.
