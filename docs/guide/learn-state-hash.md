@@ -26,9 +26,6 @@ and store the same data.
 
 ## State hash
 
-In Zarb, merkle is used to verify the state of blockchain in each block. The state hash in each
-block is the hash of two merkle trees: accounts merkle tree and validators merkle tree
-
 In Zarb merkle is used to verify the state of blockchain in each block. The state hash in each block
 is the hash of two merkle trees: accounts merkle tree and validators merkle tree.
 
