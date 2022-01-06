@@ -15,6 +15,28 @@ and they are weighted by their boned stakes.
 
 Validator structure is used to hold the public key, stake and number of validators.
 
+:::: tabs type:border-card
+
+::: tab 🦀 Rust
+
+```rust
+#[derive(Encode, Decode)]
+#[cbor(map)]
+pub struct Validator {
+    #[n(1)] public_key: PublicKey,
+    #[n(2)] number: i32,
+    #[n(3)] sequence: i32,
+    #[n(4)] stake: i64,
+    #[n(5)] last_bonding_height: i32,
+    #[n(6)] unbonding_height: i32,
+    #[n(7)] last_joined_height: i32,
+}
+```
+
+:::
+
+::: tab 🇬 Golang
+
 ```go
 type Validator struct {
    PublicKey        PublicKey `cbor:"1,keyasint"`
@@ -26,6 +48,10 @@ type Validator struct {
    LastJoinedHeight int       `cbor:"7,keyasint"`
 }
 ```
+
+:::
+
+::::
 
 - `PublicKey` is the public key of validator which is 96 bytes in length
 - `Number` is a unique and sequential number for the validator

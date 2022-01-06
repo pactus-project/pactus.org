@@ -16,8 +16,31 @@ certificate.
 
 The header includes the main information about the block.
 
+:::: tabs type:border-card
+
+::: tab 🦀 Rust
+
+```rust
+#[derive(Encode, Decode)]
+#[cbor(map)]
+pub struct BlockHeader {
+    #[n(1)] version: i8,
+    #[n(2)] unix_time: i64,
+    #[n(3)] prev_block_hash: Hash32,
+    #[n(4)] state_hash: Hash32,
+    #[n(5)] tx_ids_hash: Hash32,
+    #[n(6)] prev_cert_hash: Hash32,
+    #[n(7)] sortition_seed: Seed,
+    #[n(8)] proposer_address: Address,
+}
+```
+
+:::
+
+::: tab 🇬 Golang
+
 ```go
-type Header struct {
+type BlockHeader struct {
    Version             int     `cbor:"1,keyasint"`
    UnixTime            int64   `cbor:"2,keyasint"`
    LastBlockHash       Hash    `cbor:"3,keyasint"`
@@ -28,6 +51,10 @@ type Header struct {
    ProposerAddress     Address `cbor:"8,keyasint"`
 }
 ```
+
+:::
+
+::::
 
 - `Version` starts from 1 for the mainnet and starts from 1001 for the testnet
 - `UnixTime` is the time of block in unix format (seconds from Unix Epoch)
@@ -43,11 +70,31 @@ type Header struct {
 
 TxIDs contain the list of transaction IDs in the block.
 
+:::: tabs type:border-card
+
+::: tab 🦀 Rust
+
+```rust
+#[derive(Encode, Decode)]
+#[cbor(map)]
+pub struct TxIDs {
+    #[n(1)] ids: Vec<Hash32>,
+}
+```
+
+:::
+
+::: tab 🇬 Golang
+
 ```go
 type TxIDs struct {
    IDs []tx.ID `cbor:"1,keyasint"`
 }
 ```
+
+:::
+
+::::
 
 Transactions in Zarb are [stamped](./transaction-stamping.md), therefore, there is no need to store
 the transaction body inside the block. Saving ID is fair enough.

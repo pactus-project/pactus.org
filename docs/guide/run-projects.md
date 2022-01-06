@@ -15,5 +15,4 @@ Here is the list of project that are developing, managing and running by the com
 | [Zarb Qt](https://github.com/b00f/zarb-qt)                          | Looking for new maintainer                        | Archived       |
 | [Zarb SDK](https://github.com/Ali-Meh/zarb-sdk)                     | [Ali-Meh](https://github.com/Ali-Meh)             | On development |
 
-
 Feel free to add your project here, if it is missed. 💯

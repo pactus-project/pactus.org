@@ -13,6 +13,25 @@ Account structure is used to hold the balance and sequence number of an account.
 
 The format of the account is as seen below:
 
+:::: tabs type:border-card
+
+::: tab 🦀 Rust
+
+```rust
+#[derive(Encode, Decode)]
+#[cbor(map)]
+pub struct Account {
+    #[n(1)] pub address: Address,
+    #[n(2)] pub number: i32,
+    #[n(3)] pub sequence: i32,
+    #[n(4)] pub balance: i64,
+}
+```
+
+:::
+
+::: tab 🇬 Golang
+
 ```go
 type Account struct {
    Address  Address `cbor:"1,keyasint"`
@@ -21,6 +40,10 @@ type Account struct {
    Balance  int64   `cbor:"4,keyasint"`
 }
 ```
+
+:::
+
+::::
 
 - `Address` is the address of account which is 20 bytes in length
 - `Number` is a unique and sequential number for the account
