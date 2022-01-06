@@ -13,6 +13,26 @@ Block certificate holds the proof of commitment for the block.
 
 Each block certificate contains following information:
 
+:::: tabs type:border-card
+
+::: tab 🦀 Rust
+
+```rust
+#[derive(Encode, Decode)]
+#[cbor(map)]
+pub struct Certificate {
+    #[n(1)] block_hash: Hash32,
+    #[n(2)] round: i32,
+    #[n(3)] committers: Vec<i32>,
+    #[n(4)] absentees: Vec<i32>,
+    #[n(5)] signature: Signature,
+}
+```
+
+:::
+
+::: tab 🇬 Golang
+
 ```go
 type Certificate struct {
    BlockHash  Hash      `cbor:"1,keyasint"`
@@ -22,6 +42,10 @@ type Certificate struct {
    Signature  Signature `cbor:"5,keyasint"`
 }
 ```
+
+:::
+
+::::
 
 ## Certificate Verification
 
