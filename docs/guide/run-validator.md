@@ -3,7 +3,7 @@ id: run-validator
 title: Become A Validator
 ---
 
-# Become A Validator
+# Become A Validator in our perdana
 
 Now, you are ready to create a full node and become a validator in Zarb network. For running Zarb
 you can either [download](https://github.com/zarbchain/zarb-go/releases) the latest precompiled
