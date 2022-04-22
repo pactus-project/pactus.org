@@ -184,9 +184,6 @@ module.exports = {
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/markdown-it-texmath@0.9.7/css/texmath.css' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/markdown-it@12.3.2/bin/markdown-it.js' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/markdown-it-texmath@0.9.7/texmath.js' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js' }],
     ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-4250Z4G496'},],
     ['script', {}, `
       window.dataLayer = window.dataLayer || [];
