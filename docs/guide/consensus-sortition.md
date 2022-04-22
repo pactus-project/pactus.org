@@ -46,39 +46,19 @@ The result of VRF is deterministic and Zero Knowledge Provable.
 ## How VRF Works?
 
 In each height, validators outside the committee run VRF to generate a verifiable random number
-between 0 and 1. The seed for VRF is known to all validators and it is of part previous block
-header. A validator based on its stake and its luck can enter the committee for the next height. The
-formula is quite simple:
+between 0 and the total stake. Total stake of the blockchain is known at each height. The seed for
+VRF is also known to all validators and it is part of the previous block header. A validator based
+on its stake and its luck can generate the suitable number. If the generated random number is less
+than the validator's stake, then this validator is eligible to enter the committee for the next
+height. The validator needs to send a Sortition transaction with the <span v-pre>$proof$</span> of
+VRF. Other validators can easily verify the sortition:
 
 <span v-pre>
-$$
-R = index {\times} S_{p}
-$$
-</span>
 
-_which_
-
-- <span v-pre>$index$</span> is VRF output between 0~1
-- <span v-pre>$S_{p}$</span> is sum of the stake in validator pool
-
-Validator pool contains validators that are not in the committee. We can easily calculate the stake
-of pool at any given height:
-
-<span v-pre>$S_{p} = S_{t} - S_{c}$</span>
-
-_which_
-
-- <span v-pre>$S_{t}$</span> is the total stake of the network
-- <span v-pre>$S_{c}$</span> is the sum of the stake of committee members
-
-If the result <span v-pre>$R$</span> is less than the validator's stake, then this validator is
-eligible to enter the set for the next height. The validator needs to send a Sortition transaction
-with the <span v-pre>$proof$</span> of VRF. Other validators can easily verify the sortition:
-
-<span v-pre>
 $$
 verify(pub_{validator}, proof, seed_n) \le S_v
 $$
+
 </span>
 
 _which_

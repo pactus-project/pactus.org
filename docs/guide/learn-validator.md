@@ -13,8 +13,8 @@ and they are weighted by their boned stakes.
 
 ## Validator structure
 
-Validator structure is 124 bytes and it is used to hold the validator information like public key, balance and
-sequence number.
+Validator structure is 124 bytes and it is used to hold the validator information like public key,
+balance and sequence number.
 
 :::: tabs type:border-card
 

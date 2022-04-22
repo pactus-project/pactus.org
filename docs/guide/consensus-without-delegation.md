@@ -25,7 +25,7 @@ blockchain will be more secure and decentralized if more validators participated
 a paradox in PoS blockchain. We can't get big, but we need to get big!
 
 The block size is also another issue when the number of validators increases. Validators must put
-their signature information in each block as proof of the commitment. As long as more than 2/3 of
+their signature information in each block as proof of the commitment. As long as more than ⅔ of
 validators sign a block, the block will be committed into the blockchain. Increasing the size of the
 committee will increase the size of the blocks and, therefore, the blockchain gets bigger. Some
 blockchains solve this issue by defining archive nodes. But archive nodes tend to be centralized
@@ -34,7 +34,7 @@ which is against the blockchain philosophy: Nothing should be centralized.
 ## Delegated Proof of Stake
 
 Some blockchains address this paradox by defining delegation. In Delegated Proof of Stake (dPoS),
-people put their stakes in the hands of a group of ‘delegates’ and these delegates validate
+people put their stakes in the hands of a group of “delegates” and these delegates validate
 transactions and produce blocks.
 
 But how can voters trust a delegate? If a delegate is acting badly, what will happen? You can stake
@@ -57,8 +57,6 @@ validator starts running a Verifiable Random Function (VRF) in order to choose t
 is unpredictable and the result can be verified cryptographically by other validators.
 
 Based on their stake and their luck, a validator can be in the [committee](./learn-committee) for
-the next run. Once a validator enters the set, the oldest validator in the set exits. So we can
-always guarantee that validators are in the set for a certain amount of time. In the set,
-validators' vote is weighted by their stake.
+the next run. Once a validator enters the set, the oldest validator in the committee leave.
 
 ![Zarb Proof of Stake](../assets/images/zarb_validator_pool.png)

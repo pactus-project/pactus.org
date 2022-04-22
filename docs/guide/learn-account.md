@@ -7,8 +7,8 @@ title: Account
 
 ## What is Account?
 
-Account structure is 37 bytes and it is used to hold the account information like address, balance and
-sequence number.
+Account structure is 37 bytes and it is used to hold the account information like address, balance
+and sequence number.
 
 ## Account Structure
 
