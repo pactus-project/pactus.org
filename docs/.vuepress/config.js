@@ -100,7 +100,7 @@ module.exports = {
       'vuepress-plugin-copy-code2', {}
     ],
     [
-      'vuepress-plugin-element-tabs', {}
+      '@snippetors/vuepress-plugin-tabs', {}
     ],
     [
       'vuepress-plugin-smooth-scroll', {}
@@ -135,4 +135,17 @@ module.exports = {
     md.use(require('markdown-it-footnote'))
     md.use(require('@iktakahiro/markdown-it-katex'))
   },
+  head: [
+    ['script', {}, `
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4250Z4G496"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4250Z4G496');
+    </script>
+    `]
+  ],
 };

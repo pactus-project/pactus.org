@@ -1,17 +1,18 @@
 <template>
-  <div class="hexdump" >
+  <div class="hexdump">
   <span v-html="hex"></span>
   </div>
 </template>
 
-<script>
+<script setup lang="js">
   var zero = function (n, max) {
-  n = n.toString(16).toUpperCase();
-  while (n.length < max) {
-    n = '0' + n;
-  }
+    n = n.toString(16).toUpperCase();
+    while (n.length < max) {
+      n = '0' + n;
+    }
   return n;
 }
+
 var render = function (buffer) {
   var rows = Math.ceil(buffer.length / 16);
   var last = buffer.length % 16 || 16;
@@ -97,5 +98,4 @@ export default {
 .hexdump .ascii {
   color: #696969;
 }
-
 </style>
