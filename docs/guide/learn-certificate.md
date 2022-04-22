@@ -21,11 +21,10 @@ Each block certificate contains following information:
 #[derive(Encode, Decode)]
 #[cbor(map)]
 pub struct Certificate {
-    #[n(1)] block_hash: Hash32,
-    #[n(2)] round: i32,
-    #[n(3)] committers: Vec<i32>,
-    #[n(4)] absentees: Vec<i32>,
-    #[n(5)] signature: Signature,
+    round: i16,
+    committers: Vec<i32>,
+    absentees: Vec<i32>,
+    signature: Signature,
 }
 ```
 
@@ -35,11 +34,10 @@ pub struct Certificate {
 
 ```go
 type Certificate struct {
-   BlockHash  Hash      `cbor:"1,keyasint"`
-   Round      int       `cbor:"2,keyasint"`
-   Committers []int     `cbor:"3,keyasint"`
-   Absentees  []int     `cbor:"4,keyasint"`
-   Signature  Signature `cbor:"5,keyasint"`
+    Round      int16
+    Committers []int32
+    Absentees  []int32
+    Signature  Signature
 }
 ```
 
@@ -50,7 +48,7 @@ type Certificate struct {
 ## Certificate Verification
 
 For each round validators cast their votes by signing `BlockHash | Round`. A valid certificate
-should have signature from validators with more than 2/3 of the stake for that round. If enough
+should have signatures from validators with more than 2/3 of the stake for that round. If enough
 votes are collected, the signatures will be aggregated into one single signature. To verify the
 aggregated signature, from `Committers` and `Absentees` the aggregated public key can be formed and
 therefore Signature can be verified.
@@ -59,25 +57,11 @@ therefore Signature can be verified.
 
 Hers is an example of a certificate data.
 
-<hexdump bytes="a50158200ca12eee3c791ba4b78439448d59a4b817d1eaec10aa090ea40f9af3d43e6e2b020003840001020304800558307b4ddaeb4502b544790f73bd4d3de51e7094192cb356bb3f6ac898f46ab24779497cd3226a6025f81c5b56474a5cbd84" />
+<hexdump bytes="0604040b1726010ba33cf343625e9a4a8fa966045417084608e4cc2eb01b1348ccfbcf9f1e713f56e93a98ccc2a053a4da1b8fcaa5fd0d24" />
 
-Which can be interpreted in
-[CBOR](http://cbor.me/?bytes=a50158200ca12eee3c791ba4b78439448d59a4b817d1eaec10aa090ea40f9af3d43e6e2b020003840001020304800558307b4ddaeb4502b544790f73bd4d3de51e7094192cb356bb3f6ac898f46ab24779497cd3226a6025f81c5b56474a5cbd84)
-format:
-
-```
-{
-  1: h'0CA12EEE3C791BA4B78439448D59A4B817D1EAEC10AA090EA40F9AF3D43E6E2B',
-  2: 0,
-  3: [0, 1, 2, 3],
-  4: [],
-  5: h'7B4DDAEB4502B544790F73BD4D3DE51E7094192CB356BB3F6AC898F46AB24779497CD3226A6025F81C5B56474A5CBD84'
-}
-```
-
-Certificate hash is the hash of the certificate in binary format. For this example, the certificate
+Certificate hash is the hash of the certificate data. For this example, the certificate
 hash is:
 
 ```
-0x74fabc0be964b5373800026923b1bb66bf4042d6856396511aebe083c773ee9a
+51b1f207f5590ba8d26aeae6761d3225b7f0397f6a85085ac8e2053a482c1c73
 ```

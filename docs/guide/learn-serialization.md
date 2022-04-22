@@ -5,33 +5,17 @@ title: Data serialization
 
 # Data serialization
 
-## CBOR as Data serialization
+## Deterministic serialization
 
-We are using “Concise Binary Object Representation” or [CBOR](https://tools.ietf.org/html/rfc7049)
-for data serialization in Zarb. All data structures like [blocks](./learn-block) or
-[transactions](./transaction-format.md) or network messages are encoding using CBOR library. Key as
-integer: Key is always an integer regardless of the variable name. Key IDs are fixed and can never
-change.
+For deterministic stuff like block and transactions, Zarb is using a deterministic data serialization similiar to bitcoin, For non-deterministic stuff like networking messages Zarb is using “Concise Binary Object Representation” or [CBOR](https://tools.ietf.org/html/rfc7049) data format.
 
-An example of defining CBOR tags in golang:
-
-```go
-type Account struct {
-   Address  Address `cbor:"1,keyasint"`
-   Number   int     `cbor:"2,keyasint"`
-   Sequence int     `cbor:"3,keyasint"`
-   Balance  int64   `cbor:"4,keyasint"`
-}
-```
 
 ## CBOR me!
 
-[http://cbor.me/](http://cbor.me/?bytes=a40154436d9a52fd0e4c60ca8dd89f751058cff40edee002010300041a1dcd6500)
+[http://cbor.me/](http://cbor.me/?bytes=a60101021864030004582019ba0a47813c13b2459f4ce3851ca42da8299c4f17b226e8bad1a9859172ab960555015da8f5e196d6e961609ae41528c4ec7368975937065830b047d5c2c072299284355f5b5014b5bf77f1702bc08b36061ddba08e41bebf51ab0416d265973190d26cbb79144681e7)
 is a cool tool for digesting the CBOR binary data. You can try to decode binary data there, as seen
 in the following example:
 
-<hexdump bytes="a40154436d9a52fd0e4c60ca8dd89f751058cff40edee002010300041a1dcd6500" />
+<hexdump bytes="a60101021864030004582019ba0a47813c13b2459f4ce3851ca42da8299c4f17b226e8bad1a9859172ab960555015da8f5e196d6e961609ae41528c4ec7368975937065830b047d5c2c072299284355f5b5014b5bf77f1702bc08b36061ddba08e41bebf51ab0416d265973190d26cbb79144681e7" />
 
-As you may have guessed, this is an example of [account](./learn-account.md) data in Zarb
-blockchain. The first field is a 20 bytes address, then an account number, sequence number and the
-balance which is 500000000.
+This is an example of a vote message in Zarb blockchain.
