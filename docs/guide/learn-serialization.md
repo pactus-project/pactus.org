@@ -7,8 +7,10 @@ title: Data serialization
 
 ## Deterministic serialization
 
-For deterministic stuff like block and transactions, Zarb is using a deterministic data serialization similiar to bitcoin, For non-deterministic stuff like networking messages Zarb is using “Concise Binary Object Representation” or [CBOR](https://tools.ietf.org/html/rfc7049) data format.
-
+For deterministic stuff like block and transactions, Zarb is using a deterministic data
+serialization similiar to bitcoin, For non-deterministic stuff like networking messages Zarb is
+using “Concise Binary Object Representation” or [CBOR](https://tools.ietf.org/html/rfc7049) data
+format.
 
 ## CBOR me!
 

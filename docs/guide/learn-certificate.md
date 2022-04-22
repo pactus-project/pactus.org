@@ -18,8 +18,6 @@ Each block certificate contains following information:
 ::: tab 🦀 Rust
 
 ```rust
-#[derive(Encode, Decode)]
-#[cbor(map)]
 pub struct Certificate {
     round: i16,
     committers: Vec<i32>,
@@ -59,8 +57,7 @@ Hers is an example of a certificate data.
 
 <hexdump bytes="0604040b1726010ba33cf343625e9a4a8fa966045417084608e4cc2eb01b1348ccfbcf9f1e713f56e93a98ccc2a053a4da1b8fcaa5fd0d24" />
 
-Certificate hash is the hash of the certificate data. For this example, the certificate
-hash is:
+Certificate hash is the hash of the certificate data. For this example, the certificate hash is:
 
 ```
 51b1f207f5590ba8d26aeae6761d3225b7f0397f6a85085ac8e2053a482c1c73

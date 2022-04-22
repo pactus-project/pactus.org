@@ -7,7 +7,8 @@ title: Account
 
 ## What is Account?
 
-Account structure is used to hold the balance and sequence number of an account.
+Account structure is 37 bytes and it is used to hold the account information like address, balance and
+sequence number.
 
 ## Account Structure
 
@@ -18,13 +19,11 @@ The format of the account is as seen below:
 ::: tab 🦀 Rust
 
 ```rust
-#[derive(Encode, Decode)]
-#[cbor(map)]
 pub struct Account {
-    #[n(1)] pub address: Address,
-    #[n(2)] pub number: i32,
-    #[n(3)] pub sequence: i32,
-    #[n(4)] pub balance: i64,
+    address: Address, // 21 bytes
+    number: i32,      // 4 bytes
+    sequence: i32,    // 4 bytes
+    balance: i64,     // 8 bytes
 }
 ```
 
@@ -34,10 +33,10 @@ pub struct Account {
 
 ```go
 type Account struct {
-   Address  Address `cbor:"1,keyasint"`
-   Number   int     `cbor:"2,keyasint"`
-   Sequence int     `cbor:"3,keyasint"`
-   Balance  int64   `cbor:"4,keyasint"`
+   Address  Address   // 21 bytes
+   Number   int32     // 4 bytes
+   Sequence int32     // 4 bytes
+   Balance  int64     // 8 bytes
 }
 ```
 
@@ -45,32 +44,19 @@ type Account struct {
 
 ::::
 
-- `Address` is the address of account which is 20 bytes in length
+- `Address` is the address of account which is 21 bytes in length
 - `Number` is a unique and sequential number for the account
 - `Sequence` increasers anytime user send a transactions to prevent replaying the transaction
-- `Balance` holds the balance of the account
+- `Balance` holds the balance of the account which is 8 bytes
 
 ## Example
 
 Hers is an example of a account data:
 
-<hexdump bytes="a40154436d9a52fd0e4c60ca8dd89f751058cff40edee002010300041a1dcd6500" />
-
-Which can be interpreted in
-[CBOR](http://cbor.me/?bytes=a40154436d9a52fd0e4c60ca8dd89f751058cff40edee002010300041a1dcd6500)
-format:
-
-```
-{
-  1: h'436D9A52FD0E4C60CA8DD89F751058CFF40EDEE0',
-  2: 1,
-  3: 0,
-  4: 500000000
-}
-```
+<hexdump bytes="0102030405060708090a0b0c0d0e0f10111213141501000000020000000300000000000000" />
 
 Account Hash is the hash of the account in binary format. For this example the account hash is:
 
 ```
-0x8b66cb22841238f424835e6e7313cff870dfe9b851e958eb5b3bf842acc20e1d
+33a4208262903cd1f274e760f495eca8e56b7fcc61feec0a8e6dcd0d2e57cafc
 ```

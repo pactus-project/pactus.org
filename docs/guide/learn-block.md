@@ -7,10 +7,10 @@ title: Block
 
 ## What Is Block?
 
-Blocks contain a header, a certificate for the previous block and transactions. Each block in Zarb has a unique
-[certificate](./learn-certificate.md) that is signed by committee members. A block will be committed
-if it has a valid certificate. Blocks are immutable and any changes in the block will invalidate the
-certificate.
+Blocks contain a header, a certificate for the previous block and transactions. Each block in Zarb
+has a unique [certificate](./learn-certificate.md) that is signed by committee members. A block will
+be committed if it has a valid certificate. Blocks are immutable and any changes in the block will
+invalidate the certificate.
 
 ## Block Header
 
@@ -21,8 +21,6 @@ Block header is 138 bytes and defines like below:
 ::: tab 🦀 Rust
 
 ```rust
-#[derive(Encode, Decode)]
-#[cbor(map)]
 pub struct BlockHeader {
     version: u8,                // 1 Byte
     unix_time: u32,             // 4 bytes
@@ -61,15 +59,15 @@ type BlockHeader struct {
 
 ## Block Identifier
 
-Block Identifier or ID is the result of hashing the following data with Block2b:
-Block header data (138 bytes) + Previous certificate hash (32 bytes) + Merkle root hash of transactions (32 bytes) + number of transactions (varint)
+Block Identifier or ID is the result of hashing the following data with Block2b: Block header data
+(138 bytes) + Previous certificate hash (32 bytes) + Merkle root hash of transactions (32 bytes) +
+number of transactions (varint)
 
-As a matter of fact previous certificate and transactions root hashes, are attached into the block ID and therefore they cannot be modified.
-
+As a matter of fact previous certificate and transactions root hashes, are attached into the block
+ID and therefore they cannot be modified.
 
 ## Example
 
 Hers is an example of a block header data:
 
 <hexdump bytes="011a873d62b69e39b4e06567b6ad3a58f61df4c3c05920a29043277af01264c9e1e7693068bbf7b5e010ca98da562965a1a3411a48fee70bd0dbbe11d9867fa9e13b3e005e99bbd54999c7cd6bb176b160962080ee130c455c88507bd51a878a0b85c656cfc1a542cbbe0105708389ca68269bda290119cba9960c6ad28aaaa140377f652bdea0551e3b" />
-

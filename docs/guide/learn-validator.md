@@ -13,23 +13,22 @@ and they are weighted by their boned stakes.
 
 ## Validator structure
 
-Validator structure is used to hold the public key, stake and number of validators.
+Validator structure is 124 bytes and it is used to hold the validator information like public key, balance and
+sequence number.
 
 :::: tabs type:border-card
 
 ::: tab 🦀 Rust
 
 ```rust
-#[derive(Encode, Decode)]
-#[cbor(map)]
 pub struct Validator {
-    #[n(1)] public_key: PublicKey,
-    #[n(2)] number: i32,
-    #[n(3)] sequence: i32,
-    #[n(4)] stake: i64,
-    #[n(5)] last_bonding_height: i32,
-    #[n(6)] unbonding_height: i32,
-    #[n(7)] last_joined_height: i32,
+    public_key: PublicKey,      // 96 bytes
+    number: i32,                // 4 bytes
+    sequence: i32,              // 4 bytes
+    stake: i64,                 // 8 bytes
+    last_bonding_height: i32,   // 4 bytes
+    unbonding_height: i32,      // 4 bytes
+    last_joined_height: i32,    // 4 bytes
 }
 ```
 
@@ -39,13 +38,13 @@ pub struct Validator {
 
 ```go
 type Validator struct {
-   PublicKey        PublicKey `cbor:"1,keyasint"`
-   Number           int       `cbor:"2,keyasint"`
-   Sequence         int       `cbor:"3,keyasint"`
-   Stake            int64     `cbor:"4,keyasint"`
-   BondingHeight    int       `cbor:"5,keyasint"`
-   UnbondingHeight  int       `cbor:"6,keyasint"`
-   LastJoinedHeight int       `cbor:"7,keyasint"`
+   PublicKey        PublicKey   // 96 bytes
+   Number           int32       // 4 bytes
+   Sequence         int32       // 4 bytes
+   Stake            int64       // 8 bytes
+   BondingHeight    int32       // 4 bytes
+   UnbondingHeight  int32       // 4 bytes
+   LastJoinedHeight int32       // 4 bytes
 }
 ```
 
@@ -65,27 +64,11 @@ type Validator struct {
 
 Hers is an example of a validator data:
 
-<hexdump bytes="a7015860594ac38ee38949356e139340cd9668f48d908e76b44781e7013e3f70b738a9b6b53e95dfcba23bd1bbe923d2df354815986643467f25b755d76a908c0dca20327cc111e16d30f37041a23417f8d7cb446cc891c551176df641f07c1f4e1e068b020003000400050006000700" />
-
-Which can be interpreted in
-[CBOR](http://cbor.me/?bytes=a7015860594ac38ee38949356e139340cd9668f48d908e76b44781e7013e3f70b738a9b6b53e95dfcba23bd1bbe923d2df354815986643467f25b755d76a908c0dca20327cc111e16d30f37041a23417f8d7cb446cc891c551176df641f07c1f4e1e068b020003000400050006000700)
-format:
-
-```
-{
-    1: h'594AC38EE38949356E139340CD9668F48D908E76B44781E7013E3F70B738A9B6B53E95DFCBA23BD1BBE923D2DF354815986643467F25B755D76A908C0DCA20327CC111E16D30F37041A23417F8D7CB446CC891C551176DF641F07C1F4E1E068B',
-    2: 0,
-    3: 0,
-    4: 0,
-    5: 0,
-    6: 0,
-    7: 0
-}
-```
+<hexdump bytes="95167c2a0d86ec360407bce89b304616e1d0f83dbc200642abea8405e1838312fb8290b1230ebe4369cf1b7f556906c610ae92bcee544a1af79e259996e368b14851a1f8844274690b10df983bc2776ab10cc37e49e175bc7ae17ac919b8c34c01000000020000000300000000000000040000000500000006000000" />
 
 Validator Hash is the hash of the validator in binary format. For this example the validator hash
 is:
 
 ```
-0xe31bf5a07ce7264cac6e9d4e3a071a4fcf92628b101c13f2e97cd7c34066b308
+76fea239a4586e8d9c2df9062b1958703341e3ece0f665c714da850101b61185
 ```
