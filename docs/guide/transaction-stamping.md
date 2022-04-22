@@ -35,11 +35,11 @@ In Zarb stamp are defined as first 4 bytes of block ID.
 
 ### Disadvantage
 
-- ** Increasing the size of transaction **
+- **Increasing the size of transaction**
 
 Stamping transaction increases the size of the transaction by four bytes.
 
-- ** Need to query blockchain **
+- **Need to query blockchain**
 
 Users need to query the blockchain before signing the transaction. This could be a little
 troublesome if user wants to sign a transaction offline.
