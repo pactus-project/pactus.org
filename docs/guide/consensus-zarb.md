@@ -5,6 +5,22 @@ title: Consensus mechanism
 
 # Consensus mechanism
 
+Zarb consensus algorithm is a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
+replication with [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault) tolerance. The
+consensus algorithm at any given time is in one the following states:
+
+- New Height state
+- Propose state
+- Proposer change state
+- Prepare state
+- Precommit state
+- Commit state
+
+![Zarb consensus states](../assets/images/zarb-consensus-states.png)
+
+Every 10 seconds a proposer has chance to propose a block. Whenever other validators see a proposed block, they validate the block and change their state to _prepare state_. If more than ⅔ of the total stakes cast their votes, the proposed block becomes prepared and validators goes to _precommit state_. If again more than ⅔ of the total stakes cast their vote for the prepared block, the block will be committed and the next proposer will get ready for proposing new block. These steps repeat every 10 seconds. In case of any failure in each step, validators goes to _proposer change_ state and try to change the proposer for the next round.
+
+
 ## Practical Byzantine Fault Tolerant
 
 Practical Byzantine Fault Tolerant, in short PBFT, “presents a new, practical algorithm for state
@@ -15,7 +31,7 @@ highly inspired by Practical Byzantine Fault Tolerant (PBFT) algorithm.
 
 There are <span v-pre>$R = 3f+1$</span> replicas. where <span v-pre>$f$</span> is the maximum number
 of replicas that may be faulty or byzantine. For example, if there is one faulty replica, the
-resiliency of the algorithm is optimal if we have at least 3 non-faulty replicas. So the minimum
+resiliency of the algorithm is optimal if we have at least <span v-pre>$3$</span> non-faulty replicas. So the minimum
 number of replicas should be <span v-pre>$3+1=4$</span>.
 
 In each round, one replica is the proposer and the others are validators. The normal case operation
@@ -46,7 +62,7 @@ Prepare message has this form:
 
 <span v-pre>$<<PREPARE,h,r,d,i>_{\sigma i}>$</span>
 
-If validator <span v-pre>$i$</span> received <span v-pre>$2f+1$</span> prepare messages from other
+If validator <span v-pre>$i$</span> received <span v-pre>=$2f+1 ((3fx(2/3))+1)$</span> prepare messages from other
 validators (possibly including its own), it is **prepared** and enters to precommit phase.
 
 ### precommit phase
