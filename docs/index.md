@@ -2,6 +2,13 @@
 home: true
 heroText: Zarb Blockchain
 tagline: Of the people, By the people, For the people
+actions:
+  - text: Get Started
+    link: /guide/run-index
+    type: primary
+  - text: Learn more
+    link: /guide/learn-index
+    type: secondary
 actionText: Learn more →
 actionLink: /guide/learn-index
 footer: "Made with ❤️"

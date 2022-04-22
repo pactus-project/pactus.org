@@ -1,33 +1,11 @@
 const { description } = require("../../package");
 
 module.exports = {
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
+  lang: 'en-US',
   title: "Zarb",
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
   description: "Zarb blockchain, of the people, by the people, for the people",
 
-  // https://vuepress.vuejs.org/plugin/official/plugin-pwa.html
-  head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }],
-    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
-  ],
-
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
+  theme: '@vuepress/theme-default',
   themeConfig: {
     hostname: "https://zarb.netwotk/",
     docsRepo: "https://github.com/zarbchain/zarb.network",
@@ -37,7 +15,7 @@ module.exports = {
     editLinks: true,
     editLinkText: "Help us improve this page!",
     sidebarDepth: 0,
-    nav: [
+    navbar: [
       {
         text: "What is Zarb",
         link: "/guide/learn-index",
@@ -45,6 +23,10 @@ module.exports = {
       {
         text: "Get started",
         link: "/guide/run-index",
+      },
+      {
+        text: "Download",
+        link: "https://github.com/zarbchain/zarb-go/releases/latest",
       },
       {
         text: "Github",
@@ -58,7 +40,7 @@ module.exports = {
     sidebar: {
       "/guide/": [
         {
-          title: "Learn",
+          text: "Learn",
           collapsable: false,
           children: [
             "learn-index",
@@ -66,7 +48,7 @@ module.exports = {
             "learn-serialization",
             "learn-genesis",
             {
-              title: "Consensus protocol",
+              text: "Consensus protocol",
               collapsable: true,
               children: [
                 "consensus-zarb.md",
@@ -82,7 +64,7 @@ module.exports = {
             "learn-validator",
             "learn-committee",
             {
-              title: "Transactions",
+              text: "Transactions",
               collapsable: true,
               children: [
                 "transaction-stamping.md",
@@ -98,7 +80,7 @@ module.exports = {
           ],
         },
         {
-          title: "Run",
+          text: "Run",
           collapsable: false,
           children: [
             "run-index",
@@ -113,16 +95,9 @@ module.exports = {
       ],
     },
   },
-
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-   */
   plugins: [
     [
-      '@vuepress/plugin-back-to-top', {}
-    ],
-    [
-      '@vuepress/plugin-medium-zoom', {}
+      'vuepress-plugin-copy-code2', {}
     ],
     [
       'vuepress-plugin-element-tabs', {}
@@ -138,44 +113,26 @@ module.exports = {
         }
       }
     ],
-    [
-      '@vuepress/nprogress', {}
-    ],
-    [
-      '@vuepress/pwa', {}
-    ],
-    [
-      'vuepress-plugin-code-copy', {}
-    ],
-    [
-      '@vuepress/active-header-links', {
-        sidebarLinkSelector: '.sidebar-link',
-        headerAnchorSelector: '.header-anchor'
-      }
-    ],
-    [
-      'sitemap', {
-        hostname: 'https://zarb.network'
-      }
-    ],
-    [
-      'vuepress-plugin-container', {
+      [
+      '@vuepress/container', {
         type: 'quote',
         defaultTitle: '',
       },
     ],
     [
-      'vuepress-plugin-container', {
+      '@vuepress/container', {
         type: 'right',
         defaultTitle: '',
       },
     ]
   ],
   markdown: {
-    lineNumbers: false, // Whether to show line numbers to the left of each code blocks.
-    extendMarkdown: md => {
-      md.use(require('markdown-it-footnote'))
-      md.use(require('@iktakahiro/markdown-it-katex'))
-    }
+    code: {
+      lineNumbers: false, // Whether to show line numbers to the left of each code blocks.
+    },
+  },
+  extendsMarkdown: (md) => {
+    md.use(require('markdown-it-footnote'))
+    md.use(require('@iktakahiro/markdown-it-katex'))
   },
 };
