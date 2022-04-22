@@ -98,7 +98,6 @@ module.exports = {
               collapsable: true,
               children: [
                 "consensus-zarb.md",
-                "consensus-state-machine.md",
                 "consensus-without-delegation.md",
                 "consensus-sortition.md",
               ],
@@ -130,7 +129,6 @@ module.exports = {
           collapsable: false,
           children: [
             "run-index",
-            "run-testnet",
             "run-compile",
             "run-docker",
             "run-validator",
@@ -150,6 +148,12 @@ module.exports = {
     ],
     [
       'vuepress-plugin-smooth-scroll', {}
+    ],
+    [
+      '@vuepress/plugin-pwa', {}
+    ],
+    [
+      '@vuepress/plugin-pwa-popup', {}
     ],
     [
       'vuepress-plugin-zooming', {
