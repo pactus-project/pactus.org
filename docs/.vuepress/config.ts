@@ -1,5 +1,51 @@
 const { description } = require("../../package");
 
+const mathml = [
+  'math',
+  'maction',
+  'maligngroup',
+  'malignmark',
+  'menclose',
+  'merror',
+  'mfenced',
+  'mfrac',
+  'mglyph',
+  'mi',
+  'mlabeledtr',
+  'mlongdiv',
+  'mmultiscripts',
+  'mn',
+  'mo',
+  'mover',
+  'mpadded',
+  'mphantom',
+  'mroot',
+  'mrow',
+  'ms',
+  'mscarries',
+  'mscarry',
+  'msgroup',
+  'mstack',
+  'msline',
+  'mspace',
+  'msqrt',
+  'msrow',
+  'mstyle',
+  'msub',
+  'msup',
+  'msubsup',
+  'mtable',
+  'mtd',
+  'mtext',
+  'mtr',
+  'munder',
+  'munderover',
+  'semantics',
+  'annotation',
+  'annotation-xml',
+  'mprescripts',
+  'none',
+];
 module.exports = {
   lang: 'en-US',
   title: "Zarb",
@@ -97,7 +143,7 @@ module.exports = {
   },
   plugins: [
     [
-      'vuepress-plugin-copy-code2', {}
+      '@snippetors/vuepress-plugin-code-copy', {}
     ],
     [
       '@snippetors/vuepress-plugin-tabs', {}
@@ -133,9 +179,14 @@ module.exports = {
   },
   extendsMarkdown: (md) => {
     md.use(require('markdown-it-footnote'))
-    md.use(require('@iktakahiro/markdown-it-katex'))
+    md.use(require('markdown-it-texmath'))
   },
   head: [
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/markdown-it-texmath@0.9.7/css/texmath.css' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/markdown-it@12.3.2/bin/markdown-it.js' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/markdown-it-texmath@0.9.7/texmath.js' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js' }],
     ['script', {}, `
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4250Z4G496"></script>

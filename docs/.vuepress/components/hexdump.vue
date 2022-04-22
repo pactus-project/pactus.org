@@ -4,12 +4,12 @@
   </div>
 </template>
 
-<script setup lang="js">
-  var zero = function (n, max) {
-    n = n.toString(16).toUpperCase();
-    while (n.length < max) {
-      n = '0' + n;
-    }
+<script lang="ts">
+var zero = function (n, max) {
+  n = n.toString(16).toUpperCase();
+  while (n.length < max) {
+    n = '0' + n;
+  }
   return n;
 }
 

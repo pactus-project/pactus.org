@@ -13,52 +13,53 @@ highly inspired by Practical Byzantine Fault Tolerant (PBFT) algorithm.
 
 ## The algorithm
 
-There are $R = 3f+1$ replicas. where $f$ is the maximum number of replicas that may be faulty or
-byzantine. For example, if there is one faulty replica, the resiliency of the algorithm is optimal
-if we have at least 3 non-faulty replicas. So the minimum number of replicas should be $3+1=4$.
+There are <span v-pre>$R = 3f+1$</span> replicas. where <span v-pre>$f$</span> is the maximum number
+of replicas that may be faulty or byzantine. For example, if there is one faulty replica, the
+resiliency of the algorithm is optimal if we have at least 3 non-faulty replicas. So the minimum
+number of replicas should be <span v-pre>$3+1=4$</span>.
 
 In each round, one replica is the proposer and the others are validators. The normal case operation
 of Zarb consensus algorithm includes these three steps: **propose**, **prepare** and **precommit**
 
 ### Propose phase
 
-A proposer ($P$) collects transactions and creates a proposal block. It signs and broadcasts a
-proposal message with block piggybacked to all the validators.
+A proposer (<span v-pre>$P$</span>) collects transactions and creates a proposal block. It signs and
+broadcasts a proposal message with block piggybacked to all the validators.
 
 Proposal message has this form:
 
-$<<PROPOSAL,h,r,d>_{\sigma p}, B>$
+<span v-pre>$<<PROPOSAL,h,r,d>_{\sigma p}, B>$</span>
 
 where:
 
-- $B$ is proposed block
-- $d$ is proposal's digest or hash
-- $h$ indicates the block height
-- $r$ is an assigned round number, which is zero for the first round
+- <span v-pre>$B$</span> is proposed block
+- <span v-pre>$d$</span> is proposal's digest or hash
+- <span v-pre>$h$</span> indicates the block height
+- <span v-pre>$r$</span> is an assigned round number, which is zero for the first round
 
 ### Prepare phase
 
-If validator $i$ accepts the proposal, it enters _prepare_ phase and signs and broadcasts _prepare_
-message to all other validators. Otherwise, it does nothing.
+If validator <span v-pre>$i$</span> accepts the proposal, it enters _prepare_ phase and signs and
+broadcasts _prepare_ message to all other validators. Otherwise, it does nothing.
 
 Prepare message has this form:
 
-$<<PREPARE,h,r,d,i>_{\sigma i}>$
+<span v-pre>$<<PREPARE,h,r,d,i>_{\sigma i}>$</span>
 
-If validator $i$ received $2f+1$ prepare messages from other validators (possibly including its
-own), it is **prepared** and enters to precommit phase.
+If validator <span v-pre>$i$</span> received <span v-pre>$2f+1$</span> prepare messages from other
+validators (possibly including its own), it is **prepared** and enters to precommit phase.
 
 ### precommit phase
 
-In _precommit_ phase, validator $i$ signs and broadcasts _precommit_ message to the other
-validators.
+In _precommit_ phase, validator <span v-pre>$i$</span> signs and broadcasts _precommit_ message to
+the other validators.
 
 Precommit message has this form:
 
-$<<PRECOMMIT,h,r,d,i>_{\sigma i}>$
+<span v-pre>$<<PRECOMMIT,h,r,d,i>_{\sigma i}>$</span>
 
-Each validator executes and commits block $b$ after receiving $2f+1$ precommit messages (possibly
-including its own) and becomes **committed**.
+Each validator executes and commits block <span v-pre>$b$</span> after receiving
+<span v-pre>$2f+1$</span> precommit messages (possibly including its own) and becomes **committed**.
 
 All the messages in the above steps are cryptographically signed and all replicas know the others’
 public keys to verify signatures.
@@ -70,15 +71,15 @@ Replica 0 is the proposer, replica 3 is faulty.
 
 ## Block announcement
 
-Each validator that receives a valid proposal and with $2f+1$ precommit messages can make a
-certificate and broadcasts _block_announce_ messages with the block and certificate piggybacked to
-the network.
+Each validator that receives a valid proposal and with <span v-pre>$2f+1$</span> precommit messages
+can make a certificate and broadcasts _block_announce_ messages with the block and certificate
+piggybacked to the network.
 
-$<BLOCK-ANNOUNCE,h,r,B,C>$
+<span v-pre>$<BLOCK-ANNOUNCE,h,r,B,C>$</span>
 
 where:
 
-- $C$ is the block certificate
+- <span v-pre>$C$</span> is the block certificate
 
 Validators can move to the next height and clear the message logs after receiving valid
 _block_announce_ message.
@@ -90,15 +91,17 @@ proposer fails. change-proposers are triggered by timeouts that prevent validato
 indefinitely for the proposal to execute.
 
 If the timer of validator expires in a round, the validator starts a change-proposer phase to move
-the system to round $r+1$. It stops accepting messages (other than change-proposer and
-block-announce messages) and broadcasts a change-proposer message to all validators.
+the system to round <span v-pre>$r+1$</span>. It stops accepting messages (other than
+change-proposer and block-announce messages) and broadcasts a change-proposer message to all
+validators.
 
 The change-proposer message has this form:
 
-$<<CHANGE-PROPOSER,h,r,i>_{\sigma i}>$
+<span v-pre>$<<CHANGE-PROPOSER,h,r,i>_{\sigma i}>$</span>
 
-If the proposer for round $r+1$ receives $2f+1$ valid change-proposer messages for round $r$ from
-other validators, it goes to next round and broadcasts proposal message.
+If the proposer for round <span v-pre>$r+1$</span> receives <span v-pre>$2f+1$</span> valid
+change-proposer messages for round <span v-pre>$r$</span> from other validators, it goes to next
+round and broadcasts proposal message.
 
 ![Proposer change](../assets/images/zarb-change-proposer.png)
 
