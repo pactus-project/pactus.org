@@ -28,6 +28,15 @@ run:
 yarn prettier --write ./docs/
 ```
 
+## Removing all EXIF meta data from png files
+
+You can remove all metadata from png files by running this command:
+
+```
+cd docs/assets/images
+for i in *.png; do echo "Processing $i"; exiftool -all= "$i"; done
+```
+
 ## Deployments
 
 Updating main branch will automatically deploy this repository through github actions.
