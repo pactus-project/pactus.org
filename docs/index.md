@@ -4,13 +4,12 @@ heroText: Zarb Blockchain
 tagline: Of the people, By the people, For the people
 actions:
   - text: Get Started
-    link: /guide/run-index
+    link: /run/
     type: primary
   - text: Learn more
-    link: /guide/learn-index
+    link: /learn/
     type: secondary
-actionText: Learn more →
-actionLink: /guide/learn-index
+
 footer: "Made with ❤️"
 ---
 
@@ -21,14 +20,14 @@ footer: "Made with ❤️"
 
 <div class="features">
   <div class="feature">
-    <a href="guide/run-index">
+    <a href="/run/">
       <h2>Run</h2>
       <p>How to build and run Zarb blockchain</p>
     </a>
   </div>
 
   <div class="feature">
-    <a href="guide/learn-index">
+    <a href="/learn/">
       <h2>Learn</h2>
       <p>Learn more about Zarb blockchain</p>
     </a>

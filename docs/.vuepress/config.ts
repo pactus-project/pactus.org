@@ -1,51 +1,5 @@
 const { description } = require("../../package");
 
-const mathml = [
-  'math',
-  'maction',
-  'maligngroup',
-  'malignmark',
-  'menclose',
-  'merror',
-  'mfenced',
-  'mfrac',
-  'mglyph',
-  'mi',
-  'mlabeledtr',
-  'mlongdiv',
-  'mmultiscripts',
-  'mn',
-  'mo',
-  'mover',
-  'mpadded',
-  'mphantom',
-  'mroot',
-  'mrow',
-  'ms',
-  'mscarries',
-  'mscarry',
-  'msgroup',
-  'mstack',
-  'msline',
-  'mspace',
-  'msqrt',
-  'msrow',
-  'mstyle',
-  'msub',
-  'msup',
-  'msubsup',
-  'mtable',
-  'mtd',
-  'mtext',
-  'mtr',
-  'munder',
-  'munderover',
-  'semantics',
-  'annotation',
-  'annotation-xml',
-  'mprescripts',
-  'none',
-];
 module.exports = {
   lang: 'en-US',
   title: "Zarb",
@@ -65,11 +19,11 @@ module.exports = {
     navbar: [
       {
         text: "What is Zarb",
-        link: "/guide/learn-index",
+        link: "/learn/",
       },
       {
         text: "Get started",
-        link: "/guide/run-index",
+        link: "/run/",
       },
       {
         text: "Download",
@@ -85,55 +39,49 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/guide/": [
+      "/": [
         {
           text: "Learn",
-          collapsable: false,
+          link: "/learn/",
           children: [
-            "learn-index",
-            "learn-crypto",
-            "learn-serialization",
-            "learn-genesis",
+            "/learn/crypto.md",
+            "/learn/serialization",
+            "/learn/genesis",
             {
               text: "Consensus protocol",
-              collapsable: true,
               children: [
-                "consensus-zarb.md",
-                "consensus-without-delegation.md",
-                "consensus-sortition.md",
+                "/learn/consensus-zarb",
+                "/learn/consensus-without-delegation",
+                "/learn/consensus-sortition",
               ],
             },
-            "learn-block",
-            "learn-certificate",
-            "learn-state-hash",
-            "learn-account",
-            "learn-validator",
-            "learn-committee",
+            "/learn/block",
+            "/learn/certificate",
+            "/learn/state-root",
+            "/learn/account",
+            "/learn/validator",
+            "/learn/committee",
             {
               text: "Transactions",
-              collapsable: true,
               children: [
-                "transaction-stamping.md",
-                "transaction-format.md",
-                "transaction-fee.md",
-                "transaction-send.md",
-                "transaction-bond.md",
-                "transaction-sortition.md",
+                "/learn/transaction-stamping",
+                "/learn/transaction-format",
+                "/learn/transaction-fee",
+                "/learn/transaction-send",
+                "/learn/transaction-bond",
+                "/learn/transaction-sortition",
               ],
             },
-            "learn-incentive",
+            "/learn/incentive",
           ],
         },
         {
           text: "Run",
-          collapsable: false,
+          link: "/run/",
           children: [
-            "run-index",
-            "run-compile",
-            "run-docker",
-            "run-validator",
-            "run-ansible",
-            "run-projects",
+            "/run/download",
+            "/run/how-to-gui",
+            "/run/how-to-cli",
           ],
         },
       ],
@@ -163,7 +111,7 @@ module.exports = {
         }
       }
     ],
-      [
+    [
       '@vuepress/container', {
         type: 'quote',
         defaultTitle: '',
@@ -188,7 +136,7 @@ module.exports = {
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/markdown-it-texmath@0.9.7/css/texmath.css' }],
-    ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-4250Z4G496'},],
+    ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-4250Z4G496' },],
     ['script', {}, `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
