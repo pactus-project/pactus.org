@@ -59,6 +59,7 @@ module.exports = {
     docsBranch: "main",
     lastUpdated: "Last Updated",
     editLinks: true,
+    contributors: false,
     editLinkText: "Help us improve this page!",
     sidebarDepth: 0,
     navbar: [
