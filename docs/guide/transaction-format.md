@@ -15,7 +15,7 @@ type Transaction struct {
     Stamp       hash.Stamp          // 4 bytes
     Sequence    int32               // variant
     Fee         int64               // variant
-   PayloadType uint8               // 1 byte
+    PayloadType uint8               // 1 byte
     Payload     payload.Payload     // variant
     Memo        string              // variant
     PublicKey   crypto.PublicKey    // 96 bytes
