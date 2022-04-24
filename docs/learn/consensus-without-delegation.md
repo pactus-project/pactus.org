@@ -56,7 +56,7 @@ changed randomly. Anyone can easily become a validator by staking some tokens. A
 validator starts running a Verifiable Random Function (VRF) in order to choose themselves. The VRF
 is unpredictable and the result can be verified cryptographically by other validators.
 
-Based on their stake and their luck, a validator can be in the [committee](./learn-committee) for
+Based on their stake and their luck, a validator can be in the [committee](/learn/committee) for
 the next run. Once a validator enters the set, the oldest validator in the committee leave.
 
 ![Zarb Proof of Stake](../assets/images/zarb_validator_pool.png)

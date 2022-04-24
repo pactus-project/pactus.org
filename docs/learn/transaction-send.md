@@ -23,6 +23,6 @@ type SendPayload struct {
 Subsidy transaction is the first transaction in each block. There is only one subsidy transaction
 per block and the format of subsidy transaction is the same as send transaction but the fee is zero.
 
-Sender address is the [Treasury address](./learn-crypto.md#treasury-address) and receiver address is
+Sender address is the [Treasury address](/learn/crypto.md#treasury-address) and receiver address is
 defined by the block proposer. The amount of subsidy transaction should be equal to the block
 rewards plus transactions fee. This amount will go to the recevier account as block reward.

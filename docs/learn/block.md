@@ -8,7 +8,7 @@ title: Block
 ## What Is Block?
 
 Blocks contain a header, a certificate for the previous block and transactions. Each block in Zarb
-has a unique [certificate](./learn-certificate.md) that is signed by committee members. A block will
+has a unique [certificate](/learn/certificate.md) that is signed by committee members. A block will
 be committed if it has a valid certificate. Blocks are immutable and any changes in the block will
 invalidate the certificate.
 
@@ -53,7 +53,7 @@ type BlockHeader struct {
 - `Version` starts from 1 for the mainnet and starts from 1001 for the testnet
 - `UnixTime` is the time of block in unix format (seconds from Unix Epoch)
 - `LastBlockHash` is the hash of the previous block
-- `StateHash` is the [state merkle root](./learn-state-hash.md) at the current height
+- `StateHash` is the [state merkle root](/learn/state-hash.md) at the current height
 - `SortitionSeed` is the seed for the sortition algorithm and must be signed by the proposer
 - `ProposerAddress` is the address of block proposer
 

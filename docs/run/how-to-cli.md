@@ -71,18 +71,18 @@ Now you can start the node and sync with the testnet. This may take several hour
 
 ## Enter Committee
 
-After syncing with the test net, you need to send a [bond transaction](/learn/transaction-bond.md) to
+After syncing with the test net, you need to send a [bond transaction](/learn/transaction-bond) to
 bond some of your tokens as stake and enter the validator pool. If you don't have any token yet,
 don't worry. There is a gentlemen agreement between validators in the network to let new validators
 join the validator pool. Just post your validator's public key in Zarb groups like
 [Discord](https://discord.gg/zPqWqV85ch), [Reddit](https://www.reddit.com/r/zarb) or
 [Telegram](https://t.me/zarbblockchain).
 
-After you join the validator pool, the [sortition](/learn/consensus-sortition.md) algorithm starts
+After you join the validator pool, the [sortition](/learn/consensus-sortition) algorithm starts
 working and after a while you will enter to [committee](/learn/committee).
 
 When you enter the committee, you will have the chance to propose and validate the blocks. Any time
-you propose a new block, you will get the [rewards](/learn/incentive.md).
+you propose a new block, you will get the [rewards](/learn/incentive).
 
 ## Find your way
 
