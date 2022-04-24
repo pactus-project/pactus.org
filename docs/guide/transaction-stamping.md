@@ -29,9 +29,7 @@ In Zarb stamp are defined as first 4 bytes of block ID.
 
   Stamped transactions are loyal to the main fork. Any possible fork needs to re-stamp the
   transactions and therefore re-sign them, which is not feasible. This feature especially can
-  mitigate _long range_ attacks for Proof-of-Stake blockchains. There is no absolute solution to
-  overcome long range attacks. Stamping transactions can make the range of long range attack shorter
-  to the lifetime (TTL) which is almost too short for attacker to take advantage of that.
+  prevent _long range_ attacks.
 
 ### Disadvantage
 

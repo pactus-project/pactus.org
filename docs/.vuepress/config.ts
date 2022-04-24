@@ -90,7 +90,7 @@ module.exports = {
           collapsable: false,
           children: [
             "learn-index",
-            "learn-cryptography",
+            "learn-crypto",
             "learn-serialization",
             "learn-genesis",
             {
@@ -114,11 +114,10 @@ module.exports = {
               children: [
                 "transaction-stamping.md",
                 "transaction-format.md",
+                "transaction-fee.md",
                 "transaction-send.md",
-                "transaction-mintbase.md",
                 "transaction-bond.md",
                 "transaction-sortition.md",
-                "transaction-fee.md",
               ],
             },
             "learn-incentive",

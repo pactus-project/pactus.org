@@ -29,6 +29,3 @@ $$
 
 For example, if Alice is going to send 20,000 to Bob, she should pay 20 coins as a fee for her
 transaction.
-
-Note: The fee for [Mintbase](transaction-mintbase.md) and [sortition](transaction-sortition.md)
-transactions are zero.

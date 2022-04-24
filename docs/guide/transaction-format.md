@@ -5,41 +5,39 @@ title: Transaction format in Zarb
 
 # Transaction
 
-## What Is Transaction?
-
 ## Transaction Format
 
 Transactions in Zarb are as seen below:
 
 ```go
 type Transaction struct {
-   Version   int              `cbor:"1,keyasint"`
-   Stamp     Hash             `cbor:"2,keyasint"`
-   Sequence  int              `cbor:"3,keyasint"`
-   Fee       int64            `cbor:"4,keyasint"`
-   Type      PayloadType      `cbor:"5,keyasint"`
-   Payload   cbor.RawMessage  `cbor:"6,keyasint"`
-   Memo      string           `cbor:"7,keyasint,omitempty"`
-   PublicKey *PublicKey       `cbor:"20,keyasint,omitempty"`
-   Signature *Signature       `cbor:"21,keyasint,omitempty"`
+    Version     uint8               // 1 byte
+    Stamp       hash.Stamp          // 4 bytes
+    Sequence    int32               // variant
+    Fee         int64               // variant
+   PayloadType uint8               // 1 byte
+    Payload     payload.Payload     // variant
+    Memo        string              // variant
+    PublicKey   crypto.PublicKey    // 96 bytes
+    Signature   crypto.Signature    // 48 bytes
 }
 ```
 
 Payload types are:
 
 ```go
+type Type uint8
+
 const (
-   PayloadTypeSend      = PayloadType(1)
-   PayloadTypeBond      = PayloadType(2)
-   PayloadTypeSortition = PayloadType(3)
+    PayloadTypeSend      = Type(1)
+    PayloadTypeBond      = Type(2)
+    PayloadTypeSortition = Type(3)
+    PayloadTypeUnbond    = Type(4)
+    PayloadTypeWithdraw  = Type(5)
 )
 ```
 
-Comment:
-
-- The payload will be decoded based on payload type
-- Sign bytes are CBOR data of tx without public key and signature
-- Transaction ID is the hash of sign bytes
+The payload will be decoded based on payload type.
 
 ## Transaction ID
 

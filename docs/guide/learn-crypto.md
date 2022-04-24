@@ -1,5 +1,5 @@
 ---
-id: learn-cryptography
+id: learn-crypto
 title: Cryptography
 ---
 

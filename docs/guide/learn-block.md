@@ -61,7 +61,7 @@ type BlockHeader struct {
 
 Block Identifier or ID is the result of hashing the following data with Block2b: Block header data
 (138 bytes) + Previous certificate hash (32 bytes) + Merkle root hash of transactions (32 bytes) +
-number of transactions (varint)
+number of transactions (variant)
 
 As a matter of fact previous certificate and transactions root hashes, are attached into the block
 ID and therefore they cannot be modified.
