@@ -43,9 +43,12 @@ var render = function (buffer) {
     for (j = 0; j < lastSpaces; j++) {
       str += '&nbsp;&nbsp;&nbsp;';
     }
+    if (lastBytes <= 8) {
+      str += '&nbsp;';
+    }
 
     b -= lastBytes;
-    str += '&nbsp;&nbsp;&nbsp;';
+    str += '&nbsp;&nbsp;';
     str += '<span class="ascii">';
 
     for (j = 0; j < lastBytes; j++) {
