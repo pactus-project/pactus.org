@@ -1,5 +1,4 @@
 ---
-id: learn-crypto
 title: Cryptography
 ---
 

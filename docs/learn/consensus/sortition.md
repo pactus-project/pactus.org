@@ -1,5 +1,4 @@
 ---
-id: learn-consensus
 title: Sortition Algorithm
 ---
 

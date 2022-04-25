@@ -1,18 +1,17 @@
 ---
-id: transaction-stamping
 title: Stamping Transactions
 ---
 
 # Stamping Transactions
 
-## What Is A Stamping Transaction?
+## What Is Stamping Transaction?
 
 _Stamping a transaction_ simply means putting something from the previous block into the header of
 the transaction. A stamped transaction, unlike normal transactions, has a lifetime (TTL) and it is
 only valid for a certain time. If <span v-pre>$TTL = N$</span>, the stamped transaction after N
 blocks will be invalid.
 
-![Stamping transaction](../assets/images/stamped_tx.png)
+![Stamped transaction](../../assets/images/zarb_stamped_transaction.png)
 
 In Zarb stamp are defined as first 4 bytes of block ID.
 

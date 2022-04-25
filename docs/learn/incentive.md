@@ -1,5 +1,4 @@
 ---
-id: learn-incentive
 title: Incentive
 ---
 

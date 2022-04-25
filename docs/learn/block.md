@@ -1,5 +1,4 @@
 ---
-id: learn-block
 title: Block
 ---
 
@@ -8,8 +7,8 @@ title: Block
 ## What Is Block?
 
 Blocks contain a header, a certificate for the previous block and transactions. Each block in Zarb
-has a unique [certificate](./certificate.md) that is signed by committee members. A block will
-be committed if it has a valid certificate. Blocks are immutable and any changes in the block will
+has a unique [certificate](./certificate.md) that is signed by committee members. A block will be
+committed if it has a valid certificate. Blocks are immutable and any changes in the block will
 invalidate the certificate.
 
 ## Block Header

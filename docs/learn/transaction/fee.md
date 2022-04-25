@@ -1,5 +1,4 @@
 ---
-id: transaction-fee
 title: Transactions fee
 ---
 

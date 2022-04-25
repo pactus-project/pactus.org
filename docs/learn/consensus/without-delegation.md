@@ -1,5 +1,4 @@
 ---
-id: learn-consensus
 title: Consensus Without delegation
 ---
 
@@ -47,7 +46,7 @@ for the people participating in the blockchain. This constitution is full of “
 not”. In the long run, the blockchain will be ruled by a powerful organization and won’t be
 decentralized anymore.
 
-![Delegated Proof of Stake](../assets/images/delegated_proof_of_stake.png)
+![Delegated Proof of Stake](../../assets/images/delegated_proof_of_stake.png)
 
 ## Zarb Has No Delegation
 
@@ -56,7 +55,7 @@ changed randomly. Anyone can easily become a validator by staking some tokens. A
 validator starts running a Verifiable Random Function (VRF) in order to choose themselves. The VRF
 is unpredictable and the result can be verified cryptographically by other validators.
 
-Based on their stake and their luck, a validator can be in the [committee](./committee) for
-the next run. Once a validator enters the set, the oldest validator in the committee leave.
+Based on their stake and their luck, a validator can be in the [committee](./committee) for the next
+run. Once a validator enters the set, the oldest validator in the committee leave.
 
-![Zarb Proof of Stake](../assets/images/zarb_validator_pool.png)
+![Zarb Proof of Stake](../../assets/images/zarb_validator_pool.png)

@@ -18,16 +18,16 @@ module.exports = {
     sidebarDepth: 0,
     navbar: [
       {
+        text: "Download",
+        link: "/run/download",
+      },
+      {
         text: "What is Zarb",
         link: "/learn/",
       },
       {
         text: "Get started",
         link: "/run/",
-      },
-      {
-        text: "Download",
-        link: "https://github.com/zarbchain/zarb-go/releases/latest",
       },
       {
         text: "Github",
@@ -47,32 +47,45 @@ module.exports = {
             "/learn/crypto.md",
             "/learn/serialization",
             "/learn/genesis",
-            {
-              text: "Consensus protocol",
-              children: [
-                "/learn/consensus-zarb",
-                "/learn/consensus-without-delegation",
-                "/learn/consensus-sortition",
-              ],
-            },
             "/learn/block",
             "/learn/certificate",
-            "/learn/state-root",
             "/learn/account",
             "/learn/validator",
             "/learn/committee",
+            "/learn/state-root",
+            "/learn/incentive",
             {
-              text: "Transactions",
+              text: "Consensus protocol",
+              link: "/learn/consensus/",
+              collapsible: true,
               children: [
-                "/learn/transaction-stamping",
-                "/learn/transaction-format",
-                "/learn/transaction-fee",
-                "/learn/transaction-send",
-                "/learn/transaction-bond",
-                "/learn/transaction-sortition",
+                "/learn/consensus/consensus-mechanism",
+                "/learn/consensus/without-delegation",
+                "/learn/consensus/sortition",
               ],
             },
-            "/learn/incentive",
+            {
+              text: "Transactions",
+              link:"/learn/transaction/",
+              collapsible: true,
+              children: [
+                "/learn/transaction/stamping",
+                "/learn/transaction/format",
+                "/learn/transaction/fee",
+                "/learn/transaction/send",
+                "/learn/transaction/bond",
+                "/learn/transaction/sortition",
+              ],
+            },
+            {
+              text: "Wallet",
+              link:"/learn/wallet/",
+              collapsible: true,
+              children: [
+                "/learn/wallet/key-generation",
+                "/learn/wallet/encryption",
+              ],
+            },
           ],
         },
         {

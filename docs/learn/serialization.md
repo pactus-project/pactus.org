@@ -1,5 +1,4 @@
 ---
-id: learn-serialization
 title: Data serialization
 ---
 

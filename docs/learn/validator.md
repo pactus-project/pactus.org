@@ -1,5 +1,4 @@
 ---
-id: learn-validator
 title: Validator
 ---
 

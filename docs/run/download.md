@@ -1,5 +1,4 @@
 ---
-id: run-download
 title: Download Zarb
 ---
 
@@ -16,7 +15,7 @@ the source code.
 Instructions for compiling Zarb is provided on the [install](https://github.com/zarbchain/zarb-go)
 page.
 
-## ⏬ Download precompiled binaries
+## ⬇️ Download precompiled binaries
 
 You can also download the latest precompiled binary version:
 

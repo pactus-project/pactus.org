@@ -1,5 +1,4 @@
 ---
-id: learn-certificate
 title: Block Certificate
 ---
 

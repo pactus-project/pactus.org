@@ -1,5 +1,4 @@
 ---
-id: learn-genesis
 title: Genesis block
 ---
 

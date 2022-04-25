@@ -1,5 +1,4 @@
 ---
-id: transaction-send
 title: Send Transaction
 ---
 

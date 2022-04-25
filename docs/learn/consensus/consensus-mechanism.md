@@ -1,5 +1,4 @@
 ---
-id: learn-consensus
 title: Consensus mechanism
 ---
 
@@ -16,7 +15,7 @@ consensus algorithm at any given time is in one the following states:
 - Precommit state
 - Commit state
 
-![Zarb consensus states](../assets/images/zarb-consensus-states.png)
+![Zarb consensus states](../../assets/images/zarb_consensus_states.png)
 
 Every 10 seconds a proposer has chance to propose a block. Whenever other validators see a proposed
 block, they validate the block and change their state to _prepare state_. If more than ⅔ of the
@@ -91,7 +90,7 @@ public keys to verify signatures.
 The picture below shows the operation of the algorithm in the normal case of no primary faults.
 Replica 0 is the proposer, replica 3 is faulty.
 
-![Normal execution](../assets/images/zarb-normal-execution.png)
+![Normal execution](../../assets/images/zarb_consensus_normal_execution.png)
 
 ## Block announcement
 
@@ -127,7 +126,7 @@ If the proposer for round <span v-pre>$r+1$</span> receives <span v-pre>$2f+1$</
 change-proposer messages for round <span v-pre>$r$</span> from other validators, it goes to next
 round and broadcasts proposal message.
 
-![Proposer change](../assets/images/zarb-change-proposer.png)
+![Proposer change](../../assets/images/zarb_consensus_change_proposer.png)
 
 [^first]:
     [Practical Byzantine Fault Tolerance](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/01/thesis-mcastro.pdf)

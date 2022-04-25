@@ -1,5 +1,4 @@
 ---
-id: transaction-sortition
 title: Sortition Transaction
 ---
 

@@ -1,5 +1,4 @@
 ---
-id: run-index
 title: Get Started
 ---
 

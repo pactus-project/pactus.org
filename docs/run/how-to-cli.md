@@ -1,5 +1,4 @@
 ---
-id: run-how-to-cli
 title: How to run Zarb (CLI)
 ---
 

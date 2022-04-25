@@ -1,5 +1,4 @@
 ---
-id: learn-account
 title: Account
 ---
 

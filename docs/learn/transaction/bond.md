@@ -1,5 +1,4 @@
 ---
-id: transaction-bond
 title: Bond Transaction
 ---
 
