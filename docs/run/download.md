@@ -12,7 +12,7 @@ Project Zarb is distributed as open source software, so the preferred way for in
 clone the source code from the [github](https://github.com/zarbchain/zarb-go) repository and compile
 the source code.
 
-Instructions for compiling Zarb is provided on the [install](https://github.com/zarbchain/zarb-go)
+Instructions for compiling Zarb is provided on the [install](https://github.com/zarbchain/zarb-go/blob/main/INSTALL.md)
 page.
 
 ## ⬇️ Download precompiled binaries
