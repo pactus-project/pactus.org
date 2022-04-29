@@ -14,11 +14,15 @@ Bond transaction has a payload as seen below:
 ```go
 type BondPayload struct {
     Sender    crypto.Address    // 21 bytes
+    Receiver  crypto.Address    // 21 bytes
     PublicKey *bls.PublicKey    // 96 bytes
     Stake     int64             // variant
 }
 ```
 
-- `Boner` is the account address that bonds the stake
-- `Validator` is the public key of the validator
+- `Sender` is the account address that bonds the stake
+- `Receiver` is the validator address that receives the stake
+- `PublicKey` is the public key of the validator (it's optional)
 - `Stake` is the amount of stake that should be bond
+
+If the validator is not exist yet, the public key should be defined.
