@@ -51,12 +51,11 @@ broadcasts a proposal message with block piggybacked to all the validators.
 
 Proposal message has this form:
 
-<span v-pre>$<<PROPOSAL,h,r,d>_{\sigma p}, B>$</span>
+<span v-pre>$<<PROPOSAL,h,r>_{\sigma p}, B>$</span>
 
 where:
 
 - <span v-pre>$B$</span> is proposed block
-- <span v-pre>$d$</span> is proposal's digest or hash
 - <span v-pre>$h$</span> indicates the block height
 - <span v-pre>$r$</span> is an assigned round number, which is zero for the first round
 
@@ -68,6 +67,11 @@ broadcasts _prepare_ message to all other validators. Otherwise, it does nothing
 Prepare message has this form:
 
 <span v-pre>$<<PREPARE,h,r,d,i>_{\sigma i}>$</span>
+
+where:
+
+- <span v-pre>$d$</span> is digest or hash of proposed block <span v-pre>$B$</span>
+
 
 If validator <span v-pre>$i$</span> received <span v-pre>$2f+1$</span> prepare messages from other
 validators (possibly including its own), it is **prepared** and enters to precommit phase.
@@ -98,7 +102,7 @@ Each validator that receives a valid proposal and with <span v-pre>$2f+1$</span>
 can make a certificate and broadcasts _block_announce_ messages with the block and certificate
 piggybacked to the network.
 
-<span v-pre>$<BLOCK-ANNOUNCE,h,r,B,C>$</span>
+<span v-pre>$<<BLOCK-ANNOUNCE,h,r>,B,C>$</span>
 
 where:
 
