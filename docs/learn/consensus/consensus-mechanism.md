@@ -102,7 +102,7 @@ piggybacked to the network.
 
 where:
 
-- <span v-pre>$C$</span> is the block certificate
+- <span v-pre>$C$</span> is the certificate for the block <span v-pre>$B$</span>
 
 Validators can move to the next height and clear the message logs after receiving valid
 _block_announce_ message.
