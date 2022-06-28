@@ -18,9 +18,9 @@ consensus algorithm at any given time is in one the following states:
 ![Zarb consensus states](../../assets/images/zarb_consensus_states.png)
 
 Every 10 seconds a proposer has chance to propose a block. Whenever other validators see a proposed
-block, they validate the block and change their state to _prepare state_. If more than ⅔ of the
-total stakes cast their votes, the proposed block becomes prepared and validators goes to _precommit
-state_. If again more than ⅔ of the total stakes cast their vote for the prepared block, the block
+block, they validate the block and change their state to _prepare_ state. If more than ⅔ of the
+total stakes cast their votes, the proposed block becomes prepared and validators goes to _precommit_
+state. If again more than ⅔ of the total stakes cast their vote for the prepared block, the block
 will be committed and the next proposer will get ready for proposing new block. These steps repeat
 every 10 seconds. In case of any failure in each step, validators goes to _proposer change_ state
 and try to change the proposer for the next round.
