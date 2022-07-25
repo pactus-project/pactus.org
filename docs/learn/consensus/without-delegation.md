@@ -1,8 +1,8 @@
 ---
-title: Consensus Without delegation
+title: Consensus without delegation
 ---
 
-# Consensus Without delegation
+# Consensus without delegation
 
 ## Proof of Stake
 

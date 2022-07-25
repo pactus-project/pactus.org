@@ -60,6 +60,7 @@ module.exports = {
               collapsible: true,
               children: [
                 "/learn/consensus/consensus-protocol",
+                "/learn/consensus/tla+",
                 "/learn/consensus/without-delegation",
                 "/learn/consensus/sortition",
               ],
