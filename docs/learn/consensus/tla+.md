@@ -31,13 +31,13 @@ Zarb consensus specification has written in TLA+ format. It includes all invaria
 in every state of every execution that the protocol allows. The TLA+ specification is compiled into
 [PDF file](https://raw.githubusercontent.com/zarbchain/zarb-go/main/consensus/spec/Zarb.pdf).
 
-## Safety proof
+### Safety proof
 
 By defining some invariants we can ensure the safety of the consensus protocol in any possible and
 indistinguishable state. We have the informal safety proof of the Zarb consensus protocol using TLA+
 toolbox.
 
-## Liveness proof
+### Liveness proof
 
 Checking the liveness is not easy, but with defining some constraints, we have the informal proof of
 liveness of Zarb consensus protocol using TLA+ toolbox.
