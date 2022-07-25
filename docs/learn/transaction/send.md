@@ -18,7 +18,7 @@ type SendPayload struct {
 ```
 
 - `Sender` is the account address that sends the amount
-- `Receiver` is the account  address that receives the amount
+- `Receiver` is the account address that receives the amount
 - `Amount` is the amount of stake that should be transferred
 
 ## Subsidy transaction

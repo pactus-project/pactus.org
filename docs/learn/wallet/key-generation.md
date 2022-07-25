@@ -8,9 +8,8 @@ title: Key generation
 
 A KDF chain is a core concept in the Key generation algorithm.
 
-Key derivation function or KDF is a cryptographic function that takes a secret 
-key and some input data and returns output data. The output data is indistinguishable from 
-provided keys.
+Key derivation function or KDF is a cryptographic function that takes a secret key and some input
+data and returns output data. The output data is indistinguishable from provided keys.
 
 We use the term KDF chain when some of the output from a KDF is used as an output key and some is
 used for input data for the next KDF. The below diagram represents a KDF chain processing three

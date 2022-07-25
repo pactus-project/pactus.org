@@ -59,7 +59,7 @@ module.exports = {
               link: "/learn/consensus/",
               collapsible: true,
               children: [
-                "/learn/consensus/consensus-mechanism",
+                "/learn/consensus/consensus-protocol",
                 "/learn/consensus/without-delegation",
                 "/learn/consensus/sortition",
               ],

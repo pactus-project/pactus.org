@@ -6,7 +6,7 @@ title: Validator
 
 ## What is Validator?
 
-Validator is a full node that participates in the consensus mechanism by broadcasting its votes.
+Validator is a full node that participates in the consensus protocol by broadcasting its votes.
 Validators get rewards for proposing new blocks. Validators should bond tokens in the form of stake
 and they are weighted by their boned stakes.
 

@@ -1,8 +1,8 @@
 ---
-title: Consensus mechanism
+title: Consensus protocol
 ---
 
-# Consensus mechanism
+# Consensus protocol
 
 Zarb consensus algorithm is a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
 replication with [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault) tolerance. The
@@ -19,11 +19,11 @@ consensus algorithm at any given time is in one the following states:
 
 Every 10 seconds a proposer has chance to propose a block. Whenever other validators see a proposed
 block, they validate the block and change their state to _prepare_ state. If more than ⅔ of the
-total stakes cast their votes, the proposed block becomes prepared and validators goes to _precommit_
-state. If again more than ⅔ of the total stakes cast their vote for the prepared block, the block
-will be committed and the next proposer will get ready for proposing new block. These steps repeat
-every 10 seconds. In case of any failure in each step, validators goes to _proposer change_ state
-and try to change the proposer for the next round.
+total stakes cast their votes, the proposed block becomes prepared and validators goes to
+_precommit_ state. If again more than ⅔ of the total stakes cast their vote for the prepared block,
+the block will be committed and the next proposer will get ready for proposing new block. These
+steps repeat every 10 seconds. In case of any failure in each step, validators goes to _proposer
+change_ state and try to change the proposer for the next round.
 
 Zarb consensus mechanism is inspired by Practical Practical Byzantine Fault Tolerant algorithm.
 Below you can see more details about the consensus mechanism in Zarb.
@@ -71,7 +71,6 @@ Prepare message has this form:
 where:
 
 - <span v-pre>$d$</span> is digest or hash of proposed block <span v-pre>$B$</span>
-
 
 If validator <span v-pre>$i$</span> received <span v-pre>$2f+1$</span> prepare messages from other
 validators (possibly including its own), it is **prepared** and enters to precommit phase.

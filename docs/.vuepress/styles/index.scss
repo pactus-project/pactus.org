@@ -1,5 +1,6 @@
 @import "palette.scss";
 
+// https://v2.vuepress.vuejs.org/reference/default-theme/styles.html#style-file
 .home .hero img {
   max-width: 450px !important;
 }
@@ -10,8 +11,8 @@
 
 .custom-container {
   &.quote {
-    background: --c-bg;
-    border-left: 10px solid #ccc;
+    background: var(--c-bg-light);
+    border-left: 10px solid var(--c-border);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
   }
