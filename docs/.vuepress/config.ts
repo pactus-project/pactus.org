@@ -55,7 +55,7 @@ module.exports = {
             "/learn/state-root",
             "/learn/incentive",
             {
-              text: "Consensus protocol",
+              text: "Consensus",
               link: "/learn/consensus/",
               collapsible: true,
               children: [
