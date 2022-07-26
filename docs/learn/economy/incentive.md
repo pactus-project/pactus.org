@@ -1,8 +1,8 @@
 ---
-title: Incentive
+title: Incentive model
 ---
 
-# Incentive
+# Incentive model
 
 ## Deflationary Economic Model
 
@@ -40,6 +40,5 @@ and, for the main net, it sets one coin per block.
 ![Token distribution in Bitcoin](../../assets/images/bitcoin_token_distribution.png)
 
 ![Token distribution in Zarb](../../assets/images/zarb_token_distribution.png)
-
 
 [^first]: [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)

@@ -6,7 +6,16 @@ title: Block Certificate
 
 ## What Is Certificate?
 
-Block certificate holds the proof of commitment for the block.
+Block certificate holds the proof of commitment for the block. A valid block should come with a
+valid certificate before committing into the blockchain.
+
+## Certificate Verification
+
+For each round validators cast their votes by signing `BlockHash | Round`. A valid certificate
+should have signatures from validators with more than ⅔ of the stake for that round. If enough votes
+are collected, the signatures will be aggregated into one single signature. To verify the aggregated
+signature, from `Committers` and `Absentees` the aggregated public key can be formed and therefore
+Signature can be verified.
 
 ## Certificate Structure
 
@@ -42,15 +51,7 @@ type Certificate struct {
 
 ::::
 
-## Certificate Verification
-
-For each round validators cast their votes by signing `BlockHash | Round`. A valid certificate
-should have signatures from validators with more than ⅔ of the stake for that round. If enough votes
-are collected, the signatures will be aggregated into one single signature. To verify the aggregated
-signature, from `Committers` and `Absentees` the aggregated public key can be formed and therefore
-Signature can be verified.
-
-## Example
+### Example
 
 Hers is an example of a certificate data.
 
