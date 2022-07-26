@@ -9,7 +9,7 @@ title: Data serialization
 For deterministic stuff like block and transactions, Zarb is using a deterministic data
 serialization. Below is a table containing the serialization format of the most data types.
 
-| **Name**                | **Size (bytes)** | **Description**                                    |
+| **Data Type**           | **Size (bytes)** | **Description**                                    |
 | ----------------------- | ---------------: | -------------------------------------------------- |
 | uint8                   |                1 | An 8 bits unsigned integer                         |
 | int8                    |                1 | An 8 bits signed integer                           |
@@ -53,7 +53,7 @@ itself:`VarInt(len(str)) || str`
 
 ### Byte order
 
-All the internal number representation are in little-endian. byte order
+All the internal number representation are in little-endian byte order.
 
 ## CBOR serialization
 
