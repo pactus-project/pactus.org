@@ -13,7 +13,7 @@ blocks will be invalid.
 
 ![Stamped transaction](../../assets/images/zarb_stamped_transaction.png)
 
-In Zarb stamp are defined as first 4 bytes of block ID.
+In Zarb stamps are defined as first 4 bytes of block ID.
 
 ## Consequences
 
