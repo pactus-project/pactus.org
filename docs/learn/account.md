@@ -6,12 +6,13 @@ title: Account
 
 ## What is Account?
 
-Account structure is 37 bytes and it is used to hold the account information like address, balance
-and sequence number.
+An account is an entity with a dedicated [address](./crypto.md#address) that can send transactions
+on Zarb blockchain. Account is controlled by user private key.
 
 ## Account Structure
 
-The format of the account is as seen below:
+Account structure is 37 bytes and it is used to hold the account information like address, balance
+and sequence number. The format of the account is as seen below:
 
 :::: tabs type:border-card
 

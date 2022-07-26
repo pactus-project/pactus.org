@@ -43,10 +43,10 @@ One of the advantages of BLS signatures is signature aggregation. BLS individual
 combined into one single aggregated signature, so that the overall size does not grow beyond one
 signature.
 
-## Address conversion
+## Address
 
 Address in Zarb is 21 bytes. The first bye of the address describes the type of cryptographic
-algorithm and the rest of 20 bytes are the public key hash. (RIPEMD-160 after Blake2b):
+algorithm and the rest of 20 bytes are the hash of public key. (RIPEMD-160 after Blake2b):
 
 ```go
 AddressBytes = <SIG_TYPE> + RIPEMD160(Blake2b(PublicKey))
