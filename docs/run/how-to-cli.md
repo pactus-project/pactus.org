@@ -78,10 +78,10 @@ join the validator pool. Just post your validator's public key in Zarb groups li
 [Telegram](https://t.me/zarbblockchain).
 
 After you join the validator pool, the [sortition](../learn/consensus/sortition) algorithm starts
-working and after a while you will enter to [committee](../learn/committee).
+working and after a while you will enter to [committee](../learn/basic/committee).
 
 When you enter the committee, you will have the chance to propose and validate the blocks. Any time
-you propose a new block, you will get the [rewards](../learn/incentive).
+you propose a new block, you will get the [rewards](../learn/economy/incentive).
 
 ## Find your way
 

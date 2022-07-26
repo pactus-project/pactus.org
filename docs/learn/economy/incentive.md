@@ -29,25 +29,17 @@ contributors in Bitcoin collect most of the tokens. This scheme in Proof-of-Stak
 damage the network by powering early contributors. Simply because the validators are weighed by
 their stake. More stake, more power.
 
-![Rewards in Bitcoin](../assets/images/bitcoin_reward.png)
+![Rewards in Bitcoin](../../assets/images/bitcoin_reward.png)
 
-![Rewards in Zarb](../assets/images/zarb_reward.png)
+![Rewards in Zarb](../../assets/images/zarb_reward.png)
 
 In Zarb, the token distribution is flat. It means the reward for each block is fixed and does not
 change over time. There is no halving in Zarb. The flat reward is a part of the consensus parameters
 and, for the main net, it sets one coin per block.
 
-![Token distribution in Bitcoin](../assets/images/bitcoin_token_distribution.png)
+![Token distribution in Bitcoin](../../assets/images/bitcoin_token_distribution.png)
 
-![Token distribution in Zarb](../assets/images/zarb_token_distribution.png)
+![Token distribution in Zarb](../../assets/images/zarb_token_distribution.png)
 
-## Treasury Account
-
-A Treasury account is a special account and is defined at the genesis time. The treasury account at
-the genesis time holds the total coins (21 million).
-
-## Reward Transaction
-
-The first transaction in each block is the reward transaction.
 
 [^first]: [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)

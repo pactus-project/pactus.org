@@ -6,7 +6,7 @@ title: Account
 
 ## What is Account?
 
-An account is an entity with a dedicated [address](./crypto.md#address) that can send transactions
+An account is an entity with a dedicated [address](../cryptography/address) that can send transactions
 on Zarb blockchain. Account is controlled by user private key.
 
 ## Account Structure

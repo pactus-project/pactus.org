@@ -28,7 +28,7 @@ and store the same data.
 In Zarb merkle is used to verify the state of blockchain in each block. The state hash in each block
 is the hash of two merkle trees: accounts merkle tree and validators merkle tree.
 
-![State hash](../assets/images/zarb_state_root.png)
+![State hash](../../assets/images/zarb_state_root.png)
 
 ## Scalability of merkle tree
 
@@ -42,6 +42,6 @@ the position of the leaf nodes in the merkle tree is always fixed. So we don’t
 merkle tree if an account state is changed. We can simply save the previous merkle tree and
 recalculate the parent hashes by fetching neighbor hashes when it’s needed.
 
-![Account tree](../assets/images/zarb_state_root_account_tree.png)
+![Account tree](../../assets/images/zarb_state_root_account_tree.png)
 
 In this example, only account 6 has been updated.

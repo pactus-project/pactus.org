@@ -44,19 +44,40 @@ module.exports = {
           text: "Learn",
           link: "/learn/",
           children: [
-            "/learn/crypto.md",
-            "/learn/serialization",
-            "/learn/genesis",
-            "/learn/block",
-            "/learn/certificate",
-            "/learn/account",
-            "/learn/validator",
-            "/learn/committee",
-            "/learn/state-root",
-            "/learn/incentive",
+            {
+              text: "Basic",
+              collapsible: true,
+              children: [
+                "/learn/basic/serialization",
+                "/learn/basic/genesis",
+                "/learn/basic/block",
+                "/learn/basic/certificate",
+                "/learn/basic/account",
+                "/learn/basic/validator",
+                "/learn/basic/committee",
+                "/learn/basic/state-root",
+              ],
+            },
+            {
+              text: "Cryptography",
+              collapsible: true,
+              children: [
+                "/learn/cryptography/hash",
+                "/learn/cryptography/signature",
+                "/learn/cryptography/address",
+              ],
+            },
+            {
+              text: "Economy",
+              collapsible: true,
+              children: [
+                "/learn/economy/treasury",
+                "/learn/economy/incentive",
+                "/learn/economy/reward",
+              ],
+            },
             {
               text: "Consensus",
-              link: "/learn/consensus/",
               collapsible: true,
               children: [
                 "/learn/consensus/consensus-protocol",
@@ -67,7 +88,6 @@ module.exports = {
             },
             {
               text: "Transactions",
-              link:"/learn/transaction/",
               collapsible: true,
               children: [
                 "/learn/transaction/stamping",
@@ -80,7 +100,6 @@ module.exports = {
             },
             {
               text: "Wallet",
-              link:"/learn/wallet/",
               collapsible: true,
               children: [
                 "/learn/wallet/key-generation",
