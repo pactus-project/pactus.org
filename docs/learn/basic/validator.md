@@ -59,7 +59,7 @@ type Validator struct {
 - `UnbondingHeight` is the height that the validator is unbonded
 - `LastJoinedHeight` is the validator joined the committee
 
-## Example
+### Example
 
 Hers is an example of a validator data:
 

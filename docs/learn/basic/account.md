@@ -49,7 +49,7 @@ type Account struct {
 - `Sequence` increasers anytime user send a transactions to prevent replaying the transaction
 - `Balance` holds the balance of the account which is 8 bytes
 
-## Example
+### Example
 
 Hers is an example of a account data:
 

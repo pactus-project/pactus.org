@@ -65,7 +65,7 @@ number of transactions (variant)
 As a matter of fact previous certificate and transactions root hashes, are attached into the block
 ID and therefore they cannot be modified.
 
-## Example
+### Example
 
 Hers is an example of a block header data:
 
