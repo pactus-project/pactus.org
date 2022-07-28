@@ -38,7 +38,7 @@ Merkle tree is not scalable for calculating the accounts root hash.
 
 In Zarb, we solved this problem by using account numbers to calculate the hash of leaf nodes. Each
 account in Zarb has a dedicated account number. With using that account number we can make sure that
-the position of the leaf nodes in the merkle tree is always fixed. So we don’t need to rebuild the
+the position of the leaf nodes in the merkle tree is always same. So we don’t need to rebuild the
 merkle tree if an account state is changed. We can simply save the previous merkle tree and
 recalculate the parent hashes by fetching neighbor hashes when it’s needed.
 
