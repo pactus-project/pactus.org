@@ -10,7 +10,7 @@ Ethereum friendly blockchains keep storage in a separate key/value database per 
 some drawbacks:
 
 - Since there is a global database that stores all storages, the storage key is a combination of
-  $Key_{contract} + Key_{item}$ that is a bit messy.
+  <span v-pre>$Key_{contract} + Key_{item}$</span> that is a bit messy.
 - Storage data can’t have any meta data, because they are scattered in different places in the
   key/value database.
 - Storages per smart contract can’t be Merklized. Ethereum came with another solution to calculate
@@ -111,7 +111,7 @@ Each file has a unique index. With using that index we can make sure that the po
 nodes in the Merkle tree is always the same. The same technique we used for calculating the
 [state root](../basic/state-root.md).
 
-![Storage Merkle tree](../../assets/images/zarb_storage_merkle-tree.png)
+![Storage Merkle tree](../../assets/images/zarb_storage_merkle_tree.png)
 
 ## Example
 
