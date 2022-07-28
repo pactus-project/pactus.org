@@ -11,10 +11,10 @@ some drawbacks:
 
 - Since there is a global database that stores all storages, the storage key is a combination of
   $Key_{contract} + Key_{item}$ that is a bit messy.
-- Storages data can’t have any meta data, because they are scattered in different places in the
+- Storage data can’t have any meta data, because they are scattered in different places in the
   key/value database.
 - Storages per smart contract can’t be Merklized. Ethereum came with another solution to calculate
-  the hash of the whole storages. They defined a hexary Patricia tree that is quite
+  the hash of the whole storage. They defined a hexary Patricia tree that is quite
   [suboptimal](https://twitter.com/VitalikButerin/status/1239359499963695106).
 
 Here we discuss how we can address the above issues by dedicating a separate file as **Storage
@@ -55,7 +55,7 @@ instead of key and value, they accept offset and data parameters.
 
 ## Storage Allocation
 
-In order to allocate storage space safely and efficiently user can use these pre-defined methods:
+In order to allocate storage space safely and efficiently user can use these predefined methods:
 
 ```rust
 /// Allocates storage space with the specific `length` and returns the
@@ -82,7 +82,7 @@ to keep the offset of the allocated spaces for the smart contract variables.
 
 Usually in smart contracts developers are interested in data collections like Search Trees or Hash
 Tables to look up values by the associated keys. Most programming languages come up with some
-builtin collections, however we can’t use them in smart contract because they use RAM that is
+builtin collections, however we can’t use them in smart contracts because they use RAM that is
 inconsistent. However we can have storage equivalent of these data collections that instead of
 dealing with memory they are dealing with the storage file. You can naively consider storage as
 dedicated consistent memory for the smart contract.
@@ -108,13 +108,17 @@ reconstruct the tree and calculate the merle root again.
 ### Whole storage Merkle tree
 
 Each file has a unique index. With using that index we can make sure that the position of the leaf
-nodes in the Merkle tree is always same. The same technique we used for calculating the
+nodes in the Merkle tree is always the same. The same technique we used for calculating the
 [state root](../basic/state-root.md).
 
 ![Storage Merkle tree](../../assets/images/zarb_storage_merkle-tree.png)
 
 ## Example
 
-As an example we have implemented ERC20 smart contract based on this idea. The implementation can be found here:
+As an example we have implemented the ERC20 smart contract based on this idea. The implementation
+can be found [here](https://github.com/zarbchain/kelk/tree/main/examples/erc20)
 
-<!-- <TODO: link > -->
+## Testing
+
+One of the consequences of Storage as File is that testing smart contracts becomes easier. What we
+need is only to mock the storage file.
