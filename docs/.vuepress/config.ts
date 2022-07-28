@@ -99,6 +99,13 @@ module.exports = {
               ],
             },
             {
+              text: "Smart contract",
+              collapsible: true,
+              children: [
+                "/learn/smart_contract/storage"
+              ],
+            },
+            {
               text: "Wallet",
               collapsible: true,
               children: [
