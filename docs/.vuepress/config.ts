@@ -68,15 +68,6 @@ module.exports = {
               ],
             },
             {
-              text: "Economy",
-              collapsible: true,
-              children: [
-                "/learn/economy/treasury",
-                "/learn/economy/incentive",
-                "/learn/economy/reward",
-              ],
-            },
-            {
               text: "Consensus",
               collapsible: true,
               children: [
@@ -103,6 +94,15 @@ module.exports = {
               collapsible: true,
               children: [
                 "/learn/smart_contract/storage"
+              ],
+            },
+            {
+              text: "Economy",
+              collapsible: true,
+              children: [
+                "/learn/economy/deflationary",
+                "/learn/economy/treasury",
+                "/learn/economy/incentive",
               ],
             },
             {

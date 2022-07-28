@@ -28,4 +28,6 @@ per block and the format of subsidy transaction is the same as send transaction 
 
 Sender address is the [Treasury address](../cryptography/address#treasury-address) and receiver
 address is defined by the block proposer. The amount of subsidy transaction should be equal to the
-block rewards plus transactions fee. This amount will go to the recevier account as block reward.
+[block rewards](../economy/incentive.md) plus transactions fee. This amount will go to the receiver
+account as block reward. Therefore in each block one coin from
+[treasury account](../economy/treasury.md) moves to the validator account as block reward.

@@ -4,12 +4,6 @@ title: Incentive model
 
 # Incentive model
 
-## Deflationary Economic Model
-
-Zarb is a deflationary blockchain, same as in the case of Bitcoin. The total number of coins in Zarb
-is 21 million and it is set at genesis time. Zarb does not have any pre-minted token or privileged
-account.
-
 ## Flat Reward
 
 The incentive may help encourage nodes to stay honest[^first]. To have a better understanding about

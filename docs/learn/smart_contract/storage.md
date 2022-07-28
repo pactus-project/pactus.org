@@ -44,7 +44,7 @@ executer (virtual machine) should introduce these APIs:
 /// at the given `offset`.
 fn read(&self, offset: u32, data: &mut [u8]) -> Result<(), HostError>;
 
-/// This API requests the host to write  the slice of `data` into the storage file
+/// This API requests the host to write the slice of `data` into the storage file
 /// at the given `offset`
 fn write(&self, offset: u32, data: &[u8]) -> Result<(), HostError>;
 

@@ -34,8 +34,7 @@ in every state of every execution that the protocol allows. The TLA+ specificati
 ### Safety proof
 
 By defining some invariants we can ensure the safety of the consensus protocol in any possible and
-distinct state. We have the informal safety proof of the Zarb consensus protocol using TLA+
-toolbox.
+distinct state. We have the informal safety proof of the Zarb consensus protocol using TLA+ toolbox.
 
 ### Liveness proof
 
