@@ -30,12 +30,12 @@ module.exports = {
         link: "/run/",
       },
       {
-        text: "Github",
-        link: "https://github.com/zarbchain/",
+        text: "Team",
+        link: "https://youtu.be/i7kD0yR508s",
       },
       {
-        text: "Twitter",
-        link: "https://twitter.com/ZarbBlockchain",
+        text: "Github",
+        link: "https://github.com/zarbchain/",
       },
     ],
     sidebar: {

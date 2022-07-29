@@ -51,9 +51,12 @@ footer: "Made with ❤️"
 <div style="text-align: center;">
   <table style="display: inline-block;">
     <tr style="border-width: 0px">
-      <td style="border-width: 0px"><a href="https://t.me/zarbblockchain" target="_blank"><img alt="Telegram" height=48 width=48 src="./assets/images/telegram_logo.svg" /></a></td>
+      <td style="border-width: 0px"><a href="https://twitter.com/ZarbBlockchain" target="_blank"><img alt="Twitter" height=48 width=48 src="./assets/images/twitter_logo.svg" /></a></td>
       <td style="border-width: 0px"><a href="https://discord.gg/zPqWqV85ch" target="_blank"><img alt="Discord" height=48 width=48 src="./assets/images/discord_logo.svg" /></a></td>
+      <td style="border-width: 0px"><a href="https://t.me/zarbblockchain" target="_blank"><img alt="Telegram" height=48 width=48 src="./assets/images/telegram_logo.svg" /></a></td>
+      <!--
       <td style="border-width: 0px"><a href="https://www.reddit.com/r/zarb" target="_blank"><img alt="Reddit" height=48 width=48 src="./assets/images/reddit_logo.svg" /></a></td>
+      -->
     </tr>
   </table>
 </div>
