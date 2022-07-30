@@ -22,7 +22,7 @@ Zarb started with 4 bootstrap validators without any stake and now anyone can jo
 staking some tokens. The stake will be bonded and cannot be touched. A set of 21 validators secure
 the network and validate blocks. However, unlike Delegated Proof-of-Stake (dPoS) blockchain, this
 set is not fixed. Indeed, Zarb solves validators' scalability problem with a clever and secure
-mechanism. The set of validators in Zarb are **dynamic** and flexible, compared to the more fixed
+mechanism. The set of validators in Zarb are **dynamic** and flexible, compared to the fixed
 and governed set of validators.
 
 ## Main features
