@@ -56,6 +56,6 @@ validator starts running a Verifiable Random Function (VRF) in order to choose t
 is unpredictable and the result can be verified cryptographically by other validators.
 
 Based on their stake and their luck, a validator can be in the [committee](../basic/committee) for
-the next run. Once a validator enters the set, the oldest validator in the committee leave.
+the next run. Once a validator enters the committee, the oldest validator in the committee leave.
 
 ![Zarb Proof of Stake](../../assets/images/zarb_validator_pool.png)
