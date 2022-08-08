@@ -89,13 +89,13 @@ module.exports = {
                 "/learn/transaction/sortition",
               ],
             },
-            {
-              text: "Smart contract",
-              collapsible: true,
-              children: [
-                "/learn/smart_contract/storage"
-              ],
-            },
+            //{
+            //  text: "Smart contract",
+            //  collapsible: true,
+            //  children: [
+            //    "/learn/smart_contract/storage"
+            //  ],
+            //},
             {
               text: "Economy",
               collapsible: true,
@@ -103,14 +103,6 @@ module.exports = {
                 "/learn/economy/deflationary",
                 "/learn/economy/treasury",
                 "/learn/economy/incentive",
-              ],
-            },
-            {
-              text: "Wallet",
-              collapsible: true,
-              children: [
-                "/learn/wallet/key-generation",
-                "/learn/wallet/encryption",
               ],
             },
           ],
