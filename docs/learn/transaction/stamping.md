@@ -22,12 +22,12 @@ In Zarb stamps are defined as first 4 bytes of [block ID](../basic/block#block-i
 - **Reducing the size of transaction pool**
 
   Each stamped transaction has a lifetime and the transaction will be invalid after a certain time.
-  It can help to manage the transaction pool better.
+  It can help to manage the transaction pool efficiently.
 
 - **Preventing any possible forks**
 
   Stamped transactions are loyal to the main fork. Any possible fork needs to re-stamp the
-  transactions and therefore re-sign them, which is not feasible. This feature especially can
+  transactions and therefore re-sign them, that is not feasible. This feature especially can
   prevent _long range_ attacks.
 
 ### Disadvantage
