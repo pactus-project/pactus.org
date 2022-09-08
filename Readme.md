@@ -1,7 +1,7 @@
-# Zarb.Network
+# Pactus.rg
 
-This repository contains all the information about zarb blockchain. You might check
-[https://zarb.network](https://zarb.network) to see the compiled version of this repository.
+This repository contains all the information about pactus blockchain. You might check
+[https://pactus.org](https://pactus.org) to see the compiled version of this repository.
 
 ## Contributing to Documentation
 
@@ -13,8 +13,8 @@ on this wiki are welcomed.
 You can clone this repository and running it locally by using these commands:
 
 ```zsh
-git clone https://github.com/zarbchain/zarb.network.git
-cd zarb.network
+git clone https://github.com/pactus-project/pactus.org.git
+cd pactus.org
 yarn install
 yarn dev
 ```
