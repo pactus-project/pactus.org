@@ -6,7 +6,7 @@ title: Consensus without delegation
 
 ## Proof of Stake
 
-Zarb is a real Proof of Stake blockchain. Proof of Stake is a way to secure the network through
+Pactus is a real Proof of Stake blockchain. Proof of Stake is a way to secure the network through
 requesting users to stake some amount of their coins.
 
 ## A paradox
@@ -48,9 +48,9 @@ decentralized anymore.
 
 ![Delegated Proof of Stake](../../assets/images/delegated_proof_of_stake.png)
 
-## Zarb Has No Delegation
+## Pactus Has No Delegation
 
-The solution we are offering in Zarb is creating a **dynamic set** of validators. Validators can be
+The solution we are offering in Pactus is creating a **dynamic set** of validators. Validators can be
 changed randomly. Anyone can easily become a validator by staking some tokens. At each height, every
 validator starts running a Verifiable Random Function (VRF) in order to choose themselves. The VRF
 is unpredictable and the result can be verified cryptographically by other validators.
@@ -58,4 +58,4 @@ is unpredictable and the result can be verified cryptographically by other valid
 Based on their stake and their luck, a validator can be in the [committee](../basic/committee) for
 the next run. Once a validator enters the committee, the oldest validator in the committee leave.
 
-![Zarb Proof of Stake](../../assets/images/zarb_validator_pool.png)
+![Pactus Proof of Stake](../../assets/images/pactus_validator_pool.png)

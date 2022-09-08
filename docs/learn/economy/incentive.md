@@ -10,7 +10,7 @@ The incentive may help encourage nodes to stay honest[^first]. To have a better 
 the incentive model in Zarb, let's do a comparison with the Bitcoin incentive and reward
 distribution model. We will use this comparison to show the difference. is the king.
 
-| Zarb                                             | Bitcoin                                      |
+| Pactus                                             | Bitcoin                                      |
 | ------------------------------------------------ | -------------------------------------------- |
 | Consensus engine is Proof of Stake               | Consensus engine is Proof of Work            |
 | _Exactly_ every 10 seconds one block is _minted_ | Around every 10 minutes one block is _mined_ |
@@ -25,14 +25,14 @@ their stake. More stake, more power.
 
 ![Rewards in Bitcoin](../../assets/images/bitcoin_reward.png)
 
-![Rewards in Zarb](../../assets/images/zarb_reward.png)
+![Rewards in Pactus](../../assets/images/pactus_reward.png)
 
-In Zarb, the token distribution is flat. It means the reward for each block is fixed and does not
-change over time. There is no halving in Zarb. The flat reward is a part of the consensus parameters
+In Pactus, the token distribution is flat. It means the reward for each block is fixed and does not
+change over time. There is no halving in Pactus. The flat reward is a part of the consensus parameters
 and, for the main net, it sets one coin per block.
 
 ![Token distribution in Bitcoin](../../assets/images/bitcoin_token_distribution.png)
 
-![Token distribution in Zarb](../../assets/images/zarb_token_distribution.png)
+![Token distribution in Pactus](../../assets/images/pactus_token_distribution.png)
 
 [^first]: [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)

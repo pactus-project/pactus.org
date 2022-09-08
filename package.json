@@ -1,13 +1,12 @@
 {
-  "name": "zarb",
-  "version": "0.0.2",
-  "description": "Zarb Blockchain",
+  "name": "pactus.org",
+  "version": "0.0.3",
+  "description": "Pactus Blockchain",
   "main": "index.js",
-  "repository": "https://github.com/zarbchain/zarb.network",
+  "repository": "https://github.com/pactus-project/pactus.org",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "cname": "echo zarb.network>>docs/.vuepress/dist/CNAME"
+    "build": "vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {

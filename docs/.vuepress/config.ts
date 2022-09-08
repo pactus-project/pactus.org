@@ -2,13 +2,13 @@ const { description } = require("../../package");
 
 module.exports = {
   lang: 'en-US',
-  title: "Zarb",
-  description: "Zarb blockchain, of the people, by the people, for the people",
+  title: "Pactus",
+  description: "Pactus blockchain, of the people, by the people, for the people",
 
   theme: '@vuepress/theme-default',
   themeConfig: {
-    hostname: "https://zarb.netwotk/",
-    docsRepo: "https://github.com/zarbchain/zarb.network",
+    hostname: "https://pactus.org/",
+    docsRepo: "https://github.com/pactus-project/pactus.org",
     docsDir: "docs",
     docsBranch: "main",
     lastUpdated: "Last Updated",
@@ -22,7 +22,7 @@ module.exports = {
         link: "/run/download",
       },
       {
-        text: "What is Zarb",
+        text: "What is Pactus",
         link: "/learn/",
       },
       {
@@ -30,12 +30,8 @@ module.exports = {
         link: "/run/",
       },
       {
-        text: "Team",
-        link: "https://youtu.be/i7kD0yR508s",
-      },
-      {
         text: "Github",
-        link: "https://github.com/zarbchain/",
+        link: "https://github.com/pactus-project/",
       },
     ],
     sidebar: {

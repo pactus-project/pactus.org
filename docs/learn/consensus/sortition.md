@@ -33,7 +33,7 @@ at any point of <span v-pre>$x$</span> can evaluate <span v-pre>$v=f_s(x)$</span
 <span v-pre>$proof_x$</span> efficiently proving that v is correct. We call such a mathematical
 object a verifiable(pseudo-)random function, VRF for brevity [^first].
 
-In Zarb we are using BLS signature scheme as source of VRF. Since BLS signature are unique, in the
+In Pactus we are using BLS signature scheme as source of VRF. Since BLS signature are unique, in the
 random oracle model, the hash of a BLS signature can be used as a secure VRF.
 
 VRF takes the publicly-known seed for each block and generates an index and proof.

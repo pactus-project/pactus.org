@@ -6,5 +6,5 @@ title: Hashing algorithm
 
 ## Blake2b
 
-The hashing algorithm used in Zarb is Blake2b. [Blake2](https://www.blake2.net/) is considered to be
+The hashing algorithm used in Pactus is Blake2b. [Blake2](https://www.blake2.net/) is considered to be
 a fast cryptographic hash function.

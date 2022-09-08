@@ -6,7 +6,7 @@ title: Signature scheme
 
 ## BLS signature
 
-Zarb is using [BLS](https://datatracker.ietf.org/doc/draft-irtf-cfrg-bls-signature/)
+Pactus is using [BLS](https://datatracker.ietf.org/doc/draft-irtf-cfrg-bls-signature/)
 (Boneh–Lynn–Shacham) threshold signature for cryptographic signing and verification. In Zarb
 blockchain, we are using [Herumi](https://github.com/herumi/bls), an implementation of BLS threshold
 signature.

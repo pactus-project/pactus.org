@@ -11,9 +11,9 @@ the transaction. A stamped transaction, unlike normal transactions, has a lifeti
 only valid for a certain time. If <span v-pre>$TTL = N$</span>, the stamped transaction after N
 blocks will be invalid.
 
-![Stamped transaction](../../assets/images/zarb_stamped_transaction.png)
+![Stamped transaction](../../assets/images/pactus_stamped_transaction.png)
 
-In Zarb stamps are defined as first 4 bytes of [block ID](../basic/block#block-identifier).
+In Pactus stamps are defined as first 4 bytes of [block ID](../basic/block#block-identifier).
 
 ## Consequences
 

@@ -20,7 +20,6 @@ jobs:
         run: |
           yarn install
           yarn build
-          yarn cname
 
       - name: Check all markdowns for broken links
         run: |

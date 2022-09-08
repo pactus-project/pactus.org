@@ -6,7 +6,7 @@ title: Transaction format in Zarb
 
 ## Transaction Format
 
-Transactions in Zarb are as seen below:
+Transactions in Pactus are as seen below:
 
 ```go
 type Transaction struct {

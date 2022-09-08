@@ -4,7 +4,7 @@ title: Consensus protocol
 
 # Consensus protocol
 
-Zarb consensus algorithm is a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
+Pactus consensus algorithm is a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
 replication with [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault) tolerance. The
 consensus algorithm at any given time is in one the following states:
 
@@ -15,7 +15,7 @@ consensus algorithm at any given time is in one the following states:
 - Precommit state
 - Commit state
 
-![Zarb consensus states](../../assets/images/zarb_consensus_states.png)
+![Pactus consensus states](../../assets/images/pactus_consensus_states.png)
 
 Every 10 seconds a proposer has chance to propose a block. Whenever other validators see a proposed
 block, they validate the block and change their state to _prepare_ state. If more than ⅔ of the
@@ -25,13 +25,13 @@ the block will be committed and the next proposer will get ready for proposing n
 steps repeat every 10 seconds. In case of any failure in each step, validators goes to _proposer
 change_ state and try to change the proposer for the next round.
 
-Zarb consensus mechanism is inspired by Practical Practical Byzantine Fault Tolerant algorithm.
+Pactus consensus mechanism is inspired by Practical Practical Byzantine Fault Tolerant algorithm.
 Below you can see more details about the consensus mechanism in Zarb.
 
 ## Practical Byzantine Fault Tolerant
 
 Practical Byzantine Fault Tolerant, in short PBFT, “presents a new, practical algorithm for state
-machine replication that tolerates Byzantine faults." [^first] The Zarb consensus algorithm is
+machine replication that tolerates Byzantine faults." [^first] The Pactus consensus algorithm is
 highly inspired by Practical Byzantine Fault Tolerant (PBFT) algorithm.
 
 ## The algorithm
@@ -49,7 +49,7 @@ signatures. We denote a message signed by node <span v-pre>$i$</span> as
 ### Normal-Case Operation
 
 In each round, one validator is the proposer and the others are validators. The normal case
-operation of Zarb consensus algorithm includes these three steps: **propose**, **prepare** and
+operation of Pactus consensus algorithm includes these three steps: **propose**, **prepare** and
 **precommit**
 
 #### Propose phase
@@ -94,7 +94,7 @@ Each validator executes and commits block <span v-pre>$b$</span> after receiving
 The picture below shows the operation of the algorithm in the normal case. validator 0 is the
 proposer and validator 3 is faulty.
 
-![Normal execution](../../assets/images/zarb_consensus_normal_execution.png)
+![Normal execution](../../assets/images/pactus_consensus_normal_execution.png)
 
 ### Change proposer
 
@@ -118,7 +118,7 @@ round and broadcasts proposal message.
 The picture below shows the operation of the algorithm in change-proposer case. validator 0 is the
 proposer and is faulty.
 
-![Proposer change](../../assets/images/zarb_consensus_change_proposer.png)
+![Proposer change](../../assets/images/pactus_consensus_change_proposer.png)
 
 ### Block announcement
 

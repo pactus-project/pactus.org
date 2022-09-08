@@ -1,10 +1,10 @@
 ---
-title: How to run Zarb (CLI)
+title: How to run Pactus (CLI)
 ---
 
-# How to run Zarb (CLI)
+# How to run Pactus (CLI)
 
-Advanced user can run Zarb in Command Line Interface (CLI) mode.
+Advanced user can run Pactus in Command Line Interface (CLI) mode.
 
 ## Initializing Working Directory
 
@@ -73,7 +73,7 @@ Now you can start the node and sync with the testnet. This may take several hour
 After syncing with the test net, you need to send a [bond transaction](../learn/transaction/bond) to
 bond some of your tokens as stake and enter the validator pool. If you don't have any token yet,
 don't worry. There is a gentlemen agreement between validators in the network to let new validators
-join the validator pool. Just post your validator's public key in Zarb groups like
+join the validator pool. Just post your validator's public key in Pactus groups like
 [Discord](https://discord.gg/zPqWqV85ch), [Reddit](https://www.reddit.com/r/zarb) or
 [Telegram](https://t.me/zarbblockchain).
 
@@ -85,7 +85,7 @@ you propose a new block, you will get the [rewards](../learn/economy/incentive).
 
 ## Find your way
 
-In this document we tried to explain a simple way to run a validator in Zarb network. you may do it
+In this document we tried to explain a simple way to run a validator in Pactus network. you may do it
 in a different way. Find your way of deployment. But never forget that security first!
 
 Good luck 🍀
