@@ -1,4 +1,4 @@
-# Pactus.rg
+# Pactus.org
 
 This repository contains all the information about pactus blockchain. You might check
 [https://pactus.org](https://pactus.org) to see the compiled version of this repository.
