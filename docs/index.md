@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: Zarb Blockchain
-tagline: Of the people, By the people, For the people
+heroText: Pactus Blockchain
+tagline: Real decentralized Proof of Stake blockchain
 actions:
   - text: Get Started
     link: /run/
@@ -17,7 +17,7 @@ footer: "Made with ❤️"
 <br>
 
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O9Uk8tb3hpE" title="What is Zarb blockchain" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O9Uk8tb3hpE" title="What is Pactus blockchain" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 <br>
@@ -27,20 +27,20 @@ footer: "Made with ❤️"
   <div class="feature">
     <a href="/run/">
       <h2>Run</h2>
-      <p>How to build and run Zarb blockchain</p>
+      <p>How to build and run Pactus blockchain</p>
     </a>
   </div>
 
   <div class="feature">
     <a href="/learn/">
       <h2>Learn</h2>
-      <p>Learn more about Zarb blockchain</p>
+      <p>Learn more about Pactus blockchain</p>
     </a>
   </div>
   <div class="feature">
-    <a href="https://github.com/zarbchain/">
+    <a href="https://github.com/pactus-project/">
       <h2>Contribute</h2>
-      <p>Contribute to Zarb project</p>
+      <p>Contribute to Pactus project</p>
     </a>
   </div>
 </div>
