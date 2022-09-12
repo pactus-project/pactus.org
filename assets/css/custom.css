@@ -1,0 +1,10 @@
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #4c4c4c;
+    background-color: #edeef0;
+  }
+
+  .nav-top {
+    height: 86px;
+  }

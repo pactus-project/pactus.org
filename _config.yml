@@ -1,0 +1,16 @@
+title: Pacrus blockchain
+email:
+description: >-
+  Pactus is truly decentralized Proof-of-Stake blockchain
+baseurl: ""
+url: "https://www.pactus.org"
+
+plugins:
+  - jekyll-multiple-languages-plugin
+  - jekyll-feed
+
+languages: ["en"]
+
+exclude_from_localizations: ["blog"]
+
+markdown: kramdown

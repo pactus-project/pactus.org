@@ -1,0 +1,67 @@
+- title: Basic
+  url: learn/basic
+  items:
+  - title: serialization
+    url: learn/basic/serialization
+  - title: genesis
+    url: learn/basic/genesis
+  - title: block
+    url: learn/basic/block
+  - title: certificate
+    url: learn/basic/certificate
+  - title: account
+    url: learn/basic/account
+  - title: validator
+    url: learn/basic/validator
+  - title: committee
+    url: learn/basic/committee
+  - title: state-root
+    url: learn/basic/state-merkle
+
+- title: Cryptography
+  url: learn/cryptography
+  items:
+  - title: hash
+    url: learn/cryptography/hash
+  - title: signature
+    url: learn/cryptography/signature
+  - title: address
+    url: learn/cryptography/address
+
+- title: Consensus
+  url: learn/consensus
+  items:
+  - title: consensus-protocol
+    url: learn/consensus/protocol
+  - title: tla+
+    url: learn/consensus/tla+
+  - title: without-delegation
+    url: learn/consensus/without-delegation
+  - title: sortition
+    url: learn/consensus/sortition
+
+- title: Transactions
+  url: learn/transaction
+  items:
+  - title: stamping
+    url: learn/transaction/stamping
+  - title: format
+    url: learn/transaction/format
+  - title: fee
+    url: learn/transaction/fee
+  - title: send
+    url: learn/transaction/send
+  - title: bond
+    url: learn/transaction/bond
+  - title: sortition
+    url: learn/transaction/sortition
+
+- title: Economy
+  url: learn/economy
+  items:
+  - title: deflationary
+    url: learn/economy/deflationary
+  - title: treasury
+    url: learn/economy/treasury
+  - title: incentive
+    url: learn/economy/incentive
