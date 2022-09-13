@@ -23,9 +23,9 @@ Signature can be verified.
 
 Each block certificate contains following information:
 
-:::: tabs type:border-card
+{% tabs certificate %}
 
-::: tab 🦀 Rust
+{% tab certificate 🦀 Rust %}
 
 ```rust
 pub struct Certificate {
@@ -36,9 +36,9 @@ pub struct Certificate {
 }
 ```
 
-:::
+{% endtab %}
 
-::: tab 🇬 Golang
+{% tab certificate 🇬 Golang %}
 
 ```go
 type Certificate struct {
@@ -49,9 +49,9 @@ type Certificate struct {
 }
 ```
 
-:::
+{% endtab %}
 
-::::
+{% endtabs %}
 
 ### Example
 

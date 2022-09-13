@@ -1,31 +1,16 @@
 {
   "name": "pactus.org",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Pactus Blockchain",
-  "main": "index.js",
   "repository": "https://github.com/pactus-project/pactus.org",
-  "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
-  },
   "license": "MIT",
-  "devDependencies": {
-    "@snippetors/vuepress-plugin-code-copy": "^1.1.2",
-    "@snippetors/vuepress-plugin-tabs": "^1.1.7",
-    "@vue/component-compiler-utils": "^3.3.0",
-    "@vuepress/plugin-container": "^2.0.0-beta.38",
-    "@vuepress/plugin-medium-zoom": "^2.0.0-beta.38",
-    "@vuepress/plugin-pwa": "^2.0.0-beta.38",
-    "@vuepress/plugin-pwa-popup": "^2.0.0-beta.38",
-    "katex": "^0.15.3",
-    "markdown-it-footnote": "^3.0.2",
-    "markdown-it-texmath": "^0.9.7",
-    "prettier": "2.2.1",
-    "vuepress": "^2.0.0-beta.39",
-    "vuepress-plugin-smooth-scroll": "0.0.10",
-    "vuepress-plugin-zooming": "^1.1.8"
+  "scripts": {
+    "check": "check-md --cwd ./website --ignore-footnotes",
+    "prettier": "prettier --write ./website",
+    "exif": "cd ./website/assets/images && for i in *.png; do echo \"Processing $i\"; exiftool -all= \"$i\"; done"
   },
   "optionalDependencies": {
-    "check-md": "^1.0.2"
+    "check-md": "^1.0.2",
+    "prettier": "^2.7.1"
   }
 }

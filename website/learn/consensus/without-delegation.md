@@ -48,7 +48,7 @@ for the people participating in the blockchain. This constitution is full of “
 not”. In the long run, the blockchain will be ruled by a powerful organization and won’t be
 decentralized anymore.
 
-![Delegated Proof of Stake](//assets/images/delegated_proof_of_stake.png)
+![Delegated Proof of Stake](/assets/images/delegated_proof_of_stake.png)
 
 ## Pactus Has No Delegation
 
@@ -60,4 +60,4 @@ is unpredictable and the result can be verified cryptographically by other valid
 Based on their stake and their luck, a validator can be in the [committee](../basic/committee) for
 the next run. Once a validator enters the committee, the oldest validator in the committee leave.
 
-![Pactus Proof of Stake](//assets/images/pactus_validator_pool.png)
+![Pactus Proof of Stake](/assets/images/pactus_validator_pool.png)

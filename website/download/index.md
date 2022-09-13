@@ -8,7 +8,7 @@ permalink: /download/index.html
 
 On this page you can find how to download and get the latest version of the Pactus software.
 
-## 🏗️ Compile from Source Code
+##🏗️ Compile from Source Code
 
 Project Pactus is distributed as open source software, so the preferred way for installing it is to
 clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile

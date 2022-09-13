@@ -17,9 +17,9 @@ invalidate the certificate.
 
 Block header is 138 bytes and defines like below:
 
-:::: tabs type:border-card
+{% tabs block %}
 
-::: tab 🦀 Rust
+{% tab block 🦀 Rust %}
 
 ```rust
 pub struct BlockHeader {
@@ -32,9 +32,9 @@ pub struct BlockHeader {
 }
 ```
 
-:::
+{% endtab %}
 
-::: tab 🇬 Golang
+{% tab block 🇬 Golang %}
 
 ```go
 type BlockHeader struct {
@@ -47,9 +47,9 @@ type BlockHeader struct {
 }
 ```
 
-:::
+{% endtab %}
 
-::::
+{% endtabs %}
 
 - `Version` starts from 1 for the mainnet and starts from 1001 for the testnet
 - `UnixTime` is the time of block in unix format (seconds from Unix Epoch)

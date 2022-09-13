@@ -25,16 +25,16 @@ contributors in Bitcoin collect most of the tokens. This scheme in Proof-of-Stak
 damage the network by powering early contributors. Simply because the validators are weighed by
 their stake. More stake, more power.
 
-![Rewards in Bitcoin](//assets/images/bitcoin_reward.png)
+![Rewards in Bitcoin](/assets/images/bitcoin_reward.png)
 
-![Rewards in Pactus](//assets/images/pactus_reward.png)
+![Rewards in Pactus](/assets/images/pactus_reward.png)
 
 In Pactus, the token distribution is flat. It means the reward for each block is fixed and does not
 change over time. There is no halving in Pactus. The flat reward is a part of the consensus parameters
 and, for the main net, it sets one coin per block.
 
-![Token distribution in Bitcoin](//assets/images/bitcoin_token_distribution.png)
+![Token distribution in Bitcoin](/assets/images/bitcoin_token_distribution.png)
 
-![Token distribution in Pactus](//assets/images/pactus_token_distribution.png)
+![Token distribution in Pactus](/assets/images/pactus_token_distribution.png)
 
 [^first]: [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)

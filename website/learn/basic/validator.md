@@ -17,9 +17,9 @@ and they are weighted by their boned stakes.
 Validator structure is 124 bytes and it is used to hold the validator information like public key,
 balance and sequence number. The format of the account is as seen below:
 
-:::: tabs type:border-card
+{% tabs validator %}
 
-::: tab 🦀 Rust
+{% tab validator 🦀 Rust %}
 
 ```rust
 pub struct Validator {
@@ -33,9 +33,9 @@ pub struct Validator {
 }
 ```
 
-:::
+{% endtab %}
 
-::: tab 🇬 Golang
+{% tab validator 🇬 Golang %}
 
 ```go
 type Validator struct {
@@ -49,9 +49,9 @@ type Validator struct {
 }
 ```
 
-:::
+{% endtab %}
 
-::::
+{% endtabs %}
 
 - `PublicKey` is the public key of validator which is 96 bytes in length
 - `Number` is a unique and sequential number for the validator

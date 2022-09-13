@@ -16,9 +16,9 @@ transactions on Pactus blockchain. Account is controlled by user private key.
 Account structure is 37 bytes and it is used to hold the account information like address, balance
 and sequence number. The format of the account is as seen below:
 
-{% tabs block %}
+{% tabs account %}
 
-{% tab block 🦀 Rust %}
+{% tab account 🦀 Rust %}
 
 ```rust
 pub struct Account {
@@ -31,7 +31,7 @@ pub struct Account {
 
 {% endtab %}
 
-{% tab block 🇬 Golang %}
+{% tab account 🇬 Golang %}
 
 ```go
 type Account struct {
