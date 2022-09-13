@@ -9,44 +9,14 @@
   </title>
   <meta name="description" content="{{ page.seo_desc }}" />
 
-  <meta
-    property="og:title"
-    content="{{ page.title }} | {% t dict.pactus_blockchain %}" />
+  <meta property="og:title" content="{{ page.title }} | {% t dict.pactus_blockchain %}" />
   <meta property="og:description" content="{{ page.seo_desc }}" />
   <meta property="og:site_name" content="{% t dict.pactus_blockchain %}" />
   <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
   <meta property="og:type" content="website" />
 
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="/meta/apple-touch-icon.png" />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="/meta/favicon-32x32.png" />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="/meta/favicon-16x16.png" />
-  <link rel="manifest" href="/meta/manifest.json" />
-  <link rel="mask-icon" href="/meta/safari-pinned-tab.svg" color="#5bbad5" />
-
-  <meta name="theme-color" content="#ffffff" />
-
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-    crossorigin="anonymous" />
+  <link href="{{ site.url }}/assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="{{ site.url }}/assets/css/custom.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script
-    id="MathJax-script"
-    async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="{{ site.url }}/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ site.url }}/assets/js/tex-mml-chtml.js"></script>
 </head>
