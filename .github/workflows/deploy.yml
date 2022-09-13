@@ -1,44 +1,23 @@
 name: Deploy to GitHub pages
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
+
+      - uses: actions/cache@v2
         with:
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
-          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
 
-      - uses: actions/setup-node@v1
+      - uses: helaili/jekyll-action@2.0.5
         with:
-          node-version: "14.x"
-
-      - name: Generate static vuepress files
-        run: |
-          yarn install
-          yarn build
-
-      - name: Check all markdowns for broken links
-        run: |
-          yarn add check-md -O
-          yarn check-md --ignore-footnotes
-
-      - name: Init new repo in dist folder and commit generated files
-        run: |
-          cd docs/.vuepress/dist
-          git init
-          git add -A
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m 'deploy'
-
-      - name: Force push to destination branch
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          force: true
-          directory: ./docs/.vuepress/dist
+          token: ${{ secrets.GITHUB_TOKEN }}

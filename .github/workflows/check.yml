@@ -1,0 +1,18 @@
+name: Check
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
+
+      - name: Installing packages
+        run: yarn install
+
+      - name: Check all markdowns for broken links
+        run: yarn check
