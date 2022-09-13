@@ -18,6 +18,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - uses: helaili/jekyll-action@2.0.5
+      - uses: jeffreytse/jekyll-deploy-action@v0.4.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
