@@ -17,7 +17,7 @@ consensus algorithm at any given time is in one the following states:
 - Precommit state
 - Commit state
 
-![Pactus consensus states](../../../assets/images/pactus_consensus_states.png)
+![Pactus consensus states](//assets/images/pactus_consensus_states.png)
 
 Every 10 seconds a proposer has chance to propose a block. Whenever other validators see a proposed
 block, they validate the block and change their state to _prepare_ state. If more than ⅔ of the
@@ -96,7 +96,7 @@ Each validator executes and commits block <span v-pre>$$b$$</span> after receivi
 The picture below shows the operation of the algorithm in the normal case. validator 0 is the
 proposer and validator 3 is faulty.
 
-![Normal execution](../../../assets/images/pactus_consensus_normal_execution.png)
+![Normal execution](//assets/images/pactus_consensus_normal_execution.png)
 
 ### Change proposer
 
@@ -120,7 +120,7 @@ round and broadcasts proposal message.
 The picture below shows the operation of the algorithm in change-proposer case. validator 0 is the
 proposer and is faulty.
 
-![Proposer change](../../../assets/images/pactus_consensus_change_proposer.png)
+![Proposer change](//assets/images/pactus_consensus_change_proposer.png)
 
 ### Block announcement
 
