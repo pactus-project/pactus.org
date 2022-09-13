@@ -1,4 +1,4 @@
-# Pactus.org
+# Pactus website
 
 This repository contains all the content of [https://pactus.org](https://pactus.org) website.
 
