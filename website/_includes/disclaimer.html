@@ -9,18 +9,20 @@
 <!-- If page is translated but the English version got updated, the translation is outdated -->
 {% elsif include.translationOutdated == "yes" %} {% capture disclaimer %}{% t
 global.outdatedMin %}
-<a class="disclaimer-link" href="{{ site.baseurl_root }}{{ page.url }}"
-  >{% t global.outdatedVersion %}</a
->.{% endcapture %}
+<a class="disclaimer-link" href="{{ site.baseurl_root }}{{ page.url }}">
+  {% t global.outdatedVersion %}
+</a>
+.{% endcapture %}
 
 <!-- The page is not translated -->
 {% elsif include.translated == "no" %} {% capture disclaimer %}{% t
 global.untranslated %}
 <a
   class="disclaimer-link"
-  href="https://github.com/monero-project/monero-site/blob/master/README.md"
-  >README</a
->{% endcapture %} {% endif %}
+  href="https://github.com/monero-project/monero-site/blob/master/README.md">
+  README
+</a>
+{% endcapture %} {% endif %}
 
 <!-- Print the disclaimer if not empty and not English -->
 {% if disclaimer != "" and site.lang != "en" %}

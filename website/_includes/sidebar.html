@@ -53,22 +53,20 @@
         class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
         data-bs-toggle="collapse"
         data-bs-target="#{{folder.title | slugify}}-collapse"
-        aria-expanded="{% if page.url contains folder.url %}{{ 'true'}}{% else %}{{ 'false'}}{% endif %}"
-      >
+        aria-expanded="{% if page.url contains folder.url %}{{ 'true'}}{% else %}{{ 'false'}}{% endif %}">
         {{ folder.title }}
       </button>
       <div
         class="collapse {% if page.url contains folder.url %}{{'show'}}{% endif %}"
-        id="{{folder.title | slugify}}-collapse"
-      >
+        id="{{folder.title | slugify}}-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           {% for item in folder.items %}
           <li>
             <a
               href="{{ site.url }}/{{ item.url}}"
-              class="link-dark d-inline-flex text-decoration-none rounded {% if page.url contains item.url %} {{ 'selected'}} {% endif %}"
-              >{{item.title}}</a
-            >
+              class="link-dark d-inline-flex text-decoration-none rounded {% if page.url contains item.url %} {{ 'selected'}} {% endif %}">
+              {{item.title}}
+            </a>
           </li>
           {% endfor %}
         </ul>
