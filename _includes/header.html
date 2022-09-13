@@ -7,15 +7,17 @@
       <div class="col-2 text-end">
         <div href="#" class="dropdown language-change">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="/assets/images/language.png" width="32" height="32" alt="Language"
-              class="icon-language" />{{ site.data.languages.langs.[site.lang] }}
+            <img src="/assets/images/language.png" width="32" height="32" alt="Language" class="icon-language" />{{
+            site.data.languages.langs.[site.lang] }}
           </a>
           <ul class="dropdown-menu text-center">
             {% for lang in site.languages %}
             {% if lang == site.default_lang %}
-            <li><a class="dropdown-item" href="{{ site.baseurl_root }}{{ page.url }}">{{ site.data.languages.langs.[lang] }}</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl_root }}{{ page.url }}">{{
+                site.data.languages.langs.[lang] }}</a></li>
             {% else %}
-            <li><a class="dropdown-item" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{{ site.data.languages.langs.[lang] }}</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{{
+                site.data.languages.langs.[lang] }}</a></li>
             {% endif %}
             {% endfor %}
           </ul>
@@ -58,9 +60,38 @@
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="">
+            <li>
+              <a class="nav-link dropdown-toggle text-center fw-bold fs-4" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                {% t dict.get_started %}
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light ">
+                <li><a class="dropdown-item" href="{{ site.baseurl }}/get-started/what-is-pactus">{% t
+                    dict.what_is_pactus
+                    %}</a></li>
+                <li><a class="dropdown-item" href="{{ site.baseurl }}/get-started/contributing">{% t dict.contributing
+                    %}</a></li>
+                <li><a class="dropdown-item" href="{{ site.baseurl }}/get-started/faq">{% t dict.faq %}</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="nav-link text-center fw-bold fs-4" href="{{ site.baseurl }}/learn/basic/block">{% t
+                dict.learn_more
+                %}</a>
+            </li>
+            <li class="">
+              <a class="nav-link text-center fw-bold fs-4" href="{{ site.baseurl }}/download">{% t dict.download %}</a>
+            </li>
+            <li class="">
+              <a class="nav-link text-center fw-bold fs-4" href="#">{% t dict.blog %}</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="col-6 text-center py-2">
-        <a class="logo" href="{{ site.baseurl }}/">Pactus</a>
+        <a class="logo" href="{{ site.baseurl }}/">Pactus logo</a>
       </div>
       <div class="col-3 text-end py-2">
         <a class="logo" href="#">

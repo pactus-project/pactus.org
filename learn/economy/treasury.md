@@ -4,7 +4,6 @@ title: Treasury Account
 permalink: /learn/economy/treasury/index.html
 ---
 
-
 # Treasury Account
 
 A Treasury account is a special account and it is defined at the genesis time. The treasury account

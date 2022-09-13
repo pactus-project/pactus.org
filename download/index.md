@@ -4,8 +4,6 @@ title: Download
 permalink: /download/index.html
 ---
 
-
-
 # Get Pactus
 
 On this page you can find how to download and get the latest version of the Pactus software.

@@ -4,8 +4,6 @@ title: Signature scheme
 permalink: /learn/cryptography/signature/index.html
 ---
 
-
-
 # Signature Scheme
 
 ## BLS signature

@@ -4,8 +4,6 @@ title: Consensus without delegation
 permalink: /learn/consensus/without-delegation/index.html
 ---
 
-
-
 # Consensus without delegation
 
 ## Proof of Stake

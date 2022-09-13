@@ -4,7 +4,6 @@ title: Stamping Transactions
 permalink: /learn/transaction/stamping/index.html
 ---
 
-
 # Stamping Transactions
 
 ## What Is Stamping Transaction?

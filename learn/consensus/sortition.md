@@ -77,5 +77,4 @@ When a valid sortition transaction is committed into a block, the new validator 
 enter the committee and the oldest validator in the committee will leave the committee to make it
 balanced.
 
-[^first]:
-    [Verifiable Random Function](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Pseudo%20Randomness/Verifiable_Random_Functions.pdf)
+[^first]: [Verifiable Random Function](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Pseudo%20Randomness/Verifiable_Random_Functions.pdf)

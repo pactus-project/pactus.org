@@ -4,7 +4,6 @@ title: Safety proof using TLA+
 permalink: /learn/consensus/tla+/index.html
 ---
 
-
 # Consensus specification
 
 ## What Is TLA+

@@ -4,7 +4,6 @@ title: Address
 permalink: /learn/cryptography/address/index.html
 ---
 
-
 # Address
 
 ## Address format

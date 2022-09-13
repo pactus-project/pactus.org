@@ -4,7 +4,6 @@ title: Transactions fee
 permalink: /learn/transaction/fee/index.html
 ---
 
-
 # Transactions fee
 
 In Zarb, the transaction fee is calculated based on the transferred amount. The formula is quite

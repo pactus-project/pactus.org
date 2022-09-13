@@ -4,7 +4,6 @@ title: Bond Transaction
 permalink: /learn/transaction/bond/index.html
 ---
 
-
 # Bond Transaction
 
 Bond transaction is used to bond stake to a validator. If the validator does not exist, it will be

@@ -46,7 +46,6 @@ type Account struct {
 
 {% endtabs %}
 
-
 - `Address` is the address of account which is 21 bytes in length
 - `Number` is a unique and sequential number for the account
 - `Sequence` increasers anytime user send a transactions to prevent replaying the transaction

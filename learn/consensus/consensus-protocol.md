@@ -137,5 +137,4 @@ where:
 Validators can move to the next height and clear the message logs after receiving valid
 _block_announce_ message.
 
-[^first]:
-    [Practical Byzantine Fault Tolerance](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/01/thesis-mcastro.pdf)
+[^first]: [Practical Byzantine Fault Tolerance](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/01/thesis-mcastro.pdf)

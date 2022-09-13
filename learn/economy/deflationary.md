@@ -4,7 +4,6 @@ title: Deflationary cryptocurrency
 permalink: /learn/economy/deflationary/index.html
 ---
 
-
 # Deflationary cryptocurrency
 
 Pactus is a deflationary cryptocurrency, same as in the case of Bitcoin. The total number of coins in

@@ -4,7 +4,6 @@ title: Hashing algorithm
 permalink: /learn/cryptography/hash/index.html
 ---
 
-
 # Hashing Algorithm
 
 ## Blake2b

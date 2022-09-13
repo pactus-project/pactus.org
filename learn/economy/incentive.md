@@ -4,7 +4,6 @@ title: Incentive model
 permalink: /learn/economy/incentive/index.html
 ---
 
-
 # Incentive model
 
 ## Flat Reward
@@ -13,7 +12,7 @@ The incentive may help encourage nodes to stay honest[^first]. To have a better 
 the incentive model in Zarb, let's do a comparison with the Bitcoin incentive and reward
 distribution model. We will use this comparison to show the difference. is the king.
 
-| Pactus                                             | Bitcoin                                      |
+| Pactus                                           | Bitcoin                                      |
 | ------------------------------------------------ | -------------------------------------------- |
 | Consensus engine is Proof of Stake               | Consensus engine is Proof of Work            |
 | _Exactly_ every 10 seconds one block is _minted_ | Around every 10 minutes one block is _mined_ |

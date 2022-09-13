@@ -4,7 +4,6 @@ title: Block Certificate
 permalink: /learn/basic/certificate/index.html
 ---
 
-
 # Block Certificate
 
 ## What Is Certificate?

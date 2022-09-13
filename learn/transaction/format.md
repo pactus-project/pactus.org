@@ -4,7 +4,6 @@ title: Transaction format
 permalink: /learn/transaction/format/index.html
 ---
 
-
 # Transaction
 
 ## Transaction Format

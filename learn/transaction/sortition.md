@@ -4,7 +4,6 @@ title: Sortition Transaction
 permalink: /learn/transaction/sortition/index.html
 ---
 
-
 # Sortition Transaction
 
 Sortition transaction is used to enter a validator in the set for the next run. Sortition

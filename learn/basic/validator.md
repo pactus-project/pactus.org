@@ -4,7 +4,6 @@ title: Validator
 permalink: /learn/basic/validator/index.html
 ---
 
-
 # Validator
 
 ## What is Validator?

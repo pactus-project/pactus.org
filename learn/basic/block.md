@@ -54,7 +54,7 @@ type BlockHeader struct {
 - `Version` starts from 1 for the mainnet and starts from 1001 for the testnet
 - `UnixTime` is the time of block in unix format (seconds from Unix Epoch)
 - `LastBlockHash` is the hash of the previous block
-- `StateHash` is the [state merkle root](./state-root.md) at the current height
+- `StateHash` is the [state merkle root](./state-merkle.md) at the current height
 - `SortitionSeed` is the seed for the sortition algorithm and must be signed by the proposer
 - `ProposerAddress` is the address of block proposer
 

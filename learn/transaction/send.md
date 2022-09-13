@@ -4,7 +4,6 @@ title: Send Transaction
 permalink: /learn/transaction/send/index.html
 ---
 
-
 # Send Transaction
 
 Send transaction is used to send values between the accounts. If the receiver account does not

@@ -4,7 +4,6 @@ title: Genesis block
 permalink: /learn/basic/genesis/index.html
 ---
 
-
 # Genesis block
 
 ## What is genesis block
