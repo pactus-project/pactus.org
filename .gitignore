@@ -3,3 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+.DS_Store
+node_modules
+npm-debug.log
+todo
