@@ -2,10 +2,20 @@ dict:
   pactus: "Pactus"
   pactus_blockchain: "Pactus blockchain"
   get_started: Get started
-  download: Download
   blog: Blog
   learn_more: Learn more
   community: Community
   what_is_pactus: What is Pactus?
   contributing: Contributing
   faq: FAQ
+  download: Download
+  download_pactus: Download Pactus
+  download_on_this_page_v1: On this page you can find how to download and get the latest version of the Pactus software.
+  download_compile_from_source_code: Compile from Source Code
+  download_project_pactus_is_distributed_v1: Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
+  download_instructions_for_compiling_v1: Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
+  download_stable_releases: Download stable releases
+  download_stable_releases_desc_v1: You can also download the latest stable releases of Pactus. These releases are updated automatically when a new version is tagged in our [GitHub repository](https://github.com/pactus-project/pactus).
+  download_you_can_run_gui_v1: You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
+  pactus_gui: Pactus Graphical User Interface (GUI)
+  pactus_cli: Pactus Command Line Interface (CLI)

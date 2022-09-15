@@ -1,36 +1,129 @@
 ---
 layout: base
-title: Download
+title: dict.download
 permalink: /download/index.html
 ---
 
-# Get Pactus
+# {% t dict.download_pactus %}
 
-On this page you can find how to download and get the latest version of the Pactus software.
+{% t dict.download_on_this_page_v1 %}
 
-##🏗️ Compile from Source Code
+## 🏗️ {% t dict.download_compile_from_source_code %}
 
-Project Pactus is distributed as open source software, so the preferred way for installing it is to
-clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile
-the source code.
+{% t dict.download_project_pactus_is_distributed_v1 %}
 
-Instructions for compiling Pactus is provided on the
-[install](https://github.com/pactus-project/pactus.org/blob/main/INSTALL.md) page.
+{% t dict.download_instructions_for_compiling_v1 %}
 
-## ⬇️ Download precompiled binaries
+## ⬇️ {% t dict.download_stable_releases %}
 
-You can also download the latest precompiled binary version:
+{% t dict.download_stable_releases_desc_v1 %}
 
-- [Windows 64-bit - Pactus GUI (installer)](https://github.com/pactus-project/pactus.org/releases/download/v0.9.0/zarb-0.9.0-windows-x86_64-installer.exe)
-- [Windows 64-bit - Pactus CLI (zip)](https://github.com/pactus-project/pactus.org/releases/download/v0.9.0/zarb-0.9.0-windows-x86_64.zip)
-- [MacOS 64-bit - Pactus GUI (dmg)](https://github.com/pactus-project/pactus.org/releases/download/v0.9.0/zarb-0.9.0-osx-64.dmg)
-- [MacOS 64-bit - Pactus CLI (tar.gz)](https://github.com/pactus-project/pactus.org/releases/download/v0.9.0/zarb-0.9.0-osx-64.tar.gz)
-- [Linux 64-bit (tar.gz)](https://github.com/pactus-project/pactus.org/releases/download/v0.9.0/zarb-0.9.0-linux-x86_64.tar.gz)
+### {% t dict.pactus_gui %}
+
+{% t dict.download_you_can_run_gui_v1 %}
+
+![Pactus GUI - Main Window](/assets/images/pactus_gui_main_window.png)
+
+| **File name**                                                                                                                                                  | **Kind**  | **OS**  | **Arch** |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------- | -------- |
+| [pactus-gui_0.9.0_darwin_amd64.dmg](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_darwin_amd64.dmg)                       | DMG       | macOS   | 64-bit   |
+| [pactus-gui_0.9.0_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_darwin_amd64.tar.gz)                 | Archive   | macOS   | 64-bit   |
+| [pactus-gui_0.9.0_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_linux_amd64.tar.gz)                   | Archive   | Linux   | 64-bit   |
+| [pactus-gui_0.9.0_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_windows_amd64.zip)                     | Archive   | Windows | 64-bit   |
+| [pactus-gui_0.9.0_windows_amd64_installer.exe](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_windows_amd64_installer.exe) | Installer | Windows | 64-bit   |
+
+
+#### Antivirus
 
 Be aware that the precompiled binaries are not shipped with any
 [code signing](https://en.wikipedia.org/wiki/Code_signing) certificate. Most probability in Windows
 and MacOS the downloaded binaries are detected as harmful or malware software.
 
+#### Running the node
+
+If you are running Pactus for the first time, there is an assistant page that help you to initialize
+your node. After initializing the working directory, you can run the node and start syncing with the testnet.
+
+### {% t dict.pactus_cli %}
+
+Advanced user can run Pactus in Command Line Interface (CLI) mode.
+
+![Pactus GUI - Main Window](/assets/images/pactus_cli.png)
+
+| **File name**                                                                                                                                     | **OS**  | **Arch** |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------- |
+| [pactus-cli_0.9.0_android_arm64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_android_arm64.tar.gz) | Android | ARM64    |
+| [pactus-cli_0.9.0_darwin_amd64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_darwin_amd64.tar.gz)   | macOS   | 6d-bit   |
+| [pactus-cli_0.9.0_darwin_arm64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_darwin_arm64.tar.gz)   | macOS   | ARM64    |
+| [pactus-cli_0.9.0_freebsd_amd64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_freebsd_amd64.tar.gz) | freebsd | 6d-bit   |
+| [pactus-cli_0.9.0_freebsd_arm.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_freebsd_arm.tar.gz)     | freebsd | ARM      |
+| [pactus-cli_0.9.0_linux_amd64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_linux_amd64.tar.gz)     | linux   | 6d-bit   |
+| [pactus-cli_0.9.0_linux_arm64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_linux_arm64.tar.gz)     | linux   | ARM64    |
+| [pactus-cli_0.9.0_windows_386.zip ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_windows_386.zip)           | windows | 32-bit   |
+| [pactus-cli_0.9.0_windows_amd64.zip ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_windows_amd64.zip)       | windows | 6d-bit   |
+
+#### Initializing the node
+
+First you need to create a working directory for your validator. A working directory is a place
+where you save blockchain data, config and key files.
+
+{% tabs init %}
+
+{% tab init Windows %}
+
+```
+./zarb-daemon.exe init -w c:\zarb --testnet
+```
+
+This command creates a working directory for the testnet at `c:\zarb`.
+
+{% endtab %}
+
+{% tab init Linux and Mac %}
+
+```
+./zarb-daemon init -w ~/zarb --testnet
+```
+
+This command creates a working working directory for the testnet at `~/zarb`.
+
+{% endtab %}
+
+{% endtabs %}
+
+Working directory contains:
+
+- Default wallet
+- Genesis file
+- Config file
+
+Feel free to take a look at these files.
+
+#### Running the node
+
+Now you can start the node and sync with the testnet. This may take several hours:
+
+{% tabs start %}
+
+{% tab start Windows %}
+
+```
+./zarb-daemon.exe start -w c:\zarb
+```
+
+{% endtab %}
+
+{%
+ tab start Linux and Mac %}
+
+```
+./zarb-daemon start -w ~/zarb
+```
+
+{% endtab %}
+
+{% endtabs %}
+
 ## 🐳 Docker container
 
-Advanced user can get the Pactus docker image from docker hub.
+Advanced user can get the Pactus docker image from [docker hub](https://hub.docker.com/r/pactus/pactus).
