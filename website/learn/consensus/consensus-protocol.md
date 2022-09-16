@@ -28,7 +28,7 @@ steps repeat every 10 seconds. In case of any failure in each step, validators g
 change_ state and try to change the proposer for the next round.
 
 Pactus consensus mechanism is inspired by Practical Practical Byzantine Fault Tolerant algorithm.
-Below you can see more details about the consensus mechanism in Zarb.
+Below you can see more details about the consensus mechanism in Pactus.
 
 ## Practical Byzantine Fault Tolerant
 

@@ -8,18 +8,14 @@ permalink: /learn/consensus/tla+/index.html
 
 ## What Is TLA+
 
-::: quote
+>
+> TLA+ is a formal specification language developed by Leslie Lamport. It is used for designing,
+> modelling, documentation, and verification of programs, especially concurrent systems and
+> distributed systems. TLA+ is considered to be exhaustively-testable pseudocode, and its use likened
+> to drawing blueprints for software systems; TLA is an acronym for Temporal Logic of Actions.
+>
+> From [Wikipedia](https://en.wikipedia.org/wiki/TLA%2B)
 
-TLA+ is a formal specification language developed by Leslie Lamport. It is used for designing,
-modelling, documentation, and verification of programs, especially concurrent systems and
-distributed systems. TLA+ is considered to be exhaustively-testable pseudocode, and its use likened
-to drawing blueprints for software systems; TLA is an acronym for Temporal Logic of Actions.
-
-::: right
-
-From [Wikipedia](https://en.wikipedia.org/wiki/TLA%2B)
-
-:::
 
 Testing and modeling the concurrent and distributed system are hard.
 [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport) created TLA+ on the idea that to
@@ -31,7 +27,7 @@ design errors, which are hard to find and expensive to correct in code. Check
 
 Pactus consensus specification has written in TLA+ format. It includes all invariants that can be held
 in every state of every execution that the protocol allows. The TLA+ specification is compiled into
-[PDF file](https://raw.githubusercontent.com/pactus-project/pactus/main/consensus/spec/Zarb.pdf).
+[PDF file](https://raw.githubusercontent.com/pactus-project/pactus/main/consensus/spec/Pactus.pdf).
 
 ### Safety proof
 

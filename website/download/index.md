@@ -72,20 +72,20 @@ where you save blockchain data, config and key files.
 {% tab init Windows %}
 
 ```
-./zarb-daemon.exe init -w c:\zarb --testnet
+./pactus-daemon.exe init -w c:\pactus --testnet
 ```
 
-This command creates a working directory for the testnet at `c:\zarb`.
+This command creates a working directory for the testnet at `c:\pactus`.
 
 {% endtab %}
 
 {% tab init Linux and Mac %}
 
 ```
-./zarb-daemon init -w ~/zarb --testnet
+./pactus-daemon init -w ~/pactus --testnet
 ```
 
-This command creates a working working directory for the testnet at `~/zarb`.
+This command creates a working working directory for the testnet at `~/pactus`.
 
 {% endtab %}
 
@@ -108,7 +108,7 @@ Now you can start the node and sync with the testnet. This may take several hour
 {% tab start Windows %}
 
 ```
-./zarb-daemon.exe start -w c:\zarb
+./pactus-daemon.exe start -w c:\pactus
 ```
 
 {% endtab %}
@@ -117,7 +117,7 @@ Now you can start the node and sync with the testnet. This may take several hour
  tab start Linux and Mac %}
 
 ```
-./zarb-daemon start -w ~/zarb
+./pactus-daemon start -w ~/pactus
 ```
 
 {% endtab %}
