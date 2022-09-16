@@ -55,12 +55,12 @@ Advanced user can run Pactus in Command Line Interface (CLI) mode.
 | [pactus-cli_0.9.0_android_arm64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_android_arm64.tar.gz) | Android | ARM64    |
 | [pactus-cli_0.9.0_darwin_amd64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_darwin_amd64.tar.gz)   | macOS   | 6d-bit   |
 | [pactus-cli_0.9.0_darwin_arm64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_darwin_arm64.tar.gz)   | macOS   | ARM64    |
-| [pactus-cli_0.9.0_freebsd_amd64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_freebsd_amd64.tar.gz) | freebsd | 6d-bit   |
-| [pactus-cli_0.9.0_freebsd_arm.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_freebsd_arm.tar.gz)     | freebsd | ARM      |
-| [pactus-cli_0.9.0_linux_amd64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_linux_amd64.tar.gz)     | linux   | 6d-bit   |
-| [pactus-cli_0.9.0_linux_arm64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_linux_arm64.tar.gz)     | linux   | ARM64    |
-| [pactus-cli_0.9.0_windows_386.zip ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_windows_386.zip)           | windows | 32-bit   |
-| [pactus-cli_0.9.0_windows_amd64.zip ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_windows_amd64.zip)       | windows | 6d-bit   |
+| [pactus-cli_0.9.0_freebsd_amd64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_freebsd_amd64.tar.gz) | FreeBSD | 6d-bit   |
+| [pactus-cli_0.9.0_freebsd_arm.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_freebsd_arm.tar.gz)     | FreeBSD | ARM      |
+| [pactus-cli_0.9.0_linux_amd64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_linux_amd64.tar.gz)     | Linux   | 6d-bit   |
+| [pactus-cli_0.9.0_linux_arm64.tar.gz ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_linux_arm64.tar.gz)     | Linux   | ARM64    |
+| [pactus-cli_0.9.0_windows_386.zip ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_windows_386.zip)           | Windows | 32-bit   |
+| [pactus-cli_0.9.0_windows_amd64.zip ](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_windows_amd64.zip)       | Windows | 6d-bit   |
 
 #### Initializing the node
 

@@ -8,18 +8,12 @@ permalink: /learn/basic/state-merkle/index.html
 
 ## What Is Merkle tree?
 
-::: quote
-
-In cryptography and computer science, a hash tree or Merkle tree is a tree in which every leaf node
-is labelled with the cryptographic hash of a data block, and every non-leaf node is labelled with
-the cryptographic hash of the labels of its child nodes. Hash trees allow efficient and secure
-verification of the contents of large data structures.
-
-::: right
-
-From [Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
-
-:::
+> In cryptography and computer science, a hash tree or Merkle tree is a tree in which every leaf node
+> is labelled with the cryptographic hash of a data block, and every non-leaf node is labelled with
+> the cryptographic hash of the labels of its child nodes. Hash trees allow efficient and secure
+> verification of the contents of large data structures.
+>
+> From [Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
 
 Hash trees like Merkle tree structures used by many blockchains try to solve this problem: How can
 securely store the data? By using the merkle tree we can make sure all the nodes have the same state
