@@ -57,7 +57,7 @@ type Certificate struct {
 
 Hers is an example of a certificate data.
 
-<hexdump bytes="0604040b1726010ba33cf343625e9a4a8fa966045417084608e4cc2eb01b1348ccfbcf9f1e713f56e93a98ccc2a053a4da1b8fcaa5fd0d24" />
+{% hexdump "certificate_data" "0604040b1726010ba33cf343625e9a4a8fa966045417084608e4cc2eb01b1348ccfbcf9f1e713f56e93a98ccc2a053a4da1b8fcaa5fd0d24" %}
 
 Certificate hash is the hash of the certificate data. For this example, the certificate hash is:
 

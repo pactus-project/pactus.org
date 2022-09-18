@@ -55,7 +55,7 @@ type Account struct {
 
 Hers is an example of a account data:
 
-<hexdump bytes="0102030405060708090a0b0c0d0e0f10111213141501000000020000000300000000000000" />
+{% hexdump "account_data" "0102030405060708090a0b0c0d0e0f10111213141501000000020000000300000000000000" %}
 
 Account Hash is the hash of the account in binary format. For this example the account hash is:
 

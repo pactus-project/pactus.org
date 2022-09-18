@@ -8,3 +8,16 @@ body {
 .nav-top {
   height: 86px;
 }
+
+.hexdump {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.hexdump .offset {
+  border-right: 2px solid #708090;
+  color: #778899;
+}
+.hexdump .ascii {
+  color: #696969;
+}
