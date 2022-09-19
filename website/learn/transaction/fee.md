@@ -23,7 +23,6 @@ fee_{min} &  \quad if \quad fee < fee_{min}
 \end{cases}
 $$
 
-
 <span v-pre>$$percentage$$</span> and <span v-pre>$$fee_{min}$$</span> are part of
 [consensus parameters](../basic/genesis.md).
 

@@ -2,9 +2,12 @@
   <div class="container-md">
     <div class="row navbar bg-light nav-top">
       <div class="col-10">
-        <a class="logo" href="{{ site.baseurl }}/">Pactus Logo</a>
+        <a class="logo" href="{{ site.baseurl }}/">
+          <h2>Pactus</h2>
+        </a>
       </div>
       <div class="col-2 text-end">
+        <!--
         <div href="#" class="dropdown language-change">
           <a
             class="nav-link dropdown-toggle"
@@ -40,6 +43,7 @@
             {% endif %} {% endfor %}
           </ul>
         </div>
+        -->
       </div>
     </div>
     <div class="row bg-light nav-bottom">
@@ -89,7 +93,9 @@
         </a>
       </div>
       <div class="col">
-        <a class="nav-link text-center fw-bold fs-4" href="#">
+        <a
+          class="nav-link text-center fw-bold fs-4"
+          href="{{ site.baseurl }}/blog">
           {% t dict.blog %}
         </a>
       </div>
@@ -168,7 +174,9 @@
               </a>
             </li>
             <li class="">
-              <a class="nav-link text-center fw-bold fs-4" href="#">
+              <a
+                class="nav-link text-center fw-bold fs-4"
+                href="{{ site.baseurl }}/blog/">
                 {% t dict.blog %}
               </a>
             </li>
@@ -176,10 +184,13 @@
         </div>
       </div>
       <div class="col-6 text-center py-2">
-        <a class="logo" href="{{ site.baseurl }}/">Pactus logo</a>
+        <a class="logo" href="{{ site.baseurl }}/">
+          <h3>Pactus</h3>
+        </a>
       </div>
       <div class="col-3 text-end py-2">
-        <a class="logo" href="#">
+        <!--
+        <a class="" href="#">
           <label for="moblangdrop">
             <img
               src="/assets/images/language.png"
@@ -209,6 +220,7 @@
             {% endif %} {% endunless %} {% endfor %}
           </div>
         </a>
+        -->
       </div>
     </div>
   </div>

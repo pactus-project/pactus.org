@@ -4,7 +4,6 @@ title: dict.faq
 permalink: /get-started/faq/index.html
 ---
 
-
 # FAQ
 
 ## What does "Pactus" mean?

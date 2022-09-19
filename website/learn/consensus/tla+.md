@@ -8,14 +8,12 @@ permalink: /learn/consensus/tla+/index.html
 
 ## What Is TLA+
 
->
 > TLA+ is a formal specification language developed by Leslie Lamport. It is used for designing,
 > modelling, documentation, and verification of programs, especially concurrent systems and
 > distributed systems. TLA+ is considered to be exhaustively-testable pseudocode, and its use likened
 > to drawing blueprints for software systems; TLA is an acronym for Temporal Logic of Actions.
 >
 > From [Wikipedia](https://en.wikipedia.org/wiki/TLA%2B)
-
 
 Testing and modeling the concurrent and distributed system are hard.
 [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport) created TLA+ on the idea that to

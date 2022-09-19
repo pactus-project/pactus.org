@@ -32,7 +32,6 @@ permalink: /download/index.html
 | [pactus-gui_0.9.0_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_windows_amd64.zip)                     | Archive   | Windows | 64-bit   |
 | [pactus-gui_0.9.0_windows_amd64_installer.exe](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_windows_amd64_installer.exe) | Installer | Windows | 64-bit   |
 
-
 #### Antivirus
 
 Be aware that the precompiled binaries are not shipped with any

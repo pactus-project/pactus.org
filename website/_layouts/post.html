@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+    <div class="container-lg mt-4 mb-4">
+      <div class="row bg-light p-3">
+        <h2>{{ page.title }}</h2>
+        <div class="col">{{content}} {% include edit_page.html %}</div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

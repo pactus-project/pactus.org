@@ -1,4 +1,4 @@
-title: Pacrus blockchain
+title: Pactus blockchain
 email:
 source: website
 description: >-
@@ -7,11 +7,18 @@ baseurl: ""
 url: "https://www.pactus.org"
 
 plugins:
+  - jekyll-paginate
   - jekyll-multiple-languages-plugin
   - jekyll-feed
 
 languages: ["en"]
 
-exclude_from_localizations: ["blog"]
+exclude_from_localizations: ["assets", "404.html",  "meta", "_posts", "blog"]
 
 markdown: kramdown
+
+paginate: 10
+paginate_path: blog/page:num/
+
+feed:
+  posts_limit: 20
