@@ -17,3 +17,4 @@ These rules are applied by executing sortition transactions:
 2. If the validator doesn't exist in the committee, the last validator will leave the committee.
 3. There can be more than one sortition transaction per block.
 4. At least ⅔ of the total stake should be remain.
+5. Validators inside committee can not increase their stake.
