@@ -20,5 +20,7 @@ Once a validator proposes a valid block and the block accepted by other validato
 ## How is Pactus different from Ethereum2?
 
 Ethereum2 is a Proof of Stake Blockchain same as Pactus, however running a validator in Ethereum is not easy.
-Pactus tries to let everyone with minimum knowledge of blockchain and minimum hardware join the network.
+In Pactus everyone with minimum knowledge of blockchain and minimum hardware joins the network.
+Unlike Ethereum there is no minimum stake and you don't need to run the node inside the cloud platform.
+You can run the node in any Operating System with minimum hardware.
 We truly believe in decentralization.
