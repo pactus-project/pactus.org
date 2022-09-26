@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "check": "check-md --cwd ./website --ignore-footnotes --default-index index.md",
-    "prettier": "prettier --bracket-same-line true --html-whitespace-sensitivity ignore --write ./website",
+    "prettier": "prettier --bracket-same-line true --html-whitespace-sensitivity ignore --write ./website --print-width 100",
     "exif": "cd ./website/assets/images && for i in *.png; do echo \"Processing $i\"; exiftool -all= \"$i\"; done"
   },
   "optionalDependencies": {
