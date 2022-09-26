@@ -21,3 +21,16 @@ body {
 .hexdump .ascii {
   color: #696969;
 }
+.logo img{
+  width: 200px;
+}
+
+/* border for menu */
+@media (min-width: 768px) {
+  .border-md-top-0 {
+    border-top: 0 !important;
+  }
+}
+a:hover{
+  color: #22547B !important;
+}
