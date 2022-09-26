@@ -5,7 +5,7 @@
   "repository": "https://github.com/pactus-project/pactus.org",
   "license": "MIT",
   "scripts": {
-    "check": "check-md --cwd ./website --ignore-footnotes",
+    "check": "check-md --cwd ./website --ignore-footnotes --default-index index.md",
     "prettier": "prettier --bracket-same-line true --html-whitespace-sensitivity ignore --write ./website",
     "exif": "cd ./website/assets/images && for i in *.png; do echo \"Processing $i\"; exiftool -all= \"$i\"; done"
   },

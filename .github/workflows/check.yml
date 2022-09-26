@@ -15,4 +15,4 @@ jobs:
         run: yarn install
 
       - name: Check all markdowns for broken links
-        run: yarn check
+        run: yarn run check

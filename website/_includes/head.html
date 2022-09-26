@@ -1,17 +1,14 @@
+{% capture title %}{% if page.title contains "dict." %}{%t page.title%} | {% t
+dict.pactus_blockchain%}{%else%}{{ page.title }} | {% t
+dict.pactus_blockchain%}{% endif %}{% endcapture %}
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>
-    {% if page.title contains "dict." %}{% t page.title %} | {% t
-    dict.pactus_blockchain %} {% else %} {{ page.title }} | {% t
-    dict.pactus_blockchain %}{% endif %}
-  </title>
+  <title>{{ title }}</title>
   <meta name="description" content="{{ page.seo_desc }}" />
 
-  <meta
-    property="og:title"
-    content="{{ page.title }} | {% t dict.pactus_blockchain %}" />
+  <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ page.seo_desc }}" />
   <meta property="og:site_name" content="{% t dict.pactus_blockchain %}" />
   <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
