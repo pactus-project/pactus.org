@@ -6,8 +6,6 @@ tags: announcement
 summary: Join Pactus test net
 ---
 
-## Test net is alive
-
 ![testnet](/blog/images/2022-09-24-announcement-testnet/testnet.gif)
 
 Join Pactus testnet. To join Pactus testnet you don't need any special setting.
