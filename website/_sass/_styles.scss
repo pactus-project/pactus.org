@@ -1,3 +1,5 @@
+@import "vars";
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -9,19 +11,7 @@ body {
   height: 86px;
 }
 
-.hexdump {
-  font-family: monospace;
-  font-size: 12px;
-}
-
-.hexdump .offset {
-  border-right: 2px solid #708090;
-  color: #778899;
-}
-.hexdump .ascii {
-  color: #696969;
-}
-.logo img{
+.logo img {
   width: 200px;
 }
 
@@ -31,6 +21,7 @@ body {
     border-top: 0 !important;
   }
 }
-a:hover{
+
+a:hover {
   color: #22547B !important;
 }

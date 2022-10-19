@@ -5,11 +5,14 @@ description: >-
   Pactus is truly decentralized Proof-of-Stake blockchain
 baseurl: ""
 url: "https://www.pactus.org"
+logo: "/assets/images/logos/64_circle.png"
 
 plugins:
   - jekyll-paginate
   - jekyll-multiple-languages-plugin
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 languages: ["en"]
 
@@ -22,3 +25,6 @@ paginate_path: blog/page:num/
 
 feed:
   posts_limit: 20
+
+sass:
+  style: compressed
