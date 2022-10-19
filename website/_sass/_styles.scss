@@ -16,12 +16,12 @@ body {
 }
 
 /* border for menu */
-@media (min-width: 768px) {
-  .border-md-top-0 {
+@media (min-width: 992px) {
+  .border-lg-top-0 {
     border-top: 0 !important;
   }
 }
 
 a:hover {
-  color: #22547B !important;
+  color: $primary-color !important;
 }
