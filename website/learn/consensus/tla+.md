@@ -37,6 +37,3 @@ distinct state. We have the informal safety proof of the Pactus consensus protoc
 Checking the liveness is not easy, but with defining some constraints, we have the informal proof of
 liveness of Pactus consensus protocol using TLA+ toolbox.
 
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pqjXQ1XNhiI" title=" Safety and liveness proof of Pactus consensus protocol using TLA+  " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
