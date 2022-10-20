@@ -4,7 +4,9 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #4c4c4c;
-  background-color: #edeef0;
+  background-color: $background-color;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-top {
@@ -17,11 +19,44 @@ body {
 
 /* border for menu */
 @media (min-width: 992px) {
-  .border-lg-top-0 {
+  .border-md-top-0 {
     border-top: 0 !important;
   }
 }
 
 a:hover {
   color: $primary-color !important;
+}
+
+.btn-fixed {
+  background-color: $primary-color !important;
+  color: $background-color;
+  width: 240px;
+  height: 46px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0%;
+  vertical-align: middle !important;
+  line-height: 46px;
+  padding: 0;
+  margin: 16px;
+
+  &:hover {
+    background-color: $secondary-color !important;
+    color: $background-color !important;
+  }
+}
+
+.footer {
+  background-color: #777777;
+
+  .text-muted {
+    color: $background-color !important;
+    font-size: 12px;
+
+    a {
+      color: $background-color !important;
+      text-decoration: none;
+    }
+  }
 }
