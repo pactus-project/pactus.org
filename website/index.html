@@ -7,16 +7,13 @@ permalink: index.html
 <div class="container-md mt-4 mb-4">
   <div class="row bg-light p-4">
     <div class="col-md-6">
-      <p align="center">
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/O9Uk8tb3hpE"
-          title="What is Pactus blockchain"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </p>
+      <div class="pactus-video">
+        <video controls poster="{{ site.baseurl }}/assets/images/what_is_pactus.png" preload="metadata" tabindex="0"
+          aria-label="Monero community video">
+          <source src="{{ site.baseurl }}/assets/media/what_is_pactus.mp4">
+          <track label="English" kind="subtitles" srclang="en" src="{{ site.baseurl }}/assets/media/subtitles/en/what_is_pactus.vtt">
+        </video>
+      </div>
     </div>
     <div class="col-md-6">
       <h3>{%t dict.pactus_blockchain%}</h3>
