@@ -12,20 +12,20 @@ For deterministic stuff like block and transactions, Pactus is using a determini
 serialization. Below is a table containing the serialization format of the most data types.
 
 | **Data Type**           | **Size (bytes)** | **Description**                                    |
-| ----------------------- | ---------------: | -------------------------------------------------- |
-| uint8                   |                1 | An 8 bits unsigned integer                         |
-| int8                    |                1 | An 8 bits signed integer                           |
-| uint16                  |                2 | A 16 bits unsigned integer                         |
-| int16                   |                2 | A 16 bits signed integer                           |
-| uint32                  |                4 | A 32 bits unsigned integer                         |
-| int32                   |                4 | A 32 bits signed signed integer                    |
-| uint64                  |                8 | A 64 bits unsigned integer                         |
-| int64                   |                8 | A 64 bits signed signed integer                    |
-| [VarInt](#varint)       |         Variable | A compact representation of a an unsigned integer. |
-| [VarByte](#varbyte)     |         Variable | A variable length bytes                            |
-| [VarString](#varstring) |         Variable | A variable length string                           |
-| Address                 |               21 | 21 bytes of address data                           |
-| Hash32                  |               32 | 32 bytes of hash data                              |
+| ----------------------- | ---------------- | -------------------------------------------------- |
+| uint8                   | 1                | An 8 bits unsigned integer                         |
+| int8                    | 1                | An 8 bits signed integer                           |
+| uint16                  | 2                | A 16 bits unsigned integer                         |
+| int16                   | 2                | A 16 bits signed integer                           |
+| uint32                  | 4                | A 32 bits unsigned integer                         |
+| int32                   | 4                | A 32 bits signed signed integer                    |
+| uint64                  | 8                | A 64 bits unsigned integer                         |
+| int64                   | 8                | A 64 bits signed signed integer                    |
+| [VarInt](#varint)       | Variable         | A compact representation of a an unsigned integer. |
+| [VarByte](#varbyte)     | Variable         | A variable length bytes                            |
+| [VarString](#varstring) | Variable         | A variable length string                           |
+| Address                 | 21               | 21 bytes of address data                           |
+| Hash32                  | 32               | 32 bytes of hash data                              |
 
 ### VarInt
 

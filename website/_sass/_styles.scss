@@ -87,23 +87,21 @@ h1 {
 }
 
 .highlighter-rouge .highlight pre {
-  padding: 28px 18px 18px 18px;
+  padding: 32px 12px 12px 12px;
   color: $background-color;
   position: relative;
   overflow: auto;
 
   button {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 4px;
+    right: 4px;
 
-    font-size: 0.9rem;
-    padding: 0.15rem;
-    background-color: #828282;
-    color: 11ee1e;
-    border: ridge 1px #7b7b7c;
+    padding: 2px;
+    background-color: #808080;
+    color: #404040;
     border-radius: 5px;
-    text-shadow: #c4c4c4 0 0 2px;
+    border: ridge 1px #808080;
 
     &:hover {
       cursor: pointer;
@@ -131,5 +129,11 @@ h1 {
   .active {
     color: $background-color !important;
     background-color: #404040 !important;
+  }
+}
+
+table {
+  tbody tr:nth-child(2n + 1) td {
+    background-color: #eee;
   }
 }

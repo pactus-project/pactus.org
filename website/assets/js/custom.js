@@ -97,3 +97,12 @@ $( document ).ready(function() {
     }, 1000)
   }
 })
+
+// Jekyll kramdown HACK:
+//
+// Adding table class to all tables
+// making images responsive
+$( document ).ready(function() {
+  $('table').addClass('table');
+  $('img').addClass('img-fluid');
+})
