@@ -6,25 +6,31 @@ permalink: /learn/transaction/fee/index.html
 
 # Transactions fee
 
-In Zarb, the transaction fee is calculated based on the transferred amount. The formula is quite
+In Pactus, the transaction fee is calculated based on the transferred amount. The formula is quite
 simple.
 
 <span v-pre>
-
 $$
-fee = value \times percentage
-\\
-\quad
-\\
+\mathbf{fee = amount \times  percentage }
+$$
+</span>
+<br>
+<br>
+<span v-pre>
+$$
 fee =
 \begin{cases}
-fee & \\
-fee_{min} &  \quad if \quad fee < fee_{min}
+ & fee_{min}  \quad \text{ if }  fee < fee_{min} \\
+ & fee \\
+ & fee_{max}  \quad \text{ if }  fee > fee_{max}
 \end{cases}
 $$
+</span>
+<br>
+<br>
 
-<span v-pre>$$percentage$$</span> and <span v-pre>$$fee_{min}$$</span> are part of
+<span v-pre>$$percentage$$</span>, <span v-pre>$$fee_{min}$$</span> and <span v-pre>$$fee_{max}$$</span> are part of
 [consensus parameters](../basic/genesis.md).
 
-For example, if Alice is going to send 20,000 to Bob, she should pay 20 coins as a fee for her
+For example, if Alice is going to send 20,000 to Bob, she should pay 2 coins as a fee for her
 transaction.

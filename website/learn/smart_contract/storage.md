@@ -116,7 +116,7 @@ nodes in the Merkle tree is always the same. The same technique we used for calc
 ## Example
 
 As an example we have implemented the ERC20 smart contract based on this idea. The implementation
-can be found [here](https://github.com/zarbchain/kelk/tree/main/examples/erc20)
+can be found [here](https://github.com/pactus-project/kelk/tree/main/examples/erc20)
 
 ## Testing
 

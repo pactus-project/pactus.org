@@ -23,17 +23,16 @@ public key. The result is the seed for the next block.
 Everyone knows the proposer's public key, therefore they can easily validate the seed for the next
 block. If the seed is not valid, the proposed block will be rejected.
 
-<span v-pre>$$verify(pub_{proposer}, hash(seed_{n}), seed_{n-1})==True$$</span>
+<span v-pre>$$verify(pub_{proposer}, hash(seed_{n}), seed_{n-1})=True \lor False$$</span>
 
-- Note: Seed is 48 bytes.
-- Note: Seed for genesis block is 0.
+Sortition Seed is 48 bytes and Sortition Seed for the genesis block set to 0.
 
 ## Verifiable Random Function
 
 Verifiable Random Function is a pseudo-random function that the owner of key <span v-pre>$$s$$</span>
 at any point of <span v-pre>$$x$$</span> can evaluate <span v-pre>$$v=f_s(x)$$</span> and also provides
-<span v-pre>$$proof_x$$</span> efficiently proving that v is correct. We call such a mathematical
-object a verifiable(pseudo-)random function, VRF for brevity [^first].
+<span v-pre>$$proof_x$$</span> efficiently proving that <span v-pre>$$v$$</span> is correct. We call such a mathematical
+object a verifiable pseudo-random function, VRF for brevity [^first].
 
 In Pactus we are using BLS signature scheme as source of VRF. Since BLS signature are unique, in the
 random oracle model, the hash of a BLS signature can be used as a secure VRF.

@@ -19,6 +19,6 @@ summary: How to PubSub
   - Smart contract can be defined easily
   - Infura-like services become easy. Just replaying the events.
 
-- Nagaraj's [PR](https://github.com/zarbchain/zarb-go/pull/355) reviewed.
+- Nagaraj's [PR](https://github.com/pactus-project/pactus/pull/355) reviewed.
 
 - Renaming (rebranding) project discussed. Ask everyone to share their suggested names and run a polling.
