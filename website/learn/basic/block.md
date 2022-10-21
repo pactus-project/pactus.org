@@ -19,7 +19,7 @@ Block header is 138 bytes and defines like below:
 
 {% tabs block %}
 
-{% tab block 🦀 Rust %}
+{% tab block rust <i class="fa-brands fa-rust"></i> Rust %}
 
 ```rust
 pub struct BlockHeader {
@@ -34,7 +34,7 @@ pub struct BlockHeader {
 
 {% endtab %}
 
-{% tab block 🇬 Golang %}
+{% tab block go <i class="fa-brands fa-golang"></i> Go %}
 
 ```go
 type BlockHeader struct {

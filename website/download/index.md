@@ -68,7 +68,7 @@ where you save blockchain data, config and key files.
 
 {% tabs init %}
 
-{% tab init Windows %}
+{% tab init windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```
 ./pactus-daemon.exe init -w c:\pactus --testnet
@@ -78,7 +78,17 @@ This command creates a working directory for the testnet at `c:\pactus`.
 
 {% endtab %}
 
-{% tab init Linux and Mac %}
+{% tab init mac <i class="fa-brands fa-apple"></i> macOS %}
+
+```
+./pactus-daemon init -w ~/pactus --testnet
+```
+
+This command creates a working working directory for the testnet at `~/pactus`.
+
+{% endtab %}
+
+{% tab init linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```
 ./pactus-daemon init -w ~/pactus --testnet
@@ -104,7 +114,7 @@ Now you can start the node and sync with the testnet. This may take several hour
 
 {% tabs start %}
 
-{% tab start Windows %}
+{% tab start windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```
 ./pactus-daemon.exe start -w c:\pactus
@@ -112,8 +122,15 @@ Now you can start the node and sync with the testnet. This may take several hour
 
 {% endtab %}
 
-{%
- tab start Linux and Mac %}
+{% tab start mac <i class="fa-brands fa-apple"></i> macOS %}
+
+```
+./pactus-daemon start -w ~/pactus
+```
+
+{% endtab %}
+
+{% tab start linux <i class="fa-brands fa-linux"></i> Linux%}
 
 ```
 ./pactus-daemon start -w ~/pactus

@@ -19,7 +19,7 @@ balance and sequence number. The format of the account is as seen below:
 
 {% tabs validator %}
 
-{% tab validator 🦀 Rust %}
+{% tab validator rust <i class="fa-brands fa-rust"></i> Rust %}
 
 ```rust
 pub struct Validator {
@@ -35,7 +35,7 @@ pub struct Validator {
 
 {% endtab %}
 
-{% tab validator 🇬 Golang %}
+{% tab validator go <i class="fa-brands fa-golang"></i> Go %}
 
 ```go
 type Validator struct {
@@ -66,10 +66,3 @@ type Validator struct {
 Hers is an example of a validator data:
 
 {% hexdump "validator_data" "95167c2a0d86ec360407bce89b304616e1d0f83dbc200642abea8405e1838312fb8290b1230ebe4369cf1b7f556906c610ae92bcee544a1af79e259996e368b14851a1f8844274690b10df983bc2776ab10cc37e49e175bc7ae17ac919b8c34c01000000020000000300000000000000040000000500000006000000" %}
-
-Validator Hash is the hash of the validator in binary format. For this example the validator hash
-is:
-
-```
-76fea239a4586e8d9c2df9062b1958703341e3ece0f665c714da850101b61185
-```

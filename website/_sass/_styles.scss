@@ -85,3 +85,51 @@ h1 {
     display: block;
   }
 }
+
+.highlighter-rouge .highlight pre {
+  padding: 28px 18px 18px 18px;
+  color: $background-color;
+  position: relative;
+  overflow: auto;
+
+  button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    font-size: 0.9rem;
+    padding: 0.15rem;
+    background-color: #828282;
+    color: 11ee1e;
+    border: ridge 1px #7b7b7c;
+    border-radius: 5px;
+    text-shadow: #c4c4c4 0 0 2px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #bcbabb;
+    }
+  }
+}
+
+.nav-tabs {
+  border-color: #404040 !important;
+
+  a {
+    color: #404040;
+  }
+
+  .nav-link {
+    border-width: 0 !important;
+
+    &:not(.active):hover {
+      background-color: #808080 !important;
+      color: $background-color !important;
+    }
+  }
+
+  .active {
+    color: $background-color !important;
+    background-color: #404040 !important;
+  }
+}

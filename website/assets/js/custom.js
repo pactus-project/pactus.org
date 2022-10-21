@@ -19,7 +19,7 @@ function hexdump(hex, where) {
 
     var j;
     for (j = 0; j < lastBytes; j++) {
-      if (b%8 == 0) {
+      if (b % 8 == 0) {
         span += '&nbsp;';
       }
       span += '&nbsp;' + zero(buffer[b], 2);
@@ -63,6 +63,37 @@ function zero(n, max) {
 
 function hexToBytes(hex) {
   for (var bytes = [], c = 0; c < hex.length; c += 2)
-  bytes.push(parseInt(hex.substr(c, 2), 16));
+    bytes.push(parseInt(hex.substr(c, 2), 16));
   return bytes;
 }
+
+$( document ).ready(function() {
+  const copyButtonLabel = "Copy";
+
+  // you can use a class selector instead if you, or the syntax highlighting library adds one to the 'pre'.
+  let blocks = document.querySelectorAll("pre");
+
+  blocks.forEach((block) => {
+    // only add button if browser supports Clipboard API
+    if (navigator.clipboard) {
+      let button = document.createElement("button");
+      button.innerText = copyButtonLabel;
+      button.addEventListener("click", copyCode);
+      block.appendChild(button);
+    }
+  });
+
+  async function copyCode(event) {
+    const button = event.srcElement;
+    const pre = button.parentElement;
+    let code = pre.querySelector("code");
+    let text = code.innerText;
+    await navigator.clipboard.writeText(text);
+
+    button.innerText = "Copied!";
+
+    setTimeout(() => {
+      button.innerText = copyButtonLabel;
+    }, 1000)
+  }
+})
