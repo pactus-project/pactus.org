@@ -15,7 +15,7 @@ blocks will be invalid.
 
 ![Stamped transaction](/assets/images/pactus_stamped_transaction.png)
 
-In Pactus stamps are defined as first 4 bytes of [block ID](../basic/block#block-identifier).
+In Pactus stamps are defined as first 4 bytes of [block ID](/learn/basic/block#block-identifier).
 
 ## Consequences
 

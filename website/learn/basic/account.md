@@ -8,7 +8,7 @@ permalink: /learn/basic/account/index.html
 
 ## What is Account?
 
-An account is an entity with a dedicated [address](../cryptography/address) that can send
+An account is an entity with a dedicated [address](/learn/cryptography/address) that can send
 transactions on Pactus blockchain. Account is controlled by user private key.
 
 ## Account Structure

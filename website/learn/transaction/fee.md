@@ -30,7 +30,7 @@ $$
 <br>
 
 <span v-pre>$$percentage$$</span>, <span v-pre>$$fee_{min}$$</span> and <span v-pre>$$fee_{max}$$</span> are part of
-[consensus parameters](../basic/genesis.md).
+[consensus parameters](/learn/basic/genesis).
 
 For example, if Alice is going to send 20,000 to Bob, she should pay 2 coins as a fee for her
 transaction.
