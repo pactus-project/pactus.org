@@ -3,7 +3,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #4c4c4c;
+  color: $font-color;
   background-color: $background-color;
   max-width: 1200px;
   margin: 0 auto;
@@ -25,7 +25,7 @@ body {
 }
 
 a:hover {
-  color: $primary-color !important;
+  color: $primary-color  !important;
 }
 
 h1,
@@ -44,7 +44,7 @@ h1 {
 }
 
 .btn-fixed {
-  background-color: $primary-color !important;
+  background-color: $primary-color  !important;
   color: $background-color;
   width: 240px;
   height: 46px;
@@ -57,8 +57,8 @@ h1 {
   margin: 16px;
 
   &:hover {
-    background-color: $secondary-color !important;
-    color: $background-color !important;
+    background-color: $secondary-color  !important;
+    color: $background-color  !important;
   }
 }
 
@@ -66,11 +66,11 @@ h1 {
   background-color: #777777;
 
   .text-muted {
-    color: $background-color !important;
+    color: $background-color  !important;
     font-size: 12px;
 
     a {
-      color: $background-color !important;
+      color: $background-color  !important;
       text-decoration: none;
     }
   }
@@ -122,12 +122,12 @@ h1 {
 
     &:not(.active):hover {
       background-color: #808080 !important;
-      color: $background-color !important;
+      color: $background-color  !important;
     }
   }
 
   .active {
-    color: $background-color !important;
+    color: $background-color  !important;
     background-color: #404040 !important;
   }
 }
@@ -135,5 +135,31 @@ h1 {
 table {
   tbody tr:nth-child(2n + 1) td {
     background-color: #eee;
+  }
+}
+
+blockquote {
+  background: #eee;
+  border-left: 10px solid #ccc;
+  padding: 16px;
+  quotes: "\201C""\201D""\2018""\2019";
+
+
+  &:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 64px;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+  }
+
+  p {
+    margin-top: 16px ;
+  }
+
+  & p:first-child {
+    display: inline;
+    padding-bottom: 160px;
+    margin-bottom: 160px;
   }
 }
