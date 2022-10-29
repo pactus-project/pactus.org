@@ -13,9 +13,9 @@ permalink: /get-started/roadmap/index.html
 </div>
 
 <section>
-  <div class="container py-5">
-    <div class="main-timeline">
-      <div class="timeline upcoming right">
+  <div class="py-5">
+    <div class="timeline">
+      <div class="timeline-card upcoming right">
         <div class="card">
           <div class="card-body p-4">
             <h4>Smart contract engine</h4>
@@ -23,7 +23,7 @@ permalink: /get-started/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline upcoming left">
+      <div class="timeline-card upcoming left">
         <div class="card">
           <div class="card-body p-4">
             <h4>Mobile wallet</h4>
@@ -31,7 +31,7 @@ permalink: /get-started/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline ongoing right">
+      <div class="timeline-card ongoing right">
         <div class="card">
           <div class="card-body p-4">
             <h4>Main net launch</h4>
@@ -39,7 +39,7 @@ permalink: /get-started/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline completed left">
+      <div class="timeline-card completed left">
         <div class="card">
           <div class="card-body p-4">
             <h4>Test net launch</h4>
