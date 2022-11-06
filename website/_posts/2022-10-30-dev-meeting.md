@@ -19,7 +19,7 @@ We in the Pactus family stand in solidarity with courageous people who are fight
 
 The beta version of block explorer is launched 🚀 and now is available at: [pactusscan.com](http://pactusscan.com/)
 
-Nagaraj explained about the block explorer and some of the fetuses.
+Nagaraj explained the block explorer and some of the features.
 
 ### Project road map
 
