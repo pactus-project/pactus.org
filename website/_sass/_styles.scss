@@ -162,3 +162,16 @@ blockquote {
     margin-bottom: 160px;
   }
 }
+.anchor {
+  a {
+    color: #ffffff;
+  }
+  a:link {
+    color: rgb(239, 241, 239);
+    background-color: transparent !important;
+    text-decoration: none !important;
+  }
+  a:hover {
+    color: rgb(239, 241, 239);
+  }
+}
