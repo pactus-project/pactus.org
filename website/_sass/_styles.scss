@@ -25,7 +25,7 @@ body {
 }
 
 a:hover {
-  color: $primary-color !important;
+  color: $primary-color  !important;
 }
 
 h1,
@@ -44,7 +44,7 @@ h1 {
 }
 
 .btn-fixed {
-  background-color: $primary-color !important;
+  background-color: $primary-color  !important;
   color: $background-color;
   width: 240px;
   height: 46px;
@@ -57,8 +57,8 @@ h1 {
   margin: 16px;
 
   &:hover {
-    background-color: $secondary-color !important;
-    color: $background-color !important;
+    background-color: $secondary-color  !important;
+    color: $background-color  !important;
   }
 }
 
@@ -66,11 +66,11 @@ h1 {
   background-color: #777777;
 
   .text-muted {
-    color: $background-color !important;
+    color: $background-color  !important;
     font-size: 12px;
 
     a {
-      color: $background-color !important;
+      color: $background-color  !important;
       text-decoration: none;
     }
   }
@@ -122,12 +122,12 @@ h1 {
 
     &:not(.active):hover {
       background-color: #808080 !important;
-      color: $background-color !important;
+      color: $background-color  !important;
     }
   }
 
   .active {
-    color: $background-color !important;
+    color: $background-color  !important;
     background-color: #404040 !important;
   }
 }
@@ -162,16 +162,35 @@ blockquote {
     margin-bottom: 160px;
   }
 }
-.anchor {
-  a {
-    color: #ffffff;
+
+.footer {
+  background-color: $primary-color  !important;
+  color: $background-color  !important;
+
+  .section {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.25;
+    padding-bottom: 20px;
   }
-  a:link {
-    color: rgb(239, 241, 239);
-    background-color: transparent !important;
-    text-decoration: none !important;
+
+  li {
+    padding-bottom: 8px !important;
   }
-  a:hover {
-    color: rgb(239, 241, 239) !important;
+
+  &.anchor {
+    a {
+      color: #ffffff;
+    }
+
+    a:link {
+      color: rgb(239, 241, 239);
+      background-color: transparent !important;
+      text-decoration: none !important;
+    }
+
+    a:hover {
+      color: rgb(239, 241, 239) !important;
+    }
   }
 }
