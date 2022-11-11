@@ -7,7 +7,6 @@ dict:
   community: Community
   what_is_pactus: What is Pactus?
   contributing: Contributing
-  faq: FAQ
   roadmap: Road map
   download: Download
   download_pactus: Download Pactus
@@ -20,3 +19,39 @@ dict:
   download_you_can_run_gui_v1: You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
   pactus_gui: Pactus Graphical User Interface (GUI)
   pactus_cli: Pactus Command Line Interface (CLI)
+  toc: Table of content
+  faq: FAQ
+  faq_intro_v1: Find answers to recurring questions and concerns about Pactus.
+  faq_what_does_pactus_mean: What does "Pactus" mean?
+  faq_what_does_pactus_mean_answer_v1: “Pactus” is a Latin word which means “to agree together”, “contract”, “transact”.
+  faq_how_is_pactus_different_from_bitcoin: How is Pactus different from Bitcoin?
+  faq_how_is_pactus_different_from_bitcoin_answer_v1: >
+    Pactus is a Proof of Stake blockchain, unlike Bitcoin that is a Proof of Work blockchain. It means there is mining in pactus.
+    The blockchain is secured by the Proof of Stake consensus mechanism. In Proof of Stake, Validators vote for incoming blocks.
+    These votes are weighted by the Validators' stake. Once a validator proposes a valid block and the block accepted by other validators, it receives one coin as reward.
+  faq_how_is_pactus_different_from_ethereum: How is Pactus different from Ethereum?
+  faq_how_is_pactus_different_from_ethereum_answer_v1: >
+    Ethereum is a real Proof of Stake Blockchain same as Pactus, however running a validator in Ethereum is not easy.
+    In Pactus everyone with minimum knowledge of blockchain and minimum hardware joins the network.
+    Unlike Ethereum there is no minimum stake and you don't need to run the node inside the cloud platform.
+    You can run the node in any Operating System with minimum hardware. We truly believe in decentralization.
+  faq_what_are_validators: What are validators?
+  faq_what_are_validators_answer_v1: >
+    Validators in proof-of-stake blockchains are like miners in proof-of-work blockchain.
+    Validators on Pactus are responsible to processing transactions and creating blocks and, by doing so, helping secure the network.<br>
+    Anyone can become a validator on Pactus by depositing (staking) some coins.
+  faq_how_do_validators_get_rewarded: How do validators get rewarded?
+  faq_how_do_validators_get_rewarded_answer_v1: >
+    Every 10 seconds, one validator is responsible for collecting transactions and creating a block.
+    The first transaction in the proposed block is called the “reward” transaction.
+    The amount of reward transaction is the sum of one coin as block reward and transaction fees.
+    If the majority of committee members attest for the proposed block, the block will be committed and the validator gets rewarded.
+  faq_how_many_validators_does_pactus_have: How many validators does pactus have?
+  faq_how_many_validators_does_pactus_have_answer_v1: >
+    Pactus is a real Proof of Stake blockchain. It means there is no limit on the number of validators in Pactus blockchain.
+    However there is a committee of validators that is fixed and has 21 seats.
+    This committee is responsible for creating blocks.
+    Members of the committee are randomly chosen from the validators.
+  faq_what_are_the_minimum_and_maximum_amounts_i_can_stake: What are the minimum and maximum amounts I can stake?
+  faq_what_are_the_minimum_and_maximum_amounts_i_can_stake_answer_v1: >
+    There is no minimum stake in Pactus, but the maximum amount you can stake is 12381 coins.
