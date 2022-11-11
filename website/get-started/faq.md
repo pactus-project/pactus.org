@@ -4,23 +4,61 @@ title: dict.faq
 permalink: /get-started/faq/index.html
 ---
 
-# FAQ
+<div class="faq">
+  <div class="header">
+    <h1>{% t dict.faq %}</h1>
+    <p>{% t dict.faq_intro_v1 %}</p>
+  </div>
 
-## What does "Pactus" mean?
+  <div class="toc">
+    <ul class="list-unstyled">
+      <li><a href="#what-does-pactus-mean">{% t dict.faq_what_does_pactus_mean %}</a></li>
+      <li><a href="#how-is-pactus-different-from-bitcoin">{% t dict.faq_how_is_pactus_different_from_bitcoin %}</a></li>
+      <li><a href="#how-is-pactus-different-from-ethereum">{% t dict.faq_how_is_pactus_different_from_ethereum %}</a></li>
+      <li><a href="#what-are-validators">{% t dict.faq_what_are_validators %}</a></li>
+      <li><a href="#what-are-the-minimum-and-maximum-amounts-i-can-stake">{% t dict.faq_what_are_the_minimum_and_maximum_amounts_i_can_stake %}</a></li>
+      <li><a href="#how-do-validators-get-rewarded">{% t dict.faq_how_do_validators_get_rewarded %}</a></li>
+      <li><a href="#how-many-validators-does-pactus-have">{% t dict.faq_how_many_validators_does_pactus_have %}</a></li>
 
-“Pactus” is a Latin word and it means “to agree together”, “contract”, “transact”.
+    </ul>
 
-## How is Pactus different from Bitcoin?
+  </div>
+  <div class="qa">
+    <h3 data-anchor-id="what-does-pactus-mean">{% t dict.faq_what_does_pactus_mean %}</h3>
+    <div class="answer">
+      {% t dict.faq_what_does_pactus_mean_answer_v1 %}
+    </div>
 
-Pactus is a Proof of Stake blockchain, unlike Bitcoin that is a Proof of Work blockchain.
-It means there is mining in pactus. The blockchain is secured by the Proof of Stake consensus mechanism.
-In Proof of Stake, Validators vote for incoming blocks. These votes are weighted by the Validators' stake.
-Once a validator proposes a valid block and the block accepted by other validators, it receives one coin as reward.
+    <h3 data-anchor-id="how-is-pactus-different-from-bitcoin">{% t dict.faq_how_is_pactus_different_from_bitcoin %}</h3>
+    <div class="answer">
+      {% t dict.faq_how_is_pactus_different_from_bitcoin_answer_v1 %}
+    </div>
 
-## How is Pactus different from Ethereum2?
+    <h3 data-anchor-id="how-is-pactus-different-from-ethereum">{% t dict.faq_how_is_pactus_different_from_ethereum %}
+    </h3>
+    <div class="answer">
+      {% t dict.faq_how_is_pactus_different_from_ethereum_answer_v1 %}
+    </div>
 
-Ethereum2 is a Proof of Stake Blockchain same as Pactus, however running a validator in Ethereum is not easy.
-In Pactus everyone with minimum knowledge of blockchain and minimum hardware joins the network.
-Unlike Ethereum there is no minimum stake and you don't need to run the node inside the cloud platform.
-You can run the node in any Operating System with minimum hardware.
-We truly believe in decentralization.
+    <h3 data-anchor-id="what-are-validators">{% t dict.faq_what_are_validators %}</h3>
+    <div class="answer">
+      {% t dict.faq_what_are_validators_answer_v1 %}
+    </div>
+
+    <h3 data-anchor-id="what-are-the-minimum-and-maximum-amounts-i-can-stake">{% t dict.faq_what_are_the_minimum_and_maximum_amounts_i_can_stake %}</h3>
+    <div class="answer">
+      {% t dict.faq_what_are_the_minimum_and_maximum_amounts_i_can_stake_answer_v1 %}
+    </div>
+
+    <h3 data-anchor-id="how-do-validators-get-rewarded">{% t dict.faq_how_do_validators_get_rewarded %}</h3>
+    <div class="answer">
+      {% t dict.faq_how_do_validators_get_rewarded_answer_v1 %}
+    </div>
+
+    <h3 data-anchor-id="how-many-validators-does-pactus-have">{% t dict.faq_how_many_validators_does_pactus_have %}</h3>
+    <div class="answer">
+      {% t dict.faq_how_many_validators_does_pactus_have_answer_v1 %}
+    </div>
+
+  </div>
+</div>
