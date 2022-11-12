@@ -18,9 +18,8 @@
             <a
               href="{{ site.url }}/{{ item.url}}"
               class="link-dark d-inline-flex text-decoration-none rounded {% if page.url contains item.url %} {{ 'selected'}} {% endif %}">
-              {% assign item_path = item.url | append: ".md" %}
-              {% assign item_page = site.pages | where: "path", item_path | first %}
-              {{ item_page.title }}
+              {% assign item_path = item.url | append: ".md" %} {% assign item_page = site.pages
+              |where: "path", item_path | first %} {{ item_page.title }}
             </a>
           </li>
           {% endfor %}
