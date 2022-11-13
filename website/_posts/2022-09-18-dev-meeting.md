@@ -12,7 +12,8 @@ summary: Reviewing testnet and Genesis parameters
 
 We discussed about the testnet and some related issues:
 
--IP block issues found by Hadi. Because of sanctions some IPs are blocked. We run a support node to support users inside Iran
+-IP block issues found by Hadi. Because of sanctions some IPs are blocked.
+We run a support node to support users inside Iran
 
 -The GUI application had some issues on Windows. They are fixed and tested by Hadi.
 

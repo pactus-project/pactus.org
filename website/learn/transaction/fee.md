@@ -12,6 +12,7 @@ simple.
 $$
 \mathbf{fee = amount \times  percentage }
 $$
+
 <br>
 <br>
 $$

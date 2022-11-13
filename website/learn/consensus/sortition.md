@@ -57,7 +57,7 @@ $$
 verify(pub_{validator}, proof, seed_n) \le S_v
 $$
 
-_which_
+Where
 
 - $$pub_{validator}$$ os the public key of the validator
 - $$S_v$$ is the stake of validator at height $$n$$

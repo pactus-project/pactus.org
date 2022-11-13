@@ -12,7 +12,8 @@ A 'node' is a software that downloads a copy of the Pactus blockchain and verifi
 then keeps it up-to-date with new blocks and transactions, and helps others download and update their own copies.
 Nodes ensure the network keeps running safe and decentralized.
 An easy and effective way to help the Pactus network is to run a node.
-Running Pactus blockchain is easy. Just [download](https://pactus.org/download/) the latest version of Pactus blockchain and run it.
+Running Pactus blockchain is easy. Just [download](https://pactus.org/download/) the latest version of Pactus blockchain
+and run it.
 
 <h3>Who should run a node?</h3>
 

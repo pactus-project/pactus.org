@@ -19,7 +19,7 @@ In Pactus stamps are defined as first 4 bytes of [block ID](/learn/basic/block#b
 
 ## Consequences
 
-### Advantages:
+### Advantages
 
 - **Reducing the size of transaction pool**
 

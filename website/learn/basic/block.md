@@ -9,7 +9,7 @@ permalink: /learn/basic/block/index.html
 ## What Is Block?
 
 Blocks contain a header, a certificate for the previous block and transactions. Each block in Pactus
-has a unique [certificate](./certificate.md) that is signed by committee members. A block will be
+has a unique [certificate](../certificate) that is signed by committee members. A block will be
 committed if it has a valid certificate. Blocks are immutable and any changes in the block will
 invalidate the certificate.
 
@@ -54,7 +54,7 @@ type BlockHeader struct {
 - `Version` starts from 1 for the mainnet and starts from 1001 for the testnet
 - `UnixTime` is the time of block in unix format (seconds from Unix Epoch)
 - `LastBlockHash` is the hash of the previous block
-- `StateHash` is the [state merkle root](./state-merkle.md) at the current height
+- `StateHash` is the [state merkle root](../state-merkle) at the current height
 - `SortitionSeed` is the seed for the sortition algorithm and must be signed by the proposer
 - `ProposerAddress` is the address of block proposer
 
@@ -71,4 +71,9 @@ ID and therefore they cannot be modified.
 
 Hers is an example of a block header data:
 
-{% hexdump "block_header_data" "011a873d62b69e39b4e06567b6ad3a58f61df4c3c05920a29043277af01264c9e1e7693068bbf7b5e010ca98da562965a1a3411a48fee70bd0dbbe11d9867fa9e13b3e005e99bbd54999c7cd6bb176b160962080ee130c455c88507bd51a878a0b85c656cfc1a542cbbe0105708389ca68269bda290119cba9960c6ad28aaaa140377f652bdea0551e3b" %}
+{% hexdump "block_header_data"
+  "011a873d62b69e39b4e06567b6ad3a58f61df4c3c05920a29043277af01264c9"+
+  "e1e7693068bbf7b5e010ca98da562965a1a3411a48fee70bd0dbbe11d9867fa9"+
+  "e13b3e005e99bbd54999c7cd6bb176b160962080ee130c455c88507bd51a878a"+
+  "0b85c656cfc1a542cbbe0105708389ca68269bda290119cba9960c6ad28aaaa1"+
+  "40377f652bdea0551e3b" %}

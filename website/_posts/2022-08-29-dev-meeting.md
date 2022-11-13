@@ -8,11 +8,11 @@ summary: Name storming
 
 ## Meeting Summary
 
-### Project renamed to Pactus.
+### Project renamed to Pactus
 
 In last meeting we started an online survey for renaming the project and here is the result of the survey:
 
-**Total responses: 31**
+Total responses: **31**
 
 | Name       | Votes |
 | ---------- | ----- |

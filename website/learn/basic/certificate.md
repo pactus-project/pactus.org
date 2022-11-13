@@ -57,4 +57,6 @@ type Certificate struct {
 
 Hers is an example of a certificate data.
 
-{% hexdump "certificate_data" "0604040b1726010ba33cf343625e9a4a8fa966045417084608e4cc2eb01b1348ccfbcf9f1e713f56e93a98ccc2a053a4da1b8fcaa5fd0d24" %}
+{% hexdump "certificate_data"
+  "0604040b1726010ba33cf343625e9a4a8fa966045417084608e4cc2eb01b1348"+
+  "ccfbcf9f1e713f56e93a98ccc2a053a4da1b8fcaa5fd0d24" %}

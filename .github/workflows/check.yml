@@ -2,17 +2,51 @@ name: Check
 on: [push, pull_request]
 
 jobs:
-  check:
+  mdl:
+    name: Markdown linter
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Clone repository
+        uses: actions/checkout@v3
         with:
-          node-version: "16.x"
+          lfs: true
+          submodules: true
 
-      - name: Installing packages
-        run: yarn install
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 3.0
 
-      - name: Check all markdowns for broken links
-        run: yarn run check
+      - name: Install mdl
+        run: |
+          gem install mdl -v 0.12.0
+
+      - run: mdl --style=.mdlrc.rb ./website
+
+  html-proofer:
+    name: Check fro broken
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+          submodules: true
+
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+
+      - name: Build the website
+        run: |
+          bundle install
+          bundle exec jekyll build
+
+      - name: Install html-proofer
+        run: |
+          gem install html-proofer -v 4.3
+
+      ## Status code 429:  https://http.dev/429
+      ## Status code 999:  https://http.dev/999#linkedin
+      - run: htmlproofer --ignore-status-codes "999" --ignore-status-codes "429" --check_internal_hash=false ./_site
