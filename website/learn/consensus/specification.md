@@ -1,12 +1,16 @@
 ---
 layout: learn
-title: Safety proof using TLA+
-permalink: /learn/consensus/tla+/index.html
+title: Consensus specification
+permalink: /learn/consensus/specification/index.html
 ---
 
-# Consensus specification
+# Consensus specification based on TLA+
 
-## What Is TLA+
+Pactus consensus specification has written in TLA+ format. It includes all invariants that can be held
+in every state of every execution that the protocol allows. The TLA+ specification is compiled into
+[PDF file](https://raw.githubusercontent.com/pactus-project/pactus/main/consensus/spec/Pactus.pdf).
+
+### What Is TLA+
 
 > TLA+ is a formal specification language developed by Leslie Lamport. It is used for designing,
 > modelling, documentation, and verification of programs, especially concurrent systems and
@@ -20,12 +24,6 @@ Testing and modeling the concurrent and distributed system are hard.
 describe things with simple mathematics. TLA+ and its tools are useful for eliminating fundamental
 design errors, which are hard to find and expensive to correct in code. Check
 [The TLA+ Home Page](https://lamport.azurewebsites.net/tla/tla.html) for more information.
-
-## Pactus consensus spec
-
-Pactus consensus specification has written in TLA+ format. It includes all invariants that can be held
-in every state of every execution that the protocol allows. The TLA+ specification is compiled into
-[PDF file](https://raw.githubusercontent.com/pactus-project/pactus/main/consensus/spec/Pactus.pdf).
 
 ### Safety proof
 

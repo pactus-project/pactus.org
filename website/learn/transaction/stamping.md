@@ -10,7 +10,7 @@ permalink: /learn/transaction/stamping/index.html
 
 _Stamping a transaction_ simply means putting something from the previous block into the header of
 the transaction. A stamped transaction, unlike normal transactions, has a lifetime or Time To Live (TTL) and it is
-only valid for a certain time. If <span v-pre>$$TTL = N$$</span>, the stamped transaction after N
+only valid for a certain time. If $$TTL = N$$, the stamped transaction after N
 blocks will be invalid.
 
 ![Stamped transaction](/assets/images/pactus_stamped_transaction.png)

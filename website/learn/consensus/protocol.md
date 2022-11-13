@@ -38,15 +38,15 @@ highly inspired by Practical Byzantine Fault Tolerant (PBFT) algorithm.
 
 ## The algorithm
 
-There are <span v-pre>$$R = 3f+1$$</span> validators. where <span v-pre>$$f$$</span> is the maximum
+There are $$R = 3f+1$$ validators. where $$f$$ is the maximum
 number of validators that may be faulty or byzantine. For example, if there is one faulty validator,
-the resiliency of the algorithm is optimal if we have at least <span v-pre>$$3$$</span> non-faulty
-validators. So the minimum number of validators should be <span v-pre>$$3+1=4$$</span>.
+the resiliency of the algorithm is optimal if we have at least $$3$$ non-faulty
+validators. So the minimum number of validators should be $$3+1=4$$.
 
 We use cryptographic techniques to prevent spoofing and replays and to detect corrupted messages.
 All validators know the others’ public keys to verify signatures. All messages contain public key
-signatures. We denote a message signed by node <span v-pre>$$i$$</span> as
-<span v-pre>$$<m>_{\sigma _i}$$</span>.
+signatures. We denote a message signed by node $$i$$ as
+$$<m>_{\sigma _i}$$.
 
 ### Normal-Case Operation
 
@@ -56,42 +56,42 @@ operation of Pactus consensus algorithm includes these three steps: **propose**,
 
 #### Propose phase
 
-A proposer (<span v-pre>$$p$$</span>) collects transactions and creates a proposal block. It signs and
+A proposer ($$p$$) collects transactions and creates a proposal block. It signs and
 broadcasts a proposal message with block piggybacked to all the validators. Proposal message has
 this form:
 
-<span v-pre>$$<<PROPOSAL,h,r>_{\sigma _p}, B>$$</span>
+$$<<PROPOSAL,h,r>_{\sigma _p}, B>$$
 
 where:
 
-- <span v-pre>$$B$$</span> is proposed block
-- <span v-pre>$$h$$</span> indicates the block height
-- <span v-pre>$$r$$</span> is an assigned round number, which is zero for the first round
+- $$B$$ is proposed block
+- $$h$$ indicates the block height
+- $$r$$ is an assigned round number, which is zero for the first round
 
 #### Prepare phase
 
-If validator <span v-pre>$$i$$</span> accepts the proposal, it enters _prepare_ phase and signs and
+If validator $$i$$ accepts the proposal, it enters _prepare_ phase and signs and
 broadcasts _prepare_ message to all other validators. Otherwise, it does nothing. Prepare message
 has this form:
 
-<span v-pre>$$<<PREPARE,h,r,d,i>_{\sigma _i}>$$</span>
+$$<<PREPARE,h,r,d,i>_{\sigma _i}>$$
 
 where:
 
-- <span v-pre>$$d$$</span> is digest or hash of proposed block <span v-pre>$$B$$</span>
+- $$d$$ is digest or hash of proposed block $$B$$
 
-If validator <span v-pre>$$i$$</span> received <span v-pre>$$2f+1$$</span> prepare messages from other
+If validator $$i$$ received $$2f+1$$ prepare messages from other
 validators (possibly including its own), it is **prepared** and enters to precommit phase.
 
 #### Precommit phase
 
-In _precommit_ phase, validator <span v-pre>$$i$$</span> signs and broadcasts _precommit_ message to
+In _precommit_ phase, validator $$i$$ signs and broadcasts _precommit_ message to
 the other validators. Precommit message has this form:
 
-<span v-pre>$$<<PRECOMMIT,h,r,d,i>_{\sigma _i}>$$</span>
+$$<<PRECOMMIT,h,r,d,i>_{\sigma _i}>$$
 
-Each validator executes and commits block <span v-pre>$$b$$</span> after receiving
-<span v-pre>$$2f+1$$</span> precommit messages (possibly including its own) and becomes **committed**.
+Each validator executes and commits block $$b$$ after receiving
+$$2f+1$$ precommit messages (possibly including its own) and becomes **committed**.
 
 The picture below shows the operation of the algorithm in the normal case. validator 0 is the
 proposer and validator 3 is faulty.
@@ -105,16 +105,16 @@ proposer fails. change-proposers are triggered by timeouts that prevent validato
 indefinitely for the proposal to execute.
 
 If the timer of validator expires in a round, the validator starts a change-proposer phase to move
-the system to round <span v-pre>$$r+1$$</span>. It stops accepting messages (other than
+the system to round $$r+1$$. It stops accepting messages (other than
 change-proposer and block-announce messages) and broadcasts a change-proposer message to all
 validators.
 
 The change-proposer message has this form:
 
-<span v-pre>$$<<CHANGE-PROPOSER,h,r,i>_{\sigma _i}>$$</span>
+$$<<CHANGE-PROPOSER,h,r,i>_{\sigma _i}>$$
 
-If the proposer for round <span v-pre>$$r+1$$</span> receives <span v-pre>$$2f+1$$</span> valid
-change-proposer messages for round <span v-pre>$$r$$</span> from other validators, it goes to next
+If the proposer for round $$r+1$$ receives $$2f+1$$ valid
+change-proposer messages for round $$r$$ from other validators, it goes to next
 round and broadcasts proposal message.
 
 The picture below shows the operation of the algorithm in change-proposer case. validator 0 is the
@@ -124,15 +124,15 @@ proposer and is faulty.
 
 ### Block announcement
 
-Each validator that receives a valid proposal and with <span v-pre>$$2f+1$$</span> precommit messages
+Each validator that receives a valid proposal and with $$2f+1$$ precommit messages
 can make a certificate and broadcasts _block_announce_ messages with the block and certificate
 piggybacked to the network.
 
-<span v-pre>$$<<BLOCK-ANNOUNCE,h,r>,B,C>$$</span>
+$$<<BLOCK-ANNOUNCE,h,r>,B,C>$$
 
 where:
 
-- <span v-pre>$$C$$</span> is the certificate for the block <span v-pre>$$B$$</span>
+- $$C$$ is the certificate for the block $$B$$
 
 Validators can move to the next height and clear the message logs after receiving valid
 _block_announce_ message.
