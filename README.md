@@ -29,11 +29,14 @@ Commands:
 - Format all markdown and HTML files:
   `yarn run prettier`:
 
-- Remove all metadata from png files by running this command.
+- Remove all metadata from png files by running this command:
   `yarn run exif`
 
-- Check the broken links
+- Check the broken links:
   `htmlproofer --ignore-status-codes "999,429" --check_internal_hash=false --enforce-https=false ./_site`
+
+- Linting markdown files:
+  `mdl --style=.mdlrc.rb ./website`
 
 ## Deployment
 
