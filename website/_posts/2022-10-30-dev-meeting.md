@@ -17,7 +17,7 @@ We in the Pactus family stand in solidarity with courageous people who are fight
 
 ### Launching Block explorer
 
-The beta version of block explorer is launched 🚀 and now is available at: [https://pactusscan.com/](https://pactusscan.com/)
+The beta version of block explorer is launched 🚀 and now is available at: [https://www.pactusscan.com/](https://www.pactusscan.com/)
 
 Nagaraj explained the block explorer and some of the features.
 

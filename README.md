@@ -26,9 +26,14 @@ There are some additional commands that help you to check and improve your chang
 First you need Install [yarn](https://yarnpkg.com/).
 
 Commands:
-- `yarn run check`:  check all markdown files for the broken links
-- `yarn run prettier`:  Format all markdown and HTML files
-- `yarn run exif`:  Remove all metadata from png files by running this command.
+- Format all markdown and HTML files:
+  `yarn run prettier`:
+
+- Remove all metadata from png files by running this command.
+  `yarn run exif`
+
+- Check the broken links
+  `htmlproofer --ignore-status-codes "999,429" --check_internal_hash=false --enforce-https=false ./_site`
 
 ## Deployment
 

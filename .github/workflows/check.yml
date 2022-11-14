@@ -49,4 +49,4 @@ jobs:
 
       ## Status code 429:  https://http.dev/429
       ## Status code 999:  https://http.dev/999#linkedin
-      - run: htmlproofer --ignore-status-codes "999" --ignore-status-codes "429" --check_internal_hash=false ./_site
+      - run: htmlproofer --ignore-status-codes "999,429" --check_internal_hash=false ./_site

@@ -17,7 +17,7 @@
           item.doc %} {% assign item_page = site.pages |where: "path", item_path | first %}
           <li>
             <a
-              href="{{ site.url }}/{{ item_page.permalink}}"
+              href="{{ site.url }}{{ item_page.permalink}}"
               class="link-dark d-inline-flex text-decoration-none rounded {% if page.url contains item.url %} {{ 'selected'}} {% endif %}">
               {{ item_page.title }}
             </a>
