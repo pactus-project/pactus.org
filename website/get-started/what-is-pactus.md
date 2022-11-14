@@ -4,7 +4,7 @@ title: dict.what_is_pactus
 permalink: /get-started/what-is-pactus/index.html
 ---
 
-## What is Pactus?
+# What is Pactus?
 
 **Pactus** is an open source and community-driven blockchain. There is no specified owner or any company
 structure behind it and there is no CEO who decides on its future. Instead, it is the community, for example,
