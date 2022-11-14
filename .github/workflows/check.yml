@@ -24,7 +24,7 @@ jobs:
       - run: mdl --style=.mdlrc.rb ./website
 
   html-proofer:
-    name: Check fro broken
+    name: Check for broken links
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
