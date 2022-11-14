@@ -70,7 +70,7 @@ where you save blockchain data, config and key files.
 
 {% tab init windows <i class="fa-brands fa-windows"></i> Windows %}
 
-```bash
+```powershell
 pactus-daemon.exe init -w c:\pactus --testnet
 ```
 
@@ -117,7 +117,7 @@ First, open the command line interface in your computer. Then:
 
 {% tab start windows <i class="fa-brands fa-windows"></i> Windows %}
 
-```bash
+```powershell
 pactus-daemon.exe start -w c:\pactus
 ```
 
