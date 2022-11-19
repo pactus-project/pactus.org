@@ -59,7 +59,7 @@ $$
 
 Where
 
-- $$pub_{validator}$$ os the public key of the validator
+- $$pub_{validator}$$ is the public key of the validator
 - $$S_v$$ is the stake of validator at height $$n$$
 
 There is no need to send $$index$$ alongside $$proof$$ because the
