@@ -26,11 +26,11 @@ permalink: /download/index.html
 
 | **File name**                                                                                                                                                  | **Kind**  | **OS**  | **Arch** |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------- | -------- |
-| [pactus-gui_0.9.0_darwin_amd64.dmg](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_darwin_amd64.dmg)                       | DMG       | macOS   | 64-bit   |
-| [pactus-gui_0.9.0_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_darwin_amd64.tar.gz)                 | Archive   | macOS   | 64-bit   |
-| [pactus-gui_0.9.0_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_linux_amd64.tar.gz)                   | Archive   | Linux   | 64-bit   |
-| [pactus-gui_0.9.0_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_windows_amd64.zip)                     | Archive   | Windows | 64-bit   |
-| [pactus-gui_0.9.0_windows_amd64_installer.exe](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-gui_0.9.0_windows_amd64_installer.exe) | Installer | Windows | 64-bit   |
+| [pactus-gui_0.9.1_darwin_amd64.dmg](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-gui_0.9.1_darwin_amd64.dmg)                       | DMG       | macOS   | 64-bit   |
+| [pactus-gui_0.9.1_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-gui_0.9.1_darwin_amd64.tar.gz)                 | Archive   | macOS   | 64-bit   |
+| [pactus-gui_0.9.1_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-gui_0.9.1_linux_amd64.tar.gz)                   | Archive   | Linux   | 64-bit   |
+| [pactus-gui_0.9.1_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-gui_0.9.1_windows_amd64.zip)                     | Archive   | Windows | 64-bit   |
+| [pactus-gui_0.9.1_windows_amd64_installer.exe](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-gui_0.9.1_windows_amd64_installer.exe) | Installer | Windows | 64-bit   |
 
 #### Antivirus
 
@@ -51,15 +51,15 @@ Advanced user can run Pactus in Command Line Interface (CLI) mode.
 
 | **File name**                                                                                                                                    | **OS**  | **Arch** |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | -------- |
-| [pactus-cli_0.9.0_android_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_android_arm64.tar.gz) | Android | ARM64    |
-| [pactus-cli_0.9.0_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_darwin_amd64.tar.gz)   | macOS   | 6d-bit   |
-| [pactus-cli_0.9.0_darwin_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_darwin_arm64.tar.gz)   | macOS   | ARM64    |
-| [pactus-cli_0.9.0_freebsd_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_freebsd_amd64.tar.gz) | FreeBSD | 6d-bit   |
-| [pactus-cli_0.9.0_freebsd_arm.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_freebsd_arm.tar.gz)     | FreeBSD | ARM      |
-| [pactus-cli_0.9.0_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_linux_amd64.tar.gz)     | Linux   | 6d-bit   |
-| [pactus-cli_0.9.0_linux_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_linux_arm64.tar.gz)     | Linux   | ARM64    |
-| [pactus-cli_0.9.0_windows_386.zip](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_windows_386.zip)           | Windows | 32-bit   |
-| [pactus-cli_0.9.0_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.9.0/pactus-cli_0.9.0_windows_amd64.zip)       | Windows | 6d-bit   |
+| [pactus-cli_0.9.1_android_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-cli_0.9.1_android_arm64.tar.gz) | Android | ARM64    |
+| [pactus-cli_0.9.1_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-cli_0.9.1_darwin_amd64.tar.gz)   | macOS   | 6d-bit   |
+| [pactus-cli_0.9.1_darwin_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-cli_0.9.1_darwin_arm64.tar.gz)   | macOS   | ARM64    |
+| [pactus-cli_0.9.1_freebsd_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-cli_0.9.1_freebsd_amd64.tar.gz) | FreeBSD | 6d-bit   |
+| [pactus-cli_0.9.1_freebsd_arm.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-cli_0.9.1_freebsd_arm.tar.gz)     | FreeBSD | ARM      |
+| [pactus-cli_0.9.1_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-cli_0.9.1_linux_amd64.tar.gz)     | Linux   | 6d-bit   |
+| [pactus-cli_0.9.1_linux_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-cli_0.9.1_linux_arm64.tar.gz)     | Linux   | ARM64    |
+| [pactus-cli_0.9.1_windows_386.zip](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-cli_0.9.1_windows_386.zip)           | Windows | 32-bit   |
+| [pactus-cli_0.9.1_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.9.1/pactus-cli_0.9.1_windows_amd64.zip)       | Windows | 6d-bit   |
 
 #### Initializing the node
 
