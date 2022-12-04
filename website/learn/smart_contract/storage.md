@@ -1,5 +1,7 @@
 ---
+layout: learn
 title: Storage as file
+permalink: /learn/smart_contract/storage.html
 ---
 
 # Storage as file
@@ -88,7 +90,7 @@ dealing with memory they are dealing with the storage file. You can naively cons
 dedicated consistent memory for the smart contract.
 
 Right now these data collection is available to use inside the smart contract: `StorageVector`,
-`StorageString`, `StorageLinkedList` and `StorageBST`
+`StorageString`, `StorageLinkedList`, `StorageBST` and `StorageHasTable`.
 
 <!-- <TODO: link to docs.rs> -->
 

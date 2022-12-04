@@ -41,3 +41,8 @@
     - doc: deflationary.md
     - doc: treasury.md
     - doc: incentive.md
+
+- title: Smart Contract
+  path: learn/smart_contract
+  items:
+    - doc: storage.md
