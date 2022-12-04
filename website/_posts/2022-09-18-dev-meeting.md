@@ -27,7 +27,13 @@ Website still has some issues:
 
 ### Status of social medias
 
-Status of social-medias was discussed.
+Status of social-medias was discussed:
+
+- Discord: 70 members
+- Instagram: 87 followers
+- Telegram: 20 followers
+- Linkedin: 20 followers
+- Twitter: Not yet
 
 ### Project announcement
 
