@@ -25,9 +25,9 @@ Nagaraj explained the block explorer and some of the features.
 
 Project [road map](https://pactus.org/get-started/roadmap/) discussed.
 
-### IdeaKita pitch desk
+### IdeaKita pitch deck
 
-Ali presented pactus Pitch Desk for the [IdeaKita](https://mdec.my/ideakita/) Malaysia.
+Ali presented pactus pitch deck for the [IdeaKita](https://mdec.my/ideakita/) Malaysia.
 The IdeaKita programme is under the Malaysia Digital Economy Corporation (MDEC) and is designed to
 help entrepreneurs and startups in Malaysia.
 
