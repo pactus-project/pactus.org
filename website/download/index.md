@@ -8,11 +8,15 @@ permalink: /download/index.html
 
 {% t dict.download_on_this_page_v1 %}
 
+---
+
 ## 🏗️ {% t dict.download_compile_from_source_code %}
 
 {% t dict.download_project_pactus_is_distributed_v1 %}
 
 {% t dict.download_instructions_for_compiling_v1 %}
+
+---
 
 ## ⬇️ {% t dict.download_stable_releases %}
 
@@ -42,6 +46,8 @@ and MacOS the downloaded binaries are detected as harmful or malware software.
 
 If you are running Pactus for the first time, there is an assistant page that help you to initialize
 your node. After initializing the working directory, you can run the node and start syncing with the testnet.
+
+---
 
 ### {% t dict.pactus_cli %}
 
@@ -140,6 +146,8 @@ pactus-daemon.exe start -w c:\pactus
 {% endtab %}
 
 {% endtabs %}
+
+---
 
 ## 🐳 Docker container
 
