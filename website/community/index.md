@@ -22,17 +22,17 @@ Support Pactus by joining the community. We can make it together.
   </li>
   <li>
     <a href="https://twitter.com/pactuschain/">
-      <img alt="Discord" src="{{ site.baseurl }}/assets/images/social_twitter.svg" width="32">Pactus on on Twitter
+      <img alt="Discord" src="{{ site.baseurl }}/assets/images/social_twitter.svg" width="32">Pactus on Twitter
     </a>
   </li>
   <li>
     <a href="https://www.instagram.com/pactus.blockchain/">
-      <img alt="Discord" src="{{ site.baseurl }}/assets/images/social_instagram.svg" width="32">Pactus on on Instagram
+      <img alt="Discord" src="{{ site.baseurl }}/assets/images/social_instagram.svg" width="32">Pactus on Instagram
     </a>
   </li>
   <li>
     <a href="https://www.linkedin.com/company/pactus-blockchain">
-      <img alt="Discord" src="{{ site.baseurl }}/assets/images/social_linkedin.svg" width="32">Pactus on on LinkedIn
+      <img alt="Discord" src="{{ site.baseurl }}/assets/images/social_linkedin.svg" width="32">Pactus on LinkedIn
     </a>
   </li>
 </ul>
