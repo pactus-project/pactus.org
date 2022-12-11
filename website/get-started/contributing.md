@@ -24,7 +24,7 @@ Nodes ensure the network keeps running safe and decentralized.
 
 ### Who should run a node?
 
-Everyone! Nodes are not just for validators. Anyone can run a node—you don't even need stake.
+Everyone! Nodes are not just for validators. Anyone can run a node; you don't even need stake.
 Having your own node means you don't need to trust information about the state of the network provided by a third party.
 
 <b>Don't trust. Verify.</b>
@@ -33,5 +33,5 @@ Having your own node means you don't need to trust information about the state o
 
 ## Develop
 
-Pacrus is an open source projects; contributors are welcome and encouraged.Check our
+Pactus is an open source project; contributors are welcome and encouraged.Check our
 [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) for more information.
