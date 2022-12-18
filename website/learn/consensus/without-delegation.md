@@ -30,7 +30,7 @@ Number of delegates are limited and they are responsible for validating the tran
 
 ## Pactus has no delegation
 
-The solution we are offering in Pactus is creating a dynamic set of validators.
+The solution we are offering in Pactus is creating a dynamic set of validators that is called _committee_.
 The size of the committee is fixed but the members of the committee change randomly.
 The number of validators outside the committee is unlimited and anyone can become a validator by staking some tokens.
 At each block, validators start running a lottery in order to choose themselves.
