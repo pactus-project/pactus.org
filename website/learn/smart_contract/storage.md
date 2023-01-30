@@ -66,10 +66,6 @@ pub fn allocate(&self, length: u32) -> Result<Offset, Error>;
 
 /// Deallocates the storage space at the specific `offset` and `length`
 pub fn deallocate(&self, offset: Offset, length: u32) -> Result<(), Error>;
-
-/// Reallocates the the storage space at the given `offset` from `length` to `new_length`
-/// and returns the new offset of reallocated area.
-pub fn reallocate(&self, offset: Offset, length: u32, new_length: u32) -> Result<Offset, Error>;
 ```
 
 ## Storage Stack
