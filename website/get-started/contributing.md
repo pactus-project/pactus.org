@@ -36,8 +36,8 @@ Share our project on social media, attend Pactus events, or simply tell your fri
 
 Every little bit helps!
 
---- 
+---
 
-We appreciate any and all contributions to the Pactus project, and we're excited to work with our community to create a secure and decentralized network. 
+We appreciate any and all contributions to the Pactus project, and we're excited to work with our community to create a secure and decentralized network.
 
 Together, we can build a better future for blockchain technology.
