@@ -25,7 +25,7 @@ body {
 }
 
 a:hover {
-  color: $primary-color !important;
+  color: $primary-color  !important;
 }
 
 h1,
@@ -36,7 +36,8 @@ h5,
 h6 {
   font-weight: 500;
   line-height: 1.25;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
+  padding-top: 14px;
 }
 
 h1 {
@@ -44,7 +45,7 @@ h1 {
 }
 
 .btn-fixed {
-  background-color: $primary-color !important;
+  background-color: $primary-color  !important;
   color: $background-color;
   width: 240px;
   height: 46px;
@@ -57,8 +58,8 @@ h1 {
   margin: 16px;
 
   &:hover {
-    background-color: $secondary-color !important;
-    color: $background-color !important;
+    background-color: $secondary-color  !important;
+    color: $background-color  !important;
   }
 }
 
@@ -66,11 +67,11 @@ h1 {
   background-color: #777777;
 
   .text-muted {
-    color: $background-color !important;
+    color: $background-color  !important;
     font-size: 12px;
 
     a {
-      color: $background-color !important;
+      color: $background-color  !important;
       text-decoration: none;
     }
   }
@@ -122,12 +123,12 @@ h1 {
 
     &:not(.active):hover {
       background-color: #808080 !important;
-      color: $background-color !important;
+      color: $background-color  !important;
     }
   }
 
   .active {
-    color: $background-color !important;
+    color: $background-color  !important;
     background-color: #404040 !important;
   }
 }
@@ -164,8 +165,8 @@ blockquote {
 }
 
 .footer {
-  background-color: $primary-color !important;
-  color: $background-color !important;
+  background-color: $primary-color  !important;
+  color: $background-color  !important;
 
   .section {
     font-size: 1.75rem;
