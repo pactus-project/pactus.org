@@ -23,35 +23,44 @@ dict:
   faq: FAQ
   faq_intro_v1: Find answers to recurring questions and concerns about Pactus.
   faq_what_does_pactus_mean: What does "Pactus" mean?
-  faq_what_does_pactus_mean_answer_v1: “Pactus” is a Latin word which means “to agree together”, “contract”, “transact”.
+  faq_what_does_pactus_mean_answer_v1: >
+    The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact".
+    In English, the term "Pact" is derived from the Latin word "Pactus".
   faq_how_is_pactus_different_from_bitcoin: How is Pactus different from Bitcoin?
   faq_how_is_pactus_different_from_bitcoin_answer_v1: >
-    Pactus is a Proof of Stake blockchain, unlike Bitcoin that is a Proof of Work blockchain. It means there is mining in pactus.
-    The blockchain is secured by the Proof of Stake consensus mechanism. In Proof of Stake, Validators vote for incoming blocks.
-    These votes are weighted by the Validators' stake. Once a validator proposes a valid block and the block accepted by other validators, it receives one coin as reward.
+    Pactus and Bitcoin are two different types of blockchain networks.
+    While Bitcoin uses a process called "Proof of Work" to secure its network, Pactus uses a different method called "Proof of Stake".
+    This means that instead of mining, validators are responsible for voting on incoming blocks. Once a validator proposes a valid block and it is accepted by other validators, the validator receives one coin as a block reward.
+    This helps keep the Pactus blockchain secure and decentralized.
   faq_how_is_pactus_different_from_ethereum: How is Pactus different from Ethereum?
   faq_how_is_pactus_different_from_ethereum_answer_v1: >
-    Ethereum is a real Proof of Stake Blockchain same as Pactus, however running a validator in Ethereum is not easy.
-    In Pactus everyone with minimum knowledge of blockchain and minimum hardware joins the network.
-    Unlike Ethereum there is no minimum stake and you don't need to run the node inside the cloud platform.
-    You can run the node in any Operating System with minimum hardware. We truly believe in decentralization.
+    Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
+    Running a validator on Ethereum can be challenging and requires a minimum of 32 Ethereum coins to stake.
+    In contrast, Pactus is designed to be more accessible to normal users.
+    There is no minimum stake requirement, and you can run the Pactus node on any operating system with basic hardware.
+    This approach reflects our commitment to promoting decentralization and making blockchain technology accessible to a wider audience.
   faq_what_are_validators: What are validators?
   faq_what_are_validators_answer_v1: >
-    Validators in proof-of-stake blockchains are like miners in proof-of-work blockchain.
-    Validators on Pactus are responsible to processing transactions and creating blocks and, by doing so, helping secure the network.<br>
-    Anyone can become a validator on Pactus by depositing (staking) some coins.
+    Validators on Pactus are responsible to processing transactions and creating blocks and, by doing so, helping secure the network.
+    They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
   faq_how_do_validators_get_rewarded: How do validators get rewarded?
   faq_how_do_validators_get_rewarded_answer_v1: >
-    Every 10 seconds, one validator is responsible for collecting transactions and creating a block.
-    The first transaction in the proposed block is called the “reward” transaction.
-    The amount of reward transaction is the sum of one coin as block reward and transaction fees.
-    If the majority of committee members attest for the proposed block, the block will be committed and the validator gets rewarded.
+    Every 10 seconds, one validator is chosen to collect transactions and create a block.
+    The first transaction in the proposed block is called the "reward" transaction.
+    This transaction includes one coin as a block reward and transaction fees.
+    If most of the committee members approve the proposed block, the block is accepted and the validator receives the reward.
+    The reward helps incentivize validators to secure the network and keep it running smoothly.
   faq_how_many_validators_does_pactus_have: How many validators does pactus have?
   faq_how_many_validators_does_pactus_have_answer_v1: >
-    Pactus is a real Proof of Stake blockchain. It means there is no limit on the number of validators in Pactus blockchain.
-    However there is a committee of validators that is fixed and has 21 seats.
-    This committee is responsible for creating blocks.
-    Members of the committee are randomly chosen from the validators.
+    Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network.
+    However, there is a fixed committee of 21 validators responsible for creating blocks.
+    These committee members are randomly chosen from the pool of validators in the network.
   faq_what_are_the_minimum_and_maximum_amounts_i_can_stake: What are the minimum and maximum amounts I can stake?
   faq_what_are_the_minimum_and_maximum_amounts_i_can_stake_answer_v1: >
-    There is no minimum stake in Pactus, but the maximum amount you can stake is 12381 coins.
+    In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 12381 coins.
+    If you want to stake more than 12381 coins, you can run a new validator.
+    Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
+  faq_what_is_the_total_supply_of_pactus_coins: What is the total supply of Pactus coins?
+  faq_what_is_the_total_supply_of_pactus_coins_answer_v1: >
+    Pactus has a total supply of 21 million coins, and each coin is divided into 1 billion units.
+    A new coin is generated every 10 seconds, and after 6 and a half years, all 21 million coins will be generated.

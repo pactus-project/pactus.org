@@ -27,11 +27,14 @@ permalink: /get-started/faq/index.html
       <li><a href="#what-are-the-minimum-and-maximum-amounts-i-can-stake">
         {% t dict.faq_what_are_the_minimum_and_maximum_amounts_i_can_stake %}</a>
       </li>
+      <li><a href="#how-many-validators-does-pactus-have">
+        {% t dict.faq_how_many_validators_does_pactus_have %}</a>
+      </li>
       <li><a href="#how-do-validators-get-rewarded">
         {% t dict.faq_how_do_validators_get_rewarded %}</a>
       </li>
-      <li><a href="#how-many-validators-does-pactus-have">
-        {% t dict.faq_how_many_validators_does_pactus_have %}</a>
+      <li><a href="#what-is-the-total-supply-of-pactus-coins">
+        {% t dict.faq_what_is_the_total_supply_of_pactus_coins %}</a>
       </li>
     </ul>
 
@@ -70,6 +73,13 @@ permalink: /get-started/faq/index.html
       {% t dict.faq_what_are_the_minimum_and_maximum_amounts_i_can_stake_answer_v1 %}
     </div>
 
+    <h3 id="how-many-validators-does-pactus-have">
+      {% t dict.faq_how_many_validators_does_pactus_have %}
+    </h3>
+    <div class="answer">
+      {% t dict.faq_how_many_validators_does_pactus_have_answer_v1 %}
+    </div>
+
     <h3 id="how-do-validators-get-rewarded">
       {% t dict.faq_how_do_validators_get_rewarded %}
     </h3>
@@ -77,11 +87,11 @@ permalink: /get-started/faq/index.html
       {% t dict.faq_how_do_validators_get_rewarded_answer_v1 %}
     </div>
 
-    <h3 id="how-many-validators-does-pactus-have">
-      {% t dict.faq_how_many_validators_does_pactus_have %}
+    <h3 id="what-is-the-total-supply-of-pactus-coins">
+      {% t dict.faq_what_is_the_total_supply_of_pactus_coins %}
     </h3>
     <div class="answer">
-      {% t dict.faq_how_many_validators_does_pactus_have_answer_v1 %}
+      {% t dict.faq_what_is_the_total_supply_of_pactus_coins_answer_v1 %}
     </div>
 
   </div>
