@@ -35,24 +35,25 @@ $line-color: #939597;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+  }
 
-    &.completed {
-      content: "✅";
-      background-color: #eeeeee;
-      border: 5px solid #77b255;
-    }
 
-    &.ongoing {
-      content: "🚧";
-      background-color: #eeeeee;
-      border: 5px solid #ffcb4b;
-    }
+  &.completed::after {
+    content: "✅";
+    background-color: #eeeeee;
+    border: 5px solid #77b255;
+  }
 
-    &.upcoming {
-      content: "⏳";
-      background-color: #eeeeee;
-      border: 5px solid #478ec2;
-    }
+  &.ongoing::after {
+    content: "🚧";
+    background-color: #eeeeee;
+    border: 5px solid #ffcb4b;
+  }
+
+  &.upcoming::after {
+    content: "⏳";
+    background-color: #eeeeee;
+    border: 5px solid #478ec2;
   }
 
   /* Place the container to the left */
