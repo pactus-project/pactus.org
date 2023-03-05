@@ -37,47 +37,47 @@ permalink: /get-started/faq/index.html
 
   </div>
   <div class="qa">
-    <h3 data-anchor-id="what-does-pactus-mean">{% t dict.faq_what_does_pactus_mean %}</h3>
+    <h3 id="what-does-pactus-mean">{% t dict.faq_what_does_pactus_mean %}</h3>
     <div class="answer">
       {% t dict.faq_what_does_pactus_mean_answer_v1 %}
     </div>
 
-    <h3 data-anchor-id="how-is-pactus-different-from-bitcoin">
+    <h3 id="how-is-pactus-different-from-bitcoin">
       {% t dict.faq_how_is_pactus_different_from_bitcoin %}
     </h3>
     <div class="answer">
       {% t dict.faq_how_is_pactus_different_from_bitcoin_answer_v1 %}
     </div>
 
-    <h3 data-anchor-id="how-is-pactus-different-from-ethereum">
+    <h3 id="how-is-pactus-different-from-ethereum">
       {% t dict.faq_how_is_pactus_different_from_ethereum %}
     </h3>
     <div class="answer">
       {% t dict.faq_how_is_pactus_different_from_ethereum_answer_v1 %}
     </div>
 
-    <h3 data-anchor-id="what-are-validators">
+    <h3 id="what-are-validators">
       {% t dict.faq_what_are_validators %}
     </h3>
     <div class="answer">
       {% t dict.faq_what_are_validators_answer_v1 %}
     </div>
 
-    <h3 data-anchor-id="what-are-the-minimum-and-maximum-amounts-i-can-stake">
+    <h3 id="what-are-the-minimum-and-maximum-amounts-i-can-stake">
       {% t dict.faq_what_are_the_minimum_and_maximum_amounts_i_can_stake %}
     </h3>
     <div class="answer">
       {% t dict.faq_what_are_the_minimum_and_maximum_amounts_i_can_stake_answer_v1 %}
     </div>
 
-    <h3 data-anchor-id="how-do-validators-get-rewarded">
+    <h3 id="how-do-validators-get-rewarded">
       {% t dict.faq_how_do_validators_get_rewarded %}
     </h3>
     <div class="answer">
       {% t dict.faq_how_do_validators_get_rewarded_answer_v1 %}
     </div>
 
-    <h3 data-anchor-id="how-many-validators-does-pactus-have">
+    <h3 id="how-many-validators-does-pactus-have">
       {% t dict.faq_how_many_validators_does_pactus_have %}
     </h3>
     <div class="answer">
