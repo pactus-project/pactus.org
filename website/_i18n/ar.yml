@@ -1,33 +1,106 @@
 dict:
-  pactus: "باكتوس"
-  pactus_blockchain: "بلوكشين باكتوس"
-  get_started: البدء
-  blog: مدونة
-  learn_more: تعرف أكثر
-  community: مجتمع
-  what_is_pactus: ما هو باكتوس؟
-  contributing: المساهمة
-  roadmap: خارطة الطريق
-  download: تحميل
-  download_pactus: تحميل باكتوس
-  download_on_this_page_v1: على هذه الصفحة يمكنك العثور على كيفية تنزيل والحصول على أحدث إصدار من برنامج باكتوس.
-  download_compile_from_source_code: ترجمة الشفرة المصدرية
-  download_project_pactus_is_distributed_v1: مشروع باكتوس موزع كبرمجيات مفتوحة المصدر ، لذلك الطريقة المفضلة لتثبيته هي استنساخ الشفرة المصدرية من مستودع [github](https://github.com/pactus-project/pactus) وترجمة الشفرة المصدرية.
-  download_instructions_for_compiling_v1: تتم توفير تعليمات لترجمة باكتوس على الصفحة [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md).
-  download_stable_releases: تحميل الإصدارات الثابتة
-  download_stable_releases_desc_v1: يمكنك أيضًا تنزيل أحدث الإصدارات الثابتة لـ باكتوس. يتم تحديث هذه الإصدارات تلقائيًا عند تسمية إصدار جديد في مستودع [GitHub](https://github.com/pactus-project/pactus).
-  download_you_can_run_gui_v1: يمكنك تشغيل باكتوس في وضع واجهة المستخدم الرسومية (GUI) وهو مناسب للمبتدئين والمستخدمين المتقدمين على حد سواء.
-  pactus_gui: واجهة المستخدم الرسومية (GUI) لباكتوس
-  pactus_cli: واجهة سطر الأوامر (CLI) لباكتوس
-  toc: جدول المحتويات
-  language: اللغة
+  pactus: "بكتوس"
+  pactus_blockchain: "بكتوس بلوكشين"
+  get_started: "البدء"
+  toc: "جدول المحتويات"
+  language: "اللغة"
+  improve_translation: "تحسين الترجمة"
+  edit_this_page: "تحرير هذه الصفحة"
+
+  community:
+    title: "المجتمع"
+    welcome: >
+      في بكتوس، نؤمن بشدة أن مشروع المصدر المفتوح يزدهر بطاقة والتزام أعضائه.
+      هذا هو السبب في دعوتنا لك للانضمام إلينا في مهمتنا لبناء شيء مميز حقًا.
+      مع دعمك وتعاونك ، يمكننا جعل بكتوس أكثر قوة من أي وقت مضى.
+      <br>
+      لذلك ، دعنا نجتمع معًا ونحدث الفرق!
+    discord: "بكتوس على ديسكورد"
+    telegram: "بكتوس على تيليجرام"
+    twitter: "بكتوس على تويتر"
+    instagram: "بكتوس على إنستغرام"
+    linkedin: "بكتوس على لينكد إن"
+
+  what_is_pactus:
+    title: "ما هو بكتوس؟"
+
+  blog:
+    title: "المدونة"
+    all_posts: "كل المشاركات"
+
+  learn:
+    title: "تعلم"
+    reference: "المرجع"
+    welcome: >
+      مرحبًا بك في صفحة المرجع ، حيث يمكنك العثور على جميع التفاصيل الفنية والوثائق التي تحتاجها.
+      سواء كنت مطورًا أو مستخدمًا تبحث عن مزيد من المعلومات حول بكتوس ، فإن هذه الصفحة توفر معلومات شاملة وحديثة
+      يمكن أن يساعدك في البدء.
+      يرجى ملاحظة أن جميع رموزنا متاحة على Github للمراجعة والمساهمة فيها.
+
+  contributing:
+    title: "المساهمة"
+    welcome: >
+      مرحباً بكم في صفحة مساهمة بكتوس!
+      نحن سعداء لاهتمامكم بالمساهمة في مشروعنا المدعوم من المجتمع والمفتوح المصدر.
+      هدفنا هو إنشاء شبكة آمنة ومفتوحة ولامركزية تمكن الأفراد من المشاركة في الشبكة دون الحاجة إلى وسطاء.
+      <br><br>
+      هناك العديد من الطرق المتاحة لدعم مشروع بكتوس:
+    run_a_node: تشغيل عقدة
+    run_a_node_desc: >
+      تعد تشغيل عقدة واحدة من أكثر الطرق فعالية للمساهمة في شبكة بكتوس.
+      "العقدة" هي برنامج يقوم بتنزيل نسخة من سلسلة كتل بكتوس ويساعد في الحفاظ على الشبكة عن طريق التحقق من الصفقات والكتل.
+      من خلال تشغيل العقدة ، تساعد في ضمان بقاء الشبكة آمنة ولامركزية ، حيث يقلل من خطر السيطرة أو التأثير الكبير لأي كيان على الشبكة.
+      <br><br>
+      لتشغيل عقدة بكتوس ، ستحتاج إلى الحصول على حصة في الشبكة ، لكن ليس هناك حد أدنى للحصة التي يمكنك الحصول عليها.
+      إن امتلاك عقدتك الخاصة يعني عدم الاعتماد على طرف ثالث لتقديم المعلومات حول حالة الشبكة ، مما يزيد من مستوى الأمان والتحكم الخاص بك في تفاعلاتك مع شبكة بكتوس.
+    develop: تطوير
+    develop_desc: >
+      برنامج بكتوس مفتوح المصدر ونرحب ونشجع المساهمات من المطورين.
+      من خلال المساهمة في المشروع ، يمكنك المساعدة في تحسين منصة بكتوس وإنشاء ميزات جديدة
+      تفيد المجتمع بأكمله.
+      <br><br>
+      لدينا مجموعة متنوعة من المجالات التي نحتاج فيها إلى العمل التطويري ، مثل تحسين أداء سلسلة الكتل بكتوس ،
+      إضافة ميزات جديدة إلى بكتوس ، أو بناء أدوات جديدة للاستخدام من قبل المطورين.
+      يمكنك التحقق من صفحة المساهمة الخاصة بنا Contributing
+      لمزيد من المعلومات حول كيفية المشاركة والمساهمة في المشروع.
+    spread_the_word: نشر الكلمة
+    spread_the_word_desc: >
+      طريقة أخرى لدعم مشروع بكتوس هي نشر الكلمة للآخرين في مجتمعك.
+      كلما عرف المزيد من الناس عن بكتوس ، زادت فرص التعاون والنمو.
+      شارك مشروعنا على وسائل التواصل الاجتماعي ، وحضر فعاليات بكتوس ، أو ببساطة أخبر أصدقائك وزملائك عنا.
+      <br><br>
+      كل جهد صغير يساعد!
+    appreciate: >
+      نحن نقدر أي مساهمة في مشروع بكتوس ، ونحن متحمسون للعمل مع مجتمعنا لإنشاء شبكة آمنة ولامركزية.
+      <br><br>
+      معًا ، يمكننا بناء مستقبل أفضل لتكنولوجيا سلسلة الكتل.
+
+  roadmap:
+    title: خارطة الطريق
+    completed_task: المهمة المكتملة
+    ongoing_task: المهمة قيد العمل
+    upcoming_task: المهمة المقبلة
+
+  download_pactus: Download Pactus
+  download:
+    title: Download
+    on_this_page_v1: On this page you can find how to download and get the latest version of the Pactus software.
+    compile_from_source_code: Compile from Source Code
+    project_pactus_is_distributed_v1: Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
+    instructions_for_compiling_v1: Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
+    stable_releases: Download stable releases
+    stable_releases_desc_v1: You can also download the latest stable releases of Pactus. These releases are updated automatically when a new version is tagged in our [GitHub repository](https://github.com/pactus-project/pactus).
+    you_can_run_gui_v1: You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
+    pactus_gui: Pactus Graphical User Interface (GUI)
+    pactus_cli: Pactus Command Line Interface (CLI)
+
   faq:
-    title: الأسئلة الشائعة
-    intro_v1: ابحث عن إجابات عن الأس
-    what_does_pactus_mean: ما معنى "باكتوس"؟
+    title: FAQ
+    welcome: Find answers to recurring questions and concerns about Pactus.
+    what_does_pactus_mean: What does "Pactus" mean?
     what_does_pactus_mean_answer_v1: >
-      كلمة "باكتوس" هي من أصل لاتيني وتعني "الاتفاق معًا" أو "العقد" أو "التعامل".
-      وفي اللغة الإنجليزية، تمت مشتقة مصطلح "العهد" من الكلمة اللاتينية "باكتوس".
+      The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact".
+      In English, the term "Pact" is derived from the Latin word "Pactus".
     how_is_pactus_different_from_bitcoin: How is Pactus different from Bitcoin?
     how_is_pactus_different_from_bitcoin_answer_v1: >
       Pactus and Bitcoin are two different types of blockchain networks.

@@ -2,28 +2,106 @@ dict:
   pactus: "Pactus"
   pactus_blockchain: "Pactus blockchain"
   get_started: Get started
-  blog: Blog
-  learn_more: Learn more
-  community: Community
-  what_is_pactus: What is Pactus?
-  contributing: Contributing
-  roadmap: Road map
-  download: Download
-  download_pactus: Download Pactus
-  download_on_this_page_v1: On this page you can find how to download and get the latest version of the Pactus software.
-  download_compile_from_source_code: Compile from Source Code
-  download_project_pactus_is_distributed_v1: Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
-  download_instructions_for_compiling_v1: Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
-  download_stable_releases: Download stable releases
-  download_stable_releases_desc_v1: You can also download the latest stable releases of Pactus. These releases are updated automatically when a new version is tagged in our [GitHub repository](https://github.com/pactus-project/pactus).
-  download_you_can_run_gui_v1: You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
-  pactus_gui: Pactus Graphical User Interface (GUI)
-  pactus_cli: Pactus Command Line Interface (CLI)
   toc: Table of content
   language: Language
+  improve_translation: Improve the translation
+  edit_this_page: Edit this page
+
+  community:
+    title: Community
+    welcome: >
+      At Pactus, we firmly believe that an open-source project thrives on the energy and commitment of its members.
+      That's why we're inviting you to join us in our mission to build something truly remarkable.
+      With your support and collaboration, we can make Pactus more powerful than ever before.
+      <br>
+      So, let's come together and make a difference!
+    discord: Pactus on Discord
+    telegram: Pactus on Telegram
+    twitter: Pactus on Twitter
+    instagram: Pactus on Instagram
+    linkedin: Pactus on LinkedIn
+
+  what_is_pactus:
+    title: What is Pactus?
+
+  blog:
+    title: Blog
+    all_posts: All posts
+
+  learn:
+    title: Learn
+    reference: Reference
+    welcome: >
+      Welcome to the reference page, where you can find all the technical details and documentation you need.
+      Whether you are a developer or a user seeking more information about Pactus, this page provides comprehensive and
+      up-to-date information that can assist you in getting started.
+      Please note that all of our code is available on Github for you to review and contribute to.
+
+  contributing:
+    title: Contributing
+    welcome: >
+      Welcome to the Pactus contribution page!
+      We're glad you're interested in contributing to our open-source and community-driven project.
+      Our goal is to create a secure and decentralized network that empowers individuals to participate
+      in the network without the need for intermediaries.
+      <br><br>
+      There are several ways to support the Pactus project:
+    run_a_node: Run a Node
+    run_a_node_desc: >
+      One of the most effective ways to contribute to the Pactus network is by running a node.
+      A "node" is a software program that downloads a copy of the Pactus blockchain and helps maintain the network
+      by validating transactions and blocks.
+      By running a node, you help ensure the network remains secure and decentralized, as it reduces the risk of
+      any one entity gaining too much control or influence over the network.
+      <br><br>
+      To run a Pactus node, you will need to have stake in the network, but there is no limit to the amount of stake you can have.
+      Having your own node means you don't have to rely on a third-party to provide information about the state of the network,
+      which increases your level of security and control over your interactions with the Pactus network.
+    develop: Develop
+    develop_desc: >
+      Pactus is an open-source project, and we welcome and encourage contributions from developers.
+      By contributing to the project, you can help improve the Pactus platform and create new features that
+      benefit the entire community.
+      <br><br>
+      We have a variety of areas where we need development work, such as improving the performance of the Pactus blockchain,
+      adding new features to the Pactus, or building new tools for developers to use.
+      You can check our [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) page
+      for more information on how to get involved and contribute to the project.
+    spread_the_word: Spread the Word
+    spread_the_word_desc: >
+      Another way to support the Pactus project is by spreading the word to others in your community.
+      The more people who know about Pactus, the more opportunities there are for collaboration and growth.
+      Share our project on social media, attend Pactus events, or simply tell your friends and colleagues about us.
+      <br><br>
+      Every little bit helps!
+    appreciate: >
+      We appreciate any and all contributions to the Pactus project, and we're excited to work with our community to
+      create a secure and decentralized network.
+      <br><br>
+      Together, we can build a better future for blockchain technology.
+
+  roadmap:
+    title: Road map
+    completed_task: Completed task
+    ongoing_task: Ongoing task
+    upcoming_task: Upcoming task
+
+  download_pactus: Download Pactus
+  download:
+    title: Download
+    on_this_page_v1: On this page you can find how to download and get the latest version of the Pactus software.
+    compile_from_source_code: Compile from Source Code
+    project_pactus_is_distributed_v1: Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
+    instructions_for_compiling_v1: Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
+    stable_releases: Download stable releases
+    stable_releases_desc_v1: You can also download the latest stable releases of Pactus. These releases are updated automatically when a new version is tagged in our [GitHub repository](https://github.com/pactus-project/pactus).
+    you_can_run_gui_v1: You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
+    pactus_gui: Pactus Graphical User Interface (GUI)
+    pactus_cli: Pactus Command Line Interface (CLI)
+
   faq:
     title: FAQ
-    intro_v1: Find answers to recurring questions and concerns about Pactus.
+    welcome: Find answers to recurring questions and concerns about Pactus.
     what_does_pactus_mean: What does "Pactus" mean?
     what_does_pactus_mean_answer_v1: >
       The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact".

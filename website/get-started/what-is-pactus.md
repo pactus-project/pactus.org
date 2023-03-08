@@ -1,10 +1,10 @@
 ---
 layout: base
-title: dict.what_is_pactus
+title: dict.what_is_pactus.title
 permalink: /get-started/what-is-pactus/index.html
 ---
 
-# What is Pactus?
+# {% t dict.what_is_pactus.title %}
 
 **Pactus** is an open-source and community-driven blockchain.
 There is no specified owner or company structure behind it, and there is no CEO who decides its future.

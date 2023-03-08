@@ -1,30 +1,30 @@
 ---
 layout: base
-title: dict.download
+title: dict.download.title
 permalink: /download/index.html
 ---
 
 # {% t dict.download_pactus %}
 
-{% t dict.download_on_this_page_v1 %}
+{% t dict.download.on_this_page_v1 %}
 
 ---
 
-## 🏗️ {% t dict.download_compile_from_source_code %}
+## 🏗️ {% t dict.download.compile_from_source_code %}
 
-{% t dict.download_project_pactus_is_distributed_v1 %}
+{% t dict.download.project_pactus_is_distributed_v1 %}
 
-{% t dict.download_instructions_for_compiling_v1 %}
+{% t dict.download.instructions_for_compiling_v1 %}
 
 ---
 
-## ⬇️ {% t dict.download_stable_releases %}
+## ⬇️ {% t dict.download.stable_releases %}
 
-{% t dict.download_stable_releases_desc_v1 %}
+{% t dict.download.stable_releases_desc_v1 %}
 
-### {% t dict.pactus_gui %}
+### {% t dict.download.pactus_gui %}
 
-{% t dict.download_you_can_run_gui_v1 %}
+{% t dict.download.you_can_run_gui_v1 %}
 
 ![Pactus GUI - Main Window](/assets/images/pactus_gui_main_window.png)
 
@@ -49,7 +49,7 @@ your node. After initializing the working directory, you can run the node and st
 
 ---
 
-### {% t dict.pactus_cli %}
+### {% t dict.download.pactus_cli %}
 
 Advanced user can run Pactus in Command Line Interface (CLI) mode.
 

@@ -1,8 +1,6 @@
 title: Pactus blockchain
 email:
 source: website
-description: >-
-  Pactus is truly decentralized Proof-of-Stake blockchain
 baseurl: ""
 url: "https://www.pactus.org"
 logo: "/assets/images/logos/64_circle.png"
@@ -16,7 +14,7 @@ plugins:
 
 languages: ["en", "ar"]
 
-exclude_from_localizations: ["assets", "404.html",  "meta", "_posts", "blog"]
+exclude_from_localizations: ["assets", "404.html", "_posts", "blog"]
 
 markdown: kramdown
 

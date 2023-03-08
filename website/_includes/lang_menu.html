@@ -6,10 +6,7 @@
     </a>
     <ul class="dropdown-menu dropdown-menu">
       {% for lang in site.data.languages %}
-        {% if lang[0] == site.lang %}
-          {% continue %}
-        {% endif %}
-
+        {% if lang[0] == site.lang %}{% continue %}{% endif %}
         {% if lang[0] == 'en' %}
           <li><a class="dropdown-item" href="{{ site.baseurl_root }}{{ page.url}}">{{ lang[1] }}</a></li>
         {% else %}

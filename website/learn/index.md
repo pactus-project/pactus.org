@@ -1,14 +1,14 @@
 ---
 layout: base
-title: Learn more
+title: dict.learn.title
 permalink: /learn/index.html
 ---
 
-# Reference
+# {% t dict.learn.reference %}
 
-Find technical details and documentation.
+{% t dict.learn.welcome %}
 
-<ul  class="list-unstyled">
+<ul  class="list-unstyled" dir="ltr">
 {% for folder in site.data.learn_docs %}
   <li>{{ folder.title }}</li>
   <ul class="">

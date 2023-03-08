@@ -1,15 +1,15 @@
 ---
 layout: base
-title: dict.roadmap
+title: dict.roadmap.title
 permalink: /get-started/roadmap/index.html
 ---
 
-<h1>{% t dict.roadmap %}</h1>
+<h1>{% t dict.roadmap.title %}</h1>
 
 <div class="row">
-  <div class="h5 col-lg-4">✅ Completed task</div>
-  <div class="h5 col-lg-4">🚧 Ongoing task</div>
-  <div class="h5 col-lg-4">⏳ Upcoming task</div>
+  <div class="h5 col-lg-4">✅ {% t dict.roadmap.completed_task %}</div>
+  <div class="h5 col-lg-4">🚧 {% t dict.roadmap.ongoing_task %}</div>
+  <div class="h5 col-lg-4">⏳ {% t dict.roadmap.upcoming_task %}</div>
 </div>
 
 <section>
