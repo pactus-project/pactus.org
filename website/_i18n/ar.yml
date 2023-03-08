@@ -12,9 +12,9 @@ dict:
     welcome: >
       في بكتوس، نؤمن بشدة أن مشروع المصدر المفتوح يزدهر بطاقة والتزام أعضائه.
       هذا هو السبب في دعوتنا لك للانضمام إلينا في مهمتنا لبناء شيء مميز حقًا.
-      مع دعمك وتعاونك ، يمكننا جعل بكتوس أكثر قوة من أي وقت مضى.
+      مع دعمك وتعاونك، يمكننا جعل بكتوس أكثر قوة من أي وقت مضى.
       <br>
-      لذلك ، دعنا نجتمع معًا ونحدث الفرق!
+      لذلك، دعنا نجتمع معًا ونحدث الفرق!
     discord: "بكتوس على ديسكورد"
     telegram: "بكتوس على تيليجرام"
     twitter: "بكتوس على تويتر"
@@ -32,10 +32,10 @@ dict:
     title: "تعلم"
     reference: "المرجع"
     welcome: >
-      مرحبًا بك في صفحة المرجع ، حيث يمكنك العثور على جميع التفاصيل الفنية والوثائق التي تحتاجها.
-      سواء كنت مطورًا أو مستخدمًا تبحث عن مزيد من المعلومات حول بكتوس ، فإن هذه الصفحة توفر معلومات شاملة وحديثة
+      مرحبًا بك في صفحة المرجع، حيث يمكنك العثور على جميع التفاصيل الفنية والوثائق التي تحتاجها.
+      سواء كنت مطورًا أو مستخدمًا تبحث عن مزيد من المعلومات حول بكتوس، فإن هذه الصفحة توفر معلومات شاملة وحديثة
       يمكن أن يساعدك في البدء.
-      يرجى ملاحظة أن جميع رموزنا متاحة على Github للمراجعة والمساهمة فيها.
+      يرجى ملاحظة أن جميع رموزنا متاحة على [جيت هاب](https://github.com/pactus-project) للمراجعة والمساهمة فيها.
 
   contributing:
     title: "المساهمة"
@@ -49,31 +49,31 @@ dict:
     run_a_node_desc: >
       تعد تشغيل عقدة واحدة من أكثر الطرق فعالية للمساهمة في شبكة بكتوس.
       "العقدة" هي برنامج يقوم بتنزيل نسخة من سلسلة كتل بكتوس ويساعد في الحفاظ على الشبكة عن طريق التحقق من الصفقات والكتل.
-      من خلال تشغيل العقدة ، تساعد في ضمان بقاء الشبكة آمنة ولامركزية ، حيث يقلل من خطر السيطرة أو التأثير الكبير لأي كيان على الشبكة.
+      من خلال تشغيل العقدة، تساعد في ضمان بقاء الشبكة آمنة ولامركزية، حيث يقلل من خطر السيطرة أو التأثير الكبير لأي كيان على الشبكة.
       <br><br>
-      لتشغيل عقدة بكتوس ، ستحتاج إلى الحصول على حصة في الشبكة ، لكن ليس هناك حد أدنى للحصة التي يمكنك الحصول عليها.
-      إن امتلاك عقدتك الخاصة يعني عدم الاعتماد على طرف ثالث لتقديم المعلومات حول حالة الشبكة ، مما يزيد من مستوى الأمان والتحكم الخاص بك في تفاعلاتك مع شبكة بكتوس.
+      لتشغيل عقدة بكتوس، ستحتاج إلى الحصول على حصة في الشبكة، لكن ليس هناك حد أدنى للحصة التي يمكنك الحصول عليها.
+      إن امتلاك عقدتك الخاصة يعني عدم الاعتماد على طرف ثالث لتقديم المعلومات حول حالة الشبكة، مما يزيد من مستوى الأمان والتحكم الخاص بك في تفاعلاتك مع شبكة بكتوس.
     develop: تطوير
     develop_desc: >
       برنامج بكتوس مفتوح المصدر ونرحب ونشجع المساهمات من المطورين.
-      من خلال المساهمة في المشروع ، يمكنك المساعدة في تحسين منصة بكتوس وإنشاء ميزات جديدة
+      من خلال المساهمة في المشروع، يمكنك المساعدة في تحسين منصة بكتوس وإنشاء ميزات جديدة
       تفيد المجتمع بأكمله.
       <br><br>
-      لدينا مجموعة متنوعة من المجالات التي نحتاج فيها إلى العمل التطويري ، مثل تحسين أداء سلسلة الكتل بكتوس ،
-      إضافة ميزات جديدة إلى بكتوس ، أو بناء أدوات جديدة للاستخدام من قبل المطورين.
-      يمكنك التحقق من صفحة المساهمة الخاصة بنا Contributing
+      لدينا مجموعة متنوعة من المجالات التي نحتاج فيها إلى العمل التطويري، مثل تحسين أداء سلسلة الكتل بكتوس ،
+      إضافة ميزات جديدة إلى بكتوس، أو بناء أدوات جديدة للاستخدام من قبل المطورين.
+      يمكنك التحقق من صفحة المساهمة الخاصة بنا [المساهمة](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md)
       لمزيد من المعلومات حول كيفية المشاركة والمساهمة في المشروع.
     spread_the_word: نشر الكلمة
     spread_the_word_desc: >
       طريقة أخرى لدعم مشروع بكتوس هي نشر الكلمة للآخرين في مجتمعك.
-      كلما عرف المزيد من الناس عن بكتوس ، زادت فرص التعاون والنمو.
-      شارك مشروعنا على وسائل التواصل الاجتماعي ، وحضر فعاليات بكتوس ، أو ببساطة أخبر أصدقائك وزملائك عنا.
+      كلما عرف المزيد من الناس عن بكتوس، زادت فرص التعاون والنمو.
+      شارك مشروعنا على وسائل التواصل الاجتماعي، وحضر فعاليات بكتوس، أو ببساطة أخبر أصدقائك وزملائك عنا.
       <br><br>
       كل جهد صغير يساعد!
     appreciate: >
-      نحن نقدر أي مساهمة في مشروع بكتوس ، ونحن متحمسون للعمل مع مجتمعنا لإنشاء شبكة آمنة ولامركزية.
+      نحن نقدر أي مساهمة في مشروع بكتوس، ونحن متحمسون للعمل مع مجتمعنا لإنشاء شبكة آمنة ولامركزية.
       <br><br>
-      معًا ، يمكننا بناء مستقبل أفضل لتكنولوجيا سلسلة الكتل.
+      معًا، يمكننا بناء مستقبل أفضل لتكنولوجيا سلسلة الكتل.
 
   roadmap:
     title: خارطة الطريق
@@ -81,77 +81,79 @@ dict:
     ongoing_task: المهمة قيد العمل
     upcoming_task: المهمة المقبلة
 
-  download_pactus: Download Pactus
+  download_pactus: تحميل بكتوس
   download:
-    title: Download
-    on_this_page_v1: On this page you can find how to download and get the latest version of the Pactus software.
-    compile_from_source_code: Compile from Source Code
-    project_pactus_is_distributed_v1: Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
-    instructions_for_compiling_v1: Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
-    stable_releases: Download stable releases
-    stable_releases_desc_v1: You can also download the latest stable releases of Pactus. These releases are updated automatically when a new version is tagged in our [GitHub repository](https://github.com/pactus-project/pactus).
-    you_can_run_gui_v1: You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
-    pactus_gui: Pactus Graphical User Interface (GUI)
-    pactus_cli: Pactus Command Line Interface (CLI)
+    title: تحميل
+    welcome: يمكنك على هذه الصفحة العثور على كيفية تحميل والحصول على أحدث نسخة من برنامج بكتوس.
+    compile_from_source_code: جمع من الشفرة المصدرية
+    project_pactus_is_distributed_v1: يتم توزيع مشروع بكتوس كبرنامج مفتوح المصدر، لذلك الطريقة المفضلة لتثبيته هي نسخ شفرة المصدر من مستودع [جيت هاب](https://github.com/pactus-project/pactus) وجمع شفرة المصدر.
+    instructions_for_compiling_v1: تقدم تعليمات لتجميع بكتوس في الصفحة الخاصة بـ [التثبيت](https://github.com/pactus-project/pactus/blob/main/INSTALL.md).
+    stable_releases: تحميل الإصدارات المستقرة
+    stable_releases_desc_v1: يمكنك أيضًا تحميل أحدث الإصدارات المستقرة من بكتوس. يتم تحديث هذه الإصدارات تلقائيًا عند تسمية إصدار جديد في [مستودع GitHub](https://github.com/pactus-project/pactus) الخاص بنا.
+    you_can_run_gui_v1: يمكنك تشغيل بكتوس في وضع واجهة المستخدم الرسومية (GUI) وهو مناسب للمبتدئين والمستخدمين المتقدمين على حد سواء.
+    pactus_gui: واجهة المستخدم الرسومية (GUI) لبكتوس
+    pactus_cli: واجهة سطر الأوامر (CLI) لبكتوس
 
   faq:
-    title: FAQ
-    welcome: Find answers to recurring questions and concerns about Pactus.
-    what_does_pactus_mean: What does "Pactus" mean?
+    title: الأسئلة الشائعة
+    welcome: تجدون الإجابات على الأسئلة والمخاوف المتكررة حول بكتوس.
+    what_does_pactus_mean: ماذا يعني "بكتوس"؟
     what_does_pactus_mean_answer_v1: >
-      The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact".
-      In English, the term "Pact" is derived from the Latin word "Pactus".
-    how_is_pactus_different_from_bitcoin: How is Pactus different from Bitcoin?
+      الكلمة "بكتوس" من أصل لاتيني وتعني "الاتفاق معًا"، "العقد"، أو "التعامل".
+      في اللغة الإنجليزية، يعود مصدر مصطلح "Pact" إلى الكلمة اللاتينية "Pactus".
+    how_is_pactus_different_from_bitcoin: كيف يختلف بكتوس عن بيتكوين؟
     how_is_pactus_different_from_bitcoin_answer_v1: >
-      Pactus and Bitcoin are two different types of blockchain networks.
-      While Bitcoin uses a process called "Proof of Work" to secure its network, Pactus uses a different method called "Proof of Stake".
-      This means that instead of mining, validators are responsible for voting on incoming blocks. Once a validator proposes a valid block and it is accepted by other validators, the validator receives one coin as a block reward.
-      This helps keep the Pactus blockchain secure and decentralized.
-    how_is_pactus_different_from_ethereum: How is Pactus different from Ethereum?
+      بكتوس وبيتكوين هما نوعان مختلفان من شبكات البلوكتشين.
+      في حين تستخدم بيتكوين عملية تسمى "إثبات العمل" لتأمين شبكتها، يستخدم بكتوس طريقة مختلفة تسمى "إثبات الحصة".
+      وهذا يعني بدلاً من التعدين، يتحمل المحققون مسؤولية التصويت على الكتل الواردة.
+      بمجرد أن يقترح محققٌ كتلة صالحة ويتم قبولها من قِبل محققين آخرين، يحصل المحقق على عملة واحدة كمكافأة للكتلة.
+      وهذا يساعد على الحفاظ على أمان ولامركزية بلوكتشين بكتوس.
+    how_is_pactus_different_from_ethereum: كيف يختلف بكتوس عن إيثريوم؟
     how_is_pactus_different_from_ethereum_answer_v1: >
-      Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
-      Running a validator on Ethereum can be challenging and requires a minimum of 32 Ethereum coins to stake.
-      In contrast, Pactus is designed to be more accessible to normal users.
-      There is no minimum stake requirement, and you can run the Pactus node on any operating system with basic hardware.
-      This approach reflects our commitment to promoting decentralization and making blockchain technology accessible to a wider audience.
-    what_are_validators: What are validators?
+      بكتوس وإيثيريوم على حد سواء هما سلسلتا كتلة بدلة الحصيلة، لكنهما يختلفان في نهجهما لتشغيل المحقق.
+      يمكن أن يكون تشغيل محقق على إيثيريوم صعبًا ويتطلب الحد الأدنى من 32 عملة إيثيريوم للرهان.
+      بالمقابل، صمم بكتوس ليكون أكثر إمكانية للمستخدمين العاديين.
+      لا يوجد حد أدنى للرهان، ويمكنك تشغيل عقدة بكتوس على أي نظام تشغيل مع أجهزة أساسية.
+      هذا النهج يعكس التزامنا بتعزيز التفرد وجعل تقنية سلسلة الكتل متاحة لجمهور أوسع.
+    what_are_validators: ما هي المحققون؟
     what_are_validators_answer_v1: >
-      Validators on Pactus are responsible to processing transactions and creating blocks and, by doing so, helping secure the network.
-      They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
-    how_do_validators_get_rewarded: How do validators get rewarded?
+      المحققون في بكتوس هم المسؤولون عن معالجة المعاملات وإنشاء الكتل، وبذلك يساعدون في تأمين الشبكة.
+      يستخدمون عملاتهم الخاصة كرهان لضمان أمان الشبكة ويتلقون مكافآت عن مساهماتهم.
+    how_do_validators_get_rewarded: كيف يتلقى المحققون مكافأة؟
+    faq:
     how_do_validators_get_rewarded_answer_v1: >
-      Every 10 seconds, one validator is chosen to collect transactions and create a block.
-      The first transaction in the proposed block is called the "reward" transaction.
-      This transaction includes one coin as a block reward and transaction fees.
-      If most of the committee members approve the proposed block, the block is accepted and the validator receives the reward.
-      The reward helps incentivize validators to secure the network and keep it running smoothly.
-    how_many_validators_does_pactus_have: How many validators does pactus have?
+      يتم اختيار محدد واحد لجمع المعاملات وإنشاء كتلة كل 10 ثوانٍ.
+      المعاملة الأولى في الكتلة المقترحة تسمى "معاملة المكافأة".
+      تتضمن هذه المعاملة عملة واحدة كمكافأة للكتلة بالإضافة إلى رسوم المعاملات.
+      إذا وافق معظم أعضاء اللجنة على الكتلة المقترحة، فإن الكتلة تقبل ويحصل المحدد على المكافأة.
+      تساعد المكافأة على تحفيز المحددين على تأمين الشبكة وجعلها تعمل بسلاسة.
+    how_many_validators_does_pactus_have: كم عدد المحددين في بكتوس؟
     how_many_validators_does_pactus_have_answer_v1: >
-      Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network.
-      However, there is a fixed committee of 21 validators responsible for creating blocks.
-      These committee members are randomly chosen from the pool of validators in the network.
-    what_are_the_minimum_and_maximum_amounts_i_can_stake: What are the minimum and maximum amounts I can stake?
+      بكتوس هو بلوكتشين حقيقي للدليل على الحصة، وهذا يعني عدم وجود حد لعدد المحددين في الشبكة.
+      ومع ذلك، هناك لجنة ثابتة مكونة من 21 محدداً مسؤولة عن إنشاء الكتل.
+      يتم اختيار أعضاء اللجنة هؤلاء بشكل عشوائي من بين المحددين الموجودين في الشبكة.
+    what_are_the_minimum_and_maximum_amounts_i_can_stake: ما هي الحدود الدنيا والقصوى للرهان الذي يمكنني القيام به في بكتوس؟
     what_are_the_minimum_and_maximum_amounts_i_can_stake_answer_v1: >
-      In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 12381 coins.
-      If you want to stake more than 12381 coins, you can run a new validator.
-      Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
-    what_is_the_total_supply_of_pactus_coins: What is the total supply of Pactus coins?
+      في بكتوس، لا يوجد حد أدنى لرهن العملات، ولكن الحد الأقصى الذي يمكنك رهنه هو 12381 عملة.
+      إذا كنت ترغب في رهن أكثر من 12381 عملة، يمكنك تشغيل مراقب جديد.
+      تشغيل عدة مراقبين يحافظ على تفكك الشبكة ويساعد في الحفاظ على أمنها واستقرارها.
+    what_is_the_total_supply_of_pactus_coins: ما هو إجمالي عرض عملات بكتوس؟
     what_is_the_total_supply_of_pactus_coins_answer_v1: >
-      Pactus has a total supply of 21 million coins, and each coin is divided into 1 billion units.
-      A new coin is generated every 10 seconds, and after 6 and a half years, all 21 million coins will be generated.
-    is_pactus_a_copy_of_any_other_blockchain: Is Pactus a copy of any other blockchain?
+      بكتوس لديه إجمالي عرض 21 مليون عملة، وتنقسم كل عملة إلى 1 مليار وحدة.
+      يتم إنشاء عملة جديدة كل 10 ثوانٍ، وبعد 6 سنوات ونصف، سيتم إنشاء كل 21 مليون عملة.
+    is_pactus_a_copy_of_any_other_blockchain: هل بكتوس هو نسخة من أي بلوكتشين آخر؟
     is_pactus_a_copy_of_any_other_blockchain_answer_v1: >
-      No, Pactus is not a copy or a derivative of any other blockchain.
-      It is a new and unique blockchain protocol that has been designed from scratch.
-      The consensus mechanism used in Pactus is unique and specifically created to solve the scalability issue of validators in the Proof of Stake blockchains.
-    what_is_the_treasury_account: What is the Treasury account in Pactus blockchain?
+      لا، بكتوس ليس نسخة أو مشتقًا من أي بلوكتشين آخر.
+      إنه بروتوكول بلوكتشين فريد وجديد تم تصميمه من الصفر.
+      آلية التوافق المستخدمة في بكتوس فريدة وتم إنشاؤها خصيصًا لحل مشكلة توافق المراقبين في بلوكتشين البرهان على الحصة.
+    what_is_the_treasury_account: ما هو حساب الخزانة في بلوكتشين بكتوس؟
     what_is_the_treasury_account_answer_v1: >
-      The Treasury account is a special account in Pactus blockchain that holds the total supply of coins, which is 21 million coins.
-      It is created at the genesis time and has no key pair associated with it, meaning it cannot be accessed or controlled by anyone.
-      Every time a block is created, one coin from the Treasury account moves to the proposer account as a block reward.
-      This helps to incentivize validators to secure the network and keep it running smoothly.
-    does_pactus_have_an_ico: Does Pactus have an ICO?
+      حساب الخزينة هو حساب خاص في بكتوس بلوكتشين يحتوي على إجمالي إمدادات العملات والذي يبلغ 21 مليون عملة.
+      تم إنشاؤه في وقت النشأة ولا يوجد له زوج مفتاح يرتبط به، وهذا يعني أنه لا يمكن الوصول إليه أو التحكم به من قبل أي شخص.
+      كلما تم إنشاء كتلة جديدة، ينتقل عملة واحدة من حساب الخزينة إلى حساب المقترح كمكافأة للكتلة.
+      يساعد هذا على تحفيز المُصَادِقين لتأمين الشبكة والحفاظ عليها تعمل بسلاسة.
+    does_pactus_have_an_ico: هل بكتوس لديها ICO؟
     does_pactus_have_an_ico_answer_v1: >
-      No, Pactus does not have an ICO (Initial Coin Offering) and there are no predefined or privileged accounts in pactus.
-      The Pactus blockchain starts from zero and all coins are minted through the consensus mechanism.
-      This ensures that the distribution of coins is fair and there is no centralization of wealth.
+      لا، بكتوس ليس لديها ICO (عرض عملة أولي)، ولا يوجد حسابات محددة مسبقًا أو مميزة في بكتوس.
+      يبدأ بكتوس بلوكتشين من الصفر ويتم تعدين جميع العملات من خلال آلية التوافق.
+      هذا يضمن أن توزيع العملات عادل وأنه لا يوجد تمركز للثروة.

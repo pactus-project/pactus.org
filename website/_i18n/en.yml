@@ -35,7 +35,7 @@ dict:
       Welcome to the reference page, where you can find all the technical details and documentation you need.
       Whether you are a developer or a user seeking more information about Pactus, this page provides comprehensive and
       up-to-date information that can assist you in getting started.
-      Please note that all of our code is available on Github for you to review and contribute to.
+      Please note that all of our code is available on [Github](https://github.com/pactus-project) for you to review and contribute to.
 
   contributing:
     title: Contributing
@@ -89,7 +89,7 @@ dict:
   download_pactus: Download Pactus
   download:
     title: Download
-    on_this_page_v1: On this page you can find how to download and get the latest version of the Pactus software.
+    welcome: On this page you can find how to download and get the latest version of the Pactus software.
     compile_from_source_code: Compile from Source Code
     project_pactus_is_distributed_v1: Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
     instructions_for_compiling_v1: Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.

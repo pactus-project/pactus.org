@@ -6,7 +6,7 @@ permalink: /download/index.html
 
 # {% t dict.download_pactus %}
 
-{% t dict.download.on_this_page_v1 %}
+{% t dict.download.welcome %}
 
 ---
 
