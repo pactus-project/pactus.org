@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    <div class="page-wrapper">{% include header.html %} {{content}} {% include footer.html %}</div>
-  </body>
+<body>
+  <div class="page-wrapper">
+    {% include header.html %}
+    <div dir="{% direction %}">
+      {{content}}
+    </div>
+    {% include footer.html %}
+  </div>
+</body>
+
 </html>

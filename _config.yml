@@ -14,7 +14,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-languages: ["en"]
+languages: ["en", "ar"]
 
 exclude_from_localizations: ["assets", "404.html",  "meta", "_posts", "blog"]
 

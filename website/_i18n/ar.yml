@@ -1,33 +1,33 @@
 dict:
-  pactus: "Pactus"
-  pactus_blockchain: "Pactus blockchain"
-  get_started: Get started
-  blog: Blog
-  learn_more: Learn more
-  community: Community
-  what_is_pactus: What is Pactus?
-  contributing: Contributing
-  roadmap: Road map
-  download: Download
-  download_pactus: Download Pactus
-  download_on_this_page_v1: On this page you can find how to download and get the latest version of the Pactus software.
-  download_compile_from_source_code: Compile from Source Code
-  download_project_pactus_is_distributed_v1: Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
-  download_instructions_for_compiling_v1: Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
-  download_stable_releases: Download stable releases
-  download_stable_releases_desc_v1: You can also download the latest stable releases of Pactus. These releases are updated automatically when a new version is tagged in our [GitHub repository](https://github.com/pactus-project/pactus).
-  download_you_can_run_gui_v1: You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
-  pactus_gui: Pactus Graphical User Interface (GUI)
-  pactus_cli: Pactus Command Line Interface (CLI)
-  toc: Table of content
-  language: Language
+  pactus: "باكتوس"
+  pactus_blockchain: "بلوكشين باكتوس"
+  get_started: البدء
+  blog: مدونة
+  learn_more: تعرف أكثر
+  community: مجتمع
+  what_is_pactus: ما هو باكتوس؟
+  contributing: المساهمة
+  roadmap: خارطة الطريق
+  download: تحميل
+  download_pactus: تحميل باكتوس
+  download_on_this_page_v1: على هذه الصفحة يمكنك العثور على كيفية تنزيل والحصول على أحدث إصدار من برنامج باكتوس.
+  download_compile_from_source_code: ترجمة الشفرة المصدرية
+  download_project_pactus_is_distributed_v1: مشروع باكتوس موزع كبرمجيات مفتوحة المصدر ، لذلك الطريقة المفضلة لتثبيته هي استنساخ الشفرة المصدرية من مستودع [github](https://github.com/pactus-project/pactus) وترجمة الشفرة المصدرية.
+  download_instructions_for_compiling_v1: تتم توفير تعليمات لترجمة باكتوس على الصفحة [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md).
+  download_stable_releases: تحميل الإصدارات الثابتة
+  download_stable_releases_desc_v1: يمكنك أيضًا تنزيل أحدث الإصدارات الثابتة لـ باكتوس. يتم تحديث هذه الإصدارات تلقائيًا عند تسمية إصدار جديد في مستودع [GitHub](https://github.com/pactus-project/pactus).
+  download_you_can_run_gui_v1: يمكنك تشغيل باكتوس في وضع واجهة المستخدم الرسومية (GUI) وهو مناسب للمبتدئين والمستخدمين المتقدمين على حد سواء.
+  pactus_gui: واجهة المستخدم الرسومية (GUI) لباكتوس
+  pactus_cli: واجهة سطر الأوامر (CLI) لباكتوس
+  toc: جدول المحتويات
+  language: اللغة
   faq:
-    title: FAQ
-    intro_v1: Find answers to recurring questions and concerns about Pactus.
-    what_does_pactus_mean: What does "Pactus" mean?
+    title: الأسئلة الشائعة
+    intro_v1: ابحث عن إجابات عن الأس
+    what_does_pactus_mean: ما معنى "باكتوس"؟
     what_does_pactus_mean_answer_v1: >
-      The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact".
-      In English, the term "Pact" is derived from the Latin word "Pactus".
+      كلمة "باكتوس" هي من أصل لاتيني وتعني "الاتفاق معًا" أو "العقد" أو "التعامل".
+      وفي اللغة الإنجليزية، تمت مشتقة مصطلح "العهد" من الكلمة اللاتينية "باكتوس".
     how_is_pactus_different_from_bitcoin: How is Pactus different from Bitcoin?
     how_is_pactus_different_from_bitcoin_answer_v1: >
       Pactus and Bitcoin are two different types of blockchain networks.

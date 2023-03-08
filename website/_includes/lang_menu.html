@@ -1,0 +1,21 @@
+<div class="navbar-nav mt-md-0">
+  <li class="nav-item dropdown border-top border-md-top-0 ps-4">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="/assets/images/language.png" alt="Language selector icon" class="icon-language ps-0" width="24"
+        height="24"> {{ site.data.languages[site.lang] }}
+    </a>
+    <ul class="dropdown-menu dropdown-menu">
+      {% for lang in site.data.languages %}
+        {% if lang[0] == site.lang %}
+          {% continue %}
+        {% endif %}
+
+        {% if lang[0] == 'en' %}
+          <li><a class="dropdown-item" href="{{ site.baseurl_root }}{{ page.url}}">{{ lang[1] }}</a></li>
+        {% else %}
+          <li><a class="dropdown-item" href="{{ site.baseurl_root }}/{{ lang[0] }}{{ page.url}}">{{ lang[1] }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+</div>
