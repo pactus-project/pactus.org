@@ -12,19 +12,18 @@ dict:
     run_a_node: Run a node
     run_a_node_desc: >
       Download the latest version of Pactus blockchain, create your wallet, and start syncing with the network.
-      The syncing process with the network may take some time.
       Pactus is designed to be lightweight and user-friendly, making it simple to operate.
     get_some_coins: Get some coins
     get_some_coins_desc: >
       Once your node is up and running, you will need to obtain some coins in order to become a validator.
-      You can join our community and receive some coins free.
+      You can join our community and receive some stake coins free.
     become_a_validator: Become a validator
     become_a_validator_desc: >
-      After staking coins you can become a validator. Stay online to enter into the committee of the
-      block producers and get rewards by proposing new blocks.
+      After obtaining the staked coins, your node will be transition into a validator, and subsequently,
+      every time you propose a block, you will be rewarded with one new coin as a block reward.
     increase_your_stake: Increase your stake
     increase_your_stake_desc: >
-      Increase your chance to get more reward by increasing your stake. Use your wallet and stake
+      Increase your chance to get more rewards by increasing your stake. Use your wallet and stake
       more coins.
 
   community:

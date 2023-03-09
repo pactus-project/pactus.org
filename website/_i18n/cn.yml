@@ -7,6 +7,23 @@ dict:
   improve_translation: 改进翻译
   edit_this_page: 编辑本页
 
+  home:
+    motto: 一种真正分散化的权益证明区块链，具备增强的可扩展性和执行智能合约和交易的速度。
+    run_a_node: 运行节点
+    run_a_node_desc: >
+      下载最新版本的 Pactus 区块链，创建你的钱包，开始与网络同步。
+      Pactus 被设计为轻量级且用户友好，操作简单。
+    get_some_coins: 获得一些代币
+    get_some_coins_desc: >
+      一旦你的节点上线，你需要获取一些代币才能成为验证者。
+      你可以加入我们的社区并免费获得一些权益代币。
+    become_a_validator: 成为验证者
+    become_a_validator_desc: >
+      在获得权益代币后，你的节点将转变为验证者，随后每次你提出一个块，你将获得一个新代币作为块奖励。
+    increase_your_stake: 增加你的权益
+    increase_your_stake_desc: >
+      通过增加你的股份，增加获得更多奖励的机会。使用你的钱包并抵押更多的代币。
+
   community:
     title: 社区
     welcome: >
