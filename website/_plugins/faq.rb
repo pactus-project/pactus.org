@@ -10,26 +10,39 @@ module Jekyll
       trans = context["site"]["translations"][lang]["dict"]["faq"]
       faq =  context["site"]["data"]["faq"]
 
-      output = '<div class="toc"><ul class="list-unstyled">'
+      output = "<div class='toc'>"
 
-      faq["faq"].each do |item|
-        id = item["id"]
-        question = trans[id]
+      faq["faq"].each do |group|
+        title = trans[group["title"]]
+        output += "<div class='group'><div class='row fs-4'><div class='col'>#{title}</div></div>"
+        output += "<ul class='list-unstyled'>"
+        group["items"].each do |item|
+          id = item["id"]
+          question = trans[id]
 
-        output += "<li><a href='##{id}'>#{question}</a></li>"
+          output += "<li class='ms-3'><a href='##{id}'>#{question}</a></li>"
+        end
+        output += "</ul></div>"
       end
 
-      output += "</ul></div></div><div class='qa'>"
 
-      faq["faq"].each do |item|
-        id = item["id"]
-        ver = item["ver"]
-        question = trans[id]
-        answer = trans["#{id}_answer_#{ver}"]
+     output += "</div><div class='separator text-center'>***</div><div class='qa'>"
 
-        output += "<hr><h3 id='#{id}'>#{question}</h3><div class='answer'>#{answer}</div>"
+      faq["faq"].each do |group|
+        title = trans[group["title"]]
+        output += "<div class='group'><div class='row text-center fs-4'><div class='col'>#{title}</div></div>"
+
+        group["items"].each do |item|
+          ver = item["ver"]
+          id = item["id"]
+          question = trans[id]
+          answer = trans["#{id}_answer_#{ver}"]
+
+          output += "<h3 id='#{id}'>#{question}</h3><div class='answer'>#{answer}</div>"
+        end
+        output += "</div>"
+
       end
-
       output += "</div>"
 
       output

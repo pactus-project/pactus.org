@@ -7,6 +7,26 @@ dict:
   improve_translation: Improve the translation
   edit_this_page: Edit this page
 
+  home:
+    motto: A truly decentralized Proof of Stake blockchain with enhanced scalability and speed to execute smart contracts and transactions.
+    run_a_node: Run a node
+    run_a_node_desc: >
+      Download the latest version of Pactus blockchain, create your wallet, and start syncing with the network.
+      The syncing process with the network may take some time.
+      Pactus is designed to be lightweight and user-friendly, making it simple to operate.
+    get_some_coins: Get some coins
+    get_some_coins_desc: >
+      Once your node is up and running, you will need to obtain some coins in order to become a validator.
+      You can join our community and receive some coins free.
+    become_a_validator: Become a validator
+    become_a_validator_desc: >
+      After staking coins you can become a validator. Stay online to enter into the committee of the
+      block producers and get rewards by proposing new blocks.
+    increase_your_stake: Increase your stake
+    increase_your_stake_desc: >
+      Increase your chance to get more reward by increasing your stake. Use your wallet and stake
+      more coins.
+
   community:
     title: Community
     welcome: >
@@ -101,62 +121,82 @@ dict:
 
   faq:
     title: FAQ
-    welcome: Find answers to recurring questions and concerns about Pactus.
-    what_does_pactus_mean: What does "Pactus" mean?
-    what_does_pactus_mean_answer_v1: >
+    general: General
+    validator: Validator
+    economy: Economy
+    fee: Fee
+    welcome: This FAQ page aims to provide helpful information and guidance on common questions and concerns related to Pactus.
+    pactus_meaning: What does "Pactus" mean?
+    pactus_meaning_answer_v1: >
       The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact".
       In English, the term "Pact" is derived from the Latin word "Pactus".
-    how_is_pactus_different_from_bitcoin: How is Pactus different from Bitcoin?
-    how_is_pactus_different_from_bitcoin_answer_v1: >
+    pactus_vs_bitcoin: How is Pactus different from Bitcoin?
+    pactus_vs_bitcoin_answer_v1: >
       Pactus and Bitcoin are two different types of blockchain networks.
       While Bitcoin uses a process called "Proof of Work" to secure its network, Pactus uses a different method called "Proof of Stake".
       This means that instead of mining, validators are responsible for voting on incoming blocks. Once a validator proposes a valid block and it is accepted by other validators, the validator receives one coin as a block reward.
       This helps keep the Pactus blockchain secure and decentralized.
-    how_is_pactus_different_from_ethereum: How is Pactus different from Ethereum?
-    how_is_pactus_different_from_ethereum_answer_v1: >
+    pactus_vs_ethereum: How is Pactus different from Ethereum?
+    pactus_vs_ethereum_answer_v1: >
       Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
       Running a validator on Ethereum can be challenging and requires a minimum of 32 Ethereum coins to stake.
       In contrast, Pactus is designed to be more accessible to normal users.
       There is no minimum stake requirement, and you can run the Pactus node on any operating system with basic hardware.
       This approach reflects our commitment to promoting decentralization and making blockchain technology accessible to a wider audience.
-    what_are_validators: What are validators?
-    what_are_validators_answer_v1: >
+    validators: What are validators?
+    validators_answer_v1: >
       Validators on Pactus are responsible to processing transactions and creating blocks and, by doing so, helping secure the network.
       They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
-    how_do_validators_get_rewarded: How do validators get rewarded?
-    how_do_validators_get_rewarded_answer_v1: >
+    validators_rewarded: How do validators get rewarded?
+    validators_rewarded_answer_v1: >
       Every 10 seconds, one validator is chosen to collect transactions and create a block.
       The first transaction in the proposed block is called the "reward" transaction.
       This transaction includes one coin as a block reward and transaction fees.
       If most of the committee members approve the proposed block, the block is accepted and the validator receives the reward.
       The reward helps incentivize validators to secure the network and keep it running smoothly.
-    how_many_validators_does_pactus_have: How many validators does pactus have?
-    how_many_validators_does_pactus_have_answer_v1: >
+    unlimited_validators: How many validators does pactus have?
+    unlimited_validators_answer_v1: >
       Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network.
       However, there is a fixed committee of 21 validators responsible for creating blocks.
       These committee members are randomly chosen from the pool of validators in the network.
-    what_are_the_minimum_and_maximum_amounts_i_can_stake: What are the minimum and maximum amounts I can stake?
-    what_are_the_minimum_and_maximum_amounts_i_can_stake_answer_v1: >
+    min_and_max_stake: What are the minimum and maximum amounts I can stake?
+    min_and_max_stake_answer_v1: >
       In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 12381 coins.
       If you want to stake more than 12381 coins, you can run a new validator.
       Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
-    what_is_the_total_supply_of_pactus_coins: What is the total supply of Pactus coins?
-    what_is_the_total_supply_of_pactus_coins_answer_v1: >
+    total_supply: What is the total supply of Pactus coins?
+    total_supply_answer_v1: >
       Pactus has a total supply of 21 million coins, and each coin is divided into 1 billion units.
       A new coin is generated every 10 seconds, and after 6 and a half years, all 21 million coins will be generated.
-    is_pactus_a_copy_of_any_other_blockchain: Is Pactus a copy of any other blockchain?
-    is_pactus_a_copy_of_any_other_blockchain_answer_v1: >
+    unique_blockchain: Is Pactus a copy of any other blockchain?
+    unique_blockchain_answer_v1: >
       No, Pactus is not a copy or a derivative of any other blockchain.
       It is a new and unique blockchain protocol that has been designed from scratch.
       The consensus mechanism used in Pactus is unique and specifically created to solve the scalability issue of validators in the Proof of Stake blockchains.
-    what_is_the_treasury_account: What is the Treasury account in Pactus blockchain?
-    what_is_the_treasury_account_answer_v1: >
+    treasury_account: What is the Treasury account in Pactus blockchain?
+    treasury_account_answer_v1: >
       The Treasury account is a special account in Pactus blockchain that holds the total supply of coins, which is 21 million coins.
       It is created at the genesis time and has no key pair associated with it, meaning it cannot be accessed or controlled by anyone.
       Every time a block is created, one coin from the Treasury account moves to the proposer account as a block reward.
       This helps to incentivize validators to secure the network and keep it running smoothly.
-    does_pactus_have_an_ico: Does Pactus have an ICO?
-    does_pactus_have_an_ico_answer_v1: >
+    without_ico: Does Pactus have an ICO?
+    without_ico_answer_v1: >
       No, Pactus does not have an ICO (Initial Coin Offering) and there are no predefined or privileged accounts in pactus.
       The Pactus blockchain starts from zero and all coins are minted through the consensus mechanism.
       This ensures that the distribution of coins is fair and there is no centralization of wealth.
+    fee_model: How are transaction fees calculated in Pactus?
+    fee_model_answer_v1: >
+      Transaction fees in Pactus are calculated using a percentage-based fee model.
+      This means that the fee is a percentage of the transferred amount, with a minimum and maximum fee.
+      The percentage, minimum fee, and maximum fee parameters are part of the blockchain parameters and can be changed through a agreement upon all validators.
+    fee_min_max: What is the minimum and maximum fee?
+    fee_min_max_answer_v1: >
+      These parameters are designed to provide greater control over the fee structure and ensure that fees remain within a certain range.
+      If the calculated fee for a transaction falls below the minimum fee, the minimum fee is used instead.
+      Similarly, if the calculated fee exceeds the maximum fee, the maximum fee is used instead.
+      This helps prevent users from overpaying or underpaying for transactions and provides greater predictability and fairness in the fee structure.
+    why_percentage_fee: Why was a percentage-based fee model chosen for Pactus?
+    why_percentage_fee_answer_v1: >
+      The percentage-based fee model was chosen for Pactus because it provides a more equitable and predictable fee structure for users, as fees are proportional to the transferred amount.
+      It also allows for greater flexibility in adjusting the fee structure to better align with the needs of the blockchain and its users, as the percentage, minimum fee, and maximum fee parameters can be changed through a consensus mechanism agreed upon by all validators.
+

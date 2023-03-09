@@ -1,33 +1,50 @@
 faq:
-  - id: what_does_pactus_mean
-    ver: v1
+  - title: general
+    items:
+      - id: pactus_meaning
+        ver: v1
 
-  - id: is_pactus_a_copy_of_any_other_blockchain
-    ver: v1
+      - id: unique_blockchain
+        ver: v1
 
-  - id: does_pactus_have_an_ico
-    ver: v1
+      - id: without_ico
+        ver: v1
 
-  - id: how_is_pactus_different_from_bitcoin
-    ver: v1
+      - id: pactus_vs_bitcoin
+        ver: v1
 
-  - id: how_is_pactus_different_from_ethereum
-    ver: v1
+      - id: pactus_vs_ethereum
+        ver: v1
 
-  - id: what_are_validators
-    ver: v1
+  - title: validator
+    items:
+      - id: validators
+        ver: v1
 
-  - id: what_are_the_minimum_and_maximum_amounts_i_can_stake
-    ver: v1
+      - id: min_and_max_stake
+        ver: v1
 
-  - id: how_many_validators_does_pactus_have
-    ver: v1
+      - id: unlimited_validators
+        ver: v1
 
-  - id: how_do_validators_get_rewarded
-    ver: v1
+      - id: validators_rewarded
+        ver: v1
 
-  - id: what_is_the_total_supply_of_pactus_coins
-    ver: v1
+  - title: economy
+    items:
+    - id: total_supply
+      ver: v1
 
-  - id: what_is_the_treasury_account
-    ver: v1
+    - id: treasury_account
+      ver: v1
+
+  - title: fee
+    items:
+      - id: fee_model
+        ver: v1
+
+      - id: fee_min_max
+        ver: v1
+
+      - id: why_percentage_fee
+        ver: v1

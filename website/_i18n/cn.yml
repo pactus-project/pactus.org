@@ -32,10 +32,9 @@ dict:
     title: 学习
     reference: 参考
     welcome: >
-      欢迎来到参考页面，在这里您可以找到所有需要的技术细节和文档。
-      无论您是开发人员还是希望了解更多关于 Pactus 的用户，本页面提供全面和最新的信息，
-      可以帮助您入门。
-      请注意，我们所有的代码都可以在 Github 上查看和贡献。
+      欢迎来到参考页面，您可以在此找到所需的所有技术细节和文档。
+      无论您是开发人员还是寻找关于 Pactus 的更多信息的用户，此页面提供了全面且最新的信息，可以帮助您入门。
+      请注意，我们的所有代码都可以在 [Github](https://github.com/pactus-project) 上查看和贡献。
 
   contributing:
     title: 贡献
@@ -48,9 +47,8 @@ dict:
       要运行 Pactus 节点，您需要在网络中拥有股份，但您拥有的股份数量没有限制。拥有自己的节点意味着您不必依赖第三方提供有关网络状态的信息，这增加了您与 Pactus 网络交互的安全性和控制性。
     develop: 开发
     develop_desc: >
-      Pactus 是一个开源项目，我们欢迎并鼓励开发人员做出贡献。通过为项目做出贡献，您可以帮助改进 Pactus 平台，并创建有益于整个社区的新功能。
-      <br><br>
-      我们有各种需要开发工作的领域，例如改进 Pactus 区块链的性能，向 Pactus 添加新功能，或构建供开发人员使用的新工具。您可以查看我们的 贡献 页面，了解更多有关如何参与并为项目做出贡献的信息。
+      Pactus 是一个开源项目，我们欢迎并鼓励开发者做出贡献。通过对项目的贡献，您可以帮助改善 Pactus 平台，并创建新功能，使整个社区受益。<br><br>
+      我们需要在各个方面进行开发工作，例如改善 Pactus 区块链的性能、为 Pactus 添加新功能或为开发者构建新的工具。您可以查看我们的 [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) 页面，了解更多如何参与并为项目做出贡献的信息。
     spread_the_word: 传播
     spread_the_word_desc: >
       支持 Pactus 项目的另一种方法是向您所在社区的其他人传播。了解 Pactus 的人越多，合作和增长的机会就越多。在社交媒体上分享我们的项目，参加 Pactus 活动，或者只是告诉您的朋友和同事有关我们的事情。 <br><br>
@@ -72,71 +70,93 @@ dict:
     title: 下载
     welcome: 在此页面上，您可以找到如何下载并获取Pactus软件的最新版本。
     compile_from_source_code: 从源代码编译
-    project_pactus_is_distributed_v1: Project Pactus作为开源软件进行分发，因此安装的首选方式是从[github](https://github.com/pactus-project/pactus) 存储库克隆源代码并编译源代码。
+    project_pactus_is_distributed_v1: Project Pactus作为开源软件进行分发，因此安装的首选方式是从[GitHub](https://github.com/pactus-project/pactus) 存储库克隆源代码并编译源代码。
     instructions_for_compiling_v1: Pactus的编译说明在[install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) 页面提供。
     stable_releases: 下载稳定版本
-    stable_releases_desc_v1: 您还可以下载最新的稳定版本Pactus。当在我们的 [GitHub存储库](https://github.com/pactus-project/pactus) 中标记新版本时，这些版本将自动更新。
+    stable_releases_desc_v1: 您还可以下载最新的稳定版本Pactus。当在我们的 [GitHub](https://github.com/pactus-project/pactus) 中标记新版本时，这些版本将自动更新。
     you_can_run_gui_v1: 您可以在图形用户界面 (GUI) 模式下运行Pactus，适合初学者和高级用户。
     pactus_gui: Pactus图形用户界面 (GUI)
     pactus_cli: Pactus命令行界面 (CLI)
 
   faq:
     title: 常问问题
-    welcome: 找到有关Pactus的常见问题和关注点的答案。
-    what_does_pactus_mean: Pactus是什么意思？
-    what_does_pactus_mean_answer_v1: >
+    general: 通用
+    validator: 验证员
+    economy: 经济
+    fee: 费用
+    welcome: 此常见问题解答页面旨在提供有关Pactus的常见问题和关注点的有用信息和指导。
+    pactus_meaning: Pactus是什么意思？
+    pactus_meaning_answer_v1: >
       单词“ Pactus”起源于拉丁语，意为“一起同意”，“合同”或“交易”。
       在英语中，“Pact”一词源于拉丁词“Pactus”。
-    how_is_pactus_different_from_bitcoin: Pactus与比特币有何不同？
-    how_is_pactus_different_from_bitcoin_answer_v1: >
+    pactus_vs_bitcoin: Pactus与比特币有何不同？
+    pactus_vs_bitcoin_answer_v1: >
       Pactus和比特币是两种不同类型的区块链网络。
       比特币使用“工作量证明” (Proof of Work) 的方式来保护其网络，而Pactus则采用一种不同的方式，称为“股权证明” (Proof of Stake) 。
       这意味着，代替挖矿的是验证者负责对传入的区块进行投票。一旦验证者提出一个有效的区块，并且被其他验证者接受，该验证者将获得一枚代币作为区块奖励。
       这有助于保持Pactus区块链的安全性和去中心化。
-    how_is_pactus_different_from_ethereum: Pactus与以太坊有什么不同？
-    how_is_pactus_different_from_ethereum_answer_v1: >
+    pactus_vs_ethereum: Pactus与以太坊有什么不同？
+    pactus_vs_ethereum_answer_v1: >
       Pactus和以太坊都是股权证明的区块链，但它们在运行验证者方面存在差异。
       在以太坊上运行验证者可能会很具有挑战性，并且需要至少32个以太币作为质押。
       相比之下，Pactus的设计更加易于普通用户使用。
       没有最低质押要求，您可以在任何具有基本硬件的操作系统上运行Pactus节点。
       这种方法反映了我们致力于推广去中心化并使更广泛的受众能够使用区块链技术的承诺。
-    what_are_validators: 什么是验证者？
-    what_are_validators_answer_v1: >
+    validators: 什么是验证者？
+    validators_answer_v1: >
       Pactus上的验证者负责处理交易和创建区块，并通过这样做来帮助保护网络。
       他们使用自己的代币作为质押，以确保网络的安全，并获得其贡献的奖励。
-    how_do_validators_get_rewarded: 验证者如何获得奖励？
-    how_do_validators_get_rewarded_answer_v1: >
+    validators_rewarded: 验证者如何获得奖励？
+    validators_rewarded_answer_v1: >
       每10秒钟，会选择一个验证者来收集交易并创建一个区块。
       提议的区块中的第一个交易称为“奖励”交易。
       该交易包括一枚代币作为区块奖励和交易费。
       如果大多数委员会成员批准了提议的区块，该区块将被接受，验证者将获得奖励。
       奖励有助于激励验证者保护网络并使其顺畅运行。
-    how_many_validators_does_pactus_have: Pactus有多少个验证者？
-    how_many_validators_does_pactus_have_answer_v1: >
+    unlimited_validators: Pactus有多少个验证者？
+    unlimited_validators_answer_v1: >
       Pactus是真正的权益证明（Proof of Stake）区块链，这意味着网络中的验证器数量没有限制。
       然而，有一个由21个验证器组成的固定委员会负责创建区块。
       这些委员会成员是从网络中的验证器池中随机选择的。
-    what_are_the_minimum_and_maximum_amounts_i_can_stake: 我可以抵押的最低和最高金额是多少？
-    what_are_the_minimum_and_maximum_amounts_i_can_stake_answer_v1: >
+    min_and_max_stake: 我可以抵押的最低和最高金额是多少？
+    min_and_max_stake_answer_v1: >
       在Pactus中，抵押代币的最低限制没有，但是你可以抵押的最大金额是12381枚代币。
       如果你想抵押的代币数量超过12381枚，你可以运行一个新的验证器。
       运行多个验证器可以使网络更加分散化，有助于维护其安全性和稳定性。
-    what_is_the_total_supply_of_pactus_coins: Pactus代币的总供应量是多少？
-    what_is_the_total_supply_of_pactus_coins_answer_v1: >
+    total_supply: Pactus代币的总供应量是多少？
+    total_supply_answer_v1: >
       Pactus的总供应量为2100万个代币，每个代币分为10亿个单位。
       每10秒钟会生成一个新的代币，经过6年半后，所有的2100万个代币都会被生成。
-    is_pactus_a_copy_of_any_other_blockchain: Pactus是其他区块链的复制品吗？
-    is_pactus_a_copy_of_any_other_blockchain_answer_v1: >
+    unique_blockchain: Pactus是其他区块链的复制品吗？
+    unique_blockchain_answer_v1: >
       不，Pactus不是任何其他区块链的复制品或派生品。
       它是一个全新而独特的区块链协议，是从零开始设计的。
       Pactus使用的共识机制是独特的，专门用于解决权益证明区块链中验证器可扩展性问题。
-    what_is_the_treasury_account: Pactus区块链中的国库账户是什么？
-    what_is_the_treasury_account_answer_v1: >
+    treasury_account: Pactus区块链中的国库账户是什么？
+    treasury_account_answer_v1: >
       国库账户是Pactus区块链中的一个特殊账户，它持有总供应量为2100万个代币。
       它在创世时间创建，没有与之关联的密钥对，这意味着任何人都无法访问或控制它。
       每次创建区块时，国库账户中的一个代币会作为区块奖励移动到提案人账户中。
       这有助于激励验证器保护网络并使其平稳运行。
-    does_pactus_have_an_ico: Pactus有ICO吗？
-    does_pactus_have_an_ico_answer_v1: >
+    without_ico: Pactus有ICO吗？
+    without_ico_answer_v1: >
       不，Pactus没有ICO（首次代币发行），也没有预定义或特权账户。
-      P
+      Pactus区块链从零开始，所有代币都通过共识机制铸造。
+      这确保了代币的分配是公平的，没有财富的集中化。
+    fee_model: Pactus中如何计算交易费用？
+    fee_model_answer_v1: >
+      Pactus中的交易费用使用基于百分比的费用模型计算。
+      这意味着费用是转移金额的一定比例，有最低和最高费用。
+      百分比、最低费用和最高费用参数是区块链参数的一部分，并可以通过所有验证器协商更改。
+    fee_min_max: 最低和最高费用是多少？
+    fee_min_max_answer_v1: >
+      这些参数旨在提供对费用结构的更大控制，并确保费用保持在一定范围内。
+      如果交易的计算费用低于最低费用，则使用最低费用。
+      同样，如果计算出的费用超过最高费用，则使用最高费用。
+      这有助于防止用户支付过高或过低的交易费用，并为费用结构提供更大的可预测性和公平性。
+    why_percentage_fee: 为什么选择基于百分比的费用模型？
+    why_percentage_fee_answer_v1: >
+      选择基于百分比的费用模型是因为它为用户提供了更公平和可预测的费用结构，因为费用与转移金额成比例关系。
+      它还允许更大的灵活性来调整费用结构，以更好地与区块链及其用户的需求相一致，因为百分比、
+      最低费用和最高费用参数可以通过所有验证者同意的共识机制进行更改。
+
