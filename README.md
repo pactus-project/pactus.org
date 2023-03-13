@@ -20,27 +20,36 @@ bundle install
 bundle exec jekyll serve
 ```
 
-## Additional commands (Optional)
+## Additional commands
 
 There are some additional commands that help you to check and improve your changes.
 First you need Install [yarn](https://yarnpkg.com/).
 
-Commands:
 - Check all HTMl and markdown files:
-  `yarn run prettier`:
+  ```
+  yarn run prettier
+  ```
 
 - Remove all metadata from png files by running this command:
-  `yarn run exif`
+  ```
+  yarn run exif
+  ```
 
 - Linting Markdown files:
-  `yarn run lint:mdl`
+  ```
+  yarn run lint:mdl
+  ```
 
-- Linting YAml files:
-  `yarn run lint:yml`
+- Linting Yaml files:
+  ```
+  yarn run lint:yml
+  ```
 
 - Check the broken links:
-  `htmlproofer --ignore-status-codes "999,429" --check_internal_hash=false --enforce-https=false ./_site`
+  ```
+  htmlproofer --ignore-status-codes "999,429" --check_internal_hash=false --enforce-https=false ./_site
+  ```
 
 ## Deployment
 
-Updating main branch will automatically deploy this repository through github actions.
+Updating the main branch will automatically deploy this repository through [deploy](.github/workflows/deploy.yml) Github actions.
