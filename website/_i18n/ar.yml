@@ -40,8 +40,29 @@ dict:
     instagram: "بكتوس على إنستغرام"
     linkedin: "بكتوس على لينكد إن"
 
-  what_is_pactus:
+  what_is:
     title: "ما هو بكتوس؟"
+    sec_1_title: Pactus is a Blockchain focused on decentralization
+    sec_1_desc: >
+      Pactus is built on the principle that a fair and transparent system can only be achieved through decentralization.
+      Unlike many other blockchain platforms, Pactus aims to eliminate the potential for centralization and manipulation
+      by removing the need for delegation and miners.
+      This allows anyone to become a part of the ecosystem and ensures that the platform remains truly decentralized.
+    sec_2_title: Pactus is a user-friendly blockchain
+    sec_2_desc: >
+      Pactus aims to create a user-friendly blockchain that can be easily used by anyone, not just tech experts.
+      Our protocol is designed to be simple, easy to maintain, and develop.
+      We offer a GUI application that makes it easy for users to run a node.
+    sec_3_title: Pactus uses a percentage-based fee model
+    sec_3_desc: >
+      Transaction fees are calculated based on a percentage model with a minimum and maximum fee.
+      These parameters provide greater control over the fee structure and prevent overpaying or underpaying.
+      The percentage-based model ensures fairness and predictability, and can be adjusted through consensus among all validators.
+    sec_4_title: Dedicated Decentralized Storage in Pactus
+    sec_4_desc: >
+      In Pactus, users can purchase a dedicated storage file that can be renewed annually,
+      leading to reduced costs for storage and smart contract execution.
+      This unique feature can pave the way for a new protocols in the decentralized platforms.
 
   blog:
     title: "المدونة"
@@ -71,7 +92,8 @@ dict:
       من خلال تشغيل العقدة، تساعد في ضمان بقاء الشبكة آمنة ولامركزية، حيث يقلل من خطر السيطرة أو التأثير الكبير لأي كيان على الشبكة.
       <br><br>
       لتشغيل عقدة بكتوس، ستحتاج إلى الحصول على حصة في الشبكة، لكن ليس هناك حد أدنى للحصة التي يمكنك الحصول عليها.
-      إن امتلاك عقدتك الخاصة يعني عدم الاعتماد على طرف ثالث لتقديم المعلومات حول حالة الشبكة، مما يزيد من مستوى الأمان والتحكم الخاص بك في تفاعلاتك مع شبكة بكتوس.
+      إن امتلاك عقدتك الخاصة يعني عدم الاعتماد على طرف ثالث لتقديم المعلومات حول حالة الشبكة،
+       مما يزيد من مستوى الأمان والتحكم الخاص بك في تفاعلاتك مع شبكة بكتوس.
     develop: تطوير
     develop_desc: >
       برنامج بكتوس مفتوح المصدر ونرحب ونشجع المساهمات من المطورين.
@@ -103,12 +125,18 @@ dict:
   download_pactus: تحميل بكتوس
   download:
     title: تحميل
-    welcome: يمكنك على هذه الصفحة العثور على كيفية تحميل والحصول على أحدث نسخة من برنامج بكتوس.
+    welcome: >
+      يمكنك على هذه الصفحة العثور على كيفية تحميل والحصول على أحدث نسخة من برنامج بكتوس.
     compile_from_source_code: جمع من الشفرة المصدرية
-    project_pactus_is_distributed_v1: يتم توزيع مشروع بكتوس كبرنامج مفتوح المصدر، لذلك الطريقة المفضلة لتثبيته هي نسخ شفرة المصدر من مستودع [جيت هاب](https://github.com/pactus-project/pactus) وجمع شفرة المصدر.
-    instructions_for_compiling_v1: تقدم تعليمات لتجميع بكتوس في الصفحة الخاصة بـ [التثبيت](https://github.com/pactus-project/pactus/blob/main/INSTALL.md).
+    project_pactus_is_distributed_v1: >
+      يتم توزيع مشروع بكتوس كبرنامج مفتوح المصدر،
+       لذلك الطريقة المفضلة لتثبيته هي نسخ شفرة المصدر من مستودع [جيت هاب](https://github.com/pactus-project/pactus) وجمع شفرة المصدر.
+    instructions_for_compiling_v1: >
+      تقدم تعليمات لتجميع بكتوس في الصفحة الخاصة بـ [التثبيت](https://github.com/pactus-project/pactus/blob/main/INSTALL.md).
     stable_releases: تحميل الإصدارات المستقرة
-    stable_releases_desc_v1: يمكنك أيضًا تحميل أحدث الإصدارات المستقرة من بكتوس. يتم تحديث هذه الإصدارات تلقائيًا عند تسمية إصدار جديد في [مستودع GitHub](https://github.com/pactus-project/pactus) الخاص بنا.
+    stable_releases_desc_v1: >
+      يمكنك أيضًا تحميل أحدث الإصدارات المستقرة من بكتوس. يتم تحديث هذه الإصدارات تلقائيًا عند تسمية إصدار جديد في
+      [مستودع GitHub](https://github.com/pactus-project/pactus) الخاص بنا.
     you_can_run_gui_v1: يمكنك تشغيل بكتوس في وضع واجهة المستخدم الرسومية (GUI) وهو مناسب للمبتدئين والمستخدمين المتقدمين على حد سواء.
     pactus_gui: واجهة المستخدم الرسومية (GUI) لبكتوس
     pactus_cli: واجهة سطر الأوامر (CLI) لبكتوس
@@ -193,5 +221,7 @@ dict:
       وهذا يساعد على منع المستخدمين من دفع مبالغ زائدة أو غير كافية للمعاملات ويوفر تنبؤًا أكبر وعدلاً في بنية الرسوم.
     why_percentage_fee: لماذا تم اختيار نموذج الرسوم القائمة على النسبة المئوية لباكتوس؟
     why_percentage_fee_answer_v1: >
-      تم اختيار نموذج الرسوم القائمة على النسبة المئوية لباكتوس لأنه يوفر هيكل تكاليف أكثر إنصافًا وتوقعًا للمستخدمين، حيث تكون الرسوم متناسبة مع المبلغ المحول.
-      كما يتيح أيضًا مرونة أكبر في ضبط هيكل الرسوم لتتماشى أكثر مع احتياجات البلوكشين ومستخدميه، حيث يمكن تغيير المعلمات المتعلقة بالنسبة المئوية والرسم الأدنى والرسم الأقصى من خلال آلية توافق يتم الاتفاق عليها بين جميع المحققين.
+      تم اختيار نموذج الرسوم القائمة على النسبة المئوية لباكتوس لأنه يوفر هيكل تكاليف أكثر إنصافًا وتوقعًا للمستخدمين،
+      حيث تكون الرسوم متناسبة مع المبلغ المحول.
+      كما يتيح أيضًا مرونة أكبر في ضبط هيكل الرسوم لتتماشى أكثر مع احتياجات البلوكشين ومستخدميه،
+      حيث يمكن تغيير المعلمات المتعلقة بالنسبة المئوية والرسم الأدنى والرسم الأقصى من خلال آلية توافق يتم الاتفاق عليها بين جميع المحققين.

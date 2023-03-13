@@ -3,9 +3,9 @@
     <a href="https://github.com/pactus-project/pactus.org/edit/main/website/{{page.path}}">
       {% t dict.edit_this_page %}
     </a>
-    {% if include.translatable %}
-    |
-    <a href="https://github.com/pactus-project/pactus.org/edit/main/website/_i18n/{{site.lang}}.yml">
+    {% if include.translatable %} |
+    <a
+      href="https://github.com/pactus-project/pactus.org/edit/main/website/_i18n/{{site.lang}}.yml">
       {% t dict.improve_translation %}
     </a>
     {% endif %}

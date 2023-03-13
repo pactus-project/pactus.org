@@ -32,11 +32,11 @@ faq:
 
   - title: economy
     items:
-    - id: total_supply
-      ver: v1
+      - id: total_supply
+        ver: v1
 
-    - id: treasury_account
-      ver: v1
+      - id: treasury_account
+        ver: v1
 
   - title: fee
     items:

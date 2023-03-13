@@ -26,17 +26,20 @@ There are some additional commands that help you to check and improve your chang
 First you need Install [yarn](https://yarnpkg.com/).
 
 Commands:
-- Format all markdown and HTML files:
+- Check all HTMl and markdown files:
   `yarn run prettier`:
 
 - Remove all metadata from png files by running this command:
   `yarn run exif`
 
+- Linting Markdown files:
+  `yarn run lint:mdl`
+
+- Linting YAml files:
+  `yarn run lint:yml`
+
 - Check the broken links:
   `htmlproofer --ignore-status-codes "999,429" --check_internal_hash=false --enforce-https=false ./_site`
-
-- Linting markdown files:
-  `mdl --style=.mdlrc.rb ./website`
 
 ## Deployment
 

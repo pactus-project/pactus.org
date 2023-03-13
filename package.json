@@ -6,7 +6,11 @@
   "license": "MIT",
   "scripts": {
     "prettier": "prettier --bracket-same-line true --html-whitespace-sensitivity ignore --end-of-line lf --print-width 100 --write ./website",
-    "exif": "cd ./website/assets/images && for i in *.png; do echo \"Processing $i\"; exiftool -all= \"$i\"; done"
+    "exif": "cd ./website/assets/images && for i in *.png; do echo \"Processing $i\"; exiftool -all= \"$i\"; done",
+    "lint:md": "mdl --style=.mdlrc.rb ./website",
+    "lint:md:setup": "gem install mdl",
+    "lint:yml": "yamllint ./website",
+    "lint:yml:setup": "pip install --upgrade yamllint"
   },
   "optionalDependencies": {
     "prettier": "^2.7.1"

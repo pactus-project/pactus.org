@@ -38,8 +38,29 @@ dict:
     instagram: Pactus 在 Instagram 上
     linkedin: Pactus 在 LinkedIn 上
 
-  what_is_pactus:
+  what_is:
     title: 什么是 Pactus？
+    sec_1_title: Pactus is a Blockchain focused on decentralization
+    sec_1_desc: >
+      Pactus is built on the principle that a fair and transparent system can only be achieved through decentralization.
+      Unlike many other blockchain platforms, Pactus aims to eliminate the potential for centralization and manipulation
+      by removing the need for delegation and miners.
+      This allows anyone to become a part of the ecosystem and ensures that the platform remains truly decentralized.
+    sec_2_title: Pactus is a user-friendly blockchain
+    sec_2_desc: >
+      Pactus aims to create a user-friendly blockchain that can be easily used by anyone, not just tech experts.
+      Our protocol is designed to be simple, easy to maintain, and develop.
+      We offer a GUI application that makes it easy for users to run a node.
+    sec_3_title: Pactus uses a percentage-based fee model
+    sec_3_desc: >
+      Transaction fees are calculated based on a percentage model with a minimum and maximum fee.
+      These parameters provide greater control over the fee structure and prevent overpaying or underpaying.
+      The percentage-based model ensures fairness and predictability, and can be adjusted through consensus among all validators.
+    sec_4_title: Dedicated Decentralized Storage in Pactus
+    sec_4_desc: >
+      In Pactus, users can purchase a dedicated storage file that can be renewed annually,
+      leading to reduced costs for storage and smart contract execution.
+      This unique feature can pave the way for a new protocols in the decentralized platforms.
 
   blog:
     title: 博客
@@ -60,15 +81,20 @@ dict:
       有几种支持 Pactus 项目的方法:
     run_a_node: 运行节点
     run_a_node_desc: >
-      运行节点是对 Pactus 网络做出最有效贡献的方法之一。 "节点" 是一种软件程序，它下载 Pactus 区块链的副本，并通过验证交易和区块来帮助维护网络。通过运行节点，您有助于确保网络保持安全和去中心化，因为它减少了任何一个实体获得对网络的过多控制或影响的风险。 <br><br>
-      要运行 Pactus 节点，您需要在网络中拥有股份，但您拥有的股份数量没有限制。拥有自己的节点意味着您不必依赖第三方提供有关网络状态的信息，这增加了您与 Pactus 网络交互的安全性和控制性。
+      运行节点是对 Pactus 网络做出最有效贡献的方法之一。 "节点" 是一种软件程序，它下载 Pactus 区块链的副本，并通过验证交易和区块来帮助维护网络。通过运行节点，
+      您有助于确保网络保持安全和去中心化，因为它减少了任何一个实体获得对网络的过多控制或影响的风险。 <br><br>
+      要运行 Pactus 节点，您需要在网络中拥有股份，但您拥有的股份数量没有限制。拥有自己的节点意味着您不必依赖第三方提供有关网络状态的信息，
+      这增加了您与 Pactus 网络交互的安全性和控制性。
     develop: 开发
     develop_desc: >
-      Pactus 是一个开源项目，我们欢迎并鼓励开发者做出贡献。通过对项目的贡献，您可以帮助改善 Pactus 平台，并创建新功能，使整个社区受益。<br><br>
-      我们需要在各个方面进行开发工作，例如改善 Pactus 区块链的性能、为 Pactus 添加新功能或为开发者构建新的工具。您可以查看我们的 [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) 页面，了解更多如何参与并为项目做出贡献的信息。
+      Pactus 是一个开源项目，我们欢迎并鼓励开发者做出贡献。通过对项目的贡献，您可以帮助改善 Pactus 平台，并创建新功能，使整个社区受益。
+      <br><br>
+      我们需要在各个方面进行开发工作，例如改善 Pactus 区块链的性能、为 Pactus 添加新功能或为开发者构建新的工具。您可以查看我们的
+      [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) 页面，了解更多如何参与并为项目做出贡献的信息。
     spread_the_word: 传播
     spread_the_word_desc: >
-      支持 Pactus 项目的另一种方法是向您所在社区的其他人传播。了解 Pactus 的人越多，合作和增长的机会就越多。在社交媒体上分享我们的项目，参加 Pactus 活动，或者只是告诉您的朋友和同事有关我们的事情。 <br><br>
+      支持 Pactus 项目的另一种方法是向您所在社区的其他人传播。了解 Pactus 的人越多，合作和增长的机会就越多。在社交媒体上分享我们的项目，
+      参加 Pactus 活动，或者只是告诉您的朋友和同事有关我们的事情。 <br><br>
       每一个小小的帮助都很重要！
     appreciate: >
       我们感谢Pactus项目的所有贡献，并很高兴与我们的社区合作，
@@ -87,10 +113,14 @@ dict:
     title: 下载
     welcome: 在此页面上，您可以找到如何下载并获取Pactus软件的最新版本。
     compile_from_source_code: 从源代码编译
-    project_pactus_is_distributed_v1: Project Pactus作为开源软件进行分发，因此安装的首选方式是从[GitHub](https://github.com/pactus-project/pactus) 存储库克隆源代码并编译源代码。
+    project_pactus_is_distributed_v1: >
+      Project Pactus作为开源软件进行分发，因此安装的首选方式是从[GitHub](https://github.com/pactus-project/pactus)
+      存储库克隆源代码并编译源代码。
     instructions_for_compiling_v1: Pactus的编译说明在[install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) 页面提供。
     stable_releases: 下载稳定版本
-    stable_releases_desc_v1: 您还可以下载最新的稳定版本Pactus。当在我们的 [GitHub](https://github.com/pactus-project/pactus) 中标记新版本时，这些版本将自动更新。
+    stable_releases_desc_v1: >
+      您还可以下载最新的稳定版本Pactus。当在我们的 [GitHub](https://github.com/pactus-project/pactus) 中标记新版本时，
+      这些版本将自动更新。
     you_can_run_gui_v1: 您可以在图形用户界面 (GUI) 模式下运行Pactus，适合初学者和高级用户。
     pactus_gui: Pactus图形用户界面 (GUI)
     pactus_cli: Pactus命令行界面 (CLI)
@@ -176,4 +206,3 @@ dict:
       选择基于百分比的费用模型是因为它为用户提供了更公平和可预测的费用结构，因为费用与转移金额成比例关系。
       它还允许更大的灵活性来调整费用结构，以更好地与区块链及其用户的需求相一致，因为百分比、
       最低费用和最高费用参数可以通过所有验证者同意的共识机制进行更改。
-

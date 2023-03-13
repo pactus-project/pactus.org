@@ -2,26 +2,41 @@
   <nav class="topnav navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand logo p-3" href="{{ site.baseurl }}/">
-        <img src="{{ site.url }}/assets/images/logos/text_logo.png" alt="Pactus blockchain">
+        <img src="{{ site.url }}/assets/images/logos/text_logo.png" alt="Pactus blockchain" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav me-lg-auto">
           <li class="nav-item dropdown border-top border-md-top-0 ps-4">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
               {% t dict.get_started %}
             </a>
             <ul class="dropdown-menu bg-light border-0 mx-0 pe-0">
               <li class="border-top">
-                <a class="nav-link dropdown-item" href="{{ site.baseurl }}/get-started/what-is-pactus/">
-                  {% t dict.what_is_pactus.title %}
+                <a
+                  class="nav-link dropdown-item"
+                  href="{{ site.baseurl }}/get-started/what-is-pactus/">
+                  {% t dict.what_is.title %}
                 </a>
               </li>
               <li class="border-top">
-                <a class="nav-link dropdown-item" href="{{ site.baseurl }}/get-started/contributing/">
+                <a
+                  class="nav-link dropdown-item"
+                  href="{{ site.baseurl }}/get-started/contributing/">
                   {% t dict.contributing.title %}
                 </a>
               </li>
@@ -49,7 +64,9 @@
             <a class="nav-link" href="{{ site.baseurl }}/blog/">{% t dict.blog.title %}</a>
           </li>
           <li class="nav-item border-top border-md-top-0 ps-4">
-            <a class="nav-link" href="{{ site.baseurl }}/community/">{% t dict.community.title %}</a>
+            <a class="nav-link" href="{{ site.baseurl }}/community/">
+              {% t dict.community.title %}
+            </a>
           </li>
         </ul>
         {% include lang_menu.html %}

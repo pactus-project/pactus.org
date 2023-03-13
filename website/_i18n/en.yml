@@ -40,8 +40,29 @@ dict:
     instagram: Pactus on Instagram
     linkedin: Pactus on LinkedIn
 
-  what_is_pactus:
+  what_is:
     title: What is Pactus?
+    sec_1_title: Pactus is a Blockchain focused on decentralization
+    sec_1_desc: >
+      Pactus is built on the principle that a fair and transparent system can only be achieved through decentralization.
+      Unlike many other blockchain platforms, Pactus aims to eliminate the potential for centralization and manipulation
+      by removing the need for delegation and miners.
+      This allows anyone to become a part of the ecosystem and ensures that the platform remains truly decentralized.
+    sec_2_title: Pactus is a user-friendly blockchain
+    sec_2_desc: >
+      Pactus aims to create a user-friendly blockchain that can be easily used by anyone, not just tech experts.
+      Our protocol is designed to be simple, easy to maintain, and develop.
+      We offer a GUI application that makes it easy for users to run a node.
+    sec_3_title: Pactus uses a percentage-based fee model
+    sec_3_desc: >
+      Transaction fees are calculated based on a percentage model with a minimum and maximum fee.
+      These parameters provide greater control over the fee structure and prevent overpaying or underpaying.
+      The percentage-based model ensures fairness and predictability, and can be adjusted through consensus among all validators.
+    sec_4_title: Dedicated Decentralized Storage in Pactus
+    sec_4_desc: >
+      In Pactus, users can purchase a dedicated storage file that can be renewed annually,
+      leading to reduced costs for storage and smart contract execution.
+      This unique feature can pave the way for a new protocols in the decentralized platforms.
 
   blog:
     title: Blog
@@ -110,11 +131,18 @@ dict:
     title: Download
     welcome: On this page you can find how to download and get the latest version of the Pactus software.
     compile_from_source_code: Compile from Source Code
-    project_pactus_is_distributed_v1: Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
-    instructions_for_compiling_v1: Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
+    project_pactus_is_distributed_v1: >
+      Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from
+      the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
+    instructions_for_compiling_v1: >
+      Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
     stable_releases: Download stable releases
-    stable_releases_desc_v1: You can also download the latest stable releases of Pactus. These releases are updated automatically when a new version is tagged in our [GitHub repository](https://github.com/pactus-project/pactus).
-    you_can_run_gui_v1: You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
+    stable_releases_desc_v1: >
+      You can also download the latest stable releases of Pactus.
+      These releases are updated automatically when a new version is tagged in
+      [GitHub repository](https://github.com/pactus-project/pactus).
+    you_can_run_gui_v1: >
+      You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
     pactus_gui: Pactus Graphical User Interface (GUI)
     pactus_cli: Pactus Command Line Interface (CLI)
 
@@ -133,7 +161,8 @@ dict:
     pactus_vs_bitcoin_answer_v1: >
       Pactus and Bitcoin are two different types of blockchain networks.
       While Bitcoin uses a process called "Proof of Work" to secure its network, Pactus uses a different method called "Proof of Stake".
-      This means that instead of mining, validators are responsible for voting on incoming blocks. Once a validator proposes a valid block and it is accepted by other validators, the validator receives one coin as a block reward.
+      This means that instead of mining, validators are responsible for voting on incoming blocks. Once a validator proposes
+      a valid block and it is accepted by other validators, the validator receives one coin as a block reward.
       This helps keep the Pactus blockchain secure and decentralized.
     pactus_vs_ethereum: How is Pactus different from Ethereum?
     pactus_vs_ethereum_answer_v1: >
@@ -171,7 +200,8 @@ dict:
     unique_blockchain_answer_v1: >
       No, Pactus is not a copy or a derivative of any other blockchain.
       It is a new and unique blockchain protocol that has been designed from scratch.
-      The consensus mechanism used in Pactus is unique and specifically created to solve the scalability issue of validators in the Proof of Stake blockchains.
+      The consensus mechanism used in Pactus is unique and specifically created to solve the scalability issue of
+      validators in the Proof of Stake blockchains.
     treasury_account: What is the Treasury account in Pactus blockchain?
     treasury_account_answer_v1: >
       The Treasury account is a special account in Pactus blockchain that holds the total supply of coins, which is 21 million coins.
@@ -187,15 +217,18 @@ dict:
     fee_model_answer_v1: >
       Transaction fees in Pactus are calculated using a percentage-based fee model.
       This means that the fee is a percentage of the transferred amount, with a minimum and maximum fee.
-      The percentage, minimum fee, and maximum fee parameters are part of the blockchain parameters and can be changed through a agreement upon all validators.
+      The percentage, minimum fee, and maximum fee parameters are part of the blockchain parameters and
+      can be changed through a agreement upon all validators.
     fee_min_max: What is the minimum and maximum fee?
     fee_min_max_answer_v1: >
       These parameters are designed to provide greater control over the fee structure and ensure that fees remain within a certain range.
       If the calculated fee for a transaction falls below the minimum fee, the minimum fee is used instead.
       Similarly, if the calculated fee exceeds the maximum fee, the maximum fee is used instead.
-      This helps prevent users from overpaying or underpaying for transactions and provides greater predictability and fairness in the fee structure.
+      This helps prevent users from overpaying or underpaying for transactions and provides greater predictability and fairness
+      in the fee structure.
     why_percentage_fee: Why was a percentage-based fee model chosen for Pactus?
     why_percentage_fee_answer_v1: >
-      The percentage-based fee model was chosen for Pactus because it provides a more equitable and predictable fee structure for users, as fees are proportional to the transferred amount.
-      It also allows for greater flexibility in adjusting the fee structure to better align with the needs of the blockchain and its users, as the percentage, minimum fee, and maximum fee parameters can be changed through a consensus mechanism agreed upon by all validators.
-
+      The percentage-based fee model was chosen for Pactus because it provides a more equitable and predictable fee structure for users,
+      as fees are proportional to the transferred amount.
+      It also allows for greater flexibility in adjusting the fee structure to better align with the needs of the blockchain and its users,
+      as the percentage, minimum fee, and maximum fee parameters can be changed through a consensus mechanism agreed upon by all validators.
