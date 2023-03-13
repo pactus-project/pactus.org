@@ -4,7 +4,7 @@ title: dict.community.title
 permalink: /community/index.html
 ---
 
-# {% t dict.community.title %}
+# {% t dict.community.join %}
 
 {% t dict.community.welcome %}
 

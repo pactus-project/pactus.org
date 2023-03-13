@@ -28,10 +28,13 @@ dict:
 
   community:
     title: Community
+    join: Join the Pactus community
     welcome: >
-      At Pactus, we firmly believe that an open-source project thrives on the energy and commitment of its members.
-      That's why we're inviting you to join us in our mission to build something truly remarkable.
-      With your support and collaboration, we can make Pactus more powerful than ever before.
+      Welcome to the Pactus community page.
+      By joining the pactus community, you become a part of a global network of innovators, thinkers,
+      and doers who are all united by a shared vision of building a better future with blockchain technology.
+      Whether you're a developer, entrepreneur, investor, or simply a blockchain enthusiast, there's a place for you
+      here at Pactus. 
       <br>
       So, let's come together and make a difference!
     discord: Pactus on Discord
@@ -52,7 +55,7 @@ dict:
     sec_2_desc: >
       Pactus aims to create a user-friendly blockchain that can be easily used by anyone, not just tech experts.
       Our protocol is designed to be simple, easy to maintain, and develop.
-      We offer a GUI application that makes it easy for users to run a node.
+      Pactus offers a simple GUI application that makes it easy for users to run a node.
     sec_3_title: Pactus uses a percentage-based fee model
     sec_3_desc: >
       Transaction fees are calculated based on a percentage model with a minimum and maximum fee.
@@ -99,11 +102,11 @@ dict:
       which increases your level of security and control over your interactions with the Pactus network.
     develop: Develop
     develop_desc: >
-      Pactus is an open-source project, and we welcome and encourage contributions from developers.
+      Pactus is an open-source project that welcomes and encourages contributions from developers.
       By contributing to the project, you can help improve the Pactus platform and create new features that
       benefit the entire community.
       <br><br>
-      We have a variety of areas where we need development work, such as improving the performance of the Pactus blockchain,
+      There is a variety of areas where development work is needed, such as improving the performance of the Pactus blockchain,
       adding new features to the Pactus, or building new tools for developers to use.
       You can check our [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) page
       for more information on how to get involved and contribute to the project.
@@ -118,7 +121,7 @@ dict:
       We appreciate any and all contributions to the Pactus project, and we're excited to work with our community to
       create a secure and decentralized network.
       <br><br>
-      Together, we can build a better future for blockchain technology.
+      Together, Let's build a better future for blockchain technology.
 
   roadmap:
     title: Road map
@@ -232,3 +235,32 @@ dict:
       as fees are proportional to the transferred amount.
       It also allows for greater flexibility in adjusting the fee structure to better align with the needs of the blockchain and its users,
       as the percentage, minimum fee, and maximum fee parameters can be changed through a consensus mechanism agreed upon by all validators.
+    why_develop_pactus: Why was  Pactus developed?
+    why_develop_pactus_answer_v1: >
+      Pactus was developed to address the limitations of existing blockchain networks and provide
+      secure, accessible and decentralized platform for users.
+      We saw a need for a blockchain protocol that could scale efficiently, while remaining secure and accessible to all users,
+      regardless of their technical expertise or financial resources.
+      Pactus was designed to address these issues by using a unique consensus mechanism that solves the
+      scalability problem of validators in Proof of Stake blockchains, and by providing a more accessible platform for running validators.
+      <br><br>
+      Our commitment to decentralization and fairness is reflected in our decision to start the Pactus blockchain from zero and
+      ensure that all coins are minted through the consensus mechanism, rather than through an ICO or privileged accounts.
+    what_pactus_solved: What problems does Pactus solve that other blockchains don't?
+    what_pactus_solved_answer_v1: >
+      Pactus has been designed to solve several problems faced by other blockchain networks,
+      including scalability, accessibility, fairness in distribution and storage cost.
+      <br><br>
+      <b>Scalability:</b>
+      Pactus has a unique consensus mechanism that is specifically designed to solve the scalability issue
+      faced by other Proof of Stake blockchains wihout sacrifising the decentralization.
+      <br><br>
+      <b>Accessibility:</b>
+      Running a validator on Pactus is designed to be more accessible to normal users compared to other Proof of Stake blockchains.
+      <br><br>
+      <b>Fairness in distribution:</b>
+      Pactus has a fair distribution model that ensures there is no centralization of wealth.
+      <br><br>
+      <b>Storage cost:</b>
+      Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
+      reducing storage costs and improving efficiency.

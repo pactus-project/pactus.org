@@ -28,12 +28,13 @@ dict:
 
   community:
     title: "المجتمع"
+    join: Join the Pactus community
     welcome: >
-      في بكتوس، نؤمن بشدة أن مشروع المصدر المفتوح يزدهر بطاقة والتزام أعضائه.
-      هذا هو السبب في دعوتنا لك للانضمام إلينا في مهمتنا لبناء شيء مميز حقًا.
-      مع دعمك وتعاونك، يمكننا جعل بكتوس أكثر قوة من أي وقت مضى.
-      <br>
-      لذلك، دعنا نجتمع معًا ونحدث الفرق!
+      Welcome to the Pactus community page.
+      By joining the pactus community, you become a part of a global network of innovators, thinkers,
+      and doers who are all united by a shared vision of building a better future with blockchain technology.
+      Whether you're a developer, entrepreneur, investor, or simply a blockchain enthusiast, there's a place for you
+      here at Pactus.
     discord: "بكتوس على ديسكورد"
     telegram: "بكتوس على تيليجرام"
     twitter: "بكتوس على تويتر"
@@ -52,7 +53,7 @@ dict:
     sec_2_desc: >
       Pactus aims to create a user-friendly blockchain that can be easily used by anyone, not just tech experts.
       Our protocol is designed to be simple, easy to maintain, and develop.
-      We offer a GUI application that makes it easy for users to run a node.
+      Pactus offers a simple GUI application that makes it easy for users to run a node.
     sec_3_title: Pactus uses a percentage-based fee model
     sec_3_desc: >
       Transaction fees are calculated based on a percentage model with a minimum and maximum fee.
@@ -96,14 +97,15 @@ dict:
        مما يزيد من مستوى الأمان والتحكم الخاص بك في تفاعلاتك مع شبكة بكتوس.
     develop: تطوير
     develop_desc: >
-      برنامج بكتوس مفتوح المصدر ونرحب ونشجع المساهمات من المطورين.
-      من خلال المساهمة في المشروع، يمكنك المساعدة في تحسين منصة بكتوس وإنشاء ميزات جديدة
-      تفيد المجتمع بأكمله.
+      Pactus is an open-source project that welcomes and encourages contributions from developers.
+      By contributing to the project, you can help improve the Pactus platform and create new features that
+      benefit the entire community.
       <br><br>
-      لدينا مجموعة متنوعة من المجالات التي نحتاج فيها إلى العمل التطويري، مثل تحسين أداء سلسلة الكتل بكتوس ،
-      إضافة ميزات جديدة إلى بكتوس، أو بناء أدوات جديدة للاستخدام من قبل المطورين.
-      يمكنك التحقق من صفحة المساهمة الخاصة بنا [المساهمة](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md)
-      لمزيد من المعلومات حول كيفية المشاركة والمساهمة في المشروع.
+      <br><br>
+      There is a variety of areas where development work is needed, such as improving the performance of the Pactus blockchain,
+      adding new features to the Pactus, or building new tools for developers to use.
+      You can check our [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) page
+      for more information on how to get involved and contribute to the project.
     spread_the_word: نشر الكلمة
     spread_the_word_desc: >
       طريقة أخرى لدعم مشروع بكتوس هي نشر الكلمة للآخرين في مجتمعك.
@@ -112,9 +114,10 @@ dict:
       <br><br>
       كل جهد صغير يساعد!
     appreciate: >
-      نحن نقدر أي مساهمة في مشروع بكتوس، ونحن متحمسون للعمل مع مجتمعنا لإنشاء شبكة آمنة ولامركزية.
+      We appreciate any and all contributions to the Pactus project, and we're excited to work with our community to
+      create a secure and decentralized network.
       <br><br>
-      معًا، يمكننا بناء مستقبل أفضل لتكنولوجيا سلسلة الكتل.
+      Together, Let's build a better future for blockchain technology.
 
   roadmap:
     title: خارطة الطريق
@@ -225,3 +228,32 @@ dict:
       حيث تكون الرسوم متناسبة مع المبلغ المحول.
       كما يتيح أيضًا مرونة أكبر في ضبط هيكل الرسوم لتتماشى أكثر مع احتياجات البلوكشين ومستخدميه،
       حيث يمكن تغيير المعلمات المتعلقة بالنسبة المئوية والرسم الأدنى والرسم الأقصى من خلال آلية توافق يتم الاتفاق عليها بين جميع المحققين.
+    why_develop_pactus: Why was  Pactus developed?
+    why_develop_pactus_answer_v1: >
+      Pactus was developed to address the limitations of existing blockchain networks and provide
+      secure, accessible and decentralized platform for users.
+      We saw a need for a blockchain protocol that could scale efficiently, while remaining secure and accessible to all users,
+      regardless of their technical expertise or financial resources.
+      Pactus was designed to address these issues by using a unique consensus mechanism that solves the
+      scalability problem of validators in Proof of Stake blockchains, and by providing a more accessible platform for running validators.
+      <br><br>
+      Our commitment to decentralization and fairness is reflected in our decision to start the Pactus blockchain from zero and
+      ensure that all coins are minted through the consensus mechanism, rather than through an ICO or privileged accounts.
+    what_pactus_solved: What problems does Pactus solve that other blockchains don't?
+    what_pactus_solved_answer_v1: >
+      Pactus has been designed to solve several problems faced by other blockchain networks,
+      including scalability, accessibility, fairness in distribution and storage cost.
+      <br><br>
+      <b>Scalability:</b>
+      Pactus has a unique consensus mechanism that is specifically designed to solve the scalability issue
+      faced by other Proof of Stake blockchains wihout sacrifising the decentralization.
+      <br><br>
+      <b>Accessibility:</b>
+      Running a validator on Pactus is designed to be more accessible to normal users compared to other Proof of Stake blockchains.
+      <br><br>
+      <b>Fairness in distribution:</b>
+      Pactus has a fair distribution model that ensures there is no centralization of wealth.
+      <br><br>
+      <b>Storage cost:</b>
+      Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
+      reducing storage costs and improving efficiency.

@@ -10,6 +10,12 @@ faq:
       - id: without_ico
         ver: v1
 
+      - id: why_develop_pactus
+        ver: v1
+
+      - id: what_pactus_solved
+        ver: v1
+
       - id: pactus_vs_bitcoin
         ver: v1
 
