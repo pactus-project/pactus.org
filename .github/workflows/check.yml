@@ -2,26 +2,32 @@ name: Check
 on: [push, pull_request]
 
 jobs:
-  mdl:
-    name: Markdown linter
+  yaml:
+    name: Lining Yaml files
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
         uses: actions/checkout@v3
-        with:
-          lfs: true
-          submodules: true
+
+      - name: Linting Yaml files
+        run: |
+          yarn run lint:yml:setup
+          yarn run lint:yml
+
+  markdown:
+    name: Lining Markdown files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
 
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
-        with:
-          ruby-version: 3.0
 
-      - name: Install mdl
+      - name: Linting MD files
         run: |
-          gem install mdl -v 0.12.0
-
-      - run: mdl --style=.mdlrc.rb ./website
+          yarn run lint:md:setup
+          yarn run lint:md
 
   html-proofer:
     name: Check for broken links
@@ -29,14 +35,9 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v3
-        with:
-          lfs: true
-          submodules: true
 
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
-        with:
-          ruby-version: 3.0
 
       - name: Build the website
         run: |
