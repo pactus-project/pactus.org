@@ -237,29 +237,26 @@ dict:
       as the percentage, minimum fee, and maximum fee parameters can be changed through a consensus mechanism agreed upon by all validators.
     why_develop_pactus: Why was  Pactus developed?
     why_develop_pactus_answer_v1: >
-      Pactus was developed to address the limitations of existing blockchain networks and provide
-      secure, accessible and decentralized platform for users.
-      We saw a need for a blockchain protocol that could scale efficiently, while remaining secure and accessible to all users,
-      regardless of their technical expertise or financial resources.
-      Pactus was designed to address these issues by using a unique consensus mechanism that solves the
-      scalability problem of validators in Proof of Stake blockchains, and by providing a more accessible platform for running validators.
+      Pactus was developed with the goal of scaling blockchain without compromising security and decentralization.
+      To achieve this, Pactus utilizes a unique consensus mechanism that enables the creation of blocks in just 10 seconds.
+      Moreover, Pactus was designed to be more accessible to all users, regardless of their technical expertise or financial resources.
       <br><br>
       Our commitment to decentralization and fairness is reflected in our decision to start the Pactus blockchain from zero and
       ensure that all coins are minted through the consensus mechanism, rather than through an ICO or privileged accounts.
     what_pactus_solved: What problems does Pactus solve that other blockchains don't?
     what_pactus_solved_answer_v1: >
-      Pactus has been designed to solve several problems faced by other blockchain networks,
+      Pactus tries to solve several problems faced by other blockchain networks,
       including scalability, accessibility, fairness in distribution and storage cost.
       <br><br>
       <b>Scalability:</b>
-      Pactus has a unique consensus mechanism that is specifically designed to solve the scalability issue
-      faced by other Proof of Stake blockchains wihout sacrifising the decentralization.
+      Pactus has a unique consensus mechanism that is specifically designed to address the scalability issue
+      without sacrificing the security and decentralization.
       <br><br>
       <b>Accessibility:</b>
-      Running a validator on Pactus is designed to be more accessible to normal users compared to other Proof of Stake blockchains.
+      Running a validator on Pactus is designed to be more accessible to normal users compared to other blockchains.
       <br><br>
       <b>Fairness in distribution:</b>
-      Pactus has a fair distribution model that ensures there is no centralization of wealth.
+      Pactus has a fair and transparent coin distribution model, aiming to prevent the concentration of wealth.
       <br><br>
       <b>Storage cost:</b>
       Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
