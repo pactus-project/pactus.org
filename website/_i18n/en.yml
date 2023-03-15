@@ -6,6 +6,7 @@ dict:
   language: Language
   improve_translation: Improve the translation
   edit_this_page: Edit this page
+  resources: Resources
 
   home:
     motto: A truly decentralized Proof of Stake blockchain with enhanced scalability and speed to execute smart contracts and transactions.
@@ -261,3 +262,9 @@ dict:
       <b>Storage cost:</b>
       Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
       reducing storage costs and improving efficiency.
+
+  guide:
+    title: User guides
+    welcome: ""
+    back: « Back to the list
+    run_validator: How to run a validator

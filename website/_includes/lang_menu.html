@@ -1,5 +1,5 @@
-<div class="navbar-nav mt-md-0">
-  <div class="nav-item dropdown border-top border-md-top-0 ps-4">
+<div class="navbar-nav">
+  <div class="nav-item dropdown ps-4 pe-2">
     <a
       class="nav-link dropdown-toggle"
       href="#"
@@ -14,15 +14,15 @@
         height="24" />
       {{ site.data.languages[site.lang] }}
     </a>
-    <ul class="dropdown-menu dropdown-menu">
+    <ul class="dropdown-menu bg-light border-0 pe-0">
       {% for lang in site.data.languages %} {% if lang[0] == site.lang %}{% continue %}{% endif %}
       {% if lang[0] == 'en' %}
-      <li>
-        <a class="dropdown-item" href="{{ site.baseurl_root }}{{ page.url}}">{{ lang[1] }}</a>
+      <li class="nav-item ps-4">
+        <a class="nav-link" href="{{ site.baseurl_root }}{{ page.url}}">{{ lang[1] }}</a>
       </li>
       {% else %}
-      <li>
-        <a class="dropdown-item" href="{{ site.baseurl_root }}/{{ lang[0] }}{{ page.url}}">
+      <li class="nav-item ps-4">
+        <a class="nav-link" href="{{ site.baseurl_root }}/{{ lang[0] }}{{ page.url}}">
           {{ lang[1] }}
         </a>
       </li>

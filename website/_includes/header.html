@@ -1,5 +1,5 @@
 <div class="container-md px-0">
-  <nav class="topnav navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand logo p-3" href="{{ site.baseurl }}/">
         <img src="{{ site.url }}/assets/images/logos/text_logo.png" alt="Pactus blockchain" />
@@ -15,58 +15,76 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav me-lg-auto">
-          <li class="nav-item dropdown border-top border-md-top-0 ps-4">
+        <ul class="topnav navbar-nav" style="margin-right: auto !important">
+          <li class="nav-item dropdown ps-4">
             <a
               class="nav-link dropdown-toggle"
               href="#"
               role="button"
+              id="certdropdown"
               data-bs-toggle="dropdown"
               aria-expanded="false">
               {% t dict.get_started %}
             </a>
-            <ul class="dropdown-menu bg-light border-0 mx-0 pe-0">
-              <li class="border-top">
+            <ul class="dropdown-menu bg-light border-0">
+              <li class="ps-4">
                 <a
                   class="nav-link dropdown-item"
                   href="{{ site.baseurl }}/get-started/what-is-pactus/">
                   {% t dict.what_is.title %}
                 </a>
               </li>
-              <li class="border-top">
+              <li class="ps-4">
                 <a
                   class="nav-link dropdown-item"
                   href="{{ site.baseurl }}/get-started/contributing/">
                   {% t dict.contributing.title %}
                 </a>
               </li>
-              <li class="border-top">
+              <li class="ps-4">
                 <a class="nav-link dropdown-item" href="{{ site.baseurl }}/get-started/roadmap/">
                   {% t dict.roadmap.title %}
                 </a>
               </li>
-              <li class="border-top">
+              <li class="ps-4">
                 <a class="nav-link dropdown-item" href="{{ site.baseurl }}/get-started/faq/">
                   {% t dict.faq.title %}
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item border-top border-md-top-0 ps-4">
+          <li class="nav-item ps-4">
             <a class="nav-link" aria-current="page" href="{{ site.baseurl }}/learn/">
               {% t dict.learn.title %}
             </a>
           </li>
-          <li class="nav-item border-top border-md-top-0 ps-4">
+          <li class="nav-item ps-4">
             <a class="nav-link" href="{{ site.baseurl }}/download/">{% t dict.download.title %}</a>
           </li>
-          <li class="nav-item border-top border-md-top-0 ps-4">
-            <a class="nav-link" href="{{ site.baseurl }}/blog/">{% t dict.blog.title %}</a>
-          </li>
-          <li class="nav-item border-top border-md-top-0 ps-4">
-            <a class="nav-link" href="{{ site.baseurl }}/community/">
-              {% t dict.community.title %}
+          <li class="nav-item dropdown ps-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              {% t dict.resources %}
             </a>
+            <ul class="dropdown-menu bg-light border-0 pe-0">
+              <li class="nav-item ps-4">
+                <a class="nav-link" href="{{ site.baseurl }}/blog/">{% t dict.blog.title %}</a>
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link" href="{{ site.baseurl }}/community/">
+                  {% t dict.community.title %}
+                </a>
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link" href="{{ site.baseurl }}/user-guides/">
+                  {% t dict.guide.title %}
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
         {% include lang_menu.html %}

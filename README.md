@@ -37,7 +37,7 @@ First you need Install [yarn](https://yarnpkg.com/).
 
 - Linting Markdown files:
   ```
-  yarn run lint:mdl
+  yarn run lint:md
   ```
 
 - Linting Yaml files:

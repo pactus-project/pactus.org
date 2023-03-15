@@ -8,7 +8,7 @@ permalink: /learn/index.html
 
 {% t dict.learn.welcome %}
 
-<ul  class="list-unstyled" dir="ltr">
+<ul class="list-unstyled" dir="ltr">
 {% for folder in site.data.learn_docs %}
   <li>{{ folder.title }}
     <ul class="">

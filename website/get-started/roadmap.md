@@ -12,7 +12,7 @@ permalink: /get-started/roadmap/index.html
   <div class="h5 col-lg-4">⏳ {% t dict.roadmap.upcoming_task %}</div>
 </div>
 
-<section>
+<section dir="ltr">
   <div class="py-5">
     <div class="timeline">
       <div class="timeline-card upcoming right">

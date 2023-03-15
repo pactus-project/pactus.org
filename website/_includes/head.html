@@ -22,6 +22,10 @@ endcapture %}
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logos/32_circle.png" />
 
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  {% if site.lang == "ar" || site.lang == "fa" %}
+  <link href="/assets/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  {% endif %}
+
   <link href="/assets/css/native.css" rel="stylesheet" />
   <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
   <link href="/assets/css/custom.css" rel="stylesheet" />

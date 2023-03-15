@@ -6,6 +6,7 @@ dict:
   language: "اللغة"
   improve_translation: "تحسين الترجمة"
   edit_this_page: "تحرير هذه الصفحة"
+  resources: Resources
 
   home:
     motto: بلوكشين Proof of Stake لامركزي حقًا مع توفير توسع وسرعة أعلى لتنفيذ العقود الذكية والمعاملات.
@@ -257,3 +258,9 @@ dict:
       <b>Storage cost:</b>
       Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
       reducing storage costs and improving efficiency.
+
+  guide:
+    title: User guides
+    welcome: ""
+    back: « Back to the list
+    run_validator: How to run a validator
