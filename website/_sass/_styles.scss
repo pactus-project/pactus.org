@@ -4,7 +4,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: $font-color;
-  background-color: $background-color;
+  background-color: $bg-color;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -51,8 +51,8 @@ h1 {
 }
 
 .btn-fixed {
-  background-color: $primary-color !important;
-  color: $background-color;
+  color: $primary-color;
+  border: $primary-color 2px solid;
   width: 220px;
   height: 46px;
   text-transform: uppercase;
@@ -63,21 +63,24 @@ h1 {
   padding: 0;
   margin: 16px;
 
+  &.solid {
+    background-color: $primary-color !important;
+    color: $bg-color !important;
+  }
+
   &:hover {
-    background-color: $secondary-color !important;
-    color: $background-color !important;
+    background-color: $primary-color !important;
+    color: $bg-color !important;
   }
 }
 
 .footer {
-  background-color: #777777;
-
   .text-muted {
-    color: $background-color !important;
+    color: $bg-color !important;
     font-size: 12px;
 
     a {
-      color: $background-color !important;
+      color: $bg-color !important;
       text-decoration: none;
     }
   }
@@ -95,7 +98,7 @@ h1 {
 
 .highlighter-rouge .highlight pre {
   padding: 32px 12px 12px 12px;
-  color: $background-color;
+  color: $bg-color;
   position: relative;
   overflow: auto;
 
@@ -129,12 +132,12 @@ h1 {
 
     &:not(.active):hover {
       background-color: #808080 !important;
-      color: $background-color !important;
+      color: $bg-color !important;
     }
   }
 
   .active {
-    color: $background-color !important;
+    color: $bg-color !important;
     background-color: #404040 !important;
   }
 }
@@ -172,7 +175,7 @@ blockquote {
 
 .footer {
   background-color: $primary-color !important;
-  color: $background-color !important;
+  color: $bg-color !important;
 
   .section {
     font-size: 1.75rem;

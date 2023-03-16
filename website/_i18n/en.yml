@@ -7,7 +7,8 @@ dict:
   improve_translation: Improve the translation
   edit_this_page: Edit this page
   resources: Resources
-  about_pactus: About Pactus
+  know_more: Know more
+  join_community: Join community
 
   home:
     motto: A truly decentralized Proof of Stake blockchain with enhanced scalability and speed to execute smart contracts and transactions.
@@ -157,7 +158,9 @@ dict:
     validator: Validator
     economy: Economy
     fee: Fee
-    welcome: This FAQ (Frequently Asked Questions) page aims to provide helpful information and guidance on common questions and concerns related to Pactus.
+    welcome: >
+      This FAQ (Frequently Asked Questions) page aims to provide helpful information and guidance on
+      common questions and concerns related to Pactus.
     pactus_meaning: What does "Pactus" mean?
     pactus_meaning_answer_v1: >
       The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact".
