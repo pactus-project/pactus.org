@@ -36,12 +36,40 @@ faq:
       - id: validators_rewarded
         ver: v1
 
+      - id: flat_reward
+        ver: v1
+
+  - title: consensus
+    items:
+      - id: how_pactus_words
+        ver: v1
+
+      - id: how_enter_committee
+        ver: v1
+
   - title: economy
     items:
       - id: total_supply
         ver: v1
 
       - id: treasury_account
+        ver: v1
+
+  - title: transaction
+    items:
+      - id: send_transaction
+        ver: v1
+
+      - id: bond_transaction
+        ver: v1
+
+      - id: sortition_transaction
+        ver: v1
+
+      - id: unbond_transaction
+        ver: v1
+
+      - id: withdraw_transaction
         ver: v1
 
   - title: fee

@@ -7,7 +7,7 @@ dict:
   improve_translation: Improve the translation
   edit_this_page: Edit this page
   resources: Resources
-  know_more: Know more
+  learn_more: Learn more
   join_community: Join community
 
   home:
@@ -156,6 +156,8 @@ dict:
     general: General
     validator: Validator
     economy: Economy
+    consensus: Consensus
+    transaction: Transaction
     fee: Fee
     welcome: >
       This FAQ (Frequently Asked Questions) page aims to provide helpful information and guidance on
@@ -168,9 +170,8 @@ dict:
     pactus_vs_bitcoin_answer_v1: >
       Pactus and Bitcoin are two different types of blockchain networks.
       While Bitcoin uses a process called "Proof of Work" to secure its network, Pactus uses a different method called "Proof of Stake".
-      This means that instead of mining, validators are responsible for voting on incoming blocks. Once a validator proposes
-      a valid block and it is accepted by other validators, the validator receives one coin as a block reward.
-      This helps keep the Pactus blockchain secure and decentralized.
+      This means that instead of mining, validators are responsible for voting on incoming blocks and
+      must hold a certain amount of the network's token, known as "stake", as a security deposit to prevent malicious behavior.
     pactus_vs_ethereum: How is Pactus different from Ethereum?
     pactus_vs_ethereum_answer_v1: >
       Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
@@ -180,20 +181,23 @@ dict:
       This approach reflects our commitment to promoting decentralization and making blockchain technology accessible to a wider audience.
     validators: What are validators?
     validators_answer_v1: >
-      Validators on Pactus are responsible to processing transactions and creating blocks and, by doing so, helping secure the network.
+      Validators on Pactus are responsible for processing transactions and creating blocks and, by doing so,
+      helping to secure the network and keep it decentralized.
       They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
     validators_rewarded: How do validators get rewarded?
     validators_rewarded_answer_v1: >
-      Every 10 seconds, one validator is chosen to collect transactions and create a block.
-      The first transaction in the proposed block is called the "reward" transaction.
-      This transaction includes one coin as a block reward and transaction fees.
-      If most of the committee members approve the proposed block, the block is accepted and the validator receives the reward.
-      The reward helps incentivize validators to secure the network and keep it running smoothly.
+      Once a validator proposes a valid block and it is accepted by the network, the validator receives one coin as a block reward.
+      The reward is an incentive given to validators for their contribution to the security and integrity of the network,
+      helping to keep it running smoothly.
+    flat_reward: How much is the block reward in Pactus?
+    flat_reward_answer_v1: >
+      Block reward in Pactus is fixed, and it is always one coin per block.
+      This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
     unlimited_validators: How many validators does pactus have?
     unlimited_validators_answer_v1: >
       Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network.
-      However, there is a fixed committee of 21 validators responsible for creating blocks.
-      These committee members are randomly chosen from the pool of validators in the network.
+      However, a committee of 21 validators is responsible for creating blocks.
+      It's important to note that the committee members are not fixed and they change over time.
     min_and_max_stake: What are the minimum and maximum amounts I can stake?
     min_and_max_stake_answer_v1: >
       In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 12381 coins.
@@ -202,7 +206,8 @@ dict:
     total_supply: What is the total supply of Pactus coins?
     total_supply_answer_v1: >
       Pactus has a total supply of 21 million coins, and each coin is divided into 1 billion units.
-      A new coin is generated every 10 seconds, and after 6 and a half years, all 21 million coins will be generated.
+      Every 10 seconds, a new coin is generated, resulting in 8,640 new coins per day and about 3 million per year.
+      All coins will be generated within 7 years.
     unique_blockchain: Is Pactus a copy of any other blockchain?
     unique_blockchain_answer_v1: >
       No, Pactus is not a copy or a derivative of any other blockchain.
@@ -214,7 +219,6 @@ dict:
       The Treasury account is a special account in Pactus blockchain that holds the total supply of coins, which is 21 million coins.
       It is created at the genesis time and has no key pair associated with it, meaning it cannot be accessed or controlled by anyone.
       Every time a block is created, one coin from the Treasury account moves to the proposer account as a block reward.
-      This helps to incentivize validators to secure the network and keep it running smoothly.
     without_ico: Does Pactus have an ICO?
     without_ico_answer_v1: >
       No, Pactus does not have an ICO (Initial Coin Offering) and there are no predefined or privileged accounts in pactus.
@@ -264,7 +268,39 @@ dict:
       <br><br>
       <b>Storage cost:</b>
       Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
-      reducing storage costs and improving efficiency.
+      reducing storage costs and simplifying the smart contracts.
+    how_pactus_words: How does Pactus blockchain work?
+    how_pactus_words_answer_v1: >
+      Pactus operates with a committee of validators who are responsible for creating new blocks.
+      The committee consists of 21 validators, however, the members of the committee change randomly over time.
+      Every 10 seconds, a validator in the committee known as the proposer collects all the valid transactions, adds them into a block,
+      and shares it with other validators in the committee.
+      If the majority of the stakeholders in the committee attest to the proposed block by signing it, the block gets committed.
+      This process repeats every 10 seconds.
+    how_enter_committee: How can a validator enter to the committee?
+    how_enter_committee_answer_v1: >
+      To enter the committee in Pactus, validators can participate in a lottery or sortition process that occurs at each block.
+      In this process, validators generate a provable random number between zero to total stake, and if the number is less than their stake,
+      they can send a transaction known as sortition transaction with the proof of sortition.
+      Once the sortition transaction is included in a block and added to the blockchain, the validator becomes a committee member,
+      and the oldest committee member leaves.
+    send_transaction: What is a Send transaction?
+    send_transaction_answer_v1: >
+      A send transaction is a type of transaction that allows users to transfer pactus coin from one address to another.
+    bond_transaction: What is a Bond transaction?
+    bond_transaction_answer_v1: >
+      A bond transaction is a type of transaction that allows you to become a validator by staking some coins.
+      When you send a bond transaction, your node will become a validator and you will be weighted by the amount of stake you have.
+    sortition_transaction: What is a Sortition transaction?
+    sortition_transaction_answer_v1: >
+      A sortition transaction is a type of transaction that allows validators to enter the committee.
+    unbond_transaction: What is an Unbond transaction?
+    unbond_transaction_answer_v1: >
+      An unbond transaction is a type of transaction that allows you to unbond your validator.
+      When you send an unbond transaction, you will no longer be able to send the sortition or bond transactions.
+    withdraw_transaction: What is a Withdraw transaction?
+    withdraw_transaction_answer_v1: >
+      A withdraw transaction is a type of transaction that allows a validator to withdraw their staked tokens from the network.
 
   guide:
     title: User guides
