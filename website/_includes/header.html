@@ -21,45 +21,46 @@
               class="nav-link dropdown-toggle"
               href="#"
               role="button"
-              id="certdropdown"
               data-bs-toggle="dropdown"
               aria-expanded="false">
               {% t dict.get_started %}
             </a>
-            <ul class="dropdown-menu bg-light border-0">
-              <li class="ps-4">
+            <ul class="dropdown-menu bg-light border-0 pe-0 fixed-menu">
+              <li>
                 <a
-                  class="nav-link dropdown-item"
+                  class="nav-link dropdown-item ps-4"
                   href="{{ site.baseurl }}/get-started/what-is-pactus/">
                   {% t dict.what_is.title %}
                 </a>
               </li>
-              <li class="ps-4">
+              <li>
                 <a
-                  class="nav-link dropdown-item"
+                  class="nav-link dropdown-item ps-4"
                   href="{{ site.baseurl }}/get-started/contributing/">
                   {% t dict.contributing.title %}
                 </a>
               </li>
-              <li class="ps-4">
-                <a class="nav-link dropdown-item" href="{{ site.baseurl }}/get-started/roadmap/">
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-4"
+                  href="{{ site.baseurl }}/get-started/roadmap/">
                   {% t dict.roadmap.title %}
                 </a>
               </li>
-              <li class="ps-4">
-                <a class="nav-link dropdown-item" href="{{ site.baseurl }}/get-started/faq/">
+              <li>
+                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/get-started/faq/">
                   {% t dict.faq.title %}
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item ps-4">
-            <a class="nav-link" aria-current="page" href="{{ site.baseurl }}/learn/">
-              {% t dict.learn.title %}
-            </a>
+            <a class="nav-link" href="{{ site.baseurl }}/download/">{% t dict.download.title %}</a>
           </li>
           <li class="nav-item ps-4">
-            <a class="nav-link" href="{{ site.baseurl }}/download/">{% t dict.download.title %}</a>
+            <a class="nav-link" href="{{ site.baseurl }}/community/">
+              {% t dict.community.title %}
+            </a>
           </li>
           <li class="nav-item dropdown ps-4">
             <a
@@ -70,17 +71,19 @@
               aria-expanded="false">
               {% t dict.resources %}
             </a>
-            <ul class="dropdown-menu bg-light border-0 pe-0">
-              <li class="nav-item ps-4">
-                <a class="nav-link" href="{{ site.baseurl }}/blog/">{% t dict.blog.title %}</a>
-              </li>
-              <li class="nav-item ps-4">
-                <a class="nav-link" href="{{ site.baseurl }}/community/">
-                  {% t dict.community.title %}
+            <ul class="dropdown-menu bg-light border-0 pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/blog/">
+                  {% t dict.blog.title %}
                 </a>
               </li>
-              <li class="nav-item ps-4">
-                <a class="nav-link" href="{{ site.baseurl }}/user-guides/">
+              <li>
+                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/reference/">
+                  {% t dict.reference.title %}
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/user-guides/">
                   {% t dict.guide.title %}
                 </a>
               </li>

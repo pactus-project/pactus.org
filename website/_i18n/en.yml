@@ -74,9 +74,8 @@ dict:
     title: Blog
     all_posts: All posts
 
-  learn:
-    title: Learn
-    reference: Reference
+  reference:
+    title: Reference
     welcome: >
       Welcome to the reference page, where you can find all the technical details and documentation you need.
       Whether you are a developer or a user seeking more information about Pactus, this page provides comprehensive and

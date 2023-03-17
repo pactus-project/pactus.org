@@ -69,9 +69,8 @@ dict:
     title: 博客
     all_posts: 所有文章
 
-  learn:
-    title: 学习
-    reference: 参考
+  reference:
+    title: 参考
     welcome: >
       欢迎来到参考页面，您可以在此找到所需的所有技术细节和文档。
       无论您是开发人员还是寻找关于 Pactus 的更多信息的用户，此页面提供了全面且最新的信息，可以帮助您入门。

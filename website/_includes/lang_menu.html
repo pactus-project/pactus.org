@@ -17,12 +17,16 @@
     <ul class="dropdown-menu bg-light border-0 pe-0">
       {% for lang in site.data.languages %} {% if lang[0] == site.lang %}{% continue %}{% endif %}
       {% if lang[0] == 'en' %}
-      <li class="nav-item ps-4">
-        <a class="nav-link" href="{{ site.baseurl_root }}{{ page.url}}">{{ lang[1] }}</a>
+      <li>
+        <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl_root }}{{ page.url}}">
+          {{ lang[1] }}
+        </a>
       </li>
       {% else %}
-      <li class="nav-item ps-4">
-        <a class="nav-link" href="{{ site.baseurl_root }}/{{ lang[0] }}{{ page.url}}">
+      <li>
+        <a
+          class="nav-link dropdown-item ps-4"
+          href="{{ site.baseurl_root }}/{{ lang[0] }}{{ page.url}}">
           {{ lang[1] }}
         </a>
       </li>

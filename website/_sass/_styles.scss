@@ -9,18 +9,17 @@ body {
   margin: 0 auto;
 }
 
-.nav-top {
-  height: 86px;
-}
+.navbar {
+  .nav-top {
+    height: 86px;
+  }
 
-.logo img {
-  width: 200px;
-}
+  .fixed-menu {
+    width: 220px;
+  }
 
-/* border for menu */
-@media (min-width: 992px) {
-  .border-md-top-0 {
-    border-top: 0 !important;
+  .logo img {
+    width: 200px;
   }
 }
 
@@ -44,15 +43,9 @@ h1 {
   font-weight: 600;
 }
 
-.topnav {
-  .nav-link {
-    font-weight: 500;
-  }
-}
-
 .btn-fixed {
-  color: $primary-color;
-  border: $primary-color 2px solid;
+  border-width: 2px;
+  border-style: solid;
   width: 220px;
   height: 46px;
   text-transform: uppercase;
@@ -63,14 +56,36 @@ h1 {
   padding: 0;
   margin: 16px;
 
-  &.solid {
-    background-color: $primary-color !important;
-    color: $bg-color !important;
+  &.btn-more {
+    color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $bg-color !important;
+    }
   }
 
-  &:hover {
-    background-color: $primary-color !important;
+  &.btn-learn {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    color: $bg-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $bg-color !important;
+    }
+  }
+
+  &.btn-community {
+    border-color: $community-color;
+    background-color: $community-color;
     color: $bg-color !important;
+
+    &:hover {
+      background-color: $community-color;
+      color: $bg-color !important;
+    }
   }
 }
 
