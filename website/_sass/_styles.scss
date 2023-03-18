@@ -225,3 +225,12 @@ blockquote {
     margin: 4px;
   }
 }
+
+#btn-back-to-top {
+  background-color: $primary-color;
+  color: $bg-color;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}

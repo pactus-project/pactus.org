@@ -218,7 +218,7 @@ dict:
     treasury_account_answer_v1: >
       The Treasury account is a special account in Pactus blockchain that holds the total supply of coins, which is 21 million coins.
       It is created at the genesis time and has no key pair associated with it, meaning it cannot be accessed or controlled by anyone.
-      Every time a block is created, one coin from the Treasury account moves to the proposer account as a block reward.
+      Every time a block is created, one coin from the Treasury account transfers to the proposer account as a block reward.
     without_ico: Does Pactus have an ICO?
     without_ico_answer_v1: >
       No, Pactus does not have an ICO (Initial Coin Offering) and there are no predefined or privileged accounts in pactus.
@@ -275,7 +275,8 @@ dict:
       The committee consists of 21 validators, however, the members of the committee change randomly over time.
       Every 10 seconds, a validator in the committee known as the proposer collects all the valid transactions, adds them into a block,
       and shares it with other validators in the committee.
-      If the majority of the stakeholders in the committee attest to the proposed block by signing it, the block gets committed.
+      If more than ⅔ of the stakeholders in the committee attest to the proposed block by signing it, the block gets committed and
+      all the transactions inside the block will be executed.
       This process repeats every 10 seconds.
     how_enter_committee: How can a validator enter to the committee?
     how_enter_committee_answer_v1: >
@@ -284,9 +285,21 @@ dict:
       they can send a transaction known as sortition transaction with the proof of sortition.
       Once the sortition transaction is included in a block and added to the blockchain, the validator becomes a committee member,
       and the oldest committee member leaves.
+    fork_possibility: Is it possible to have two valid blocks at the same time in Pactus blockchain?
+    fork_possibility_answer_v1: >
+      It is not possible to have two valid blocks at the same time in Pactus blockchain.
+      The consensus algorithm in Pactus prevents the possibility of having two block proposers at the same time.
+      This ensures that there will be no fork in the network.
+    multiple_committee_entry: Can multiple validators enter the committee at once?
+    multiple_committee_entry_answer_v1: >
+      The process of sortition in Pactus is random, so it's possible for more than one validator to enter the committee at once,
+      or no validator at all. However, in order for a sortition transaction to be considered valid and included in a block,
+      it must meet two conditions:
+      it can't change more than ⅓ of the committee's stake, and
+      it can't remove a validator that hasn't had the chance to propose a block yet.
     send_transaction: What is a Send transaction?
     send_transaction_answer_v1: >
-      A send transaction is a type of transaction that allows users to transfer pactus coin from one address to another.
+      A send transaction is a type of transaction that allows users to transfer Pactus coin from one address to another.
     bond_transaction: What is a Bond transaction?
     bond_transaction_answer_v1: >
       A bond transaction is a type of transaction that allows you to become a validator by staking some coins.

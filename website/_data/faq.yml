@@ -47,6 +47,12 @@ faq:
       - id: how_enter_committee
         ver: v1
 
+      - id: multiple_committee_entry
+        ver: v1
+
+      - id: fork_possibility
+        ver: v1
+
   - title: economy
     items:
       - id: total_supply
