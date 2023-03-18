@@ -214,7 +214,7 @@ dict:
       It is a new and unique blockchain protocol that has been designed from scratch.
       The consensus mechanism used in Pactus is unique and specifically created to solve the scalability issue of
       validators in the Proof of Stake blockchains.
-    treasury_account: What is the Treasury account in Pactus blockchain?
+    treasury_account: What is the Treasury account?
     treasury_account_answer_v1: >
       The Treasury account is a special account in Pactus blockchain that holds the total supply of coins, which is 21 million coins.
       It is created at the genesis time and has no key pair associated with it, meaning it cannot be accessed or controlled by anyone.
@@ -285,7 +285,7 @@ dict:
       they can send a transaction known as sortition transaction with the proof of sortition.
       Once the sortition transaction is included in a block and added to the blockchain, the validator becomes a committee member,
       and the oldest committee member leaves.
-    fork_possibility: Is it possible to have two valid blocks at the same time in Pactus blockchain?
+    fork_possibility: Is it possible to have two valid blocks at the same time?
     fork_possibility_answer_v1: >
       It is not possible to have two valid blocks at the same time in Pactus blockchain.
       The consensus algorithm in Pactus prevents the possibility of having two block proposers at the same time.
@@ -297,6 +297,10 @@ dict:
       it must meet two conditions:
       it can't change more than ⅓ of the committee's stake, and
       it can't remove a validator that hasn't had the chance to propose a block yet.
+    proposer_selection: How are block proposers selected in the committee?
+    proposer_selection_answer_v1: >
+      The block proposer inside the committee is selected based on the time they entered the committee.
+      This means that the selection process follows a first-come, first-propose order.
     send_transaction: What is a Send transaction?
     send_transaction_answer_v1: >
       A send transaction is a type of transaction that allows users to transfer Pactus coin from one address to another.
