@@ -8,9 +8,9 @@ permalink: /get-started/faq/index.html
 
 Keep FAQ:
 
-+ Simple and easy to understand
-+ Short
-+ Unbiased
+- Simple and easy to understand
+- Short
+- Unbiased
 
 {% endcomment %}
 

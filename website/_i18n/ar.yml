@@ -1,7 +1,7 @@
 dict:
   pactus: "بكتوس"
   pactus_blockchain: "بكتوس بلوكشين"
-  get_started: "البدء"
+  about: "البدء"
   toc: "جدول المحتويات"
   language: "اللغة"
   improve_translation: "تحسين الترجمة"
@@ -71,8 +71,9 @@ dict:
     title: "المدونة"
     all_posts: "كل المشاركات"
 
-  reference:
-    title: "المرجع"
+  learn:
+    title: Learn
+    reference: Reference
     welcome: >
       مرحبًا بك في صفحة المرجع، حيث يمكنك العثور على جميع التفاصيل الفنية والوثائق التي تحتاجها.
       سواء كنت مطورًا أو مستخدمًا تبحث عن مزيد من المعلومات حول بكتوس، فإن هذه الصفحة توفر معلومات شاملة وحديثة

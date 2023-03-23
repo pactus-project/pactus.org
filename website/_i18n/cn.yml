@@ -1,10 +1,10 @@
 dict:
   pactus: "Pactus"
   pactus_blockchain: "Pactus 区块链"
-  get_started: 开始使用
+  about: 开始使用
   toc: 目录
   language: 语言
-  improve_translation: 改进翻译
+  improve_translation:
   edit_this_page: 编辑本页
   resources: Resources
   about_pactus: About Pactus
@@ -69,8 +69,9 @@ dict:
     title: 博客
     all_posts: 所有文章
 
-  reference:
-    title: 参考
+  learn:
+    title: Learn
+    reference: Reference
     welcome: >
       欢迎来到参考页面，您可以在此找到所需的所有技术细节和文档。
       无论您是开发人员还是寻找关于 Pactus 的更多信息的用户，此页面提供了全面且最新的信息，可以帮助您入门。

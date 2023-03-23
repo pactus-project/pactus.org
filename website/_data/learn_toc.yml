@@ -1,0 +1,36 @@
+- title: Blockchain
+  path: learn/blockchain
+  items:
+    - doc: block.md
+    - doc: account.md
+    - doc: validator.md
+    - doc: state-merkle.md
+    - doc: genesis.md
+    - doc: incentive.md
+    - doc: cryptography.md
+    - doc: address.md
+    - doc: serialization.md
+
+- title: Consensus
+  path: learn/consensus
+  items:
+    - doc: protocol.md
+    - doc: specification.md
+    - doc: without-delegation.md
+    - doc: committee.md
+    - doc: sortition.md
+
+- title: Transactions
+  path: learn/transaction
+  items:
+    - doc: stamping.md
+    - doc: format.md
+    - doc: fee.md
+    - doc: send.md
+    - doc: bond.md
+    - doc: sortition.md
+
+- title: Smart Contract
+  path: learn/smart_contract
+  items:
+    - doc: storage.md

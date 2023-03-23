@@ -1,0 +1,31 @@
+<nav class="toc sticky-top">
+  <ul class="list-unstyled ps-0">
+    {% for folder in site.data.learn_toc %}
+    <li class="mb-1">
+      <button
+        class="btn btn-section d-inline-flex align-items-center rounded border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#{{folder.title | slugify}}-collapse"
+        aria-expanded="{% if page.url contains folder.path %}{{ 'true'}}{% else %}{{ 'false'}}{% endif %}">
+        {{ folder.title }}
+      </button>
+      <div
+        class="collapse {% if page.url contains folder.path %}{{'show'}}{% endif %}"
+        id="{{folder.title | slugify}}-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+          {% for item in folder.items %} {% assign item_path = folder.path | append: "/" | append:
+          item.doc %} {% assign item_page = site.pages |where: "path", item_path | first %}
+          <li>
+            <a
+              href="{{ site.url }}{{ item_page.permalink}}"
+              class="link-dark d-inline-flex text-decoration-none rounded {% if page.url contains item.url %} {{ 'selected'}} {% endif %}">
+              {{ item_page.title }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

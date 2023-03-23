@@ -1,13 +1,13 @@
 dict:
   pactus: "Pactus"
   pactus_blockchain: "Pactus blockchain"
-  get_started: Get started
+  about: About
   toc: Table of content
   language: Language
-  improve_translation: Improve the translation
+  improve_translation: Improve translation
   edit_this_page: Edit this page
   resources: Resources
-  learn_more: Learn more
+  know_more: Know more
   join_community: Join community
 
   home:
@@ -74,13 +74,11 @@ dict:
     title: Blog
     all_posts: All posts
 
-  reference:
-    title: Reference
+  learn:
+    title: Learn
+    reference: Reference
     welcome: >
-      Welcome to the reference page, where you can find all the technical details and documentation you need.
-      Whether you are a developer or a user seeking more information about Pactus, this page provides comprehensive and
-      up-to-date information that can assist you in getting started.
-      Please note that all of our code is available on [Github](https://github.com/pactus-project) for you to review and contribute to.
+      Here you can find the technical documentations for the Pactus project.
 
   contributing:
     title: Contributing
