@@ -2,7 +2,7 @@ title: Pactus blockchain
 email:
 source: website
 baseurl: ""
-url: "https://www.pactus.org"
+url: "https://pactus.org"
 logo: "/assets/images/logos/64_circle.png"
 
 plugins:
