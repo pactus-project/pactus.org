@@ -14,12 +14,12 @@ permalink: index.html
           preload="metadata"
           tabindex="0"
           aria-label="What is Pactus">
-          <source src="/assets/media/what_is_pactus.mp4" />
+          <source src="{{ site.url }}/assets/media/what_is_pactus.mp4" />
           <track
             label="English"
             kind="subtitles"
             srclang="en"
-            src="/assets/media/subtitles/en/what_is_pactus.vtt" />
+            src="{{ site.url }}/assets/media/subtitles/en/what_is_pactus.vtt" />
         </video>
       </div>
     </div>
@@ -30,19 +30,18 @@ permalink: index.html
       <div class="row">
         <div class="col-md-6">
           <div class="text-center pt-md-4">
-            <a
-              class="btn btn-fixed btn-faq"
-              href="{{ site.baseurl }}/about/faq/"
-              role="button">
+            <a class="btn btn-fixed btn-faq" href="{{ site.baseurl }}/about/faq" role="button">
               {% t dict.know_more %}
             </a>
+
+            <a class="btn btn-fixed btn-faq" href="{{ site.url }}/test" role="button">test</a>
           </div>
         </div>
         <div class="col-md-6">
           <div class="text-center pt-md-4">
             <a
               class="btn btn-fixed btn-community"
-              href="{{ site.baseurl }}/community/"
+              href="{{ site.baseurl }}/community"
               role="button">
               {% t dict.join_community %}
             </a>
@@ -65,13 +64,15 @@ permalink: index.html
       </div>
     </div>
     <div class="col-md-6 align-self-center">
-      <img alt="{% t dict.home.run_a_node %}" src="/assets/images/run_node.png" />
+      <img alt="{% t dict.home.run_a_node %}" src="{{ site.url }}/assets/images/run_node.png" />
     </div>
   </div>
 
   <div class="row p-4">
     <div class="col-md-6 align-self-center">
-      <img alt="{% t dict.home.get_some_coins %}" src="/assets/images/get_coins.png" />
+      <img
+        alt="{% t dict.home.get_some_coins %}"
+        src="{{ site.url }}/assets/images/get_coins.png" />
     </div>
     <div class="col-md-6">
       <h4>{% t dict.home.get_some_coins %}</h4>
@@ -89,19 +90,23 @@ permalink: index.html
       <h4>{% t dict.home.become_a_validator %}</h4>
       {% t dict.home.become_a_validator_desc %}
       <div class="text-center p-4">
-        <a class="btn btn-fixed btn-more" href="{{ site.baseurl }}/learn/" role="button">
+        <a class="btn btn-fixed btn-more" href="{{ site.baseurl }}/learn" role="button">
           {% t dict.learn.title %}
         </a>
       </div>
     </div>
     <div class="col-md-6 align-self-center">
-      <img alt="{% t dict.home.become_a_validator %}" src="/assets/images/become_validator.png" />
+      <img
+        alt="{% t dict.home.become_a_validator %}"
+        src="{{ site.url }}/assets/images/become_validator.png" />
     </div>
   </div>
 
   <div class="row p-4">
     <div class="col-md-6 align-self-center">
-      <img alt="{% t dict.home.increase_your_stake %}" src="/assets/images/increase_stake.png" />
+      <img
+        alt="{% t dict.home.increase_your_stake %}"
+        src="{{ site.url }}/assets/images/increase_stake.png" />
     </div>
     <div class="col-md-6">
       <h4>{% t dict.home.increase_your_stake %}</h4>

@@ -25,7 +25,7 @@ title: dict.download.title
 
 {% t dict.download.you_can_run_gui_v1 %}
 
-![Pactus GUI - Main Window](/assets/images/pactus_gui_main_window.png)
+![Pactus GUI - Main Window]({{ site.url }}/assets/images/pactus_gui_main_window.png)
 
 | **File name**                                                                                                                                                  | **Kind**  | **OS**  | **Arch** |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------- | -------- |
@@ -52,7 +52,7 @@ your node. After initializing the working directory, you can run the node and st
 
 Advanced user can run Pactus in Command Line Interface (CLI) mode.
 
-![Pactus GUI - Main Window](/assets/images/pactus_cli.png)
+![Pactus GUI - Main Window]({{ site.url }}/assets/images/pactus_cli.png)
 
 | **File name**                                                                                                                                    | **OS**  | **Arch** |
 | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------- | -------- |

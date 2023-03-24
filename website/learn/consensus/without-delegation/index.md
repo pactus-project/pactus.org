@@ -25,7 +25,7 @@ Some blockchains address this problem by defining "delegator".
 In Delegated Proof of Stake, people put their stakes in the hands of a group of “delegates”.
 Number of delegates are limited and they are responsible for validating the transactions and producing the blocks.
 
-![Delegated Proof of Stake](/assets/images/delegated_proof_of_stake.png)
+![Delegated Proof of Stake]({{ site.url }}/assets/images/delegated_proof_of_stake.png)
 
 ## Pactus has no delegation
 
@@ -36,4 +36,4 @@ At each block, validators start running a lottery in order to choose themselves.
 A validator can be in the committee for the next block based on his stake and his luck.
 Once a validator enters the committee, the oldest validator in the committee leaves.
 
-![Pactus Proof of Stake](/assets/images/pactus_validator_pool.png)
+![Pactus Proof of Stake]({{ site.url }}/assets/images/pactus_validator_pool.png)

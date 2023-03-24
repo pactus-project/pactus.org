@@ -12,9 +12,9 @@ the transaction. A stamped transaction, unlike normal transactions, has a lifeti
 only valid for a certain time. If $$TTL = N$$, the stamped transaction after N
 blocks will be invalid.
 
-![Stamped transaction](/assets/images/pactus_stamped_transaction.png)
+![Stamped transaction]({{ site.url }}/assets/images/pactus_stamped_transaction.png)
 
-In Pactus stamps are defined as first 4 bytes of [block hash](/learn/blockchain/block#block-hash).
+In Pactus stamps are defined as first 4 bytes of [block hash]({{ site.baseurl }}/learn/blockchain/block#block-hash).
 
 ## Consequences
 

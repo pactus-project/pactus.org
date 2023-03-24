@@ -20,25 +20,34 @@ bundle install
 bundle exec jekyll serve
 ```
 
+### URLs
+
+Please avoid using relative URLs. Instead, always use absolute URLs by making use of Jekyll's variables. Relative URLs can cause problems and it's best to avoid them.
+
+In Jekyll, you can use `{{ site.url }}/foo` which produce `http://pactus.org/foo`.
+Alternatively, you can use `{{ site.baseurl }}/foo`, which will produce an absolute URL for `/foo` based on the site language. For example, if the site language is Arabic, the URL will be `http://pactus.org/ar/foo`, and if the site language is Chinese, the URL will be `http://pactus.org/cn/foo`.
+
+By using absolute URLs, you can ensure that all links and resources on the Pactus website will work correctly regardless of the language or location of the site visitor.
+
 ## Additional commands
 
 There are some additional commands that help you to check and improve your changes.
 First you need Install [yarn](https://yarnpkg.com/).
 
 - Check all HTML and markdown files:
-  ` yarn run prettier`
+  `yarn run prettier`
 
 - Remove all metadata from PNG files by running this command:
-  ` yarn run exif`
+  `yarn run exif`
 
 - Lint markdown files:
-  ` yarn run lint:md`
+  `yarn run lint:md`
 
 - Lint YAML files:
-  ` yarn run lint:yml`
+  `yarn run lint:yml`
 
 - Check for broken links:
-  ` htmlproofer --ignore-status-codes "999,429" --check_internal_hash=false --enforce-https=false ./_site`
+  `tarn run htmlproofer`
 
 ## Deployment
 
