@@ -48,10 +48,13 @@ title: dict.faq.title
       </h3>
       <div class="answer">
         {% t a_key %}
+        {% if item.img != nil %}
+          <img src="/assets/images/{{ item.img }}" alt="{% t q_key %}" />
+        {% endif %}
       </div>
       {% endfor %}
     </div>
     {% endfor %}
   </div>
 
-  {% include back_to_top.html %}
+{% include back_to_top.html %}

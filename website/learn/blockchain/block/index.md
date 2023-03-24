@@ -12,6 +12,8 @@ the certificate of the previous block.
 Once a block comes with a valid certificate, it is committed and added to the blockchain.
 A committed block is immutable, and any modifications to the block will invalidate the certificate.
 
+![Pactus blockchain](/assets/images/pactus_blockchain.png)
+
 ### Block header
 
 The block header is a data structure in the Pactus blockchain that contains important information about the block.

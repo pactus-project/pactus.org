@@ -37,11 +37,13 @@
 
     - id: flat_reward
       ver: v1
+      img: pactus_reward.png
 
 - title: consensus
   items:
     - id: how_pactus_words
       ver: v1
+      img: pactus_validator_pool.png
 
     - id: how_enter_committee
       ver: v1
@@ -59,6 +61,7 @@
   items:
     - id: total_supply
       ver: v1
+      img: pactus_token_distribution.png
 
     - id: treasury_account
       ver: v1
