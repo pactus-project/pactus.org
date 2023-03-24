@@ -1,7 +1,7 @@
 ---
 layout: base
 title: dict.roadmap.title
-permalink: /get-started/roadmap/index.html
+permalink: /about/roadmap/index.html
 ---
 
 <h1>{% t dict.roadmap.title %}</h1>

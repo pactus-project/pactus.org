@@ -66,7 +66,7 @@ result should be less than validator's stake and validator's stake is known at h
 $$n$$ for all the validators in the network.
 
 If a validator can generate a valid sortition proof, it can broadcast a
-[sortition transaction](../transaction/sortition). Sortition transactions are valid for 7 blocks.
+[sortition transaction](/learn/transaction/sortition). Sortition transactions are valid for 7 blocks.
 When a valid sortition transaction is committed into a block, the new validator from the pool can
 enter the committee and the oldest validator in the committee will leave the committee to make it
 balanced.

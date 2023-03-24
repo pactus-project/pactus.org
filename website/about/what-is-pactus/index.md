@@ -1,7 +1,6 @@
 ---
 layout: base
 title: dict.what_is.title
-permalink: /get-started/what-is-pactus/index.html
 ---
 
 # {% t dict.what_is.title %}

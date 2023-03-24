@@ -23,7 +23,7 @@ Nagaraj explained the block explorer and some of the features.
 
 ### Project road map
 
-Project [road map](https://pactus.org/get-started/roadmap/) discussed.
+Project [road map](https://pactus.org/about/roadmap/) discussed.
 
 ### IdeaKita pitch deck
 

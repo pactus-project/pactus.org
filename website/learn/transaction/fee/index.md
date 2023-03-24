@@ -26,7 +26,7 @@ $$
 <br>
 
 $$percentage$$, $$fee_{min}$$ and $$fee_{max}$$ are part of
-[consensus parameters](../blockchain/genesis).
+[consensus parameters](/learn/blockchain/genesis).
 
 For example, if Alice is going to send 20,000 to Bob, she should pay 2 coins as a fee for her
 transaction.

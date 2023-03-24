@@ -1,93 +1,92 @@
-faq:
-  - title: general
-    items:
-      - id: pactus_meaning
-        ver: v1
+- title: general
+  items:
+    - id: pactus_meaning
+      ver: v1
 
-      - id: unique_blockchain
-        ver: v1
+    - id: unique_blockchain
+      ver: v1
 
-      - id: without_ico
-        ver: v1
+    - id: without_ico
+      ver: v1
 
-      - id: why_develop_pactus
-        ver: v1
+    - id: why_develop_pactus
+      ver: v1
 
-      - id: what_pactus_solved
-        ver: v1
+    - id: what_pactus_solved
+      ver: v1
 
-      - id: pactus_vs_bitcoin
-        ver: v1
+    - id: pactus_vs_bitcoin
+      ver: v1
 
-      - id: pactus_vs_ethereum
-        ver: v1
+    - id: pactus_vs_ethereum
+      ver: v1
 
-  - title: validator
-    items:
-      - id: validators
-        ver: v1
+- title: validator
+  items:
+    - id: validators
+      ver: v1
 
-      - id: min_and_max_stake
-        ver: v1
+    - id: min_and_max_stake
+      ver: v1
 
-      - id: unlimited_validators
-        ver: v1
+    - id: unlimited_validators
+      ver: v1
 
-      - id: validators_rewarded
-        ver: v1
+    - id: validators_rewarded
+      ver: v1
 
-      - id: flat_reward
-        ver: v1
+    - id: flat_reward
+      ver: v1
 
-  - title: consensus
-    items:
-      - id: how_pactus_words
-        ver: v1
+- title: consensus
+  items:
+    - id: how_pactus_words
+      ver: v1
 
-      - id: how_enter_committee
-        ver: v1
+    - id: how_enter_committee
+      ver: v1
 
-      - id: proposer_selection
-        ver: v1
+    - id: proposer_selection
+      ver: v1
 
-      - id: multiple_committee_entry
-        ver: v1
+    - id: multiple_committee_entry
+      ver: v1
 
-      - id: fork_possibility
-        ver: v1
+    - id: fork_possibility
+      ver: v1
 
-  - title: economy
-    items:
-      - id: total_supply
-        ver: v1
+- title: economy
+  items:
+    - id: total_supply
+      ver: v1
 
-      - id: treasury_account
-        ver: v1
+    - id: treasury_account
+      ver: v1
 
-  - title: transaction
-    items:
-      - id: send_transaction
-        ver: v1
+- title: transaction
+  items:
+    - id: send_transaction
+      ver: v1
 
-      - id: bond_transaction
-        ver: v1
+    - id: bond_transaction
+      ver: v1
 
-      - id: sortition_transaction
-        ver: v1
+    - id: sortition_transaction
+      ver: v1
 
-      - id: unbond_transaction
-        ver: v1
+    - id: unbond_transaction
+      ver: v1
 
-      - id: withdraw_transaction
-        ver: v1
+    - id: withdraw_transaction
+      ver: v1
 
-  - title: fee
-    items:
-      - id: fee_model
-        ver: v1
+- title: fee
+  items:
+    - id: fee_model
+      ver: v1
 
-      - id: fee_min_max
-        ver: v1
+    - id: fee_min_max
+      ver: v1
 
-      - id: why_percentage_fee
-        ver: v1
+    - id: why_percentage_fee
+      ver: v1

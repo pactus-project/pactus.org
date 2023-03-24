@@ -1,36 +1,36 @@
 - title: Blockchain
   path: learn/blockchain
   items:
-    - doc: block.md
-    - doc: account.md
-    - doc: validator.md
-    - doc: state-merkle.md
-    - doc: genesis.md
-    - doc: incentive.md
-    - doc: cryptography.md
-    - doc: address.md
-    - doc: serialization.md
+    - doc: block
+    - doc: account
+    - doc: validator
+    - doc: state-merkle
+    - doc: genesis
+    - doc: incentive
+    - doc: cryptography
+    - doc: address
+    - doc: serialization
 
 - title: Consensus
   path: learn/consensus
   items:
-    - doc: protocol.md
-    - doc: specification.md
-    - doc: without-delegation.md
-    - doc: committee.md
-    - doc: sortition.md
+    - doc: protocol
+    - doc: specification
+    - doc: without-delegation
+    - doc: committee
+    - doc: sortition
 
 - title: Transactions
   path: learn/transaction
   items:
-    - doc: stamping.md
-    - doc: format.md
-    - doc: fee.md
-    - doc: send.md
-    - doc: bond.md
-    - doc: sortition.md
+    - doc: stamping
+    - doc: format
+    - doc: fee
+    - doc: send
+    - doc: bond
+    - doc: sortition
 
 - title: Smart Contract
-  path: learn/smart_contract
+  path: learn/smart-contract
   items:
-    - doc: storage.md
+    - doc: storage

@@ -33,7 +33,8 @@ change over time. There is no halving in Pactus. The flat reward is a part of th
 and, for the main net, it sets one coin per block.
 
 This block reward serves as an incentive for validators to propose and validate new blocks on the blockchain.
-As a result, the total number of Pactus coins in circulation increases gradually over time as new blocks are added to the blockchain.
+As a result, the total number of Pactus coins in circulation increases gradually over time as new blocks
+re added to the blockchain.
 
 ![Token distribution in Bitcoin](/assets/images/bitcoin_token_distribution.png)
 

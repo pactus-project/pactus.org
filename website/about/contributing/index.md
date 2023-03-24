@@ -1,7 +1,6 @@
 ---
 layout: base
 title: dict.contributing.title
-permalink: /get-started/contributing/index.html
 ---
 
 # {% t dict.contributing.title %}

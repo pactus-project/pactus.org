@@ -1,7 +1,6 @@
 ---
 layout: base
 title: dict.download.title
-permalink: /download/index.html
 ---
 
 # {% t dict.download_pactus %}

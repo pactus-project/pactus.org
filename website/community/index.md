@@ -1,7 +1,6 @@
 ---
 layout: base
 title: dict.community.title
-permalink: /community/index.html
 ---
 
 # {% t dict.community.join %}
