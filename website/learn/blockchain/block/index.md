@@ -12,7 +12,7 @@ the certificate of the previous block.
 Once a block comes with a valid certificate, it is committed and added to the blockchain.
 A committed block is immutable, and any modifications to the block will invalidate the certificate.
 
-![Pactus blockchain](/assets/images/pactus_blockchain.png)
+![Pactus blockchain]({{ site.url }}/assets/images/pactus_blockchain.png)
 
 ### Block header
 
@@ -32,9 +32,10 @@ The block header is 138 bytes long and consists the following fields:
 - **Version** is used to track the software or protocol upgrade, and the current block version is set to 1.
 - **Timestamp** is the time of the block as the number of seconds since January 1, 1970 (Unix Epoch).
 - **Previous Block Hash** is the hash of the previous block in the blockchain.
-- **State Hash** is the [state hash](/learn/blockchain/state-merkle) of the blockchain at this block.
+- **State Hash** is the [state hash]({{ site.baseurl }}/learn/blockchain/state-merkle) of the blockchain at this block.
 - It ensures that all nodes in the network have the same state.
-- **Sortition Seed** is a verifiable and unpredictable seed data used by the [sortition](/learn/consensus/sortition) algorithm.
+- **Sortition Seed** is a verifiable and unpredictable seed data used by
+  the [sortition]({{ site.baseurl }}/learn/consensus/sortition) algorithm.
 - **Proposer Address** is the address of the validator who created and proposed the block.
 
 ### Block certificate
@@ -93,7 +94,7 @@ creating a block every 10 seconds.
 The Proposer broadcasts the proposed block to other validators inside the committee.
 Other validators verify the proposed block, and if it is valid, they cast their votes in favor of the proposed block by
 signing the combination of the block hash and round. M
-ore details about the consensus mechanism can be found in the [consensus](/learn/consensus/protocol) document.
+ore details about the consensus mechanism can be found in the [consensus]({{ site.baseurl }}/learn/consensus/protocol) document.
 
 To issue a valid certificate, signatures from validators who hold more than ⅔ of the stake in
 the committee are required.

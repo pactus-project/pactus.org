@@ -6,7 +6,9 @@ title: dict.blog.title
 <div class="d-flex align-items-center">
   <h1>{% t dict.blog.all_posts %}</h1>
   <span class="ms-3"></span>
-  <a href="/feed.xml"><img src="/assets/images/feed.svg" width="32" alt="feed" /></a>
+  <a href="{{ site.baseurl }}/feed.xml">
+    <img src="{{ site.url }}/assets/images/feed.svg" width="32" alt="feed" />
+  </a>
 </div>
 
 <div dir="ltr">
