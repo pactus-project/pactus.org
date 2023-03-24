@@ -31,4 +31,5 @@ Sender address is the [Treasury address]({{ site.baseurl }}/learn/blockchain/add
 address is defined by the block proposer. The amount of subsidy transaction should be equal to the
 [block rewards]({{ site.baseurl }}/learn/blockchain/incentive) plus transactions fee. This amount will go to the receiver
 account as block reward. Therefore in each block one coin from
-[treasury account]({{ site.baseurl }}/learn/blockchain/account#treasury-account) moves to the validator account as block reward.
+[treasury account]({{ site.baseurl }}/learn/blockchain/account#treasury-account)
+moves to the validator account as block reward.

@@ -34,7 +34,8 @@ The block header is 138 bytes long and consists the following fields:
 - **Previous Block Hash** is the hash of the previous block in the blockchain.
 - **State Hash** is the [state hash]({{ site.baseurl }}/learn/blockchain/state-merkle) of the blockchain at this block.
 - It ensures that all nodes in the network have the same state.
-- **Sortition Seed** is a verifiable and unpredictable seed data used by the [sortition]({{ site.baseurl }}/learn/consensus/sortition) algorithm.
+- **Sortition Seed** is a verifiable and unpredictable seed data used by
+  the [sortition]({{ site.baseurl }}/learn/consensus/sortition) algorithm.
 - **Proposer Address** is the address of the validator who created and proposed the block.
 
 ### Block certificate
