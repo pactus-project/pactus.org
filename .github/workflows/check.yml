@@ -59,4 +59,5 @@ jobs:
       ## Status code 429: https://http.dev/429
       ## Status code 999: https://http.dev/999#linkedin
       ## Status code 403: https://http.dev/403
+
       - run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403" --check_internal_hash=false --ignore-urls=https://www.pactusscan.com ./_site
