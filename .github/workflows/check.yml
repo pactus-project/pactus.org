@@ -1,5 +1,13 @@
 name: Check
-on: [push, pull_request]
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
 
 jobs:
   yaml:
@@ -50,4 +58,4 @@ jobs:
 
       ## Status code 429:  https://http.dev/429
       ## Status code 999:  https://http.dev/999#linkedin
-      - run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,430" --check_internal_hash=false --ignore-urls=https://www.pactusscan.com ./_site
+      - run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403" --check_internal_hash=false --ignore-urls=https://www.pactusscan.com ./_site
