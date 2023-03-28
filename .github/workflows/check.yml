@@ -56,7 +56,10 @@ jobs:
         run: |
           gem install html-proofer -v 4.3
 
+      ##
       ## Status code 429: https://http.dev/429
       ## Status code 999: https://http.dev/999#linkedin
       ## Status code 403: https://http.dev/403
+      ##
+      ## By swap-urls, we don't get error if we rename or move a document.
       - run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403" --check_internal_hash=false --ignore-urls=/www.pactusscan.com/,/cdn./,/discord.gg/,/t.me/,/twitter.com/,/github.com/,/tools.ietf.org/ ./_site
