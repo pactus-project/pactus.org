@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "htmlproofer:setup": "gem install html-proofer",
-    "htmlproofer": "htmlproofer --swap-urls 'http\\://localhost\\:4000:' --ignore-status-codes 999,429 --check_internal_hash false --enforce-https false --ignore-urls /www.pactusscan.com/,/cdn./,/discord.gg/,/t.me/,/twitter.com/,/github.com/ ./_site",
+    "htmlproofer": "htmlproofer --swap-urls 'http\\://localhost\\:4000:' --ignore-status-codes 999,429 --check_internal_hash false --enforce-https false --ignore-urls /www.pactusscan.com/,/cdn./,/discord.gg/,/t.me/,/twitter.com/,/github.com/,/ietf.org/ ./_site",
     "prettier": "prettier --bracket-same-line true --html-whitespace-sensitivity ignore --end-of-line lf --print-width 100 --write ./website",
     "exif": "cd ./website/assets/images && for i in *.png; do echo \"Processing $i\"; exiftool -all= \"$i\"; done",
     "lint:md": "mdl --style=.mdlrc.rb ./website",
