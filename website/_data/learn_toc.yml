@@ -4,7 +4,7 @@
     - doc: block
     - doc: account
     - doc: validator
-    - doc: state-merkle
+    - doc: state-hash
     - doc: genesis
     - doc: incentive
     - doc: cryptography

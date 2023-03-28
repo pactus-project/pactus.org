@@ -7,13 +7,14 @@ title: Cryptography
 
 ## Hashing algorithm
 
-The hashing algorithm used in Pactus is Blake2b. [Blake2](https://www.blake2.net/) is considered to be
-a fast cryptographic hash function.
+Pactus uses a hashing algorithm called [Blake2](https://www.blake2.net/).
+This algorithm is known for being a fast and secure way of creating unique digital fingerprints of data.
 
 ## Signature Scheme
 
-Pactus is using [BLS](https://datatracker.ietf.org/doc/draft-irtf-cfrg-bls-signature/)
-(Boneh–Lynn–Shacham) threshold signature for cryptographic signing and verification.
+To ensure secure transactions, Pactus uses a signature scheme called
+[BLS](https://datatracker.ietf.org/doc/draft-irtf-cfrg-bls-signature/) (Boneh–Lynn–Shacham)
+threshold signature for cryptographic signing and verification.
 
 ### Signature aggregation
 
