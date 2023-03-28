@@ -21,7 +21,7 @@ By using a Merkle tree, nodes can easily verify that they store the same data,
 without having to share the entire dataset. Additionally, this helps to prevent any tampering with the data,
 as any changes made to the data would cause inconsistencies in the Merkle tree and be detected by the network.
 
-## State hash
+## State Merkle trees
 
 In Pactus, the Merkle tree is used to verify the state of the blockchain in each block.
 The state hash in each block is calculated by taking the hash of two Merkle trees:
