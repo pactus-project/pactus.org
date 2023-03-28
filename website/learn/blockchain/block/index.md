@@ -32,7 +32,7 @@ The block header is 138 bytes long and consists the following fields:
 - **Version** is used to track the software or protocol upgrade, and the current block version is set to 1.
 - **Timestamp** is the time of the block as the number of seconds since January 1, 1970 (Unix Epoch).
 - **Previous Block Hash** is the hash of the previous block in the blockchain.
-- **State Hash** is the [state hash]({{ site.baseurl }}/learn/blockchain/state-merkle) of the blockchain at this block.
+- **State Hash** is the [state hash]({{ site.baseurl }}/learn/blockchain/state-hash) of the blockchain at this block.
 - It ensures that all nodes in the network have the same state.
 - **Sortition Seed** is a verifiable and unpredictable seed data used by
   the [sortition]({{ site.baseurl }}/learn/consensus/sortition) algorithm.

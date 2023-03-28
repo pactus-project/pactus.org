@@ -106,7 +106,7 @@ reconstruct the tree and calculate the merle root again.
 
 Each file has a unique index. With using that index we can make sure that the position of the leaf
 nodes in the Merkle tree is always the same. The same technique we used for calculating the
-[state root]({{ site.baseurl }}/learn/blockchain/state-merkle).
+[state hash]({{ site.baseurl }}/learn/blockchain/state-hash).
 
 ![Storage Merkle tree]({{ site.url }}/assets/images/pactus_storage_merkle_tree.png)
 
