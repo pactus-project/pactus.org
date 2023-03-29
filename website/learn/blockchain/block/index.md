@@ -63,8 +63,8 @@ The block certificate consists the following fields:
 
 Each block in the Pactus blockchain contains a list of transactions.
 The maximum number of transactions in a block is determined by the blockchain parameters, and currently set to 1000.
-The first transaction in each block is the reward transaction. Once a block is committed and added to the blockchain,
-all the transactions inside the block will be executed.
+The first transaction in each block is the reward transaction.
+Once a block is committed and added to the blockchain, all the transactions inside the block will be executed.
 This means that the state of the blockchain will be updated based on the transactions in the committed block.
 
 ## Block hash
@@ -87,14 +87,19 @@ The previous block hash in the genesis block sets to 0 and the genesis block doe
 
 ## FAQ
 
+### Is there any empty block in Pactus?
+
+There is no completely empty block in pactus.
+Each block at least contains one transaction that is the reward transaction.
+
 ### How are certificates issued?
 
 In the Pactus blockchain, a validator called a Proposer is responsible for collecting all transactions and
 creating a block every 10 seconds.
 The Proposer broadcasts the proposed block to other validators inside the committee.
 Other validators verify the proposed block, and if it is valid, they cast their votes in favor of the proposed block by
-signing the combination of the block hash and round. M
-ore details about the consensus mechanism can be found in the [consensus]({{ site.baseurl }}/learn/consensus/protocol) document.
+signing the combination of the block hash and round.
+More details about the consensus mechanism can be found in the [consensus]({{ site.baseurl }}/learn/consensus/protocol) document.
 
 To issue a valid certificate, signatures from validators who hold more than ⅔ of the stake in
 the committee are required.

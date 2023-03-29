@@ -5,27 +5,44 @@ title: Address
 
 # Address
 
-## Address format
+## What is an Address?
 
-Address in Pactus is 21 bytes. The first bye of the address describes the type of cryptographic
-algorithm and the rest of 20 bytes are the hash of public key. (RIPEMD-160 after Blake2b):
+An Address is a unique identifier that is used to send and receive transactions on the Pactus blockchain.
+It is represented as a string of 42 alphanumeric characters and always begins with the letters "pc1".
+Here is an example of an Address on the Pactus blockchain:
 
 ```text
-AddressBytes = <SIG_TYPE> + RIPEMD160(Blake2b(PublicKey))
+pc1p4e92hx0erqyx939crndvthvpn7qcdhefc9r6s7
 ```
 
-The result will convert from a byte array into a bech32 [^first] string.
+### Address structure
 
-Type of signature for BLS signature address set to one.
+An address in the Pactus blockchain is made up of 21 bytes and it is derived from the public key.
+The first byte of the address specifies the address type,
+while the remaining 20 bytes represent the hash of the public key.
+The hash function used is [RIPEMD-160](https://en.wikipedia.org/wiki/RIPEMD#RIPEMD-160_hashes),
+which is applied after [Blake2b]({{ site.baseurl }}/learn/blockchain/cryptography/#hashing-algorithm)):
+The resulting byte array is then converted into a bech32m[^first] string.
 
-### Treasury address
+![Pactus address structure]({{ site.url }}/assets/images/pactus_address.png)
 
-Treasury address in Pactus is defined as seen below:
+### Address Type
+
+The Address Type specifies the type of public key used to generate the address.
+This makes it easy to add support for new signature algorithms in the future.
+Currently, the Pactus blockchain only supports
+[BLS signature]({{ site.baseurl }}/learn/blockchain/cryptography/#signature-scheme)
+algorithm, with the type set to one.
+
+## Treasury address
+
+The Treasury Address on the Pactus blockchain is a fixed address that is defined as follows:
 
 ```text
 TreasuryAddress: 000000000000000000000000000000000000000000
 ```
 
-Type of signature for treasury address set to zero.
+The signature type for the Treasury Address is set to zero,
+and the remaining characters of the address are all zeros.
 
-[^first]: [Base32 address format](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki)
+[^first]: [Base32m address format](https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki)

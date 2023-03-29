@@ -7,7 +7,7 @@ title: Cryptography
 
 ## Hashing algorithm
 
-Pactus uses a hashing algorithm called [Blake2](https://www.blake2.net/).
+Pactus uses a hashing algorithm called [Blake2b](https://www.blake2.net/).
 This algorithm is known for being a fast and secure way of creating unique digital fingerprints of data.
 
 ## Signature Scheme

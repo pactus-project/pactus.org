@@ -7,9 +7,16 @@ title: Incentive
 
 ## Flat Reward
 
-The incentive may help encourage nodes to stay honest[^first]. To have a better understanding about
-the incentive model in Pactus, let's do a comparison with the Bitcoin incentive and reward
-distribution model. We will use this comparison to show the difference. is the king.
+> The incentive may help encourage nodes to stay honest.
+>
+> [Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
+
+In Pactus, rewards are given to validators for proposing and validating new blocks on the blockchain.
+These rewards serve as an incentive for validators to participate in the consensus process and
+maintain the security and integrity of the network.
+
+To better understand the incentive model in Pactus, let's compare it with the Bitcoin reward model.
+This comparison will help to understand how the incentive model works in Pactus.
 
 | Pactus                                           | Bitcoin                                      |
 | ------------------------------------------------ | -------------------------------------------- |
@@ -19,25 +26,26 @@ distribution model. We will use this comparison to show the difference. is the k
 | Always one coin per block                        | Initial block reward is 50 coin              |
 | No halving                                       | Halving happens every 4 years                |
 
-The way Bitcoin distributes the tokens is a good solution for Proof-of-Work blockchain. Early
-contributors in Bitcoin collect most of the tokens. This scheme in Proof-of-Stake blockchain will
-damage the network by powering early contributors. Simply because the validators are weighed by
-their stake. More stake, more power.
+
+
+The halving mechanism in Bitcoin rewards early contributors more significantly.
+However, in a Proof-of-Stake blockchain, this mechanism can lead to wealth centralization,
+as early validators gain too much power based on their staked coins.
+
+To promote fairer block rewards, Pactus has introduced a simple and straightforward incentive model called the "Flat Reward."
+In this model, the block reward remains constant at one coin per block and does not change over time.
 
 ![Rewards in Bitcoin]({{ site.url }}/assets/images/bitcoin_reward.png)
 
 ![Rewards in Pactus]({{ site.url }}/assets/images/pactus_reward.png)
 
-In Pactus, the token distribution is flat. It means the reward for each block is fixed and does not
-change over time. There is no halving in Pactus. The flat reward is a part of the consensus parameters
-and, for the main net, it sets one coin per block.
+### Token distribution
 
-This block reward serves as an incentive for validators to propose and validate new blocks on the blockchain.
-As a result, the total number of Pactus coins in circulation increases gradually over time as new blocks
-re added to the blockchain.
+In Pactus, the coin distribution is linear. This linear distribution is a direct result of the Flat Reward system.
+Unlike other blockchains that have a curved distribution, Pactus maintains a consistent coin distribution.
+This gradual and linear distribution model, releases the new coins into circulation at a steady rate,
+helping to prevent market destabilization and inflation.
 
 ![Token distribution in Bitcoin]({{ site.url }}/assets/images/bitcoin_token_distribution.png)
 
 ![Token distribution in Pactus]({{ site.url }}/assets/images/pactus_token_distribution.png)
-
-[^first]: [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
