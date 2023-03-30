@@ -12,7 +12,7 @@ It typically involves encoding data into a sequence of bytes that can later be d
 
 ## Deterministic serialization
 
-Pactus uses a deterministic data serialization for the deterministic data like blocks and transactions.
+Pactus uses a deterministic serialization for the deterministic data like blocks and transactions.
 The serialization format for different types of data is listed in the table below:
 
 | **Data Type**           | **Size (bytes)** | **Description**                                    |
@@ -74,19 +74,20 @@ Here is an example of a block header data that encoded using deterministic seria
 
 ## CBOR serialization
 
-For non-deterministic stuff like networking messages Pactus is using “Concise Binary Object
-Representation” or [CBOR](https://tools.ietf.org/html/rfc7049) data format.
+For non-deterministic data like networking messages, Pactus uses “Concise Binary Object
+Representation” or [CBOR](https://tools.ietf.org/html/rfc7049). CBOR is a binary data serialization format that is widely used in various application,
+including IoT, web services, security, and automotive, due to its compact representation and efficient parsing.
 
 ### CBOR me!
 
 [https://cbor.me/](https://cbor.me/?bytes=a60101021864030004582019ba0a47813c13b2459f4ce3851ca42da8299c4f17b226e8bad1a9859172ab960555015da8f5e196d6e961609ae41528c4ec7368975937065830b047d5c2c072299284355f5b5014b5bf77f1702bc08b36061ddba08e41bebf51ab0416d265973190d26cbb79144681e7)
-is a cool tool for digesting the CBOR binary data. You can try to decode binary data there, as seen
-in the following example:
+is an online tool for encoding and decoding CBOR data, offering developers an easy way to test and
+validate their CBOR data without having to set up a local environment.
+
+Here is an example of Vote message  that encoded using CBOR.
 
 {% hexdump "vote_data"
 "a60101021864030004582019ba0a47813c13b2459f4ce3851ca42da8299c4f17"+
 "b226e8bad1a9859172ab960555015da8f5e196d6e961609ae41528c4ec736897"+
 "5937065830b047d5c2c072299284355f5b5014b5bf77f1702bc08b36061ddba0"+
 "8e41bebf51ab0416d265973190d26cbb79144681e7" %}
-
-This is an example of a vote message in the Pactus blockchain.
