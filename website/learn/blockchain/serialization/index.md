@@ -75,7 +75,8 @@ Here is an example of a block header data that encoded using deterministic seria
 ## CBOR serialization
 
 For non-deterministic data like networking messages, Pactus uses “Concise Binary Object
-Representation” or [CBOR](https://tools.ietf.org/html/rfc7049). CBOR is a binary data serialization format that is widely used in various application,
+Representation” or [CBOR](https://tools.ietf.org/html/rfc7049).
+CBOR is a binary data serialization format that is widely used in various application,
 including IoT, web services, security, and automotive, due to its compact representation and efficient parsing.
 
 ### CBOR me!
@@ -84,7 +85,7 @@ including IoT, web services, security, and automotive, due to its compact repres
 is an online tool for encoding and decoding CBOR data, offering developers an easy way to test and
 validate their CBOR data without having to set up a local environment.
 
-Here is an example of Vote message  that encoded using CBOR.
+Here is an example of Vote message that encoded using CBOR.
 
 {% hexdump "vote_data"
 "a60101021864030004582019ba0a47813c13b2459f4ce3851ca42da8299c4f17"+

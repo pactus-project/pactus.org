@@ -13,9 +13,8 @@
         class="collapse {% if page.url contains folder.path %}{{'show'}}{% endif %}"
         id="{{folder.title | slugify}}-collapse">
         <ul class="btn-page list-unstyled fw-normal pb-1 small">
-          {% for item in folder.items %} {% assign item_path = folder.path | append: "/" | append:
-          item.doc | append: "/index.md" %} {% assign item_page = site.pages |where: "path",
-          item_path | first %}
+          {% for item in folder.items %} {% assign item_path = folder.path | append: "/" | append: item.doc | append:
+          "/index.md" %} {% assign item_page = site.pages |where: "path", item_path | first %}
           <li>
             <a
               href="{{ item_page.url }}"

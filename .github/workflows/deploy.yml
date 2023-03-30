@@ -15,3 +15,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           cname: 'pactus.org'
+          # https://pngquant.org/install.html
+          # for compression of PNG images.
+          pre_build_commands: pacman -S --noconfirm pngquant

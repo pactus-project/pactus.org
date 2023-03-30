@@ -1,27 +1,18 @@
 <div class="navbar-nav">
   <div class="nav-item dropdown ps-4 pe-2">
-    <a
-      class="nav-link dropdown-toggle"
-      href="#"
-      role="button"
-      data-bs-toggle="dropdown"
-      aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa-solid fa-earth-americas"></i>
       {{ site.data.languages[site.lang] }}
     </a>
     <ul class="dropdown-menu bg-light border-0 pe-0">
-      {% for lang in site.data.languages %} {% if lang[0] == site.lang %}{% continue %}{% endif %}
-      {% if lang[0] == 'en' %}
+      {% for lang in site.data.languages %} {% if lang[0] == site.lang %}{% continue %}{% endif %} {% if lang[0] == 'en'
+      %}
       <li>
-        <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl_root }}{{ page.url}}">
-          {{ lang[1] }}
-        </a>
+        <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl_root }}{{ page.url}}">{{ lang[1] }}</a>
       </li>
       {% else %}
       <li>
-        <a
-          class="nav-link dropdown-item ps-4"
-          href="{{ site.baseurl_root }}/{{ lang[0] }}{{ page.url}}">
+        <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl_root }}/{{ lang[0] }}{{ page.url}}">
           {{ lang[1] }}
         </a>
       </li>

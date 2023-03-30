@@ -26,8 +26,6 @@ This comparison will help to understand how the incentive model works in Pactus.
 | Always one coin per block                        | Initial block reward is 50 coin              |
 | No halving                                       | Halving happens every 4 years                |
 
-
-
 The halving mechanism in Bitcoin rewards early contributors more significantly.
 However, in a Proof-of-Stake blockchain, this mechanism can lead to wealth centralization,
 as early validators gain too much power based on their staked coins.

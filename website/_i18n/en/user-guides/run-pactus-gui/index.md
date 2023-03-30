@@ -3,7 +3,6 @@
 Pactus can be run in different modes, including the command-line interface (CLI) and the graphical user interface (GUI).
 This tutorial will guide you through the steps to run Pactus in GUI mode, suitable for beginner to advanced users.
 
-
 ## Prerequisites
 
 Before proceeding with the steps below, ensure that you have the following:
@@ -36,11 +35,10 @@ The process is straightforward and similar to installing any other application o
 
 ![Installing Pactus]({{ site.url }}/user-guides/run-pactus-gui/installing.png)
 
-
 ## Initializing
 
-When you run Pactus for the first time, a wizard dialog will appear to guide you through the wallet creation and initialization process.
-This process consists of several steps:
+When you run Pactus for the first time, a wizard dialog will appear to guide you through the wallet creation and
+initialization process. This process consists of several steps:
 
 ### Initialize mode
 
@@ -81,8 +79,8 @@ If you forget or lose your password, you will need your seed phrase to regain ac
 
 ### Node information
 
-The last page of the initialization process shows the node information, such as the working directory, validator address, and reward address.
-Review this information and click "Close" to complete the initialization process.
+The last page of the initialization process shows the node information, such as the working directory, validator address,
+and reward address. Review this information and click "Close" to complete the initialization process.
 
 ![Node information]({{ site.url }}/user-guides/run-pactus-gui/node_information.png)
 
@@ -91,22 +89,26 @@ Upon closing the wizard dialog, your Pactus node will start running. You are now
 ## Running the Pactus Node
 
 After completing the initialization process, you are ready to run the Pactus node.
-Running a Pactus node allows you to synchronize with the network, enabling you to view and manage your wallet and sending transactions.
+Running a Pactus node allows you to synchronize with the network, enabling you to view and manage your wallet and
+sending transactions.
 
 ### Syncing with the Network
 
-When the Pactus node starts running, it begins syncing with the network. This process may take some time, as your node needs to download and verify the entire blockchain history.
+When the Pactus node starts running, it begins syncing with the network. This process may take some time,
+as your node needs to download and verify the entire blockchain history.
 Please be patient while your node syncs.
 
 ![Syncing progress]({{ site.url }}/user-guides/run-pactus-gui/syncing_progress.png)
 
 ### Default Wallet
 
- you can check the "Default Wallet" tab to access your wallet information. Please note that the displayed information may not be accurate until the syncing process is complete.
+you can check the "Default Wallet" tab to access your wallet information. Please note that the displayed
+information may not be accurate until the syncing process is complete.
 
 ![Default Wallet tab]({{ site.url }}/user-guides/run-pactus-gui/default_wallet.png)
 
-In the "Default Wallet" tab, you can view your account details, including your balance, transaction history, and address information.
+In the "Default Wallet" tab, you can view your account details, including your balance, transaction history,
+and address information.
 
-By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network. Thank you for your participation!
-
+By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
+Thank you for your participation!

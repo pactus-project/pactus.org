@@ -25,16 +25,21 @@ Follow these guidelines to ensure high-quality contributions to the Pactus websi
 
 ### Images
 
-All images should be in `png` format.
+For best results, use PNG images on this site.
+We compress PNGs during the build process using `pngquant` to reduce file size without sacrificing quality.
 
 ### URLs
 
-Please avoid using relative URLs. Instead, always use absolute URLs by making use of Jekyll's variables. Relative URLs can cause problems and it's best to avoid them.
+Please avoid using relative URLs. Instead, always use absolute URLs by making use of Jekyll's variables.
+Relative URLs can cause problems and it's best to avoid them.
 
 In Jekyll, you can use `{{ site.url }}/foo` which produce `http://pactus.org/foo`.
-Alternatively, you can use `{{ site.baseurl }}/foo`, which will produce an absolute URL for `/foo` based on the site language. For example, if the site language is Arabic, the URL will be `http://pactus.org/ar/foo`, and if the site language is Chinese, the URL will be `http://pactus.org/cn/foo`.
+Alternatively, you can use `{{ site.baseurl }}/foo`, which will produce an absolute URL for `/foo` based on the site language.
+For example, if the site language is Arabic, the URL will be `http://pactus.org/ar/foo`,
+and if the site language is Chinese, the URL will be `http://pactus.org/cn/foo`.
 
-By using absolute URLs, you can ensure that all links and resources on the Pactus website will work correctly regardless of the language or location of the site visitor.
+By using absolute URLs, you can ensure that all links and resources on the Pactus website will work correctly
+regardless of the language or location of the site visitor.
 
 ### Additional commands
 
@@ -66,12 +71,7 @@ First you need Install [yarn](https://yarnpkg.com/).
 
 - Remove all metadata from PNG images using [ExifTool](https://exiftool.org/):
   ```
-  yarn run png:exif
-  ```
-
-- Compressing all PNG images using [pngquant](https://pngquant.org/):
-  ```
-  yarn run png:compress
+  yarn run exif
   ```
 
 ## Deployment
