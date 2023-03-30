@@ -8,11 +8,12 @@
     "htmlproofer:setup": "gem install html-proofer",
     "htmlproofer": "htmlproofer --swap-urls 'http\\://localhost\\:4000:' --ignore-status-codes 999,429 --check_internal_hash false --enforce-https false --ignore-urls /www.pactusscan.com/,/cdn./,/discord.gg/,/t.me/,/twitter.com/,/github.com/,/ietf.org/ ./_site",
     "prettier": "prettier --bracket-same-line true --html-whitespace-sensitivity ignore --end-of-line lf --print-width 100 --write ./website",
-    "exif": "cd ./website/assets/images && for i in *.png; do echo \"Processing $i\"; exiftool -all= \"$i\"; done",
-    "lint:md": "mdl --style=.mdlrc.rb ./website",
     "lint:md:setup": "gem install mdl",
+    "lint:md": "mdl --style=.mdlrc.rb ./website",
+    "lint:yml:setup": "pip install --upgrade yamllint",
     "lint:yml": "yamllint ./website",
-    "lint:yml:setup": "pip install --upgrade yamllint"
+    "png:exif": "for i in $(find ./website -name *.png); do echo \"Processing $i\"; exiftool -all= \"$i\"; done",
+    "png:compress": "for i in $(find ./website -name *.png); do echo \"Compressing $i\"; pngquant --strip --skip-if-larger --force \"$i\" --output \"$i\"; done"
   },
   "optionalDependencies": {
     "prettier": "^2.7.1"
