@@ -26,7 +26,7 @@ Follow these guidelines to ensure high-quality contributions to the Pactus websi
 ### Images
 
 For best results, use PNG images on this site.
-We compress PNGs during the build process using `pngquant` to reduce file size without sacrificing quality.
+We compress PNGs during the build process using [pngquant](https://pngquant.org/) to reduce file size without sacrificing quality.
 
 ### URLs
 
