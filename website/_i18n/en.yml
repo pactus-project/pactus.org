@@ -9,6 +9,7 @@ dict:
   resources: Resources
   know_more: Know more
   join_community: Join community
+  outdated_translation: The translation is outdated. You can use it, but it might not be accurate.
 
   home:
     motto: A truly decentralized Proof of Stake blockchain with enhanced scalability and speed to execute smart contracts and transactions.

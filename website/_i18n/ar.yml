@@ -8,6 +8,7 @@ dict:
   edit_this_page: "تحرير هذه الصفحة"
   resources: Resources
   about_pactus: About Pactus
+  outdated_translation: ترجمة غير محدثة. يمكنك استخدامها ، لكن قد لا تكون دقيقة.
 
   home:
     motto: بلوكشين Proof of Stake لامركزي حقًا مع توفير توسع وسرعة أعلى لتنفيذ العقود الذكية والمعاملات.

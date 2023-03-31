@@ -16,7 +16,7 @@ Before proceeding with the steps below, ensure that you have the following:
 
 ## Download
 
-Download the Pactus GUI installer from [here](https://pactus.org/download/#pactus-graphical-user-interface-gui).
+Download the Pactus GUI installer from the official website at pacus.org.
 
 ### Code certificate issue
 
