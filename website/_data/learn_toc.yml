@@ -19,6 +19,7 @@
     - doc: without-delegation
     - doc: committee
     - doc: sortition
+    - doc: parameters
 
 - title: Transactions
   path: learn/transaction

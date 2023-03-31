@@ -16,8 +16,8 @@ title: dict.learn.title
     <ul class="">
     {% for item in folder.items %}
     {% assign item_path = folder.path | append: "/" | append: item.doc | append: "/index.md" %}
-    {% assign item_page = site.pages |where: "path", item_path | first %}
-        <li><a href="{{ item_page.url }}">{{ item_page.title }}</a></li>
+    {% assign item_page = site.pages | where: "path", item_path | first %}
+        <li><a href="{{ item_page.url }}">{{ item_page.sidebar }}</a></li>
     {% endfor %}
     </ul>
   </li>

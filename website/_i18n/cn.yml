@@ -246,6 +246,6 @@ dict:
 
   guide:
     title: User guides
-    welcome: ""
+    welcome: Here, you can find some guidance to help you use and interact with the Pactus blockchain.
     back: « Back to the list
-    run_validator: How to run a validator
+    run_pactus_gui: How to run a Pactus in the Graphic mode?

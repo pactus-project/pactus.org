@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Sortition Algorithm
+sidebar: Sortition
 ---
 
 # Sortition Algorithm

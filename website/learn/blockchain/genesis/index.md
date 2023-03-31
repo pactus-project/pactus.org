@@ -1,54 +1,48 @@
 ---
 layout: learn
-title: Genesis block
+title: Genesis
+sidebar: Genesis
 ---
 
-# Genesis block
+# Genesis
 
-## What is genesis block
+## Bootstrapping phase
 
-The genesis block is the first block in blockchain.
+The Pactus blockchain starts with four _bootstrap_ validators.
+These bootstrap validators do not have any stake, however their voting power is set to one within the consensus algorithm.
+Their primary role is to initiate the blockchain during a brief period known as the bootstrapping phase.
+During this time, they accumulate rewards, which they can use to invite additional validators to join the network.
+
+Once the network reaches 21 validators, the bootstrap validators will retire, and
+the blockchain will continue to operate by the new validators.
+
+## Genesis block
+
+The genesis block is the first block in the Pactus blockchain, and it is created by the bootstrap validators.
+This block marks the beginning of the blockchain and serves as the foundation for subsequent blocks.
+
+The previous [block hash]({{ site.baseurl }}/learn/blockchain/block/#block-hash) in the genesis block sets to 0,
+indicating that it has no predecessor.
+Additionally, the genesis block does not have a previous certificate.
 
 ## Genesis information
 
-In Pactus, genesis information is defined inside the `genesis.json` file. It contains the consensus
-parameters like size of validator set or fee settings. It also defines the Treasury account and
-bootstrap validators’ information. Here is an example of `genesis.json` in Pactus:
+In the Pactus, the genesis information is pre-defined and indicates the initial state of the network.
+These parameters are hardcoded into the project and include:
 
-```json
-{
-  "GenesisTime": "2021-04-07T00:00:00Z",
-  "Params": {
-    "BlockVersion": 1,
-    "BlockTimeInSecond": 10,
-    "CommitteeSize": 21,
-    "BlockReward": 100000000,
-    "TransactionToLiveInterval": 8640,
-    "UnbondInterval": 181440,
-    "MaximumTransactionPerBlock": 1000,
-    "MaximumMemoLength": 64,
-    "FeeFraction": 0.001,
-    "MinimumFee": 1000
-  },
-  "Accounts": [
-    {
-      "Address": "0000000000000000000000000000000000000000",
-      "Balance": 2100000000000000
-    }
-  ],
-  "Validators": [
-    {
-      "PublicKey": "594ac38ee38949356e139340cd9668f48d908e76b44781e7013e3f70b738a9b6b53e95dfcba23bd1bbe923d2df354815986643467f25b755d76a908c0dca20327cc111e16d30f37041a23417f8d7cb446cc891c551176df641f07c1f4e1e068b"
-    },
-    {
-      "PublicKey": "332f2f3a6250b7ff955cd73a0b43e567e82b1e6f4e5ace219b74408deefe995b96481d673ce99b20ce62c2177c05880b37b42d3d63f6e7a951492166e74cec3625870582f4a8b8b135abeb4dd171455a2a4a413b79a50b7ace4f8a3123b1ed8f"
-    },
-    {
-      "PublicKey": "0fe092c870d0cee720a30388e40f14ec2df38526e3db040efd30d2b59df1afd5b25568b87806799c829cd65659a84e193f1dfbb67e9aea6eefd4fbf9dd6ddaac694d59efba0df6aba336c1e373d0228514481edf9cce376933a05a9d8e60830f"
-    },
-    {
-      "PublicKey": "2a59438cb5790fa9d0d3c584e54dfc6f41f998b0bbd5297ea74d5a1b62b1022f222ee1c966fcc060ef199bd867d0d80b416a10423b070d3dd5d4c8d32678b9a686703fe818ba662162416389965579162134c622a9d90d10fb508eef03c38d92"
-    }
-  ]
-}
-```
+- **Genesis Time** This is the time when the genesis block should be created.
+  The bootstrap validators must be operational before this time.
+- **Consensus parameters**: The initial [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters)
+  are defined at genesis time and ensure that the entire network operates within the same configuration.
+  These consensus parameters are discussed in detail in the consensus section of the documentation.
+- **Treasury Account**: The [treasury account]({{ site.baseurl }}/learn/blockchain/account/#treasury-account)
+  is defined at the genesis time and holds the total supply of the Pactus blockchain
+  that 21 million coins, and each coin is divided into 1 billion units.
+- **Bootstrap validators** The bootstrap validators are defined at by their public keys.
+
+## FAQ
+
+### Where can I see the Genesis Information?
+
+You can find the pre-defined Genesis Information for the Testnet of the Pactus blockchain in the `genesis.json` file,
+which is located in the project repository, [here](https://github.com/pactus-project/pactus/blob/main/types/genesis/testnet.json).

@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Send Transaction
+sidebar: Send Transaction
 ---
 
 # Send Transaction

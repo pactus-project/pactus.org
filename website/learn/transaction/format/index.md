@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Transaction format
+sidebar: Transaction format
 ---
 
 # Transaction

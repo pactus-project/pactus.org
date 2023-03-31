@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Validator
+sidebar: Validator
 ---
 
 # Validator
@@ -8,7 +9,8 @@ title: Validator
 ## What is Validator?
 
 A Validator is a node that participates in the consensus process by sharing its votes.
-Validators get rewarded for creating new blocks, and to become a Validator, they must bond tokens in the form of stake.
+Validators get rewarded for creating new blocks, and to become a Validator,
+they must "bond" or lock up a certain amount of coins as stake.
 The more stake they bond, the higher their weight in the consensus protocol.
 
 The Validator structure is 124 bytes long and consists the following fields:

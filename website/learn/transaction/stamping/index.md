@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Stamping Transactions
+sidebar: Stamping Transactions
 ---
 
 # Stamping Transactions

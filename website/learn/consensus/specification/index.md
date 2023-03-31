@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Consensus specification
+sidebar: Specification
 ---
 
 # Consensus specification

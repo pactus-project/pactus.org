@@ -170,7 +170,7 @@ dict:
       Pactus and Bitcoin are two different types of blockchain networks.
       While Bitcoin uses a process called "Proof of Work" to secure its network, Pactus uses a different method called "Proof of Stake".
       This means that instead of mining, validators are responsible for voting on incoming blocks and
-      must hold a certain amount of the network's token, known as "stake", as a security deposit to prevent malicious behavior.
+      must hold a certain amount of the network's coin, known as "stake", as a security deposit to prevent malicious behavior.
     pactus_vs_ethereum: How is Pactus different from Ethereum?
     pactus_vs_ethereum_answer_v1: >
       Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
@@ -316,10 +316,10 @@ dict:
       When you send an unbond transaction, you will no longer be able to send the sortition or bond transactions.
     withdraw_transaction: What is a Withdraw transaction?
     withdraw_transaction_answer_v1: >
-      A withdraw transaction is a type of transaction that allows a validator to withdraw their staked tokens from the network.
+      A withdraw transaction is a type of transaction that allows a validator to withdraw their staked coins from the network.
 
   guide:
     title: User guides
-    welcome: ""
+    welcome: Here, you can find some guidance to help you use and interact with the Pactus blockchain.
     back: « Back to the list
     run_pactus_gui: How to run a Pactus in the Graphic mode?

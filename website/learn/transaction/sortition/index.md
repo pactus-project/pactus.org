@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Sortition Transaction
+sidebar: Sortition Transaction
 ---
 
 # Sortition Transaction

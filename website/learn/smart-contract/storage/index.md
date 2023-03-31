@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Storage as file
+sidebar: Storage as file
 ---
 
 # Storage as file

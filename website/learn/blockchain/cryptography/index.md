@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Cryptography
+sidebar: Cryptography
 ---
 
 # Cryptography

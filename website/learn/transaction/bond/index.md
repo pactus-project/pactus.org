@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Bond Transaction
+sidebar: Bond Transaction
 ---
 
 # Bond Transaction

@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Committee
+sidebar: Committee
 ---
 
 # Committee

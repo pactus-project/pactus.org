@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Consensus protocol
+sidebar: Protocol
 ---
 
 # Consensus protocol

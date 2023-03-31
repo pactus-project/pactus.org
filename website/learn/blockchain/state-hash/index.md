@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: State hash
+sidebar: State hash
 ---
 
 # State hash

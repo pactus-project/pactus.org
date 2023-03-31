@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Transactions fee
+sidebar: Transactions fee
 ---
 
 # Transactions fee

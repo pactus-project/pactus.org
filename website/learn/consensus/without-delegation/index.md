@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Consensus without delegation
+sidebar: Consensus without delegation
 ---
 
 # Consensus without delegation
@@ -9,7 +10,7 @@ title: Consensus without delegation
 
 Proof of Stake is a way to secure the network through requesting users to stake some amount of their coins.
 These stakeholders, called validators, are responsible to collect, validate and add transactions to the blockchain.
-The validators will be rewarded with the native tokens.
+The validators will be rewarded with the native coins.
 They are also motivated by the opportunity to act as stewards of the blockchain.
 
 Unlike Proof of Work, which is based on competition, Proof of Stake is based on collaboration.
@@ -31,7 +32,7 @@ Number of delegates are limited and they are responsible for validating the tran
 
 The solution we are offering in Pactus is creating a dynamic set of validators that is called _committee_.
 The size of the committee is fixed but the members of the committee change randomly.
-The number of validators outside the committee is unlimited and anyone can become a validator by staking some tokens.
+The number of validators outside the committee is unlimited and anyone can become a validator by staking some coins.
 At each block, validators start running a lottery in order to choose themselves.
 A validator can be in the committee for the next block based on his stake and his luck.
 Once a validator enters the committee, the oldest validator in the committee leaves.

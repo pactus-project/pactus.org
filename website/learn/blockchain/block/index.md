@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Block
+sidebar: Block
 ---
 
 # Block
@@ -79,11 +80,6 @@ The block hash is a unique identifier for each block, which is computed by hashi
 The previous certificate hash and the Merkle root hash of transactions are included in the block hash to
 ensure that they cannot be modified.
 The block hash is used to link the blocks together in the blockchain.
-
-## Genesis Block
-
-The genesis block is the first block in blockchain.
-The previous block hash in the genesis block sets to 0 and the genesis block doesn't have the previous certificate.
 
 ## FAQ
 

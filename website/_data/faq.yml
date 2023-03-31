@@ -61,7 +61,7 @@
   items:
     - id: total_supply
       ver: v1
-      img: pactus_token_distribution.png
+      img: pactus_coin_distribution.png
 
     - id: treasury_account
       ver: v1

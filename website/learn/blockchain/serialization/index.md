@@ -1,6 +1,7 @@
 ---
 layout: learn
 title: Data serialization
+sidebar: Serialization
 ---
 
 # Data serialization
