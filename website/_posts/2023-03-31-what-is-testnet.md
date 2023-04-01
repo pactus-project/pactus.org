@@ -15,7 +15,8 @@ Mainnet and Testnet are two widely used terminologies in the Blockchain ecosyste
 Here’s a quick explanation:
 Before the actual live version of a Blockchain network that is used for real transactions, functions and smart-contracts (which is referred as Mainnet), there is a test version of the Blockchain network for testing purposes (which is referred as Testnet). In Testnet, a safe environment is provided to help developers experiment and test their applications, and make sure that everything functions smoothly in the Mainnet version.
 
-## What is Testnet?
+## Testnet
+
 A Testnet is a simulation of a Blockchain, in which developers can test all the functionalities of their Blockchain network without risking their assets and convenience of end-users. Using Testnet, any possible error, bug or malfunctions can be fixed before the Mainnet launch.
 Testnet also can be an experimental environment for new features, updates and upgrades. So several testnet networks of the same version or newer version of the Mainnet can be implemented on the roadmap.
 
