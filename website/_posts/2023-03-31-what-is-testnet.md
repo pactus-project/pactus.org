@@ -33,7 +33,7 @@ Testnet also can be an experimental environment for new features, updates and up
  	
 **Testing new versions, patches and features on testnet.** it is vital for enhancing the security, load testing, Blockchain migration, integration tests, and etc. This is why you can now use the latest version of Pactus-GUI that works like clockwork and is extremely secure.
  	
-**Testing 	the functions of cryptocurrency without disrupting the mainnet.** In 	the testnet of Pactus Blockchain, you as a user or validator can use 	all the features to send, receive, bond or unbond your assets in the 	pactus-GUI.
+**Testing the functions of cryptocurrency without disrupting the mainnet.** In the testnet of Pactus Blockchain, you as a user or validator can use all the features to send, receive, bond or unbond your assets in the Pactus-GUI.
  	
 **Development 	and simulation of smart contract features and DApps.** 	Note that many Blockchain projects like Pactus, can be used as 	smart-contract platforms. So the testnet can be designed in 	different stages to test and improve different applications of the 	network.
 
