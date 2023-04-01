@@ -29,7 +29,7 @@ Testnet also can be an experimental environment for new features, updates and up
  	
 - well-functioning Pactus Blockchain explorer to access transactions and block details;
  	
-- Upgrades 	that led to decreasing the size of the Pactus network
+- Upgrades that led to decreasing the size of the Pactus network
 
 **Providing a safe testing ground for resolve scalability and security problems, as well as decentralization issues.** Pactus network is also a secure and purely decentralized network. However in the last updates during the Testnet, developers are now able to decrease the database size by approximately 10% without compromising performance. They did it by utilizing block height instead of hash to store blocks within the database. (you can find out more [here](https://github.com/pactus-project/pactus/pull/416)).
  	
