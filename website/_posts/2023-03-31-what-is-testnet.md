@@ -23,7 +23,7 @@ Testnet also can be an experimental environment for new features, updates and up
 
 ## What are use cases of Testnet?
 
-**A secure environment to test development ideas and updates.** So 	many features and minor details in Pactus project have been 	successfully developed so far using the Testnet; such as:
+**A secure environment to test development ideas and updates.** So many features and minor details in Pactus project have been successfully developed so far using the Testnet; such as:
 
 - extra details and information on Pactus-GUI;
  	
