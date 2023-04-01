@@ -21,7 +21,8 @@ A Testnet is a simulation of a Blockchain, in which developers can test all the 
 Testnet also can be an experimental environment for new features, updates and upgrades. So several testnet networks of the same version or newer version of the Mainnet can be implemented on the roadmap.
 
 
-## What are use cases of testnet?
+## What are use cases of Testnet?
+
 **A secure environment to test development ideas and updates.** So 	many features and minor details in Pactus project have been 	successfully developed so far using the Testnet; such as:
 
 - extra details and information on Pactus-GUI;
