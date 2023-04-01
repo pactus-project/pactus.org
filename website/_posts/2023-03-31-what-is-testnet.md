@@ -7,6 +7,7 @@ summary: What is Testnet?
 ---
 
 ## Mainnet vs Testnet?
+
 If you have ever wondered what Testnet is and how it is different from Mainnet, read this article to the end to find out!
 
 Mainnet and Testnet are two widely used terminologies in the Blockchain ecosystem; so it is important to understand the meaning and differences while working in the industry or following announcements of the Blockchain projects like Pactus.
