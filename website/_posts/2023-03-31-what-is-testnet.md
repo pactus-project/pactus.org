@@ -41,7 +41,8 @@ Testnet also can be an experimental environment for new features, updates and up
 
 Please note that after a certain period of time, when developers get satisfied with the functionality and debugging process, they launch Mainnet. Mainnet has its own independent genesis blocks; so the assets and addresses that users use in Testnet are not valid inside the new Mainnet Blockchain anymore. In fact the whole Blockchain network starts working from the scratch and users and validators start to work with real tokens and transactions instead of the simulated ones. But since Testnet has an important effect on the health and improvement of the network, in Pactus Blockchain, we have several advantages for the people who join the Testnet.
 
-## Why should you join the testnet?
+## Why should you join the Testnet?
+
 There are different contributors in a Blockchain network;
 Some people are developers and programmers that use the Testnet to contribute, enhance and lead the project to a better future. Testnet is actually vital for them to perform their changes and try their innovations and ideas.
 
