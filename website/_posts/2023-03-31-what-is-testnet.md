@@ -35,7 +35,7 @@ Testnet also can be an experimental environment for new features, updates and up
  	
 **Testing the functions of cryptocurrency without disrupting the mainnet.** In the testnet of Pactus Blockchain, you as a user or validator can use all the features to send, receive, bond or unbond your assets in the Pactus-GUI.
  	
-**Development 	and simulation of smart contract features and DApps.** 	Note that many Blockchain projects like Pactus, can be used as 	smart-contract platforms. So the testnet can be designed in 	different stages to test and improve different applications of the 	network.
+**Development and simulation of smart contract features and DApps.** Note that many Blockchain projects like Pactus, can be used as smart-contract platforms. So the Testnet can be designed in different stages to test and improve different applications of the network.
 
 Please note that after a certain period of time, when developers get satisfied with the functionality and debugging process, they launch Mainnet. Mainnet has its own independent genesis blocks; so the assets and addresses that users use in Testnet are not valid inside the new mainnet Blockchain anymore. In fact the whole Blockchain network starts working from the scratch and users and validators start to work with real tokens and transactions instead of the simulated ones. But since testnet has an important effect on the health and improvement of the network, in Pactus Blockchain, we have several advantages for the people who join the testnet.
 
