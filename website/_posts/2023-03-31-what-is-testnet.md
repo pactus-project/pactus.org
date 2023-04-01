@@ -31,7 +31,7 @@ Testnet also can be an experimental environment for new features, updates and up
 
 **Providing 	a safe testing ground for resolve scalability and security problems, 	as well as decentralization issues.** Pactus 	network is also a secure and purely decentralized network. However 	in the last updates during the Testnet, 	developers are now 	able to decrease 	the database size by approximately 10% without compromising 	performance. They did it by utilizing block height instead of hash 	to store blocks within the database. (you can find out more here).
  	
-**Testing 	new versions, patches and features on testnet.** 	it is vital for enhancing the security, load testing, Blockchain 	migration, integration tests, and etc. This is why you can now use 	the latest version of Pactus-GUI that works like clockwork and is 	extremely secure.
+**Testing new versions, patches and features on testnet.** it is vital for enhancing the security, load testing, Blockchain migration, integration tests, and etc. This is why you can now use the latest version of Pactus-GUI that works like clockwork and is extremely secure.
  	
 **Testing 	the functions of cryptocurrency without disrupting the mainnet.** In 	the testnet of Pactus Blockchain, you as a user or validator can use 	all the features to send, receive, bond or unbond your assets in the 	pactus-GUI.
  	
