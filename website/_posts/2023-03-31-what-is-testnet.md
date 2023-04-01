@@ -27,7 +27,7 @@ Testnet also can be an experimental environment for new features, updates and up
 
 - extra details and information on Pactus-GUI;
  	
-- well-functioning 	Pactus Blockchain explorer to access transactions and block details;
+- well-functioning Pactus Blockchain explorer to access transactions and block details;
  	
 - Upgrades 	that led to decreasing the size of the Pactus network
 
