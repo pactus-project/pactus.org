@@ -100,11 +100,11 @@ proposer and validator 3 is faulty.
 
 ### Change proposer
 
-The change-proposer protocol provides liveness by allowing the system to make progress when the
+The change-proposer phase provides liveness by allowing the system to make progress when the
 proposer fails. change-proposers are triggered by timeouts that prevent validators from waiting
 indefinitely for the proposal to execute.
 
-If the timer of validator expires in a round, the validator starts a change-proposer phase to move
+If the timer of a validator expires in round $$r$$, the validator starts a change-proposer phase to move
 the system to round $$r+1$$. It stops accepting messages (other than
 change-proposer and block-announce messages) and broadcasts a change-proposer message to all
 validators.

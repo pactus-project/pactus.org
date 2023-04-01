@@ -9,7 +9,7 @@ dict:
   resources: Resources
   know_more: Know more
   join_community: Join community
-  outdated_translation: The translation is outdated. You can use it, but it might not be accurate.
+  outdated_translation: The translation is outdated. You can read it, but it might not be accurate.
 
   home:
     motto: A truly decentralized Proof of Stake blockchain with enhanced scalability and speed to execute smart contracts and transactions.
@@ -279,11 +279,10 @@ dict:
       This process repeats every 10 seconds.
     how_enter_committee: How can a validator enter to the committee?
     how_enter_committee_answer_v1: >
-      To enter the committee in Pactus, validators can participate in a lottery or sortition process that occurs at each block.
-      In this process, validators generate a provable random number between zero to total stake, and if the number is less than their stake,
-      they can send a transaction known as sortition transaction with the proof of sortition.
-      Once the sortition transaction is included in a block and added to the blockchain, the validator becomes a committee member,
-      and the oldest committee member leaves.
+       To enter the committee in Pactus, validators participate in a lottery or sortition process that occurs at each block.
+       In this process, validators generate a provable random number between zero and the total staked coins,
+       and if the number is less than their stake, they can send a transaction known as sortition transaction with the proof of sortition.
+       Once the sortition transaction is included in a block, the validator replaces the oldest committee member.
     fork_possibility: Is it possible to have two valid blocks at the same time?
     fork_possibility_answer_v1: >
       It is not possible to have two valid blocks at the same time in Pactus blockchain.

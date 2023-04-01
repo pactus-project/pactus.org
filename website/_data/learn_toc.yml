@@ -16,7 +16,7 @@
   items:
     - doc: protocol
     - doc: specification
-    - doc: without-delegation
+    - doc: proof-of-stake
     - doc: committee
     - doc: sortition
     - doc: parameters
