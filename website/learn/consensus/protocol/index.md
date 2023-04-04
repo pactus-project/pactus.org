@@ -19,13 +19,14 @@ consensus algorithm at any given time is in one the following states:
 
 ![Pactus consensus states]({{ site.url }}/assets/images/pactus_consensus_states.png)
 
-Every 10 seconds a proposer has chance to propose a block. Whenever other validators see a proposed
-block, they validate the block and change their state to _prepare_ state. If more than ⅔ of the
-total stakes cast their votes, the proposed block becomes prepared and validators goes to
-_precommit_ state. If again more than ⅔ of the total stakes cast their vote for the prepared block,
-the block will be committed and the next proposer will get ready for proposing new block. These
-steps repeat every 10 seconds. In case of any failure in each step, validators goes to _proposer
-change_ state and try to change the proposer for the next round.
+The Pactus consensus algorithm operates on a cycle of 10 seconds, during which a proposer has the opportunity
+to propose a block.
+When a proposed block is seen by other validators, they validate the block and move to the _prepare_ state.
+If more than ⅔ of the total stakes cast their votes, the proposed block becomes prepared,
+and validators move to the _precommit_ state. If again more than ⅔ of the total stakes
+cast their vote for the prepared block, the block is committed, and the next proposer is ready to propose a new block.
+This cycle repeats every 10 seconds. If any failure occurs during these steps,
+validators move to the _proposer change_ state to try and change the proposer for the next round.
 
 Pactus consensus mechanism is inspired by Practical Practical Byzantine Fault Tolerant algorithm.
 Below you can see more details about the consensus mechanism in Pactus.
@@ -44,7 +45,7 @@ the resiliency of the algorithm is optimal if we have at least $$3$$ non-faulty
 validators. So the minimum number of validators should be $$3+1=4$$.
 
 We use cryptographic techniques to prevent spoofing and replays and to detect corrupted messages.
-All validators know the others’ public keys to verify signatures. All messages contain public key
+All validators know each other's public keys to verify signatures. All messages contain public key
 signatures. We denote a message signed by node $$i$$ as
 $$<m>_{\sigma _i}$$.
 

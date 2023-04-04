@@ -6,7 +6,12 @@ sidebar: State hash
 
 # State hash
 
-## What Is Merkle tree?
+The State Hash in the Pactus blockchain is used to ensure the integrity of the data stored in the network.
+It serves as a unique identifier or fingerprint of the current state of the blockchain,
+allowing all nodes to verify that their data matches that of other nodes.
+This helps to prevent any tampering or inconsistencies in the data, ensuring the accuracy and consistency of the blockchain.
+
+## Merkle tree
 
 > In cryptography and computer science, a hash tree or Merkle tree is a tree in which every leaf node
 > is labelled with the cryptographic hash of a data block, and every non-leaf node is labelled with
@@ -20,7 +25,8 @@ Hash tree or Merkle tree is a data structures that used by many blockchains to s
 
 By using a Merkle tree, nodes can easily verify that they store the same data,
 without having to share the entire dataset. Additionally, this helps to prevent any tampering with the data,
-as any changes made to the data would cause inconsistencies in the Merkle tree and be detected by the network.
+as any changes made to the data would cause inconsistencies in the Merkle tree and
+can be easily detected by the network.
 
 ## State Merkle trees
 

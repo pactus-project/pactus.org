@@ -6,18 +6,18 @@ sidebar: Block
 
 # Block
 
-## What is a Block?
-
-In the Pactus blockchain, a block is a set of data that contains a header, transactions and
-the certificate of the previous block.
-Once a block comes with a valid certificate, it is committed and added to the blockchain.
+In the Pactus, a block is a set of data that contains a header, the certificate of the previous block,
+and list of the transactions.
+Once a block comes with a valid certificate, it is committed and added to the blockchain, and
+the certificate will be included in the next block.
 A committed block is immutable, and any modifications to the block will invalidate the certificate.
 
 ![Pactus blockchain]({{ site.url }}/assets/images/pactus_blockchain.png)
 
-### Block header
+## Block header
 
-The block header is a data structure in the Pactus blockchain that contains important information about the block.
+The block header is a data structure in the Pactus blockchain that contains important information about
+the block.
 
 The block header is 138 bytes long and consists the following fields:
 
@@ -39,19 +39,19 @@ The block header is 138 bytes long and consists the following fields:
   the [sortition]({{ site.baseurl }}/learn/consensus/sortition) algorithm.
 - **Proposer Address** is the address of the validator who created and proposed the block.
 
-### Block certificate
+## Block certificate
 
 A block certificate is a proof of commitment for the block in the Pactus blockchain.
 It is the result of the Pactus consensus algorithm and ensures that the block has been agreed upon by committee members.
 
 The block certificate consists the following fields:
 
-| size     | Field      | Description              |
-| -------- | ---------- | ------------------------ |
-| 2 bytes  | Round      | The consensus round      |
-| Variant  | Committers | The block committers     |
-| Variant  | Absentees  | The absentees            |
-| 48 bytes | Signature  | The aggregated signature |
+| Size     | Field      |
+| -------- | ---------- |
+| 2 bytes  | Round      |
+| Variant  | Committers |
+| Variant  | Absentees  |
+| 48 bytes | Signature  |
 
 - **Round** is the consensus round that this certificate issued.
 - If a proposer failed to propose a block in one round, other validator change the proposer and increase the round number.
@@ -60,7 +60,7 @@ The block certificate consists the following fields:
 - **Signature** is the signature for the certificate that enures the majority of the committee members validate and
 - signed the proposed block
 
-### Transactions
+## Transactions
 
 Each block in the Pactus blockchain contains a list of transactions.
 The maximum number of transactions in a block is determined by the blockchain parameters, and currently set to 1000.
@@ -74,7 +74,7 @@ The block hash is a unique identifier for each block, which is computed by hashi
 
 - Block header data (138 bytes)
 - Previous certificate hash (32 bytes)
-- Merkle root hash of transactions (32 bytes)
+- [Merkle root]({{ site.url }}/learn/blockchain/state-hash/#merkle-tree) hash of transactions (32 bytes)
 - Number of transactions (variant)
 
 The previous certificate hash and the Merkle root hash of transactions are included in the block hash to
@@ -94,7 +94,7 @@ In the Pactus blockchain, a validator called a Proposer is responsible for colle
 creating a block every 10 seconds.
 The Proposer broadcasts the proposed block to other validators inside the committee.
 Other validators verify the proposed block, and if it is valid, they cast their votes in favor of the proposed block by
-signing the combination of the block hash and round.
+signing the combination of the block hash and the consensus round.
 More details about the consensus mechanism can be found in the [consensus]({{ site.baseurl }}/learn/consensus/protocol) document.
 
 To issue a valid certificate, signatures from validators who hold more than ⅔ of the stake in
@@ -106,4 +106,5 @@ the certificate is issued.
 
 To verify a certificate for a block, the block hash is computed, and
 the aggregated public key can be formed from the **Committers** and **Absentees**.
-Then, the signature can be verified using the aggregated public key.
+Then, the signature can be verified using the aggregated public key and
+the aggregated signature inside the certificate.

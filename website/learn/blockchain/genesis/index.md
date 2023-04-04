@@ -6,15 +6,19 @@ sidebar: Genesis
 
 # Genesis
 
-## Bootstrapping phase
+The Pactus blockchain starts from scratch, with no pre-existing accounts or pre-allocated tokens.
+Its starting point is known as the Genesis block, which is created by the bootstrap validators.
+
+## Bootstrapping
 
 The Pactus blockchain starts with four _bootstrap_ validators.
 These bootstrap validators do not have any stake, however their voting power is set to one within the consensus algorithm.
 Their primary role is to initiate the blockchain during a brief period known as the bootstrapping phase.
-During this time, they accumulate rewards, which they can use to invite additional validators to join the network.
+As the bootstrapping phase progresses, these validators are able to earn rewards,
+which they can later use to invite other validators to join the network.
 
 Once the network reaches 21 validators, the bootstrap validators will retire, and
-the blockchain will continue to operate by the new validators.
+the blockchain will be secured by other validators.
 
 ## Genesis block
 

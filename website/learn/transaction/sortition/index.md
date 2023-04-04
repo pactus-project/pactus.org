@@ -6,21 +6,21 @@ sidebar: Sortition Transaction
 
 # Sortition Transaction
 
-Sortition transaction is used to enter a validator in the set for the next run. Sortition
-transactions are valid for 21 heights.
+Sortition transaction is used to enter a validator in the committee.
+By committing a sortition transaction, the validator will enter to the committee.
+Sortition transactions are valid for 7 block that is defined in
+[consensus parameters]({{ site.url }}/learn/consensus/parameters/).
 
-# Payload format
+## Payload structure
 
-The sortition transaction has a payload as seen below:
+The sortition transaction has a payload consists the following fields:
 
-```go
-type SortitionPayload struct {
-    Address crypto.Address   // 21 bytes
-    Proof   sortition.Proof  // 48 bytes
-}
-```
+| Size     | Field           |
+| -------- | --------------- |
+| 21 bytes | Address         |
+| 48 bytes | Sortition Proof |
 
-- `Address` is the address validator that evaluated the sortition
-- `Proof` is the proof of evaluating sortition and it is 48 bytes length
+- **Address** is the address of the validator that evaluated the sortition
+- **Sortition Proof** is the proof of evaluating the sortition
 
-Validator doesn't need to pay fee for sortition transaction and fee should set to zero.
+Validator doesn't need to pay a fee for the sortition transaction and, and the fee should be set to zero.

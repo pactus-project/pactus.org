@@ -6,8 +6,6 @@ sidebar: Address
 
 # Address
 
-## What is an Address?
-
 An Address is a unique identifier that is used to send and receive transactions on the Pactus blockchain.
 It is represented as a string of 42 alphanumeric characters and always begins with the letters "pc1".
 Here is an example of an Address on the Pactus blockchain:
@@ -16,7 +14,7 @@ Here is an example of an Address on the Pactus blockchain:
 pc1p4e92hx0erqyx939crndvthvpn7qcdhefc9r6s7
 ```
 
-### Address structure
+## Address structure
 
 An address in the Pactus blockchain is made up of 21 bytes and it is derived from the public key.
 The first byte of the address specifies the address type,
@@ -27,12 +25,12 @@ The resulting byte array is then converted into a bech32m[^first] string.
 
 ![Pactus address structure]({{ site.url }}/assets/images/pactus_address.png)
 
-### Address Type
+## Address Type
 
 The Address Type specifies the type of public key used to generate the address.
 This makes it easy to add support for new signature algorithms in the future.
 Currently, the Pactus blockchain only supports
-[BLS signature]({{ site.baseurl }}/learn/blockchain/cryptography/#signature-scheme)
+[BLS signature]({{ site.baseurl }}/learn/blockchain/cryptography/#digital-signature)
 algorithm, with the type set to one.
 
 ## Treasury address

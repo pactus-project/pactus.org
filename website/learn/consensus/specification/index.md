@@ -6,33 +6,40 @@ sidebar: Specification
 
 # Consensus specification
 
-## What is TLA+
+Developing distributed and concurrent systems is a complex task that requires careful attention to the details.
+Testing such systems is challenging because it's difficult to simulate all possible states,
+including those that can happen due to system failures, network latency, and other factors.
+This makes it hard to ensure that the system behaves correctly in all circumstances.
 
-> TLA+ is a formal specification language developed by Leslie Lamport. It is used for designing,
-> modelling, documentation, and verification of programs, especially concurrent systems and
-> distributed systems. TLA+ is considered to be exhaustively-testable pseudocode, and its use likened
-> to drawing blueprints for software systems; TLA is an acronym for Temporal Logic of Actions.
->
-> From [Wikipedia](https://en.wikipedia.org/wiki/TLA%2B)
+Therefore it's essential to have a proactive approach that involves modeling the system's behavior in a formal way.
+Such an approach can help identify potential issues before they occur, saving time and preventing costly flaws.
 
-Testing and modeling the concurrent and distributed system are hard.
-[Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport) created TLA+ on the idea that to
-describe things with simple mathematics. TLA+ and its tools are useful for eliminating fundamental
-design errors, which are hard to find and expensive to correct in code. Check
-[The TLA+ Home Page](https://lamport.azurewebsites.net/tla/tla.html) for more information.
+## TLA+
+
+[TLA+](https://en.wikipedia.org/wiki/TLA%2B) is a formal specification language developed by
+[Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport) based on the idea of
+[specifying systems](https://lamport.azurewebsites.net/tla/book-21-07-04.pdf) using simple mathematics.
+It is used for designing, modelling, documentation, and verification of programs, especially concurrent and
+distributed systems.
+TLA+ and its tools are useful for eliminating fundamental design errors, which are hard to find and
+expensive to correct in code.
+
+To know more about TLA+, check [The TLA+ Home Page](https://lamport.azurewebsites.net/tla/tla.html).
 
 ## Pactus consensus spec
 
-Pactus consensus specification has written in TLA+ format. It includes all invariants that can be held
+Pactus [consensus specification](https://github.com/pactus-project/pactus/tree/main/consensus/spec)
+has written in TLA+ format. It includes all invariants that can be held
 in every state of every execution that the protocol allows. The TLA+ specification is compiled into
 [PDF file](https://raw.githubusercontent.com/pactus-project/pactus/main/consensus/spec/Pactus.pdf).
 
 ### Safety proof
 
-By defining some invariants we can ensure the safety of the consensus protocol in any possible and
-distinct state. We have the informal safety proof of the Pactus consensus protocol using TLA+ toolbox.
+By defining some invariants we can ensure the safety of the consensus
+[protocol]({{ site.url }}/learn/consensus/protocol) in any possible and
+distinct state, and therefore we have the informal safety proof of the Pactus consensus protocol using TLA+.
 
 ### Liveness proof
 
 Checking the liveness is not easy, but with defining some constraints, we have the informal proof of
-liveness of Pactus consensus protocol using TLA+ toolbox.
+liveness of Pactus consensus protocol using TLA+.

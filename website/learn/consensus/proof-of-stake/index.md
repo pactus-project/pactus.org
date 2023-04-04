@@ -6,18 +6,15 @@ sidebar: Proof of Stake
 
 # Proof of Stake
 
-## What is Proof Of Stake?
-
 Proof of Stake is a way to secure a blockchain through requesting users to stake some amount of their coins.
 These stakeholders, called validators, are responsible to collect, validate and add transactions to the blockchain.
 The validators will be rewarded with the native coins.
-They are also motivated by the opportunity to act as stewards of the blockchain.
 
 Unlike Proof of Work, which is based on competition, Proof of Stake is based on collaboration.
 Validators work together to manage the expansion of the blockchain.
 A Proof of Stake blockchain is more decentralized and therefore more secure if more validators participate in it.
 
-### An example
+## An example
 
 To understand how Proof of Stake works, imagine a community bank without any centralized authority.
 In this bank, users decide to run it together.
@@ -36,7 +33,7 @@ the bundle will be committed to the bank's ledger.
 In this system, validators have no incentive to act maliciously or dishonestly.
 If they do, they risk harming the bank's reputation and the value of their own stakes as well.
 
-### Delegated Proof of Stake
+## Delegated Proof of Stake
 
 In Proof of Stake, if the number of validators increases,
 the voting time will also increase, and this can lead to an inefficient consensus mechanism.
@@ -56,7 +53,8 @@ which goes against the principle of "don't trust, verify".
 
 Pactus introduced a mechanism that doesn't rely on delegation.
 It utilizes a dynamic committee of 21 validators who randomly change and are responsible for creating new blocks.
-However, the number of validators outside the committee is unlimited, allowing anyone to become a validator by staking some coins.
+However, the number of validators outside the committee is unlimited, allowing anyone to
+become a validator by staking some coins.
 
 Validators participate in the [sortition](https://pactus.org/learn/consensus/sortition/) algorithm
 at each block by generating a random number between zero and the total staked coins.
@@ -65,7 +63,6 @@ This transaction is valid for 7 blocks after issuance. When the sortition transa
 the validator replaces the oldest committee member.
 
 ![Pactus Proof of Stake]({{ site.url }}/assets/images/pactus_validator_pool.png)
-
 
 ## FAQ
 

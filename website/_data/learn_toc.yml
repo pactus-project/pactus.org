@@ -14,9 +14,9 @@
 - title: Consensus
   path: learn/consensus
   items:
+    - doc: proof-of-stake
     - doc: protocol
     - doc: specification
-    - doc: proof-of-stake
     - doc: committee
     - doc: sortition
     - doc: parameters

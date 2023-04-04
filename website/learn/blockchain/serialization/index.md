@@ -6,10 +6,9 @@ sidebar: Serialization
 
 # Data serialization
 
-## What is the Data serializations?
-
 Data serialization is the process of converting data into a format that can be easily stored or transmitted over a network.
 It typically involves encoding data into a sequence of bytes that can later be decoded to reconstruct the original data structure.
+Pactus has two methods for data serialization: Deterministic serialization and CBOR serialization:
 
 ## Deterministic serialization
 

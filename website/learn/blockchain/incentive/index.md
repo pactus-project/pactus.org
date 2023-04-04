@@ -6,8 +6,6 @@ sidebar: Incentive
 
 # Incentive
 
-## Flat Reward
-
 > The incentive may help encourage nodes to stay honest.
 >
 > [Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
@@ -15,6 +13,8 @@ sidebar: Incentive
 In Pactus, rewards are given to validators for proposing and validating new blocks on the blockchain.
 These rewards serve as an incentive for validators to participate in the consensus process and
 maintain the security and integrity of the network.
+
+## Flat Reward
 
 To better understand the incentive model in Pactus, let's compare it with the Bitcoin reward model.
 This comparison will help to understand how the incentive model works in Pactus.

@@ -6,10 +6,10 @@ sidebar: Account
 
 # Account
 
-## What is an Account?
-
 An account is an entity that is identified by a unique [address]({{ site.baseurl }}/learn/blockchain/address),
 which can send transactions on the blockchain.
+
+## Account structure
 
 The account structure is 37 bytes long and consists the following fields:
 
