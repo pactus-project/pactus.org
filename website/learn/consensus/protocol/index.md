@@ -47,7 +47,7 @@ validators. So the minimum number of validators should be $$3+1=4$$.
 We use cryptographic techniques to prevent spoofing and replays and to detect corrupted messages.
 All validators know each other's public keys to verify signatures. All messages contain public key
 signatures. We denote a message signed by node $$i$$ as
-$$ \langle m  \rangle  _{\sigma _i}$$.
+$$ \langle m \rangle \_{\sigma \_i}$$.
 
 ### Normal-Case Operation
 
@@ -61,7 +61,7 @@ The proposer $$p$$ collects transactions and creates a proposal block. It signs 
 broadcasts a propose message with the proposed block piggybacked to all the validators.
 Propose message has this form:
 
-$$ \langle \langle \text{PROPOSE},h,r \rangle _{\sigma _p}, B \rangle $$
+$$ \langle \langle \text{PROPOSE},h,r \rangle \_{\sigma \_p}, B \rangle $$
 
 where:
 
@@ -75,7 +75,7 @@ If validator $$i$$ accepts the proposal, it enters _prepare_ phase and signs and
 broadcasts _prepare_ message to all other validators. Otherwise, it does nothing.
 The prepare message has this form:
 
-$$ \langle \text{PREPARE},h,r,d,i \rangle _{\sigma _i} $$
+$$ \langle \text{PREPARE},h,r,d,i \rangle \_{\sigma \_i} $$
 
 where:
 
@@ -90,7 +90,7 @@ In _precommit_ phase, validator $$i$$ signs and broadcasts precommit message to
 the other validators.
 The precommit message has this form:
 
-$$ \langle \text{PRECOMMIT},h,r,d,i \rangle _{\sigma _i} $$
+$$ \langle \text{PRECOMMIT},h,r,d,i \rangle \_{\sigma \_i} $$
 
 Each validator executes and commits block $$b$$ after receiving
 $$2f+1$$ precommit messages (possibly including its own) and becomes **committed**.
@@ -113,7 +113,7 @@ validators.
 
 The change-proposer message has this form:
 
-$$ \langle \text{CHANGE-PROPOSER},h,r,i \rangle _{\sigma _i}  $$
+$$ \langle \text{CHANGE-PROPOSER},h,r,i \rangle \_{\sigma \_i} $$
 
 If the proposer for round $$r+1$$ receives $$2f+1$$ valid
 change-proposer messages for round $$r$$ from other validators, it goes to next

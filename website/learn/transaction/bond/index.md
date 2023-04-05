@@ -6,25 +6,26 @@ sidebar: Bond Transaction
 
 # Bond Transaction
 
-Bond transaction is used to bond stake to a validator. If the validator does not exist, it will be
-created.
+Bond transaction is used to bond stake to a validator.
+If the validator does not exist, it will be created.
+Once a bond transaction committed, the validator cannot participate in the
+[sortition algorithm]({{ site.url }}/learn/consensus/sortition/) for 1 hour.
+This is called the boding interval and set as a [consensus parameter]({{ site.url }}/learn/consensus/parameters/).
 
-# Payload format
+## Payload structure
 
-Bond transaction has a payload as seen below:
+The bond transaction has a payload consists the following fields:
 
-```go
-type BondPayload struct {
-    Sender    crypto.Address    // 21 bytes
-    Receiver  crypto.Address    // 21 bytes
-    PublicKey *bls.PublicKey    // 96 bytes
-    Stake     int64             // variant
-}
-```
+| Size                | Field            |
+| ------------------- | ---------------- |
+| 21 bytes            | Sender address   |
+| 21 bytes            | Receiver address |
+| 96 bytes (optional) | Public key       |
+| 8 bytes             | Amount           |
 
-- `Sender` is the account address that bonds the stake
-- `Receiver` is the validator address that receives the stake
-- `PublicKey` is the public key of the validator (it's optional)
-- `Stake` is the amount of stake that should be bond
-
-If the validator is not exist yet, the public key should be defined.
+- **Sender address** is the address of the sender [account]({{ site.url }}/learn/blockchain/account/).
+- **Receiver address** is the address of the receiver
+  [validator]({{ site.url }}/learn/blockchain/validator/).
+- **Public key** is the validator's public key. If the validator is not exist yet,
+  the public key should be set, otherwise it should left empty.
+- **Amount** is the amount of coins that should be staked or bonded.

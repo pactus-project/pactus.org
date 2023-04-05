@@ -51,9 +51,9 @@ where:
 
 - $$ sk $$ is the secret key of the validator
 - $$ seed $$ is the sortition seed
-- $$ total\_stake $$ is the total stake of the blockchain
-- $$ P_{BLS} $$ is a cryptographic function that derives the public key from the secret key for the BLS signature
-- $$ S_{BLS} $$ is a cryptographic function used to sign a message with the secret key using for the BLS signature
+- $$ total_stake $$ is the total stake of the blockchain
+- $$ P\_{BLS} $$ is a cryptographic function that derives the public key from the secret key for the BLS signature
+- $$ S\_{BLS} $$ is a cryptographic function used to sign a message with the secret key using for the BLS signature
 - $$ H $$ is a cryptographic hash function that generates a number between $$ 0 $$ to $$ 2 ^{256} $$
 
 To verify a sortition proof, both the validator's public key and stake are required:
@@ -75,7 +75,7 @@ $$
 
 where:
 
-- $$ V_{BLS} $$ is a cryptographic function used to verify a signed message using the BLS signature scheme
+- $$ V\_{BLS} $$ is a cryptographic function used to verify a signed message using the BLS signature scheme
 
 There is no need to send $$ index $$ alongside $$ proof $$ because the
 result should be less than the validator's stake, and the validator's stake is known at each block.
@@ -84,7 +84,6 @@ result should be less than the validator's stake, and the validator's stake is k
 
 The sortition algorithm relies on a random and publicly verifiable seed that cannot be manipulated by adversaries.
 Otherwise, adversaries may select a seed that favors the selection of corrupt users.
-
 
 To prevent this, the BLS signature scheme is used to generate the sortition seed.
 Since BLS signatures are unique and deterministic, adversaries cannot generate more than one valid signature per block.
@@ -97,7 +96,6 @@ $$
 & \textbf{end function}
 \end{align*}
 $$
-
 
 Since the proposer's public key is known, the seed for the next block can be easily verified.
 If the seed is invalid, the proposed block will be rejected.

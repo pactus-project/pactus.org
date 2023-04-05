@@ -64,7 +64,7 @@ The block certificate consists the following fields:
 
 Each block in the Pactus blockchain contains a list of transactions.
 The maximum number of transactions in a block is determined by the blockchain parameters, and currently set to 1000.
-The first transaction in each block is the reward transaction.
+The first transaction in each block is the [reward transaction]({{ site.url }}/learn/transaction/send/#reward-transaction).
 Once a block is committed and added to the blockchain, all the transactions inside the block will be executed.
 This means that the state of the blockchain will be updated based on the transactions in the committed block.
 

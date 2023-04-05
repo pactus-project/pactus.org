@@ -6,8 +6,6 @@ sidebar: Parameters
 
 # Consensus Parameters
 
-## What are the consensus parameters?
-
 Consensus parameters are a set of configurable settings that determine how the Pactus blockchain operates.
 These parameters are agreed upon by all validators in the network,
 ensuring that validators behave in the same way and that the network operates consistently.
