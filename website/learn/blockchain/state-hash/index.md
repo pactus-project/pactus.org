@@ -6,9 +6,9 @@ sidebar: State hash
 
 # State hash
 
-The State Hash in the Pactus blockchain is used to ensure the integrity of the data stored in the network.
+The State Hash is used to ensure the integrity of the data in the Pactus blockchain.
 It serves as a unique identifier or fingerprint of the current state of the blockchain,
-allowing all nodes to verify that their data matches that of other nodes.
+allowing all nodes to verify that their data matches that of the other nodes.
 This helps to prevent any tampering or inconsistencies in the data, ensuring the accuracy and consistency of the blockchain.
 
 ## Merkle tree

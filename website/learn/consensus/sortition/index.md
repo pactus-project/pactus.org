@@ -6,26 +6,15 @@ sidebar: Sortition
 
 # Sortition Algorithm
 
-## Sortition Seed
+The sortition algorithm is an important part of the Pactus blockchain, responsible for the fair, transparent
+and random selection of validators to join the [committee]({{ site.url }}/learn/consensus/committee/).
+It utilizes a Verifiable Random Function, or VRF for short, to generate a verifiable random number.
 
-Sortition algorithm requires a seed that is random and publicly verifiable. In each height, the
-proposer has to generate a new seed based on previous seed and the adversary is not able to
-manipulate the seed generation.
-
-To achieve this, we use BLS signature scheme to generate the seed. Since BLS signature is unique and
-deterministic, the adversary cannot generate more than one valid signature per height.
-
-During the block proposal stage, the proposer should take the previous seed and sign it with its
-public key. The result is the seed for the next block.
-
-$$seed_{n+1}=generate(sk_{proposer}, hash(seed_{n}))$$
-
-Everyone knows the proposer's public key, therefore they can easily validate the seed for the next
-block. If the seed is not valid, the proposed block will be rejected.
-
-$$verify(pub_{proposer}, hash(seed_{n}), seed_{n-1})=True \lor False$$
-
-Sortition Seed is 48 bytes and Sortition Seed for the genesis block set to 0.
+The generated random number should be in the range of 0 to the total staked coins.
+If validators can prove that their generated number is less than their stake,
+they can send the [sortition transaction]({{ site.url}}/learn/transaction/sortition/).
+Once a sortition transaction is included in a block, the validator will join the committee,
+and the oldest validator in the committee will leave it.
 
 ## Verifiable Random Function
 
@@ -34,42 +23,101 @@ at any point of $$x$$ can evaluate $$v=f_s(x)$$ and also provides
 $$proof_x$$ efficiently proving that $$v$$ is correct. We call such a mathematical
 object a verifiable pseudo-random function, VRF for brevity [^first].
 
-In Pactus we are using BLS signature scheme as source of VRF. Since BLS signature are unique, in the
-random oracle model, the hash of a BLS signature can be used as a secure VRF.
+Pactus uses the BLS signature scheme as the source of VRF.
+Since BLS signatures are [unique]({{ site.url }}/learn/blockchain/cryptography/#non-malleability),
+the hash of a BLS signature can be used to produce a secure and verifiable random number.
 
-VRF takes the publicly-known seed for each block and generates an index and proof.
+The VRF takes three parameters: the sortition seed, secret key of the validator, and the total stake of the blockchain.
+Once the VRF is executed, it produces an index with a proof.
+The index is a number between zero and the total staked coins, and the proof allows validators to verify the correctness
+of the generated index.
 
-$$<index, proof>=VRF(sk_{validator}, seed_{n})$$
-
-The result of VRF is deterministic and Zero Knowledge Provable.
-
-## How VRF Works?
-
-In each height, validators outside the committee run VRF to generate a verifiable random number
-between 0 and the total stake. Total stake of the blockchain is known at each height. The seed for
-VRF is also known to all validators and it is part of the previous block header. A validator based
-on its stake and its luck can generate the suitable number. If the generated random number is less
-than the validator's stake, then this validator is eligible to enter the committee for the next
-height. The validator needs to send a Sortition transaction with the $$proof$$ of
-VRF. Other validators can easily verify the sortition:
+The pseudocode below demonstrates the evaluation of the VRF for the sortition algorithm:
 
 $$
-verify(pub_{validator}, proof, seed_n) \le S_v
+\begin{align*}
+& \textbf{function} \ VRF(sk, seed, total\_stake) \\
+& \qquad pk \gets P_{BLS}(sk) \\
+& \qquad proof \gets S_{BLS}(sk, seed || pk) \\
+& \qquad rnd \gets H(proof) \\
+& \qquad index \gets \frac{(rnd \times total\_stake)}{2^{256}} \\
+& \qquad \\
+& \qquad \textbf{return} \ index, proof \\
+& \textbf{end function}
+\end{align*}
 $$
 
-Where
+where:
 
-- $$pub_{validator}$$ is the public key of the validator
-- $$S_v$$ is the stake of validator at height $$n$$
+- $$ sk $$ is the secret key of the validator
+- $$ seed $$ is the sortition seed
+- $$ total\_stake $$ is the total stake of the blockchain
+- $$ P_{BLS} $$ is a cryptographic function that derives the public key from the secret key for the BLS signature
+- $$ S_{BLS} $$ is a cryptographic function used to sign a message with the secret key using for the BLS signature
+- $$ H $$ is a cryptographic hash function that generates a number between $$ 0 $$ to $$ 2 ^{256} $$
 
-There is no need to send $$index$$ alongside $$proof$$ because the
-result should be less than validator's stake and validator's stake is known at height
-$$n$$ for all the validators in the network.
+To verify a sortition proof, both the validator's public key and stake are required:
 
-If a validator can generate a valid sortition proof, it can broadcast a
-[sortition transaction]({{ site.baseurl }}/learn/transaction/sortition). Sortition transactions are valid for 7 blocks.
-When a valid sortition transaction is committed into a block, the new validator from the pool can
-enter the committee and the oldest validator in the committee will leave the committee to make it
-balanced.
+$$
+\begin{align*}
+& \textbf{function} \ verifyVRF(pk, seed, proof, stake, total\_stake) \\
+& \qquad \textbf{if} \ V_{BLS}(pk, seed || pk, proof) = True \ \textbf{then} \\
+& \qquad \qquad rnd \gets H(proof) \\
+& \qquad \qquad index \gets \frac{(rnd \times total\_stake)}{2^{256}} \\
+& \qquad \\
+& \qquad  \qquad \textbf{return} \ index \leqslant stake \\
+& \qquad  \textbf{else} \\
+& \qquad  \qquad \textbf{return} \ False \\
+& \qquad  \textbf{end if} \\
+& \textbf{end function}
+\end{align*}
+$$
+
+where:
+
+- $$ V_{BLS} $$ is a cryptographic function used to verify a signed message using the BLS signature scheme
+
+There is no need to send $$ index $$ alongside $$ proof $$ because the
+result should be less than the validator's stake, and the validator's stake is known at each block.
+
+## Sortition Seed
+
+The sortition algorithm relies on a random and publicly verifiable seed that cannot be manipulated by adversaries.
+Otherwise, adversaries may select a seed that favors the selection of corrupt users.
+
+
+To prevent this, the BLS signature scheme is used to generate the sortition seed.
+Since BLS signatures are unique and deterministic, adversaries cannot generate more than one valid signature per block.
+In each block, the block proposer generates a new sortition seed based on the previous seed using the following function:
+
+$$
+\begin{align*}
+& \textbf{function} \ generateSeed(sk, prev\_seed) \\
+& \qquad \textbf{return} \ S_{BLS}(sk, H(prev\_seed)) \\
+& \textbf{end function}
+\end{align*}
+$$
+
+
+Since the proposer's public key is known, the seed for the next block can be easily verified.
+If the seed is invalid, the proposed block will be rejected.
+The verification function is as follows:
+
+$$
+\begin{align*}
+& \textbf{function} \ verifySeed(pk, prev\_seed, seed) \\
+& \qquad \textbf{return} \ V_{BLS}(pk, H(prev\_seed), seed) \\
+& \textbf{end function}
+\end{align*}
+$$
+
+The sortition Sortition Seed for the genesis block set to 0.
+
+## FAQ
+
+### How is the total staked coin calculated?
+
+The total staked coin in each block is calculated by summing the staked coins of all active validators.
+An active validator is a validator that has not yet [unbonded]({{ site.url }}/learn/transaction/unbond/).
 
 [^first]: [Verifiable Random Function](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Pseudo%20Randomness/Verifiable_Random_Functions.pdf)

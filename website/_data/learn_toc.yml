@@ -17,8 +17,8 @@
     - doc: proof-of-stake
     - doc: protocol
     - doc: specification
-    - doc: committee
     - doc: sortition
+    - doc: committee
     - doc: parameters
 
 - title: Transactions
@@ -29,6 +29,8 @@
     - doc: fee
     - doc: send
     - doc: bond
+    - doc: unbond
+    - doc: withdraw
     - doc: sortition
 
 - title: Smart Contract

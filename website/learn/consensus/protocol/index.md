@@ -47,7 +47,7 @@ validators. So the minimum number of validators should be $$3+1=4$$.
 We use cryptographic techniques to prevent spoofing and replays and to detect corrupted messages.
 All validators know each other's public keys to verify signatures. All messages contain public key
 signatures. We denote a message signed by node $$i$$ as
-$$<m>_{\sigma _i}$$.
+$$ \langle m  \rangle  _{\sigma _i}$$.
 
 ### Normal-Case Operation
 
@@ -57,25 +57,25 @@ operation of Pactus consensus algorithm includes these three steps: **propose**,
 
 #### Propose phase
 
-A proposer ($$p$$) collects transactions and creates a proposal block. It signs and
-broadcasts a proposal message with block piggybacked to all the validators. Proposal message has
-this form:
+The proposer $$p$$ collects transactions and creates a proposal block. It signs and
+broadcasts a propose message with the proposed block piggybacked to all the validators.
+Propose message has this form:
 
-$$<<PROPOSAL,h,r>_{\sigma _p}, B>$$
+$$ \langle \langle \text{PROPOSE},h,r \rangle _{\sigma _p}, B \rangle $$
 
 where:
 
-- $$B$$ is proposed block
+- $$B$$ is the proposed block
 - $$h$$ indicates the block height
 - $$r$$ is an assigned round number, which is zero for the first round
 
 #### Prepare phase
 
 If validator $$i$$ accepts the proposal, it enters _prepare_ phase and signs and
-broadcasts _prepare_ message to all other validators. Otherwise, it does nothing. Prepare message
-has this form:
+broadcasts _prepare_ message to all other validators. Otherwise, it does nothing.
+The prepare message has this form:
 
-$$<<PREPARE,h,r,d,i>_{\sigma _i}>$$
+$$ \langle \text{PREPARE},h,r,d,i \rangle _{\sigma _i} $$
 
 where:
 
@@ -86,10 +86,11 @@ validators (possibly including its own), it is **prepared** and enters to precom
 
 #### Precommit phase
 
-In _precommit_ phase, validator $$i$$ signs and broadcasts _precommit_ message to
-the other validators. Precommit message has this form:
+In _precommit_ phase, validator $$i$$ signs and broadcasts precommit message to
+the other validators.
+The precommit message has this form:
 
-$$<<PRECOMMIT,h,r,d,i>_{\sigma _i}>$$
+$$ \langle \text{PRECOMMIT},h,r,d,i \rangle _{\sigma _i} $$
 
 Each validator executes and commits block $$b$$ after receiving
 $$2f+1$$ precommit messages (possibly including its own) and becomes **committed**.
@@ -112,7 +113,7 @@ validators.
 
 The change-proposer message has this form:
 
-$$<<CHANGE-PROPOSER,h,r,i>_{\sigma _i}>$$
+$$ \langle \text{CHANGE-PROPOSER},h,r,i \rangle _{\sigma _i}  $$
 
 If the proposer for round $$r+1$$ receives $$2f+1$$ valid
 change-proposer messages for round $$r$$ from other validators, it goes to next
@@ -126,16 +127,17 @@ proposer and is faulty.
 ### Block announcement
 
 Each validator that receives a valid proposal and with $$2f+1$$ precommit messages
-can make a certificate and broadcasts _block_announce_ messages with the block and certificate
+can make a certificate and broadcasts block-announce messages with the block and certificate
 piggybacked to the network.
+The block-announce message has this form:
 
-$$<<BLOCK-ANNOUNCE,h,r>,B,C>$$
+$$ \langle \text{BLOCK-ANNOUNCE} ,h,r ,B,C \rangle $$
 
 where:
 
 - $$C$$ is the certificate for the block $$B$$
 
 Validators can move to the next height and clear the message logs after receiving valid
-_block_announce_ message.
+block-announce message.
 
 [^first]: [Practical Byzantine Fault Tolerance](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/01/thesis-mcastro.pdf)

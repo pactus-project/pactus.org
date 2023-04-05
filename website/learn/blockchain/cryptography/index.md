@@ -25,3 +25,9 @@ threshold signature for cryptographic signing and verification.
 One of the advantages of BLS signatures is signature aggregation. BLS individual signatures can be
 combined into one single aggregated signature, so that the overall size does not grow beyond one
 signature.
+
+### Non-Malleability
+
+BLS signatures have an important property called non-malleability,
+which means that it is impossible to generate two valid signatures for the same message.
+In other words, each message has a unique signature, and signatures cannot be altered without invalidating the signature.
