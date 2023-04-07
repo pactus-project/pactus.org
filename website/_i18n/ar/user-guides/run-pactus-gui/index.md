@@ -88,6 +88,11 @@ and reward address. Review this information and click "Close" to complete the in
 
 ![Node information]({{ site.url }}/user-guides/run-pactus-gui/node_information.png)
 
+Validator address: This is the address of your validator.
+
+Reward address: This is the address that holds your reward from validating transactions as a validator.
+
+
 Upon closing the wizard dialog, your Pactus node will start running. You are now ready to use Pactus in GUI mode.
 
 ## Running the Pactus Node
