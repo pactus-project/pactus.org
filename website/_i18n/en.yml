@@ -323,3 +323,4 @@ dict:
     welcome: Here, you can find some guidance to help you use and interact with the Pactus blockchain.
     back: « Back to the list
     run_pactus_gui: How to run a Pactus in the Graphic mode?
+    send_transactions_gui: How to send transactions in Graphic mode?
