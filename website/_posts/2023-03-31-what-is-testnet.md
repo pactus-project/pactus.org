@@ -43,11 +43,14 @@ Pactus network is also a secure and purely decentralized network. However in the
 developers are now able to decrease the database size by approximately 10% without compromising performance.
 They did it by utilizing block height instead of hash to store blocks within the database. (you can find out more
 [here](https://github.com/pactus-project/pactus/pull/416)).
+
 **Testing new versions, patches and features on testnet.** it is vital for enhancing the security, load testing,
 Blockchain migration, integration tests, and etc. This is why you can now use the latest version of Pactus-GUI
 that works like clockwork and is extremely secure.
+
 **Testing the functions of cryptocurrency without disrupting the mainnet.** In the testnet of Pactus Blockchain,
 you as a user or validator can use all the features to send, receive, bond or unbond your assets in the Pactus-GUI.
+
 **Development and simulation of smart contract features and DApps.** Note that many Blockchain projects like Pactus,
 can be used as smart-contract platforms. So the Testnet can be designed in different stages to test and improve
 different applications of the network.
