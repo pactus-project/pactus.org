@@ -20,7 +20,7 @@ Here is the list of the consensus parameters:
   The is set to 21 validators.
 - **Block Reward** The fixed reward amount given to the validator who successfully creates and proposes a new block.
 - This is set to 1,000,000,000, which is equivalent to to one coin.
-- **Validity Period**: The number of blocks that a transaction can remain unprocessed before
+- **Time-to-Live Interval**: The number of blocks that a transaction can remain unprocessed before
   it is removed from the transaction pool.
   This is set to 8640 blocks, which is almost one day.
 - **Bond Interval**: The minimum number of blocks that must elapse after a validator has submitted a bond transaction

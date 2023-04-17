@@ -299,9 +299,9 @@ dict:
     proposer_selection_answer_v1: >
       The block proposer inside the committee is selected based on the time they entered the committee.
       This means that the selection process follows a first-come, first-propose order.
-    send_transaction: What is a Send transaction?
-    send_transaction_answer_v1: >
-      A send transaction is a type of transaction that allows users to transfer Pactus coin from one address to another.
+    transfer_transaction: What is a Transfer transaction?
+    transfer_transaction_answer_v1: >
+      A transfer transaction is a type of transaction that allows users to transfer Pactus coin from one account to another.
     bond_transaction: What is a Bond transaction?
     bond_transaction_answer_v1: >
       A bond transaction is a type of transaction that allows you to become a validator by staking some coins.

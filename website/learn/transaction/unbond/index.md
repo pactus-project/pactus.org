@@ -6,7 +6,7 @@ sidebar: Unbond Transaction
 
 # Unond Transaction
 
-Unbond transaction is used to unbond a validator.
+Unbond transaction is used to unbond a [validator]({{ site.url }}/learn/blockchain/validator/).
 An unbond transaction cannot participate in the sortition algorithm anymore and after 21 days the stake can be withdraw.
 
 ## Payload structure

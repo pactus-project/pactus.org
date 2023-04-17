@@ -8,11 +8,14 @@ sidebar: Stamping Transactions
 
 "Stamping a transaction" involves adding a piece of information from a confirmed block to the header of a transaction.
 This links the stamped transaction to the main chain.
-Unlike regular transactions, stamped transactions have a **Validity Period** and remain valid only for a specific duration.
-The Validity Period is determined by the [consensus parameters]({{ site.url }}/learn/consensus/parameters),
+Unlike regular transactions, stamped transactions have a **Time-to-Live (TTL)** interval and remain
+valid only for a specific duration.
+
+The Time-to-Live interval is determined by the [consensus parameters]({{ site.url }}/learn/consensus/parameters),
 and currently set to 8640 blocks or approximately one day.
 This means that a stamped transaction can only be included in the blockchain within one day from the block it references.
-If it's not included within this period, it will be considered expired and will need to be re-stamped again with a new reference block.
+If it's not included within this period, it will be considered expired and will need to
+be re-stamped again with a new reference block.
 In Pactus, stamps are represented by the first 4 bytes of a [block hash]({{ site.baseurl }}/learn/blockchain/block#block-hash).
 
 ![Stamped transaction]({{ site.url }}/assets/images/pactus_stamped_transaction.png)
@@ -31,24 +34,8 @@ invalid due to incorrect stamps.
 
 ![Preventing Long-Range attack]({{ site.url }}/assets/images/preventing-long-range-attack.png)
 
-## Consequences
+## Transaction Pool
 
-### Advantages
-
-- **Reducing the size of the transaction pool**
-
-  Each stamped transaction has a limited lifetime.
-
-- **Preventing long forks**
-
-  Stamped transactions prevents any long fork.
-
-### Disadvantage
-
-- **Increasing the size of transaction**
-
-Stamping transaction increases the size of the transaction by four bytes.
-
-- **Blockchain query requirement**
-
-Users need to query the blockchain before signing a transaction.
+Stamped transactions have a significant effect on the transaction pool size.
+By having a limited lifetime, stamped transactions prevent the transaction pool from becoming too large.
+This is because the expired transactions cen be removed from the pool.

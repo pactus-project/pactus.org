@@ -68,7 +68,7 @@
 
 - title: transaction
   items:
-    - id: send_transaction
+    - id: transfer_transaction
       ver: v1
 
     - id: bond_transaction

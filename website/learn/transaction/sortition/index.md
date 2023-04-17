@@ -6,7 +6,8 @@ sidebar: Sortition Transaction
 
 # Sortition Transaction
 
-Sortition transaction is used to enter a validator in the committee.
+Sortition transaction is used to enter a [validator]({{ site.url }}/learn/blockchain/validator/)
+in the [committee]({{ site.url }}/learn/consensus/committee/).
 By committing a sortition transaction, the validator will enter to the committee.
 Sortition transactions are valid for 7 block that is defined in
 [consensus parameters]({{ site.url }}/learn/consensus/parameters/).

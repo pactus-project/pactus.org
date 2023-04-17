@@ -25,13 +25,13 @@
   path: learn/transaction
   items:
     - doc: stamping
-    - doc: format
     - doc: fee
-    - doc: send
+    - doc: format
+    - doc: transfer
     - doc: bond
+    - doc: sortition
     - doc: unbond
     - doc: withdraw
-    - doc: sortition
 
 - title: Smart Contract
   path: learn/smart-contract

@@ -12,7 +12,7 @@ Before we begin, you'll need to run the Pactus GUI application and ensure that i
 
 ## Sending a Transfer Transaction
 
-To send a [transfer transaction](https://pactus.org/learn/transaction/send/), click on the "Transaction" menu and select "Transfer." This will bring up a new window where you can select the account address from which you wish to send the transfer, as well as the recipient's account address and the amount you wish to send. It's important to note that the transaction fee will be calculated based on the amount you're sending. For more information on how the transaction fee is calculated, please refer to the [percentage fee](https://pactus.org/learn/transaction/fee/) model documentation.
+To send a [transfer transaction](https://pactus.org/learn/transaction/transfer/), click on the "Transaction" menu and select "Transfer." This will bring up a new window where you can select the account address from which you wish to send the transfer, as well as the recipient's account address and the amount you wish to send. It's important to note that the transaction fee will be calculated based on the amount you're sending. For more information on how the transaction fee is calculated, please refer to the [percentage fee](https://pactus.org/learn/transaction/fee/) model documentation.
 
 ![Transfer Transaction Dialog]({{ site.url }}/user-guides/send-transactions-gui/transfer-transaction-dialog.png)
 
