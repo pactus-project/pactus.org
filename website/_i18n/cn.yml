@@ -22,8 +22,8 @@ dict:
     become_a_validator: 成为验证者
     become_a_validator_desc: >
       在获得权益代币后，你的节点将转变为验证者，随后每次你提出一个块，你将获得一个新代币作为块奖励。
-    increase_your_stake: 增加你的权益
-    increase_your_stake_desc: >
+    improve_pactus: 增加你的权益
+    improve_pactus_desc: >
       通过增加你的股份，增加获得更多奖励的机会。使用你的钱包并抵押更多的代币。
 
   community:
@@ -76,39 +76,6 @@ dict:
       欢迎来到参考页面，您可以在此找到所需的所有技术细节和文档。
       无论您是开发人员还是寻找关于 Pactus 的更多信息的用户，此页面提供了全面且最新的信息，可以帮助您入门。
       请注意，我们的所有代码都可以在 [Github](https://github.com/pactus-project) 上查看和贡献。
-
-  contributing:
-    title: 贡献
-    welcome: >
-      欢迎来到 Pactus 的贡献页面！我们很高兴您对参与我们的开源和社区驱动项目感兴趣。我们的目标是创建一个安全和去中心化的网络，使个人能够参与网络而无需中介。 <br><br>
-      有几种支持 Pactus 项目的方法:
-    run_a_node: 运行节点
-    run_a_node_desc: >
-      运行节点是对 Pactus 网络做出最有效贡献的方法之一。 "节点" 是一种软件程序，它下载 Pactus 区块链的副本，并通过验证交易和区块来帮助维护网络。通过运行节点，
-      您有助于确保网络保持安全和去中心化，因为它减少了任何一个实体获得对网络的过多控制或影响的风险。 <br><br>
-      要运行 Pactus 节点，您需要在网络中拥有股份，但您拥有的股份数量没有限制。拥有自己的节点意味着您不必依赖第三方提供有关网络状态的信息，
-      这增加了您与 Pactus 网络交互的安全性和控制性。
-    develop: 开发
-    develop_desc: >
-      Pactus is an open-source project that welcomes and encourages contributions from developers.
-      By contributing to the project, you can help improve the Pactus platform and create new features that
-      benefit the entire community.
-      <br><br>
-      <br><br>
-      There is a variety of areas where development work is needed, such as improving the performance of the Pactus blockchain,
-      adding new features to the Pactus, or building new tools for developers to use.
-      You can check our [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) page
-      for more information on how to get involved and contribute to the project.
-    spread_the_word: 传播
-    spread_the_word_desc: >
-      支持 Pactus 项目的另一种方法是向您所在社区的其他人传播。了解 Pactus 的人越多，合作和增长的机会就越多。在社交媒体上分享我们的项目，
-      参加 Pactus 活动，或者只是告诉您的朋友和同事有关我们的事情。 <br><br>
-      每一个小小的帮助都很重要！
-    appreciate: >
-      We appreciate any and all contributions to the Pactus project, and we're excited to work with our community to
-      create a secure and decentralized network.
-      <br><br>
-      Together, Let's build a better future for blockchain technology.
 
   roadmap:
     title: 路线图

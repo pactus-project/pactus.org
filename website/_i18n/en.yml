@@ -9,6 +9,7 @@ dict:
   resources: Resources
   know_more: Know more
   join_community: Join community
+  contributing: Contributing
   outdated_translation: The translation is outdated. You can read it, but it might not be accurate.
 
   home:
@@ -23,18 +24,17 @@ dict:
       You can join our community and receive some stake coins free.
     become_a_validator: Become a validator
     become_a_validator_desc: >
-      After obtaining the staked coins, your node will be transition into a validator, and subsequently,
+      By staking some coins, your node will be transition into a validator, and subsequently,
       every time you propose a block, you will be rewarded with one new coin as a block reward.
-    increase_your_stake: Increase your stake
-    increase_your_stake_desc: >
-      Increase your chance to get more rewards by increasing your stake. Use your wallet and stake
-      more coins.
+    improve_pactus: Make Pactus better
+    improve_pactus_desc: >
+      There are many ways you can support Pactus and help it grow.
+      Let's work together to make Pactus even better!
 
   community:
     title: Community
     join: Join the Pactus community
     welcome: >
-      Welcome to the Pactus community page.
       By joining the pactus community, you become a part of a global network of innovators, thinkers,
       and doers who are all united by a shared vision of building a better future with blockchain technology.
       Whether you're a developer, entrepreneur, investor, or simply a blockchain enthusiast, there's a place for you
@@ -80,49 +80,6 @@ dict:
     reference: Reference
     welcome: >
       Here you can find the technical documentations for the Pactus project.
-
-  contributing:
-    title: Contributing
-    welcome: >
-      Welcome to the Pactus contribution page!
-      We're glad you're interested in contributing to our open-source and community-driven project.
-      Our goal is to create a secure and decentralized network that empowers individuals to participate
-      in the network without the need for intermediaries.
-      <br><br>
-      There are several ways to support the Pactus project:
-    run_a_node: Run a Node
-    run_a_node_desc: >
-      One of the most effective ways to contribute to the Pactus network is by running a node.
-      A "node" is a software program that downloads a copy of the Pactus blockchain and helps maintain the network
-      by validating transactions and blocks.
-      By running a node, you help ensure the network remains secure and decentralized, as it reduces the risk of
-      any one entity gaining too much control or influence over the network.
-      <br><br>
-      To run a Pactus node, you will need to have stake in the network, but there is no limit to the amount of stake you can have.
-      Having your own node means you don't have to rely on a third-party to provide information about the state of the network,
-      which increases your level of security and control over your interactions with the Pactus network.
-    develop: Develop
-    develop_desc: >
-      Pactus is an open-source project that welcomes and encourages contributions from developers.
-      By contributing to the project, you can help improve the Pactus platform and create new features that
-      benefit the entire community.
-      <br><br>
-      There is a variety of areas where development work is needed, such as improving the performance of the Pactus blockchain,
-      adding new features to the Pactus, or building new tools for developers to use.
-      You can check our [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) page
-      for more information on how to get involved and contribute to the project.
-    spread_the_word: Spread the Word
-    spread_the_word_desc: >
-      Another way to support the Pactus project is by spreading the word to others in your community.
-      The more people who know about Pactus, the more opportunities there are for collaboration and growth.
-      Share our project on social media, attend Pactus events, or simply tell your friends and colleagues about us.
-      <br><br>
-      Every little bit helps!
-    appreciate: >
-      We appreciate any and all contributions to the Pactus project, and we're excited to work with our community to
-      create a secure and decentralized network.
-      <br><br>
-      Together, Let's build a better future for blockchain technology.
 
   roadmap:
     title: Road map
@@ -322,5 +279,11 @@ dict:
     title: User guides
     welcome: Here, you can find some guidance to help you use and interact with the Pactus blockchain.
     back: « Back to the list
-    run_pactus_gui: How to run a Pactus in the Graphic mode?
-    send_transactions_gui: How to send transactions in Graphic mode?
+    simple: Simple
+    advanced: Advanced
+    website: Website
+    run_pactus_gui: How to run Pactus in graphic mode?
+    run_pactus_cli: How to run Pactus in command line mode?
+    run_pactus_docker: How to run Pactus using Docker?
+    send_transactions_gui: How to send transactions in graphic mode?
+    send_transactions_cli: How to send transactions in command line mode?

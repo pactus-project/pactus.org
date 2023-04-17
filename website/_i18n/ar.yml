@@ -24,8 +24,8 @@ dict:
     become_a_validator_desc: >
       بعد الحصول على العملات المرهونة، ستتحوّل العُقدة إلى مُصدّق وبعد ذلك،
       في كل مرة تقترح فيها مجموعة بيانات (Block)، ستحصل على عملة واحدة جديدة كمكافأة.
-    increase_your_stake: زيادة مُرهناتك
-    increase_your_stake_desc: >
+    improve_pactus: زيادة مُرهناتك
+    improve_pactus_desc: >
       زد فرصتك في الحصول على مكافآت أكبر عن طريق زيادة مُرهناتك. استخدم محفظتك ومُرهِّن
       المزيد من العملات.
 
@@ -80,47 +80,6 @@ dict:
       سواء كنت مطورًا أو مستخدمًا تبحث عن مزيد من المعلومات حول بكتوس، فإن هذه الصفحة توفر معلومات شاملة وحديثة
       يمكن أن يساعدك في البدء.
       يرجى ملاحظة أن جميع رموزنا متاحة على [جيت هاب](https://github.com/pactus-project) للمراجعة والمساهمة فيها.
-
-  contributing:
-    title: "المساهمة"
-    welcome: >
-      مرحباً بكم في صفحة مساهمة بكتوس!
-      نحن سعداء لاهتمامكم بالمساهمة في مشروعنا المدعوم من المجتمع والمفتوح المصدر.
-      هدفنا هو إنشاء شبكة آمنة ومفتوحة ولامركزية تمكن الأفراد من المشاركة في الشبكة دون الحاجة إلى وسطاء.
-      <br><br>
-      هناك العديد من الطرق المتاحة لدعم مشروع بكتوس:
-    run_a_node: تشغيل عقدة
-    run_a_node_desc: >
-      تعد تشغيل عقدة واحدة من أكثر الطرق فعالية للمساهمة في شبكة بكتوس.
-      "العقدة" هي برنامج يقوم بتنزيل نسخة من سلسلة كتل بكتوس ويساعد في الحفاظ على الشبكة عن طريق التحقق من الصفقات والكتل.
-      من خلال تشغيل العقدة، تساعد في ضمان بقاء الشبكة آمنة ولامركزية، حيث يقلل من خطر السيطرة أو التأثير الكبير لأي كيان على الشبكة.
-      <br><br>
-      لتشغيل عقدة بكتوس، ستحتاج إلى الحصول على حصة في الشبكة، لكن ليس هناك حد أدنى للحصة التي يمكنك الحصول عليها.
-      إن امتلاك عقدتك الخاصة يعني عدم الاعتماد على طرف ثالث لتقديم المعلومات حول حالة الشبكة،
-       مما يزيد من مستوى الأمان والتحكم الخاص بك في تفاعلاتك مع شبكة بكتوس.
-    develop: تطوير
-    develop_desc: >
-      Pactus is an open-source project that welcomes and encourages contributions from developers.
-      By contributing to the project, you can help improve the Pactus platform and create new features that
-      benefit the entire community.
-      <br><br>
-      <br><br>
-      There is a variety of areas where development work is needed, such as improving the performance of the Pactus blockchain,
-      adding new features to the Pactus, or building new tools for developers to use.
-      You can check our [Contributing](https://github.com/pactus-project/pactus/blob/main/.github/CONTRIBUTING.md) page
-      for more information on how to get involved and contribute to the project.
-    spread_the_word: نشر الكلمة
-    spread_the_word_desc: >
-      طريقة أخرى لدعم مشروع بكتوس هي نشر الكلمة للآخرين في مجتمعك.
-      كلما عرف المزيد من الناس عن بكتوس، زادت فرص التعاون والنمو.
-      شارك مشروعنا على وسائل التواصل الاجتماعي، وحضر فعاليات بكتوس، أو ببساطة أخبر أصدقائك وزملائك عنا.
-      <br><br>
-      كل جهد صغير يساعد!
-    appreciate: >
-      We appreciate any and all contributions to the Pactus project, and we're excited to work with our community to
-      create a secure and decentralized network.
-      <br><br>
-      Together, Let's build a better future for blockchain technology.
 
   roadmap:
     title: خارطة الطريق
