@@ -110,8 +110,9 @@ dict:
       <b>Untrusted application</b>
       <br><br>
       Be aware that the precompiled binaries are not shipped with any
-      <a href="{{ site.baseurl }}/user-guides/run-pactus-gui/#code-certificate-issue">code signing certificate</a>.
-      Most probability in Windows and macOS the downloaded binaries are detected as untrusted application.
+      <a href="https://pactus.org/user-guides/run-pactus-gui/#code-certificate-issue">code signing certificate</a>.
+      Most probability in Windows
+      and macOS the downloaded binaries are detected as untrusted application.
     gui_after_download: >
       Once you have downloaded the Pactus GUI, you may follow this tutorial to set up and run your node:
     download_cli: >
