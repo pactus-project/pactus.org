@@ -11,7 +11,7 @@ This links the stamped transaction to the main chain.
 Unlike regular transactions, stamped transactions have a **Time-to-Live (TTL)** interval and remain
 valid only for a specific duration.
 
-The Time-to-Live interval is determined by the [consensus parameters]({{ site.url }}/learn/consensus/parameters),
+The Time-to-Live interval is determined by the [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters),
 and currently set to 8640 blocks or approximately one day.
 This means that a stamped transaction can only be included in the blockchain within one day from the block it references.
 If it's not included within this period, it will be considered expired and will need to

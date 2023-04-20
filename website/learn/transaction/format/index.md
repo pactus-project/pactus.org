@@ -26,7 +26,7 @@ Transactions in Pactus consists the following fields:
   The purpose of this field is to prevent replay attacks, where a previously valid transaction
   is sent again to the network to cause unintended consequences.
 - **Fee** contains the fee paid by the sender to the network for processing the transaction.
-  The fee is calculated based on the [percentage fee]({{ site.url}}/learn/transaction/fee/) model.
+  The fee is calculated based on the [percentage fee]({{ site.baseurl }}/learn/transaction/fee/) model.
 - **Payload type** specifies the type of the transaction payload.
   Depending on the payload type, the payload data field is decoded differently.
 - **Payload data** contains the actual data payload of the transaction.
@@ -34,7 +34,7 @@ Transactions in Pactus consists the following fields:
 - **Memo** is an optional message that can be included in the transaction.
   The message can be used to provide additional information about the transaction or to communicate with the recipient.
   The maximum size of the memo is 64 characters that is defined in the
-  [consensus parameters]({{ site.url }}/learn/consensus/parameters/)
+  [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters/)
 - **Public key** contains the public key of the sender.
   The public key is used to verify that the sender has the authority to create the transaction.
   The sender's address should be derived from this public key,
@@ -47,11 +47,11 @@ The Payload type field determines the format of the Payload data field in the tr
 Different payload types have different formats for the payload data.
 The following are the supported transactions in Pactus blockchain:
 
-1. [Transfer transaction]({{ site.url }}/learn/transaction/transfer)
-2. [Bond transaction]({{ site.url }}/learn/transaction/bond)
-3. [Sortition transaction]({{ site.url }}/learn/transaction/sortition)
-4. [Unbond transaction]({{ site.url }}/learn/transaction/unbond)
-5. [Withdraw transaction]({{ site.url }}/learn/transaction/withdraw)
+1. [Transfer transaction]({{ site.baseurl }}/learn/transaction/transfer)
+2. [Bond transaction]({{ site.baseurl }}/learn/transaction/bond)
+3. [Sortition transaction]({{ site.baseurl }}/learn/transaction/sortition)
+4. [Unbond transaction]({{ site.baseurl }}/learn/transaction/unbond)
+5. [Withdraw transaction]({{ site.baseurl }}/learn/transaction/withdraw)
 
 ## Transaction ID
 

@@ -64,8 +64,8 @@ The block certificate consists the following fields:
 
 Each block in the Pactus blockchain contains a list of transactions.
 The maximum number of transactions in a block is determined by the
-[consensus parameters]({{ site.url }}/learn/consensus/parameters), and currently set to 1000.
-The first transaction in each block is the [reward transaction]({{ site.url }}/learn/transaction/transfer/#reward-transaction).
+[consensus parameters]({{ site.baseurl }}/learn/consensus/parameters), and currently set to 1000.
+The first transaction in each block is the [reward transaction]({{ site.baseurl }}/learn/transaction/transfer/#reward-transaction).
 Once a block is committed and added to the blockchain, all the transactions inside the block will be executed.
 This means that the state of the blockchain will be updated based on the transactions in the committed block.
 
@@ -75,7 +75,7 @@ The block hash is a unique identifier for each block, which is computed by hashi
 
 - Block header data (138 bytes)
 - Previous certificate hash (32 bytes)
-- [Merkle root]({{ site.url }}/learn/blockchain/state-hash/#merkle-tree) hash of transactions (32 bytes)
+- [Merkle root]({{ site.baseurl }}/learn/blockchain/state-hash/#merkle-tree) hash of transactions (32 bytes)
 - Number of transactions (variant)
 
 The previous certificate hash and the Merkle root hash of transactions are included in the block hash to

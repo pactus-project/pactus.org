@@ -6,7 +6,7 @@ sidebar: Transfer Transaction
 
 # Transfer Transaction
 
-Transfer transaction is used to transfer coins between the [accounts]({{ site.url }}/learn/blockchain/account/).
+Transfer transaction is used to transfer coins between the [accounts]({{ site.baseurl }}/learn/blockchain/account/).
 If the receiver account does not exist, it will be created.
 
 ## Payload structure

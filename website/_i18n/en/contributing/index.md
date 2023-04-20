@@ -24,7 +24,7 @@ These guides can help you to run and configure your node:
 
 Validators play an important role in the Pactus blockchain by verifying transactions and
 adding them to the blockchain.
-By becoming a validator, you can earn [rewards]({{ site.url}}/learn/blockchain/incentive/)
+By becoming a validator, you can earn [rewards]({{ site.baseurl }}/learn/blockchain/incentive/)
 for contributing to the network's security and decentralization.
 
 To become a validator, you will need to stake a certain amount of Pactus coins.

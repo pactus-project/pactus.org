@@ -92,20 +92,35 @@ dict:
     title: Download
     welcome: On this page you can find how to download and get the latest version of the Pactus software.
     compile_from_source_code: Compile from Source Code
-    project_pactus_is_distributed_v1: >
+    project_pactus_is_distributed: >
       Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from
-      the [github](https://github.com/pactus-project/pactus) repository and compile the source code.
-    instructions_for_compiling_v1: >
+      the [Github](https://github.com/pactus-project/pactus) repository and compile the source code.
+    instructions_for_compiling: >
       Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
     stable_releases: Download stable releases
-    stable_releases_desc_v1: >
+    stable_releases_desc: >
       You can also download the latest stable releases of Pactus.
-      These releases are updated automatically when a new version is tagged in
+      These releases are updated automatically when a new version is released in
       [GitHub repository](https://github.com/pactus-project/pactus).
-    you_can_run_gui_v1: >
+    download_gui: >
       You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
     pactus_gui: Pactus Graphical User Interface (GUI)
     pactus_cli: Pactus Command Line Interface (CLI)
+    untrusted_app: >
+      <b>Untrusted application</b>
+      <br><br>
+      Be aware that the precompiled binaries are not shipped with any
+      <a href="{{ site.baseurl }}/user-guides/run-pactus-gui/#code-certificate-issue">code signing certificate</a>.
+      Most probability in Windows and macOS the downloaded binaries are detected as untrusted application.
+    gui_after_download: >
+      Once you have downloaded the Pactus GUI, you may follow this tutorial to set up and run your node:
+    download_cli: >
+      Advanced user can run Pactus in Command Line Interface (CLI) mode.
+    cli_after_download: >
+      Once you have downloaded the Pactus CLI, you may follow this tutorial to set up and run your node:
+    docker: Docker container
+    docker_desc: >
+      Advanced user can get the Pactus docker image from [Docker Hub](https://hub.docker.com/r/pactus/pactus).
 
   faq:
     title: FAQ

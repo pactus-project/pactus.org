@@ -16,12 +16,13 @@ Before proceeding with the steps below, ensure that you have the following:
 
 ## Download
 
-Download the Pactus GUI installer from [here](https://pactus.org/download/#pactus-graphical-user-interface-gui).
+Download the Pactus GUI installer from [here]({{ site.baseurl }}/download/#pactus-graphical-user-interface-gui).
 
 ### Code certificate issue
 
 Windows and macOS users may encounter a warning message stating that Pactus is an untrusted application.
-This is because Pactus does not have a code certificate.
+This is because Pactus does not have a
+[code signing certificate](https://en.wikipedia.org/wiki/Code_signing).
 
 ![Code certificate issue]({{ site.url }}/user-guides/run-pactus-gui/code_certificate_warning.png)
 
@@ -112,12 +113,17 @@ information may not be accurate until the syncing process is complete.
 ![Default Wallet tab]({{ site.url }}/user-guides/run-pactus-gui/default_wallet.png)
 
 In the "Default Wallet" tab, you can view your account details, including your balance and
-address information such as the validator and reward addresses.
+address information such as the **validator and reward addresses**.
 Your computer acts as a node and is recognized by the validator address in the Pactus network.
 The reward address is the account address where you collect the rewards earned by participating in
-the consensus algorithm and proposing new blocks. However, to become a validator and participate in the
-consensus algorithm to earn rewards, you first need to bond or lock some coins. In the next tutorial,
+the consensus algorithm and proposing new blocks.
+
+To become a validator and participate in the
+consensus algorithm to earn rewards, you first need to bond or lock some coins. In the next
+[tutorial]({{ site.baseurl }}/user-guides/send-transactions-gui/#sending-a-bond-transaction),
 we will explain how to send a Bond transaction to become a validator.
+
+---
 
 By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
 Thank you for your participation!

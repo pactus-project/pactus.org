@@ -56,7 +56,7 @@ It utilizes a dynamic committee of 21 validators who randomly change and are res
 However, the number of validators outside the committee is unlimited, allowing anyone to
 become a validator by staking some coins.
 
-Validators participate in the [sortition](https://pactus.org/learn/consensus/sortition/) algorithm
+Validators participate in the [sortition]({{ site.baseurl }}/learn/consensus/sortition/) algorithm
 at each block by generating a random number between zero and the total staked coins.
 If the number is less than the validator's stake, they send a sortition transaction with proof of sortition.
 This transaction is valid for 7 blocks after issuance. When the sortition transaction is included in a block,
@@ -69,7 +69,7 @@ the validator replaces the oldest committee member.
 ### How can one know when a validator has joined the committee?
 
 The height at which the validator join the committee is recorded as the "Last Joined Height" field in
-the [validator]({{ site.url }}/learn/blockchain/validator/) structure.
+the [validator]({{ site.baseurl }}/learn/blockchain/validator/) structure.
 Once a validator enters the committee, this field is set to the height of the sortition transaction plus one.
 Similarly, once a validator leaves the committee, this field is set to zero.
 

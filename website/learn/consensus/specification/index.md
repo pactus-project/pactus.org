@@ -36,7 +36,7 @@ in every state of every execution that the protocol allows. The TLA+ specificati
 ### Safety proof
 
 By defining some invariants we can ensure the safety of the consensus
-[protocol]({{ site.url }}/learn/consensus/protocol) in any possible and
+[protocol]({{ site.baseurl }}/learn/consensus/protocol) in any possible and
 distinct state, and therefore we have the informal safety proof of the Pactus consensus protocol using TLA+.
 
 ### Liveness proof
