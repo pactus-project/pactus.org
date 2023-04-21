@@ -2,7 +2,7 @@
 layout: post
 title: "Story of Testnet-0"
 date: 2023-04-21 00:00:00 +0000
-tags: learn
+tags: announcement, testnet
 summary: Story of Testnet-0
 ---
 

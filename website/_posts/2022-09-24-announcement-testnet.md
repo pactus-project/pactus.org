@@ -2,7 +2,7 @@
 layout: post
 title: "Join Pactus Testnet"
 date: 2022-09-18 00:00:00 +0000
-tags: announcement
+tags: announcement, testnet
 summary: Join Pactus Testnet
 ---
 

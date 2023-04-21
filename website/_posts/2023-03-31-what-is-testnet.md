@@ -2,7 +2,7 @@
 layout: post
 title: "What is a Testnet?"
 date: 2023-03-01 00:00:00 +0000
-tags: learn
+tags: tutorial
 summary: What is Testnet?
 ---
 
