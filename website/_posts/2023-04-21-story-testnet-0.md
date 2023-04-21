@@ -1,23 +1,23 @@
 ---
 layout: post
-title: "Story of TestNet-0"
+title: "Story of Testnet-0"
 date: 2023-04-21 00:00:00 +0000
 tags: learn
-summary: What is Testnet?
+summary: Story of Testnet-0
 ---
 
 Testnet is a testing environment where developers and users can try out the functionality of a blockchain project,
 without putting real assets or data at risk.
 It helps to ensure that the final product is reliable and secure for users to use.
-If you like to read more about the TestNet you can check out our post on
-"[What is TestNet?]({{ site.baseurl }}/2023/03/01/what-is-testnet.html)".
+If you like to read more about the Testnet you can check out our post on
+"[What is Testnet?]({{ site.baseurl }}/2023/03/01/what-is-testnet.html)".
 
-In September 2022, we released our first Test Net.
-The purpose of this testnet was to check the consensus algorithm, test different transaction types,
+In September 2022, we released our first Testnet.
+The purpose of this Testnet was to check the consensus algorithm, test different transaction types,
 and ensure the stability of the blockchain.
 We also wanted to test the sortition algorithm to make sure it works properly.
 
-The committee for the testnet was set to five validators, however, more than 19 validators joined during the testnet period.
+The committee for the Testnet was set to five validators, however, more than 19 validators joined during the Testnet period.
 **Over 1,800,000 blocks were created, and more than 3 million transactions were processed during this time.
 The size of the blockchain is approximately 1 Gigabyte.
 The maximum number of transactions recorded in a single block was 386**. With a block time of 10 seconds,
@@ -25,14 +25,14 @@ we can confirm that Pactus blockchain can support up to 30 transactions per seco
 which is a reasonable number for TPS. Based on real-time statistics available at [realtps](https://realtps.net/),
 we can see that Pactus is among the top 10 blockchains in terms of TPS.
 
-At this point, the development team decided to end this version of the testnet and move on to the next one,
-Testnet-1 or pre-launch Testnet. We are planning to run the TestNet-1 to prepare for the MainNet launch.
+At this point, the development team decided to **end the Testnet-0** and move on to the next one,
+Testnet-1 or pre-launch Testnet. We are planning to run the Testnet-1 to prepare for the MainNet launch.
 During this phase, we will set all blockchain parameters to match with the MainNet.
-We will provide updates on our progress and share the details of the new testnet soon.
+We will provide updates on our progress and share the details of the new Testnet soon.
 
-As promised, **participants in TestNet-0 will be given priority as validators for the MainNet**,
+As promised, **participants in Testnet-0 will be given priority as validators for the MainNet**,
 and will receive bounty tokens from the bootstrap accounts to set up their validator.
-We are grateful to all those who participated in TestNet-0, and we encourage them to join our next testnet to
+We are grateful to all those who participated in Testnet-0, and we encourage them to join our next Testnet to
 help us improve Pactus.
 As a community-based project, we rely on the support of our community members, and we value any help we receive.
 

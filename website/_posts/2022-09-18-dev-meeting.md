@@ -3,31 +3,25 @@ layout: post
 title: "Dev meeting 18 September 2022"
 date: 2022-09-18 00:00:00 +0000
 tags: dev-meeting
-summary: Reviewing testnet and Genesis parameters
+summary: Reviewing Testnet and Genesis parameters
 ---
 
 ## Meeting Summary
 
-### Discussion about TestNet
+### Discussion about Testnet
 
-We discussed about the testnet and some related issues:
-
--IP block issues found by Hadi. Because of sanctions some IPs are blocked.
-We run a support node to support users inside Iran
-
--The GUI application had some issues on Windows. They are fixed and tested by Hadi.
+The team discussed Testnet and related issues, including IP block issues that were found by Hadi.
+Due to sanctions, some IPs are blocked, so the team will run a support node to assist users inside Iran.
+The GUI application had some issues on Windows, but they were fixed and tested by Hadi.
 
 ### Discussion about Website
 
-Website still has some issues:
-
-- Animation needs to rename to Pactus
-- We need a logo. Some logos are suggested by the community.
-- The road map page is missed.
+The website still has some issues, such as the need to rename the animation to "Pactus" and the lack of a logo.
+The community suggested some logos. Additionally, the roadmap page is missing.
 
 ### Status of social medias
 
-Status of social-medias was discussed:
+The team discussed the status of social media platforms, including:
 
 - Discord: 70 members
 - Instagram: 87 followers
@@ -35,19 +29,17 @@ Status of social-medias was discussed:
 - Linkedin: 20 followers
 - Twitter: Not yet
 
-### Project announcement
-
-We decided to announce the project on 29 September on the social-medias.
+The team also decided to announce the project on social media on 29 September.
 
 ### Consensus parameters
 
-We discussed the consensus parameters. The consensus parameters are going to be set like below for the main-net:
+The team discussed the current consensus parameters:
 
 - Total supply: 21 million coins
 - Reward: 1 coin per block
 - Block time: 10 second
 - Committee size: 21 members
-- Bond Interval: one hour
+- Bond interval: one hour
 - Unbond interval: 21 days
 - Fee fraction: 0.0001
 - Min fee: 0.0000001

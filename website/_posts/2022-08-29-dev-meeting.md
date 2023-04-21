@@ -10,9 +10,8 @@ summary: Name storming
 
 ### Project renamed to Pactus
 
-In last meeting we started an online survey for renaming the project and here is the result of the survey:
-
-Total responses: **31**
+During the last meeting, the team conducted an online survey to rename the project.
+A total of 31 responses were received, and the following names were suggested:
 
 | Name       | Votes |
 | ---------- | ----- |
@@ -44,10 +43,10 @@ Total responses: **31**
 | Sycee      | 0     |
 | Lepus      | 0     |
 
-And Pactus chose. 🎉 Project will be moved to "pactus-project/pactus".
-We decided to announce it on the social-medias.
+After reviewing the responses, the team chose "Pactus" as the new name for the project. 🎉
+The project will be moved to "pactus-project/pactus," and the team plans to announce it on social media.
 
 ### Discussion on GUI
 
-Joseph suggested using Flutter for GUI.
-We need to provide gRPC APIs for wallet. GUI can interact with the wallet using gRPC APIs.
+In terms of the GUI, Joseph suggested using Flutter, and the team agreed.
+To interact with the wallet, gRPC APIs will be provided, and the GUI will use these APIs.

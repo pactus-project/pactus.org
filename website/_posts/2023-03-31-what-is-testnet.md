@@ -27,7 +27,7 @@ A Testnet is a simulation of a Blockchain, in which developers can test all the 
 their Blockchain network without risking their assets and convenience of end-users.
 Using Testnet, any possible error, bug or malfunctions can be fixed before the Mainnet launch.
 Testnet also can be an experimental environment for new features, updates and upgrades.
-So several testnet networks of the same version or newer version of the Mainnet can be implemented on the roadmap.
+So several Testnet networks of the same version or newer version of the Mainnet can be implemented on the roadmap.
 
 ## What are use cases of Testnet?
 
@@ -44,11 +44,11 @@ developers are now able to decrease the database size by approximately 10% witho
 They did it by utilizing block height instead of hash to store blocks within the database. (you can find out more
 [here](https://github.com/pactus-project/pactus/pull/416)).
 
-**Testing new versions, patches and features on testnet.** it is vital for enhancing the security, load testing,
+**Testing new versions, patches and features on Testnet.** it is vital for enhancing the security, load testing,
 Blockchain migration, integration tests, and etc. This is why you can now use the latest version of Pactus-GUI
 that works like clockwork and is extremely secure.
 
-**Testing the functions of cryptocurrency without disrupting the mainnet.** In the testnet of Pactus Blockchain,
+**Testing the functions of cryptocurrency without disrupting the mainnet.** In the Testnet of Pactus Blockchain,
 you as a user or validator can use all the features to send, receive, bond or unbond your assets in the Pactus-GUI.
 
 **Development and simulation of smart contract features and DApps.** Note that many Blockchain projects like Pactus,

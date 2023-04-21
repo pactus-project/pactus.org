@@ -10,25 +10,21 @@ summary: How to PubSub
 
 ### NanoMsg instead of ZeroMQ
 
-Joseph suggested using Nanomsg instead of ZeroMQ. building ZeroMQ is not easy (specially in Windows) and more
-importantly we can use pure Go implementation of NanoMsg.
+During the meeting, Joseph suggested using Nanomsg instead of ZeroMQ because building ZeroMQ is not easy,
+especially in Windows. Additionally, we can use the pure Go implementation of Nanomsg.
 
-The format of block events defined like this:
+The format of block events was defined as follows:
 
 ```text
 <event_id: 1 byte><event_data: variant><height: 4 bytes><seq_num: 4 bytes>
 ```
 
-Consequences:
-
-- Smart contract can be defined easily.
-- Infura-like services become easy. Just replaying the events.
+As a consequence of this, smart contracts events can be defined more easily and Infura-like services become simple, as we can just replay the events.
 
 ### Reviewing a Pull Request
 
-Nagaraj's [PR](https://github.com/pactus-project/pactus/pull/355) reviewed.
+Nagaraj's [pull request](https://github.com/pactus-project/pactus/pull/355) reviewed.
 
 ### Renaming project
 
-Renaming (rebranding) project discussed. We decided to create an online survey to pick up a new name for the
-project. Everyone is encouraged to participate by suggesting some names.
+The team discussed renaming (rebranding) the project and decided to create an online survey to gather suggestions for a new name. Everyone is encouraged to participate in the survey and suggest new names for the project.
