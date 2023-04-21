@@ -20,8 +20,9 @@ Download and extract the Pactus CLI file from [here]({{ site.baseurl }}/download
 
 ## Initializing the node
 
-First you need to create a working directory for your validator. A working directory is a place
-where you save blockchain data, config and key files.
+First you need to create a working directory for your node.
+A working directory is a place where you save blockchain data, config and wallet.
+Open the Terminal and run the following command:
 
 {% tabs init %}
 
@@ -31,7 +32,7 @@ where you save blockchain data, config and key files.
 pactus-daemon.exe init -w c:\pactus --testnet
 ```
 
-This command creates a working directory for the testnet at `c:\pactus`.
+This command creates your wallet and setup the working working directory at `c:\pactus`.
 
 {% endtab %}
 
@@ -41,7 +42,7 @@ This command creates a working directory for the testnet at `c:\pactus`.
 ./pactus-daemon init -w ~/pactus --testnet
 ```
 
-This command creates a working working directory for the testnet at `~/pactus`.
+This command creates your wallet and setup the working working directory at `~/pactus`.
 
 {% endtab %}
 
@@ -51,13 +52,16 @@ This command creates a working working directory for the testnet at `~/pactus`.
 ./pactus-daemon init -w ~/pactus --testnet
 ```
 
-This command creates a working working directory for the testnet at `~/pactus`.
+This command creates your wallet and setup the working working directory at `~/pactus`.
 
 {% endtab %}
 
 {% endtabs %}
 
-Working directory contains:
+Make sure you write down your 12-word mnemonic on a piece of paper to recover your wallet in the future
+in case your computer is lost, damaged, or stolen.
+
+The working directory contains:
 
 - Default wallet
 - Genesis file
@@ -65,10 +69,9 @@ Working directory contains:
 
 Feel free to take a look at these files.
 
-## Running the node (CLI)
+## Running the node
 
-Now you can start the node and sync with the testnet. This may take several hours:
-First, open the command line interface in your computer. Then:
+Now you can start the node and sync with the network. Run the following command in the Terminal:
 
 {% tabs start %}
 
@@ -98,4 +101,17 @@ pactus-daemon.exe start -w c:\pactus
 
 {% endtabs %}
 
+When the Pactus node starts running, it begins syncing with the network.
+This process may take some time, as your node needs to download and verify the entire blockchain history.
+Please be patient while your node syncs.
+
+To become a validator and participate in the
+consensus algorithm to earn rewards, you first need to
+[stake]({{ site.baseurl }}/learn/consensus/proof-of-stake/) some coins. In the next
+[tutorial]({{ site.baseurl }}/user-guides/send-transactions-cli/#sending-a-bond-transaction),
+we will explain how to send a Bond transaction to become a validator.
+
 ---
+
+By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
+Thank you for your participation!
