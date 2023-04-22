@@ -13,13 +13,17 @@ If you like to read more about the Testnet you can check out our post on
 "[What is Testnet?]({{ site.baseurl }}/2023/03/01/what-is-testnet.html)".
 
 In September 2022, we released our first Testnet.
-The purpose of this Testnet was to check the consensus algorithm, test different transaction types,
+The purpose of this Testnet was to
+check the [consensus protocol](https://pactus.org/learn/consensus/protocol/),
+test different [transaction](https://pactus.org/learn/transaction/format/) types,
 and ensure the stability of the blockchain.
-We also wanted to test the sortition algorithm to make sure it works properly.
+We also wanted to test the [sortition algorithm](https://pactus.org/learn/consensus/sortition/)
+to make sure it works properly.
 
-The committee for the Testnet was set to five validators, however, more than 19 validators joined during the Testnet period.
-**Over 1,800,000 blocks were created, and more than 3 million transactions were processed during this time.
-The size of the blockchain is approximately 1 Gigabyte.
+The [committee](https://pactus.org/learn/consensus/committee/)
+for the Testnet was set to five validators, and  more than 19 validators joined during the Testnet period.
+**Over 2 million blocks were created, and more than 3.2 million transactions were processed during this time.
+The size of the blockchain is approximately 1 gigabyte.
 The maximum number of transactions recorded in a single block was 386**. With a block time of 10 seconds,
 we can confirm that Pactus blockchain can support up to 30 transactions per second (TPS),
 which is a reasonable number for TPS. Based on real-time statistics available at [realtps](https://realtps.net/),
