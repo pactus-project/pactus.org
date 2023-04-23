@@ -21,7 +21,7 @@ We also wanted to test the [sortition algorithm](https://pactus.org/learn/consen
 to make sure it works properly.
 
 The [committee](https://pactus.org/learn/consensus/committee/)
-for the Testnet was set to five validators, and  more than 19 validators joined during the Testnet period.
+for the Testnet was set to five validators, and more than 19 validators joined during the Testnet period.
 **Over 2 million blocks were created, and more than 3.2 million transactions were processed during this time.
 The size of the blockchain is approximately 1 gigabyte.
 The maximum number of transactions recorded in a single block was 386**. With a block time of 10 seconds,

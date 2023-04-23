@@ -8,12 +8,8 @@ summary: Join Pactus Testnet
 
 ![testnet](/blog/images/2022-09-24-announcement-testnet/testnet.gif)
 
-## Join Pactus Testnet.
-
 To join the Pactus Testnet, you don't need any special settings.
-Simply [download](/download)  the pre-release software from our website and join the Testnet.
-
-## Motivations
+Simply [download](/download) the pre-release software from our website and join the Testnet.
 
 By joining the Testnet, you can get familiar with the Pactus blockchain and prepare for the mainnet launch.
 Additionally, participants in the Testnet will receive higher priority in the mainnet launch.

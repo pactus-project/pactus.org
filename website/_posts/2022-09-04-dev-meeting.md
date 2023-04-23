@@ -19,7 +19,8 @@ The format of block events was defined as follows:
 <event_id: 1 byte><event_data: variant><height: 4 bytes><seq_num: 4 bytes>
 ```
 
-As a consequence of this, smart contracts events can be defined more easily and Infura-like services become simple, as we can just replay the events.
+As a consequence of this, smart contracts events can be defined more easily and
+Infura-like services become simple, as we can just replay the events.
 
 ### Reviewing a Pull Request
 
@@ -27,4 +28,6 @@ Nagaraj's [pull request](https://github.com/pactus-project/pactus/pull/355) revi
 
 ### Renaming project
 
-The team discussed renaming (rebranding) the project and decided to create an online survey to gather suggestions for a new name. Everyone is encouraged to participate in the survey and suggest new names for the project.
+The team discussed renaming (rebranding) the project and decided to create an online survey to
+gather suggestions for a new name.
+Everyone is encouraged to participate in the survey and suggest new names for the project.
