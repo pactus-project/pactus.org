@@ -6,7 +6,7 @@ sidebar: Block
 
 # Block
 
-In the Pactus, a block is a set of data that contains a header, the certificate of the previous block,
+In the Pactus, a block is a set of data that contains a header, the certificate of the previous block
 and list of the transactions.
 Once a block comes with a valid certificate, it is committed and added to the blockchain, and
 the certificate will be included in the next block.
@@ -34,7 +34,7 @@ The block header is 138 bytes long and consists the following fields:
 - **Timestamp** is the time of the block as the number of seconds since January 1, 1970 (Unix Epoch).
 - **Previous Block Hash** is the hash of the previous block in the blockchain.
 - **State Hash** is the [state hash]({{ site.baseurl }}/learn/blockchain/state-hash) of the blockchain at this block.
-- It ensures that all nodes in the network have the same state.
+  The State Hash ensures that all nodes in the network have the same state.
 - **Sortition Seed** is a verifiable and unpredictable seed data used by
   the [sortition]({{ site.baseurl }}/learn/consensus/sortition) algorithm.
 - **Proposer Address** is the address of the validator who created and proposed the block.
@@ -53,12 +53,13 @@ The block certificate consists the following fields:
 | Variant  | Absentees  |
 | 48 bytes | Signature  |
 
-- **Round** is the consensus round that this certificate issued.
-- If a proposer failed to propose a block in one round, other validator change the proposer and increase the round number.
-- **Committers** is the list of validators number in the committee for the current certificate.
-- **Absentees** is the list of validators that are absent in the committee
-- **Signature** is the signature for the certificate that enures the majority of the committee members validate and
-- signed the proposed block
+- **Round** is the consensus round in which this certificate was issued.
+  If a proposer fails to propose a block in one round, another validator takes over as the proposer,
+  and the round number is increased.
+- **Committers** is the list of validator numbers in the committee for the current certificate..
+- **Absentees** is the list of validator numbers that are absent in the committee.
+- **Signature** is the signature for the certificate that ensures the majority of the committee members have validated and
+  signed the proposed block.
 
 ## Transactions
 
@@ -86,8 +87,8 @@ The block hash is used to link the blocks together in the blockchain.
 
 ### Is there any empty block in Pactus?
 
-There is no completely empty block in pactus.
-Each block at least contains one transaction that is the reward transaction.
+There is no completely empty block in Pactus.
+Each block contains at least one transaction, which is the reward transaction.
 
 ### How are certificates issued?
 
@@ -96,7 +97,8 @@ creating a block every 10 seconds.
 The Proposer broadcasts the proposed block to other validators inside the committee.
 Other validators verify the proposed block, and if it is valid, they cast their votes in favor of the proposed block by
 signing the combination of the block hash and the consensus round.
-More details about the consensus mechanism can be found in the [consensus]({{ site.baseurl }}/learn/consensus/protocol) document.
+More details about the consensus mechanism can be found in the
+[consensus protocol]({{ site.baseurl }}/learn/consensus/protocol) document.
 
 To issue a valid certificate, signatures from validators who hold more than ⅔ of the stake in
 the committee are required.
@@ -106,6 +108,6 @@ the certificate is issued.
 ### How are certificates verified?
 
 To verify a certificate for a block, the block hash is computed, and
-the aggregated public key can be formed from the **Committers** and **Absentees**.
+the aggregated public key can be formed using the **Committers** and **Absentees** list.
 Then, the signature can be verified using the aggregated public key and
 the aggregated signature inside the certificate.

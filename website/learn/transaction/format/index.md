@@ -37,7 +37,7 @@ Transactions in Pactus consists the following fields:
   [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters/)
 - **Public key** contains the public key of the sender.
   The public key is used to verify that the sender has the authority to create the transaction.
-  The sender's address should be derived from this public key,
+  The sender's address should be derived from this public key.
 - **Signature** contains a cryptographic signature created by the sender using their private key.
   The signature is used to ensure that the transaction has not been tampered with and that it was indeed created by the sender.
 

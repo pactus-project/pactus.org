@@ -42,7 +42,7 @@ These parameters are hardcoded into the project and include:
 - **Treasury Account**: The [treasury account]({{ site.baseurl }}/learn/blockchain/account/#treasury-account)
   is defined at the genesis time and holds the total supply of the Pactus blockchain
   that 21 million coins, and each coin is divided into 1 billion units.
-- **Bootstrap validators** The bootstrap validators are defined at by their public keys.
+- **Bootstrap validators** The bootstrap validators are defined by their public keys.
 
 ## FAQ
 

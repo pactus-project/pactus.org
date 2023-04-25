@@ -7,7 +7,8 @@ sidebar: Serialization
 # Data serialization
 
 Data serialization is the process of converting data into a format that can be easily stored or transmitted over a network.
-It typically involves encoding data into a sequence of bytes that can later be decoded to reconstruct the original data structure.
+It typically involves encoding data into a sequence of bytes, which can later be decoded to
+reconstruct the original data structure.
 Pactus has two methods for data serialization: Deterministic serialization and CBOR serialization:
 
 ## Deterministic serialization
@@ -15,21 +16,21 @@ Pactus has two methods for data serialization: Deterministic serialization and C
 Pactus uses a deterministic serialization for the deterministic data like blocks and transactions.
 The serialization format for different types of data is listed in the table below:
 
-| **Data Type**           | **Size (bytes)** | **Description**                                    |
-| ----------------------- | ---------------- | -------------------------------------------------- |
-| uint8                   | 1                | An 8 bits unsigned integer                         |
-| int8                    | 1                | An 8 bits signed integer                           |
-| uint16                  | 2                | A 16 bits unsigned integer                         |
-| int16                   | 2                | A 16 bits signed integer                           |
-| uint32                  | 4                | A 32 bits unsigned integer                         |
-| int32                   | 4                | A 32 bits signed signed integer                    |
-| uint64                  | 8                | A 64 bits unsigned integer                         |
-| int64                   | 8                | A 64 bits signed signed integer                    |
-| [VarInt](#varint)       | Variable         | A compact representation of a an unsigned integer. |
-| [VarByte](#varbyte)     | Variable         | A variable length bytes                            |
-| [VarString](#varstring) | Variable         | A variable length string                           |
-| Address                 | 21               | 21 bytes of address data                           |
-| Hash32                  | 32               | 32 bytes of hash data                              |
+| **Data Type**           | **Size (bytes)** | **Description**                                  |
+| ----------------------- | ---------------- | ------------------------------------------------ |
+| uint8                   | 1                | An 8 bits unsigned integer                       |
+| int8                    | 1                | An 8 bits signed integer                         |
+| uint16                  | 2                | A 16 bits unsigned integer                       |
+| int16                   | 2                | A 16 bits signed integer                         |
+| uint32                  | 4                | A 32 bits unsigned integer                       |
+| int32                   | 4                | A 32 bits signed signed integer                  |
+| uint64                  | 8                | A 64 bits unsigned integer                       |
+| int64                   | 8                | A 64 bits signed signed integer                  |
+| [VarInt](#varint)       | Variable         | A compact representation of an unsigned integer. |
+| [VarByte](#varbyte)     | Variable         | A variable length bytes                          |
+| [VarString](#varstring) | Variable         | A variable length string                         |
+| Address                 | 21               | 21 bytes of address data                         |
+| Hash32                  | 32               | 32 bytes of hash data                            |
 
 ### VarInt
 
@@ -74,8 +75,8 @@ Here is an example of a block header data that encoded using deterministic seria
 
 ## CBOR serialization
 
-For non-deterministic data like networking messages, Pactus uses “Concise Binary Object
-Representation” or [CBOR](https://tools.ietf.org/html/rfc7049).
+For non-deterministic data, such as networking messages, Pactus uses
+“Concise Binary Object Representation” or [CBOR](https://tools.ietf.org/html/rfc7049).
 CBOR is a binary data serialization format that is widely used in various application,
 including IoT, web services, security, and automotive, due to its compact representation and efficient parsing.
 

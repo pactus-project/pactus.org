@@ -11,7 +11,7 @@ Withdraw transaction is used to withdraw the staked coins from an unbonded
 
 ## Payload structure
 
-The unbond transaction has a payload consists the following field:
+The withdraw transaction has a payload consists the following fields:
 
 | Size     | Field            |
 | -------- | ---------------- |
@@ -21,4 +21,4 @@ The unbond transaction has a payload consists the following field:
 
 - **Sender address** is the address of the sender validator.
 - **Receiver address** is the address of the receiver [account]({{ site.baseurl }}/learn/blockchain/account/).
-- **Amount** is the amount of coins that should be withdraw
+- **Amount** is the amount of coins that should be withdrawn

@@ -20,10 +20,10 @@ This helps to prevent any tampering or inconsistencies in the data, ensuring the
 >
 > From [Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
 
-Hash tree or Merkle tree is a data structures that used by many blockchains to solve this problem:
+A Hash tree or Merkle tree is a data structures that used by many blockchains to solve this problem:
 "How can data be securely stored and verified in a decentralized network?"
 
-By using a Merkle tree, nodes can easily verify that they store the same data,
+By using a Merkle tree, nodes can easily verify that they store the same data
 without having to share the entire dataset. Additionally, this helps to prevent any tampering with the data,
 as any changes made to the data would cause inconsistencies in the Merkle tree and
 can be easily detected by the network.

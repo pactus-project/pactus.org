@@ -11,7 +11,7 @@ If the receiver account does not exist, it will be created.
 
 ## Payload structure
 
-The sortition transaction has a payload consists the following fields:
+The transfer transaction has a payload consists the following fields:
 
 | Size     | Field            |
 | -------- | ---------------- |

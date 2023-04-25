@@ -7,7 +7,8 @@ sidebar: Unbond Transaction
 # Unond Transaction
 
 Unbond transaction is used to unbond a [validator]({{ site.baseurl }}/learn/blockchain/validator/).
-An unbond transaction cannot participate in the sortition algorithm anymore and after 21 days the stake can be withdraw.
+An unbonded validator cannot participate in the sortition algorithm anymore, and after 21 days, the stake can be withdrawn.
+This is called the "unbond interval" and is defined in the [consensus parameter]({{ site.baseurl }}/learn/consensus/parameters/).
 
 ## Payload structure
 

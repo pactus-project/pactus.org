@@ -1,12 +1,12 @@
 ---
 layout: learn
-title: Transactions fee
-sidebar: Transactions fee
+title: Transaction fee
+sidebar: Transaction fee
 ---
 
-# Transactions fee
+# Transaction fee
 
-Transaction fees in Pactus are calculated using a percentage-based fee model.
+Transaction fees in the Pactus blockchain are calculated using a percentage-based fee model.
 The fee is a percentage of the transferred amount, within a minimum and maximum range.
 The percentage, minimum fee, and maximum fee parameters are part of the blockchain
 [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters/).
@@ -47,7 +47,7 @@ $$
 
 ## Examples
 
-Currently the fee fraction or percentage set to 0.01%, the minimum fee is set to 0.000001 coin,
+Currently, the fee fraction or percentage is set to 0.01%, the minimum fee is set to 0.000001 coin,
 and the maximum fee is set to 0.1 coin.
 
 - If Alice wants to transfer 2 coins to Bob, she needs to pay 0.0002 coins as transaction fee.

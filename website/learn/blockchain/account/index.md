@@ -23,7 +23,7 @@ The account structure is 37 bytes long and consists the following fields:
 - **Address** is the account address, which is a unique identifier of the account.
 - **Number** is a sequential and unique number assigned to each account when it is created for the first time.
   The account number is used to calculate the [state hash]({{ site.baseurl }}/learn/blockchain/state-hash) of the blockchain.
-- **Sequence** increases every time a transaction is sent from an account.
+  **Sequence** increases every time a transaction is sent from an account.
   This protects the account against replay attacks, where a previously committed transaction is broadcasted again.
 - **Balance** holds the balance of the account, which is the amount of Pactus coins held by the account.
 
