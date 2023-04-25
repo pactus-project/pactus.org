@@ -51,14 +51,14 @@ $$ \langle m \rangle \_{\sigma \_i}$$.
 
 ### Normal-Case Operation
 
-In each round, one validator is the proposer and the others are validators. The normal case
+In each round, one validator is the proposer and the others act as validators. The normal case
 operation of Pactus consensus algorithm includes these three steps: **propose**, **prepare** and
 **precommit**
 
 #### Propose phase
 
 The proposer $$p$$ collects transactions and creates a proposal block. It signs and
-broadcasts a propose message with the proposed block piggybacked to all the validators.
+broadcasts a proposal message with the proposed block piggybacked to all the validators.
 Propose message has this form:
 
 $$ \langle \langle \text{PROPOSE},h,r \rangle \_{\sigma \_p}, B \rangle $$
@@ -103,7 +103,7 @@ proposer and validator 3 is faulty.
 ### Change proposer
 
 The change-proposer phase provides liveness by allowing the system to make progress when the
-proposer fails. change-proposers are triggered by timeouts that prevent validators from waiting
+proposer fails. change-proposer phase is triggered by timeouts that prevent validators from waiting
 indefinitely for the proposal to execute.
 
 If the timer of a validator expires in round $$r$$, the validator starts a change-proposer phase to move

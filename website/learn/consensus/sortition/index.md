@@ -109,7 +109,7 @@ $$
 \end{align*}
 $$
 
-The sortition Sortition Seed for the genesis block set to 0.
+The sortition seed for the genesis block set to 0.
 
 ## FAQ
 

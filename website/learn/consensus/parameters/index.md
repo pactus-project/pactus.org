@@ -17,9 +17,9 @@ Here is the list of the consensus parameters:
 - **Block Time:** The time interval in seconds between the creation of two consecutive blocks.
   This is set to 10 seconds, which means that a new block is created every 10 seconds.
 - **Committee Size** The number of validators in the committee.
-  The is set to 21 validators.
+  This is set to 21 validators.
 - **Block Reward** The fixed reward amount given to the validator who successfully creates and proposes a new block.
-- This is set to 1,000,000,000, which is equivalent to to one coin.
+  This is set to 1,000,000,000, which is equivalent to one coin.
 - **Time-to-Live Interval**: The number of blocks that a transaction can remain unprocessed before
   it is removed from the transaction pool.
   This is set to 8640 blocks, which is almost one day.
@@ -32,12 +32,12 @@ Here is the list of the consensus parameters:
   This is set to 181440 blocks, which is almost 21 days.
 - **Sortition Interval**: The maximum number of blocks that a sortition transaction can remain valid and be included
   in a block.
-  This is is set to 7 blocks.
+  This is set to 7 blocks.
 - **Fee Fraction**: The fraction of transaction value that must be paid in order for a transaction to be included in a block.
   This is set to 0.0001, meaning that 0.01% of transaction value are awarded to the block proposer.
 - **Minimum Fee**: The minimum transaction fee that must be paid.
-  This is set to 1,000, which is equivalent to to 0.000001 coin.
+  This is set to 1,000, which is equivalent to 0.000001 coin.
 - **Maximum Fee**: The maximum transaction fee that must be paid.
-  This is set to 100,000,000, which is equivalent to to 0.1 coin.
+  This is set to 100,000,000, which is equivalent to 0.1 coin.
 - **Maximum Stake**: The maximum amount of coins that can be staked by a validator.
   This is set to 12,381,000,000,000, which is 12,381 coins.
