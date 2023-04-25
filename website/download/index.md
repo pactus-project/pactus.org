@@ -68,3 +68,5 @@ title: dict.download.title
 ## 🐳 {% t dict.download.docker %}
 
 {% t dict.download.docker_desc %}
+
+{% t dict.download.docker_after_download %} [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/run-pactus-docker)

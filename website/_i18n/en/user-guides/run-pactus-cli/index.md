@@ -20,8 +20,8 @@ Download and extract the Pactus CLI file from [here]({{ site.baseurl }}/download
 
 ## Initializing the node
 
-First you need to create a working directory for your node.
-A working directory is a place where you save blockchain data, config and wallet.
+Now you need to create a wallet and setup a working directory for your node.
+A working directory is a place where you save blockchain data and wallets.
 Open the Terminal and run the following command:
 
 {% tabs init %}

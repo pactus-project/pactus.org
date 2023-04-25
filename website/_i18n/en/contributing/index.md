@@ -17,8 +17,7 @@ These guides can help you to run and configure your node:
 
 - [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/run-pactus-gui)
 - [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/run-pactus-cli)
-
-<!-- - [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/run-pactus-docker) -->
+- [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/run-pactus-docker)
 
 ## Become a Validator
 

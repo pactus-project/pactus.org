@@ -122,6 +122,8 @@ dict:
     docker: Docker container
     docker_desc: >
       Advanced user can get the Pactus docker image from [Docker Hub](https://hub.docker.com/r/pactus/pactus).
+    docker_after_download: >
+      You may follow this tutorial to set up and run your node using Docker:
 
   faq:
     title: FAQ
