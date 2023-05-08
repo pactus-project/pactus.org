@@ -1,17 +1,19 @@
 ---
 layout: post
-title: "Join Pactus Testnet"
-date: 2022-09-18 00:00:00 +0000
+title: "Testnet-0 launch announcement"
+date: 2022-09-24 00:00:00 +0000
 tags: announcement, testnet
-summary: Join Pactus Testnet
 ---
 
 ![testnet](/blog/images/2022-09-24-announcement-testnet/testnet.gif)
 
-To join the Pactus Testnet, you don't need any special settings.
-Simply [download](/download) the pre-release software from our website and join the Testnet.
+The Pactus blockchain Testnet-0 is now accessible.
+To participate, simply [download]({{ site.baseurl }}/download) the Pactus application version 0.9.0 and
+connect to the Testnet without any special configurations.
+For test coins, please visit our [Discord](https://discord.gg/H5vZkNnXCu) channel and share your validator address.
 
-By joining the Testnet, you can get familiar with the Pactus blockchain and prepare for the mainnet launch.
-Additionally, participants in the Testnet will receive higher priority in the mainnet launch.
+By taking part in the Testnet, you can familiarize yourself with the Pactus blockchain and
+get ready for the mainnet launch.
+**Testnet participants will also be given higher priority during the mainnet launch.**
 
 Please share your feedback with us to help improve the user experience in future versions of the software.

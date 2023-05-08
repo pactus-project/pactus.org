@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Dev meeting 18 September 2022"
+title: "Dev meeting"
 date: 2022-09-18 00:00:00 +0000
 tags: dev-meeting
-summary: Reviewing Testnet and Genesis parameters
 ---
 
 ## Meeting Summary

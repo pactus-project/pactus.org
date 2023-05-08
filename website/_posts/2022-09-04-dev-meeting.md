@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Dev meeting 29 August 2022"
+title: "Dev meeting"
 date: 2022-08-29 00:00:00 +0000
 tags: dev-meeting
-summary: How to PubSub
 ---
 
 ## Meeting Summary

@@ -3,7 +3,6 @@ layout: post
 title: "Story of Testnet-0"
 date: 2023-04-21 00:00:00 +0000
 tags: announcement, testnet
-summary: Story of Testnet-0
 ---
 
 Testnet is a testing environment where developers and users can try out the functionality of a blockchain project,

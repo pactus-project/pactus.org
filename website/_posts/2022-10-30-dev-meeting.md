@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Dev meeting 30-October 2022"
+title: "Dev meeting"
 date: 2022-10-30 00:00:00 +0000
 tags: dev-meeting
-summary: Block explorer
 ---
 
 ## Meeting Summary

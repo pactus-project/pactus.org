@@ -27,13 +27,13 @@ title: dict.community.title
     </a>
   </li>
   <li>
-    <a href="https://www.instagram.com/pactus.blockchain/">
+    <a href="https://instagram.com/pactus.blockchain/">
       <img alt="Discord" src="{{ site.url }}/assets/images/social_instagram.svg" width="32">
       {% t dict.community.instagram %}
     </a>
   </li>
   <li>
-    <a href="https://www.linkedin.com/company/pactus-blockchain">
+    <a href="https://linkedin.com/company/pactus-blockchain">
       <img alt="Discord" src="{{ site.url }}/assets/images/social_linkedin.svg" width="32">
       {% t dict.community.linkedin %}
     </a>

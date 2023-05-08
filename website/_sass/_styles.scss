@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 
   a:hover:not(.btn) {
-    color: $primary-color !important;
+    color: $primary-color  !important;
   }
 }
 
@@ -66,7 +66,7 @@ h1 {
 
     &:hover {
       background-color: $primary-color;
-      color: $bg-color !important;
+      color: $bg-color  !important;
     }
   }
 
@@ -77,29 +77,29 @@ h1 {
 
     &:hover {
       background-color: $primary-color;
-      color: $bg-color !important;
+      color: $bg-color  !important;
     }
   }
 
   &.btn-community {
     border-color: $community-color;
     background-color: $community-color;
-    color: $bg-color !important;
+    color: $bg-color  !important;
 
     &:hover {
       background-color: $community-color;
-      color: $bg-color !important;
+      color: $bg-color  !important;
     }
   }
 }
 
 .footer {
   .text-muted {
-    color: $bg-color !important;
+    color: $bg-color  !important;
     font-size: 12px;
 
     a {
-      color: $bg-color !important;
+      color: $bg-color  !important;
     }
   }
 }
@@ -150,12 +150,12 @@ h1 {
 
     &:not(.active):hover {
       background-color: #808080 !important;
-      color: $bg-color !important;
+      color: $bg-color  !important;
     }
   }
 
   .active {
-    color: $bg-color !important;
+    color: $bg-color  !important;
     background-color: #404040 !important;
   }
 }
@@ -192,8 +192,8 @@ blockquote {
 }
 
 .footer {
-  background-color: $primary-color !important;
-  color: $bg-color !important;
+  background-color: $primary-color  !important;
+  color: $bg-color  !important;
 
   .section {
     font-size: 1.75rem;
@@ -243,8 +243,21 @@ blockquote {
   // border-top: $border-top;
 
   .edit-btn,
-  .edit-btn > a:hover {
+  .edit-btn>a:hover {
     color: $font-color;
     text-decoration: none;
+  }
+}
+
+.all-posts {
+  .post-link {
+    padding-bottom: 8px;
+  }
+}
+
+.blog-post {
+  .content {
+    padding-top: 22px;
+    min-height: 600px;
   }
 }

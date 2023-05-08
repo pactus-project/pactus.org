@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Dev meeting 04 September 2022"
+title: "Dev meeting"
 date: 2022-09-04 00:00:00 +0000
 tags: dev-meeting
-summary: Name storming
 ---
 
 ## Meeting Summary
