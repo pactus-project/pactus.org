@@ -61,7 +61,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="https://pactus.org/2022/09/18/announcement-testnet.html">Testnet-0 launched</a>
+              <a href="https://pactus.org/2022/09/24/announcement-testnet-0.html">Testnet-0 launched</a>
             </div>
             <div class="card-subtitle text-muted">September 2022</div>
           </div>
