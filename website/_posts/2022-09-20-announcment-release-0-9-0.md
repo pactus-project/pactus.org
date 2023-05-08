@@ -14,6 +14,8 @@ It also includes a command-line interface (CLI) suitable for advanced users.
 Additionally, there is a wallet software that can interact with the blockchain
 without requiring the syncing of the entire blockchain.
 
+## Download
+
 This version has been implemented for Testnet-0 and is preparing for the upcoming mainnet launch.
 To get started with the Pactus Blockchain Testnet-0, simply [download]({{ site.baseurl }}/download)
 the latest version and run the Pactus software.

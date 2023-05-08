@@ -14,6 +14,8 @@ It also includes a command-line interface (CLI) suitable for advanced users.
 Additionally, there is a wallet software that can interact with the blockchain
 without requiring the syncing of the entire blockchain.
 
+## Change log
+
 This version includes several changes and improvements, such as:
 
 - Blocks can be fully decoded when queried in gRPC
@@ -26,10 +28,11 @@ This version includes several changes and improvements, such as:
 You can find the [full list of changes on Github](https://github.com/pactus-project/pactus/compare/v0.9.0...v0.9.1),
 as well as the [source code](https://github.com/pactus-project/pactus/releases/tag/v0.9.1)
 
+## Download
+
 This version has been implemented for Testnet-0 and is preparing for the upcoming mainnet launch.
 To start using the Pactus Blockchain Testnet-0,
 you can download the latest version from [download]({{ site.baseurl }}/download) page
 and join the Testnet.
 
 Join the Testnet now and get ready for the future!
-
