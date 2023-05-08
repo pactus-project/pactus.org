@@ -41,4 +41,10 @@ This version has been implemented for Testnet-1 and is being prepared for the up
 To start using Pactus Blockchain Testnet-1, download the latest version from the
 [download]({{ site.baseurl }}/download) page and join the Testnet.
 
+These guides can help you to run and configure your node:
+
+- [How to run Pactus in graphic mode?]({{ site.baseurl }}/user-guides/run-pactus-gui)
+- [How to run Pactus in command line mode?]({{ site.baseurl }}/user-guides/run-pactus-cli)
+- [How to run Pactus using Docker?]({{ site.baseurl }}/user-guides/run-pactus-docker)
+
 Join the Testnet now and get ready for the future!
