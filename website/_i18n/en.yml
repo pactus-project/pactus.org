@@ -2,6 +2,7 @@ dict:
   pactus: "Pactus"
   pactus_blockchain: "Pactus blockchain"
   about: About
+  about_pactus: About Pactus
   toc: Table of content
   language: Language
   improve_translation: Improve translation
@@ -11,6 +12,7 @@ dict:
   join_community: Join community
   contributing: Contributing
   outdated_translation: The translation is outdated. You can read it, but it might not be accurate.
+  pactus_project: Pactus project
 
   home:
     motto: A truly decentralized Proof of Stake blockchain with enhanced scalability and speed to execute smart contracts and transactions.

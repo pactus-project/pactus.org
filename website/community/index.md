@@ -11,13 +11,7 @@ title: dict.community.title
   <li>
     <a href="https://discord.gg/H5vZkNnXCu">
       <img alt="Discord" src="{{ site.url }}/assets/images/social_discord.svg" width="32">
-      {% t dict.community.discord %}
-    </a>
-  </li>
-  <li>
-    <a href="https://t.me/pactusblockchain">
-      <img alt="Discord" src="{{ site.url }}/assets/images/social_telegram.svg" width="32">
-      {% t dict.community.telegram %}
+      <b>{% t dict.community.discord %}</b>
     </a>
   </li>
   <li>
@@ -30,6 +24,12 @@ title: dict.community.title
     <a href="https://instagram.com/pactus.blockchain/">
       <img alt="Discord" src="{{ site.url }}/assets/images/social_instagram.svg" width="32">
       {% t dict.community.instagram %}
+    </a>
+  </li>
+  <li>
+    <a href="https://t.me/pactusblockchain">
+      <img alt="Discord" src="{{ site.url }}/assets/images/social_telegram.svg" width="32">
+      {% t dict.community.telegram %}
     </a>
   </li>
   <li>
