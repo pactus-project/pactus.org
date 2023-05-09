@@ -39,10 +39,12 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card ongoing left">
+      <div class="timeline-card completed left">
         <div class="card">
           <div class="card-body p-4">
-            <div class="card-title">Testnet-1 launch</div>
+            <div class="card-title">
+            <a href="https://pactus.org/2023/05/09/announcment-testnet-1.html">Testnet-1 launch</a>
+            </div>
             <div class="card-subtitle text-muted">May 2023</div>
           </div>
         </div>
