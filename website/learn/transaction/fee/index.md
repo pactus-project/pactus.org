@@ -48,8 +48,8 @@ $$
 ## Examples
 
 Currently, the fee fraction or percentage is set to 0.01%, the minimum fee is set to 0.000001 coin,
-and the maximum fee is set to 0.1 coin.
+and the maximum fee is set to 0.001 coin.
 
 - If Alice wants to transfer 2 coins to Bob, she needs to pay 0.0002 coins as transaction fee.
 - If Alice wants to transfer 0.0002 coins to Bob, she needs to pay 0.000001 coins as transaction fee.
-- If Alice wants to transfer 20000 coins to Bob, she needs to pay 0.1 coins as transaction fee.
+- If Alice wants to transfer 20 coins to Bob, she needs to pay 0.001 coins as transaction fee.

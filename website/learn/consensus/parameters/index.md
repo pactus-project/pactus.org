@@ -38,6 +38,6 @@ Here is the list of the consensus parameters:
 - **Minimum Fee**: The minimum transaction fee that must be paid.
   This is set to 1,000, which is equivalent to 0.000001 coin.
 - **Maximum Fee**: The maximum transaction fee that must be paid.
-  This is set to 100,000,000, which is equivalent to 0.1 coin.
+  This is set to 1,000,000, which is equivalent to 0.001 coin.
 - **Maximum Stake**: The maximum amount of coins that can be staked by a validator.
-  This is set to 12,381,000,000,000, which is 12,381 coins.
+  This is set to 1,000,000,000,000, which is 1000 coins.

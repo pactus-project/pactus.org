@@ -174,8 +174,8 @@ dict:
       It's important to note that the committee members are not fixed and they change over time.
     min_and_max_stake: What are the minimum and maximum amounts I can stake?
     min_and_max_stake_answer_v1: >
-      In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 12381 coins.
-      If you want to stake more than 12381 coins, you can run a new validator.
+      In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 1000 coins.
+      If you want to stake more than 1000 coins, you can run a new validator.
       Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
     total_supply: What is the total supply of Pactus coins?
     total_supply_answer_v1: >

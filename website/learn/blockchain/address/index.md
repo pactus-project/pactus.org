@@ -41,7 +41,8 @@ The Treasury Address on the Pactus blockchain is a fixed address that is defined
 TreasuryAddress: 000000000000000000000000000000000000000000
 ```
 
-The signature type for the Treasury Address is set to zero,
-and the remaining characters of the address are all zeros.
+The Address Type for the Treasury Address is set to zero, which
+means there is no key associated with the treasury address.
+The remaining characters of the address are all zeros.
 
 [^first]: [bech32m address format](https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki)

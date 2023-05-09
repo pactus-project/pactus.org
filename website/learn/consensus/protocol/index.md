@@ -12,7 +12,7 @@ consensus algorithm at any given time is in one the following states:
 
 - New Height state
 - Propose state
-- Proposer change state
+- Change proposer state
 - Prepare state
 - Precommit state
 - Commit state
@@ -25,8 +25,8 @@ When a proposed block is seen by other validators, they validate the block and m
 If more than ⅔ of the total stakes cast their votes, the proposed block becomes prepared,
 and validators move to the _precommit_ state. If again more than ⅔ of the total stakes
 cast their vote for the prepared block, the block is committed, and the next proposer is ready to propose a new block.
-This cycle repeats every 10 seconds. If any failure occurs during these steps,
-validators move to the _proposer change_ state to try and change the proposer for the next round.
+This cycle repeats every 10 seconds. If a proposer fails to propose in any round,
+other validators move to the _change proposer_ state to advance to the next round and change the proposer.
 
 Pactus consensus mechanism is inspired by Practical Practical Byzantine Fault Tolerant algorithm.
 Below you can see more details about the consensus mechanism in Pactus.
@@ -57,7 +57,7 @@ operation of Pactus consensus algorithm includes these three steps: **propose**,
 
 #### Propose phase
 
-The proposer $$p$$ collects transactions and creates a proposal block. It signs and
+The proposer $$p$$ collects transactions and creates a proposal block $$B$$. It signs and
 broadcasts a proposal message with the proposed block piggybacked to all the validators.
 Propose message has this form:
 
@@ -122,13 +122,13 @@ round and broadcasts proposal message.
 The picture below shows the operation of the algorithm in change-proposer case. validator 0 is the
 proposer and is faulty.
 
-![Proposer change]({{ site.url }}/assets/images/pactus_consensus_change_proposer.png)
+![Change proposer]({{ site.url }}/assets/images/pactus_consensus_change_proposer.png)
 
 ### Block announcement
 
 Each validator that receives a valid proposal and with $$2f+1$$ precommit messages
-can make a certificate and broadcasts block-announce messages with the block and certificate
-piggybacked to the network.
+can create a [certificate]({{ site.baseurl }}/learn/blockchain/block/#block-certificate) and
+broadcasts block-announce messages with the block and certificate piggybacked to the network.
 The block-announce message has this form:
 
 $$ \langle \text{BLOCK-ANNOUNCE} ,h,r ,B,C \rangle $$

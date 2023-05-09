@@ -11,16 +11,14 @@ which can send transactions on the blockchain.
 
 ## Account structure
 
-The account structure is 37 bytes long and consists the following fields:
+The account structure is 16 bytes long and consists the following fields:
 
-| Size     | Field    |
-| -------- | -------- |
-| 21 bytes | Address  |
-| 4 bytes  | Number   |
-| 4 bytes  | Sequence |
-| 8 bytes  | Balance  |
+| Size    | Field    |
+| ------- | -------- |
+| 4 bytes | Number   |
+| 4 bytes | Sequence |
+| 8 bytes | Balance  |
 
-- **Address** is the account address, which is a unique identifier of the account.
 - **Number** is a sequential and unique number assigned to each account when it is created for the first time.
   The account number is used to calculate the [state hash]({{ site.baseurl }}/learn/blockchain/state-hash) of the blockchain.
   **Sequence** increases every time a transaction is sent from an account.
