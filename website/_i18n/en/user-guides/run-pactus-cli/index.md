@@ -16,7 +16,8 @@ Before proceeding with the steps below, ensure that you have the following:
 
 ## Download
 
-Download and extract the Pactus CLI file from [here]({{ site.baseurl }}/download/#pactus-command-line-interface-cli).
+To get started, download and extract the Pactus CLI file from
+[here]({{ site.baseurl }}/download/#pactus-command-line-interface-cli).
 
 ## Initializing the node
 
@@ -108,7 +109,7 @@ Please be patient while your node syncs.
 To become a validator and participate in the
 consensus algorithm to earn rewards, you first need to
 [stake]({{ site.baseurl }}/learn/consensus/proof-of-stake/) some coins. In the next
-[tutorial]({{ site.baseurl }}/user-guides/send-transactions-cli/#sending-a-bond-transaction),
+[tutorial]({{ site.baseurl }}/user-guides/use-wallet-cli/#sending-a-bond-transaction),
 we will explain how to send a Bond transaction to become a validator.
 
 ---

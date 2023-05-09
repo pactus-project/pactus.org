@@ -208,7 +208,7 @@ dict:
       <br><br>
       <b>Scalability:</b>
       Pactus has a unique consensus mechanism that is specifically designed to solve the scalability issue
-      faced by other Proof of Stake blockchains wihout sacrifising the decentralization.
+      faced by other Proof of Stake blockchains without sacrifising the decentralization.
       <br><br>
       <b>Accessibility:</b>
       Running a validator on Pactus is designed to be more accessible to normal users compared to other Proof of Stake blockchains.
@@ -226,3 +226,4 @@ dict:
     back: « Back to the list
     run_pactus_gui: How to run a Pactus in the Graphic mode?
     send_transactions_gui: How to send transactions in Graphic mode?
+    use_wallet_cli: How to use wallet in Command Line mode?

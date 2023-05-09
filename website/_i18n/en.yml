@@ -300,8 +300,8 @@ dict:
     simple: Simple
     advanced: Advanced
     website: Website
-    run_pactus_gui: How to run Pactus in graphic mode?
-    run_pactus_cli: How to run Pactus in command line mode?
+    run_pactus_gui: How to run Pactus in Graphic Mode?
+    run_pactus_cli: How to run Pactus in Command Line mode?
     run_pactus_docker: How to run Pactus using Docker?
-    send_transactions_gui: How to send transactions in graphic mode?
-    send_transactions_cli: How to send transactions in command line mode?
+    send_transactions_gui: How to send transactions in Graphic Mode?
+    use_wallet_cli: How to use wallet in Command Line mode?
