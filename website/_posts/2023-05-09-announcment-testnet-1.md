@@ -8,7 +8,7 @@ tags: announcement, testnet
 ## Overview
 
 The Pactus blockchain Testnet-1 is now available for participation.
-This version simulates he mainnet environment and evaluate the system's performance, stability,
+This version simulates the mainnet environment and evaluate the system's performance, stability,
 and security in a controlled environment.
 The primary goal of this version of Testnet is to determine the efficient and secure committee size for the Mainnet.
 
