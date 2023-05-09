@@ -7,7 +7,7 @@ title: dict.guide.title
 
 {% t dict.guide.welcome %}
 
-## {% t dict.guide.simple %}
+## {% t dict.guide.beginner %}
 
 <ul class="list-unstyled">
   <li><a href="{{ site.baseurl }}/user-guides/run-pactus-gui">{% t dict.guide.run_pactus_gui %}</a></li>

@@ -297,7 +297,7 @@ dict:
     title: User guides
     welcome: Here, you can find some guidance to help you use and interact with the Pactus blockchain.
     back: « Back to the list
-    simple: Simple
+    beginner: Beginner
     advanced: Advanced
     website: Website
     run_pactus_gui: How to run Pactus in Graphic Mode?
