@@ -13,6 +13,7 @@ dict:
   contributing: Contributing
   outdated_translation: The translation is outdated. You can read it, but it might not be accurate.
   pactus_project: Pactus project
+  download_pactus: Download Pactus
 
   home:
     motto: A truly decentralized Proof of Stake blockchain with enhanced scalability and speed to execute smart contracts and transactions.
@@ -89,14 +90,13 @@ dict:
     ongoing_task: Ongoing task
     upcoming_task: Upcoming task
 
-  download_pactus: Download Pactus
   download:
     title: Download
     welcome: On this page you can find how to download and get the latest version of the Pactus software.
     compile_from_source_code: Compile from Source Code
     project_pactus_is_distributed: >
       Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from
-      the [Github](https://github.com/pactus-project/pactus) repository and compile the source code.
+      the [GitHub](https://github.com/pactus-project/pactus) repository and compile the source code.
     instructions_for_compiling: >
       Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/INSTALL.md) page.
     stable_releases: Download stable releases
@@ -245,8 +245,8 @@ dict:
       <b>Storage cost:</b>
       Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
       reducing storage costs and simplifying the smart contracts.
-    how_pactus_words: How does Pactus blockchain work?
-    how_pactus_words_answer_v1: >
+    how_pactus_works: How does Pactus blockchain work?
+    how_pactus_works_answer_v1: >
       Pactus operates with a committee of validators who are responsible for creating new blocks.
       The committee consists of 21 validators, however, the members of the committee change randomly over time.
       Every 10 seconds, a validator in the committee known as the proposer collects all the valid transactions, adds them into a block,
@@ -301,7 +301,6 @@ dict:
     back: « Back to the list
     beginner: Beginner
     advanced: Advanced
-    website: Website
     run_pactus_gui: How to run Pactus in Graphic Mode?
     run_pactus_cli: How to run Pactus in Command Line mode?
     run_pactus_docker: How to run Pactus using Docker?
