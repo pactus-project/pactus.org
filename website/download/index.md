@@ -27,13 +27,13 @@ title: dict.download.title
 
 ![{% t dict.download.pactus_gui %}]({{ site.url }}/assets/images/pactus_gui_main_window.png)
 
-| **File name**                                                                                                                                                     | **Kind**  | **OS**  | **Arch** |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------- | -------- |
-| [pactus-gui_0.10.0_darwin_amd64.dmg](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_darwin_amd64.dmg)                       | DMG       | macOS   | 64-bit   |
-| [pactus-gui_0.10.0_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_darwin_amd64.tar.gz)                 | Archive   | macOS   | 64-bit   |
-| [pactus-gui_0.10.0_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_linux_amd64.tar.gz)                   | Archive   | Linux   | 64-bit   |
-| [pactus-gui_0.10.0_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_windows_amd64.zip)                     | Archive   | Windows | 64-bit   |
-| [pactus-gui_0.10.0_windows_amd64_installer.exe](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_windows_amd64_installer.exe) | Installer | Windows | 64-bit   |
+| **File name**                                                                                                                                                         | **Kind**      | **OS**      | **Arch** |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------- | -------- |
+| [pactus-gui_0.10.0_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_darwin_amd64.tar.gz)                     | Archive       | macOS       | 64-bit   |
+| [**pactus-gui_0.10.0_darwin_amd64.dmg**](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_darwin_amd64.dmg)                       | **DMG**       | **macOS**   | 64-bit   |
+| [pactus-gui_0.10.0_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_linux_amd64.tar.gz)                       | Archive       | Linux       | 64-bit   |
+| [pactus-gui_0.10.0_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_windows_amd64.zip)                         | Archive       | Windows     | 64-bit   |
+| [**pactus-gui_0.10.0_windows_amd64_installer.exe**](https://github.com/pactus-project/pactus/releases/download/v0.10.0/pactus-gui_0.10.0_windows_amd64_installer.exe) | **Installer** | **Windows** | 64-bit   |
 
 <div class="alert alert-warning">
   {% t dict.download.untrusted_app %}
