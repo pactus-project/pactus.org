@@ -271,7 +271,8 @@ dict:
     multiple_validators: Can I run multiple validators on one computer?
     multiple_validators_answer_v1: >
       The Pactus software allows you to run up to 32 validators on a single node.
-      Running multiple validators has no impact on storage, and it only has a negligible effect on CPU and networking usage.
+      Running multiple validators may require slightly more memory, but it has no impact on storage,
+      and has a negligible effect on CPU and networking usage.
       Running multiple validators on a single node enables users to distribute their stake across multiple validators,
       especially when they want to stake more than the maximum stake per validator.
       This eliminates the need for additional resources and simplifies node management.

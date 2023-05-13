@@ -18,7 +18,7 @@ title: dict.faq.title
           {% t title_key %}
         </div>
       </div>
-      <ul class="list-unstyled">
+      <ul class="">
         {% for item in group.items %}
         <li class="ms-3">
           {% assign q_key = "dict.faq." | append: item.id %}
