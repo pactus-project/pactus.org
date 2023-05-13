@@ -13,13 +13,13 @@
       ver: v1
 
     - id: what_pactus_solved
-      ver: v1
+      ver: v2
 
     - id: pactus_vs_bitcoin
       ver: v1
 
     - id: pactus_vs_ethereum
-      ver: v1
+      ver: v2
 
 - title: validator
   items:
@@ -27,13 +27,16 @@
       ver: v1
 
     - id: min_and_max_stake
+      ver: v2
+
+    - id: staking_limit
       ver: v1
 
-    - id: unlimited_validators
+    - id: multiple_validators
       ver: v1
 
     - id: validators_rewarded
-      ver: v1
+      ver: v2
 
     - id: flat_reward
       ver: v1
@@ -46,7 +49,7 @@
       img: pactus_validator_pool.png
 
     - id: how_enter_committee
-      ver: v1
+      ver: v2
 
     - id: proposer_selection
       ver: v1

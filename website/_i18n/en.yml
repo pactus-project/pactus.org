@@ -149,11 +149,11 @@ dict:
       This means that instead of mining, validators are responsible for voting on incoming blocks and
       must hold a certain amount of the network's coin, known as "stake", as a security deposit to prevent malicious behavior.
     pactus_vs_ethereum: How is Pactus different from Ethereum?
-    pactus_vs_ethereum_answer_v1: >
+    pactus_vs_ethereum_answer_v2: >
       Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
-      Running a validator on Ethereum can be challenging and requires a minimum of 32 Ethereum coins to stake.
+      Running a validator on Ethereum can be challenging and requires 32 Ethereum coins to stake.
       In contrast, Pactus is designed to be more accessible to normal users.
-      There is no minimum stake requirement, and you can run the Pactus node on any operating system with basic hardware.
+      There is no minimum stake requirement, and you can run the Pactus node on personal Computers with basic hardware.
       This approach reflects our commitment to promoting decentralization and making blockchain technology accessible to a wider audience.
     validators: What are validators?
     validators_answer_v1: >
@@ -161,10 +161,9 @@ dict:
       helping to secure the network and keep it decentralized.
       They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
     validators_rewarded: How do validators get rewarded?
-    validators_rewarded_answer_v1: >
+    validators_rewarded_answer_v2: >
       Once a validator proposes a valid block and it is accepted by the network, the validator receives one coin as a block reward.
-      The reward is an incentive given to validators for their contribution to the security and integrity of the network,
-      helping to keep it running smoothly.
+      The reward is an incentive given to validators for their contribution to the network.
     flat_reward: How much is the block reward in Pactus?
     flat_reward_answer_v1: >
       Block reward in Pactus is fixed, and it is always one coin per block.
@@ -175,7 +174,7 @@ dict:
       However, a committee of 21 validators is responsible for creating blocks.
       It's important to note that the committee members are not fixed and they change over time.
     min_and_max_stake: What are the minimum and maximum amounts I can stake?
-    min_and_max_stake_answer_v1: >
+    min_and_max_stake_answer_v2: >
       In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 1000 coins.
       If you want to stake more than 1000 coins, you can run a new validator.
       Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
@@ -228,19 +227,19 @@ dict:
       Our commitment to decentralization and fairness is reflected in our decision to start the Pactus blockchain from zero and
       ensure that all coins are minted through the consensus mechanism, rather than through an ICO or privileged accounts.
     what_pactus_solved: What problems does Pactus solve that other blockchains don't?
-    what_pactus_solved_answer_v1: >
+    what_pactus_solved_answer_v2: >
       Pactus tries to solve several problems faced by other blockchain networks,
-      including scalability, accessibility, fairness in distribution and storage cost.
+      including:
       <br><br>
       <b>Scalability:</b>
       Pactus has a unique consensus mechanism that is specifically designed to address the scalability issue
       without sacrificing the security and decentralization.
       <br><br>
       <b>Accessibility:</b>
-      Running a validator on Pactus is designed to be more accessible to normal users compared to other blockchains.
+      Running a node on Pactus is designed to be more accessible to normal users compared to other blockchains.
       <br><br>
       <b>Fairness in distribution:</b>
-      Pactus has a fair and transparent coin distribution model, aiming to prevent the concentration of wealth.
+      Pactus has a fair and transparent coin distribution model, and all coins are generated through the consensus mechanism.
       <br><br>
       <b>Storage cost:</b>
       Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
@@ -255,8 +254,8 @@ dict:
       all the transactions inside the block will be executed.
       This process repeats every 10 seconds.
     how_enter_committee: How can a validator enter to the committee?
-    how_enter_committee_answer_v1: >
-      To enter the committee in Pactus, validators participate in a lottery or sortition process that occurs at each block.
+    how_enter_committee_answer_v2: >
+      To enter the committee in Pactus, validators participate in a sortition process that occurs at each block.
       In this process, validators generate a provable random number between zero and the total staked coins,
       and if the number is less than their stake, they can send a transaction known as sortition transaction with the proof of sortition.
       Once the sortition transaction is included in a block, the validator replaces the oldest committee member.
@@ -294,6 +293,18 @@ dict:
     withdraw_transaction: What is a Withdraw transaction?
     withdraw_transaction_answer_v1: >
       A withdraw transaction is a type of transaction that allows a validator to withdraw their staked coins from the network.
+    multiple_validators: Can I run multiple validators on one computer?
+    multiple_validators_answer_v1: >
+      The Pactus software allows you to run up to 32 validators on a single node.
+      Running multiple validators has no impact on storage, and it only has a negligible effect on CPU and networking usage.
+      Running multiple validators on a single node enables users to distribute their stake across multiple validators,
+      especially when they want to stake more than the maximum stake per validator.
+      This eliminates the need for additional resources and simplifies node management.
+    staking_limit: Why is there a limit for maximum stake?
+    staking_limit_answer_v1:
+      The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power,
+      which could potentially lead them to control the committee.
+      The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
 
   guide:
     title: User guides
