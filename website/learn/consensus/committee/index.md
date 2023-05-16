@@ -12,13 +12,31 @@ with their voting power determined by their stake.
 While in the committee, validators cannot send Bond or Unbond transactions,
 meaning their voting power remains the same.
 The members of the committee changes randomly over time through Sortition transactions.
-Each block can contain zero or more Sortition transactions..
+Each block can contain zero or more Sortition transactions.
 
 These rules are applied when committing sortition transactions:
 
-1. If a validator is already in the committee, they will remain in the committee.
-2. If a validator is not in the committee, the oldest validator will exit the committee.
-3. A minimum of ⅔ of the total stake must be maintained in the committee.
+1. A minimum of ⅔ of the total stake must be maintained in the committee.
+2. If a validator is already in the committee, they will remain in the committee.
+3. If a validator is not in the committee, the oldest validator will exit the committee.
+4. Each validator should stay in committee at least for 21 blocks.
+
+## Proposer Selection
+
+Proposer selection within the committee operates on a deterministic, clockwise rotation system.
+If a validator is unable to propose, for any reason, it stays within the committee, but
+the proposer's role shifts to the next validator in the committee.
+
+![Proposer selection]({{ site.url }}/assets/images/pactus_committee_proposer_selection.png)
+
+## Adding Validators to the Committee
+
+When a new validator joins the committee, they take a position before the current proposer.
+After the addition of a new validator, the committee adjusts to maintain the total number of validators at 21.
+This is achieved by removing the oldest validator from the committee,
+i.e., the one that has been in the committee for the longest time.
+
+![Adding Validators to the Committee]({{ site.url }}/assets/images/pactus_committee_adding_validators.png)
 
 ## Security of the committee
 
