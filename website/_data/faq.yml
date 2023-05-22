@@ -55,7 +55,7 @@
       ver: v1
 
     - id: multiple_committee_entry
-      ver: v1
+      ver: v2
 
     - id: fork_possibility
       ver: v1
@@ -75,13 +75,13 @@
       ver: v1
 
     - id: bond_transaction
-      ver: v1
+      ver: v2
 
     - id: sortition_transaction
       ver: v1
 
     - id: unbond_transaction
-      ver: v1
+      ver: v2
 
     - id: withdraw_transaction
       ver: v1

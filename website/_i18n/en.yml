@@ -265,12 +265,9 @@ dict:
       The consensus algorithm in Pactus prevents the possibility of having two block proposers at the same time.
       This ensures that there will be no fork in the network.
     multiple_committee_entry: Can multiple validators enter the committee at once?
-    multiple_committee_entry_answer_v1: >
+    multiple_committee_entry_answer_v2: >
       The process of sortition in Pactus is random, so it's possible for more than one validator to enter the committee at once,
-      or no validator at all. However, in order for a sortition transaction to be considered valid and included in a block,
-      it must meet two conditions:
-      it can't change more than ⅓ of the committee's stake, and
-      it can't remove a validator that hasn't had the chance to propose a block yet.
+      or no validator at all. However, on average, one validator should join the committee at each block.
     proposer_selection: How are block proposers selected in the committee?
     proposer_selection_answer_v1: >
       The block proposer inside the committee is selected based on the time they entered the committee.
@@ -279,17 +276,16 @@ dict:
     transfer_transaction_answer_v1: >
       A transfer transaction is a type of transaction that allows users to transfer Pactus coin from one account to another.
     bond_transaction: What is a Bond transaction?
-    bond_transaction_answer_v1: >
-      A bond transaction is a type of transaction that allows you to become a validator by staking some coins.
-      When you send a bond transaction, your node will become a validators.
-      The amount of stake determines your power in the consensus.
+    bond_transaction_answer_v2: >
+      A bond transaction is a type of transaction that allows users to become a validator by staking some coins.
+      The amount of stake determines the voting power in the consensus.
     sortition_transaction: What is a Sortition transaction?
     sortition_transaction_answer_v1: >
       A sortition transaction is a type of transaction that allows validators to enter the committee.
     unbond_transaction: What is an Unbond transaction?
-    unbond_transaction_answer_v1: >
-      An unbond transaction is a type of transaction that allows you to unbond your validator.
-      When you send an unbond transaction, you will no longer be able to send the sortition or bond transactions.
+    unbond_transaction_answer_v2: >
+      An unbond transaction is a type of transaction that allows users to unbond their validator.
+      Once a validator is unbonded, they can no longer participate in the consensus mechanism.
     withdraw_transaction: What is a Withdraw transaction?
     withdraw_transaction_answer_v1: >
       A withdraw transaction is a type of transaction that allows a validator to withdraw their staked coins from the network.
