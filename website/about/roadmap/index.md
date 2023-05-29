@@ -15,7 +15,7 @@ permalink: /about/roadmap/index.html
 <section dir="ltr">
   <div class="py-5">
     <div class="timeline">
-      <div class="timeline-card upcoming right">
+      <div class="timeline-card upcoming left">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Smart contract engine</div>
@@ -23,7 +23,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card upcoming left">
+      <div class="timeline-card upcoming right">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Mobile wallet</div>
@@ -31,11 +31,21 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card ongoing right">
+      <div class="timeline-card ongoing left">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Main net launch</div>
             <div class="card-subtitle text-muted">Q3-2023</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-card completed right">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="card-title">
+            <a href="https://pactus.org/2023/05/29/announcement-release-0-11-0.html">Pactus 0.11.0 released</a>
+            </div>
+            <div class="card-subtitle text-muted">May 2023</div>
           </div>
         </div>
       </div>
