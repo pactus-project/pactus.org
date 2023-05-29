@@ -9,7 +9,8 @@ tags: announcement, release, testnet
 
 Pactus Blockchain [Version 0.10.0](https://github.com/pactus-project/pactus/releases/tag/v0.10.0)
 is now available for download.
-This release includes a user-friendly graphical user interface (GUI) that is suitable for both beginners and experienced users.
+This release includes a user-friendly graphical user interface (GUI) that
+is suitable for both beginners and experienced users.
 It also includes a command-line interface (CLI) for advanced users and wallet software
 that allows users to interact with the blockchain without the need to sync the entire blockchain.
 
@@ -32,7 +33,6 @@ These guides can help you to run and configure your node:
 - [How to run Pactus in graphic mode?]({{ site.baseurl }}/user-guides/run-pactus-gui)
 - [How to run Pactus in command line mode?]({{ site.baseurl }}/user-guides/run-pactus-cli)
 - [How to run Pactus using Docker?]({{ site.baseurl }}/user-guides/run-pactus-docker)
-
 
 ## Change log
 
