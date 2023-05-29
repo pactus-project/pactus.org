@@ -7,12 +7,18 @@ tags: announcement, release, testnet
 
 ## Overview
 
-The Pactus Blockchain Release Version 0.9.1 is now available for users of all levels.
-This release version features a graphical user interface (GUI) that
-is accessible to both beginners and experienced users.
-It also includes a command-line interface (CLI) suitable for advanced users.
-Additionally, there is a wallet software that can interact with the blockchain
-without requiring the syncing of the entire blockchain.
+Pactus Blockchain Release [Version 0.9.1](https://github.com/pactus-project/pactus/releases/tag/v0.9.1)
+is now available for download.
+This release includes a user-friendly graphical user interface (GUI) that is suitable for both beginners and experienced users.
+It also includes a command-line interface (CLI) for advanced users and wallet software
+that allows users to interact with the blockchain without the need to sync the entire blockchain.
+
+## Download
+
+This version has been implemented for Testnet-0 and is preparing for the upcoming mainnet launch.
+To start using the Pactus Blockchain Testnet-0,
+you can download the latest version from [download]({{ site.baseurl }}/download) page
+and join the Testnet.
 
 ## Change log
 
@@ -27,12 +33,3 @@ This version includes several changes and improvements, such as:
 
 You can find the [full list of changes on Github](https://github.com/pactus-project/pactus/compare/v0.9.0...v0.9.1),
 as well as the [source code](https://github.com/pactus-project/pactus/releases/tag/v0.9.1)
-
-## Download
-
-This version has been implemented for Testnet-0 and is preparing for the upcoming mainnet launch.
-To start using the Pactus Blockchain Testnet-0,
-you can download the latest version from [download]({{ site.baseurl }}/download) page
-and join the Testnet.
-
-Join the Testnet now and get ready for the future!
