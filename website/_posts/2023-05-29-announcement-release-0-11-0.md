@@ -16,12 +16,11 @@ that allows users to interact with the blockchain without the need to sync the e
 
 ## Highlights
 
-The main update of this version is fixing the [relay](https://docs.libp2p.io/concepts/nat/circuit-relay/) connection issue.
-A relay is a peer in the network that helps connecting two peers specially when they use home internet.
+The main update in this version is the fix for the [relay](https://docs.libp2p.io/concepts/nat/circuit-relay/) connection issue. 
+A relay is a peer in the network that facilitates the connection between two peers, particularly when they are using home internet.
 
-Another main update sending a [Bond transaction]({{ site.baseurl }}/learn/transaction/bond/) is more user friendly.
-User doesn't need to set the validator public key,
-if they want to bond test PAC coins to their validators.
+Another significant update is that sending a [Bond transaction]({{ site.baseurl }}/learn/transaction/bond/) is now more user-friendly. 
+Users no longer need to set the validator public key if they want to bond Test PAC coins to their validators.
 
 ![Bond transaction dialog]({{ site.url }}/blog/images/2023-05-29-announcement-release-0-11-0/bond-transaction-dialog.png)
 
