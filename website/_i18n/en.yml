@@ -16,7 +16,7 @@ dict:
   download_pactus: Download Pactus
 
   home:
-    motto: A truly decentralized Proof of Stake blockchain with enhanced scalability and speed to execute smart contracts and transactions.
+    motto: Building decentralized future together!
     run_a_node: Run a node
     run_a_node_desc: >
       Download the latest version of Pactus blockchain, create your wallet, and start syncing with the network.
