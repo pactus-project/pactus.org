@@ -9,6 +9,9 @@
     - id: without_ico
       ver: v1
 
+    - id: no_pre_sales
+      ver: v1
+
     - id: why_develop_pactus
       ver: v1
 

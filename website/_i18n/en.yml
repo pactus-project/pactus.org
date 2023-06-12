@@ -199,6 +199,11 @@ dict:
       No, Pactus does not have an ICO (Initial Coin Offering) and there are no predefined or privileged accounts in pactus.
       The Pactus blockchain starts from zero and all coins are minted through the consensus mechanism.
       This ensures that the distribution of coins is fair and there is no centralization of wealth.
+    no_pre_sales: Where can I buy Pactus coins?
+    no_pre_sales_answer_v1: >
+      Pactus does not have any pre-sales coins.
+      The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation.
+      By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
     fee_model: How are transaction fees calculated in Pactus?
     fee_model_answer_v1: >
       Transaction fees in Pactus are calculated using a percentage-based fee model.

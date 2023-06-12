@@ -195,6 +195,11 @@ dict:
       لا، بكتوس ليس لديها ICO (Initial Coin Offering) ولا توجد حسابات محددة مسبقًا أو محظوظة في بكتوس.
       يبدأ بلوكشين بكتوس من الصفر وتتم طباعة جميع العملات من خلال آلية التوافق.
       هذا يضمن توزيع العملات بشكل عادل وعدم وجود تمركز للثروة.
+    no_pre_sales: Where can I buy Pactus coins?
+    no_pre_sales_answer_v1: >
+      Pactus does not have any pre-sales coins.
+      The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation.
+      By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
     fee_model: كيف يتم حساب رسوم المعاملات في بكتوس؟
     fee_model_answer_v1: >
       تتم حساب رسوم المعاملات في بكتوس باستخدام نموذج رسوم يعتمد على النسبة المئوية.

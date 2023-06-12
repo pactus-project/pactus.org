@@ -175,6 +175,11 @@ dict:
       不，Pactus没有ICO（首次代币发行），也没有预定义或特权账户。
       Pactus区块链从零开始，所有的币都是通过共识机制铸造的。
       这确保了币的分配是公平的，没有财富的集中化。
+    no_pre_sales: Where can I buy Pactus coins?
+    no_pre_sales_answer_v1: >
+      Pactus does not have any pre-sales coins.
+      The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation.
+      By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
     fee_model: Pactus的交易费是如何计算的？
     fee_model_answer_v1: >
       Pactus的交易费是使用基于百分比的费用模型来计算的。
