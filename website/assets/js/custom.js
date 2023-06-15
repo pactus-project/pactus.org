@@ -68,7 +68,7 @@ function hexToBytes(hex) {
 }
 
 $( document ).ready(function() {
-  const copyButtonLabel = "Copy";
+  const copyButtonLabel = "<i class='fa-solid fa-copy'></i> Copy";
 
   // you can use a class selector instead if you, or the syntax highlighting library adds one to the 'pre'.
   let blocks = document.querySelectorAll("pre");
@@ -77,7 +77,7 @@ $( document ).ready(function() {
     // only add button if browser supports Clipboard API
     if (navigator.clipboard) {
       let button = document.createElement("button");
-      button.innerText = copyButtonLabel;
+      button.innerHTML = copyButtonLabel;
       button.addEventListener("click", copyCode);
       block.appendChild(button);
     }
@@ -90,10 +90,10 @@ $( document ).ready(function() {
     let text = code.innerText;
     await navigator.clipboard.writeText(text);
 
-    button.innerText = "Copied!";
+    button.innerHTML = "Copied!";
 
     setTimeout(() => {
-      button.innerText = copyButtonLabel;
+      button.innerHTML = copyButtonLabel;
     }, 1000)
   }
 })

@@ -1,15 +1,15 @@
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs" dir="<%=@dir%>">
   <% environment["tabs-#{@name}"].each_with_index do |(key, value), index| %>
     <li class="nav-item">
-      <a class="nav-link <%= index == 0 ? 'active' : '' %>"  data-bs-toggle="tab" href="#tabs-<%=@name.delete(' ')%>-<%=key.delete(' ')%>">
+      <a class="nav-link <%= index == 0 ? 'active' : '' %>"  data-bs-toggle="tab" href="#tabs-<%=@name%>-<%=key%>">
         <%= value[:title] %>
       </a>
     </li>
   <% end %>
 </ul>
-<div class="tab-content">
+<div class="tab-content" dir="<%=@dir%>">
   <% environment["tabs-#{@name}"].each_with_index do |(key, value), index| %>
-    <div class="tab-pane <%= index == 0 ? 'show active' : '' %>" id="tabs-<%=@name.delete(' ')%>-<%=key.delete(' ')%>">
+    <div class="tab-pane <%= index == 0 ? 'show active' : '' %>" id="tabs-<%=@name%>-<%=key%>">
       <%= value[:content] %>
      </div>
   <% end %>

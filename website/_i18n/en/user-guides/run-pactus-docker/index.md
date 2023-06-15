@@ -30,35 +30,35 @@ Now you need to create a wallet and setup a working directory for your node.
 A working directory is a place where you save blockchain data and wallets.
 Open the Terminal and run the following command:
 
-{% tabs init %}
+{% tabs init-docker ltr %}
 
-{% tab init windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab init-docker linux <i class="fa-brands fa-linux"></i> Linux %}
+
+```bash
+docker run -it --rm -v ~/pactus/testnet:/pactus pactus/pactus init -w /pactus --testnet
+```
+
+This command creates your wallet and setup the working working directory at `~/pactus/testnet`.
+
+{% endtab %}
+
+{% tab init-docker mac <i class="fa-brands fa-apple"></i> macOS %}
+
+```bash
+docker run -it --rm -v ~/pactus/testnet:/pactus pactus/pactus init -w /pactus --testnet
+```
+
+This command creates your wallet and setup the working working directory at `~/pactus/testnet`.
+
+{% endtab %}
+
+{% tab init-docker windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```powershell
 docker run -it --rm -v c:\pactus\testnet:/pactus pactus/pactus init -w /pactus --testnet
 ```
 
 This command creates your wallet and setup the working working directory at `c:\pactus\testnet`.
-
-{% endtab %}
-
-{% tab init mac <i class="fa-brands fa-apple"></i> macOS %}
-
-```bash
-docker run -it --rm -v ~/pactus/testnet:/pactus pactus/pactus init -w /pactus --testnet
-```
-
-This command creates your wallet and setup the working working directory at `~/pactus/testnet`.
-
-{% endtab %}
-
-{% tab init linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```bash
-docker run -it --rm -v ~/pactus/testnet:/pactus pactus/pactus init -w /pactus --testnet
-```
-
-This command creates your wallet and setup the working working directory at `~/pactus/testnet`.
 
 {% endtab %}
 
@@ -79,28 +79,28 @@ Feel free to take a look at these files.
 
 Now you can start the node and sync with the network. Run the following command in the Terminal:
 
-{% tabs start %}
+{% tabs start-docker ltr %}
 
-{% tab start windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab start-docker linux <i class="fa-brands fa-linux"></i> Linux%}
+
+```bash
+docker run -it -v ~/pactus/testnet:/pactus -p 8080:8080 -p 21777:21777 --name pactus-testnet pactus/pactus start -w /pactus
+```
+
+{% endtab %}
+
+{% tab start-docker mac <i class="fa-brands fa-apple"></i> macOS %}
+
+```bash
+docker run -it -v ~/pactus/testnet:/pactus -p 8080:8080 -p 21777:21777 --name pactus-testnet pactus/pactus start -w /pactus
+```
+
+{% endtab %}
+
+{% tab start-docker windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```powershell
 docker run -it -v c:\pactus\testnet:/pactus -p 8080:8080 -p 21777:21777 --name pactus-testnet pactus/pactus start -w /pactus
-```
-
-{% endtab %}
-
-{% tab start mac <i class="fa-brands fa-apple"></i> macOS %}
-
-```bash
-docker run -it -v ~/pactus/testnet:/pactus -p 8080:8080 -p 21777:21777 --name pactus-testnet pactus/pactus start -w /pactus
-```
-
-{% endtab %}
-
-{% tab start linux <i class="fa-brands fa-linux"></i> Linux%}
-
-```bash
-docker run -it -v ~/pactus/testnet:/pactus -p 8080:8080 -p 21777:21777 --name pactus-testnet pactus/pactus start -w /pactus
 ```
 
 {% endtab %}

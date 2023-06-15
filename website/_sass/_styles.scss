@@ -133,6 +133,7 @@ h1 {
   color: $bg-color;
   position: relative;
   overflow: auto;
+  direction: ltr;
 
   button {
     position: absolute;

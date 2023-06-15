@@ -6,10 +6,12 @@ module Jekyll
         class TabsBlock < Liquid::Block
             def initialize(block_name, markup, tokens)
                 super
-                if markup == ''
-                    raise SyntaxError.new("Block #{block_name} requires 1 attribute")
+                markups = markup.split(' ', 2)
+                if markups.length != 2
+                    raise SyntaxError.new("Block #{block_name} requires 2 attributes")
                 end
-                @name = markup.strip
+                @name = markups[0].strip
+                @dir = markups[1].strip
             end
 
             def render(context)
@@ -31,11 +33,11 @@ module Jekyll
                 super
                 markups = markup.split(' ', 3)
                 if markups.length != 3
-                    raise SyntaxError.new("Block #{block_name} requires 2 attributes")
+                    raise SyntaxError.new("Block #{block_name} requires 3 attributes")
                 end
-                @name = markups[0]
-                @tab = markups[1]
-                @title = markups[2]
+                @name = markups[0].strip
+                @tab = markups[1].strip
+                @title = markups[2].strip
             end
 
             def render(context)

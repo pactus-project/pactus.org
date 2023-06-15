@@ -1,5 +1,5 @@
 ---
-version: 1
+version: 3
 ---
 
 ## Preface
@@ -74,7 +74,7 @@ If the seed phrase is entered correctly, you will be able to proceed to the next
 
 ### Wallet password
 
-On this page, you will be prompted to set a password for your wallet.
+On this page, you will be asked to set a password for your wallet.
 Enter a strong password in the first dialog box and confirm it in the second one.
 This password will be used to encrypt your wallet and protect it from unauthorized access.
 
@@ -82,6 +82,16 @@ This password will be used to encrypt your wallet and protect it from unauthoriz
 
 Note: Choose a strong password and keep it safe.
 If you forget or lose your password, you will need your seed phrase to regain access to your wallet.
+
+### Number of validators
+
+Each node in the Pactus blockchain can run up to 32 validators, and each validator can stake up to
+1000 coins. Here, you can define how many validators you want to create for your node.
+Select the number of validators based on the amount of coins you want to stake.
+
+![Number of validators]({{ site.url }}/user-guides/run-pactus-gui/number_of_validators.png)
+
+If you want to stake more than 32,000 coins, you need to set up a new node.
 
 ### Node information
 

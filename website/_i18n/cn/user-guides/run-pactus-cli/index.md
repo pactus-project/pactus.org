@@ -1,5 +1,5 @@
 ---
-version: 1
+version: 2
 ---
 
 ## Preface
@@ -25,35 +25,35 @@ Now you need to create a wallet and setup a working directory for your node.
 A working directory is a place where you save blockchain data and wallets.
 Open the Terminal and run the following command:
 
-{% tabs init %}
+{% tabs init-cli ltr %}
 
-{% tab init windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab init-cli linux <i class="fa-brands fa-linux"></i> Linux %}
+
+```bash
+./pactus-daemon init -w ~/pactus --testnet
+```
+
+This command creates your wallet and setup the working working directory at `~/pactus`.
+
+{% endtab %}
+
+{% tab init-cli mac <i class="fa-brands fa-apple"></i> macOS %}
+
+```bash
+./pactus-daemon init -w ~/pactus --testnet
+```
+
+This command creates your wallet and setup the working working directory at `~/pactus`.
+
+{% endtab %}
+
+{% tab init-cli windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```powershell
 pactus-daemon.exe init -w c:\pactus --testnet
 ```
 
 This command creates your wallet and setup the working working directory at `c:\pactus`.
-
-{% endtab %}
-
-{% tab init mac <i class="fa-brands fa-apple"></i> macOS %}
-
-```bash
-./pactus-daemon init -w ~/pactus --testnet
-```
-
-This command creates your wallet and setup the working working directory at `~/pactus`.
-
-{% endtab %}
-
-{% tab init linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```bash
-./pactus-daemon init -w ~/pactus --testnet
-```
-
-This command creates your wallet and setup the working working directory at `~/pactus`.
 
 {% endtab %}
 
@@ -74,28 +74,28 @@ Feel free to take a look at these files.
 
 Now you can start the node and sync with the network. Run the following command in the Terminal:
 
-{% tabs start %}
+{% tabs start-cli ltr %}
 
-{% tab start windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab start-cli linux <i class="fa-brands fa-linux"></i> Linux%}
+
+```bash
+./pactus-daemon start -w ~/pactus
+```
+
+{% endtab %}
+
+{% tab start-cli mac <i class="fa-brands fa-apple"></i> macOS %}
+
+```bash
+./pactus-daemon start -w ~/pactus
+```
+
+{% endtab %}
+
+{% tab start-cli windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```powershell
 pactus-daemon.exe start -w c:\pactus
-```
-
-{% endtab %}
-
-{% tab start mac <i class="fa-brands fa-apple"></i> macOS %}
-
-```bash
-./pactus-daemon start -w ~/pactus
-```
-
-{% endtab %}
-
-{% tab start linux <i class="fa-brands fa-linux"></i> Linux%}
-
-```bash
-./pactus-daemon start -w ~/pactus
 ```
 
 {% endtab %}

@@ -1,5 +1,5 @@
 ---
-version: 1
+version: 2
 ---
 
 ## Preface
@@ -25,16 +25,15 @@ and recover your Pactus wallet.
 
 First, you need to create a wallet. To create a new wallet, run the following command:
 
-{% tabs create_wallet %}
+{% tabs create_wallet ltr %}
 
-{% tab create_wallet windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab create_wallet linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 create --testnet
+./pactus-wallet ~/pactus/wallets/wallet_1 create
 ```
 
-This command creates a new wallet and save it in the c:\pactus\wallets\wallet_1 directory.
-This command creates a new wallet and store it in the `c:\pactus\wallets\wallet_1`.
+This command creates a new wallet and store it in the `~/pactus/wallets/wallet_1`.
 
 {% endtab %}
 
@@ -48,13 +47,14 @@ This command creates a new wallet and store it in the `~/pactus/wallets/wallet_1
 
 {% endtab %}
 
-{% tab create_wallet linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab create_wallet windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 create
+pactus-wallet.exe c:\pactus\wallets\wallet_1 create --testnet
 ```
 
-This command creates a new wallet and store it in the `~/pactus/wallets/wallet_1`.
+This command creates a new wallet and save it in the c:\pactus\wallets\wallet_1 directory.
+This command creates a new wallet and store it in the `c:\pactus\wallets\wallet_1`.
 
 {% endtab %}
 
@@ -66,12 +66,12 @@ Don't forget to back up your wallet seed, as it allows you to recover your walle
 
 You can change the wallet password by tunning this command:
 
-{% tabs wallet_password %}
+{% tabs wallet_password ltr %}
 
-{% tab wallet_password windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab wallet_password linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 password
+./pactus-wallet ~/pactus/wallets/wallet_1 password
 ```
 
 {% endtab %}
@@ -84,10 +84,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 password
 
 {% endtab %}
 
-{% tab wallet_password linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab wallet_password windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 password
+pactus-wallet.exe c:\pactus\wallets\wallet_1 password
 ```
 
 {% endtab %}
@@ -100,12 +100,12 @@ If you forget your password, you can still recover your wallet using the wallet 
 
 You can obtain the wallet seed by running this command:
 
-{% tabs wallet_seed %}
+{% tabs wallet_seed ltr %}
 
-{% tab wallet_seed windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab wallet_seed linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 seed
+./pactus-wallet ~/pactus/wallets/wallet_1 seed
 ```
 
 {% endtab %}
@@ -118,10 +118,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 seed
 
 {% endtab %}
 
-{% tab wallet_seed linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab wallet_seed windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 seed
+pactus-wallet.exe c:\pactus\wallets\wallet_1 seed
 ```
 
 {% endtab %}
@@ -135,12 +135,12 @@ you'll need to enter the wallet password to access it.
 
 If you lose your wallet, you can recover it by running this command:
 
-{% tabs wallet_recover %}
+{% tabs wallet_recover ltr %}
 
-{% tab wallet_recover windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab wallet_recover linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\recovered_wallet recover
+./pactus-wallet ~/pactus/wallets/recovered_wallet recover
 ```
 
 {% endtab %}
@@ -153,10 +153,10 @@ pactus-wallet.exe c:\pactus\wallets\recovered_wallet recover
 
 {% endtab %}
 
-{% tab wallet_recover linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab wallet_recover windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/recovered_wallet recover
+pactus-wallet.exe c:\pactus\wallets\recovered_wallet recover
 ```
 
 {% endtab %}
@@ -175,12 +175,12 @@ In this section, we'll cover address commands that help you manage your wallet a
 
 You can create a new address by running this command:
 
-{% tabs address_new %}
+{% tabs address_new ltr %}
 
-{% tab address_new windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab address_new linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 address new
+./pactus-wallet ~/pactus/wallets/wallet_1 address new
 ```
 
 {% endtab %}
@@ -193,10 +193,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 address new
 
 {% endtab %}
 
-{% tab address_new linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab address_new windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 address new
+pactus-wallet.exe c:\pactus\wallets\wallet_1 address new
 ```
 
 {% endtab %}
@@ -209,12 +209,12 @@ You can also assign a label to your address to better organize your address book
 
 To view the list of wallet addresses, use this command:
 
-{% tabs address_all %}
+{% tabs address_all ltr %}
 
-{% tab address_all windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab address_all linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 address all
+./pactus-wallet ~/pactus/wallets/wallet_1 address all
 ```
 
 {% endtab %}
@@ -227,10 +227,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 address all
 
 {% endtab %}
 
-{% tab address_all linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab address_all windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 address all
+pactus-wallet.exe c:\pactus\wallets\wallet_1 address all
 ```
 
 {% endtab %}
@@ -241,12 +241,12 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 address all
 
 To obtain the public key for a specific address, run this command:
 
-{% tabs address_pub %}
+{% tabs address_pub ltr %}
 
-{% tab address_pub windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab address_pub linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 address pub <ADDRESS>
+./pactus-wallet ~/pactus/wallets/wallet_1 address pub <ADDRESS>
 ```
 
 {% endtab %}
@@ -259,10 +259,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 address pub <ADDRESS>
 
 {% endtab %}
 
-{% tab address_pub linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab address_pub windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 address pub <ADDRESS>
+pactus-wallet.exe c:\pactus\wallets\wallet_1 address pub <ADDRESS>
 ```
 
 {% endtab %}
@@ -275,12 +275,12 @@ Replace `<ADDRESS>` with the address for which you want to retrieve its public k
 
 You can get the public key of your address by this command:
 
-{% tabs address_prv %}
+{% tabs address_prv ltr %}
 
-{% tab address_prv windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab address_prv linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 address pub <ADDRESS>
+./pactus-wallet ~/pactus/wallets/wallet_1 address pub <ADDRESS>
 ```
 
 {% endtab %}
@@ -293,10 +293,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 address pub <ADDRESS>
 
 {% endtab %}
 
-{% tab address_prv linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab address_prv windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 address pub <ADDRESS>
+pactus-wallet.exe c:\pactus\wallets\wallet_1 address pub <ADDRESS>
 ```
 
 {% endtab %}
@@ -321,12 +321,12 @@ Please note that once a transaction is broadcasted, it cannot be reversed.
 To create, sign, and broadcast a
 [Transfer transaction]({{ site.baseurl }}/learn/transaction/transfer/), use the following command:
 
-{% tabs tx_transfer %}
+{% tabs tx_transfer ltr %}
 
-{% tab tx_transfer windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab tx_transfer linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 tx transfer <FROM> <TO> <AMOUNT>
+./pactus-wallet ~/pactus/wallets/wallet_1 tx transfer <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -339,10 +339,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 tx transfer <FROM> <TO> <AMOUNT>
 
 {% endtab %}
 
-{% tab tx_transfer linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab tx_transfer windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 tx transfer <FROM> <TO> <AMOUNT>
+pactus-wallet.exe c:\pactus\wallets\wallet_1 tx transfer <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -357,12 +357,12 @@ and `<TO>` is the receiver address.
 To create, sign, and broadcast a
 [Bond transaction]({{ site.baseurl }}/learn/transaction/bond/), use the following command:
 
-{% tabs tx_bond %}
+{% tabs tx_bond ltr %}
 
-{% tab tx_bond windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab tx_bond linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 tx bond <FROM> <TO> <AMOUNT>
+./pactus-wallet ~/pactus/wallets/wallet_1 tx bond <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -375,10 +375,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 tx bond <FROM> <TO> <AMOUNT>
 
 {% endtab %}
 
-{% tab tx_bond linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab tx_bond windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 tx bond <FROM> <TO> <AMOUNT>
+pactus-wallet.exe c:\pactus\wallets\wallet_1 tx bond <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -391,12 +391,12 @@ and `<TO>` is the receiver validator address.
 If the validator associated with this address does not exist yet,
 you need to provide the public key to create it:
 
-{% tabs tx_bond_pub %}
+{% tabs tx_bond_pub ltr %}
 
-{% tab tx_bond_pub windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab tx_bond_pub linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
+./pactus-wallet ~/pactus/wallets/wallet_1 tx bond --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -409,10 +409,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 --pub <PUBLIC_KEY> <FROM> <TO> <AMO
 
 {% endtab %}
 
-{% tab tx_bond_pub linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab tx_bond_pub windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 tx bond --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
+pactus-wallet.exe c:\pactus\wallets\wallet_1 --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -427,12 +427,12 @@ which is the public key of the `<TO>` address.
 To create, sign, and broadcast a
 [Unbond transaction]({{ site.baseurl }}/learn/transaction/unbond/), use the following command:
 
-{% tabs tx_unbond %}
+{% tabs tx_unbond ltr %}
 
-{% tab tx_unbond windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab tx_unbond linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 tx unbond <ADDRESS>
+./pactus-wallet ~/pactus/wallets/wallet_1 tx unbond <ADDRESS>
 ```
 
 {% endtab %}
@@ -445,10 +445,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 tx unbond <ADDRESS>
 
 {% endtab %}
 
-{% tab tx_unbond linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab tx_unbond windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 tx unbond <ADDRESS>
+pactus-wallet.exe c:\pactus\wallets\wallet_1 tx unbond <ADDRESS>
 ```
 
 {% endtab %}
@@ -462,12 +462,12 @@ In this command, `<ADDRESS>` is the address of the validator that you want to un
 To create, sign, and broadcast a
 [Withdraw transaction]({{ site.baseurl }}/learn/transaction/withdraw/), use the following command:
 
-{% tabs tx_unbond %}
+{% tabs tx_unbond ltr %}
 
-{% tab tx_unbond windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab tx_unbond linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 tx withdraw <FROM> <TO> <AMOUNT>
+./pactus-wallet ~/pactus/wallets/wallet_1 tx unbond <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -480,10 +480,10 @@ pactus-wallet.exe c:\pactus\wallets\wallet_1 tx withdraw <FROM> <TO> <AMOUNT>
 
 {% endtab %}
 
-{% tab tx_unbond linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab tx_unbond windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 tx unbond <FROM> <TO> <AMOUNT>
+pactus-wallet.exe c:\pactus\wallets\wallet_1 tx withdraw <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
