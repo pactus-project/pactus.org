@@ -9,7 +9,7 @@ tags: announcement, release, testnet
 
 Pactus Blockchain [Version 0.11.0](https://github.com/pactus-project/pactus/releases/tag/v0.11.0)
 is now available for download.
-This release includes a user-friendly graphical user interface (GUI) that
+This release includes a graphical user interface (GUI) that
 is suitable for both beginners and experienced users.
 It also includes a command-line interface (CLI) for advanced users and wallet software
 that allows users to interact with the blockchain without the need to sync the entire blockchain.

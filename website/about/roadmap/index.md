@@ -15,7 +15,7 @@ permalink: /about/roadmap/index.html
 <section dir="ltr">
   <div class="py-5">
     <div class="timeline">
-      <div class="timeline-card upcoming left">
+      <div class="timeline-card upcoming right">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Smart contract engine</div>
@@ -23,7 +23,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card upcoming right">
+      <div class="timeline-card upcoming left">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Mobile wallet</div>
@@ -31,7 +31,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card ongoing left">
+      <div class="timeline-card ongoing right">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Main net launch</div>
@@ -39,21 +39,11 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card completed right">
-        <div class="card">
-          <div class="card-body p-4">
-            <div class="card-title">
-            <a href="https://pactus.org/2023/05/29/announcement-release-0-11-0.html">Pactus 0.11.0 released</a>
-            </div>
-            <div class="card-subtitle text-muted">May 2023</div>
-          </div>
-        </div>
-      </div>
       <div class="timeline-card completed left">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-            <a href="https://pactus.org/2023/05/09/announcement-testnet-1.html">Testnet-1 launch</a>
+            <a href="{{ site.url }}/2023/06/19/announcement-release-0-12-0.html">Pactus 0.12.0 released</a>
             </div>
             <div class="card-subtitle text-muted">May 2023</div>
           </div>
@@ -63,7 +53,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-            <a href="https://pactus.org/2023/05/08/announcement-release-0-10-0.html">Pactus 0.10.0 released</a>
+            <a href="{{ site.url }}/2023/05/29/announcement-release-0-11-0.html">Pactus 0.11.0 released</a>
             </div>
             <div class="card-subtitle text-muted">May 2023</div>
           </div>
@@ -73,7 +63,27 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="https://pactus.org/2023/04/21/story-testnet-0.html">Testnet-0 concluded</a>
+            <a href="{{ site.url }}/2023/05/09/announcement-testnet-1.html">Testnet-1 launch</a>
+            </div>
+            <div class="card-subtitle text-muted">May 2023</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-card completed right">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="card-title">
+            <a href="{{ site.url }}/2023/05/08/announcement-release-0-10-0.html">Pactus 0.10.0 released</a>
+            </div>
+            <div class="card-subtitle text-muted">May 2023</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-card completed left">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="card-title">
+              <a href="{{ site.url }}/2023/04/21/story-testnet-0.html">Testnet-0 concluded</a>
             </div>
             <div class="card-subtitle text-muted">April 2023</div>
           </div>
@@ -83,7 +93,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="https://pactus.org/2022/11/24/announcement-release-0-9-1.html">Pactus 0.9.1 released</a>
+              <a href="{{ site.url }}/2022/11/24/announcement-release-0-9-1.html">Pactus 0.9.1 released</a>
             </div>
             <div class="card-subtitle text-muted">November 2022</div>
           </div>
@@ -93,7 +103,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="https://pactus.org/2022/09/24/announcement-testnet-0.html">Testnet-0 launched</a>
+              <a href="{{ site.url }}/2022/09/24/announcement-testnet-0.html">Testnet-0 launched</a>
             </div>
             <div class="card-subtitle text-muted">September 2022</div>
           </div>
@@ -103,7 +113,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="https://pactus.org/2022/09/20/announcement-release-0-9-0.html">Pactus 0.9.0 released</a>
+              <a href="{{ site.url }}/2022/09/20/announcement-release-0-9-0.html">Pactus 0.9.0 released</a>
             </div>
             <div class="card-subtitle text-muted">September 2022</div>
           </div>
