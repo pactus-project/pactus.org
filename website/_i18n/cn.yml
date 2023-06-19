@@ -69,6 +69,7 @@ dict:
 
   blog:
     title: 博客
+    back:  « Back to the blog list
     all_posts: 所有文章
 
   learn:
@@ -290,7 +291,7 @@ dict:
   guide:
     title: 用户指南
     welcome: 在这里，您可以找到一些指南，帮助您使用和与帕克图斯区块链进行交互。
-    back: « 返回列表
+    back: « Back to the user guides list
     beginner: 初学者
     advanced: 高级
     run_pactus_gui: 如何以图形模式运行帕克图斯？

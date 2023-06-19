@@ -47,7 +47,7 @@ They did it by utilizing block height instead of hash to store blocks within the
 Blockchain migration, integration tests, and etc. This is why you can now use the latest version of Pactus-GUI
 that works like clockwork and is extremely secure.
 
-**Testing the functions of cryptocurrency without disrupting the mainnet.** In the Testnet of Pactus Blockchain,
+**Testing the functions of cryptocurrency without disrupting the Mainnet.** In the Testnet of Pactus Blockchain,
 you as a user or validator can use all the features to send, receive, bond or unbond your assets in the Pactus-GUI.
 
 **Development and simulation of smart contract features and DApps.** Note that many Blockchain projects like Pactus,

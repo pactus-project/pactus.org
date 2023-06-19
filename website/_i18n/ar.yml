@@ -74,6 +74,7 @@ dict:
 
   blog:
     title: مدونة
+    back:  « Back to the blog list
     all_posts: جميع المقالات
 
   learn:
@@ -309,7 +310,7 @@ dict:
   guide:
     title: دلائل المستخدم
     welcome: هنا، يمكنك العثور على بعض التوجيهات لمساعدتك على استخدام والتفاعل مع بلوكشين بكتوس.
-    back: « العودة إلى القائمة
+    back: « Back to the user guides list
     beginner: مبتدئ
     advanced: متقدم
     website: الموقع الإلكتروني

@@ -10,10 +10,15 @@
         <div class="col-lg-8 content">
           <h1>{{ page.title }}</h1>
           <span class="post-date">{{ page.date | date: "%d %B %Y" }}</span>
-
-          <div class="content">{{content}} {% include edit_page.html %}</div>
-          <div class="col-lg-2"></div>
+          {{content}}
+          <div class="row p-3">
+            <div class="col text-end">
+              <a href="{{ site.baseurl }}/blog/">{% t dict.blog.back %}</a>
+            </div>
+          </div>
+          {% include edit_page.html %}
         </div>
+        <div class="col-lg-2"></div>
       </div>
     </div>
     {% include footer.html %}

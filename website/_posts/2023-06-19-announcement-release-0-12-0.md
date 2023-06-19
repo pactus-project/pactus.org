@@ -25,7 +25,7 @@ improves the calculation of total power (stake) of the blockchain in a more effe
 ## Download
 
 This version has been implemented for [Testnet-1]({{ site.url }}/2023/05/09/announcement-testnet-1.html) and
-is being prepared for the upcoming mainnet launch.
+is being prepared for the upcoming Mainnet launch.
 To start using Pactus Blockchain Testnet-1, download the latest version from the
 [download]({{ site.baseurl }}/download) page and join the Testnet.
 

@@ -17,9 +17,9 @@ You can find detailed instructions on how to do this in the following [tutorial]
 ## Sending a Transfer Transaction
 
 To send a [transfer transaction]({{ site.baseurl }}/learn/transaction/transfer/), click on the "Transaction" menu and
-select "Transfer."
-This will bring up a new window where you can select the
-[account]({{ site.baseurl }}/learn/blockchain/account/) address from which you wish to send the transfer,
+select "Transfer".
+A new window will appear where you can select the
+[account]({{ site.baseurl }}/learn/blockchain/account/) address from which you wish to send the "transfer" transaction,
 as well as the recipient's account address and the amount you wish to send.
 
 After reviewing the transaction details and ensuring that they are correct,
@@ -32,16 +32,11 @@ will be calculated based on the amount you're sending.
 
 ## Sending a Bond Transaction
 
-To send a [bond transaction]({{ site.baseurl }}/learn/transaction/bond/), navigate to the "Transaction" menu
-and select "Bond."
-A new window will appear where you can select the account address from which you wish to send the bond transaction,
-as well as the [validator]({{ site.baseurl }}/learn/blockchain/validator/) address of the recipient and
+To send a [bond transaction]({{ site.baseurl }}/learn/transaction/bond/), click on the "Transaction" menu
+and select "Bond".
+A new window will appear where you can select the account address from which you wish to send the "bond" transaction,
+as well as the recipient's [validator]({{ site.baseurl }}/learn/blockchain/validator/) address and
 the amount you wish to stake.
-
-If the validator address is not already registered on the Pactus blockchain, you will need to provide the
-validator's public key as the first staking transaction will create the validator on the Pactus blockchain.
-To obtain the public key, you can right-click on the validator's address in your wallet
-and select "Details."
 
 ![Bond Transaction Dialog]({{ site.url }}/user-guides/send-transactions-gui/bond-transaction-dialog.png)
 

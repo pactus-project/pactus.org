@@ -16,7 +16,7 @@ that allows users to interact with the blockchain without the need to sync the e
 
 ## Download
 
-This version has been implemented for Testnet-0 and is preparing for the upcoming mainnet launch.
+This version has been implemented for Testnet-0 and is preparing for the upcoming Mainnet launch.
 To start using the Pactus Blockchain Testnet-0,
 you can download the latest version from [download]({{ site.baseurl }}/download) page
 and join the Testnet.

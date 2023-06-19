@@ -76,6 +76,7 @@ dict:
 
   blog:
     title: Blog
+    back:  « Back to the blog list
     all_posts: All posts
 
   learn:
@@ -311,7 +312,7 @@ dict:
   guide:
     title: User guides
     welcome: Here, you can find some guidance to help you use and interact with the Pactus blockchain.
-    back: « Back to the list
+    back: « Back to the user guides list
     beginner: Beginner
     advanced: Advanced
     run_pactus_gui: How to run Pactus in Graphic Mode?
