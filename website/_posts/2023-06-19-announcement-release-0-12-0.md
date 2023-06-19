@@ -20,7 +20,7 @@ This version is focused on improving the sync time to make it faster.
 This is achieved by implementing a caching mechanism that executes transactions more quickly and
 improves the calculation of total power (stake) of the blockchain in a more effective way.
 
-![Syncing progress]({{ site.url }}/blog/images/2023-05-29-announcement-release-0-12-0/syncing-progress.png)
+![Syncing progress]({{ site.url }}/blog/images/2023-06-19-announcement-release-0-12-0/syncing-progress.png)
 
 ## Download
 
