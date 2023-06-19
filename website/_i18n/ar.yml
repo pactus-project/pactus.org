@@ -74,7 +74,7 @@ dict:
 
   blog:
     title: مدونة
-    back:  « Back to the blog list
+    back: « Back to the blog list
     all_posts: جميع المقالات
 
   learn:

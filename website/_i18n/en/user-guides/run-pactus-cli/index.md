@@ -16,8 +16,24 @@ Before proceeding with the steps below, ensure that you have the following:
 
 ## Download
 
-To get started, download and extract the Pactus CLI file from
+To get started, follow the steps below based on your operating system:
+
+**Windows**: Download and extract the Pactus CLI file from
 [here]({{ site.baseurl }}/download/#pactus-command-line-interface-cli).
+
+**Linux and macOS**: You have two options:
+
+- Download and extract the Pactus CLI file from [here]({{ site.baseurl }}/download/#pactus-command-line-interface-cli).
+
+- Use the following command in the Terminal:
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSL  https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus_downloader.sh | sh
+```
+
+This command will download the CLI archive file, verify it, and extract it for you.
+
+Once you have downloaded and extracted the Pactus CLI file, you can proceed to the next step.
 
 ## Initializing the node
 
@@ -116,3 +132,4 @@ we will explain how to send a Bond transaction to become a validator.
 
 By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
 Thank you for your participation!
+`

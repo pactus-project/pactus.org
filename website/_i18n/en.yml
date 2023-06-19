@@ -76,7 +76,7 @@ dict:
 
   blog:
     title: Blog
-    back:  « Back to the blog list
+    back: « Back to the blog list
     all_posts: All posts
 
   learn:
