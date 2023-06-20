@@ -92,7 +92,7 @@ dict:
       帕克图斯项目是作为开源软件分发的，因此安装的首选方法是从
       [GitHub](https://github.com/pactus-project/pactus)存储库克隆源代码并编译源代码。
     instructions_for_compiling: >
-      有关编译帕克图斯的说明在[安装](https://github.com/pactus-project/pactus/blob/main/INSTALL.md)页面中提供。
+      有关编译帕克图斯的说明在[安装](https://github.com/pactus-project/pactus/blob/main/docs/install.md)页面中提供。
     stable_releases: 下载稳定版
     stable_releases_desc: >
       您还可以下载最新的稳定版本的帕克图斯。

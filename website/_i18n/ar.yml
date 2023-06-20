@@ -97,7 +97,7 @@ dict:
       يتم توزيع مشروع بكتوس كبرنامج مفتوح المصدر، لذا فإن الطريقة المفضلة لتثبيته هي استنساخ شفرة المصدر من
       مستودع [جيت هاب](https://github.com/pactus-project/pactus) وتجميع شفرة المصدر.
     instructions_for_compiling: >
-      تتوفر تعليمات تجميع بكتوس على صفحة [التثبيت](https://github.com/pactus-project/pactus/blob/main/INSTALL.md).
+      تتوفر تعليمات تجميع بكتوس على صفحة [التثبيت](https://github.com/pactus-project/pactus/blob/main/docs/install.md).
     stable_releases: تنزيل الإصدارات المستقرة
     stable_releases_desc: >
       يمكنك أيضًا تنزيل أحدث إصدارات بكتوس المستقرة.
