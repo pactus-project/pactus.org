@@ -49,4 +49,4 @@ These parameters are hardcoded into the project and include:
 ### Where can I see the Genesis Information?
 
 You can find the pre-defined Genesis Information for the Testnet of the Pactus blockchain in the `genesis.json` file,
-which is located in the project repository, [here](https://github.com/pactus-project/pactus/blob/main/types/genesis/testnet.json).
+which is located in the project repository, [here](https://github.com/pactus-project/pactus/blob/main/genesis/testnet.json).
