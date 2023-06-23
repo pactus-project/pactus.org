@@ -101,7 +101,7 @@ all storage files.
 
 We can divide each file into small chunks of data and calculate the hash of each chunk once. Since
 we know exactly which chunk has changed after executing the smart, contract we can easily
-reconstruct the tree and calculate the merle root again.
+reconstruct the tree and calculate the merkle root again.
 
 ### Whole storage Merkle tree
 
