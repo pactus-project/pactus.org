@@ -86,7 +86,9 @@ including IoT, web services, security, and automotive, due to its compact repres
 is an online tool for encoding and decoding CBOR data, offering developers an easy way to test and
 validate their CBOR data without having to set up a local environment.
 
-Here is an example of Vote message that encoded using [CBOR](https://cbor.me/?bytes=a60101021864030004582019ba0a47813c13b2459f4ce3851ca42da8299c4f17b226e8bad1a9859172ab960555015da8f5e196d6e961609ae41528c4ec7368975937065830b047d5c2c072299284355f5b5014b5bf77f1702bc08b36061ddba08e41bebf51ab0416d265973190d26cbb79144681e7).
+### Example
+
+Here is an example of a vote message that encoded using [CBOR](https://cbor.me/?bytes=a60101021864030004582019ba0a47813c13b2459f4ce3851ca42da8299c4f17b226e8bad1a9859172ab960555015da8f5e196d6e961609ae41528c4ec7368975937065830b047d5c2c072299284355f5b5014b5bf77f1702bc08b36061ddba08e41bebf51ab0416d265973190d26cbb79144681e7).
 
 {% hexdump "vote_data"
 "a60101021864030004582019ba0a47813c13b2459f4ce3851ca42da8299c4f17"+

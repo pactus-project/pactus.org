@@ -51,7 +51,8 @@ In the next 10 blocks, another validator enters the committee, giving the advers
 In the subsequent 10 blocks, another validator enters, but at the same time, the first validator leaves the committee.
 Therefore, an adversary with 10 10% of the total stake can have, on average, two validators in a committee of 21 validators.
 
-Using the Poisson distribution, we can estimate the probability of an adversary controlling ⅔ of the committee:
+Using the [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution),
+we can estimate the probability of an adversary controlling ⅔ of the committee:
 
 | Adversarial Stake | Committee size | ⅔+ of committee | Adversarial committee members | Probability of controlling ⅔+ |
 | ----------------- | -------------- | --------------- | ----------------------------- | ----------------------------- |
@@ -71,8 +72,8 @@ Using the Poisson distribution, we can estimate the probability of an adversary 
 
 The height at which the validator joined the committee is recorded as the "Last Joined Height" field in
 the [validator]({{ site.baseurl }}/learn/blockchain/validator/) structure.
-Once a validator enters the committee, this field is set to the current block height.
-Similarly, once a validator leaves the committee, this field is set to zero.
+Once a validator enters the committee, this field is set to the current height it
+evaluated the sortition proof.
 
 ### Can a validator within the committee run the sortition algorithm?
 
