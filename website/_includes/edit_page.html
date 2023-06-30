@@ -1,21 +1,21 @@
 <div class="row edit-bar">
   <div class="col">
     <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/{{page.path}}">
-      <i class="fa fa-pen-to-square"></i>
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
       {% t dict.edit_this_page %}
     </a>
     {% if include.translatable %} |
     <a
       class="p-2 edit-btn"
       href="https://github.com/pactus-project/pactus.org/edit/main/website/_i18n/{{site.lang}}.yml">
-      <i class="fa fa-language"></i>
+      <i class="fa fa-language" aria-hidden="true"></i>
       {% t dict.improve_translation %}
     </a>
     {% endif %} {% if include.translate_file %} |
     <a
       class="p-2 edit-btn"
       href="https://github.com/pactus-project/pactus.org/edit/main/website/_i18n/{{site.lang}}/{{include.translate_file}}">
-      <i class="fa fa-language"></i>
+      <i class="fa fa-language" aria-hidden="true"></i>
       {% t dict.improve_translation %}
     </a>
     {% endif %}
