@@ -107,6 +107,17 @@ docker run -it -v c:\pactus\testnet:/pactus -p 8080:8080 -p 21777:21777 --name p
 
 {% endtabs %}
 
+To run pactus-testnet in background just add a -d flag in the command.
+Hint: Remember to pass in your wallet passphrase as well with -p flag after /pactus.
+
+```bash
+docker run -it -v ~/pactus/testnet:/pactus -p 8080:8080 -p 21777:21777 -d --name pactus-testnet pactus/pactus start -w /pactus -p {YOUR_PASSPHRASE}
+```
+
+```powershell
+docker run -it -v c:\pactus\testnet:/pactus -p 8080:8080 -p 21777:21777 -d --name pactus-testnet pactus/pactus start -w /pactus -p {YOUR_PASSPHRASE}
+```
+
 You can stop/start docker:
 
 ```bash
