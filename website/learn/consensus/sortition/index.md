@@ -18,8 +18,8 @@ and the oldest validator in the committee will leave it.
 
 ## Verifiable Random Function
 
-Verifiable Random Function is a pseudo-random function that the owner of key $$ s $$ can evaluate $$ v = f_s(x) $$ and also provides
-$$ proof_{x} $$ efficiently proving that $$ v $$ is correct. We call such a mathematical
+Verifiable Random Function is a pseudo-random function that the owner of key $$s$$ can evaluate $$v = f_s(x)$$ and also provides
+$$proof_{x}$$ efficiently proving that $$v$$ is correct. We call such a mathematical
 object a verifiable pseudo-random function, VRF for brevity [^first].
 
 Pactus uses the BLS signature scheme as the source of VRF.
@@ -29,7 +29,7 @@ the hash of a BLS signature can be used to produce a secure and verifiable rando
 The VRF takes three parameters:
 
 1. The secret key of the validator
-2.  The sortition seed
+2. The sortition seed
 3. The total stake of the blockchain.
 
 Once the VRF is executed, it produces an index with a proof.
@@ -53,13 +53,13 @@ $$
 
 where:
 
-- $$ sk $$ is the secret key of the validator
-- $$ seed $$ is the sortition seed
-- $$ total\_stake $$ is the total stake of the blockchain
-- $$ P_{BLS} $$ is a cryptographic function that derives the public key from the secret key for the BLS signature
-- $$ S_{BLS} $$ is a cryptographic function that signs a message with the secret key for the BLS signature.
-- $$ H $$ is a cryptographic hash function that generates a number between $$ 0 $$ to $$ 2 ^{256} $$
-- $$ \| $$ denotes the concatenation of two values
+- $$sk$$ is the secret key of the validator
+- $$seed$$ is the sortition seed
+- $$total\_stake$$ is the total stake of the blockchain
+- $$P_{BLS}$$ is a cryptographic function that derives the public key from the secret key for the BLS signature
+- $$S_{BLS}$$ is a cryptographic function that signs a message with the secret key for the BLS signature.
+- $$H$$ is a cryptographic hash function that generates a number between $$0$$to $$2 ^{256}$$
+- $$\|$$ denotes the concatenation of two values
 
 To verify a sortition proof, both the validator's public key and stake are required:
 
@@ -80,9 +80,9 @@ $$
 
 where:
 
-- $$ V_{BLS} $$ is a cryptographic function used to verify a signed message using the BLS signature scheme
+- $$V_{BLS}$$ is a cryptographic function used to verify a signed message using the BLS signature scheme
 
-There is no need to send $$ index $$ alongside $$ proof $$ because the
+There is no need to send $$index$$ alongside $$proof$$ because the
 result should be less than the validator's stake, and the validator's stake is known at each block.
 
 ## Sortition Seed
@@ -126,6 +126,7 @@ An active validator is a validator that has not yet [unbonded]({{ site.baseurl }
 ### How is the oldest validator determined?
 
 The height at which the validator joined the committee is recorded as the "Last Joined Height" field in
-the [validator]({{ site.baseurl }}/learn/blockchain/validator/) structure. The validator with the lowest "Last Joined Height" is considered the oldest.
+the [validator]({{ site.baseurl }}/learn/blockchain/validator/) structure.
+The validator with the lowest "Last Joined Height" is considered the oldest.
 
 [^first]: [Verifiable Random Function](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Pseudo%20Randomness/Verifiable_Random_Functions.pdf)

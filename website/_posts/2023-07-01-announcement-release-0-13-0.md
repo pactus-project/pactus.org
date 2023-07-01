@@ -1,0 +1,61 @@
+---
+layout: post
+title: "Pactus 0.13.0 released"
+date: 2023-07-01 00:00:00 +0000
+tags: announcement, release, testnet
+---
+
+## Overview
+
+Pactus Blockchain [Version 0.13.0](https://github.com/pactus-project/pactus/releases/tag/v0.13.0)
+is now available for download.
+This release includes a graphical user interface (GUI) that
+is suitable for both beginners and experienced users.
+It also includes a command-line interface (CLI) for advanced users and wallet software
+that allows users to interact with the blockchain without the need to sync the entire blockchain.
+
+## Highlights
+
+Users can now restore the `default_wallet` during the node initialization.
+If users have a backup of the seed phrase (mnemonic) for the `default_wallet`,
+they can now restore it and re-initialize the node.
+
+![Restore mode]({{ site.url }}/blog/images/2023-07-01-announcement-release-0-13-0/restore-mode.png)
+
+## Download
+
+This version has been implemented for [Testnet-1]({{ site.url }}/2023/05/09/announcement-testnet-1.html) and
+is being prepared for the upcoming Mainnet launch.
+To start using Pactus Blockchain Testnet-1, download the latest version from the
+[download]({{ site.baseurl }}/download) page and join the Testnet.
+
+These guides can help you to run and configure your node:
+
+- [How to run Pactus in graphic mode?]({{ site.baseurl }}/user-guides/run-pactus-gui)
+- [How to run Pactus in command line mode?]({{ site.baseurl }}/user-guides/run-pactus-cli)
+- [How to run Pactus using Docker?]({{ site.baseurl }}/user-guides/run-pactus-docker)
+
+## How to Upgrade
+
+If you are running an older version, shut it down.
+Uninstall the previous version and install the newer version.
+If you are using the archived version, simply use the new version.
+
+## Change log
+
+This version includes several changes and improvements, such as:
+
+### Fix
+
+- implemented restore wallet base on input seed ([#553](https://github.com/pactus-project/pactus/pull/553))
+- measuring total sent and received bytes ([#552](https://github.com/pactus-project/pactus/pull/552))
+- add validate seed and restore wallet ([#533](https://github.com/pactus-project/pactus/pull/533))
+- **HTTP**: Missing handlers ([#549](https://github.com/pactus-project/pactus/pull/549))
+- **gui**: update about dialog and menu items in help ([#532](https://github.com/pactus-project/pactus/pull/532))
+
+### Refactor
+
+- implementing TestSuite ([#535](https://github.com/pactus-project/pactus/pull/535))
+
+You can find the [full list of changes on Github](https://github.com/pactus-project/pactus/compare/v0.12.0...v0.13.0),
+as well as the [source code](https://github.com/pactus-project/pactus/releases/tag/v0.13.0)
