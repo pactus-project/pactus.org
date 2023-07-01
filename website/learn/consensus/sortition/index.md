@@ -116,6 +116,39 @@ $$
 
 The sortition seed for the genesis block set to 0.
 
+## Sortition probability
+
+The Sortition probability refers to the expected number of validators that may join the committee in each block,
+assuming all validators are actively online and executing the sortition algorithm.
+
+The probability of a validator $$i$$ being selected depends on their stake relative to the total stake in the system:
+
+$$
+p_i=\frac{S_i}{S_t}
+$$
+
+where:
+
+- $$p_i$$ is the probability of validator $$i$$ being selected
+- $$S_i$$​ is the stake of validator $$i$$
+- $$S_t$$​ is the total stake of all validators.
+
+Therefore, the expected number of validators joining the committee at each block can be represented as:
+
+$$
+P=\sum_{i=1}^{n}{p_i}=\sum_{i=1}^{n}{\frac{S_i}{S_t}}=\frac{S_1+S_2+\ldots+S_n}{S_t}
+$$
+
+where $$n$$ is the total number of validators. We know that $$S_t={S_1+S_2+\ldots+S_n}$$. Therefore we will have:
+
+$$
+P=\frac{S_t}{S_t}=1
+$$
+
+Thus, on average, we expect one validator to join the committee at each block.
+In practice, the actual number of validators joining the committee in each block
+may differ due to the randomness in the sortition algorithm, or the possibility of some validators being offline.
+
 ## FAQ
 
 ### How is the total staked coin calculated?
