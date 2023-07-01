@@ -176,4 +176,3 @@ we will explain how to send a Bond transaction to become a validator.
 
 By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
 Thank you for your participation!
-`
