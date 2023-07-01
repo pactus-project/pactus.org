@@ -65,7 +65,7 @@ First you need Install [yarn](https://yarnpkg.com/).
 
 - Check for broken links:
   ```
-  htmlproofer:setup
+  yarn run htmlproofer:setup
   yarn run htmlproofer
   ```
 
