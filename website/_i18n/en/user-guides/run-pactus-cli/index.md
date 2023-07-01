@@ -114,7 +114,6 @@ This command will restore your wallet in the `~/pactus` directory.
 Replace `<your-mnemonic>` with your previously noted mnemonic phrase.
 This command will restore your wallet in the `~/pactus` directory.
 
-
 {% endtab %}
 
 {% tab init-cli-restore windows <i class="fa-brands fa-windows"></i> Windows %}
