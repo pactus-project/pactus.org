@@ -1,5 +1,5 @@
 ---
-version: 2
+version: 3
 ---
 
 ## Preface
@@ -84,7 +84,51 @@ The working directory contains:
 - Genesis file
 - Config file
 
-Feel free to take a look at these files.
+Feel free to explore the contents of these files as needed, particularly the config file.
+The config file contains parameters that can customize your node.
+
+### Restoring the "Default wallet"
+
+If you ever need to restore your node, for instance on a new device,
+you can use the `--restore` option followed by your mnemonic:
+
+{% tabs init-cli-restore ltr %}
+
+{% tab init-cli-restore linux <i class="fa-brands fa-linux"></i> Linux %}
+
+```bash
+./pactus-daemon init -w ~/pactus --testnet --restore "<your-mnemonic>"
+```
+
+Replace `<your-mnemonic>` with your previously noted mnemonic phrase.
+This command will restore your wallet in the `~/pactus` directory.
+
+{% endtab %}
+
+{% tab init-cli-restore mac <i class="fa-brands fa-apple"></i> macOS %}
+
+```bash
+./pactus-daemon init -w ~/pactus --testnet --restore "<your-mnemonic>"
+```
+
+Replace `<your-mnemonic>` with your previously noted mnemonic phrase.
+This command will restore your wallet in the `~/pactus` directory.
+
+
+{% endtab %}
+
+{% tab init-cli-restore windows <i class="fa-brands fa-windows"></i> Windows %}
+
+```powershell
+pactus-daemon.exe init -w c:\pactus --testnet --restore "<your-mnemonic>"
+```
+
+Replace `<your-mnemonic>` with your previously noted mnemonic phrase.
+This command will restore your wallet in the `c:\pactus` directory.
+
+{% endtab %}
+
+{% endtabs %}
 
 ## Running the node
 
