@@ -18,7 +18,7 @@ exclude_from_localizations: ["assets", "404.html", "_posts", "blog"]
 
 markdown: kramdown
 
-paginate: 10
+paginate: 100
 paginate_path: blog/page:num/
 
 feed:
