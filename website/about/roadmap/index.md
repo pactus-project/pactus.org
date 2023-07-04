@@ -19,7 +19,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Smart contract engine</div>
-            <div class="card-subtitle text-muted">Q1-2024</div>
+            <div class="card-subtitle text-muted">Q3-2024</div>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Mobile wallet</div>
-            <div class="card-subtitle text-muted">Q4-2023</div>
+            <div class="card-subtitle text-muted">Q2-2024</div>
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Main net launch</div>
-            <div class="card-subtitle text-muted">Q3-2023</div>
+            <div class="card-subtitle text-muted">Q1-2024</div>
           </div>
         </div>
       </div>
