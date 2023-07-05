@@ -15,16 +15,7 @@ In the world of blockchain technology, validators play a crucial role in maintai
 
 As Pactus Blockchain continues its journey towards widespread adoption, the future holds immense potential for this innovative technology. With a growing focus on easy node implementation and robust consensus mechanisms, Pactus is well-positioned to shape the future of blockchain. In this article, we will explore the exciting prospects that lie ahead and how Pactus is poised to leave a lasting impact on the industry.
 
-### Embracing Easy Node Implementation
-
-Pactus understands that user-friendly access to blockchain infrastructure is crucial for driving mass adoption. To that end, Pactus has placed great emphasis on simplifying node implementation. By streamlining installation processes and providing intuitive user interfaces.
-
-### Make it more cheap
+## Make it more cheap
 
 Efficient Network Usage for Reduced Costs
-Pactus Blockchain is committed to optimizing network usage, thereby reducing costs associated with transaction processing and data storage. By implementing innovative strategies such as lightweight data structures and advanced compression techniques and network usage limit option, Pactus minimizes the amount of bandwidth and storage resources required to operate the network. This efficiency-focused approach ensures that participants can maintain active involvement in the blockchain ecosystem without incurring exorbitant expenses.
-
-### Driving Towards Scalability
-
-As blockchain technology becomes increasingly integrated into various industries, scalability emerges as a critical factor for success. Pactus is fully aware of this challenge and is actively exploring innovative solutions to scale its network effectively. Whether through the implementation of sharding, layer-two protocols, or other cutting-edge techniques, Pactus is committed to ensuring that its blockchain can handle a significant increase in transaction volume without sacrificing speed or efficiency. By prioritizing scalability, Pactus aims to unlock the full potential of blockchain technology and enable seamless adoption across diverse use cases.
-
+For now most resource usage of Pactus is network usage, Pactus team going to optimizing network usage, thereby reducing costs associated with transaction processing and data storage. By implementing innovative strategies such as lightweight data structures and advanced compression techniques like gzip and also get option to limit network usage from full node owners
