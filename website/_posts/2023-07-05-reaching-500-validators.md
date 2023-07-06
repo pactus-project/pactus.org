@@ -1,29 +1,28 @@
 ---
 layout: post
-title: "Unleashing the Power of Validators: A Glimpse into the Future of Pactus Blockchain"
+title: "Pactus Testnet Achieves 500 Validators"
 date: 2023-07-05 00:00:00 +0000
-tags: pactus, validators, testnet
+tags: validators, testnet
 ---
 
-## Introduction
+![500 validators of testnet]({{ site.url }}/blog/images/2023-07-05-reaching-500-validators/500_validators.png)
 
-![Restore mode]({{ site.url }}/blog/images/2023-07-05-reaching-500-validators/500validators.jpeg)
+For the [Proof of Stake]({{ site.baseurl }}/learn/consensus/proof-of-stake/) blockchain, validators are important for maintaining the network's integrity and security. They are similar to miners in Proof of Work blockchains like Bitcoin.
 
-In the world of blockchain technology, validators play a crucial role in maintaining the integrity and security of decentralized networks.
+Pactus has achieved a significant milestone as its test net recently reached 500 validators. This accomplishment proves that Pactus is reliable, resilient, and trustworthy. More importantly, it sets new standards in the blockchain world. In fact, **the Pactus Testnet is even more decentralized than some well-known blockchains.**
 
-Pactus, an emerging blockchain platform, has witnessed a significant milestone as its test net recently reached 500 validators. This achievement not only highlights the robustness of Pactus but also exemplifies the growing strength and influence of validators within the blockchain ecosystem.
+One key reason why Pactus can accommodate more validators is its powerful consensus mechanism. The consensus mechanism in Pactus eliminates the need for delegation, making it possible for anyone to become a validator. Additionally, the user-friendly application ensures that even those new to blockchain can easily contribute to the network.
 
-In this blog post, we will delve into the power of validators and explore the promising future that lies ahead for Pactus.
+## What is the next
 
-## Looking Towards the Future
+To remain competitive in the market, Pactus recognizes the importance of prioritizing user space. We aim to ensure that running Pactus is affordable and accessible to anyone, regardless of their technical expertise or available resources.
 
-As Pactus Blockchain continues its journey towards widespread adoption, the future holds immense potential for this innovative technology. 
+To achieve this, the Pactus team constantly monitors network, storage, and computational usage, striving to keep them at minimal levels. By doing so, we enable more individuals to participate in the Pactus blockchain.
 
-With a growing focus on easy node implementation and robust consensus mechanisms, Pactus is well-positioned to shape the future of blockchain. In this article, we will explore the exciting prospects that lie ahead and how Pactus is poised to leave a lasting impact on the industry.
+Currently, the Pactus team is working on optimizing and reducing network usage. This effort will lead to reduced costs, especially for users who are using home internet connections.
 
-## Make it more cheap
+Furthermore, we are planning to introduce a pruning mode, allowing users to run the Pactus blockchain with significantly less storage. Although we believe the storage size is already small (only 280 MB over two months), our goal is to enable users to retain only the most recent blockchain history. This approach ensures that the blockchain size remains as compact as possible by disregarding some transaction history.
 
-Efficient Network Usage for Reduced Costs
-For now most resource usage of Pactus is network usage, Pactus team going to optimizing network usage, thereby reducing costs associated with transaction processing and data storage.
+---
 
-By implementing innovative strategies such as lightweight data structures and advanced compression techniques like gzip and also get option to limit network usage from full node owners
+Pactus has indeed proven its ability to create a decentralized blockchain. Now is the time for you to join Pactus and work together to build a better future for blockchain technology.
