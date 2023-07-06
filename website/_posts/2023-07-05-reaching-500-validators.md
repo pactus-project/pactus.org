@@ -9,7 +9,8 @@ For a [Proof of Stake]({{ site.baseurl }}/learn/consensus/proof-of-stake/) block
 maintaining the network's integrity and security. They are similar to miners in Proof of Work blockchains like Bitcoin.
 
 Pactus as a real Proof of Stake blockchain, has achieved a significant milestone.
-More than 500 validators joined the [Testnet]({{ site.baseurl }}/2023/05/09/announcement-testnet-1.html).
+More than 500 validators joined the [Testnet]({{ site.baseurl }}/2023/05/09/announcement-testnet-1.html)
+in less than 2 months.
 This accomplishment proves that Pactus is reliable, resilient, and trustworthy. More importantly, it sets new standards
 in the blockchain world. In fact, **the Pactus Testnet is even more decentralized than some well-known blockchains.**
 
