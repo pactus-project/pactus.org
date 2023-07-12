@@ -15,7 +15,7 @@ module Jekyll
       language = context.registers[:site].config['lang']
       translation_file = File.join(context.registers[:site].source, "_i18n", language, file_name)
 
-      raise "File not found: #{translation_file}" unless File.exists?(translation_file)
+      raise "File not found: #{translation_file}" unless File.exist?(translation_file)
 
       file_content = File.read(translation_file)
 
