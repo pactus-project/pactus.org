@@ -16,6 +16,8 @@ dict:
   download_pactus: 下载帕克图斯
   block_explorer: Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
   source_code: Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+  laboratory: Laboratory
+  pips: PIPs
 
   home:
     motto: 一种真正去中心化的权益证明区块链，具有增强的可扩展性和速度来执行智能合约和交易。
