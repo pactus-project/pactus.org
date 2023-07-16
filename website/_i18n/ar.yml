@@ -16,6 +16,8 @@ dict:
   download_pactus: تحميل بكتوس
   block_explorer: Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
   source_code: Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+  laboratory: Laboratory
+  pips: PIPs
 
   home:
     motto: بلوكشين بكتوس موزع بالفعل بنظام الإثبات بالحصة ويتميز بمقياس قابلية وسرعة محسنة لتنفيذ العقود الذكية والمعاملات.
