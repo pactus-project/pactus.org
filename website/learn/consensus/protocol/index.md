@@ -135,12 +135,12 @@ $$\langle\langle \text{CP:PRE-VOTE},h,r,r_{cp},b \rangle_{\sigma_i}, justificati
 
 The first round is a special round and each validator starts with an initial value.
 If the validator's timer has expired in the prepare step, its initial value is zero,
-and if the validator's timer expired in the precommit step, its initial value is one.
+and if the validator's timer has expired in the precommit step, its initial value is one.
 
 $$
 b = \begin{cases}
-0 & \text{if timer expires in prepare step,} \\
-1 & \text{if timer expires in precommit step.}
+0 & \text{if timer expired in prepare step,} \\
+1 & \text{if timer expired in precommit step.}
 \end{cases}
 $$
 
