@@ -7,21 +7,11 @@ sidebar: Protocol
 # Consensus protocol
 
 Pactus consensus algorithm is a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
-replication with [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault) tolerance. The
-consensus algorithm at any given time is in one the following states:
-
-- New Height state
-- Propose state
-- Prepare state
-- Precommit state
-- Change proposer state
-- Commit state
-
-![Pactus consensus states]({{ site.url }}/assets/images/pactus_consensus_states.png)
-
-The Pactus consensus algorithm operates on a cycle of 10 seconds. It starts with the "propose" state in which
-one validator acts as the proposer. The proposer collects all the transactions,
+replication with [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault) tolerance.
+The Pactus consensus algorithm starts with the block creation phase.
+In this phase one validator acts as the proposer. The proposer collects all the transactions,
 creates a block, and proposes it to other validators.
+
 When a proposed block is seen by other validators, they validate the block and
 cast their vote for the proposed block, moving to the "prepare" state.
 
@@ -31,17 +21,10 @@ and validators move to the "precommit" state.
 If, once again, more than two-thirds (⅔) of the total stakes cast their vote for the prepared block,
 the block is committed, and the next proposer is ready to propose a new block. This cycle repeats every 10 seconds.
 
-If a proposer fails to propose in any round, other validators move to the "change proposer" state to
-advance to the next round and change the proposer.
+If a proposer fails to propose in any round, other validators start the "change proposer" phase to
+decide to change the proposer for this round.
 
-Pactus consensus mechanism is inspired by Practical Practical Byzantine Fault Tolerant algorithm.
-Below you can see more details about the consensus mechanism in Pactus.
-
-## Practical Byzantine Fault Tolerant
-
-Practical Byzantine Fault Tolerant, in short PBFT, “presents a new, practical algorithm for state
-machine replication that tolerates Byzantine faults." [^first] The Pactus consensus algorithm is
-highly inspired by Practical Byzantine Fault Tolerant (PBFT) algorithm.
+![Pactus consensus states]({{ site.url }}/assets/images/pactus_consensus_states.png)
 
 ## The algorithm
 
@@ -50,19 +33,20 @@ number of validators that may be faulty or byzantine. For example, if there is o
 the resiliency of the algorithm is optimal if we have at least $$3$$ non-faulty
 validators. So the minimum number of validators should be $$3+1=4$$.
 
-We use cryptographic techniques to prevent spoofing and replays and to detect corrupted messages.
-All validators know each other's public keys to verify signatures. All messages contain public key
-signatures. We denote a message signed by node $$i$$ as
+We denote a message as $$\langle m \rangle$$ tuple and a signed message by node $$i$$ as
 $$\langle m \rangle_{\sigma_i}$$.
 
-### Normal-Case Operation
+Pactus consensus algorithms has two phases: Block creation phase and change proposer phase.
 
-In each round, one validator is the proposer and the others act as validators. The normal case
-operation of Pactus consensus algorithm includes these three steps: **propose**, **prepare** and
-**precommit**
+### Block creation
 
-#### Propose phase
+The block creation phase in Pactus consensus algorithm includes these three steps[^1]:
+**Propose**, **Prepare** and **Precommit**.
+The protocol proceeds in rounds $$r = 0, 1, 2, \ldots$$.
 
+#### Propose step
+
+In each round $$r$$, one validator is the proposer and the others act as validators.
 The proposer $$p$$ collects transactions and creates a proposal block $$B$$. It signs and
 broadcasts a proposal message with the **proposed** block piggybacked to all the validators.
 Propose message has this form:
@@ -75,75 +59,153 @@ where:
 - $$h$$ indicates the block height
 - $$r$$ is an assigned round number, which is zero for the first round
 
-#### Prepare phase
+#### Prepare step
 
-If validator $$i$$ accepts the proposal, it enters _prepare_ phase and signs and
+If validator $$i$$ accepts the proposal, it enters _prepare_ step and signs and
 broadcasts _prepare_ message to all other validators. Otherwise, it does nothing.
 The prepare message has this form:
 
-$$\langle \text{PREPARE},h,r,d,i \rangle_{\sigma_i}$$
+$$\langle \text{PREPARE},h,r,d \rangle_{\sigma_i}$$
 
 where:
 
 - $$d$$ is digest or hash of proposed block $$B$$
 
 If validator $$i$$ received $$2f+1$$ prepare messages from other
-validators (possibly including its own), it is **prepared** and enters to precommit phase.
+validators (including its own), it is **prepared** and enters to precommit step.
 
-#### Precommit phase
+#### Precommit step
 
-In _precommit_ phase, validator $$i$$ signs and broadcasts precommit message to
+In _precommit_ step, validator $$i$$ signs and broadcasts precommit message to
 the other validators.
 The precommit message has this form:
 
-$$\langle \text{PRECOMMIT},h,r,d,i \rangle_{\sigma_i}$$
+$$\langle \text{PRECOMMIT},h,r,d \rangle_{\sigma_i}$$
 
 Each validator executes and commits block $$b$$ after receiving
-$$2f+1$$ precommit messages (possibly including its own) and becomes **committed**.
+$$2f+1$$ precommit messages (including its own) and becomes **committed**.
 
-The picture below shows the operation of the algorithm in the normal case. validator 0 is the
-proposer and validator 3 is faulty.
+#### Block announcement
+
+Once the proposer receives $$2f+1$$ precommit messages from other
+validators (including its own), it can create a
+block-announce messages and broadcasts it to the network.
+The block-announce message has this form:
+
+$$\langle \text{BLOCK-ANNOUNCE} ,h ,r ,B, C \rangle$$
+
+where:
+
+- $$C$$ is the quorum certificate for the precommit step.
+
+Validators can move to the next height and clear the message logs after receiving valid
+block-announce message.
+
+The picture below shows the operation of the algorithm in the normal case. validator 1 is the
+proposer and validator 4 is faulty.
 
 ![Normal execution]({{ site.url }}/assets/images/pactus_consensus_normal_execution.png)
 
 ### Change proposer
 
-The change-proposer phase provides liveness by allowing the system to make progress when the
-proposer fails. change-proposer phase is triggered by timeouts that prevent validators from waiting
-indefinitely for the proposal to execute.
+The change-proposer provides liveness by allowing the system to make progress when the proposer fails.
+The change-proposer phase is triggered by timeouts that
+prevent validators from waiting indefinitely for the proposal to execute.
 
-If the timer of a validator expires in round $$r $$, the validator starts a change-proposer phase to move
-the system to round $$r+1$$. It stops accepting messages (other than
-change-proposer and block-announce messages) and broadcasts a change-proposer message to all
-validators.
+If the timer of a validator expires in round $$r$$, the validator starts a change-proposer phase.
+The change-proposer phase is an Asynchronous Byzantine Binary Agreement (ABBA) [^2] that is biased toward zero (No).
+It means that during this phase, even if they don't have the proposal, honest validators may decide to vote zero
+if they obtain a valid Quorum Certificate for the prepare step.
 
-The change-proposer message has this form:
+If a supermajority of the validators decide to change the proposer, they move to round r+1r+1. However,
+if they decide not to change the proposer, they will return to the prepare state and,
+since a supermajority of the validators attested to a valid proposal, they can commit the proposed block.
 
-$$\langle \text{CHANGE-PROPOSER},h,r,i \rangle_{\sigma_i}$$
+The change proposer phase in Pactus consensus algorithm includes these three steps:
+**Pre-vote**, **Main-vote** and **Decide**
+The protocol proceeds in rounds $$r_{cp} = 0, 1, 2, \ldots$$.
 
-If the proposer for round $$r+1$$ receives $$2f+1$$ valid
-change-proposer messages for round $$r$$ from other validators, it goes to next
-round and broadcasts proposal message.
+#### Pre-vote step
 
-The picture below shows the operation of the algorithm in change-proposer case. validator 0 is the
-proposer and is faulty.
+In Pre-vote step each validator casts a pre-vote for a value $$b \in \{0, 1\}$$
+and broadcasts pre-vote message to the network.
+The pre-vote message has this form:
 
-![Change proposer]({{ site.url }}/assets/images/pactus_consensus_change_proposer.png)
+$$\langle\langle \text{CP:PRE-VOTE},h,r,r_{cp},b \rangle_{\sigma_i}, justification\rangle$$
 
-### Block announcement
+The first round is a special round and each validator starts with an initial value.
+If the validator's timer has expired in the prepare step, its initial value is zero,
+and if the validator's timer expired in the precommit step, its initial value is one.
 
-Each validator that receives a valid proposal and with $$2f+1$$ precommit messages
-can create a [certificate]({{ site.baseurl }}/learn/blockchain/block/#block-certificate) and
-broadcasts block-announce messages with the block and certificate piggybacked to the network.
-The block-announce message has this form:
+$$
+b = \begin{cases}
+0 & \text{if timer expires in prepare step,} \\
+1 & \text{if timer expires in precommit step.}
+\end{cases}
+$$
 
-$$\langle \text{BLOCK-ANNOUNCE} ,h,r ,B,C \rangle$$
+In the next rounds, each validator select $$2f+1$$ properly justified main-votes from round $$r − 1$$ and
 
-where:
+$$
+b = \begin{cases}
+0 & \text{if there is a main-vote for 0,} \\
+1 & \text{if there is a main-vote for 1,} \\
+0 (biased) & \text{if all main-votes are abstain.}
+\end{cases}
+$$
 
-- $$C$$ is the certificate for the block $$B$$
+These pre-votes must be justified with a appropriate justification.
+For the first round, if the validator's timer has expired in the prepare step, the justification is $$nil$$ ,
+and if the validator's timer expired in the precommit step,
+the justification is the proper Quorum certificate for the prepare step at round $$r$$.
 
-Validators can move to the next height and clear the message logs after receiving valid
-block-announce message.
+In the next rounds, a pre-vote for $$b$$ may be justified in two ways:
 
-[^first]: [Practical Byzantine Fault Tolerance](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/01/thesis-mcastro.pdf)
+- **Soft**: that is the quorum certificate for $$\langle \text{CP:PRE-VOTE},h,r,r_{cp}-1,b \rangle$$
+- **Hard**: that is the quorum certificate for $$\langle \text{CP:MAIN-VOTE},h,r,r_{cp}-1,abstain \rangle$$
+
+#### Main-vote step
+
+After collecting $$2f+1$$ valid and justified pre-votes, each validator casts a main-vote $$v \in \{0, 1, abstain\}$$
+and broadcasts main-vote message to the network.
+The main-vote message has this form:
+
+$$\langle\langle \text{CP:MAIN-VOTE},h,r,r_{cp},v \rangle_{\sigma_i}, justification\rangle$$
+
+The main-vote value $$v$$ determine as below:
+
+$$
+v = \begin{cases}
+0 & \text{if there are 2f+1 pre-vote for 0,} \\
+1 & \text{if there are 2f+1 pre-vote for 1,} \\
+abstain & \text{if there are pre-votes for 0 and 1.}
+\end{cases}
+$$
+
+These main-votes must be justified with a appropriate justification.
+A main-vote for $$v$$ may be justified in two ways:
+
+- **Non-conflicting**: that is the quorum certificate for $$\langle \text{CP:PRE-VOTE},h,r,r_{cp},b \rangle$$
+- **Conflicting**: that consists of the justifications for the two conflicting pre-votes.
+
+#### Decide step
+
+After collecting $$2f+1$$ valid and justified main-votes, each validator examines these votes. If all
+votes are for a value $$b \in \{0, 1\}$$, then the validator decides $$b$$, but continues to
+participate in the protocol for one more round. Otherwise, the validator proceeds to the next round $$r_{cp}+1$$.
+
+### Comparison
+
+| Protocol   | Non faulty Complexity | Locking proposal | Needs Checkpoint |
+| ---------- | --------------------- | ---------------- | ---------------- |
+| PBFT       | $$O(n^2)$$            | No               | Yes              |
+| Tendermint | $$O(n^2)$$            | Yes              | No               |
+| HotStuff   | $$O(n)$$              | Yes              | No               |
+| **Pactus** | $$O(n^2)$$            | No               | No               |
+
+---
+References:
+
+[^1]: [Practical Byzantine Fault Tolerance](https://pmg.csail.mit.edu/papers/osdi99.pdf)
+
+[^2]: [Random Oracles in Constantinople: Practical Asynchronous Byzantine Agreement Using Cryptography](https://link.springer.com/article/10.1007/s00145-005-0318-0)
