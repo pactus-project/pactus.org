@@ -72,7 +72,7 @@ where:
 - $$d$$ is digest or hash of proposed block $$B$$
 
 If validator $$i$$ received $$2f+1$$ prepare messages from other
-validators (including its own), it is **prepared** and enters to precommit step.
+validators (including its own), it becomes **prepared** and enters to precommit step.
 
 #### Precommit step
 
@@ -87,9 +87,8 @@ $$2f+1$$ precommit messages (including its own) and becomes **committed**.
 
 #### Block announcement
 
-Once the proposer receives $$2f+1$$ precommit messages from other
-validators (including its own), it can create a
-block-announce messages and broadcasts it to the network.
+Each validator that receives a valid proposal and with $$2f+1$$ precommit messages from other
+validators (including its own), can create a block-announce messages and broadcasts it to the network.
 The block-announce message has this form:
 
 $$\langle \text{BLOCK-ANNOUNCE} ,h ,r ,B, C \rangle$$
@@ -99,7 +98,7 @@ where:
 - $$C$$ is the quorum certificate for the precommit step.
 
 Validators can move to the next height and clear the message logs after receiving valid
-block-announce message.
+block-announce message, even if their timer has expired.
 
 The picture below shows the operation of the algorithm in the normal case. validator 1 is the
 proposer and validator 4 is faulty.
