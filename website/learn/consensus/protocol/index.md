@@ -196,12 +196,55 @@ participate in the protocol for one more round. Otherwise, the validator proceed
 
 ### Comparison
 
-| Protocol   | Non faulty Complexity | Locking proposal | Needs Checkpoint |
-| ---------- | --------------------- | ---------------- | ---------------- |
-| PBFT       | $$O(n^2)$$            | No               | Yes              |
-| Tendermint | $$O(n^2)$$            | Yes              | No               |
-| HotStuff   | $$O(n)$$              | Yes              | No               |
-| **Pactus** | $$O(n^2)$$            | No               | No               |
+Pactus consensus protocl doesn't have any lcoking mechanism or
+checkpointing and there will at most one valid proposla per round.
+This ensures that each round can begin with a new proposal.
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Protocol</th>
+    <th colspan="2" style="text-align: center;">Normal case</th>
+    <th colspan="2" style="text-align: center;">Faulty case<br></th>
+  </tr>
+  <tr>
+    <th style="text-align: center;">Steps</th>
+    <th style="text-align: center;">Complexity</th>
+    <th style="text-align: center;">Locking</th>
+    <th style="text-align: center;">Checkpointing</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="vertical-align: middle">PBFT</td>
+    <td style="text-align: center; vertical-align: middle">3</td>
+    <td style="text-align: center; vertical-align: middle">$$O(n^2)$$</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+    <td style="text-align: center; vertical-align: middle">Yes</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle">Tendermint</td>
+    <td style="text-align: center; vertical-align: middle">3</td>
+    <td style="text-align: center; vertical-align: middle">$$O(n^2)$$</td>
+    <td style="text-align: center; vertical-align: middle">Yes</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle">HotStuff</td>
+    <td style="text-align: center; vertical-align: middle">4</td>
+    <td style="text-align: center; vertical-align: middle">$$O(n)$$</td>
+    <td style="text-align: center; vertical-align: middle">Yes</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle">Pactus</td>
+    <td style="text-align: center; vertical-align: middle">3</td>
+    <td style="text-align: center; vertical-align: middle">$$O(n^2)$$</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 References:
