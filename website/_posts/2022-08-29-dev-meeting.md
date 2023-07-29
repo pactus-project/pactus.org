@@ -1,51 +1,35 @@
 ---
 layout: post
 title: "Dev meeting"
-date: 2022-09-04 00:00:00 +0000
+date: 2022-08-29 00:00:00 +0000
 tags: dev-meeting
 ---
 
 ## Meeting Summary
 
-### Project renamed to Pactus
+The meeting took place on 04 September 2022, at 2:00 PM UTC via Google Meet,
+with team members from different time zones joining to discuss key aspects of the Pactus project.
 
-During the last meeting, the team conducted an online survey to rename the project.
-A total of 31 responses were received, and the following names were suggested:
+### NanoMsg instead of ZeroMQ
 
-| Name       | Votes |
-| ---------- | ----- |
-| Sirius     | 11    |
-| Pactus     | 10    |
-| Nova       | 7     |
-| Texo       | 6     |
-| Zemus      | 6     |
-| Helios     | 6     |
-| Tutti      | 5     |
-| Haki       | 5     |
-| Aegeus     | 4     |
-| Virgo      | 4     |
-| Zentora    | 3     |
-| Zinova     | 3     |
-| Xerxes     | 2     |
-| Ledgeria   | 2     |
-| Solidus    | 2     |
-| Welt       | 2     |
-| Ventura    | 2     |
-| Zebra      | 2     |
-| Miranet    | 2     |
-| Monetha    | 2     |
-| FutureHub  | 1     |
-| Muonet     | 1     |
-| Mentha     | 1     |
-| Hypatios   | 0     |
-| Chaintopia | 0     |
-| Sycee      | 0     |
-| Lepus      | 0     |
+During the meeting, Joseph suggested using Nanomsg instead of ZeroMQ because building ZeroMQ is not easy,
+especially in Windows. Additionally, we can use the pure Go implementation of Nanomsg.
 
-After reviewing the responses, the team chose "Pactus" as the new name for the project. 🎉
-The project will be moved to "pactus-project/pactus," and the team plans to announce it on social media.
+The format of block events was defined as follows:
 
-### Discussion on GUI
+```text
+<event_id: 1 byte><event_data: variant><height: 4 bytes><seq_num: 4 bytes>
+```
 
-In terms of the GUI, Joseph suggested using Flutter, and the team agreed.
-To interact with the wallet, gRPC APIs will be provided, and the GUI will use these APIs.
+As a consequence of this, smart contracts events can be defined more easily and
+Infura-like services become simple, as we can just replay the events.
+
+### Reviewing a Pull Request
+
+Nagaraj's [pull request](https://github.com/pactus-project/pactus/pull/355) reviewed.
+
+### Renaming project
+
+The team discussed renaming (rebranding) the project and decided to create an online survey to
+gather suggestions for a new name.
+Everyone is encouraged to participate in the survey and suggest new names for the project.

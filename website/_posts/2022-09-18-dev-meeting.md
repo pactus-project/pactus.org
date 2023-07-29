@@ -7,6 +7,9 @@ tags: dev-meeting
 
 ## Meeting Summary
 
+The meeting took place on 18 September 2022, at 2:00 PM UTC via Google Meet,
+with team members from different time zones joining to discuss key aspects of the Pactus project.
+
 ### Discussion about Testnet
 
 The team discussed Testnet and related issues, including IP block issues that were found by Hadi.

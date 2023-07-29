@@ -7,6 +7,9 @@ tags: dev-meeting
 
 ## Meeting Summary
 
+The meeting took place on 30 October 2022, at 2:00 PM UTC via Google Meet,
+with team members from different time zones joining to discuss key aspects of the Pactus project.
+
 ### In memory of Mahsa Amini
 
 The meeting started in memory of [Mahsa Amini](https://en.wikipedia.org/wiki/Death_of_Mahsa_Amini).

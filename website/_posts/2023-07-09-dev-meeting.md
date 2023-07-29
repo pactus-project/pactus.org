@@ -7,7 +7,7 @@ tags: dev-meeting
 
 ## Meeting Summary
 
-The meeting took place on July 9th, 2023, at 2:00 PM UTC via Google Meet,
+The meeting took place on 09 July 2023, at 2:00 PM UTC via Google Meet,
 with team members from different time zones joining to discuss key aspects of the Pactus project.
 
 ## Overview to the Network Module
