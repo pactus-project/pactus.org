@@ -28,7 +28,7 @@ The primary goal of this version of Testnet is to determine the efficient and se
 ## Joining Testnet-1
 
 To join the testnet, [download]({{ site.baseurl }}/download) Pactus software
-[version 0.10.0]({{ site.baseurl }}/2023/05/08/announcement-release-0-10-0.html) and
+[version 0.10.0]({{ site.baseurl }}/2023/05/08/release-0-10-0.html) and
 connect to Testnet without any special configuration or hardware.
 You can run the software on your personal computer or laptop.
 To acquire test coins, visit the [Discord](https://discord.gg/H5vZkNnXCu) channel and
