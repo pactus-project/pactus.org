@@ -2,7 +2,7 @@
   <footer class="container-fluid py-4">
     <div class="container">
       <div class="row around-xs footer-wrapper">
-        <div class="col-sm-3 col-xs-6">
+        <div class="col-md-3 col-xs-6">
           <div class="section">{% t dict.pactus_project %}</div>
           <ul class="list-unstyled">
             <li>
@@ -25,7 +25,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-3 col-xs-6">
+        <div class="col-md-3 col-xs-6">
           <div class="section">{% t dict.resources %}</div>
           <ul class="list-unstyled">
             <li>
@@ -41,7 +41,9 @@
               <a class="anchor" href="{{ site.baseurl }}/blog/">{% t dict.blog.title %}</a>
             </li>
             <li>
-              <a class="anchor" href="https://labs.sensifia.com/" target="_blank" rel="noopener noreferrer">{% t dict.laboratory %}</a>
+              <a class="anchor" href="https://labs.sensifia.com/" target="_blank" rel="noopener noreferrer">
+                {% t dict.laboratory %}
+              </a>
             </li>
             <li>
               <a class="anchor" href="https://www.pactusscan.com/" target="_blank" rel="noopener noreferrer">
@@ -55,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-3 col-xs-6">
+        <div class="col-md-3 col-xs-6">
           <div class="section">{% t dict.community.title %}</div>
           <ul class="list-unstyled">
             <li>
@@ -90,24 +92,31 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-3 col-xs-6">
-          <img alt="Discord" src="{{ site.url }}/assets/images/logos/text_logo.png" />
-        </br>
-      </br>
-        <a class="anchor" href="https://goo.gl/maps/aYMYxy6pWJzAtxf56">
-          <i class="fa-solid fa-map"></i>
-          Dammstrasse 16, 6300 Zug, Switzerland
-        </a>
-      </br></br>
-      <a class="anchor" href="mailto:admin@pactus.org">
-        <i class="fa-solid fa-envelope"></i>
-        admin@pactus.org
-      </a>
-    </br></br>
-    <a class="anchor" href="tel:+41767011335">
-      <i class="fa-solid fa-phone"></i>
-      +41 76 701 13 35
-    </a>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="{{ site.url }}/assets/images/logos/text_logo.png" />
+            </li>
+
+            <li>
+              <a class="anchor" href="https://goo.gl/maps/aYMYxy6pWJzAtxf56">
+                <i class="fa-solid fa-map"></i>
+                Dammstrasse 16, 6300 Zug, Switzerland
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="mailto:admin@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                admin@pactus.org
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="tel:+41767011335">
+                <i class="fa-solid fa-phone"></i>
+                +41 76 701 13 35
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
