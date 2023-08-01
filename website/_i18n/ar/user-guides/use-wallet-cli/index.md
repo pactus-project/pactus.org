@@ -462,17 +462,9 @@ In this command, `<ADDRESS>` is the address of the validator that you want to un
 To create, sign, and broadcast a
 [Withdraw transaction]({{ site.baseurl }}/learn/transaction/withdraw/), use the following command:
 
-{% tabs tx_unbond ltr %}
+{% tabs tx_withdraw ltr %}
 
-{% tab tx_unbond linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet ~/pactus/wallets/wallet_1 tx unbond <FROM> <TO> <AMOUNT>
-```
-
-{% endtab %}
-
-{% tab tx_unbond mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab tx_withdraw linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
 ./pactus-wallet ~/pactus/wallets/wallet_1 tx unbond <FROM> <TO> <AMOUNT>
@@ -480,7 +472,15 @@ To create, sign, and broadcast a
 
 {% endtab %}
 
-{% tab tx_unbond windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab tx_withdraw mac <i class="fa-brands fa-apple"></i> macOS %}
+
+```text
+./pactus-wallet ~/pactus/wallets/wallet_1 tx unbond <FROM> <TO> <AMOUNT>
+```
+
+{% endtab %}
+
+{% tab tx_withdraw windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
 pactus-wallet.exe c:\pactus\wallets\wallet_1 tx withdraw <FROM> <TO> <AMOUNT>

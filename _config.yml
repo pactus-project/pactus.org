@@ -12,7 +12,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-languages: ["en", "ar", "cn"]
+languages: ["en", "ar", "zh"]
 
 exclude_from_localizations: ["assets", "404.html", "_posts", "blog"]
 

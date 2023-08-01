@@ -38,7 +38,7 @@ jobs:
           yarn run lint:md
 
   html-proofer:
-    name: Check for broken links
+    name: Check for broken links and HTML5 Validator
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
@@ -63,3 +63,8 @@ jobs:
       ##
       ## By swap-urls, we don't get error if we rename or move a document.
       - run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403" --check_internal_hash=false --ignore-urls=/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./_site
+
+      - name: HTML5Validator
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: _site/
