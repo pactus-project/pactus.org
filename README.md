@@ -36,7 +36,7 @@ Relative URLs can cause problems and it's best to avoid them.
 In Jekyll, you can use `{{ site.url }}/foo` which produce `http://pactus.org/foo`.
 Alternatively, you can use `{{ site.baseurl }}/foo`, which will produce an absolute URL for `/foo` based on the site language.
 For example, if the site language is Arabic, the URL will be `http://pactus.org/ar/foo`,
-and if the site language is Chinese, the URL will be `http://pactus.org/cn/foo`.
+and if the site language is Chinese, the URL will be `http://pactus.org/zh/foo`.
 
 By using absolute URLs, you can ensure that all links and resources on the Pactus website will work correctly
 regardless of the language or location of the site visitor.
