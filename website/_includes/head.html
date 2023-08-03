@@ -12,13 +12,8 @@ page.title }} | {% t dict.pactus_blockchain%}{% endif %}{% endcapture %}
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ page.seo_desc }}" />
   <meta property="og:site_name" content="{% t dict.pactus_blockchain %}" />
-  <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:type" content="website" />
-
-  <link rel="shortcut icon" href="{{ site.url }}/assets/images/logos/208_circle.png" type="image/png" />
-  <link rel="icon" type="image/png" sizes="128x128" href="{{ site.url }}/assets/images/logos/128_circle.png" />
-  <link rel="icon" type="image/png" sizes="64x64" href="{{ site.url }}/assets/images/logos/64_circle.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/images/logos/32_circle.png" />
 
   <link href="{{ site.url }}/assets/css/bootstrap.min.css" rel="stylesheet" />
   {% if site.lang == "ar" || site.lang == "fa" %}
@@ -34,4 +29,16 @@ page.title }} | {% t dict.pactus_blockchain%}{% endif %}{% endcapture %}
   <script src="{{ site.url }}/assets/js/anchor.min.js"></script>
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script src="{{ site.url }}/assets/js/custom.js"></script>
+
+  {{% Generated using https://realfavicongenerator.net %}}
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png"  />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
