@@ -20,6 +20,7 @@ dict:
   pips: PIPs
 
   home:
+    title: Home
     motto: Building decentralized future together!
     run_a_node: Run a node
     run_a_node_desc: >

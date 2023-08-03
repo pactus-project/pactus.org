@@ -20,7 +20,8 @@ dict:
   pips: PIPs
 
   home:
-    motto: 一种真正去中心化的权益证明区块链，具有增强的可扩展性和速度来执行智能合约和交易。
+    title: Home
+    motto: Building decentralized future together!
     run_a_node: 运行节点
     run_a_node_desc: >
       下载最新版本的帕克图斯区块链，创建您的钱包，并开始与网络同步。帕克图斯旨在轻量级且用户友好，易于操作。
