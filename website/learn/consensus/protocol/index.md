@@ -114,7 +114,7 @@ prevent validators from waiting indefinitely for the proposal to execute.
 If the timer of a validator expires in round $$r$$, the validator starts a change-proposer phase.
 The change-proposer phase is an Asynchronous Byzantine Binary Agreement (ABBA) [^2] that is biased toward zero (No).
 It means that during this phase, even if they don't have the proposal, honest validators may decide to vote zero
-if they obtain a valid Quorum Certificate for the prepare step.
+if they obtain a valid quorum Certificate for the prepare step.
 
 If a supermajority of the validators decide to change the proposer, they move to round r+1r+1. However,
 if they decide not to change the proposer, they will return to the prepare state and,
@@ -156,12 +156,12 @@ $$
 These pre-votes must be justified with a appropriate justification.
 For the first round, if the validator's timer has expired in the prepare step, the justification is $$nil$$ ,
 and if the validator's timer expired in the precommit step,
-the justification is the proper Quorum certificate for the prepare step at round $$r$$.
+the justification is the proper quorum certificate for the prepare step at round $$r$$.
 
 In the next rounds, a pre-vote for $$b$$ may be justified in two ways:
 
-- **Soft**: that is the quorum certificate for $$\langle \text{CP:PRE-VOTE},h,r,r_{cp}-1,b \rangle$$
-- **Hard**: that is the quorum certificate for $$\langle \text{CP:MAIN-VOTE},h,r,r_{cp}-1,abstain \rangle$$
+- **Hard**: that is the quorum certificate for $$\langle \text{CP:PRE-VOTE},h,r,r_{cp}-1,b \rangle$$
+- **Soft**: that is the quorum certificate for $$\langle \text{CP:MAIN-VOTE},h,r,r_{cp}-1,abstain \rangle$$
 
 #### Main-vote step
 
