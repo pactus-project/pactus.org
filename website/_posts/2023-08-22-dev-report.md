@@ -7,7 +7,7 @@ tags: dev-report
 
 ## Abstract
 
-there is several activities in [pactus github](https://github.com/pactus-project/pactus) this month, here is a 
+there is several activities in pactus github this month, here is a 
 clear report and explain of activities.
 
 ![Github Pactus](/blog/images/2023-08-22-dev-report/github-pactus.png)
