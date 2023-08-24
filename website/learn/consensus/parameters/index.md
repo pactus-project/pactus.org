@@ -34,10 +34,12 @@ Here is the list of the consensus parameters:
   in a block.
   This is set to 7 blocks.
 - **Fee Fraction**: The fraction of transaction value that must be paid in order for a transaction to be included in a block.
-  This is set to 0.0001, meaning that 0.01% of transaction value are awarded to the block proposer.
+  This is set to 0.0001 PAC, meaning that 0.01% of transaction value are awarded to the block proposer.
 - **Minimum Fee**: The minimum transaction fee that must be paid.
-  This is set to 1,000, which is equivalent to 0.000001 coin.
+  This is set to 1,000 (satoshi), which is equivalent to 0.000001 PAC coin.
 - **Maximum Fee**: The maximum transaction fee that must be paid.
-  This is set to 1,000,000, which is equivalent to 0.001 coin.
+  This is set to 1,000,000 (satoshi), which is equivalent to 0.001 PAC coin.
 - **Maximum Stake**: The maximum amount of coins that can be staked by a validator.
-  This is set to 1,000,000,000,000, which is 1000 coins.
+  This is set to 1,000,000,000,000 (satoshi), which is 1000 PAC coins.
+- **Minimum Stake**: The minimum amount of coins that can be staked by a validator.
+  This is set to 1,000,000,000 (satoshi), which is 1 PAC coins.
