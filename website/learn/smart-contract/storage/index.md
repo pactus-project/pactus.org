@@ -17,7 +17,7 @@ some drawbacks:
   key/value database.
 - Storages per smart contract can’t be Merklized. Ethereum came with another solution to calculate
   the hash of the whole storage. They defined a hexary Patricia tree that is quite
-  [suboptimal](https://twitter.com/VitalikButerin/status/1239359499963695106).
+  [suboptimal](https://x.com/VitalikButerin/status/1239359499963695106).
 
 Here we discuss how we can address the above issues by dedicating a separate file as **Storage
 File** per smart contract. In this scenario, users should purchase the storage file with required

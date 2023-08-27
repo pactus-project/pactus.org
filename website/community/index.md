@@ -15,7 +15,7 @@ title: dict.community.title
     </a>
   </li>
   <li>
-    <a href="https://twitter.com/pactuschain/">
+    <a href="https://x.com/pactuschain/">
       <img alt="Discord" src="{{ site.url }}/assets/images/social_twitter.svg" width="32">
       {% t dict.community.twitter %}
     </a>
