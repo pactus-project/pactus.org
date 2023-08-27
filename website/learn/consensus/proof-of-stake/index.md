@@ -1,7 +1,7 @@
 ---
 layout: learn
-title: Proof of Stake
-sidebar: Proof of Stake
+title: Solid State Proof of Stake
+sidebar: Solid State Proof of Stake
 ---
 
 # Proof of Stake
@@ -49,9 +49,9 @@ The number of delegates is limited to ensure accountability and efficiency in th
 The delegation model puts a lot of trust in the hands of a small number of delegates,
 which goes against the principle of "don't trust, verify".
 
-## Consensus without delegation
+## Consensus without delegation or Solid State Proof of Stake (SSPoS)
 
-Pactus introduced a mechanism that doesn't rely on delegation.
+Pactus introduced a mechanism that doesn't rely on delegation, we call it Solid State Proof of Stake.
 It utilizes a dynamic [committee]({{ site.baseurl }}/learn/consensus/committee/) of validators
 that are responsible for creating new blocks.
 The size of the committee is fixed, but the members of the committee are randomly changed.
@@ -62,7 +62,7 @@ At each block, validators participate in a [sortition]({{ site.baseurl }}/learn/
 by generating a random number between zero and the total staked coins.
 If the number is less than the validator's stake, they can enter the committee and replaces the oldest committee member.
 
-![Pactus Proof of Stake]({{ site.url }}/assets/images/pactus_validator_pool.png)
+![Pactus Solid State Proof of Stake]({{ site.url }}/assets/images/pactus_validator_pool.png)
 
 The chance of entering the committee depends on the validator's stake and luck.
 But on average, one validator should enter the committee in each block.
