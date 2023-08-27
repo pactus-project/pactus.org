@@ -16,8 +16,8 @@ dict:
   download_pactus: تحميل بكتوس
   block_explorer: Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
   source_code: Source code <i class="fa fa-external-link" aria-hidden="true"></i>
-  laboratory: Laboratory
-  pips: PIPs
+  laboratory: Laboratory <i class="fa fa-external-link" aria-hidden="true"></i>
+  pips: PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
 
   home:
     title: الصفحة الرئيسية
