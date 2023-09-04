@@ -13,7 +13,7 @@ A few days ago, we published announcements on Pactus Socials regarding PIPs (Pac
 
 ### What is a PIP?
 
-In this section, we will explain what a PIP is and how it benefits Pactus. 
+In this section, we will explain what a PIP is and how it benefits Pactus.
 Many projects in the tech world utilize similar conventions like BIP, EIP, PEP, and so on.
 
 These acronyms stand for:
@@ -23,7 +23,7 @@ These acronyms stand for:
 * Python Enhancement Proposal
 * Nostr Improvement Possibilities
 
-These are specifications that guide projects in their improvement efforts. 
+These are specifications that guide projects in their improvement efforts.
 hey are often numbered, such as PIP-1, PIP-2, etc.
 
 ### PIPs Repository
