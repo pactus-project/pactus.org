@@ -18,10 +18,10 @@ Many projects in the tech world utilize similar conventions like BIP, EIP, PEP, 
 
 These acronyms stand for:
 
-* Bitcoin Improvement Proposal
-* Ethereum Improvement Proposal
-* Python Enhancement Proposal
-* Nostr Improvement Possibilities
+* [Bitcoin Improvement Proposal](https://github.com/bitcoin/bips)
+* [Ethereum Improvement Proposal](https://github.com/ethereum/EIPs)
+* [Python Enhancement Proposal](https://github.com/python/peps)
+* [Nostr Improvement Possibilities](https://github.com/nostr-protocol/nips)
 
 These are specifications that guide projects in their improvement efforts.
 hey are often numbered, such as PIP-1, PIP-2, etc.
@@ -33,6 +33,6 @@ They are usually assigned unique numbers like PIP-1, PIP-2, and so on.
 
 Anyone can propose these for any project.
 
-Currently, Pactus Improvement Proposals can be found [here](https://github.com/pactus-project/PIPs).
+Currently, Pactus Improvement Proposals can be found [here](https://pips.pactus.org/).
 
 ![PIPs repository on Github](/blog/images/2023-09-04-what-is-a-pip/repository.png)
