@@ -13,7 +13,9 @@ A few days ago we published some announcements on Pactus Socials about PIPs(Pact
 
 ### PIP?
 
-Here we want to explain what is a PIP and how they help Pactus, Most of the projects in the tech world have something like BIP, EIP, PEP, and …
+Here we want to explain what is a PIP and how they help Pactus, 
+Most of the projects in the tech world have something like BIP, EIP, PEP, and …
+
 These names are just short sentences for:
 
 * Bitcoin improvement proposal
