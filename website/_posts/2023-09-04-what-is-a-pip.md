@@ -24,7 +24,7 @@ These acronyms stand for:
 * [Nostr Improvement Possibilities](https://github.com/nostr-protocol/nips)
 
 These are specifications that guide projects in their improvement efforts.
-hey are often numbered, such as PIP-1, PIP-2, etc.
+They are often numbered, such as PIP-1, PIP-2, etc.
 
 ### PIPs Repository
 
