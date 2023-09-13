@@ -138,8 +138,8 @@ and if the validator's timer has expired in the precommit step, its initial valu
 
 $$
 b = \begin{cases}
-0 & \text{if timer expired in prepare step,} \\
-1 & \text{if timer expired in precommit step.}
+1 & \text{if timer expired in prepare step,} \\
+0 & \text{if timer expired in precommit step.}
 \end{cases}
 $$
 
