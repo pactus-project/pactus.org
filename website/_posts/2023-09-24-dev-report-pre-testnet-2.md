@@ -13,15 +13,16 @@ there is several activities in Pactus github in September month, here is a clear
 
 ## Implementing PIP 2, 3 and 4
 
-After starting [Pactus Labs and PIPs](https://pactus.org/2023/09/04/introduction-to-pips.html) we start implementing each accepted PIP one by one to improve Pactus, here is a list of implemented PIPs:
+After starting [Pactus Labs and PIPs](https://pactus.org/2023/09/04/introduction-to-pips.html),
+we start implementing each accepted PIP one by one to improve Pactus, here is a list of implemented PIPs:
 
 - [PIP 2 and 3, Adding lock time to transactions and removing sequence field](https://github.com/pactus-project/pactus/pull/699)
 - [PIP 4, Indexing Public Keys](https://github.com/pactus-project/pactus/pull/671)
 
-
 ### Network
 
-There is some very good change and new features for Pactus network module, this list contain a list of important changes in Pactus networking:
+There is some very good change and new features for Pactus network module,
+this list contain a list of important changes in Pactus networking:
 
 - [Supporting UDP and QUIC protocols](https://github.com/pactus-project/pactus/pull/672)
 - [Adding Hole Punching](https://github.com/pactus-project/pactus/pull/697)
@@ -30,7 +31,8 @@ There is some very good change and new features for Pactus network module, this 
 
 ## gRPC and nanomessage services
 
-We also updated, improved and enhanced gRPC and nanomessage services for better developer experience for third-party and side project developers, here is some changes:
+We also updated, improved and enhanced gRPC and nanomessage services for better developer experience,
+for third-party and side project developers, here is some changes:
 
 - [new API to get Public key by address](https://github.com/pactus-project/pactus/pull/704)
 - [Adding address field for AccountInfo (gRPC)](https://github.com/pactus-project/pactus/pull/703)
@@ -39,7 +41,8 @@ We also updated, improved and enhanced gRPC and nanomessage services for better 
 
 ### Refactoring and other new feature or debugs
 
-We had some not implemented feature request, not fixed bugs and some issue with new golang version, do this is the list of this changes:
+We had some not implemented feature request, not fixed bugs and some issue with new golang version, 
+list of this changes:
 
 - [Supporting go version 1.21 and higher](https://github.com/pactus-project/pactus/pull/692)
 - [Fixing wallet-cli issues to send new transaction](https://github.com/pactus-project/pactus/pull/686)
