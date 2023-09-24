@@ -41,7 +41,7 @@ for third-party and side project developers, here is some changes:
 
 ### Refactoring and other new feature or debugs
 
-We had some not implemented feature request, not fixed bugs and some issue with new golang version, 
+We had some not implemented feature request, not fixed bugs and some issue with new golang version,
 list of this changes:
 
 - [Supporting go version 1.21 and higher](https://github.com/pactus-project/pactus/pull/692)
