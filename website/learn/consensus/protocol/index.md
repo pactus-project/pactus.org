@@ -4,6 +4,10 @@ title: Consensus protocol
 sidebar: Protocol
 ---
 
+<div class="alert alert-warning">
+  This post is obsolete. check <a href="https://pips.pactus.org/PIPs/pip-10">here</a> for more information.
+</div>
+
 # Consensus protocol
 
 Pactus consensus algorithm is a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
