@@ -27,7 +27,7 @@ and also make it easy to work on for new contributors because we are focus on be
 ### TLA+ spec
 
 one another new change in Pactus is updating TLA+ spec, which is related to consensus,
-as you know we had some problem with consensus in testnet-1, we fixed the issues and now we are trying to make it more clean.
+as you know we had some problem with consensus in Testnet-1, we fixed the issues and now we are trying to make it more clean.
 
 [link to changes](https://github.com/pactus-project/pactus/pull/641)
 

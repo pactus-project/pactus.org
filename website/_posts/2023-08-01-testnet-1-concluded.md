@@ -5,7 +5,7 @@ date: 2023-08-01 00:00:00 +0000
 tags: announcement, testnet
 ---
 
-## About testnet
+## About Testnet
 
 Testnet is a testing environment where developers and users can try out the functionality of a blockchain project,
 without putting real assets or data at risk.
