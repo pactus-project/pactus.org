@@ -43,6 +43,26 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
+              <a href="{{ site.url }}/2023/10/15/testnet-2-launched.html">Testnet-2 launch</a>
+            </div>
+            <div class="card-subtitle text-muted">May 2023</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-card completed right">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="card-title">
+              <a href="{{ site.url }}/2023/10/15/release-0-15-0.html">Pactus 0.15.0 released</a>
+            </div>
+            <div class="card-subtitle text-muted">May 2023</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-card completed left">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="card-title">
               <a href="{{ site.url }}/2023/08/01/testnet-1-concluded.html">Testnet-1 concluded</a>
             </div>
             <div class="card-subtitle text-muted">Aug-2023</div>
