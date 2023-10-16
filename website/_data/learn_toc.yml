@@ -24,9 +24,8 @@
 - title: Transactions
   path: learn/transaction
   items:
-    - doc: stamping
-    - doc: fee
     - doc: format
+    - doc: fee
     - doc: transfer
     - doc: bond
     - doc: sortition

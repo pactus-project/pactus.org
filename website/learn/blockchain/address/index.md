@@ -27,11 +27,11 @@ The resulting byte array is then converted into a bech32m[^first] string.
 
 ## Address Type
 
-The Address Type specifies the type of public key used to generate the address.
-This makes it easy to add support for new signature algorithms in the future.
-Currently, the Pactus blockchain only supports
-[BLS signature]({{ site.baseurl }}/learn/blockchain/cryptography/#digital-signature)
-algorithm, with the type set to one.
+The Address Type specifies the type of the address and its defined as below:
+
+- 0: Treasury address
+- 1: Validator address
+- 2: Account Address
 
 ## Treasury address
 

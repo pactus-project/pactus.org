@@ -18,4 +18,4 @@ The unbond transaction has a payload consists the following field:
 | -------- | ----------------- |
 | 21 bytes | Validator address |
 
-- **Validator address** is the address of [validator]({{ site.baseurl }}/learn/blockchain/validator/) that is unbonded.
+- **Validator address** is the address of validator that is unbonded.
