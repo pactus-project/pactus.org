@@ -30,8 +30,7 @@ It shows that users, even in Testnet, tend to stake their coins.
 
 ![Staking chart]({{ site.url }}/blog/images/2023-07-25-testnet-1-concluded/staked_coins.png)
 
-We were able to extract the confirmation time of transactions using transaction
-[stamps]({{ site.baseurl }}/learn/transaction/stamping/).
+We were able to extract the confirmation time of transactions.
 More than 97% of transactions were confirmed in just one block after submission.
 This indicates that the transaction pool and broadcasting models are working fine.
 
