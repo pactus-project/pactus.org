@@ -66,7 +66,7 @@ jobs:
       ## Status code 403: https://http.dev/403
       ##
       ## By swap-urls, we don't get error if we rename or move a document.
-      - run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403" --check_internal_hash=false --ignore-urls=/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./_site
+      - run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403" --check_internal_hash=false --ignore-urls=/github.com/,/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./_site
 
       - name: HTML5Validator
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
