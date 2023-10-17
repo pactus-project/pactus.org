@@ -8,7 +8,7 @@ tags: announcement, testnet
 ## Overview
 
 Exciting news for the Pactus Community: Testnet-2 is has launched!
-The journey through [Testnet-1]({{ site.baseurl }}/2023/08/01/story-of-testnet-1.html)
+The journey through [Testnet-1]({{ site.url }}/2023/08/01/testnet-1-concluded.html)
 brought success and invaluable experiences, with over 500 validators joining the network.
 Despite its noteworthy achievements, it also faced challenges that led to a tough decision: to pause the Testnet and
 thoroughly address these issues.

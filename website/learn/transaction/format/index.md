@@ -11,35 +11,32 @@ Transactions in Pactus consists the following fields:
 | Size     | Field        |
 | -------- | ------------ |
 | 1 byte   | Version      |
-| 4 bytes  | Stamp        |
-| 4 bytes  | Sequence     |
+| 4 bytes  | Lock Time    |
 | 8 bytes  | Fee          |
+| Variant  | Memo         |
 | 1 byte   | Payload type |
 | Variant  | Payload data |
-| Variant  | Memo         |
-| 96 bytes | Public key   |
 | 48 bytes | Signature    |
+| 96 bytes | Public key   |
 
 - **Version** is the version of the transaction format. Different versions may have different fields or
   a different layout, and the current transaction version is set to 1.
-- **Sequence** is a sequence number that increments for each transaction created by the sender.
-  The purpose of this field is to prevent replay attacks, where a previously valid transaction
-  is sent again to the network to cause unintended consequences.
+- **Lock Time** specifies the block number at which the transaction can be unlocked.
 - **Fee** contains the fee paid by the sender to the network for processing the transaction.
   The fee is calculated based on the [percentage fee]({{ site.baseurl }}/learn/transaction/fee/) model.
-- **Payload type** specifies the type of the transaction payload.
-  Depending on the payload type, the payload data field is decoded differently.
-- **Payload data** contains the actual data payload of the transaction.
-  The payload data varies depending on the payload type.
 - **Memo** is an optional message that can be included in the transaction.
   The message can be used to provide additional information about the transaction or to communicate with the recipient.
   The maximum size of the memo is 64 characters that is defined in the
   [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters/)
+- **Payload type** specifies the type of the transaction payload.
+  Depending on the payload type, the payload data field is decoded differently.
+- **Payload data** contains the actual data payload of the transaction.
+  The payload data varies depending on the payload type.
+- **Signature** contains a cryptographic signature created by the sender using their private key.
+  The signature is used to ensure that the transaction has not been tampered with and that it was indeed created by the sender.
 - **Public key** contains the public key of the sender.
   The public key is used to verify that the sender has the authority to create the transaction.
   The sender's address should be derived from this public key.
-- **Signature** contains a cryptographic signature created by the sender using their private key.
-  The signature is used to ensure that the transaction has not been tampered with and that it was indeed created by the sender.
 
 ## Payload type
 

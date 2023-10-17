@@ -13,13 +13,12 @@ The amount of stake held by validators determines their power in the consensus.
 
 ## Validator structure
 
-The Validator structure is 124 bytes long and consists the following fields:
+The Validator structure is 120 bytes long and consists the following fields:
 
 | Size     | Field               |
 | -------- | ------------------- |
 | 96 bytes | Public Key          |
 | 4 bytes  | Number              |
-| 4 bytes  | Sequence            |
 | 8 bytes  | Stake               |
 | 4 bytes  | Last Bonding Height |
 | 4 bytes  | Unbonding Height    |
@@ -28,8 +27,6 @@ The Validator structure is 124 bytes long and consists the following fields:
 - **Public Key** is the Validator's public key.
 - **Number** is a sequential and unique number assigned to each validator when it is created for the first time.
   The validator number is used to calculate the [state hash]({{ site.baseurl }}/learn/blockchain/state-hash) of the blockchain.
-- **Sequence** increases every time a transaction is sent from a validator. This protects the validator against replay attacks,
-  where a previously committed transaction is broadcasted again.
 - **Stake** holds the Validator's stake or the amount of Pactus coins locked or "staked" by the Validator.
 - **Bonding Height** is the last block height that the validator is bonded some stake.
 - **Unbonding Height** is the block height that the validator is unbonded.

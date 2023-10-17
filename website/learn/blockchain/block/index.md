@@ -48,11 +48,13 @@ The block certificate consists the following fields:
 
 | Size     | Field      |
 | -------- | ---------- |
+| 4 bytes  | Height     |
 | 2 bytes  | Round      |
 | Variant  | Committers |
 | Variant  | Absentees  |
 | 48 bytes | Signature  |
 
+- **Height** is the height of the certified block.
 - **Round** is the consensus round in which this certificate was issued.
   If a proposer fails to propose a block in one round, another validator takes over as the proposer,
   and the round number is increased.
