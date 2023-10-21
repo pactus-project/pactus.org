@@ -43,7 +43,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/10/22/release-0-15-1.html">Pactus 0.15.0 released</a>
+              <a href="{{ site.url }}/2023/10/21/release-0-15-1.html">Pactus 0.15.1 released</a>
             </div>
             <div class="card-subtitle text-muted">Oct 2023</div>
           </div>
