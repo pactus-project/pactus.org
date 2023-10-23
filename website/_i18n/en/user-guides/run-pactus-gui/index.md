@@ -133,7 +133,7 @@ the consensus algorithm and proposing new blocks.
 To become a validator and participate in the
 consensus algorithm to earn rewards, you first need to
 [stake]({{ site.baseurl }}/learn/consensus/proof-of-stake/) some coins. In the next
-[tutorial]({{ site.baseurl }}/user-guides/send-transactions-gui/#sending-a-bond-transaction),
+[tutorial]({{ site.baseurl }}/user-guides/send-transactions-gui/#sending-bond-transaction),
 we will explain how to send a Bond transaction to become a validator.
 
 ---
