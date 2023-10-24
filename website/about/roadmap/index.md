@@ -43,23 +43,13 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/10/21/release-0-15-1.html">Pactus 0.15.1 released</a>
-            </div>
-            <div class="card-subtitle text-muted">Oct 2023</div>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-card completed left">
-        <div class="card">
-          <div class="card-body p-4">
-            <div class="card-title">
               <a href="{{ site.url }}/2023/10/15/testnet-2-launched.html">Testnet-2 launch</a>
             </div>
             <div class="card-subtitle text-muted">Oct 2023</div>
           </div>
         </div>
       </div>
-      <div class="timeline-card completed right">
+      <div class="timeline-card completed left">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
@@ -69,7 +59,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card completed left">
+      <div class="timeline-card completed right">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
@@ -79,7 +69,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card completed right">
+      <div class="timeline-card completed left">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
@@ -89,7 +79,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card completed left">
+      <div class="timeline-card completed right">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
@@ -99,7 +89,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card completed right">
+      <div class="timeline-card completed left">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
@@ -109,7 +99,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card completed left">
+      <div class="timeline-card completed right">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
@@ -119,7 +109,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card completed right">
+      <div class="timeline-card completed left">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
@@ -129,23 +119,13 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card completed left">
+      <div class="timeline-card completed right">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
               <a href="{{ site.url }}/2023/04/21/testnet-0-concluded.html">Testnet-0 concluded</a>
             </div>
             <div class="card-subtitle text-muted">April 2023</div>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-card completed right">
-        <div class="card">
-          <div class="card-body p-4">
-            <div class="card-title">
-              <a href="{{ site.url }}/2022/11/24/release-0-9-1.html">Pactus 0.9.1 released</a>
-            </div>
-            <div class="card-subtitle text-muted">November 2022</div>
           </div>
         </div>
       </div>
