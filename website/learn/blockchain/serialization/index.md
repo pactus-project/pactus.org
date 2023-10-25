@@ -1,17 +1,17 @@
 ---
 layout: learn
-title: Data serialization
+title: Data Serialization
 sidebar: Serialization
 ---
 
-# Data serialization
+# Data Serialization
 
 Data serialization is the process of converting data into a format that can be easily stored or transmitted over a network.
 It typically involves encoding data into a sequence of bytes, which can later be decoded to
 reconstruct the original data structure.
 Pactus has two methods for data serialization: Deterministic serialization and CBOR serialization:
 
-## Deterministic serialization
+## Deterministic Serialization
 
 Pactus uses a deterministic serialization for the deterministic data like blocks and transactions.
 The serialization format for different types of data is listed in the table below:
@@ -58,7 +58,7 @@ Variable length string (VarString) is encoded as a variable length integer (VarI
 length of the string followed by the bytes that represent the string
 itself:`VarInt(len(str)) || str`
 
-### Byte order
+### Byte Order
 
 All the internal number representation are in little-endian byte order.
 
@@ -73,14 +73,14 @@ Here is an example of a block header data that encoded using deterministic seria
 "0b85c656cfc1a542cbbe0105708389ca68269bda290119cba9960c6ad28aaaa1"+
 "40377f652bdea0551e3b" %}
 
-## CBOR serialization
+## CBOR Serialization
 
 For non-deterministic data, such as networking messages, Pactus uses
 “Concise Binary Object Representation” or [CBOR](https://tools.ietf.org/html/rfc7049).
 CBOR is a binary data serialization format that is widely used in various application,
 including IoT, web services, security, and automotive, due to its compact representation and efficient parsing.
 
-### CBOR me!
+### CBOR Me!
 
 [cbor.me](https://cbor.me)
 is an online tool for encoding and decoding CBOR data, offering developers an easy way to test and
