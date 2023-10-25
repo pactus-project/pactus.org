@@ -9,7 +9,7 @@ sidebar: Account
 An account is an entity that is identified by a unique [address]({{ site.baseurl }}/learn/blockchain/address),
 which can send transactions on the blockchain.
 
-## Account structure
+## Account Structure
 
 The account structure is 12 bytes long and consists the following fields:
 
@@ -22,7 +22,7 @@ The account structure is 12 bytes long and consists the following fields:
   The account number is used to calculate the [state hash]({{ site.baseurl }}/learn/blockchain/state-hash) of the blockchain.
 - **Balance** holds the balance of the account, which is the amount of Pactus coins held by the account.
 
-## Treasury account
+## Treasury Account
 
 The Treasury account is a special account that is defined at the genesis time.
 The Treasury account holds the total supply of Pactus coins, which is fixed at 21 million coins,
