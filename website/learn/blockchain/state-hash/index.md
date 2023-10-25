@@ -4,7 +4,7 @@ title: State hash
 sidebar: State hash
 ---
 
-# State hash
+# State Hash
 
 The State Hash is used to ensure the integrity of the data in the Pactus blockchain.
 It serves as a unique identifier or fingerprint of the current state of the blockchain,
@@ -20,7 +20,7 @@ This helps to prevent any tampering or inconsistencies in the data, ensuring the
 >
 > From [Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
 
-A Hash tree or Merkle tree is a data structures that used by many blockchains to solve this problem:
+A Hash tree or Merkle tree is a data structure that used by many blockchains to solve this problem:
 "How can data be securely stored and verified in a decentralized network?"
 
 By using a Merkle tree, nodes can easily verify that they store the same data
@@ -38,7 +38,7 @@ By using the state hash, all nodes in the network can ensure they have the same 
 
 ![State hash]({{ site.url }}/assets/images/pactus_state_hash.png)
 
-## Scalability of merkle tree
+## Scalability of Merkle tree
 
 Using a Merkle tree to calculate the state of the blockchain can be challenging
 because when the number of accounts is large, calculating the root hash can be difficult.
