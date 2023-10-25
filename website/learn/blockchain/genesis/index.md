@@ -20,29 +20,29 @@ which they can later use to invite other validators to join the network.
 Once the network reaches 21 validators, the bootstrap validators will retire, and
 the blockchain will be secured by other validators.
 
-## Genesis block
+## Genesis Block
 
-The genesis block is the first block in the Pactus blockchain, and it is created by the bootstrap validators.
+The Genesis block is the first block in the Pactus blockchain, and it is created by the bootstrap validators.
 This block marks the beginning of the blockchain and serves as the foundation for subsequent blocks.
 
-The previous [block hash]({{ site.baseurl }}/learn/blockchain/block/#block-hash) in the genesis block sets to 0,
+The previous [block hash]({{ site.baseurl }}/learn/blockchain/block/#block-hash) in the Genesis block sets to 0,
 indicating that it has no predecessor.
-Additionally, the genesis block does not have a previous certificate.
+Additionally, the Genesis block does not have a previous certificate.
 
-## Genesis information
+## Genesis Information
 
-In the Pactus, the genesis information is pre-defined and indicates the initial state of the network.
+In Pactus, the Genesis Information is pre-defined and indicates the initial state of the network.
 These parameters are hardcoded into the project and include:
 
 - **Genesis Time** This is the time when the genesis block should be created.
   The bootstrap validators must be operational before this time.
-- **Consensus parameters**: The initial [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters)
+- **Consensus Parameters**: The initial [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters)
   are defined at genesis time and ensure that the entire network operates within the same configuration.
   These consensus parameters are discussed in detail in the consensus section of the documentation.
 - **Treasury Account**: The [treasury account]({{ site.baseurl }}/learn/blockchain/account/#treasury-account)
-  is defined at the genesis time and holds the total supply of the Pactus blockchain
-  that 21 million coins, and each coin is divided into 1 billion units.
-- **Bootstrap validators** The bootstrap validators are defined by their public keys.
+  is defined at the Genesis time and holds the total supply of the Pactus blockchain,
+  21 million coins. Each coin is divided into 1 billion units.
+- **Bootstrap Validators** The bootstrap validators are defined by their public keys.
 
 ## FAQ
 
