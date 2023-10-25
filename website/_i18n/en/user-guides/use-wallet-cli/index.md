@@ -1,5 +1,5 @@
 ---
-version: 3
+version: 4
 ---
 
 ## Preface
@@ -33,7 +33,7 @@ First, you need to create a wallet. To create a new wallet, run the following co
 ./pactus-wallet --path ~/pactus/wallets/default_wallet create
 ```
 
-This command creates a new wallet and store it in the `~/pactus/wallets/default_wallet`.
+This command creates a new wallet and stores it in the `~/pactus/wallets/default_wallet`.
 
 {% endtab %}
 
@@ -43,7 +43,7 @@ This command creates a new wallet and store it in the `~/pactus/wallets/default_
 ./pactus-wallet --path ~/pactus/wallets/default_wallet create
 ```
 
-This command creates a new wallet and store it in the `~/pactus/wallets/default_wallet`.
+This command creates a new wallet and stores it in the `~/pactus/wallets/default_wallet`.
 
 {% endtab %}
 
@@ -53,7 +53,7 @@ This command creates a new wallet and store it in the `~/pactus/wallets/default_
 pactus-wallet.exe c:\pactus\wallets\default_wallet create --testnet
 ```
 
-This command creates a new wallet and store it in the `c:\pactus\wallets\default_wallet`.
+This command creates a new wallet and stores it in the `c:\pactus\wallets\default_wallet`.
 
 {% endtab %}
 
@@ -63,7 +63,7 @@ Don't forget to back up your wallet seed, as it allows you to recover your walle
 
 ### Wallet password
 
-You can change the wallet password by tunning this command:
+You can change the wallet password by running this command:
 
 {% tabs wallet_password ltr %}
 
