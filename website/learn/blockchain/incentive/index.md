@@ -38,7 +38,7 @@ In this model, the block reward remains constant at one coin per block and does 
 
 ![Rewards in Pactus]({{ site.url }}/assets/images/pactus_reward.png)
 
-### Coin distribution
+### Coin Distribution
 
 In Pactus, the coin distribution is linear. This linear distribution is a direct result of the Flat Reward system.
 Unlike other blockchains that have a curved distribution, Pactus maintains a consistent coin distribution.
