@@ -29,5 +29,5 @@ The Validator structure is 120 bytes long and consists the following fields:
   The validator number is used to calculate the [state hash]({{ site.baseurl }}/learn/blockchain/state-hash) of the blockchain.
 - **Stake** holds the Validator's stake or the amount of Pactus coins locked or "staked" by the Validator.
 - **Bonding Height** is the last block height that the validator has bonded their stake.
-- **Unbonding Height** is the block height that the validator is unbonded.
+- **Unbonding Height** is the block height that the validator has unbonded thier stake.
 - **Last Joined Height** is the block height that the validator joined the committee.
