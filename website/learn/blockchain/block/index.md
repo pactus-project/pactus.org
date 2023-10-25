@@ -14,7 +14,7 @@ A committed block is immutable, and any modifications to the block will invalida
 
 ![Pactus blockchain]({{ site.url }}/assets/images/pactus_blockchain.png)
 
-## Block header
+## Block Header
 
 The block header is a data structure in the Pactus blockchain that contains important information about
 the block.
@@ -39,7 +39,7 @@ The block header is 138 bytes long and consists the following fields:
   the [sortition]({{ site.baseurl }}/learn/consensus/sortition) algorithm.
 - **Proposer Address** is the address of the validator who created and proposed the block.
 
-## Block certificate
+## Block Certificate
 
 A block certificate is a proof of commitment for the block in the Pactus blockchain.
 It is the result of the Pactus consensus algorithm and ensures that the block has been agreed upon by committee members.
@@ -72,7 +72,7 @@ The first transaction in each block is the [reward transaction]({{ site.baseurl 
 Once a block is committed and added to the blockchain, all the transactions inside the block will be executed.
 This means that the state of the blockchain will be updated based on the transactions in the committed block.
 
-## Block hash
+## Block Hash
 
 The block hash is a unique identifier for each block, which is computed by hashing the following data:
 
