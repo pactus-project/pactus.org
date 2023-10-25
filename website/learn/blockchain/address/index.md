@@ -6,15 +6,15 @@ sidebar: Address
 
 # Address
 
-An Address is a unique identifier that is used to send and receive transactions on the Pactus blockchain.
+An address is a unique identifier that is used to send and receive transactions on the Pactus blockchain.
 It is represented as a string of 42 alphanumeric characters and always begins with the letters "pc1".
-Here is an example of an Address on the Pactus blockchain:
+Here is an example of an address on the Pactus blockchain:
 
 ```text
 pc1p4e92hx0erqyx939crndvthvpn7qcdhefc9r6s7
 ```
 
-## Address structure
+## Address Structure
 
 An address in the Pactus blockchain is made up of 21 bytes and it is derived from the public key.
 The first byte of the address specifies the address type,
@@ -27,22 +27,22 @@ The resulting byte array is then converted into a bech32m[^first] string.
 
 ## Address Type
 
-The Address Type specifies the type of the address and its defined as below:
+The address type specifies the type of the address and its defined as below:
 
 - 0: Treasury address
 - 1: Validator address
-- 2: Account Address
+- 2: Account address
 
-## Treasury address
+## Treasury Address
 
-The Treasury Address on the Pactus blockchain is a fixed address that is defined as follows:
+The Treasury address on the Pactus blockchain is a fixed address that is defined as follows:
 
 ```text
 TreasuryAddress: 000000000000000000000000000000000000000000
 ```
 
-The Address Type for the Treasury Address is set to zero, which
-means there is no key associated with the treasury address.
+The address type for the Treasury address is set to zero, which
+means there is no key associated with the Treasury address.
 The remaining characters of the address are all zeros.
 
 [^first]: [bech32m address format](https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki)
