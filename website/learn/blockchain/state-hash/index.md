@@ -11,7 +11,7 @@ It serves as a unique identifier or fingerprint of the current state of the bloc
 allowing all nodes to verify that their data matches that of the other nodes.
 This helps to prevent any tampering or inconsistencies in the data, ensuring the accuracy and consistency of the blockchain.
 
-## Merkle tree
+## Merkle Tree
 
 > In cryptography and computer science, a hash tree or Merkle tree is a tree in which every leaf node
 > is labelled with the cryptographic hash of a data block, and every non-leaf node is labelled with
@@ -28,7 +28,7 @@ without having to share the entire dataset. Additionally, this helps to prevent 
 as any changes made to the data would cause inconsistencies in the Merkle tree and
 can be easily detected by the network.
 
-## State Merkle trees
+## State Merkle Trees
 
 In Pactus, the Merkle tree is used to verify the state of the blockchain in each block.
 The state hash in each block is calculated by taking the hash of two Merkle trees:
@@ -38,7 +38,7 @@ By using the state hash, all nodes in the network can ensure they have the same 
 
 ![State hash]({{ site.url }}/assets/images/pactus_state_hash.png)
 
-## Scalability of Merkle tree
+## Scalability of Merkle Tree
 
 Using a Merkle tree to calculate the state of the blockchain can be challenging
 because when the number of accounts is large, calculating the root hash can be difficult.
