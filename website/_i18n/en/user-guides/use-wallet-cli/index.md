@@ -16,12 +16,12 @@ To get started, download and extract the Pactus CLI file from
 
 ---
 
-## Wallet commands
+## Wallet Commands
 
 In this section, we will explore various wallet commands that help you create, manage,
 and recover your Pactus wallet.
 
-### Create a wallet
+### Create a Wallet
 
 First, you need to create a wallet. To create a new wallet, run the following command:
 
@@ -61,7 +61,7 @@ This command creates a new wallet and stores it in the `c:\pactus\wallets\defaul
 
 Don't forget to back up your wallet seed, as it allows you to recover your wallet if you lose it.
 
-### Wallet password
+### Wallet Password
 
 You can change the wallet password by running this command:
 
@@ -95,7 +95,7 @@ pactus-wallet.exe c:\pactus\wallets\default_wallet password
 
 If you forget your password, you can still recover your wallet using the wallet seed.
 
-### Wallet seed
+### Wallet Seed
 
 You can obtain the wallet seed by running this command:
 
@@ -166,11 +166,11 @@ Please note that if you lose your seed, there is no way to recover your wallet.
 
 ---
 
-## Address commands
+## Address Commands
 
 In this section, we'll cover address commands that help you manage your wallet addresses.
 
-### Creating new address
+### Creating New Address
 
 You can create a new address by running this command:
 
@@ -204,7 +204,7 @@ pactus-wallet.exe c:\pactus\wallets\default_wallet address new
 
 You can also assign a label to your address to better organize your address book.
 
-### List of addresses
+### List of Addresses
 
 To view the list of wallet addresses, use this command:
 
@@ -236,7 +236,7 @@ pactus-wallet.exe c:\pactus\wallets\default_wallet address all
 
 {% endtabs %}
 
-### Get Public key
+### Get Public Key
 
 To obtain the public key for a specific address, run this command:
 
@@ -270,7 +270,7 @@ pactus-wallet.exe c:\pactus\wallets\default_wallet address pub <ADDRESS>
 
 Replace `<ADDRESS>` with the address for which you want to retrieve its public key.
 
-### Get Private key
+### Get Private Key
 
 You can get the public key of your address by this command:
 
@@ -308,14 +308,14 @@ they will have full control over that address.
 
 ---
 
-## Transaction commands
+## Transaction Commands
 
 In this section, we'll cover transaction commands that help you create, sign, and
 broadcast transactions on the Pactus Blockchain.
 You'll need to provide the password to sign the transaction.
 Please note that once a transaction is broadcasted, it cannot be reversed.
 
-### Sending Transfer transaction
+### Sending Transfer Transaction
 
 To create, sign, and broadcast a
 [Transfer transaction]({{ site.baseurl }}/learn/transaction/transfer/), use the following command:
@@ -351,7 +351,7 @@ pactus-wallet.exe c:\pactus\wallets\default_wallet tx transfer <FROM> <TO> <AMOU
 In this command, `<FROM>` should be one of the addresses in your wallet as the sender address,
 and `<TO>` is the receiver address.
 
-### Sending Bond transaction
+### Sending Bond Transaction
 
 To create, sign, and broadcast a
 [Bond transaction]({{ site.baseurl }}/learn/transaction/bond/), use the following command:
@@ -421,7 +421,7 @@ pactus-wallet.exe c:\pactus\wallets\default_wallet --pub <PUBLIC_KEY> <FROM> <TO
 Replace `<PUBLIC_KEY>` with the validator's public key,
 which is the public key of the `<TO>` address.
 
-### Sending Unbond transaction
+### Sending Unbond Transaction
 
 To create, sign, and broadcast a
 [Unbond transaction]({{ site.baseurl }}/learn/transaction/unbond/), use the following command:
@@ -456,7 +456,7 @@ pactus-wallet.exe c:\pactus\wallets\default_wallet tx unbond <ADDRESS>
 
 In this command, `<ADDRESS>` is the address of the validator that you want to unbond.
 
-### Sending Withdraw transaction
+### Sending Withdraw Transaction
 
 To create, sign, and broadcast a
 [Withdraw transaction]({{ site.baseurl }}/learn/transaction/withdraw/), use the following command:
