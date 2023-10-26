@@ -9,7 +9,7 @@ sidebar: Transfer Transaction
 Transfer transaction is used to transfer coins between the [accounts]({{ site.baseurl }}/learn/blockchain/account/).
 If the receiver account does not exist, it will be created.
 
-## Payload structure
+## Payload Structure
 
 The transfer transaction has a payload consists the following fields:
 
@@ -23,7 +23,7 @@ The transfer transaction has a payload consists the following fields:
 - **Receiver address** is the account address that receives the amount
 - **Amount** is the amount of coins that should be transferred
 
-## Reward transaction
+## Reward Transaction
 
 The reward transaction is the first transaction in each block. There is only one reward transaction
 per block, and it has the same format as a transfer transaction, but with zero fees and no signature.
