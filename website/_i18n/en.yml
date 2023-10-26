@@ -21,7 +21,7 @@ dict:
 
   home:
     title: Home
-    motto: Building decentralized future together!
+    motto: Building a decentralized future together!
     run_a_node: Run a node
     run_a_node_desc: >
       Download the latest version of Pactus blockchain, create your wallet, and start syncing with the network.
@@ -44,7 +44,7 @@ dict:
     title: Community
     join: Join the Pactus community
     welcome: >
-      By joining the pactus community, you become a part of a global network of innovators, thinkers,
+      By joining the Pactus community, you become a part of a global network of innovators, thinkers,
       and doers who are all united by a shared vision of building a better future with blockchain technology.
       Whether you're a developer, entrepreneur, investor, or simply a blockchain enthusiast, there's a place for you
       here at Pactus.
@@ -58,7 +58,7 @@ dict:
 
   what_is:
     title: What is Pactus?
-    sec_1_title: Pactus is a Blockchain focused on decentralization
+    sec_1_title: Pactus is a blockchain focused on decentralization
     sec_1_desc: >
       Pactus is built on the principle that a fair and transparent system can only be achieved through decentralization.
       Unlike many other blockchain platforms, Pactus aims to eliminate the potential for centralization and manipulation
@@ -107,13 +107,13 @@ dict:
     instructions_for_compiling: >
       Instructions for compiling Pactus is provided on the
       [install](https://github.com/pactus-project/pactus/blob/main/docs/install.md) page.
-    stable_releases: Download stable releases
+    stable_releases: Download Stable Releases
     stable_releases_desc: >
       You can also download the latest stable releases of Pactus.
       These releases are updated automatically when a new version is released in
       [GitHub repository](https://github.com/pactus-project/pactus).
     download_gui: >
-      You can run Pactus in a Graphical User Interface (GUI) mode and it is suitable for both beginners and advanced users.
+      You can run Pactus in a graphical user interface (GUI) mode and it is suitable for both beginners and advanced users.
     pactus_gui: Pactus Graphical User Interface (GUI)
     pactus_cli: Pactus Command Line Interface (CLI)
     untrusted_app: >
@@ -126,12 +126,12 @@ dict:
     gui_after_download: >
       Once you have downloaded the Pactus GUI, you may follow this tutorial to set up and run your node:
     download_cli: >
-      Advanced user can run Pactus in Command Line Interface (CLI) mode.
+      Advanced users can run Pactus in command line interface (CLI) mode.
     cli_after_download: >
       Once you have downloaded the Pactus CLI, you may follow this tutorial to set up and run your node:
-    docker: Docker container
+    docker: Docker Container
     docker_desc: >
-      Advanced user can get the Pactus docker image from [Docker Hub](https://hub.docker.com/r/pactus/pactus).
+      Advanced users can get the Pactus docker image from [Docker Hub](https://hub.docker.com/r/pactus/pactus).
     docker_after_download: >
       You may follow this tutorial to set up and run your node using Docker:
 
@@ -317,7 +317,7 @@ dict:
       The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
 
   guide:
-    title: User guides
+    title: User Guides
     welcome: Here, you can find some guidance to help you use and interact with the Pactus blockchain.
     back: « Back to the user guides list
     beginner: Beginner
