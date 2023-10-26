@@ -24,7 +24,7 @@ You can pull the latest image with this command:
 docker pull pactus/pactus
 ```
 
-## Initializing the node
+## Initializing the Node
 
 Now you need to create a wallet and setup a working directory for your node.
 A working directory is a place where you save blockchain data and wallets.
@@ -75,7 +75,7 @@ The working directory contains:
 
 Feel free to take a look at these files.
 
-## Running the node
+## Running the Node
 
 Now you can start the node and sync with the network. Run the following command in the Terminal:
 
