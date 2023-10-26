@@ -12,7 +12,7 @@ By committing a sortition transaction, the validator will enter the committee.
 Sortition transactions are valid for 7 blocks, which is defined as "sortition interval" in the
 [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters/).
 
-## Payload structure
+## Payload Structure
 
 The sortition transaction has a payload consists the following fields:
 
