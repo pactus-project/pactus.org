@@ -8,7 +8,7 @@ sidebar: Protocol
   This post is obsolete. check <a href="https://pips.pactus.org/PIPs/pip-10">here</a> for more information.
 </div>
 
-# Consensus protocol
+# Consensus Protocol
 
 Pactus consensus algorithm is a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
 replication with [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault) tolerance.
@@ -30,7 +30,7 @@ decide to change the proposer for this round.
 
 ![Pactus consensus states]({{ site.url }}/assets/images/pactus_consensus_states.png)
 
-## The algorithm
+## The Algorithm
 
 There are $$R = 3f+1$$ validators. where $$f$$ is the maximum
 number of validators that may be faulty or byzantine. For example, if there is one faulty validator,
@@ -42,13 +42,13 @@ $$\langle m \rangle_{\sigma_i}$$.
 
 Pactus consensus algorithms has two phases: Block creation phase and change proposer phase.
 
-### Block creation
+### Block Creation
 
 The block creation phase in Pactus consensus algorithm includes these three steps[^1]:
 **Propose**, **Prepare** and **Precommit**.
 The protocol proceeds in rounds $$r = 0, 1, 2, \ldots$$.
 
-#### Propose step
+#### Propose Step
 
 In each round $$r$$, one validator is the proposer and the others act as validators.
 The proposer $$p$$ collects transactions and creates a proposal block $$B$$. It signs and
@@ -63,7 +63,7 @@ where:
 - $$h$$ indicates the block height
 - $$r$$ is an assigned round number, which is zero for the first round
 
-#### Prepare step
+#### Prepare Step
 
 If validator $$i$$ accepts the proposal, it enters _prepare_ step and signs and
 broadcasts _prepare_ message to all other validators. Otherwise, it does nothing.
@@ -78,7 +78,7 @@ where:
 If validator $$i$$ received $$2f+1$$ prepare messages from other
 validators (including its own), it becomes **prepared** and enters to precommit step.
 
-#### Precommit step
+#### Precommit Step
 
 In _precommit_ step, validator $$i$$ signs and broadcasts precommit message to
 the other validators.
@@ -89,7 +89,7 @@ $$\langle \text{PRECOMMIT},h,r,d \rangle_{\sigma_i}$$
 Each validator executes and commits block $$b$$ after receiving
 $$2f+1$$ precommit messages (including its own) and becomes **committed**.
 
-#### Block announcement
+#### Block Announcement
 
 Each validator that receives a valid proposal and with $$2f+1$$ precommit messages from other
 validators (including its own), can create a block-announce messages and broadcasts it to the network.
@@ -109,7 +109,7 @@ proposer and validator 4 is faulty.
 
 ![Normal execution]({{ site.url }}/assets/images/pactus_consensus_normal_execution.png)
 
-### Change proposer
+### Change Proposer
 
 The change-proposer provides liveness by allowing the system to make progress when the proposer fails.
 The change-proposer phase is triggered by timeouts that
@@ -128,7 +128,7 @@ The change proposer phase in Pactus consensus algorithm includes these three ste
 **Pre-vote**, **Main-vote** and **Decide**
 The protocol proceeds in rounds $$r_{cp} = 0, 1, 2, \ldots$$.
 
-#### Pre-vote step
+#### Pre-vote Step
 
 In Pre-vote step each validator casts a pre-vote for a value $$b \in \{0, 1\}$$
 and broadcasts pre-vote message to the network.
@@ -167,7 +167,7 @@ In the next rounds, a pre-vote for $$b$$ may be justified in two ways:
 - **Hard**: that is the quorum certificate for $$\langle \text{CP:PRE-VOTE},h,r,r_{cp}-1,b \rangle$$
 - **Soft**: that is the quorum certificate for $$\langle \text{CP:MAIN-VOTE},h,r,r_{cp}-1,abstain \rangle$$
 
-#### Main-vote step
+#### Main-vote Step
 
 After collecting $$2f+1$$ valid and justified pre-votes, each validator casts a main-vote $$v \in \{0, 1, abstain\}$$
 and broadcasts main-vote message to the network.
@@ -191,7 +191,7 @@ A main-vote for $$v$$ may be justified in two ways:
 - **Non-conflicting**: that is the quorum certificate for $$\langle \text{CP:PRE-VOTE},h,r,r_{cp},b \rangle$$
 - **Conflicting**: that consists of the justifications for the two conflicting pre-votes.
 
-#### Decide step
+#### Decide Step
 
 After collecting $$2f+1$$ valid and justified main-votes, each validator examines these votes. If all
 votes are for a value $$b \in \{0, 1\}$$, then the validator decides $$b$$, but continues to
