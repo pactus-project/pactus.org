@@ -35,7 +35,7 @@ This command will download the CLI archive file, verify it, and extract it for y
 
 Once you have downloaded and extracted the Pactus CLI file, you can proceed to the next step.
 
-## Initializing the node
+## Initializing the Node
 
 Now you need to create a wallet and setup a working directory for your node.
 A working directory is a place where you save blockchain data and wallets.
@@ -87,7 +87,7 @@ The working directory contains:
 Feel free to explore the contents of these files as needed, particularly the config file.
 The config file contains parameters that can customize your node.
 
-### Restoring the "Default wallet"
+### Restoring the "Default Wallet"
 
 If you ever need to restore your node, for instance on a new device,
 you can use the `--restore` option followed by your mnemonic:
@@ -129,7 +129,7 @@ This command will restore your wallet in the `c:\pactus` directory.
 
 {% endtabs %}
 
-## Running the node
+## Running the Node
 
 Now you can start the node and sync with the network. Run the following command in the Terminal:
 
