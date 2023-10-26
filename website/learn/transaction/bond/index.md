@@ -13,7 +13,7 @@ Once a bond transaction committed, the validator cannot participate in the
 This is called the "bond interval" and is defined in the
 [consensus parameter]({{ site.baseurl }}/learn/consensus/parameters/).
 
-## Payload structure
+## Payload Structure
 
 The bond transaction has a payload consists the following fields:
 
