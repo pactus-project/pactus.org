@@ -46,14 +46,14 @@ The process is straightforward and similar to installing any other application o
 When you run Pactus for the first time, a wizard dialog will appear to guide you through the wallet creation and
 initialization process. This process consists of several steps:
 
-### Initialize mode
+### Initialize Mode
 
 On the first page, you will ask you how you want to create your wallet.
 Select the option to "Create a new wallet from scratch" and proceed to the next page.
 
 ![Initialize mode]({{ site.url }}/user-guides/run-pactus-gui/initialize_mode.png)
 
-### Wallet seed
+### Wallet Seed
 
 The next page will display your wallet seed phrase, which consists of 12 words.
 It is essential to securely back up this seed phrase, as it is required for wallet recovery
@@ -64,7 +64,7 @@ in case your computer is lost, damaged, or stolen.
 **Warning:** Keep your wallet seed phrase private and secure.
 If someone else gains access to your seed phrase, they can control your wallet and funds.
 
-### Seed confirmation
+### Seed Confirmation
 
 In this step, you will be asked to confirm your seed phrase.
 Input the 12 words you received in the previous step into the dialog.
@@ -72,7 +72,7 @@ If the seed phrase is entered correctly, you will be able to proceed to the next
 
 ![Seed confirmation]({{ site.url }}/user-guides/run-pactus-gui/seed_confirmation.png)
 
-### Wallet password
+### Wallet Password
 
 On this page, you will be asked to set a password for your wallet.
 Enter a strong password in the first dialog box and confirm it in the second one.
@@ -83,7 +83,7 @@ This password will be used to encrypt your wallet and protect it from unauthoriz
 Note: Choose a strong password and keep it safe.
 If you forget or lose your password, you will need your seed phrase to regain access to your wallet.
 
-### Number of validators
+### Number of Validators
 
 Each node in the Pactus blockchain can run up to 32 validators, and each validator can stake up to
 1000 coins. Here, you can define how many validators you want to create for your node.
@@ -93,7 +93,7 @@ Select the number of validators based on the amount of coins you want to stake.
 
 If you want to stake more than 32,000 coins, you need to set up a new node.
 
-### Node information
+### Node Information
 
 The last page of the initialization process shows the node information, such as the working directory, validator address,
 and reward address. Review this information and click "Close" to complete the initialization process.
