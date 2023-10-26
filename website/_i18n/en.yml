@@ -12,7 +12,7 @@ dict:
   join_community: Join community
   contributing: Contributing
   outdated_translation: The translation is outdated. You can read it, but it might not be accurate.
-  pactus_project: Pactus project
+  pactus_project: Pactus Project
   download_pactus: Download Pactus
   block_explorer: Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
   source_code: Source code <i class="fa fa-external-link" aria-hidden="true"></i>
