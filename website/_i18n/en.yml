@@ -92,10 +92,10 @@ dict:
       Here you can find the technical documentations for the Pactus project.
 
   roadmap:
-    title: Road map
-    completed_task: Completed task
-    ongoing_task: Ongoing task
-    upcoming_task: Upcoming task
+    title: Roadmap
+    completed_task: Completed Task
+    ongoing_task: Ongoing Task
+    upcoming_task: Upcoming Task
 
   download:
     title: Download
