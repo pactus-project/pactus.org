@@ -116,7 +116,7 @@ $$
 
 The sortition seed for the genesis block set to 0.
 
-## Sortition probability
+## Sortition Probability
 
 The Sortition probability refers to the expected number of validators that may join the committee in each block,
 assuming all validators are actively online and executing the sortition algorithm.
