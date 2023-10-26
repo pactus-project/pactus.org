@@ -9,7 +9,7 @@ sidebar: Withdraw Transaction
 Withdraw transaction is used to withdraw the staked coins from an unbonded
 [validator]({{ site.baseurl }}/learn/blockchain/validator/)
 
-## Payload structure
+## Payload Structure
 
 The withdraw transaction has a payload consists the following fields:
 
