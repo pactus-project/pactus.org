@@ -4,7 +4,7 @@ title: Consensus specification
 sidebar: Specification
 ---
 
-# Consensus specification
+# Consensus Specification
 
 Developing distributed and concurrent systems is a complex task that requires careful attention to the details.
 Testing such systems is challenging because it's difficult to simulate all possible states,
@@ -26,20 +26,20 @@ expensive to correct in code.
 
 To know more about TLA+, check [The TLA+ Home Page](https://lamport.azurewebsites.net/tla/tla.html).
 
-## Pactus consensus spec
+## Pactus Consensus Spec
 
 Pactus [consensus specification](https://github.com/pactus-project/pactus/tree/main/consensus/spec)
 has written in TLA+ format. It includes all invariants that can be held
 in every state of every execution that the protocol allows. The TLA+ specification is compiled into
 [PDF file](https://raw.githubusercontent.com/pactus-project/pactus/main/consensus/spec/Pactus.pdf).
 
-### Safety proof
+### Safety Proof
 
 By defining some invariants we can ensure the safety of the consensus
 [protocol]({{ site.baseurl }}/learn/consensus/protocol) in any possible and
 distinct state, and therefore we have the informal safety proof of the Pactus consensus protocol using TLA+.
 
-### Liveness proof
+### Liveness Proof
 
 Checking the liveness is not easy, but with defining some constraints, we have the informal proof of
 liveness of Pactus consensus protocol using TLA+.
