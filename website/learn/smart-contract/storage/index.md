@@ -76,7 +76,7 @@ to keep the offset of the allocated spaces for the smart contract variables.
 
 ![Storage stack]({{ site.url }}/assets/images/pactus_storage_stack.png)
 
-## Data collections
+## Data Collections
 
 Usually in smart contracts developers are interested in data collections like Search Trees or Hash
 Tables to look up values by the associated keys. Most programming languages come up with some
