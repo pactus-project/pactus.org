@@ -14,10 +14,10 @@ Transactions in Pactus consists the following fields:
 | 4 bytes  | Lock Time    |
 | 8 bytes  | Fee          |
 | Variant  | Memo         |
-| 1 byte   | Payload type |
-| Variant  | Payload data |
+| 1 byte   | Payload Type |
+| Variant  | Payload Data |
 | 48 bytes | Signature    |
-| 96 bytes | Public key   |
+| 96 bytes | Public Key   |
 
 - **Version** is the version of the transaction format. Different versions may have different fields or
   a different layout, and the current transaction version is set to 1.
@@ -28,19 +28,19 @@ Transactions in Pactus consists the following fields:
   The message can be used to provide additional information about the transaction or to communicate with the recipient.
   The maximum size of the memo is 64 characters that is defined in the
   [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters/)
-- **Payload type** specifies the type of the transaction payload.
+- **Payload Type** specifies the type of the transaction payload.
   Depending on the payload type, the payload data field is decoded differently.
-- **Payload data** contains the actual data payload of the transaction.
+- **Payload Data** contains the actual data payload of the transaction.
   The payload data varies depending on the payload type.
 - **Signature** contains a cryptographic signature created by the sender using their private key.
   The signature is used to ensure that the transaction has not been tampered with and that it was indeed created by the sender.
-- **Public key** contains the public key of the sender.
+- **Public Key** contains the public key of the sender.
   The public key is used to verify that the sender has the authority to create the transaction.
   The sender's address should be derived from this public key.
 
-## Payload type
+## Payload Type
 
-The Payload type field determines the format of the Payload data field in the transaction.
+The payload type field determines the format of the payload data field in the transaction.
 Different payload types have different formats for the payload data.
 The following are the supported transactions in Pactus blockchain:
 
