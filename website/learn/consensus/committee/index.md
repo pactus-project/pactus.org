@@ -38,7 +38,7 @@ i.e., the one that has been in the committee for the longest time.
 
 ![Adding Validators to the Committee]({{ site.url }}/assets/images/pactus_committee_adding_validators.png)
 
-## Security of the committee
+## Security of the Committee
 
 For an adversary to take control of the committee, they would need to control more than ⅔ of the stake within the committee.
 To assess the security of the committee, let's assume all validators in the committee have the same voting power.
