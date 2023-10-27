@@ -306,6 +306,40 @@ Replace `<ADDRESS>` with the address for which you want to retrieve its private 
 Keep your private key secure. If someone gains access to your private key,
 they will have full control over that address.
 
+### Get Address Balance
+
+You can get the balance of your address by this command:
+
+{% tabs address_bal ltr %}
+
+{% tab address_bal linux <i class="fa-brands fa-linux"></i> Linux %}
+
+```text
+./pactus-wallet --path ~/pactus/wallets/default_wallet address balance <ADDRESS>
+```
+
+{% endtab %}
+
+{% tab address_bal mac <i class="fa-brands fa-apple"></i> macOS %}
+
+```text
+./pactus-wallet --path ~/pactus/wallets/default_wallet address balance <ADDRESS>
+```
+
+{% endtab %}
+
+{% tab address_bal windows <i class="fa-brands fa-windows"></i> Windows %}
+
+```text
+pactus-wallet.exe c:\pactus\wallets\default_wallet address balance <ADDRESS>
+```
+
+{% endtab %}
+
+{% endtabs %}
+
+Replace `<ADDRESS>` with the address for which you want to retrieve your balance.
+
 ---
 
 ## Transaction Commands
