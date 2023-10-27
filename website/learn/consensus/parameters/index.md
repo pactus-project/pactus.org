@@ -17,7 +17,7 @@ Here is the list of the consensus parameters:
 - **Block Time:** The time interval in seconds between the creation of two consecutive blocks.
   This is set to 10 seconds, which means that a new block is created every 10 seconds.
 - **Committee Size** The number of validators in the committee.
-  This is set to 21 validators.
+  This is set to 51 validators.
 - **Block Reward** The fixed reward amount given to the validator who successfully creates and proposes a new block.
   This is set to 1,000,000,000, which is equivalent to one coin.
 - **Time-to-Live Interval**: The number of blocks that a transaction can remain unprocessed before
