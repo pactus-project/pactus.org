@@ -272,14 +272,14 @@ Replace `<ADDRESS>` with the address for which you want to retrieve its public k
 
 ### Get Private Key
 
-You can get the public key of your address by this command:
+You can get the private key of your address by this command:
 
 {% tabs address_prv ltr %}
 
 {% tab address_prv linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address pub <ADDRESS>
+./pactus-wallet --path ~/pactus/wallets/default_wallet address priv <ADDRESS>
 ```
 
 {% endtab %}
@@ -287,7 +287,7 @@ You can get the public key of your address by this command:
 {% tab address_prv mac <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address pub <ADDRESS>
+./pactus-wallet --path ~/pactus/wallets/default_wallet address priv <ADDRESS>
 ```
 
 {% endtab %}
@@ -295,7 +295,7 @@ You can get the public key of your address by this command:
 {% tab address_prv windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet address pub <ADDRESS>
+pactus-wallet.exe c:\pactus\wallets\default_wallet address priv <ADDRESS>
 ```
 
 {% endtab %}
