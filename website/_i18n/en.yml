@@ -24,19 +24,19 @@ dict:
     motto: Building a decentralized future together!
     run_a_node: Run a node
     run_a_node_desc: >
-      Download the latest version of Pactus blockchain, create your wallet, and start syncing with the network.
-      Pactus is designed to be lightweight and user-friendly, making it simple to operate.
+      Download Pactus, create wallet, and sync with the network.<br>
+      Pactus is designed to be lightweight and user-friendly.
     get_some_coins: Get some coins
     get_some_coins_desc: >
-      Once your node is up and running, you will need to obtain some coins in order to become a validator.
-      You can join our community and receive some stake coins free.
+      You will need to obtain some coins in order to become a validator.<br>
+      Join our Discord server and get some coins from RoboPac 🤖.
     become_a_validator: Become a validator
     become_a_validator_desc: >
-      By staking some coins, your node will be transition into a validator, and subsequently,
-      every time you propose a block, you will be rewarded with one new coin as a block reward.
+      By staking some coins, your node will be a validator.<br>
+      You will be rewarded with one new coin any time you make a block.
     improve_pactus: Make Pactus better
     improve_pactus_desc: >
-      There are many ways you can support Pactus and help it grow.
+      There are many ways you can support Pactus and help it grow.<br>
       Let's work together to make Pactus even better!
     partners: Our Partners
     validators: Our Validators
