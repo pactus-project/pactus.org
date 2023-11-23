@@ -43,7 +43,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/11/12/release-0-17-0.html">Pactus 0.17.0 Released</a>
+              <a href="{{ site.url }}/2023/11/12/release-0-17-0.html">Pactus 0.17 Released</a>
             </div>
             <div class="card-subtitle text-muted">November 2023</div>
           </div>
@@ -53,7 +53,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-            <a href="{{ site.url }}/2023/10/29/release-0-16-0.html">Pactus 0.16.0 Released</a>
+            <a href="{{ site.url }}/2023/10/29/release-0-16-0.html">Pactus 0.16 Released</a>
             </div>
             <div class="card-subtitle text-muted">October 2023</div>
           </div>
@@ -63,7 +63,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/10/15/testnet-2-launched.html">Testnet-2 Launch</a>
+              <a href="{{ site.url }}/2023/10/15/testnet-2-launched.html">Testnet-2 Launched 🚀</a>
             </div>
             <div class="card-subtitle text-muted">October 2023</div>
           </div>
@@ -73,7 +73,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/10/15/release-0-15-0.html">Pactus 0.15.0 Released</a>
+              <a href="{{ site.url }}/2023/10/15/release-0-15-0.html">Pactus 0.15 Released</a>
             </div>
             <div class="card-subtitle text-muted">October 2023</div>
           </div>
@@ -93,7 +93,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/07/01/release-0-13-0.html">Pactus 0.13.0 Released</a>
+              <a href="{{ site.url }}/2023/07/01/release-0-13-0.html">Pactus 0.13 Released</a>
             </div>
             <div class="card-subtitle text-muted">July 2023</div>
           </div>
@@ -103,7 +103,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/06/19/release-0-12-0.html">Pactus 0.12.0 Released</a>
+              <a href="{{ site.url }}/2023/06/19/release-0-12-0.html">Pactus 0.12 Released</a>
             </div>
             <div class="card-subtitle text-muted">June 2023</div>
           </div>
@@ -113,7 +113,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/05/29/release-0-11-0.html">Pactus 0.11.0 Released</a>
+              <a href="{{ site.url }}/2023/05/29/release-0-11-0.html">Pactus 0.11 Released</a>
             </div>
             <div class="card-subtitle text-muted">May 2023</div>
           </div>
@@ -123,7 +123,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/05/09/testnet-1-launched.html">Testnet-1 Launch</a>
+              <a href="{{ site.url }}/2023/05/09/testnet-1-launched.html">Testnet-1 Launched 🚀</a>
             </div>
             <div class="card-subtitle text-muted">May 2023</div>
           </div>
@@ -133,7 +133,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2023/05/08/release-0-10-0.html">Pactus 0.10.0 Released</a>
+              <a href="{{ site.url }}/2023/05/08/release-0-10-0.html">Pactus 0.10 Released</a>
             </div>
             <div class="card-subtitle text-muted">May 2023</div>
           </div>
@@ -153,7 +153,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2022/09/24/testnet-0-launched.html">Testnet-0 Launched</a>
+              <a href="{{ site.url }}/2022/09/24/testnet-0-launched.html">Testnet-0 Launched 🚀</a>
             </div>
             <div class="card-subtitle text-muted">September 2022</div>
           </div>
@@ -163,7 +163,7 @@ permalink: /about/roadmap/index.html
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
-              <a href="{{ site.url }}/2022/09/20/release-0-9-0.html">Pactus 0.9.0 Released</a>
+              <a href="{{ site.url }}/2022/09/20/release-0-9-0.html">Pactus 0.9 Released</a>
             </div>
             <div class="card-subtitle text-muted">September 2022</div>
           </div>
