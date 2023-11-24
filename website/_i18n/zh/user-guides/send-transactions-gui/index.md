@@ -2,48 +2,38 @@
 version: 2
 ---
 
-## Preface
+## 序言
 
-The Pactus Blockchain offers a Graphical User Interface (GUI) that comes with a built-in wallet to create,
-sign and broadcast transactions.
-This tutorial aims to guide you step-by-step on how to use the GUI application to send transactions to the Pactus blockchain.
-Whether you are a beginner or an advanced user, this tutorial is suitable for you.
+Pactus 区块链提供了一个图形用户界面 (GUI), 带有内置钱包来创建, 签署并广播交易。
+本教程旨在逐步指导您如何使用 GUI 应用程序将交易发送到 Pactus 区块链。
+无论您是初学者还是高级用户, 本教程都适合您。
 
-## Prerequisites
+## 符合条件
 
-Before we begin, you'll need to run the Pactus GUI application and ensure that it is synced with the network.
-You can find detailed instructions on how to do this in the following [tutorial]({{ site.baseurl }}/user-guides/run-pactus-gui/).
+在开始之前, 您需要运行 Pactus GUI 应用程序并确保它与网络同步。
+您可以在此[教程]({{ site.baseurl }}/user-guides/run-pactus-gui/)中学习如何运行Pactus GUI。
 
-## Sending a Transfer Transaction
+## 发送转账交易
 
-To send a [transfer transaction]({{ site.baseurl }}/learn/transaction/transfer/), click on the "Transaction" menu and
-select "Transfer."
-This will bring up a new window where you can select the
-[account]({{ site.baseurl }}/learn/blockchain/account/) address from which you wish to send the transfer,
-as well as the recipient's account address and the amount you wish to send.
+如要发送[转账交易]({{ site.baseurl }}/learn/transaction/transfer/), 点击“交易”菜单并选择“转账”。
+这将打开一个新窗口, 您可以在其中选择您希望发送转账的
+[账户]({{ site.baseurl }}/learn/blockchain/account/)地址, 以及收款人的帐户地址和您希望发送的金额。
 
-After reviewing the transaction details and ensuring that they are correct,
-click on the "Send" button to sign and broadcast the transaction to the Pactus blockchain.
+审核交易详情并确保其正确后, 单击“发送”按钮签署交易并将其广播到 Pactus 区块链。
 
 ![Transfer Transaction Dialog]({{ site.url }}/user-guides/send-transactions-gui/transfer-transaction-dialog.png)
 
-It's important to note that the [transaction fee]({{ site.baseurl }}/learn/transaction/fee/)
-will be calculated based on the amount you're sending.
+需要注意的是, [交易费用]({{ site.baseurl }}/learn/transaction/fee/)将根据您发送的金额进行计算。
 
-## Sending a Bond Transaction
+## 发送契约交易
 
-To send a [bond transaction]({{ site.baseurl }}/learn/transaction/bond/), navigate to the "Transaction" menu
-and select "Bond."
-A new window will appear where you can select the account address from which you wish to send the bond transaction,
-as well as the [validator]({{ site.baseurl }}/learn/blockchain/validator/) address of the recipient and
-the amount you wish to stake.
+如要发送[契约交易]({{ site.baseurl }}/learn/transaction/bond/), 点击“交易”菜单并选择“契约”。
 
-If the validator address is not already registered on the Pactus blockchain, you will need to provide the
-validator's public key as the first staking transaction will create the validator on the Pactus blockchain.
-To obtain the public key, you can right-click on the validator's address in your wallet
-and select "Details."
+点击后将出现一个新窗口, 您可以在其中选择您希望发送转账的账户地址, 以及[验证器]({{ site.baseurl }}/learn/blockchain/validator/)地址和您希望发送的质押金额。
+
+如果验证器地址尚未在 Pactus 区块链上注册，您将需要提供验证器的公钥作为第一笔质押交易。这将在 Pactus 区块链上创建及验证您的验证器。
+要获取公钥, 您可以钱包中右键单击验证者地址并选择“详细信息”。
 
 ![Bond Transaction Dialog]({{ site.url }}/user-guides/send-transactions-gui/bond-transaction-dialog.png)
 
-It's important to note that the [transaction fee]({{ site.baseurl }}/learn/transaction/fee/)
-will be calculated based on the amount you're sending.
+需要注意的是, [交易费用]({{ site.baseurl }}/learn/transaction/fee/)将根据您发送的金额进行计算。
