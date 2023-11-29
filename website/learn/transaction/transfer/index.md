@@ -17,7 +17,7 @@ The transfer transaction has a payload consists the following fields:
 | -------- | ---------------- |
 | 21 bytes | Sender address   |
 | 21 bytes | Receiver address |
-| 8 bytes  | Amount           |
+| Variant  | Amount           |
 
 - **Sender address** is the account address that transfers the amount
 - **Receiver address** is the account address that receives the amount

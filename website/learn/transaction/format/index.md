@@ -12,7 +12,7 @@ Transactions in Pactus consists the following fields:
 | -------- | ------------ |
 | 1 byte   | Version      |
 | 4 bytes  | Lock Time    |
-| 8 bytes  | Fee          |
+| Variant  | Fee          |
 | Variant  | Memo         |
 | 1 byte   | Payload Type |
 | Variant  | Payload Data |

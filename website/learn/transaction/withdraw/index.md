@@ -17,7 +17,7 @@ The withdraw transaction has a payload consists the following fields:
 | -------- | ---------------- |
 | 21 bytes | Sender address   |
 | 21 bytes | Receiver address |
-| 8 bytes  | Amount           |
+| Variant  | Amount           |
 
 - **Sender address** is the address of the sender validator.
 - **Receiver address** is the address of the receiver [account]({{ site.baseurl }}/learn/blockchain/account/).

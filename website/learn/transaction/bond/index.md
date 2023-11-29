@@ -22,7 +22,7 @@ The bond transaction has a payload consists the following fields:
 | 21 bytes            | Sender address   |
 | 21 bytes            | Receiver address |
 | 96 bytes (optional) | Public key       |
-| 8 bytes             | Amount           |
+| Variant             | Amount           |
 
 - **Sender address** is the address of the sender [account]({{ site.baseurl }}/learn/blockchain/account/).
 - **Receiver address** is the address of the receiver validator.
