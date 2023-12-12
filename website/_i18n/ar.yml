@@ -326,3 +326,4 @@ dict:
     run_pactus_docker: كيفية تشغيل بكتوس باستخدام دوكر؟
     send_transactions_gui: كيفية إرسال المعاملات في الوضع الرسومي؟
     use_wallet_cli: كيفية استخدام المحفظة في وضع سطر الأوامر؟
+    reduce_network: How to reduce the network usage?
