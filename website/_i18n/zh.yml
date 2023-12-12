@@ -306,3 +306,4 @@ dict:
     run_pactus_docker: 如何使用Docker运行帕克图斯？
     send_transactions_gui: 如何在图形模式下发送交易？
     use_wallet_cli: 如何在命令行模式下使用钱包？
+    reduce_network: How to reduce the network usage?

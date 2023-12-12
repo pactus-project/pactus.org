@@ -12,6 +12,7 @@ title: dict.guide.title
 <ul class="list-unstyled">
   <li><a href="{{ site.baseurl }}/user-guides/run-pactus-gui">{% t dict.guide.run_pactus_gui %}</a></li>
   <li><a href="{{ site.baseurl }}/user-guides/send-transactions-gui">{% t dict.guide.send_transactions_gui %}</a></li>
+  <li><a href="{{ site.baseurl }}/user-guides/reduce-network">{% t dict.guide.reduce_network %}</a></li>
 </ul>
 
 ## {% t dict.guide.advanced %}
