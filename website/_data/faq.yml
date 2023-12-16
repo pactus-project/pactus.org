@@ -29,6 +29,9 @@
     - id: validators
       ver: v1
 
+    - id: unlimited_validators
+      ver: v2
+
     - id: min_and_max_stake
       ver: v2
 
