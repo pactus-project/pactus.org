@@ -10,7 +10,7 @@ sidebar: Incentive
 >
 > [Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
 
-In Pactus, rewards are given to validators for proposing and validating new blocks on the blockchain.
+In Pactus, rewards are given to validators for collecting valid transactions and creating new blocks.
 These rewards serve as an incentive for validators to participate in the consensus process and
 maintain the security and integrity of the network.
 

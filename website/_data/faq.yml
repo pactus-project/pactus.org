@@ -69,11 +69,18 @@
 - title: economy
   items:
     - id: total_supply
+      ver: v2
+
+    - id: genesis_allocation
       ver: v1
-      img: pactus_coin_distribution.png
+      img: pactus_coin_allocation.png
 
     - id: treasury_account
       ver: v1
+
+    - id: treasury_distribution
+      ver: v1
+      img: pactus_coin_distribution.png
 
 - title: transaction
   items:

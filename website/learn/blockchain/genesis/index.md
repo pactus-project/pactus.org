@@ -6,7 +6,7 @@ sidebar: Genesis
 
 # Genesis
 
-The Pactus blockchain starts from scratch, with no pre-existing accounts or pre-allocated tokens.
+The Pactus blockchain starts from scratch, with no pre-existing accounts or pre-allocated coins.
 Its starting point is known as the genesis block, which is created by the bootstrap validators.
 
 ## Bootstrapping
@@ -17,7 +17,7 @@ Their primary role is to initiate the blockchain during a brief period known as 
 As the bootstrapping phase progresses, these validators are able to earn rewards,
 which they can later use to invite other validators to join the network.
 
-Once the network reaches 21 validators, the bootstrap validators will retire, and
+Once the network reaches 51 validators, the bootstrap validators will retire, and
 the blockchain will be secured by other validators.
 
 ## Genesis Block
@@ -40,8 +40,9 @@ These parameters are hardcoded into the project and include:
   are defined at genesis time and ensure that the entire network operates within the same configuration.
   These consensus parameters are discussed in detail in the consensus section of the documentation.
 - **Treasury Account**: The [treasury account]({{ site.baseurl }}/learn/blockchain/account/#treasury-account)
-  is defined at the genesis time and holds the total supply of the Pactus blockchain,
-  21 million coins. Each coin is divided into 1 billion units.
+  holds  21 million coins at the genesis time. Each coin is divided into 1 billion units.
+- **Reserved Accounts**: Reserved account are defined at the Genesis time and at total they have 21 milion coins.
+  These coins are reserved and the main purpise is to support the project over time.
 - **Bootstrap Validators** The bootstrap validators are defined by their public keys.
 
 ## FAQ
