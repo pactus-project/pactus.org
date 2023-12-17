@@ -21,12 +21,6 @@ title: dict.community.title
     </a>
   </li>
   <li>
-    <a href="https://instagram.com/pactus.blockchain/">
-      <img alt="Discord" src="{{ site.url }}/assets/images/social_instagram.svg" width="32">
-      {% t dict.community.instagram %}
-    </a>
-  </li>
-  <li>
     <a href="https://t.me/pactusblockchain">
       <img alt="Discord" src="{{ site.url }}/assets/images/social_telegram.svg" width="32">
       {% t dict.community.telegram %}
