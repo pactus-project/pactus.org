@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Linting Yaml files
         run: |
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -64,9 +64,10 @@ jobs:
       ## Status code 429: https://http.dev/429
       ## Status code 999: https://http.dev/999#linkedin
       ## Status code 403: https://http.dev/403
+      ## Status code 0: https://github.com/gjtorikian/html-proofer/issues/716#issuecomment-1162052155
       ##
       ## By swap-urls, we don't get error if we rename or move a document.
-      - run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403" --check_internal_hash=false --ignore-urls=/github.com/,/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./_site
+      - run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403,0" --ignore-urls=/github.com/,/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./_site
 
       - name: HTML5Validator
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0

@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - uses: jeffreytse/jekyll-deploy-action@v0.5.0
         with:
+          bundler_ver: '~>2.4.0'
           token: ${{ secrets.GITHUB_TOKEN }}
           cname: 'pactus.org'
           # https://pngquant.org/install.html

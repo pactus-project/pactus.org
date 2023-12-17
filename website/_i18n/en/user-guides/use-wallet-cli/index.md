@@ -12,7 +12,7 @@ This tutorial will guide you step-by-step on how to use the wallet application.
 ## Download
 
 To get started, download and extract the Pactus CLI file from
-[here]({{ site.baseurl }}/download/#pactus-command-line-interface-cli).
+[here]({{ site.baseurl }}/download/#cli).
 
 ---
 

@@ -17,7 +17,7 @@ Pactus 可以在不同的模式下运行，包括命令行界面 (CLI) 和图形
 ## 下载
 
 从以下链接下载 Pactus GUI 安装程序。
-[下链]({{ site.baseurl }}/download/#pactus-graphical-user-interface-gui).
+[下链]({{ site.baseurl }}/download/#gui).
 
 ### 代码证书警告
 
@@ -121,7 +121,7 @@ Pactus 区块链中的每个节点最多可以运行32个验证器，每个验�
 
 成为验证者并参与共识算法要获得奖励，你首先需要
 [质押]({{ site.baseurl }}/learn/consensus/proof-of-stake/) 一些代币. 下一个
-[教程]({{ site.baseurl }}/user-guides/send-transactions-gui/#sending-bond-transaction),
+[教程]({{ site.baseurl }}/user-guides/send-transactions-gui/),
 我们将教导如何发送契约交易以成为验证者。
 
 ---
