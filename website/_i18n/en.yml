@@ -319,7 +319,7 @@ dict:
     genesis_allocation_answer_v1: >
       The initial allocation of Genesis Tokens in the Pactus blockchain is distributed as follows:
       <br><br>
-      <table border="1">
+      <table>
         <caption>Genesis Token Allocation for Pactus</caption>
         <thead>
             <tr>
