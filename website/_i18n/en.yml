@@ -140,7 +140,7 @@ dict:
     title: FAQ
     general: General
     validator: Validator
-    economy: Tokenomy
+    economy: Economy
     consensus: Consensus
     transaction: Transaction
     fee: Fee
@@ -315,16 +315,16 @@ dict:
       The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power,
       which could potentially lead them to control the committee.
       The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
-    genesis_allocation: How are Genesis Tokens allocated in Pactus?
+    genesis_allocation: How are Genesis Coins allocated in Pactus?
     genesis_allocation_answer_v1: >
-      The initial allocation of Genesis Tokens in the Pactus blockchain is distributed as follows:
+      The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
       <br><br>
       <table>
-        <caption>Genesis Token Allocation for Pactus</caption>
+        <caption>Genesis Coin Allocation for Pactus</caption>
         <thead>
             <tr>
                 <th>Category</th>
-                <th>Token Allocation</th>
+                <th>Coin Allocation</th>
                 <th>Percentage</th>
             </tr>
         </thead>

@@ -73,7 +73,7 @@
 
     - id: genesis_allocation
       ver: v1
-      img: token_allocation.png
+      img: coin_allocation.png
 
     - id: treasury_account
       ver: v1

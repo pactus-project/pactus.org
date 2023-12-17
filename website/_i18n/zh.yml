@@ -130,7 +130,7 @@ dict:
     title: 常见问题解答
     general: 常规问题
     validator: 验证节点问题
-    economy: Tokenomy
+    economy: Economy
     consensus: 共识问题
     transaction: 交易问题
     fee: 手续费问题

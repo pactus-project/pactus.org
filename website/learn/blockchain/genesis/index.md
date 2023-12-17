@@ -6,7 +6,7 @@ sidebar: Genesis
 
 # Genesis
 
-The Pactus blockchain starts from scratch, with no pre-existing accounts or pre-allocated tokens.
+The Pactus blockchain starts from scratch, with no pre-existing accounts or pre-allocated coins.
 Its starting point is known as the genesis block, which is created by the bootstrap validators.
 
 ## Bootstrapping
