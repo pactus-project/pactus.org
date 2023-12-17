@@ -9,7 +9,7 @@ title: dict.download.title
 
 ---
 
-## 🏗️ {% t dict.download.compile_from_source_code %}
+<h2 id="build">🏗️ {% t dict.download.compile_from_source_code %}</h2>
 
 {% t dict.download.project_pactus_is_distributed %}
 
@@ -17,11 +17,11 @@ title: dict.download.title
 
 ---
 
-## ⬇️ {% t dict.download.stable_releases %}
+<h2 id="binary">⬇️ {% t dict.download.stable_releases %}</h2>
 
 {% t dict.download.stable_releases_desc %}
 
-### {% t dict.download.pactus_gui %}
+<h3 id="gui">{% t dict.download.pactus_gui %}</h3>
 
 {% t dict.download.download_gui %}
 
@@ -43,7 +43,7 @@ title: dict.download.title
 
 ---
 
-### {% t dict.download.pactus_cli %}
+<h3 id="cli">{% t dict.download.pactus_cli %}</h3>
 
 {% t dict.download.download_cli %}
 
@@ -65,7 +65,7 @@ title: dict.download.title
 
 ---
 
-## 🐳 {% t dict.download.docker %}
+<h2 id="docker">🐳 {% t dict.download.docker %}</h2>
 
 {% t dict.download.docker_desc %}
 
