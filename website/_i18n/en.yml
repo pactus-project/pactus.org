@@ -178,9 +178,9 @@ dict:
       Block reward in Pactus is fixed, and it is always one coin per block.
       This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
     unlimited_validators: How many validators does pactus have?
-    unlimited_validators_answer_v1: >
+    unlimited_validators_answer_v2: >
       Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network.
-      However, a committee of 21 validators is responsible for creating blocks.
+      However, a committee of 51 validators is responsible for creating blocks.
       It's important to note that the committee members are not fixed and they change over time.
     min_and_max_stake: What are the minimum and maximum amounts I can stake?
     min_and_max_stake_answer_v2: >
@@ -259,9 +259,9 @@ dict:
       Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
       reducing storage costs and simplifying the smart contracts.
     how_pactus_works: How does Pactus blockchain work?
-    how_pactus_works_answer_v1: >
+    how_pactus_works_answer_v2: >
       Pactus operates with a committee of validators who are responsible for creating new blocks.
-      The committee consists of 21 validators, however, the members of the committee change randomly over time.
+      The committee consists of 51 validators, however, the members of the committee change randomly over time.
       Every 10 seconds, a validator in the committee known as the proposer collects all the valid transactions, adds them into a block,
       and shares it with other validators in the committee.
       If more than ⅔ of the stakeholders in the committee attest to the proposed block by signing it, the block gets committed and

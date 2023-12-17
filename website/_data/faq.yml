@@ -29,6 +29,9 @@
     - id: validators
       ver: v1
 
+    - id: unlimited_validators
+      ver: v2
+
     - id: min_and_max_stake
       ver: v2
 
@@ -48,7 +51,7 @@
 - title: consensus
   items:
     - id: how_pactus_works
-      ver: v1
+      ver: v2
       img: pactus_validator_pool.png
 
     - id: how_enter_committee
