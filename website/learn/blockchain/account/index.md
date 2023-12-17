@@ -24,13 +24,8 @@ The account structure is 12 bytes long and consists the following fields:
 
 ## Treasury Account
 
-The Treasury account is a special account that is defined at the genesis time.
-The Treasury account holds the total supply of Pactus coins, which is fixed at 21 million coins,
-and each coin is divided into 1 billion units.
-
-In each block, one coin from the treasury account is transferred to the proposer account
-as [block reward]({{ site.baseurl }}/learn/blockchain/incentive).
-
-This block reward serves as an incentive for validators to propose and validate new blocks on the blockchain.
-As a result, the total number of Pactus coins in circulation increases gradually over time as new blocks
-are added to the blockchain.
+The Treasury account is a special account in the Pactus blockchain that holds 21 million coins at the genesis time.
+The treasury address is defined as: `000000000000000000000000000000000000000000`.
+The [address type]({{ site.baseurl }}/learn/blockchain/address/#address-type) is 0, and therefore,
+it doesn't have any key pair associated with it.
+Every time a block is created, one coin from the Treasury account transfers to the proposer account as a block reward.
