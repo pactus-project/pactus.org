@@ -23,7 +23,7 @@ This comparison will help to understand how the incentive model works in Pactus.
 | ------------------------------------------------ | -------------------------------------------- |
 | Consensus engine is Proof of Stake               | Consensus engine is Proof of Work            |
 | _Exactly_ every 10 seconds one block is _minted_ | Around every 10 minutes one block is _mined_ |
-| Total supply is 21,000,000 coin                  | Total supply is 21,000,000 coin              |
+| Total supply is 42,000,000 coin                  | Total supply is 21,000,000 coin              |
 | Always one coin per block                        | Initial block reward is 50 coin              |
 | No halving                                       | Halving happens every 4 years                |
 
