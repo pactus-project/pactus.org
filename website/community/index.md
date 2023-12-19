@@ -32,4 +32,10 @@ title: dict.community.title
       {% t dict.community.linkedin %}
     </a>
   </li>
+  <li>
+    <a href="https://bitcointalk.org/index.php?topic=5478226">
+      <img alt="Discord" src="{{ site.url }}/assets/images/social_bitcoin_talk.svg" width="32">
+      {% t dict.community.bitcoin_talk %}
+    </a>
+  </li>
 </ul>
