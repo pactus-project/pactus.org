@@ -292,8 +292,8 @@ dict:
       This eliminates the need for additional resources and simplifies node management.
     staking_limit: Why is there a limit for maximum stake?
     staking_limit_answer: >
-      [version: 1] The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power,
-      which could potentially lead them to control the committee.
+      [version: 1] The limit for the maximum stake per validator enhances decentralization and
+      prevents validators from gaining too much power, which could potentially lead them to control the committee.
       The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
 
   guide:

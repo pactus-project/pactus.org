@@ -58,7 +58,6 @@ This command creates your wallet and setup the working working directory at `c:\
 {% t dict.guide.wallet_seed_warning %}
 </div>
 
-
 ## Running the Node
 
 Now you can start the node and sync with the network. Run the following command in the Terminal:

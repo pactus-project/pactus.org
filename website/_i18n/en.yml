@@ -172,7 +172,8 @@ dict:
       They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
     validators_rewarded: How do validators get rewarded?
     validators_rewarded_answer: >
-      [version: 2] Once a validator proposes a valid block and it is accepted by the network, the validator receives one coin as a block reward.
+      [version: 2] Once a validator proposes a valid block and it is accepted by the network,
+      the validator receives one coin as a block reward.
       The reward is an incentive given to validators for their contribution to the network.
     flat_reward: How much is the block reward in Pactus?
     flat_reward_answer: >
@@ -221,14 +222,16 @@ dict:
       can be changed through a agreement upon all validators.
     fee_min_max: What is the minimum and maximum fee?
     fee_min_max_answer: >
-      [version: 1] These parameters are designed to provide greater control over the fee structure and ensure that fees remain within a certain range.
+      [version: 1] These parameters are designed to provide greater control over the fee structure and
+      ensure that fees remain within a certain range.
       If the calculated fee for a transaction falls below the minimum fee, the minimum fee is used instead.
       Similarly, if the calculated fee exceeds the maximum fee, the maximum fee is used instead.
       This helps prevent users from overpaying or underpaying for transactions and provides greater predictability and fairness
       in the fee structure.
     why_percentage_fee: Why was a percentage-based fee model chosen for Pactus?
     why_percentage_fee_answer: >
-      [version: 1] The percentage-based fee model was chosen for Pactus because it provides a more equitable and predictable fee structure for users,
+      [version: 1] The percentage-based fee model was chosen for Pactus because it provides a more equitable and
+      predictable fee structure for users,
       as fees are proportional to the transferred amount.
       It also allows for greater flexibility in adjusting the fee structure to better align with the needs of the blockchain and its users,
       as the percentage, minimum fee, and maximum fee parameters can be changed through a consensus mechanism agreed upon by all validators.
@@ -280,7 +283,8 @@ dict:
       This ensures that there will be no fork in the network.
     multiple_committee_entry: Can multiple validators enter the committee at once?
     multiple_committee_entry_answer: >
-      [version: 2] The process of sortition in Pactus is random, so it's possible for more than one validator to enter the committee at once,
+      [version: 2] The process of sortition in Pactus is random, so it's possible for more than
+      one validator to enter the committee at once,
       or no validator at all. However, on average, one validator should join the committee at each block.
     proposer_selection: How are block proposers selected in the committee?
     proposer_selection_answer: >
@@ -313,8 +317,8 @@ dict:
       This eliminates the need for additional resources and simplifies node management.
     staking_limit: Why is there a limit for maximum stake?
     staking_limit_answer: >
-      [version: 1] The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power,
-      which could potentially lead them to control the committee.
+      [version: 1] The limit for the maximum stake per validator enhances decentralization and
+      prevents validators from gaining too much power, which could potentially lead them to control the committee.
       The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
     genesis_allocation: How are Genesis Coins allocated in Pactus?
     genesis_allocation_answer: >
