@@ -149,100 +149,100 @@ dict:
       This FAQ (Frequently Asked Questions) page aims to provide helpful information and guidance on
       common questions and concerns related to Pactus.
     pactus_meaning: What does "Pactus" mean?
-    pactus_meaning_answer_v1: >
-      The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact".
+    pactus_meaning_answer: >
+      [version: 1] The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact".
       In English, the term "Pact" is derived from the Latin word "Pactus".
     pactus_vs_bitcoin: How is Pactus different from Bitcoin?
-    pactus_vs_bitcoin_answer_v1: >
-      Pactus and Bitcoin are two different types of blockchain networks.
+    pactus_vs_bitcoin_answer: >
+      [version: 1] Pactus and Bitcoin are two different types of blockchain networks.
       While Bitcoin uses a process called "Proof of Work" to secure its network, Pactus uses a different method called "Proof of Stake".
       This means that instead of mining, validators are responsible for voting on incoming blocks and
       must hold a certain amount of the network's coin, known as "stake", as a security deposit to prevent malicious behavior.
     pactus_vs_ethereum: How is Pactus different from Ethereum?
-    pactus_vs_ethereum_answer_v2: >
-      Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
+    pactus_vs_ethereum_answer: >
+      [version: 2] Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
       Running a validator on Ethereum can be challenging and requires 32 Ethereum coins to stake.
       In contrast, Pactus is designed to be more accessible to normal users.
       There is no minimum stake requirement, and you can run the Pactus node on personal Computers with basic hardware.
       This approach reflects our commitment to promoting decentralization and making blockchain technology accessible to a wider audience.
     validators: What are validators?
-    validators_answer_v1: >
-      Validators on Pactus are responsible for processing transactions and creating blocks and, by doing so,
+    validators_answer: >
+      [version: 1] Validators on Pactus are responsible for processing transactions and creating blocks and, by doing so,
       helping to secure the network and keep it decentralized.
       They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
     validators_rewarded: How do validators get rewarded?
-    validators_rewarded_answer_v2: >
-      Once a validator proposes a valid block and it is accepted by the network, the validator receives one coin as a block reward.
+    validators_rewarded_answer: >
+      [version: 2] Once a validator proposes a valid block and it is accepted by the network, the validator receives one coin as a block reward.
       The reward is an incentive given to validators for their contribution to the network.
     flat_reward: How much is the block reward in Pactus?
-    flat_reward_answer_v1: >
-      Block reward in Pactus is fixed, and it is always one coin per block.
+    flat_reward_answer: >
+      [version: 1] Block reward in Pactus is fixed, and it is always one coin per block.
       This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
     unlimited_validators: How many validators does pactus have?
-    unlimited_validators_answer_v2: >
-      Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network.
+    unlimited_validators_answer: >
+      [version: 2] Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network.
       However, a committee of 51 validators is responsible for creating blocks.
       It's important to note that the committee members are not fixed and they change over time.
     min_and_max_stake: What are the minimum and maximum amounts I can stake?
-    min_and_max_stake_answer_v2: >
-      In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 1000 coins.
+    min_and_max_stake_answer: >
+      [version: 2] In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 1000 coins.
       If you want to stake more than 1000 coins, you can run a new validator.
       Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
     total_supply: What is the total supply of Pactus coins?
-    total_supply_answer_v2: >
-      Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units.
+    total_supply_answer: >
+      [version: 2] Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units.
       $$ 1 \  PAC = 10^9 \  SatoshiPAC $$
     unique_blockchain: Is Pactus a copy of any other blockchain?
-    unique_blockchain_answer_v1: >
-      No, Pactus is not a copy or a derivative of any other blockchain.
+    unique_blockchain_answer: >
+      [version: 1] No, Pactus is not a copy or a derivative of any other blockchain.
       It is a new and unique blockchain protocol that has been designed from scratch.
       The consensus mechanism used in Pactus is unique and specifically created to solve the scalability issue of
       validators in the Proof of Stake blockchains.
     treasury_account: What is the Treasury account?
-    treasury_account_answer_v1: >
-      The Treasury account is a special account in Pactus blockchain that holds 21 million coins at the genesis time.
+    treasury_account_answer: >
+      [version: 1] The Treasury account is a special account in Pactus blockchain that holds 21 million coins at the genesis time.
       It has no key pair associated with it, meaning it cannot be accessed or controlled by anyone.
       Every time a block is created, one coin from the Treasury account transfers to the proposer account as a block reward.
     without_ico: Does Pactus have an ICO?
-    without_ico_answer_v1: >
-      No, Pactus does not have an ICO (Initial Coin Offering) and there are no predefined or privileged accounts in pactus.
+    without_ico_answer: >
+      [version: 1] No, Pactus does not have an ICO (Initial Coin Offering) and there are no predefined or privileged accounts in pactus.
       The Pactus blockchain starts from zero and all coins are minted through the consensus mechanism.
       This ensures that the distribution of coins is fair and there is no centralization of wealth.
     no_pre_sales: Where can I buy Pactus coins?
-    no_pre_sales_answer_v1: >
-      Pactus does not have any pre-sales coins.
+    no_pre_sales_answer: >
+      [version: 1] Pactus does not have any pre-sales coins.
       The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation.
       By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
     fee_model: How are transaction fees calculated in Pactus?
-    fee_model_answer_v1: >
-      Transaction fees in Pactus are calculated using a percentage-based fee model.
+    fee_model_answer: >
+      [version: 1] Transaction fees in Pactus are calculated using a percentage-based fee model.
       This means that the fee is a percentage of the transferred amount, with a minimum and maximum fee.
       The percentage, minimum fee, and maximum fee parameters are part of the blockchain parameters and
       can be changed through a agreement upon all validators.
     fee_min_max: What is the minimum and maximum fee?
-    fee_min_max_answer_v1: >
-      These parameters are designed to provide greater control over the fee structure and ensure that fees remain within a certain range.
+    fee_min_max_answer: >
+      [version: 1] These parameters are designed to provide greater control over the fee structure and ensure that fees remain within a certain range.
       If the calculated fee for a transaction falls below the minimum fee, the minimum fee is used instead.
       Similarly, if the calculated fee exceeds the maximum fee, the maximum fee is used instead.
       This helps prevent users from overpaying or underpaying for transactions and provides greater predictability and fairness
       in the fee structure.
     why_percentage_fee: Why was a percentage-based fee model chosen for Pactus?
-    why_percentage_fee_answer_v1: >
-      The percentage-based fee model was chosen for Pactus because it provides a more equitable and predictable fee structure for users,
+    why_percentage_fee_answer: >
+      [version: 1] The percentage-based fee model was chosen for Pactus because it provides a more equitable and predictable fee structure for users,
       as fees are proportional to the transferred amount.
       It also allows for greater flexibility in adjusting the fee structure to better align with the needs of the blockchain and its users,
       as the percentage, minimum fee, and maximum fee parameters can be changed through a consensus mechanism agreed upon by all validators.
     why_develop_pactus: Why was  Pactus developed?
-    why_develop_pactus_answer_v1: >
-      Pactus was developed with the goal of scaling blockchain without compromising security and decentralization.
+    why_develop_pactus_answer: >
+      [version: 1] Pactus was developed with the goal of scaling blockchain without compromising security and decentralization.
       To achieve this, Pactus utilizes a unique consensus mechanism that enables the creation of blocks in just 10 seconds.
       Moreover, Pactus was designed to be more accessible to all users, regardless of their technical expertise or financial resources.
       <br><br>
       Our commitment to decentralization and fairness is reflected in our decision to start the Pactus blockchain from zero and
       ensure that all coins are minted through the consensus mechanism, rather than through an ICO or privileged accounts.
     what_pactus_solved: What problems does Pactus solve that other blockchains don't?
-    what_pactus_solved_answer_v2: >
-      Pactus tries to solve several problems faced by other blockchain networks,
+    what_pactus_solved_answer: >
+      [version: 2] Pactus tries to solve several problems faced by other blockchain networks,
       including:
       <br><br>
       <b>Scalability:</b>
@@ -259,8 +259,8 @@ dict:
       Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
       reducing storage costs and simplifying the smart contracts.
     how_pactus_works: How does Pactus blockchain work?
-    how_pactus_works_answer_v2: >
-      Pactus operates with a committee of validators who are responsible for creating new blocks.
+    how_pactus_works_answer: >
+      [version: 2] Pactus operates with a committee of validators who are responsible for creating new blocks.
       The committee consists of 51 validators, however, the members of the committee change randomly over time.
       Every 10 seconds, a validator in the committee known as the proposer collects all the valid transactions, adds them into a block,
       and shares it with other validators in the committee.
@@ -268,57 +268,57 @@ dict:
       all the transactions inside the block will be executed.
       This process repeats every 10 seconds.
     how_enter_committee: How can a validator enter to the committee?
-    how_enter_committee_answer_v2: >
-      To enter the committee in Pactus, validators participate in a sortition process that occurs at each block.
+    how_enter_committee_answer: >
+      [version: 2] To enter the committee in Pactus, validators participate in a sortition process that occurs at each block.
       In this process, validators generate a provable random number between zero and the total staked coins,
       and if the number is less than their stake, they can send a transaction known as sortition transaction with the proof of sortition.
       Once the sortition transaction is included in a block, the validator replaces the oldest committee member.
     fork_possibility: Is it possible to have two valid blocks at the same time?
-    fork_possibility_answer_v1: >
-      It is not possible to have two valid blocks at the same time in Pactus blockchain.
+    fork_possibility_answer: >
+      [version: 1] It is not possible to have two valid blocks at the same time in Pactus blockchain.
       The consensus algorithm in Pactus prevents the possibility of having two block proposers at the same time.
       This ensures that there will be no fork in the network.
     multiple_committee_entry: Can multiple validators enter the committee at once?
-    multiple_committee_entry_answer_v2: >
-      The process of sortition in Pactus is random, so it's possible for more than one validator to enter the committee at once,
+    multiple_committee_entry_answer: >
+      [version: 2] The process of sortition in Pactus is random, so it's possible for more than one validator to enter the committee at once,
       or no validator at all. However, on average, one validator should join the committee at each block.
     proposer_selection: How are block proposers selected in the committee?
-    proposer_selection_answer_v1: >
-      The block proposer inside the committee is selected based on the time they entered the committee.
+    proposer_selection_answer: >
+      [version: 1] The block proposer inside the committee is selected based on the time they entered the committee.
       This means that the selection process follows a first-come, first-propose order.
     transfer_transaction: What is a Transfer transaction?
-    transfer_transaction_answer_v1: >
-      A transfer transaction is a type of transaction that allows users to transfer Pactus coin from one account to another.
+    transfer_transaction_answer: >
+      [version: 1] A transfer transaction is a type of transaction that allows users to transfer Pactus coin from one account to another.
     bond_transaction: What is a Bond transaction?
-    bond_transaction_answer_v2: >
-      A bond transaction is a type of transaction that allows users to become a validator by staking some coins.
+    bond_transaction_answer: >
+      [version: 2] A bond transaction is a type of transaction that allows users to become a validator by staking some coins.
       The amount of stake determines the voting power in the consensus.
     sortition_transaction: What is a Sortition transaction?
-    sortition_transaction_answer_v1: >
-      A sortition transaction is a type of transaction that allows validators to enter the committee.
+    sortition_transaction_answer: >
+      [version: 1] A sortition transaction is a type of transaction that allows validators to enter the committee.
     unbond_transaction: What is an Unbond transaction?
-    unbond_transaction_answer_v2: >
-      An unbond transaction is a type of transaction that allows users to unbond their validator.
+    unbond_transaction_answer: >
+      [version: 2] An unbond transaction is a type of transaction that allows users to unbond their validator.
       Once a validator is unbonded, they can no longer participate in the consensus mechanism.
     withdraw_transaction: What is a Withdraw transaction?
-    withdraw_transaction_answer_v1: >
-      A withdraw transaction is a type of transaction that allows a validator to withdraw their staked coins from the network.
+    withdraw_transaction_answer: >
+      [version: 1] A withdraw transaction is a type of transaction that allows a validator to withdraw their staked coins from the network.
     multiple_validators: Can I run multiple validators on one computer?
-    multiple_validators_answer_v1: >
-      The Pactus software allows you to run up to 32 validators on a single node.
+    multiple_validators_answer: >
+      [version: 1] The Pactus software allows you to run up to 32 validators on a single node.
       Running multiple validators may require slightly more memory, but it has no impact on storage,
       and has a negligible effect on CPU and networking usage.
       Running multiple validators on a single node enables users to distribute their stake across multiple validators,
       especially when they want to stake more than the maximum stake per validator.
       This eliminates the need for additional resources and simplifies node management.
     staking_limit: Why is there a limit for maximum stake?
-    staking_limit_answer_v1: >
-      The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power,
+    staking_limit_answer: >
+      [version: 1] The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power,
       which could potentially lead them to control the committee.
       The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
     genesis_allocation: How are Genesis Coins allocated in Pactus?
-    genesis_allocation_answer_v1: >
-      The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
+    genesis_allocation_answer: >
+      [version: 1] The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
       <br><br>
       <table>
         <caption>Genesis Coin Allocation for Pactus</caption>
@@ -358,8 +358,8 @@ dict:
         </tbody>
       </table>
     treasury_distribution: How are Treasury coins distributed?
-    treasury_distribution_answer_v1: >
-      Treasury coins are distributed as block rewards to the block proposers.
+    treasury_distribution_answer: >
+      [version: 1] Treasury coins are distributed as block rewards to the block proposers.
       Every 10 seconds, one coin from the Treasury account transfers to the block proposer account.
       This process is called "coin minting".
       As a result, the total number of Pactus coins in circulation gradually increases over time as new blocks are added to the blockchain.
@@ -377,3 +377,8 @@ dict:
     send_transactions_gui: How to send transactions in Graphic Mode?
     use_wallet_cli: How to use wallet in Command Line Mode?
     reduce_network: How to reduce the network usage?
+    wallet_seed_warning: >
+      <b>Wallet seed is important</b>
+      <br><br>
+      Keep your wallet seed phrase private and secure.
+      If someone else gains access to your seed phrase, they can control your wallet and funds.

@@ -138,89 +138,89 @@ dict:
     welcome: >
       该常见问题解答页面旨在提供有关Pactus的常见问题和关注点的有用信息和指导。
     pactus_meaning: Pactus是什么意思？
-    pactus_meaning_answer_v1: >
-      Pactus一词源自拉丁语，意为共同协议、契约或交易。
+    pactus_meaning_answer: >
+      [version: 1] Pactus一词源自拉丁语，意为共同协议、契约或交易。
       在英语中，Pact一词源自拉丁词汇Pactus。
     pactus_vs_bitcoin: Pactus与比特币有何不同？
-    pactus_vs_bitcoin_answer_v1: >
-      Pactus和比特币是两种不同类型的区块链网络。
+    pactus_vs_bitcoin_answer: >
+      [version: 1] Pactus和比特币是两种不同类型的区块链网络。
        比特币使用称为工作量证明的过程来保护其网络，而Pactus使用一种称为股权证明的不同方法。
       这意味着，验证者负责对进入的区块进行投票，必须持有网络的一定数量的代币，即押金，以防止恶意行为。
     pactus_vs_ethereum: Pactus与以太坊有何不同？
-    pactus_vs_ethereum_answer_v1: >
-      Pactus和以太坊都是股权证明的区块链，但它们在运行验证者方面存在差异。
+    pactus_vs_ethereum_answer: >
+      [version: 1] Pactus和以太坊都是股权证明的区块链，但它们在运行验证者方面存在差异。
       在以太坊上运行验证者可能具有挑战性，需要至少抵押32个以太币。
       相比之下，Pactus的设计更加普及化。
       没有最低押注要求，您可以在任何操作系统上使用基本硬件运行Pactus节点。
       这种方法反映了我们推广去中心化和让更多人使用区块链技术的承诺。
     validators: 什么是验证节点？
-    validators_answer_v1: >
-      在Pactus上，验证者负责处理交易和创建区块，通过这样的方式帮助保护网络并使其去中心化。
+    validators_answer: >
+      [version: 1] 在Pactus上，验证者负责处理交易和创建区块，通过这样的方式帮助保护网络并使其去中心化。
       他们使用自己的代币作为押金以确保网络的安全，并获得其贡献的奖励。
     validators_rewarded: 验证者如何获得奖励？
-    validators_rewarded_answer_v1: >
-      一旦验证者提出一个有效的区块，并被网络接受，验证者就会收到一个代币作为区块奖励。
+    validators_rewarded_answer: >
+      [version: 1] 一旦验证者提出一个有效的区块，并被网络接受，验证者就会收到一个代币作为区块奖励。
       奖励是给予验证者的激励，以表彰他们对网络安全和完整性的贡献，帮助网络平稳运行。
     flat_reward: Pactus中的区块奖励是多少？
-    flat_reward_answer_v1: >
-      Pactus的区块奖励是固定的，每个区块始终为1枚币。这种平坦奖励方案有助于确保简单性、公平性和更好的币分配。
+    flat_reward_answer: >
+      [version: 1] Pactus的区块奖励是固定的，每个区块始终为1枚币。这种平坦奖励方案有助于确保简单性、公平性和更好的币分配。
     unlimited_validators: Pactus有多少个验证者？
-    unlimited_validators_answer_v1: >
-      Pactus是一个真正的权益证明区块链，这意味着网络中的验证者数量没有限制。但是，由21个验证者组成的委员会负责创建区块。需要注意的是，委员会成员不固定，随时间变化。
+    unlimited_validators_answer: >
+      [version: 1] Pactus是一个真正的权益证明区块链，这意味着网络中的验证者数量没有限制。但是，由21个验证者组成的委员会负责创建区块。需要注意的是，委员会成员不固定，随时间变化。
     min_and_max_stake: 我可以质押的最小和最大金额是多少？
-    min_and_max_stake_answer_v1: >
-      在Pactus中，没有质押币的最低限制，但您可以质押的最大金额为1000个币。如果您想质押超过1000个币，可以运行新的验证者。运行多个验证者可以保持网络更加去中心化，并有助于维护其安全性和稳定性。
+    min_and_max_stake_answer: >
+      [version: 1] 在Pactus中，没有质押币的最低限制，但您可以质押的最大金额为1000个币。如果您想质押超过1000个币，可以运行新的验证者。运行多个验证者可以保持网络更加去中心化，并有助于维护其安全性和稳定性。
     total_supply: Pactus币的总供应量是多少？
-    total_supply_answer_v1: >
-      Pactus的总供应量为2100万枚币，每枚币被分为10亿个单位。每10秒钟会生成一枚新的币，每天会产生8640枚币，每年约300万枚币。所有币将在7年内产生。
+    total_supply_answer: >
+      [version: 1] Pactus的总供应量为2100万枚币，每枚币被分为10亿个单位。每10秒钟会生成一枚新的币，每天会产生8640枚币，每年约300万枚币。所有币将在7年内产生。
     unique_blockchain: Pactus是其他任何区块链的副本吗？
-    unique_blockchain_answer_v1: >
-      不，Pactus不是任何其他区块链的副本或衍生品。它是一种全新而独特的区块链协议，从头开始设计。Pactus使用的共识机制是独特的，专门为解决权益证明区块链中验证者的可扩展性问题而创建。
+    unique_blockchain_answer: >
+      [version: 1] 不，Pactus不是任何其他区块链的副本或衍生品。它是一种全新而独特的区块链协议，从头开始设计。Pactus使用的共识机制是独特的，专门为解决权益证明区块链中验证者的可扩展性问题而创建。
     treasury_account: 什么是国库账户？
-    treasury_account_answer_v1: >
-      国库账户是Pactus区块链中的一个特殊账户，持有总供应量2100万个币。它在创世时创建，没有与之关联的密钥对，这意味着任何人都无法访问或控制它。每当创建一个区块时，从国库账户中转移一枚币到提案者账户作为区块奖励。
+    treasury_account_answer: >
+      [version: 1] 国库账户是Pactus区块链中的一个特殊账户，持有总供应量2100万个币。它在创世时创建，没有与之关联的密钥对，这意味着任何人都无法访问或控制它。每当创建一个区块时，从国库账户中转移一枚币到提案者账户作为区块奖励。
     without_ico: Pactus是否有ICO？
-    without_ico_answer_v1: >
-      不，Pactus没有ICO（首次代币发行），也没有预定义或特权账户。
+    without_ico_answer: >
+      [version: 1] 不，Pactus没有ICO（首次代币发行），也没有预定义或特权账户。
       Pactus区块链从零开始，所有的币都是通过共识机制铸造的。
       这确保了币的分配是公平的，没有财富的集中化。
     no_pre_sales: Where can I buy Pactus coins?
-    no_pre_sales_answer_v1: >
-      Pactus does not have any pre-sales coins.
+    no_pre_sales_answer: >
+      [version: 1] Pactus does not have any pre-sales coins.
       The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation.
       By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
     fee_model: Pactus的交易费是如何计算的？
-    fee_model_answer_v1: >
-      Pactus的交易费是使用基于百分比的费用模型来计算的。
+    fee_model_answer: >
+      [version: 1] Pactus的交易费是使用基于百分比的费用模型来计算的。
       这意味着费用是转账金额的百分比，有最低和最高费用。
       百分比、最低费用和最高费用参数是区块链参数的一部分，
       可以通过所有验证者的共识机制进行更改。
     fee_min_max: 最低和最高费用是多少？
-    fee_min_max_answer_v1: >
-      这些参数旨在提供更大的控制力来管理费用结构，
+    fee_min_max_answer: >
+      [version: 1] 这些参数旨在提供更大的控制力来管理费用结构，
       并确保费用保持在一定范围内。
       如果交易的计算费用低于最低费用，则使用最低费用。
       同样，如果计算的费用超过了最高费用，则使用最高费用。
       这有助于防止用户为交易支付过高或过低的费用，
       并在费用结构上提供更大的可预测性和公平性。
     why_percentage_fee: 为什么选择基于百分比的费用模型？
-    why_percentage_fee_answer_v1: >
-      选择基于百分比的费用模型是因为它为用户提供了更加公平和可预测的费用结构，
+    why_percentage_fee_answer: >
+      [version: 1] 选择基于百分比的费用模型是因为它为用户提供了更加公平和可预测的费用结构，
       因为费用与转移金额成比例。
       它还允许更大的灵活性来调整费用结构，
       以更好地满足区块链及其用户的需求，
       因为百分比、最低费用和最高费用参数可以通过所有验证者同意的共识机制进行更改。
     why_develop_pactus: 为什么开发Pactus？
-    why_develop_pactus_answer_v1: >
-      Pactus的开发目标是在不影响安全性和去中心化的前提下扩展区块链规模。
+    why_develop_pactus_answer: >
+      [version: 1] Pactus的开发目标是在不影响安全性和去中心化的前提下扩展区块链规模。
       为了实现这一目标，Pactus采用了独特的共识机制，可以在10秒内创建区块。
       此外，Pactus旨在让所有用户更容易使用，无论他们的技术专业知识或财务资源如何。
       <br><br>
       我们致力于去中心化和公平，这反映在我们从零开始启动Pactus区块链，
       并确保所有币都是通过共识机制铸造的，而不是通过ICO或特权账户铸造。
     what_pactus_solved: Pactus解决了其他区块链无法解决的问题是什么？
-    what_pactus_solved_answer_v1: >
-      Pactus试图解决其他区块链网络面临的几个问题，包括可扩展性、可访问性、分配公平性和存储成本。
+    what_pactus_solved_answer: >
+      [version: 1] Pactus试图解决其他区块链网络面临的几个问题，包括可扩展性、可访问性、分配公平性和存储成本。
       <br><br>
       <b>可扩展性：</b>
       Pactus拥有一个独特的共识机制，专门设计用于解决可扩展性问题，
@@ -236,8 +236,8 @@ dict:
       Pactus通过允许用户分配专用存储文件提供了一种新颖的存储解决方案，
       从而降低存储成本并简化智能合约。
     how_pactus_works: Pactus区块链是如何工作的？
-    how_pactus_works_answer_v1: >
-      Pactus使用一个验证者委员会来创建新的区块。
+    how_pactus_works_answer: >
+      [version: 1] Pactus使用一个验证者委员会来创建新的区块。
       委员会由21个验证者组成，但委员会成员随时间随机变化。
       每10秒，委员会中的验证者（称为提案者）收集所有有效交易，将它们添加到一个区块中，
       并与委员会中的其他验证者分享。
@@ -245,54 +245,54 @@ dict:
       区块就会被提交，区块中的所有交易将得到执行。
       这个过程每10秒重复一次。
     how_enter_committee: 验证者如何进入委员会？
-    how_enter_committee_answer_v1: >
-      在Pactus中，为了进入委员会，验证者需要参与每个区块的彩票或抽签过程。
+    how_enter_committee_answer: >
+      [version: 1] 在Pactus中，为了进入委员会，验证者需要参与每个区块的彩票或抽签过程。
       在这个过程中，验证者生成一个可证明的随机数，介于0和总质押币之间，
       如果这个数字小于他们的质押量，则可以发送一个称为抽签交易的交易，并提供抽签证明。
       一旦抽签交易被包含在一个区块中，验证者将取代最老的委员会成员。
     fork_possibility: Pactus区块链是否可能同时出现两个有效区块？
-    fork_possibility_answer_v1: >
-      在Pactus区块链中，不可能同时出现两个有效区块。
+    fork_possibility_answer: >
+      [version: 1] 在Pactus区块链中，不可能同时出现两个有效区块。
       Pactus的共识算法防止了同时出现两个区块提议者的可能性。
       这确保了网络中不会出现分叉。
     multiple_committee_entry: 是否可以让多个验证者同时进入委员会？
-    multiple_committee_entry_answer_v1: >
-      Pactus中的抽签过程是随机的，因此有可能出现多个验证者同时进入委员会，或者根本没有验证者进入。
+    multiple_committee_entry_answer: >
+      [version: 1] Pactus中的抽签过程是随机的，因此有可能出现多个验证者同时进入委员会，或者根本没有验证者进入。
       然而，为了使抽签交易被视为有效并被包含在一个区块中，必须满足两个条件：
       它不能改变超过委员会总质押的1/3，不能移除尚未有机会提议区块的验证者。
     proposer_selection: 委员会内如何选择区块提议者？
-    proposer_selection_answer_v1: >
-      在委员会内部，区块提议者是根据他们进入委员会的时间进行选择的。
+    proposer_selection_answer: >
+      [version: 1] 在委员会内部，区块提议者是根据他们进入委员会的时间进行选择的。
       这意味着选择过程遵循先来先提出的顺序。
     transfer_transaction: 什么是转账交易？
-    transfer_transaction_answer_v1: >
-      转账交易是一种允许用户将Pactus币从一个账户转移到另一个账户的交易类型。
+    transfer_transaction_answer: >
+      [version: 1] 转账交易是一种允许用户将Pactus币从一个账户转移到另一个账户的交易类型。
     bond_transaction: 什么是绑定交易？
-    bond_transaction_answer_v1: >
-      绑定交易是一种交易类型，允许您通过抵押一些币来成为验证者。
+    bond_transaction_answer: >
+      [version: 1] 绑定交易是一种交易类型，允许您通过抵押一些币来成为验证者。
       当您发送绑定交易时，您的节点将成为验证者。
       抵押的数量确定您在共识中的权力。
     sortition_transaction: 什么是随机交易？
-    sortition_transaction_answer_v1: >
-      随机交易是一种交易类型，允许验证者进入委员会。
+    sortition_transaction_answer: >
+      [version: 1] 随机交易是一种交易类型，允许验证者进入委员会。
     unbond_transaction: 什么是解除绑定交易？
-    unbond_transaction_answer_v1: >
-      解除绑定交易是一种交易类型，允许您解除您的验证者身份。
+    unbond_transaction_answer: >
+      [version: 1] 解除绑定交易是一种交易类型，允许您解除您的验证者身份。
       当您发送解除绑定交易时，您将不能再发送随机或绑定交易。
     withdraw_transaction: 什么是提现交易？
-    withdraw_transaction_answer_v1: >
-      提现交易是一种交易类型，允许验证者从网络中提取他们抵押的币。
+    withdraw_transaction_answer: >
+      [version: 1] 提现交易是一种交易类型，允许验证者从网络中提取他们抵押的币。
     multiple_validators: Can I run multiple validators on one computer?
-    multiple_validators_answer_v1: >
-      The Pactus software allows you to run up to 32 validators on a single node.
+    multiple_validators_answer: >
+      [version: 1] The Pactus software allows you to run up to 32 validators on a single node.
       Running multiple validators may require slightly more memory, but it has no impact on storage,
       and has a negligible effect on CPU and networking usage.
       Running multiple validators on a single node enables users to distribute their stake across multiple validators,
       especially when they want to stake more than the maximum stake per validator.
       This eliminates the need for additional resources and simplifies node management.
     staking_limit: Why is there a limit for maximum stake?
-    staking_limit_answer_v1:
-      The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power,
+    staking_limit_answer: >
+      [version: 1] The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power,
       which could potentially lead them to control the committee.
       The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
 
@@ -308,3 +308,8 @@ dict:
     send_transactions_gui: 如何在图形模式下发送交易？
     use_wallet_cli: 如何在命令行模式下使用钱包？
     reduce_network: How to reduce the network usage?
+    wallet_seed_warning: >
+      <b>Wallet seed is important</b>
+      <br><br>
+      Keep your wallet seed phrase private and secure.
+      If someone else gains access to your seed phrase, they can control your wallet and funds.

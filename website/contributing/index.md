@@ -5,4 +5,4 @@ title: dict.contributing
 
 # {% t dict.contributing %}
 
-{% translate_with_version contributing/index.md 2 %}
+{% translate_with_version contributing/index.md %}

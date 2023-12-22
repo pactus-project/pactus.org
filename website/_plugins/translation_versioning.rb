@@ -3,14 +3,16 @@ module Jekyll
 
     def initialize(tag_name, input, tokens)
       super
-      @input = input.strip.split(' ')
+      @input = input.strip
     end
 
     def render(context)
-      file_name = @input[0]
-      latest_version = @input[1].to_i
+      file_name = @input
 
-      raise "latest_version is not set or zero" if latest_version <= 0
+      # latest_version is the same as version in english file
+      en_file = File.join(context.registers[:site].source, "_i18n", "en", file_name)
+      en_file_content = File.read(en_file)
+      latest_version = en_file_content.match(/version:\s+(\d+)/)&.captures&.first&.to_i
 
       language = context.registers[:site].config['lang']
       translation_file = File.join(context.registers[:site].source, "_i18n", language, file_name)
@@ -30,10 +32,7 @@ module Jekyll
       translated_content = context.registers[:site].liquid_renderer.file("(#{file_name})").parse(file_body).render!(context)
 
       if file_version < latest_version
-        outdated_message = Liquid::Template.parse("{% t dict.outdated_translation %}").render(context)
-        outdated_warning = "<div class='alert alert-warning' role='alert'>
-        <i class='fa-solid fa-triangle-exclamation'></i> <span>#{outdated_message}</span></div>"
-
+        outdated_warning = Liquid::Template.parse("{% outdated_alert %}").render(context)
         translated_content = outdated_warning + translated_content
       end
 

@@ -32,17 +32,7 @@ Open the Terminal and run the following command:
 
 {% tabs init-docker ltr %}
 
-{% tab init-docker linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```bash
-docker run -it --rm -v ~/pactus/testnet:/pactus pactus/pactus init -w /pactus --testnet
-```
-
-This command creates your wallet and setup the working working directory at `~/pactus/testnet`.
-
-{% endtab %}
-
-{% tab init-docker mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab init-docker linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
 docker run -it --rm -v ~/pactus/testnet:/pactus pactus/pactus init -w /pactus --testnet
@@ -64,16 +54,10 @@ This command creates your wallet and setup the working working directory at `c:\
 
 {% endtabs %}
 
-Make sure you write down your 12-word mnemonic on a piece of paper to recover your wallet in the future
-in case your computer is lost, damaged, or stolen.
+<div class="alert alert-warning">
+{% t dict.guide.wallet_seed_warning %}
+</div>
 
-The working directory contains:
-
-- Default wallet
-- Genesis file
-- Config file
-
-Feel free to take a look at these files.
 
 ## Running the Node
 
@@ -81,15 +65,7 @@ Now you can start the node and sync with the network. Run the following command 
 
 {% tabs start-docker ltr %}
 
-{% tab start-docker linux <i class="fa-brands fa-linux"></i> Linux%}
-
-```bash
-docker run -it -v ~/pactus/testnet:/pactus -p 8080:8080 -p 21777:21777 --name pactus-testnet pactus/pactus start -w /pactus
-```
-
-{% endtab %}
-
-{% tab start-docker mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab start-docker linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
 docker run -it -v ~/pactus/testnet:/pactus -p 8080:8080 -p 21777:21777 --name pactus-testnet pactus/pactus start -w /pactus
@@ -112,7 +88,7 @@ To run pactus-testnet in background just add a -d flag in the command.
 Hint: Remember to pass in your wallet passphrase as well with -p flag after /pactus.
 
 ```bash
-docker run -it -v ~/pactus/testnet:/pactus -p 8080:8080 -p 21777:21777 -d --name pactus-testnet pactus/pactus start -w /pactus -p {YOUR_PASSPHRASE}
+docker run -it -v ~/pactus/testnet:/pactus -p 8080:8080 -p 21777:21777/tcp -p 21777:21777/udp -d --name pactus-testnet pactus/pactus start -w /pactus -p {YOUR_PASSPHRASE}
 ```
 
 ```powershell
