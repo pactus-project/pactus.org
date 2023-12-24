@@ -17,7 +17,6 @@ plugins:
 languages: ["en", "ar", "zh"]
 
 exclude_from_localizations: ["assets", "404.html", "blog"]
-default_locale_in_subfolder: true
 
 markdown: kramdown
 
