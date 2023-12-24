@@ -1,5 +1,5 @@
 ---
-version: 3
+version: 4
 ---
 
 ## Preface
@@ -43,17 +43,7 @@ Open the Terminal and run the following command:
 
 {% tabs init-cli ltr %}
 
-{% tab init-cli linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```bash
-./pactus-daemon init -w ~/pactus --testnet
-```
-
-This command creates your wallet and setup the working working directory at `~/pactus`.
-
-{% endtab %}
-
-{% tab init-cli mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab init-cli linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
 ./pactus-daemon init -w ~/pactus --testnet
@@ -75,8 +65,9 @@ This command creates your wallet and setup the working working directory at `c:\
 
 {% endtabs %}
 
-Make sure you write down your 12-word mnemonic on a piece of paper to recover your wallet in the future
-in case your computer is lost, damaged, or stolen.
+<div class="alert alert-warning">
+{% t dict.guide.wallet_seed_warning %}
+</div>
 
 The working directory contains:
 
@@ -94,18 +85,7 @@ you can use the `--restore` option followed by your mnemonic:
 
 {% tabs init-cli-restore ltr %}
 
-{% tab init-cli-restore linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```bash
-./pactus-daemon init -w ~/pactus --testnet --restore "<your-mnemonic>"
-```
-
-Replace `<your-mnemonic>` with your previously noted mnemonic phrase.
-This command will restore your wallet in the `~/pactus` directory.
-
-{% endtab %}
-
-{% tab init-cli-restore mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab init-cli-restore linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
 ./pactus-daemon init -w ~/pactus --testnet --restore "<your-mnemonic>"
@@ -135,15 +115,7 @@ Now you can start the node and sync with the network. Run the following command 
 
 {% tabs start-cli ltr %}
 
-{% tab start-cli linux <i class="fa-brands fa-linux"></i> Linux%}
-
-```bash
-./pactus-daemon start -w ~/pactus
-```
-
-{% endtab %}
-
-{% tab start-cli mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab start-cli linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
 ./pactus-daemon start -w ~/pactus

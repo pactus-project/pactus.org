@@ -61,8 +61,9 @@ in case your computer is lost, damaged, or stolen.
 
 ![Wallet seed]({{ site.url }}/user-guides/run-pactus-gui/wallet_seed.png)
 
-**Warning:** Keep your wallet seed phrase private and secure.
-If someone else gains access to your seed phrase, they can control your wallet and funds.
+<div class="alert alert-warning">
+{% t dict.guide.wallet_seed_warning %}
+</div>
 
 ### Seed Confirmation
 

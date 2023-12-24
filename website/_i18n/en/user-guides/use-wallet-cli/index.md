@@ -1,5 +1,5 @@
 ---
-version: 4
+version: 5
 ---
 
 ## Preface
@@ -27,17 +27,7 @@ First, you need to create a wallet. To create a new wallet, run the following co
 
 {% tabs create_wallet ltr %}
 
-{% tab create_wallet linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet create
-```
-
-This command creates a new wallet and stores it in the `~/pactus/wallets/default_wallet`.
-
-{% endtab %}
-
-{% tab create_wallet mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab create_wallet linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet create
@@ -67,15 +57,7 @@ You can change the wallet password by running this command:
 
 {% tabs wallet_password ltr %}
 
-{% tab wallet_password linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet password
-```
-
-{% endtab %}
-
-{% tab wallet_password mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab wallet_password linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet password
@@ -101,15 +83,7 @@ You can obtain the wallet seed by running this command:
 
 {% tabs wallet_seed ltr %}
 
-{% tab wallet_seed linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet seed
-```
-
-{% endtab %}
-
-{% tab wallet_seed mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab wallet_seed linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet seed
@@ -136,15 +110,7 @@ If you lose your wallet, you can recover it by running this command:
 
 {% tabs wallet_recover ltr %}
 
-{% tab wallet_recover linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/recovered_wallet recover
-```
-
-{% endtab %}
-
-{% tab wallet_recover mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab wallet_recover linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/recovered_wallet recover
@@ -176,15 +142,7 @@ You can create a new address by running this command:
 
 {% tabs address_new ltr %}
 
-{% tab address_new linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address new
-```
-
-{% endtab %}
-
-{% tab address_new mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab address_new linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet address new
@@ -210,15 +168,7 @@ To view the list of wallet addresses, use this command:
 
 {% tabs address_all ltr %}
 
-{% tab address_all linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address all
-```
-
-{% endtab %}
-
-{% tab address_all mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab address_all linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet address all
@@ -242,15 +192,7 @@ To obtain the public key for a specific address, run this command:
 
 {% tabs address_pub ltr %}
 
-{% tab address_pub linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address pub <ADDRESS>
-```
-
-{% endtab %}
-
-{% tab address_pub mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab address_pub linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet address pub <ADDRESS>
@@ -276,15 +218,7 @@ You can get the private key of your address by this command:
 
 {% tabs address_prv ltr %}
 
-{% tab address_prv linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address priv <ADDRESS>
-```
-
-{% endtab %}
-
-{% tab address_prv mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab address_prv linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet address priv <ADDRESS>
@@ -312,15 +246,7 @@ You can get the balance of your address by this command:
 
 {% tabs address_bal ltr %}
 
-{% tab address_bal linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address balance <ADDRESS>
-```
-
-{% endtab %}
-
-{% tab address_bal mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab address_bal linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet address balance <ADDRESS>
@@ -356,15 +282,7 @@ To create, sign, and broadcast a
 
 {% tabs tx_transfer ltr %}
 
-{% tab tx_transfer linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet tx transfer <FROM> <TO> <AMOUNT>
-```
-
-{% endtab %}
-
-{% tab tx_transfer mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab tx_transfer linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx transfer <FROM> <TO> <AMOUNT>
@@ -392,15 +310,7 @@ To create, sign, and broadcast a
 
 {% tabs tx_bond ltr %}
 
-{% tab tx_bond linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond <FROM> <TO> <AMOUNT>
-```
-
-{% endtab %}
-
-{% tab tx_bond mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab tx_bond linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond <FROM> <TO> <AMOUNT>
@@ -426,18 +336,10 @@ you need to provide the public key to create it:
 
 {% tabs tx_bond_pub ltr %}
 
-{% tab tx_bond_pub linux <i class="fa-brands fa-linux"></i> Linux %}
+{% tab tx_bond_pub linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
-```
-
-{% endtab %}
-
-{% tab tx_bond_pub mac <i class="fa-brands fa-apple"></i> macOS %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -462,15 +364,7 @@ To create, sign, and broadcast a
 
 {% tabs tx_unbond ltr %}
 
-{% tab tx_unbond linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet tx unbond <ADDRESS>
-```
-
-{% endtab %}
-
-{% tab tx_unbond mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab tx_unbond linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx unbond <ADDRESS>
@@ -497,15 +391,7 @@ To create, sign, and broadcast a
 
 {% tabs tx_withdraw ltr %}
 
-{% tab tx_withdraw linux <i class="fa-brands fa-linux"></i> Linux %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet tx unbond <FROM> <TO> <AMOUNT>
-```
-
-{% endtab %}
-
-{% tab tx_withdraw mac <i class="fa-brands fa-apple"></i> macOS %}
+{% tab tx_withdraw linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet --path ~/pactus/wallets/default_wallet tx unbond <FROM> <TO> <AMOUNT>

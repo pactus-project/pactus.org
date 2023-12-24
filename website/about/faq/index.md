@@ -42,12 +42,19 @@ title: dict.faq.title
       </div>
       {% for item in group.items %}
       {% assign q_key = "dict.faq." | append: item.id %}
-      {% assign a_key = "dict.faq." | append: item.id | append: "_answer_"| append: item.ver %}
       <h3 id="{{ item.id }}">
         {% t q_key %}
       </h3>
       <div class="answer">
-        {% t a_key %}
+        {% assign a_key = item.id | append: "_answer" %}
+        {% assign en = site.translations["en"]["dict"]["faq"][a_key] %}
+        {% assign tr = site.translations[site.lang]["dict"]["faq"][a_key] %}
+        {% assign en_version = en | split: '[version:' | last | split: ']' | first | strip | to_integer %}
+        {% assign tr_version = tr | split: '[version:' | last | split: ']' | first | strip | to_integer %}
+        {% if en_version > tr_version %}
+          {% outdated_alert %}
+        {% endif %}
+        {{ tr | split: ']' | last }}
         {% if item.img != nil %}
           <img src="{{ site.url }}/assets/images/{{ item.img }}" alt="{% t q_key %}" />
         {% endif %}
