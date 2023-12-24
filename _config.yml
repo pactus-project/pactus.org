@@ -13,10 +13,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-
 languages: ["en", "ar", "zh"]
 
-exclude_from_localizations: ["assets", "404.html", "blog"]
+exclude_from_localizations: ["assets", "404.html", "_posts", "blog"]
 
 markdown: kramdown
 
