@@ -314,6 +314,54 @@ dict:
       [version: 1] The limit for the maximum stake per validator enhances decentralization and
       prevents validators from gaining too much power, which could potentially lead them to control the committee.
       The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
+    genesis_allocation: How are Genesis Coins allocated in Pactus?
+    genesis_allocation_answer: >
+      [version: 1] The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
+      <br><br>
+      <table>
+        <caption>Genesis Coin Allocation for Pactus</caption>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Coin Allocation</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Treasury</td>
+                <td>21 Million coins</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Foundation</td>
+                <td>8.4 Million coins</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>VC Allocation</td>
+                <td>6.3 Million coins</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>Team and Operations</td>
+                <td>4.2 Million coins</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Community</td>
+                <td>2.1 Million coins</td>
+                <td>5%</td>
+            </tr>
+        </tbody>
+      </table>
+    treasury_distribution: How are Treasury coins distributed?
+    treasury_distribution_answer: >
+      [version: 1] Treasury coins are distributed as block rewards to the block proposers.
+      Every 10 seconds, one coin from the Treasury account transfers to the block proposer account.
+      This process is called "coin minting".
+      As a result, the total number of Pactus coins in circulation gradually increases over time as new blocks are added to the blockchain.
+      Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually by the Treasury account.
 
   guide:
     title: دلائل المستخدم

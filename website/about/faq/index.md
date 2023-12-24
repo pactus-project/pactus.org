@@ -49,12 +49,12 @@ title: dict.faq.title
         {% assign a_key = item.id | append: "_answer" %}
         {% assign en = site.translations["en"]["dict"]["faq"][a_key] %}
         {% assign tr = site.translations[site.lang]["dict"]["faq"][a_key] %}
-        {% assign en_version = en | split: '[version:' | last | split: ']' | first %}
-        {% assign tr_version = tr | split: '[version:' | last | split: ']' | first %}
+        {% assign en_version = en | split: '[version:' | last | split: ']' | first | strip | to_integer %}
+        {% assign tr_version = tr | split: '[version:' | last | split: ']' | first | strip | to_integer %}
         {% if en_version > tr_version %}
           {% outdated_alert %}
         {% endif %}
-        {{ tr | regex_replace: '\[version: \d+\]', '' | strip }}
+        {{ tr | split: ']' | last }}
         {% if item.img != nil %}
           <img src="{{ site.url }}/assets/images/{{ item.img }}" alt="{% t q_key %}" />
         {% endif %}
