@@ -35,9 +35,9 @@ title: dict.download.title
 | [pactus-gui_0.18.1_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.18.1/pactus-gui_0.18.1_windows_amd64.zip)                         | Archive       | Windows     | 64-bit   |
 | [**pactus-gui_0.18.1_windows_amd64_installer.exe**](https://github.com/pactus-project/pactus/releases/download/v0.18.1/pactus-gui_0.18.1_windows_amd64_installer.exe) | **Installer** | **Windows** | 64-bit   |
 
-<div class="alert alert-warning">
+{% alert_start warning %}
   {% t dict.download.untrusted_app %}
-</div>
+{% alert_end %}
 
 {% t dict.download.gui_after_download %} [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/run-pactus-gui)
 
@@ -62,6 +62,15 @@ title: dict.download.title
 | [pactus-cli_0.18.1_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.18.1/pactus-cli_0.18.1_windows_amd64.zip)       | Windows | 64-bit   |
 
 {% t dict.download.cli_after_download %} [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/run-pactus-cli)
+
+<h3>Downloader script</h3>
+
+For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like) (e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows), there is a downloader script available. This script can download the archived file, verify it, and extract it for you. To use it, simply run the following command in your terminal:
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus_downloader.sh | sh
+```
+
 
 ---
 

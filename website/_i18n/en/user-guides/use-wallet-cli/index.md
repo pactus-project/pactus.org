@@ -1,5 +1,5 @@
 ---
-version: 5
+version: 7
 ---
 
 ## Preface
@@ -13,6 +13,7 @@ This tutorial will guide you step-by-step on how to use the wallet application.
 
 To get started, download and extract the Pactus CLI file from
 [here]({{ site.baseurl }}/download/#cli).
+Once you have downloaded and extracted the Pactus CLI file, you can proceed to the next step.
 
 ---
 
@@ -21,35 +22,66 @@ To get started, download and extract the Pactus CLI file from
 In this section, we will explore various wallet commands that help you create, manage,
 and recover your Pactus wallet.
 
+{% alert_start info %}
+  <b>Wallet Path</b>
+  <br><br>
+  By default, the node's wallet is stored at `~/pactus/wallets/default_wallet` on Unix-like systems.
+  On Windows, you can find it at `C:\Users\<USER_NAME>\pactus\wallets\default_wallet`.
+  <br><br>
+  If you wish to select or specify a different wallet, use the `--path` option.
+{% alert_end %}
+
 ### Create a Wallet
 
-First, you need to create a wallet. To create a new wallet, run the following command:
+To create a new wallet, run the following command:
 
 {% tabs create_wallet ltr %}
 
 {% tab create_wallet linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet create
+./pactus-wallet --path <PATH-To-NEW-WALLET> create
 ```
-
-This command creates a new wallet and stores it in the `~/pactus/wallets/default_wallet`.
 
 {% endtab %}
 
 {% tab create_wallet windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet create --testnet
+pactus-wallet.exe --path <PATH-To-NEW-WALLET> create --testnet
 ```
-
-This command creates a new wallet and stores it in the `c:\pactus\wallets\default_wallet`.
 
 {% endtab %}
 
 {% endtabs %}
 
-Don't forget to back up your wallet seed, as it allows you to recover your wallet if you lose it.
+Replace `<PATH-To-NEW-WALLET>` with the file path where you want to create the wallet.
+
+### Recover Wallet
+
+If you lose your wallet or forget your password, you can recover it by running this command:
+
+{% tabs wallet_recover ltr %}
+
+{% tab wallet_recover linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
+
+```text
+./pactus-wallet --path <PATH-To-NEW-WALLET> recover
+```
+
+{% endtab %}
+
+{% tab wallet_recover windows <i class="fa-brands fa-windows"></i> Windows %}
+
+```text
+pactus-wallet.exe --path <PATH-To-NEW-WALLET> recover
+```
+
+{% endtab %}
+
+{% endtabs %}
+
+Replace `<PATH-To-NEW-WALLET>` with the file path where you want to restore the wallet.
 
 ### Wallet Password
 
@@ -60,7 +92,7 @@ You can change the wallet password by running this command:
 {% tab wallet_password linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet password
+./pactus-wallet password
 ```
 
 {% endtab %}
@@ -68,14 +100,14 @@ You can change the wallet password by running this command:
 {% tab wallet_password windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet password
+pactus-wallet.exe password
 ```
 
 {% endtab %}
 
 {% endtabs %}
 
-If you forget your password, you can still recover your wallet using the wallet seed.
+This command changes the password for the `default_wallet` if there is one, or sets a new password.
 
 ### Wallet Seed
 
@@ -86,7 +118,7 @@ You can obtain the wallet seed by running this command:
 {% tab wallet_seed linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet seed
+./pactus-wallet seed
 ```
 
 {% endtab %}
@@ -94,7 +126,7 @@ You can obtain the wallet seed by running this command:
 {% tab wallet_seed windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet seed
+pactus-wallet.exe seed
 ```
 
 {% endtab %}
@@ -103,32 +135,6 @@ pactus-wallet.exe c:\pactus\wallets\default_wallet seed
 
 The wallet seed is encrypted within your wallet, and
 you'll need to enter the wallet password to access it.
-
-### Recovering Wallet
-
-If you lose your wallet, you can recover it by running this command:
-
-{% tabs wallet_recover ltr %}
-
-{% tab wallet_recover linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
-
-```text
-./pactus-wallet --path ~/pactus/wallets/recovered_wallet recover
-```
-
-{% endtab %}
-
-{% tab wallet_recover windows <i class="fa-brands fa-windows"></i> Windows %}
-
-```text
-pactus-wallet.exe c:\pactus\wallets\recovered_wallet recover
-```
-
-{% endtab %}
-
-{% endtabs %}
-
-Please note that if you lose your seed, there is no way to recover your wallet.
 
 ---
 
@@ -145,7 +151,7 @@ You can create a new address by running this command:
 {% tab address_new linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address new
+./pactus-wallet address new
 ```
 
 {% endtab %}
@@ -153,7 +159,7 @@ You can create a new address by running this command:
 {% tab address_new windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet address new
+pactus-wallet.exe address new
 ```
 
 {% endtab %}
@@ -171,7 +177,7 @@ To view the list of wallet addresses, use this command:
 {% tab address_all linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address all
+./pactus-wallet address all
 ```
 
 {% endtab %}
@@ -179,7 +185,7 @@ To view the list of wallet addresses, use this command:
 {% tab address_all windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet address all
+pactus-wallet.exe address all
 ```
 
 {% endtab %}
@@ -195,7 +201,7 @@ To obtain the public key for a specific address, run this command:
 {% tab address_pub linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address pub <ADDRESS>
+./pactus-wallet address pub <ADDRESS>
 ```
 
 {% endtab %}
@@ -203,7 +209,7 @@ To obtain the public key for a specific address, run this command:
 {% tab address_pub windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet address pub <ADDRESS>
+pactus-wallet.exe address pub <ADDRESS>
 ```
 
 {% endtab %}
@@ -221,7 +227,7 @@ You can get the private key of your address by this command:
 {% tab address_prv linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address priv <ADDRESS>
+./pactus-wallet address priv <ADDRESS>
 ```
 
 {% endtab %}
@@ -229,7 +235,7 @@ You can get the private key of your address by this command:
 {% tab address_prv windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet address priv <ADDRESS>
+pactus-wallet.exe address priv <ADDRESS>
 ```
 
 {% endtab %}
@@ -249,7 +255,7 @@ You can get the balance of your address by this command:
 {% tab address_bal linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet address balance <ADDRESS>
+./pactus-wallet address balance <ADDRESS>
 ```
 
 {% endtab %}
@@ -257,7 +263,7 @@ You can get the balance of your address by this command:
 {% tab address_bal windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet address balance <ADDRESS>
+pactus-wallet.exe address balance <ADDRESS>
 ```
 
 {% endtab %}
@@ -285,7 +291,7 @@ To create, sign, and broadcast a
 {% tab tx_transfer linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet tx transfer <FROM> <TO> <AMOUNT>
+./pactus-wallet tx transfer <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -293,7 +299,7 @@ To create, sign, and broadcast a
 {% tab tx_transfer windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet tx transfer <FROM> <TO> <AMOUNT>
+pactus-wallet.exe tx transfer <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -313,7 +319,7 @@ To create, sign, and broadcast a
 {% tab tx_bond linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond <FROM> <TO> <AMOUNT>
+./pactus-wallet tx bond <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -321,7 +327,7 @@ To create, sign, and broadcast a
 {% tab tx_bond windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet tx bond <FROM> <TO> <AMOUNT>
+pactus-wallet.exe tx bond <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -339,7 +345,7 @@ you need to provide the public key to create it:
 {% tab tx_bond_pub linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet tx bond --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
+./pactus-wallet tx bond --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -347,7 +353,7 @@ you need to provide the public key to create it:
 {% tab tx_bond_pub windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
+pactus-wallet.exe --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -367,7 +373,7 @@ To create, sign, and broadcast a
 {% tab tx_unbond linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet tx unbond <ADDRESS>
+./pactus-wallet tx unbond <ADDRESS>
 ```
 
 {% endtab %}
@@ -375,7 +381,7 @@ To create, sign, and broadcast a
 {% tab tx_unbond windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet tx unbond <ADDRESS>
+pactus-wallet.exe tx unbond <ADDRESS>
 ```
 
 {% endtab %}
@@ -394,7 +400,7 @@ To create, sign, and broadcast a
 {% tab tx_withdraw linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet --path ~/pactus/wallets/default_wallet tx unbond <FROM> <TO> <AMOUNT>
+./pactus-wallet tx unbond <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -402,7 +408,7 @@ To create, sign, and broadcast a
 {% tab tx_withdraw windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\default_wallet tx withdraw <FROM> <TO> <AMOUNT>
+pactus-wallet.exe tx withdraw <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}

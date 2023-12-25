@@ -1,5 +1,5 @@
 ---
-version: 4
+version: 5
 ---
 
 ## Preface
@@ -16,24 +16,11 @@ Before proceeding with the steps below, ensure that you have the following:
 
 ## Download
 
-To get started, follow the steps below based on your operating system:
-
-**Windows**: Download and extract the Pactus CLI file from
+To get started, download and extract the Pactus CLI file from
 [here]({{ site.baseurl }}/download/#cli).
-
-**Linux and macOS**: You have two options:
-
-- Download and extract the Pactus CLI file from [here]({{ site.baseurl }}/download/#cli).
-
-- Use the following command in the Terminal:
-
-```sh
-curl --proto '=https' --tlsv1.2 -sSL  https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus_downloader.sh | sh
-```
-
-This command will download the CLI archive file, verify it, and extract it for you.
-
 Once you have downloaded and extracted the Pactus CLI file, you can proceed to the next step.
+
+---
 
 ## Initializing the Node
 
@@ -46,7 +33,7 @@ Open the Terminal and run the following command:
 {% tab init-cli linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
-./pactus-daemon init -w ~/pactus --testnet
+./pactus-daemon init
 ```
 
 This command creates your wallet and setup the working working directory at `~/pactus`.
@@ -56,18 +43,27 @@ This command creates your wallet and setup the working working directory at `~/p
 {% tab init-cli windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```powershell
-pactus-daemon.exe init -w c:\pactus --testnet
+pactus-daemon.exe init
 ```
 
-This command creates your wallet and setup the working working directory at `c:\pactus`.
+This command creates your wallet and setup the working working directory at `C:\Users\<USER_NAME>\pactus`.
 
 {% endtab %}
 
 {% endtabs %}
 
-<div class="alert alert-warning">
-{% t dict.guide.wallet_seed_warning %}
-</div>
+{% alert_start info %}
+  <b>Working director</b>
+  <br><br>
+  By default the working directory that store the blockchain data is set to `~/pactus` in Unix-like systems.
+  For Windows it is set to `C:\Users\<USER_NAME>\pactus`.
+  <br><br>
+  If you wish to select or specify a different path, use the `--working-dir` option.
+{% alert_end %}
+
+{% alert_start warning %}
+  {% t dict.guide.wallet_seed_important %}
+{% alert_end %}
 
 The working directory contains:
 
@@ -78,7 +74,7 @@ The working directory contains:
 Feel free to explore the contents of these files as needed, particularly the config file.
 The config file contains parameters that can customize your node.
 
-### Restoring the "Default Wallet"
+### Restoring the Node
 
 If you ever need to restore your node, for instance on a new device,
 you can use the `--restore` option followed by your mnemonic:
@@ -88,7 +84,7 @@ you can use the `--restore` option followed by your mnemonic:
 {% tab init-cli-restore linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
-./pactus-daemon init -w ~/pactus --testnet --restore "<your-mnemonic>"
+./pactus-daemon init --restore "<your-mnemonic>"
 ```
 
 Replace `<your-mnemonic>` with your previously noted mnemonic phrase.
@@ -99,15 +95,17 @@ This command will restore your wallet in the `~/pactus` directory.
 {% tab init-cli-restore windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```powershell
-pactus-daemon.exe init -w c:\pactus --testnet --restore "<your-mnemonic>"
+pactus-daemon.exe init --restore "<your-mnemonic>"
 ```
 
 Replace `<your-mnemonic>` with your previously noted mnemonic phrase.
-This command will restore your wallet in the `c:\pactus` directory.
+This command will restore your wallet in the `C:\Users\<USER_NAME>\pactus` directory.
 
 {% endtab %}
 
 {% endtabs %}
+
+---
 
 ## Running the Node
 
@@ -118,7 +116,7 @@ Now you can start the node and sync with the network. Run the following command 
 {% tab start-cli linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
-./pactus-daemon start -w ~/pactus
+./pactus-daemon start
 ```
 
 {% endtab %}
@@ -126,7 +124,7 @@ Now you can start the node and sync with the network. Run the following command 
 {% tab start-cli windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```powershell
-pactus-daemon.exe start -w c:\pactus
+pactus-daemon.exe start
 ```
 
 {% endtab %}
@@ -136,6 +134,43 @@ pactus-daemon.exe start -w c:\pactus
 When the Pactus node starts running, it begins syncing with the network.
 This process may take some time, as your node needs to download and verify the entire blockchain history.
 Please be patient while your node syncs.
+
+### {% t dict.guide.default_ports %}
+
+{% t dict.guide.default_ports_explained %}
+
+---
+
+## Running Pactus in the Background
+
+To run Pactus commands in the background and keep them running even after you close your terminal or log out, you can use terminal multiplexer software. Terminal multiplexers allow you to create and manage multiple terminal sessions within a single window.
+
+Two popular terminal multiplexer options are:
+
+1. **tmux**: [Tmux](http://tmux.github.io/) is a terminal multiplexer that lets you create, manage, and detach terminal sessions. You can install tmux on Unix-like systems using your package manager (e.g., `apt`, `brew`, `yum`).
+
+   Here's how to use tmux to run Pactus in the background:
+
+   - Start a new tmux session: `tmux`
+   - Run your Pactus command within the tmux session.
+   - Detach from the tmux session: Press `Ctrl-b`, followed by `d`.
+   - Reattach to the tmux session later to check the progress: `tmux attach-session`
+
+2. **screen**: [GNU Screen](https://www.gnu.org/software/screen/) is another terminal multiplexer that allows you to run terminal sessions in the background.
+
+   Here's how to use screen to run Pactus in the background:
+
+   - Start a new screen session: `screen`
+   - Run your Pactus command within the screen session.
+   - Detach from the screen session: Press `Ctrl-a`, followed by `d`.
+   - Reattach to the screen session later to check the progress: `screen -r`
+
+Choose the terminal multiplexer that suits your preference and install it using your system's package manager.
+With these tools, you can run Pactus commands in the background with ease.
+
+---
+
+## Become validator
 
 To become a validator and participate in the
 consensus algorithm to earn rewards, you first need to

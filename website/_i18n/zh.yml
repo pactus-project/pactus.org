@@ -356,7 +356,7 @@ dict:
     send_transactions_gui: 如何在图形模式下发送交易？
     use_wallet_cli: 如何在命令行模式下使用钱包？
     reduce_network: How to reduce the network usage?
-    wallet_seed_warning: >
+    wallet_seed_important: >
       <b>Wallet seed is important</b>
       <br><br>
       Keep your wallet seed phrase private and secure.
