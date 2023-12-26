@@ -136,6 +136,14 @@ dict:
       Advanced users can get the Pactus docker image from [Docker Hub](https://hub.docker.com/r/pactus/pactus).
     docker_after_download: >
       You may follow this tutorial to set up and run your node using Docker:
+    downloader_script: Downloader script
+    downloader_script_explained: >
+      For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
+      (e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
+      there is a downloader script available.
+      This script can download the archived file, verify it, and extract it for you.
+      To use it, simply run the following command in your terminal:
+
 
   faq:
     title: FAQ

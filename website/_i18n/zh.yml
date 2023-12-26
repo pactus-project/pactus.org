@@ -126,6 +126,13 @@ dict:
       高级用户可以从[Docker Hub](https://hub.docker.com/r/pactus/pactus)获取帕克图斯docker镜像。
     docker_after_download: >
       您可以按照本教程使用Docker设置和运行节点：
+    downloader_script: Downloader script
+    downloader_script_explained: >
+      For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
+      (e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
+      there is a downloader script available.
+      This script can download the archived file, verify it, and extract it for you.
+      To use it, simply run the following command in your terminal:
 
   faq:
     title: 常见问题解答

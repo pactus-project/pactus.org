@@ -133,6 +133,13 @@ dict:
       يمكن للمستخدم المتقدم الحصول على صورة بكتوس دوكر من [Docker Hub](https://hub.docker.com/r/pactus/pactus).
     docker_after_download: >
       يمكنك اتباع هذا البرنامج التعليمي لإعداد عقدتك وتشغيلها باستخدام دوكر:
+    downloader_script: Downloader script
+    downloader_script_explained: >
+      For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
+      (e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
+      there is a downloader script available.
+      This script can download the archived file, verify it, and extract it for you.
+      To use it, simply run the following command in your terminal:
 
   faq:
     title: الأسئلة المتكررة

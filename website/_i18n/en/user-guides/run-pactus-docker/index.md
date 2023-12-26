@@ -94,6 +94,7 @@ docker run -it -d -v %USERPROFILE%\pactus:/root/pactus -p 21777:21777 -p 21777:2
 
 {% endtabs %}
 
+This command creates and runs a Docker container named "pactus-testnet".
 Here's an explanation of the Docker flags:
 
 - `-p <host_port>:<container_port>`: Maps a port from your host machine to a port in the Docker container.
@@ -104,18 +105,29 @@ Here's an explanation of the Docker flags:
 
 {% t dict.guide.default_ports_explained %}
 
-Your text looks good, but there is a small typo. Here's the corrected version:
+### Essential Commands
 
-### Restarting Docker
+You can manage the Pactus Docker container with these essential commands:
 
-You can stop/start Docker like below:
+**Stop the container:**
 
 ```bash
 docker stop pactus-testnet
+```
+
+This command gracefully stops the "pactus-testnet" container.
+
+**Start the container:**
+
+```bash
 docker start pactus-testnet
 ```
 
-Or check the logs:
+This command starts the Pactus Docker container.
+
+**View Container Logs:**
+
+To check the logs:
 
 ```bash
 docker logs pactus-testnet --tail 1000 -f
@@ -123,8 +135,18 @@ docker logs pactus-testnet --tail 1000 -f
 
 Here's an explanation of the Docker flags:
 
-- `--tail 1000`: Show the last 1000 lines of logs.
-- `-f`:  Show the log output in real-time.
+- `--tail 1000`: Displays the last 1000 lines of logs.
+- `-f`: Shows the log output in real-time.
+
+**Remove Docker container:**
+
+If you want to upgrade the node, you should first remove the current container:
+
+```bash
+docker rm pactus-testnet
+```
+
+After removing the Pactus Docker container, you can create and run a new version, as explained above.
 
 ### Enabling IPv6
 
