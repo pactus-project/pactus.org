@@ -1,5 +1,5 @@
 ---
-version: 3
+version: 4
 ---
 
 ## Preface
@@ -61,9 +61,9 @@ in case your computer is lost, damaged, or stolen.
 
 ![Wallet seed]({{ site.url }}/user-guides/run-pactus-gui/wallet_seed.png)
 
-<div class="alert alert-warning">
-{% t dict.guide.wallet_seed_warning %}
-</div>
+{% alert_start warning %}
+  {% t dict.guide.wallet_seed_important %}
+{% alert_end %}
 
 ### Seed Confirmation
 
@@ -106,7 +106,7 @@ Upon closing the wizard dialog, your Pactus node will start running. You are now
 ## Running the Pactus Node
 
 After completing the initialization process, you are ready to run the Pactus node.
-Running a Pactus node allows you to synchronize with the network, enabling you to view and manage your wallet and
+Running a Pactus node allows you to synchronize with the network, enabling you to manage your wallet and
 sending transactions.
 
 ### Syncing with the Network
@@ -139,5 +139,4 @@ we will explain how to send a Bond transaction to become a validator.
 
 ---
 
-By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
-Thank you for your participation!
+{% t dict.guide.by_running_pactus %}

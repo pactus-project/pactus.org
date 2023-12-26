@@ -35,9 +35,9 @@ title: dict.download.title
 | [pactus-gui_0.18.1_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.18.1/pactus-gui_0.18.1_windows_amd64.zip)                         | Archive       | Windows     | 64-bit   |
 | [**pactus-gui_0.18.1_windows_amd64_installer.exe**](https://github.com/pactus-project/pactus/releases/download/v0.18.1/pactus-gui_0.18.1_windows_amd64_installer.exe) | **Installer** | **Windows** | 64-bit   |
 
-<div class="alert alert-warning">
+{% alert_start warning %}
   {% t dict.download.untrusted_app %}
-</div>
+{% alert_end %}
 
 {% t dict.download.gui_after_download %} [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/run-pactus-gui)
 
@@ -62,6 +62,14 @@ title: dict.download.title
 | [pactus-cli_0.18.1_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v0.18.1/pactus-cli_0.18.1_windows_amd64.zip)       | Windows | 64-bit   |
 
 {% t dict.download.cli_after_download %} [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/run-pactus-cli)
+
+<h3 id="downloader_script">{% t dict.download.downloader_script %}</h3>
+
+{% t dict.download.downloader_script_explained %}
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus_downloader.sh | sh
+```
 
 ---
 

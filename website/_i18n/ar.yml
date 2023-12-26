@@ -133,6 +133,13 @@ dict:
       يمكن للمستخدم المتقدم الحصول على صورة بكتوس دوكر من [Docker Hub](https://hub.docker.com/r/pactus/pactus).
     docker_after_download: >
       يمكنك اتباع هذا البرنامج التعليمي لإعداد عقدتك وتشغيلها باستخدام دوكر:
+    downloader_script: Downloader script
+    downloader_script_explained: >
+      For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
+      (e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
+      there is a downloader script available.
+      This script can download the archived file, verify it, and extract it for you.
+      To use it, simply run the following command in your terminal:
 
   faq:
     title: الأسئلة المتكررة
@@ -376,8 +383,19 @@ dict:
     send_transactions_gui: كيفية إرسال المعاملات في الوضع الرسومي؟
     use_wallet_cli: كيفية استخدام المحفظة في وضع سطر الأوامر؟
     reduce_network: How to reduce the network usage?
-    wallet_seedasdsda_warning: >
+    wallet_seed_important: >
       <b>Wallet seed is important<b>
       <br><br>
       Keep your wallet seed phrase private and secure.
       If someone else gains access to your seed phrase, they can control your wallet and funds.
+    by_running_pactus: >
+      By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
+      Thank you for your participation!
+    default_ports: Default Ports
+    default_ports_explained: >
+      The default network ports in Pactus are defined as follows. It is recommended not to change these default ports:
+
+        - [P2P](https://libp2p.io/) port is set to 21777 for the Testnet, supporting both UDP and TCP protocols.
+        - [gRPC](https://grpc.io/) port is set to 50052. The gRPC module is enabled by default.
+        - [gRPC-gateway](https://grpc-ecosystem.github.io/grpc-gateway/) is set to 8080. gRPC-gateway is enabled by default.
+        - [Nanomsg](https://nanomsg.org/) port is set to 40799. The Nanomsg service is disabled by default.
