@@ -149,7 +149,7 @@ Terminal multiplexers allow you to create and manage multiple terminal sessions 
 
 Two popular terminal multiplexer options are:
 
-1. **tmux**: [Tmux](http://tmux.github.io/) is a terminal multiplexer that
+1. **tmux**: [Tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer that
 2. lets you create, manage, and detach terminal sessions.
 3. You can install tmux on Unix-like systems using your package manager (e.g., `apt`, `brew`, `yum`).
 
