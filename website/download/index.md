@@ -65,12 +65,15 @@ title: dict.download.title
 
 <h3>Downloader script</h3>
 
-For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like) (e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows), there is a downloader script available. This script can download the archived file, verify it, and extract it for you. To use it, simply run the following command in your terminal:
+For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
+(e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
+there is a downloader script available.
+This script can download the archived file, verify it, and extract it for you.
+To use it, simply run the following command in your terminal:
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus_downloader.sh | sh
 ```
-
 
 ---
 

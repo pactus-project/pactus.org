@@ -25,6 +25,7 @@ You can pull the latest image with this command:
 ```text
 docker pull pactus/pactus
 ```
+
 ---
 
 ## Initializing the Node
@@ -94,6 +95,7 @@ docker run -it -d -v %USERPROFILE%\pactus:/root/pactus -p 21777:21777 -p 21777:2
 {% endtabs %}
 
 Here's an explanation of the Docker flags:
+
 - `-p <host_port>:<container_port>`: Maps a port from your host machine to a port in the Docker container.
 - `-d`: Starts the container in detached mode. The container runs in the background.
 - `--name <NAME>`: Allows you to assign a custom name to a container.

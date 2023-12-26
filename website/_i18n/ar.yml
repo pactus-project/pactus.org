@@ -381,3 +381,14 @@ dict:
       <br><br>
       Keep your wallet seed phrase private and secure.
       If someone else gains access to your seed phrase, they can control your wallet and funds.
+    by_running_pactus: >
+      By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
+      Thank you for your participation!
+    default_ports: Default Ports
+    default_ports_explained: >
+      The default network ports in Pactus are defined as follows. It is recommended not to change these default ports:
+
+        - [P2P](https://libp2p.io/) port is set to 21777 for the Testnet, supporting both UDP and TCP protocols.
+        - [gRPC](https://grpc.io/) port is set to 50052. The gRPC module is enabled by default.
+        - [gRPC-gateway](https://grpc-ecosystem.github.io/grpc-gateway/) is set to 8080. gRPC-gateway is enabled by default.
+        - [Nanomsg](https://nanomsg.org/) port is set to 40799. The Nanomsg service is disabled by default.

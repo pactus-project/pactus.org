@@ -143,11 +143,15 @@ Please be patient while your node syncs.
 
 ## Running Pactus in the Background
 
-To run Pactus commands in the background and keep them running even after you close your terminal or log out, you can use terminal multiplexer software. Terminal multiplexers allow you to create and manage multiple terminal sessions within a single window.
+To run Pactus commands in the background and keep them running even after you close your terminal or
+log out, you can use terminal multiplexer software.
+Terminal multiplexers allow you to create and manage multiple terminal sessions within a single window.
 
 Two popular terminal multiplexer options are:
 
-1. **tmux**: [Tmux](http://tmux.github.io/) is a terminal multiplexer that lets you create, manage, and detach terminal sessions. You can install tmux on Unix-like systems using your package manager (e.g., `apt`, `brew`, `yum`).
+1. **tmux**: [Tmux](http://tmux.github.io/) is a terminal multiplexer that
+2. lets you create, manage, and detach terminal sessions.
+3. You can install tmux on Unix-like systems using your package manager (e.g., `apt`, `brew`, `yum`).
 
    Here's how to use tmux to run Pactus in the background:
 
@@ -156,7 +160,8 @@ Two popular terminal multiplexer options are:
    - Detach from the tmux session: Press `Ctrl-b`, followed by `d`.
    - Reattach to the tmux session later to check the progress: `tmux attach-session`
 
-2. **screen**: [GNU Screen](https://www.gnu.org/software/screen/) is another terminal multiplexer that allows you to run terminal sessions in the background.
+4. **screen**: [GNU Screen](https://www.gnu.org/software/screen/) is another terminal multiplexer that
+5. allows you to run terminal sessions in the background.
 
    Here's how to use screen to run Pactus in the background:
 
