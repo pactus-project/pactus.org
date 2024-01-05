@@ -77,7 +77,7 @@ BUT, HOW ABOUT SSPoS? HOW ABOUT PACTUS?
 In Pactus Blockchain, we have something called Solid State Proof of Stake
 and we try to fix the previous model’s issue, let me explain.
 
-Pactus uses a dynamic committee of validators with a fixed size of 21,
+Pactus uses a dynamic committee of validators with a fixed size of 51,
 but the members of the committee randomly change in each round,
 based on stake amount the chance of being chosen is higher. on the other hand,
 the number of validators out on the committee is unlimited, allowing anyone
