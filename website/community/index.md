@@ -33,7 +33,7 @@ title: dict.community.title
     </a>
   </li>
   <li>
-    <a href="https://bitcointalk.org/index.php?topic=5478226">
+    <a href="https://bitcointalk.org/index.php?topic=5480867.0">
       <img alt="Discord" src="{{ site.url }}/assets/images/social_bitcoin_talk.svg" width="32">
       {% t dict.community.bitcoin_talk %}
     </a>
