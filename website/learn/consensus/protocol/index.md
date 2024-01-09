@@ -120,7 +120,7 @@ The change-proposer phase is an Asynchronous Byzantine Binary Agreement (ABBA) [
 It means that during this phase, even if they don't have the proposal, honest validators may decide to vote zero
 if they obtain a valid quorum Certificate for the prepare step.
 
-If a supermajority of the validators decide to change the proposer, they move to round r+1r+1. However,
+If a supermajority of the validators decide to change the proposer, they move to round $$r+1$$. However,
 if they decide not to change the proposer, they will return to the prepare state and,
 since a supermajority of the validators attested to a valid proposal, they can commit the proposed block.
 
