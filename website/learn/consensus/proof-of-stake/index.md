@@ -4,7 +4,7 @@ title: Solid State Proof of Stake
 sidebar: Solid State Proof of Stake
 ---
 
-# Proof of Stake
+# Solid State Proof of Stake
 
 Proof of Stake is a way to secure a blockchain through requesting users to stake some amount of their coins.
 These stakeholders, called validators, are responsible to collect, validate and add transactions to the blockchain.
