@@ -73,3 +73,6 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: _site/
+
+      - name: Check translation keys
+        run: python .github/workflows/check_translations.py ./website/_i18n
