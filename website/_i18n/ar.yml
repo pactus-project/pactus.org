@@ -376,7 +376,6 @@ dict:
     back: « Back to the user guides list
     beginner: مبتدئ
     advanced: متقدم
-    website: الموقع الإلكتروني
     run_pactus_gui: كيفية تشغيل بكتوس في الوضع الرسومي؟
     run_pactus_cli: كيفية تشغيل بكتوس في وضع سطر الأوامر؟
     run_pactus_docker: كيفية تشغيل بكتوس باستخدام دوكر؟

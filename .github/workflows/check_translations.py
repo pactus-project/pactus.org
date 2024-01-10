@@ -31,7 +31,7 @@ def compare_keys(translations):
         keys = []
         recursive_keys(file_data, keys, "")
         keys.sort()
-        print(keys)
+        # print(keys)
         if first_keys is None:
             first_keys = keys
         elif keys != first_keys:
