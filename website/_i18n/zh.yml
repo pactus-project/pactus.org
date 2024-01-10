@@ -352,8 +352,9 @@ dict:
       Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually by the Treasury account.
     block_confirmation: How much is the block confirmation in the Pactus Blockchain?
     block_confirmation_answer: >
-      [version: 1] Block confirmation refers to the number of blocks that need to be created before a transaction is considered final and irreversible.
-      In Pactus, block confirmation is immediate, meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
+      [version: 1] Block confirmation refers to the number of blocks that need to be created
+      before a transaction is considered final and irreversible. In Pactus, block confirmation is immediate,
+      meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
 
   guide:
     title: 用户指南
