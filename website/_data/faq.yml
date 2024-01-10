@@ -12,23 +12,33 @@
 - title: validator
   items:
     - id: validators
+      more: /learn/blockchain/validator/
     - id: unlimited_validators
+      more: /learn/consensus/proof-of-stake/
     - id: min_and_max_stake
     - id: staking_limit
     - id: multiple_validators
+      more: /user-guides/run-pactus-gui/#number-of-validators
     - id: validators_rewarded
+      more: /learn/blockchain/incentive
     - id: flat_reward
       img: pactus_reward.png
+      more: /learn/blockchain/incentive/#flat-reward
 
 - title: consensus
   items:
     - id: how_pactus_works
       img: pactus_validator_pool.png
+      more: /learn/consensus/proof-of-stake/
     - id: how_enter_committee
+      more: /learn/consensus/sortition/
     - id: proposer_selection
+      more: /learn/consensus/committee/
     - id: multiple_committee_entry
     - id: fork_possibility
+      more: /learn/consensus/protocol/
     - id: block_confirmation
+      more: /learn/consensus/protocol/
 
 - title: economy
   items:
@@ -36,19 +46,28 @@
     - id: genesis_allocation
       img: pactus_coin_allocation.png
     - id: treasury_account
+      more: /learn/blockchain/account/#treasury-account
     - id: treasury_distribution
       img: pactus_coin_distribution.png
+      more: /learn/blockchain/incentive/#coin-distribution
 
 - title: transaction
   items:
     - id: transfer_transaction
+      more: /learn/transaction/transfer/
     - id: bond_transaction
+      more: /learn/transaction/bond/
     - id: sortition_transaction
+      more: /learn/transaction/sortition/
     - id: unbond_transaction
+      more: /learn/transaction/unbond/
     - id: withdraw_transaction
+      more: /learn/transaction/withdraw/
 
 - title: fee
   items:
     - id: fee_model
+      more: /learn/transaction/fee/
     - id: fee_min_max
+      more: /learn/transaction/fee/
     - id: why_percentage_fee

@@ -147,6 +147,7 @@ dict:
 
   faq:
     title: FAQ
+    read_more: Read more
     general: General
     validator: Validator
     economy: Economy
@@ -212,7 +213,7 @@ dict:
       [version: 1] The Treasury account is a special account in Pactus blockchain that holds 21 million coins at the genesis time.
       It has no key pair associated with it, meaning it cannot be accessed or controlled by anyone.
       Every time a block is created, one coin from the Treasury account transfers to the proposer account as a block reward.
-    without_ico: Does Pactus have an ICO?
+    without_ico: Did Pactus have an ICO?
     without_ico_answer: >
       [version: 2] No, Pactus didn't have any ICO or Initial Coin Offering.
     no_pre_sales: Where can I buy Pactus coins?
