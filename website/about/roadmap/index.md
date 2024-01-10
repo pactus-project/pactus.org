@@ -34,8 +34,10 @@ permalink: /about/roadmap/index.html
       <div class="timeline-card ongoing left">
         <div class="card">
           <div class="card-body p-4">
-            <div class="card-title">Main Net Launch</div>
-            <div class="card-subtitle text-muted">Q1 2024</div>
+            <div class="card-title">
+              <a href="{{ site.url }}/2024/01/08/mainnet-announcement.html">Main Net Launch</a>
+            </div>
+            <div class="card-subtitle text-muted">24 Jan 2024</div>
           </div>
         </div>
       </div>
