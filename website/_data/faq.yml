@@ -28,6 +28,7 @@
     - id: proposer_selection
     - id: multiple_committee_entry
     - id: fork_possibility
+    - id: block_confirmation
 
 - title: economy
   items:
