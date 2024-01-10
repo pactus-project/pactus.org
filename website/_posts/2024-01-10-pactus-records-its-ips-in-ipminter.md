@@ -5,7 +5,7 @@ date: 2024-01-10 00:00:00 +0000
 tags: announcement
 ---
 
-![IPMINTER](/blog/images/pactus-records-proposal-ipminter.png)
+![IPMINTER](/blog/images/2024-01-10-pactus-records-its-ips-in-ipminter/pactus-records-proposal-ipminter.png)
 
 In our continuous pursuit of innovation, the recording of our intellectual property is a
 cornerstone of Pactus’ philosophy. Yet, we found traditional patenting methods to be a
