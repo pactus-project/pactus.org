@@ -75,4 +75,4 @@ jobs:
           root: _site/
 
       - name: Check translation keys
-        run: python ./.github/workflows/check_translations.py ./website/_i18n
+        run: python .github/workflows/check_translations.py ./website/_i18n
