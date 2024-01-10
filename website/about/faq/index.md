@@ -58,6 +58,11 @@ title: dict.faq.title
         {% if item.img != nil %}
           <img src="{{ site.url }}/assets/images/{{ item.img }}" alt="{% t q_key %}" />
         {% endif %}
+        {% if item.more != nil %}
+          <div class=read_more>
+            <a href="{{ item.more }}">{% t dict.faq.read_more %} ...</a>
+          </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>

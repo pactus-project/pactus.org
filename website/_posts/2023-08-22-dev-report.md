@@ -7,13 +7,13 @@ tags: dev-report
 
 ## Abstract
 
-there is several activities in pactus github this month, here is a clear report and explain of activities.
+there is several activities in Pactus github this month, here is a clear report and explain of activities.
 
 ![Github Pactus](/blog/images/2023-08-22-dev-report/github-pactus.png)
 
 ### Linters
 
-one of new changes in pactus project is new linters we added this month.
+one of new changes in Pactus project is new linters we added this month.
 what is linters?
 linters are just a set of rules for the style of source codes, they force developers to write new codes
 in correct, clean and safe way.

@@ -136,6 +136,7 @@ dict:
 
   faq:
     title: 常见问题解答
+    read_more: Read more
     general: 常规问题
     validator: 验证节点问题
     economy: Economy
@@ -186,7 +187,7 @@ dict:
     treasury_account: 什么是国库账户？
     treasury_account_answer: >
       [version: 1] 国库账户是Pactus区块链中的一个特殊账户，持有总供应量2100万个币。它在创世时创建，没有与之关联的密钥对，这意味着任何人都无法访问或控制它。每当创建一个区块时，从国库账户中转移一枚币到提案者账户作为区块奖励。
-    without_ico: Pactus是否有ICO？
+    without_ico: Did Pactus have an ICO?
     without_ico_answer: >
       [version: 1] 不，Pactus没有ICO（首次代币发行），也没有预定义或特权账户。
       Pactus区块链从零开始，所有的币都是通过共识机制铸造的。
@@ -350,6 +351,11 @@ dict:
       This process is called "coin minting".
       As a result, the total number of Pactus coins in circulation gradually increases over time as new blocks are added to the blockchain.
       Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually by the Treasury account.
+    block_confirmation: How much is the block confirmation in the Pactus Blockchain?
+    block_confirmation_answer: >
+      [version: 1] Block confirmation refers to the number of blocks that need to be created
+      before a transaction is considered final and irreversible. In Pactus, block confirmation is immediate,
+      meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
 
   guide:
     title: 用户指南

@@ -147,6 +147,7 @@ dict:
 
   faq:
     title: FAQ
+    read_more: Read more
     general: General
     validator: Validator
     economy: Economy
@@ -168,11 +169,11 @@ dict:
       must hold a certain amount of the network's coin, known as "stake", as a security deposit to prevent malicious behavior.
     pactus_vs_ethereum: How is Pactus different from Ethereum?
     pactus_vs_ethereum_answer: >
-      [version: 2] Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
+      [version: 3] Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator.
       Running a validator on Ethereum can be challenging and requires 32 Ethereum coins to stake.
-      In contrast, Pactus is designed to be more accessible to normal users.
-      There is no minimum stake requirement, and you can run the Pactus node on personal Computers with basic hardware.
-      This approach reflects our commitment to promoting decentralization and making blockchain technology accessible to a wider audience.
+      In Pactus, there is no fixed amount for staking.
+      Pactus is specifically designed to be more accessible to normal users,
+      and you can run the Pactus blockchain on your personal computer with basic hardware.
     validators: What are validators?
     validators_answer: >
       [version: 1] Validators on Pactus are responsible for processing transactions and creating blocks and, by doing so,
@@ -187,7 +188,7 @@ dict:
     flat_reward_answer: >
       [version: 1] Block reward in Pactus is fixed, and it is always one coin per block.
       This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
-    unlimited_validators: How many validators does pactus have?
+    unlimited_validators: How many validators does Pactus have?
     unlimited_validators_answer: >
       [version: 2] Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network.
       However, a committee of 51 validators is responsible for creating blocks.
@@ -212,11 +213,9 @@ dict:
       [version: 1] The Treasury account is a special account in Pactus blockchain that holds 21 million coins at the genesis time.
       It has no key pair associated with it, meaning it cannot be accessed or controlled by anyone.
       Every time a block is created, one coin from the Treasury account transfers to the proposer account as a block reward.
-    without_ico: Does Pactus have an ICO?
+    without_ico: Did Pactus have an ICO?
     without_ico_answer: >
-      [version: 1] No, Pactus does not have an ICO (Initial Coin Offering) and there are no predefined or privileged accounts in pactus.
-      The Pactus blockchain starts from zero and all coins are minted through the consensus mechanism.
-      This ensures that the distribution of coins is fair and there is no centralization of wealth.
+      [version: 2] No, Pactus didn't have any ICO or Initial Coin Offering.
     no_pre_sales: Where can I buy Pactus coins?
     no_pre_sales_answer: >
       [version: 1] Pactus does not have any pre-sales coins.
@@ -245,15 +244,12 @@ dict:
       as the percentage, minimum fee, and maximum fee parameters can be changed through a consensus mechanism agreed upon by all validators.
     why_develop_pactus: Why was  Pactus developed?
     why_develop_pactus_answer: >
-      [version: 1] Pactus was developed with the goal of scaling blockchain without compromising security and decentralization.
+      [version: 2] Pactus was developed with the goal of scaling blockchain without compromising security and decentralization.
       To achieve this, Pactus utilizes a unique consensus mechanism that enables the creation of blocks in just 10 seconds.
       Moreover, Pactus was designed to be more accessible to all users, regardless of their technical expertise or financial resources.
-      <br><br>
-      Our commitment to decentralization and fairness is reflected in our decision to start the Pactus blockchain from zero and
-      ensure that all coins are minted through the consensus mechanism, rather than through an ICO or privileged accounts.
     what_pactus_solved: What problems does Pactus solve that other blockchains don't?
     what_pactus_solved_answer: >
-      [version: 2] Pactus tries to solve several problems faced by other blockchain networks,
+      [version: 3] Pactus tries to solve several problems faced by other blockchain networks,
       including:
       <br><br>
       <b>Scalability:</b>
@@ -262,9 +258,6 @@ dict:
       <br><br>
       <b>Accessibility:</b>
       Running a node on Pactus is designed to be more accessible to normal users compared to other blockchains.
-      <br><br>
-      <b>Fairness in distribution:</b>
-      Pactus has a fair and transparent coin distribution model, and all coins are generated through the consensus mechanism.
       <br><br>
       <b>Storage cost:</b>
       Pactus offers a novel storage solution by allowing users to allocate dedicated storage files,
@@ -376,6 +369,11 @@ dict:
       This process is called "coin minting".
       As a result, the total number of Pactus coins in circulation gradually increases over time as new blocks are added to the blockchain.
       Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually by the Treasury account.
+    block_confirmation: How much is the block confirmation in the Pactus Blockchain?
+    block_confirmation_answer: >
+      [version: 1] Block confirmation refers to the number of blocks that need to be created
+      before a transaction is considered final and irreversible. In Pactus, block confirmation is immediate,
+      meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
 
   guide:
     title: User Guides
