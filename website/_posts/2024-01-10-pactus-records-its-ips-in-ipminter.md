@@ -11,7 +11,7 @@ In our continuous pursuit of innovation, the recording of our intellectual prope
 cornerstone of Pactus’ philosophy. Yet, we found traditional patenting methods to be a
 slow and expensive hurdle. That is… until we discovered IPMINTER!
 
-https://app.ipminter.com/profile/pactus
+[Pactus profile in IPMINTER](https://app.ipminter.com/profile/pactus)
 
 We are ecstatic to announce that the blockchain-based platform by IPMINTER has
 revolutionized the way we secure our creations.
