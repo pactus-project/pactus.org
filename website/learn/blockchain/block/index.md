@@ -12,7 +12,7 @@ Once a block comes with a valid certificate, it is committed and added to the bl
 the certificate will be included in the next block.
 A committed block is immutable, and any modifications to the block will invalidate the certificate.
 
-![Pactus blockchain]({{ site.url }}/assets/images/pactus_blockchain.png)
+![Pactus blockchain]({{ site.url }}/assets/images/pactus-blockchain.png)
 
 ## Block Header
 

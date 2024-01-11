@@ -27,7 +27,7 @@ Proposer selection within the committee operates on a deterministic, clockwise r
 If a validator is unable to propose, for any reason, it stays within the committee, but
 the proposer's role shifts to the next validator in the committee.
 
-![Proposer selection]({{ site.url }}/assets/images/pactus_committee_proposer_selection.png)
+![Proposer selection]({{ site.url }}/assets/images/pactus-committee-proposer-selection.png)
 
 ## Adding Validators to the Committee
 
@@ -36,7 +36,7 @@ After the addition of a new validator, the committee adjusts to maintain the tot
 This is achieved by removing the oldest validator from the committee,
 i.e., the one that has been in the committee for the longest time.
 
-![Adding Validators to the Committee]({{ site.url }}/assets/images/pactus_committee_adding_validators.png)
+![Adding Validators to the Committee]({{ site.url }}/assets/images/pactus-committee-adding-validators.png)
 
 ## Security of the Committee
 

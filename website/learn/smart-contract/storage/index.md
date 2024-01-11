@@ -30,7 +30,7 @@ yearly.
 
 Each storage file has three parts: Header, ByteCodes and contract storage.
 
-![Storage file structure]({{ site.url }}/assets/images/pactus_storage_file_structure.png)
+![Storage file structure]({{ site.url }}/assets/images/pactus-storage-file-structure.png)
 
 The Header of the storage file keeps some meta data like storage file index, last payment time,
 total storage size, etc. In the ByteCodes section the byte codes of the smart contract will be saved
@@ -74,7 +74,7 @@ There is a fixed stack with 32 elements at the beginning of the storage . The fi
 stack is reserved and used for managing deallocated storage spaces. Users can use other stack items
 to keep the offset of the allocated spaces for the smart contract variables.
 
-![Storage stack]({{ site.url }}/assets/images/pactus_storage_stack.png)
+![Storage stack]({{ site.url }}/assets/images/pactus-storage-stack.png)
 
 ## Data Collections
 
@@ -109,7 +109,7 @@ Each file has a unique index. With using that index we can make sure that the po
 nodes in the Merkle tree is always the same. The same technique we used for calculating the
 [state hash]({{ site.baseurl }}/learn/blockchain/state-hash).
 
-![Storage Merkle tree]({{ site.url }}/assets/images/pactus_storage_merkle_tree.png)
+![Storage Merkle tree]({{ site.url }}/assets/images/pactus-storage-merkle-tree.png)
 
 ## Example
 

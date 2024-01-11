@@ -28,7 +28,7 @@ the block is committed, and the next proposer is ready to propose a new block. T
 If a proposer fails to propose in any round, other validators start the "change proposer" phase to
 decide to change the proposer for this round.
 
-![Pactus consensus states]({{ site.url }}/assets/images/pactus_consensus_states.png)
+![Pactus consensus states]({{ site.url }}/assets/images/pactus-consensus-states.png)
 
 ## The Algorithm
 
@@ -107,7 +107,7 @@ block-announce message, even if their timer has expired.
 The picture below shows the operation of the algorithm in the normal case. validator 1 is the
 proposer and validator 4 is faulty.
 
-![Normal execution]({{ site.url }}/assets/images/pactus_consensus_normal_execution.png)
+![Normal execution]({{ site.url }}/assets/images/pactus-consensus-normal-execution.png)
 
 ### Change Proposer
 

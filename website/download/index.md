@@ -25,7 +25,7 @@ title: dict.download.title
 
 {% t dict.download.download_gui %}
 
-![{% t dict.download.pactus_gui %}]({{ site.url }}/assets/images/pactus_gui_main_window.png)
+![{% t dict.download.pactus_gui %}]({{ site.url }}/assets/images/pactus-gui-main-window.png)
 
 | **File name**                                                                                                                                                         | **Kind**      | **OS**      | **Arch** |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------- | -------- |
@@ -47,7 +47,7 @@ title: dict.download.title
 
 {% t dict.download.download_cli %}
 
-![{% t dict.download.pactus_cli %}]({{ site.url }}/assets/images/pactus_cli.png)
+![{% t dict.download.pactus_cli %}]({{ site.url }}/assets/images/pactus-cli.png)
 
 | **File name**                                                                                                                                       | **OS**  | **Arch** |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------- |
