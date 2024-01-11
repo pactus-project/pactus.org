@@ -404,7 +404,7 @@ you need to provide the public key to create it:
 {% tab tx_bond_pub mac <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
+./pactus-wallet ~/pactus/wallets/wallet_1 tx bond --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -412,7 +412,7 @@ you need to provide the public key to create it:
 {% tab tx_bond_pub windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe c:\pactus\wallets\wallet_1 --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
+pactus-wallet.exe c:\pactus\wallets\wallet_1 tx bond --pub <PUBLIC_KEY> <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -467,7 +467,7 @@ To create, sign, and broadcast a
 {% tab tx_withdraw linux <i class="fa-brands fa-linux"></i> Linux %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 tx unbond <FROM> <TO> <AMOUNT>
+./pactus-wallet ~/pactus/wallets/wallet_1 tx withdraw <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
@@ -475,7 +475,7 @@ To create, sign, and broadcast a
 {% tab tx_withdraw mac <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet ~/pactus/wallets/wallet_1 tx unbond <FROM> <TO> <AMOUNT>
+./pactus-wallet ~/pactus/wallets/wallet_1 tx withdraw <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
