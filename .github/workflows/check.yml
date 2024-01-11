@@ -76,3 +76,6 @@ jobs:
 
       - name: Check translation keys
         run: python .github/workflows/check_translations.py ./website/_i18n
+
+      - name: Check images
+        run: python .github/workflows/check_images.py ./website
