@@ -24,7 +24,7 @@ Pactus 可以在不同的模式下运行，包括命令行界面 (CLI) 和图形
 Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不受信任的应用程序。
 这是因为 Pactus 没有[代码签名证书](https://en.wikipedia.org/wiki/Code_signing)。
 
-![Code certificate issue]({{ site.url }}/user-guides/run-pactus-gui/code_certificate_warning.png)
+![Code certificate issue]({{ site.url }}/user-guides/run-pactus-gui/code-certificate-warning.png)
 
 代码证书是验证软件发行者的身份和真实性的数字签名。然而，获得代码证书的过程复杂且昂贵，需要注册公司并
 通过认识你的客户(KYC)检查。
@@ -46,13 +46,13 @@ Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不
 
 在第一页上，您会被询问您要如何创建钱包。选择“开始创建新钱包” 选项，然后进入下一页。
 
-![Initialize mode]({{ site.url }}/user-guides/run-pactus-gui/initialize_mode.png)
+![Initialize mode]({{ site.url }}/user-guides/run-pactus-gui/initialize-mode.png)
 
 ### 钱包助记词
 
 下一页将显示您的钱包助记词，由12个单词组成。安全备份此助记词至关重要，因为钱包恢复需要它以防您的计算机丢失、损坏或被盗。
 
-![Wallet seed]({{ site.url }}/user-guides/run-pactus-gui/wallet_seed.png)
+![Wallet seed]({{ site.url }}/user-guides/run-pactus-gui/wallet-seed.png)
 
 **警告：** 确保您的钱包助记词的私密性和安全性。
 如果其他人获得了您的助记词，他们就可以控制您的钱包和资金。
@@ -63,7 +63,7 @@ Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不
 将您在上一步中收到的12个单词输入到对话框中。
 如果助记词输入正确，您将能够进入下一页。
 
-![Seed confirmation]({{ site.url }}/user-guides/run-pactus-gui/seed_confirmation.png)
+![Seed confirmation]({{ site.url }}/user-guides/run-pactus-gui/seed-confirmation.png)
 
 ### 钱包密码
 
@@ -71,7 +71,7 @@ Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不
 在第一个对话框中输入强密码，并在第二个对话框中再输入同样密码确认。
 该密码将用于加密您的钱包并防止未经授权的访问。
 
-![Set wallet password]({{ site.url }}/user-guides/run-pactus-gui/wallet_password.png)
+![Set wallet password]({{ site.url }}/user-guides/run-pactus-gui/wallet-password.png)
 
 注意：选择一个强密码并妥善保管。
 如果您忘记或丢失密码，您将需要助记词才能重新访问您的钱包。
@@ -81,7 +81,7 @@ Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不
 Pactus 区块链中的每个节点最多可以运行32个验证器，每个验证器最多可以质押1000代币。在这里，您可以定义要为节点创建多少个验证器。
 根据您想要质押的代币数量选择验证器的数量。
 
-![Number of validators]({{ site.url }}/user-guides/run-pactus-gui/number_of_validators.png)
+![Number of validators]({{ site.url }}/user-guides/run-pactus-gui/number-of-validators.png)
 
 如果你想质押超过32,000个代币，你需要建立一个新节点。
 
@@ -90,7 +90,7 @@ Pactus 区块链中的每个节点最多可以运行32个验证器，每个验�
 初始化过程的最后一页显示节点信息，例如工作目录、验证器地址、
 以及奖励地址。查看此信息并单击“关闭”以完成初始化过程。
 
-![Node information]({{ site.url }}/user-guides/run-pactus-gui/node_information.png)
+![Node information]({{ site.url }}/user-guides/run-pactus-gui/node-information.png)
 
 关闭向导界面后，您的 Pactus 节点将开始运行。您现在已准备好在GUI模式下使用 Pactus。
 
@@ -105,13 +105,13 @@ Pactus 区块链中的每个节点最多可以运行32个验证器，每个验�
 因为您的节点需要下载并验证整个区块链历史记录。
 您的节点同步时请耐心等待。
 
-![Syncing progress]({{ site.url }}/user-guides/run-pactus-gui/syncing_progress.png)
+![Syncing progress]({{ site.url }}/user-guides/run-pactus-gui/syncing-progress.png)
 
 ### 默认钱包
 
 您可以检查“默认钱包”选项来访问您的钱包信息。请注意，显示的信息在同步完成之前可能不准确。
 
-![Default Wallet tab]({{ site.url }}/user-guides/run-pactus-gui/default_wallet.png)
+![Default Wallet tab]({{ site.url }}/user-guides/run-pactus-gui/default-wallet.png)
 
 在“默认钱包”选项中，您可以查看您的帐户详细信息，包括您的余额和
 地址信息，例如**验证器和奖励地址**。

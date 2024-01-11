@@ -23,7 +23,7 @@ The hash function used is [RIPEMD-160](https://en.wikipedia.org/wiki/RIPEMD#RIPE
 which is applied after [Blake2b]({{ site.baseurl }}/learn/blockchain/cryptography/#hashing-algorithm)):
 The resulting byte array is then converted into a bech32m[^first] string.
 
-![Pactus address structure]({{ site.url }}/assets/images/pactus_address.png)
+![Pactus address structure]({{ site.url }}/assets/images/pactus-address.png)
 
 ## Address Type
 

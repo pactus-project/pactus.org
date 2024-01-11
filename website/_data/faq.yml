@@ -22,13 +22,13 @@
     - id: validators_rewarded
       more: /learn/blockchain/incentive
     - id: flat_reward
-      img: pactus_reward.png
+      img: pactus-reward.png
       more: /learn/blockchain/incentive/#flat-reward
 
 - title: consensus
   items:
     - id: how_pactus_works
-      img: pactus_validator_pool.png
+      img: pactus-validator-pool.png
       more: /learn/consensus/proof-of-stake/
     - id: how_enter_committee
       more: /learn/consensus/sortition/
@@ -44,11 +44,11 @@
   items:
     - id: total_supply
     - id: genesis_allocation
-      img: pactus_coin_allocation.png
+      img: pactus-coin-allocation.png
     - id: treasury_account
       more: /learn/blockchain/account/#treasury-account
     - id: treasury_distribution
-      img: pactus_coin_distribution.png
+      img: pactus-coin-distribution.png
       more: /learn/blockchain/incentive/#coin-distribution
 
 - title: transaction
