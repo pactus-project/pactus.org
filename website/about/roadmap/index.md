@@ -15,7 +15,7 @@ permalink: /about/roadmap/index.html
 <section dir="ltr">
   <div class="py-5">
     <div class="timeline">
-      <div class="timeline-card upcoming left">
+      <div class="timeline-card upcoming right">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Smart Contract Engine</div>
@@ -23,7 +23,7 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card upcoming right">
+      <div class="timeline-card upcoming left">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">Mobile Wallet</div>
@@ -31,13 +31,23 @@ permalink: /about/roadmap/index.html
           </div>
         </div>
       </div>
-      <div class="timeline-card ongoing left">
+      <div class="timeline-card ongoing right">
         <div class="card">
           <div class="card-body p-4">
             <div class="card-title">
               <a href="{{ site.url }}/2024/01/08/mainnet-announcement.html">Main Net Launch</a>
             </div>
             <div class="card-subtitle text-muted">24 Jan 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-card completed left">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="card-title">
+              <a href="{{ site.url }}/2024/01/11/release-0-20-0.html">Pactus 0.20 Released</a>
+            </div>
+            <div class="card-subtitle text-muted">January 2024</div>
           </div>
         </div>
       </div>
