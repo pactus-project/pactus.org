@@ -22,7 +22,7 @@ To Configure the Pactus Node for Metrics, navigate to the Pactus directory; by d
 /home/YourUsername/pactus
 ```
 
-there’s a file named `config.toml` that contains all the configurations for your node.
+There’s a file named `config.toml` that contains all the configurations for your node.
 There are two parameters that you should enable for metrics: the first is `enable_metrics`,
 and the second is enable `http`. After editing the `config.toml` you should restart your node.
 The metrics now can be accessed at `http://localhost:80/metrics/prometheus` (this url going to be use by prometheus).
@@ -119,8 +119,9 @@ Then save the file and exit.
 {% alert_start info %}
 
 Tip: In the last section of the code, you will see the targets section where I've written 127.0.0.1.
-You can change it based on your localhost IP or your website domain. 
-Please be aware that your target should match with your node http port. The default http port of pactus node is 80.
+You can change it based on your localhost IP or your website domain.
+Please be aware that your target should match with your node http port.
+The default http port of pactus node is 80.
 
 {% alert_end %}
 
@@ -137,6 +138,6 @@ Congratulations! Grafana and Prometheus are now up and accessible at ports `3000
 ## Import Pactus Metrics to Grafana Dashboard
 
 As Pactus uses `libp2p` for its peer-to-peer network, we should import `libp2p` metrics that you can find [here](https://github.com/libp2p/go-libp2p/tree/master/dashboards).
-download one of the metrics config and then Import it into `Grafana Dashboard`.
+Download one of the metrics config and then Import it into `Grafana Dashboard`.
 
 Congratulations! You did it. Now, you can perform the same operations for other configurations.
