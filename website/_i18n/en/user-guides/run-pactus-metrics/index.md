@@ -16,7 +16,7 @@ Before proceeding with the steps below, ensure that you have the following:
 
 ## Configure Pactus Node for Metrics
 
-To Configure Pactus Node for Metrics,navigate to the Pactus directory; by default, it’s located at the following path.
+To Configure Pactus Node for Metrics, navigate to the Pactus directory; by default, it’s located at the following path.
 
 ```text
 /home/YourUsername/pactus
@@ -25,6 +25,13 @@ To Configure Pactus Node for Metrics,navigate to the Pactus directory; by defaul
 there’s a file named `config.toml` that contains all the configurations for your node.
 There are two parameters that you should enable for metrics: the first is `enable_metrics`,
 and the second is enable `http`. After editing the `config.toml` you should restart your node.
+The metrics now can be accessed at `http://localhost:80/metrics/prometheus` (this url going to be use by prometheus).
+
+{% alert_start warning %}
+
+if you are running Pactus with docker image, make sure to expose :80 port.
+
+{% alert_end %}
 
 ---
 
@@ -109,9 +116,11 @@ scrape_configs:
 
 Then save the file and exit.
 
-```text
+{% alert_start info %}
+
 Tip: In the last section of the code, you will see the targets section where I've written 127.0.0.1, but you can change it based on your localhost IP or your website domain. but you should be aware of your target should match with your node http port. the default http port of pactus node is 80.
-```
+
+{% alert_end %}
 
 ## Run Grafana and Prometheus
 
@@ -129,8 +138,3 @@ As Pactus uses `libp2p` for its peer-to-peer network, we should import `libp2p` 
 download one of the metrics config and then Import it into `Grafana Dashboard`.
 
 Congratulations! You did it. Now, you can perform the same operations for other configurations.
-
----
-
-By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
-Thank you for your participation!
