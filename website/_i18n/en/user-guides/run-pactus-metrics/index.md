@@ -11,7 +11,7 @@ This tutorial will guide you through the steps to run Pactus with metrics, suita
 
 Before proceeding with the steps below, ensure that you have the following:
 
-- An understanding of Prometheus and Grafana.
+- An understanding of [Prometheus](https://prometheus.io) and [Grafana](https://grafana.com/).
 - Have a running Pactus Node.
 
 ## Configure Pactus Node for Metrics
