@@ -144,7 +144,6 @@ dict:
       This script can download the archived file, verify it, and extract it for you.
       To use it, simply run the following command in your terminal:
 
-
   faq:
     title: FAQ
     read_more: Read more

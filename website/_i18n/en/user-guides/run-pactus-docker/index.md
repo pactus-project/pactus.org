@@ -65,7 +65,7 @@ Here's an explanation of the Docker flags:
 - `-v <local_dir>:<container_dir>`: Allows to choose where to store the Pactus data.
 
 {% alert_start warning %}
-  {% t dict.guide.wallet_seed_important %}
+{% t dict.guide.wallet_seed_important %}
 {% alert_end %}
 
 ---

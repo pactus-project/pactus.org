@@ -40,7 +40,7 @@ Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不
 
 ## 初始化
 
-当您第一次运行Pactus时，将出现一个向导界面，指导您完成钱包创建和初始化过程。这个过程由几个步骤组成：
+当您第一次运行 Pactus 时，将出现一个向导界面，指导您完成钱包创建和初始化过程。这个过程由几个步骤组成：
 
 ### 初始化模式
 
@@ -50,7 +50,7 @@ Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不
 
 ### 钱包助记词
 
-下一页将显示您的钱包助记词，由12个单词组成。安全备份此助记词至关重要，因为钱包恢复需要它以防您的计算机丢失、损坏或被盗。
+下一页将显示您的钱包助记词，由 12 个单词组成。安全备份此助记词至关重要，因为钱包恢复需要它以防您的计算机丢失、损坏或被盗。
 
 ![Wallet seed]({{ site.url }}/user-guides/run-pactus-gui/wallet-seed.png)
 
@@ -60,7 +60,7 @@ Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不
 ### 助记词确认
 
 在此步骤中，系统将要求您确认助记词。
-将您在上一步中收到的12个单词输入到对话框中。
+将您在上一步中收到的 12 个单词输入到对话框中。
 如果助记词输入正确，您将能够进入下一页。
 
 ![Seed confirmation]({{ site.url }}/user-guides/run-pactus-gui/seed-confirmation.png)
@@ -78,12 +78,12 @@ Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不
 
 ### 验证者数量
 
-Pactus 区块链中的每个节点最多可以运行32个验证器，每个验证器最多可以质押1000代币。在这里，您可以定义要为节点创建多少个验证器。
+Pactus 区块链中的每个节点最多可以运行 32 个验证器，每个验证器最多可以质押 1000 代币。在这里，您可以定义要为节点创建多少个验证器。
 根据您想要质押的代币数量选择验证器的数量。
 
 ![Number of validators]({{ site.url }}/user-guides/run-pactus-gui/number-of-validators.png)
 
-如果你想质押超过32,000个代币，你需要建立一个新节点。
+如果你想质押超过 32,000 个代币，你需要建立一个新节点。
 
 ### 节点信息
 
@@ -92,7 +92,7 @@ Pactus 区块链中的每个节点最多可以运行32个验证器，每个验�
 
 ![Node information]({{ site.url }}/user-guides/run-pactus-gui/node-information.png)
 
-关闭向导界面后，您的 Pactus 节点将开始运行。您现在已准备好在GUI模式下使用 Pactus。
+关闭向导界面后，您的 Pactus 节点将开始运行。您现在已准备好在 GUI 模式下使用 Pactus。
 
 ## 运行 Pactus 节点
 

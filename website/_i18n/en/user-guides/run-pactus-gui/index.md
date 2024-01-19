@@ -62,7 +62,7 @@ in case your computer is lost, damaged, or stolen.
 ![Wallet seed]({{ site.url }}/user-guides/run-pactus-gui/wallet-seed.png)
 
 {% alert_start warning %}
-  {% t dict.guide.wallet_seed_important %}
+{% t dict.guide.wallet_seed_important %}
 {% alert_end %}
 
 ### Seed Confirmation

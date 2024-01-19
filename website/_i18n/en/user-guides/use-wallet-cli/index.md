@@ -23,12 +23,12 @@ In this section, we will explore various wallet commands that help you create, m
 and recover your Pactus wallet.
 
 {% alert_start info %}
-  <b>Wallet Path</b>
-  <br><br>
-  By default, the node's wallet is stored at `~/pactus/wallets/default_wallet` on Unix-like systems.
-  On Windows, you can find it at `C:\Users\<USER_NAME>\pactus\wallets\default_wallet`.
-  <br><br>
-  If you wish to select or specify a different wallet, use the `--path` option.
+<b>Wallet Path</b>
+<br><br>
+By default, the node's wallet is stored at `~/pactus/wallets/default_wallet` on Unix-like systems.
+On Windows, you can find it at `C:\Users\<USER_NAME>\pactus\wallets\default_wallet`.
+<br><br>
+If you wish to select or specify a different wallet, use the `--path` option.
 {% alert_end %}
 
 ### Create a Wallet

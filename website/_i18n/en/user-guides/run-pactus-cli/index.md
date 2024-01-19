@@ -53,16 +53,16 @@ This command creates your wallet and setup the working working directory at `C:\
 {% endtabs %}
 
 {% alert_start info %}
-  <b>Working director</b>
-  <br><br>
-  By default the working directory that store the blockchain data is set to `~/pactus` in Unix-like systems.
-  For Windows it is set to `C:\Users\<USER_NAME>\pactus`.
-  <br><br>
-  If you wish to select or specify a different path, use the `--working-dir` option.
+<b>Working director</b>
+<br><br>
+By default the working directory that store the blockchain data is set to `~/pactus` in Unix-like systems.
+For Windows it is set to `C:\Users\<USER_NAME>\pactus`.
+<br><br>
+If you wish to select or specify a different path, use the `--working-dir` option.
 {% alert_end %}
 
 {% alert_start warning %}
-  {% t dict.guide.wallet_seed_important %}
+{% t dict.guide.wallet_seed_important %}
 {% alert_end %}
 
 The working directory contains:
