@@ -14,4 +14,5 @@ title: dict.guide.title
   <li><a href="{{ site.baseurl }}/user-guides/use-wallet-cli">{% t dict.guide.use_wallet_cli %}</a></li>
   <li><a href="{{ site.baseurl }}/user-guides/run-pactus-docker">{% t dict.guide.run_pactus_docker %}</a></li>
   <li><a href="{{ site.baseurl }}/user-guides/reduce-network">{% t dict.guide.reduce_network %}</a></li>
+  <li><a href="{{ site.baseurl }}/user-guides/run-pactus-metrics">{% t dict.guide.run_pactus_metrics %}</a></li>
 </ul>
