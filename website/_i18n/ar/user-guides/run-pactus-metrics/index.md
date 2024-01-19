@@ -16,7 +16,7 @@ Before proceeding with the steps below, ensure that you have the following:
 
 ## Configure Pactus Node for Metrics
 
-To Configure Pactus Node for Metrics, navigate to the Pactus directory; by default, it’s located at the following path.
+To Configure the Pactus Node for Metrics, navigate to the Pactus directory; by default, it’s located at the following path.
 
 ```text
 /home/YourUsername/pactus
@@ -37,7 +37,7 @@ if you are running Pactus with docker image, make sure to expose :80 port.
 
 ## Configure Grafana And Prometheus
 
-we should run Grafana and Prometheus for gathering metrics and displaying them in charts.
+You should run Grafana and Prometheus for gathering metrics and displaying them in charts.
 First, create a directory named `prometheus-grafana`. Inside the directory,
 create a `docker-compose.yml` file and paste the code below.
 
@@ -118,9 +118,9 @@ Then save the file and exit.
 
 {% alert_start info %}
 
-Tip: In the last section of the code, you will see the targets section where I've written 127.0.0.1,
-but you can change it based on your localhost IP or your website domain.
-but you should be aware of your target should match with your node http port. the default http port of pactus node is 80.
+Tip: In the last section of the code, you will see the targets section where I've written 127.0.0.1.
+You can change it based on your localhost IP or your website domain. 
+Please be aware that your target should match with your node http port. The default http port of pactus node is 80.
 
 {% alert_end %}
 
