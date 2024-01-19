@@ -118,7 +118,9 @@ Then save the file and exit.
 
 {% alert_start info %}
 
-Tip: In the last section of the code, you will see the targets section where I've written 127.0.0.1, but you can change it based on your localhost IP or your website domain. but you should be aware of your target should match with your node http port. the default http port of pactus node is 80.
+Tip: In the last section of the code, you will see the targets section where I've written 127.0.0.1,
+but you can change it based on your localhost IP or your website domain.
+but you should be aware of your target should match with your node http port. the default http port of pactus node is 80.
 
 {% alert_end %}
 
