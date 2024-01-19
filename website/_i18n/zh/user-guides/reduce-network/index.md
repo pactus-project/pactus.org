@@ -36,4 +36,3 @@ By default, this service is enabled.
 Disabling this service helps reduce traffic usage.
 Keep in mind that new nodes rely on other nodes to be able to sync.
 To disable the node-network service, set `node_network` to `false`.
-
