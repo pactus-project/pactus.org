@@ -1,6 +1,6 @@
 dict:
   pactus: "Pactus"
-  pactus_blockchain: "Pactus Blockchain"
+  pactus_blockchain: "Welcome to Pactus"
   about: About
   about_pactus: About Pactus
   toc: Table of content
@@ -23,7 +23,6 @@ dict:
     title: Home
     motto: Pactus is a community-run blockchain technology with a revolutionary and secure Solid Proof of Stake 
       Consensus. Come join us and build a decentralized future together!
-      
     run_a_node: Get started 
     run_a_node_desc: >
       To start your Pactus journey, you will need to download the latest software, create a wallet and sync 
@@ -32,7 +31,7 @@ dict:
     get_some_coins: Get PAC
     get_some_coins_desc: >
       Before you can utilize all that Pactus has to offer you will need to obtain some (PAC) coins. 
-      Please join our Discord server to explore the ways you can achieve this after our Mainnet launch.
+      Please join our Discord server to explore all the ways you can achieve this after our Mainnet launch.
     become_a_validator: Become a validator
     become_a_validator_desc: >
       You can become a Pactus validator by staking some coins to your node. As a validator you will earn rewards, 
