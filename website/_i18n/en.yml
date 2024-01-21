@@ -21,9 +21,8 @@ dict:
 
   home:
     title: Home
-    motto: Pactus is a community-run blockchain technology with a revolutionary<br> 
-      and secure Solid Proof of Stake Consensus. Come join the movement and build a 
-      decentralized future together!
+    motto: Pactus is a community-run blockchain technology with a revolutionary and secure Solid Proof of Stake 
+      Consensus. Come join the movement and build a decentralized future together!
     run_a_node: Run a node
     run_a_node_desc: >
       Download Pactus, create wallet, and sync with the network.<br>
