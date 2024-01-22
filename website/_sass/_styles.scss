@@ -7,7 +7,6 @@ body {
   background-color: $bg-color;
   max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -49,6 +48,7 @@ h1 {
     font-weight: 600;
     font-size: 32px;
     padding-top: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
   .motto {
