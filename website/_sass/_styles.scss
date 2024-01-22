@@ -7,12 +7,12 @@ body {
   background-color: $bg-color;
   max-width: 1200px;
   margin: 0 auto;
+  border-radius: 15px 50px 30px 5px;
 }
 
 .navbar {
   .nav-top {
     height: 86px;
-    border-radius: 0px 0px 30px 30px;
   }
 
   .fixed-menu {
