@@ -69,7 +69,7 @@ h1 {
   line-height: 42px;
   padding: 0;
   margin: 16px;
-  shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 
   &.btn-more {
     color: $primary-color;
