@@ -7,7 +7,6 @@ body {
   background-color: $bg-color;
   max-width: 1200px;
   margin: 0 auto;
-  border-radius: 15px 50px 30px 5px;
 }
 
 .navbar {
@@ -109,6 +108,7 @@ h1 {
   .text-muted {
     color: $bg-color  !important;
     font-size: 12px;
+    border-radius: 15px 50px 30px 5px;
 
     a {
       color: $bg-color  !important;
