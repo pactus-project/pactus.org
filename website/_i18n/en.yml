@@ -23,20 +23,24 @@ dict:
     title: Home
     motto: Pactus is a community-run blockchain technology with a revolutionary and secure Solid Proof of Stake 
       Consensus. Come join us and build a decentralized future together!
-    run_a_node: Get started 
+    run_a_node: <br>
+      Get started 
     run_a_node_desc: >
       To start your Pactus journey, you will need to download the latest software. Then create a wallet and sync 
       it with the network. Pactus is designed to be lightweight and user-friendly, offering support for all 
       operating systems and infrastructures with our GUI and CLI applications.
-    get_some_coins: Get PAC
+    get_some_coins: <br>
+      Get PAC
     get_some_coins_desc: >
       Before you can utilize all that Pactus has to offer you will need to obtain (PAC) coins. 
       Please join our Discord server to explore all the ways you can achieve this after our Mainnet launch.
-    become_a_validator: Become a validator
+    become_a_validator: <br>
+      Become a validator
     become_a_validator_desc: >
       You can become a Pactus validator by staking some coins to your node.<br> As a validator you will earn rewards, 
       these are then given to validators for collecting valid transactions and creating new blocks. 
-    improve_pactus: Make Pactus better
+    improve_pactus: <br>
+      Make Pactus better
     improve_pactus_desc: >
       There are many ways you can support Pactus and help it grow, from being a valuable community member to 
       contributing to our development. Let's work together to make Pactus even better! 
