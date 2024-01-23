@@ -22,16 +22,20 @@ dict:
   home:
     title: Home
     motto: Building decentralized future together!
-    run_a_node: 运行节点
+    run_a_node: <br>
+      运行节点
     run_a_node_desc: >
       下载最新版本的帕克图斯区块链，创建您的钱包，并开始与网络同步。帕克图斯旨在轻量级且用户友好，易于操作。
-    get_some_coins: 获取代币
+    get_some_coins: <br>
+      获取代币
     get_some_coins_desc: >
       一旦您的节点运行起来，您将需要获取一些代币以成为验证人。您可以加入我们的社区并获得一些免费的权益代币。
-    become_a_validator: 成为验证人
+    become_a_validator: <br>
+      成为验证人
     become_a_validator_desc: >
       通过抵押一些代币，您的节点将过渡为验证人，随后，每当您提出一个块时，您将获得一个新代币作为块奖励。
-    improve_pactus: 让帕克图斯变得更好
+    improve_pactus: <br>
+      让帕克图斯变得更好
     improve_pactus_desc: >
       有许多方式可以支持帕克图斯并帮助其成长。让我们一起努力，使帕克图斯变得更好！
     partners: Our Partners
