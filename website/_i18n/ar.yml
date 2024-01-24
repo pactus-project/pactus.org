@@ -388,6 +388,7 @@ dict:
     send_transactions_gui: كيفية إرسال المعاملات في الوضع الرسومي؟
     use_wallet_cli: كيفية استخدام المحفظة في وضع سطر الأوامر؟
     reduce_network: How to reduce the network usage?
+    run_pactus_metrics: How to run Pactus Metrics?
     wallet_seed_important: >
       <b>Wallet seed is important<b>
       <br><br>

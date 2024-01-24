@@ -44,7 +44,7 @@ In Delegated Proof of Stake, users entrust their stakes to a small group of "del
 These delegates are responsible for validating transactions and creating blocks.
 The number of delegates is limited to ensure accountability and efficiency in the validation process.
 
-![Delegated Proof of Stake]({{ site.url }}/assets/images/delegated_proof_of_stake.png)
+![Delegated Proof of Stake]({{ site.url }}/assets/images/delegated-proof-of-stake.png)
 
 The delegation model puts a lot of trust in the hands of a small number of delegates,
 which goes against the principle of "don't trust, verify".
@@ -62,7 +62,7 @@ At each block, validators participate in a [sortition]({{ site.baseurl }}/learn/
 by generating a random number between zero and the total staked coins.
 If the number is less than the validator's stake, they can enter the committee and replaces the oldest committee member.
 
-![Pactus Solid State Proof of Stake]({{ site.url }}/assets/images/pactus_validator_pool.png)
+![Pactus Solid State Proof of Stake]({{ site.url }}/assets/images/pactus-validator-pool.png)
 
 The chance of entering the committee depends on the validator's stake and luck.
 But on average, one validator should enter the committee in each block.

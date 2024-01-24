@@ -387,6 +387,7 @@ dict:
     send_transactions_gui: How to send transactions in Graphic Mode?
     use_wallet_cli: How to use wallet in Command Line Mode?
     reduce_network: How to reduce the network usage?
+    run_pactus_metrics: How to run Pactus Metrics?
     wallet_seed_important: >
       <b>Wallet seed is important</b>
       <br><br>

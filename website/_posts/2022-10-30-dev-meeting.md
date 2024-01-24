@@ -15,7 +15,7 @@ with team members from different time zones joining to discuss key aspects of th
 The meeting started in memory of [Mahsa Amini](https://en.wikipedia.org/wiki/Death_of_Mahsa_Amini).
 We in the Pactus family stand in solidarity with courageous people who are fighting for equality, equity and freedom in Iran.
 
-![Woman Life Freedom](/blog/images/2022-10-30-dev-meeting/women_life_freedom.png)
+![Woman Life Freedom](/blog/images/2022-10-30-dev-meeting/women-life-freedom.png)
 
 ### Launching Block explorer
 

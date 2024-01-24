@@ -23,3 +23,6 @@ exclude_rule 'MD041'
 
 # Ordered list item prefix
 exclude_rule 'MD029'
+
+# Bare URL used (Download page)
+exclude_rule 'MD034'

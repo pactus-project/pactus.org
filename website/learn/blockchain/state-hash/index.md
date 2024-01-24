@@ -36,7 +36,7 @@ the accounts Merkle tree and the validators Merkle tree.
 Each leaf in these trees contains the hash of the associated account or validator.
 By using the state hash, all nodes in the network can ensure they have the same data stored.
 
-![State hash]({{ site.url }}/assets/images/pactus_state_hash.png)
+![State hash]({{ site.url }}/assets/images/pactus-state-hash.png)
 
 ## Scalability of Merkle Tree
 
@@ -55,7 +55,7 @@ Instead, we can save the previous Merkle tree and recalculate the parent hashes 
 fetching neighbor hashes as needed.
 This helps to ensure scalability and reduces the computational resources required for recalculating the Merkle tree.
 
-![Account tree]({{ site.url }}/assets/images/pactus_state_root_account_tree.png)
+![Account tree]({{ site.url }}/assets/images/pactus-state-root-account-tree.png)
 
 In this example, only account 6 has been updated.
 By locating the corresponding leaf node in the existing Merkle tree and
