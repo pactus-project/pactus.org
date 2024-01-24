@@ -21,10 +21,10 @@ dict:
 
   home:
     title: Home
-    motto: Pactus is a community-run blockchain technology with a revolutionary and secure Solid Proof of Stake 
+    motto: Pactus is a community-run blockchain technology with a revolutionary and secure Solid Proof of Stake
       Consensus. Come join us and build a decentralized future together!
     run_a_node: <br>
-      Get started 
+      Get started
     run_a_node_desc: >
       To start your Pactus journey, you will need to download the latest software. Pactus is designed to be lightweight
       and user-friendly, offering support for all operating systems and infrastructures with our GUI and CLI applications.
@@ -37,12 +37,12 @@ dict:
     become_a_validator: <br>
       Become a validator
     become_a_validator_desc: >
-      You can become a Pactus validator by staking some coins to your node. As a Pactus validator you will earn rewards, 
+      You can become a Pactus validator by staking some coins to your node. As a Pactus validator you will earn rewards,
       these are given for collecting valid transactions and creating new blocks. The emission is one coin per block.
     improve_pactus: <br>
       Make Pactus better
     improve_pactus_desc: >
-      There are many ways you can support Pactus and help it grow, from being a valuable community member and sharing 
+      There are many ways you can support Pactus and help it grow, from being a valuable community member and sharing
       with your friends to contributing to our core development. Let's work together to make Pactus even better!
     partners: Our Partners
     validators: Our Validators
