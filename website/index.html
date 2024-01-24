@@ -11,12 +11,30 @@ permalink: index.html
         <img src="{{ site.url }}/assets/images/welcome-video-placeholder.png" alt="Pactus - a real Proof-of-Stake blockchain">
       </div>
     </div>
+    <style>
+      .mottoDesktop {
+        height: 46%;
+      }
+      @media screen and (max-width: 767px) {
+        .mottoDesktop {
+          height: 60%;
+        }
+      }
+      .mottoDesktopBtn {
+        height: 50%;
+      }
+      @media screen and (max-width: 767px) {
+        .mottoDesktopBtn {
+          height: 40%;
+        }
+      }
+    </style>
     <div class="col-md-6 motto">
-      <div class="row text-center" style="height: 40%">
+      <div class="row text-center mottoDesktop">
         <div class="title">{% t dict.pactus_blockchain %}</div>
         <div class="motto">{% t dict.home.motto %}</div>
       </div>
-      <div class="row d-flex align-items-end" style="height: 50%">
+      <div class="row d-flex align-items-end mottoDesktopBtn">
         <div class="col-md-6 bottom-align-text">
           <div class="text-center pt-md-4">
             <a class="btn btn-fixed btn-faq" href="{{ site.baseurl }}/about/faq" role="button">
