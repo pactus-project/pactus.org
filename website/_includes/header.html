@@ -1,7 +1,7 @@
-<div class="container-md px-0">
-  <nav class="navbar navbar-expand-lg bg-light">
+<div class="shadow-sm rounded">
+  <nav class="navbar rounded navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand logo p-3" href="{{ site.baseurl }}/">
+      <a class="navbar-brand logo px-4 pt-2" href="{{ site.baseurl }}/">
         <img src="{{ site.url }}/assets/images/logos/text-logo.png" alt="Pactus blockchain" />
       </a>
       <button
@@ -15,12 +15,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="topnav navbar-nav" style="margin-right: auto !important">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
           <li class="nav-item dropdown ps-4">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {% t dict.about %}
             </a>
-            <ul class="dropdown-menu bg-light border-0 pe-0 fixed-menu">
+            <ul class="dropdown-menu shadow-sm bg-light border-0 pe-0 fixed-menu">
               <li>
                 <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/about/what-is-pactus/">
                   {% t dict.what_is.title %}
@@ -49,7 +49,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {% t dict.resources %}
             </a>
-            <ul class="dropdown-menu bg-light border-0 pe-0 fixed-menu">
+            <ul class="dropdown-menu shadow-sm bg-light border-0 pe-0 fixed-menu">
               <li>
                 <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/community/">
                   {% t dict.community.title %}
