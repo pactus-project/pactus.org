@@ -1,8 +1,8 @@
 dict:
-  pactus: 帕克图斯
-  pactus_blockchain: 帕克图斯区块链
+  pactus: 帕图斯
+  pactus_blockchain: 帕图斯区块链
   about: 关于
-  about_pactus: 关于帕克图斯
+  about_pactus: 关于帕图斯
   toc: 目录
   language: 语言
   improve_translation: 改善翻译
@@ -12,71 +12,72 @@ dict:
   join_community: 加入社区
   contributing: 贡献
   outdated_translation: 该翻译已过时。您可以阅读它，但可能不准确。
-  pactus_project: 帕克图斯项目
-  download_pactus: 下载帕克图斯
-  block_explorer: Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
-  source_code: Source code <i class="fa fa-external-link" aria-hidden="true"></i>
-  laboratory: Laboratory <i class="fa fa-external-link" aria-hidden="true"></i>
+  pactus_project: 帕图斯
+  download_pactus: 资源下载
+  block_explorer: 区块浏览器 <i class="fa fa-external-link" aria-hidden="true"></i>
+  source_code: GitHub <i class="fa fa-external-link" aria-hidden="true"></i>
+  laboratory: 实验室 <i class="fa fa-external-link" aria-hidden="true"></i>
   pips: PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
 
   home:
-    title: Home
-    motto: Building decentralized future together!
+    title: 主页
+    motto: 帕图斯是一个由社区运营的区块链技术。<br>采用了革命性且安全的Solid Proof of Stake共识机制。<br>快来加入我们，共同构建去中心化的未来吧！
     run_a_node: <br>
       运行节点
     run_a_node_desc: >
-      下载最新版本的帕克图斯区块链，创建您的钱包，并开始与网络同步。帕克图斯旨在轻量级且用户友好，易于操作。
+      下载最新版本的节点程序，创建您的钱包，并开始运行节点。<br> 帕图斯是一款轻量、友好、易于操作的节点程序。
     get_some_coins: <br>
       获取代币
     get_some_coins_desc: >
-      一旦您的节点运行起来，您将需要获取一些代币以成为验证人。您可以加入我们的社区并获得一些免费的权益代币。
+      节点运行之后，您可以质押代币成为验证者。获取方式有多种，比如购买，好友赠送等。也可以加入我们的社区参与贡献获取代币奖励。
     become_a_validator: <br>
-      成为验证人
+      成为验证者
     become_a_validator_desc: >
-      通过抵押一些代币，您的节点将过渡为验证人，随后，每当您提出一个块时，您将获得一个新代币作为块奖励。
+      通过抵押代币，您的节点将升级为验证者节点，验证者节点有机会当选委员会成员，每当您提出一个block时，您将获得 1 个 PAC 代币作为奖励。
     improve_pactus: <br>
-      让帕克图斯变得更好
+      让帕图斯变得更好
     improve_pactus_desc: >
-      有许多方式可以支持帕克图斯并帮助其成长。让我们一起努力，使帕克图斯变得更好！
-    partners: Our Partners
+      相信帕图斯在所有验证者和社区贡献者的支持下会变的更好。<br>
+      让我们一起努力，共同创造属于我们的世界！
+    partners: 合作伙伴
     validators: Our Validators
 
   community:
     title: 社区
-    join: 加入帕克图斯社区
+    join: 加入帕图斯社区
     welcome: >
-      加入帕克图斯社区，您将成为一个全球创新者、思想家和实践者网络的一部分，
+      加入帕图斯社区，您将成为一个全球创新者、思想家和实践者网络的一部分，
       所有这些人都有一个共同的愿景，即利用区块链技术构建更美好的未来。无论您是开发人员、企业家、投资者，
       还是一个区块链爱好者，在这里，都有一个属于您的位置。
       <br>
       所以，让我们携手并肩，创造改变吧！
-    discord: 帕克图斯在 Discord 上
-    telegram: 帕克图斯在 Telegram 上
-    twitter: 帕克图斯在 Twitter 上
-    instagram: 帕克图斯在 Instagram 上
-    linkedin: 帕克图斯在 LinkedIn 上
+    discord: 帕图斯在 Discord 上
+    telegram: 帕图斯在 Telegram 上
+    twitter: 帕图斯在 Twitter 上
+    instagram: 帕图斯在 Instagram 上
+    linkedin: 帕图斯在 LinkedIn 上
     bitcoin_talk: Pactus on Bitcoin Talk
 
   what_is:
-    title: 什么是帕克图斯？
-    sec_1_title: 帕克图斯是一个专注于去中心化的区块链
+    title: 什么是帕图斯？
+    sec_1_title: 帕图斯是一个专注于去中心化的区块链
     sec_1_desc: >
-      帕克图斯建立在这样一个原则之上，即仅通过去中心化才能实现公平和透明的系统。
-      与许多其他区块链平台不同，帕克图斯旨在通过消除委托和矿工的需要，消除集中化和操纵的潜力。
+      帕图斯建立在这样一个原则之上，即仅通过去中心化才能实现公平和透明的系统。
+      与许多其他区块链平台不同，帕图斯旨在通过消除委托和矿工的需要，消除集中化和操纵的潜力。
       这使任何人都可以成为该生态系统的一部分，并确保平台保持真正的去中心化。
-    sec_2_title: 帕克图斯是一种用户友好的区块链
+    sec_2_title: 帕图斯是一种用户友好的区块链
     sec_2_desc: >
-      帕克图斯旨在创建一种用户友好的区块链，任何人都可以轻松使用，而不仅仅是技术专家。
-      我们的协议旨在简单易用、易于维护和开发。帕克图斯提供了一个简单的GUI应用程序，
+      帕图斯旨在创建一种用户友好的区块链，任何人都可以轻松使用，而不仅仅是技术专家。
+      我们的协议旨在简单易用、易于维护和开发。帕图斯提供了一个简单的GUI应用程序，
       使用户可以轻松运行节点。
-    sec_3_title: 帕克图斯采用基于百分比的费用模型
+    sec_3_title: 帕图斯采用基于百分比的费用模型
     sec_3_desc: >
       交易费用是基于百分比模型计算的，设定了最小和最大费用。这些参数提供了更大的费用结构控制，
       防止过高或过低的支付。基于百分比的模型确保公平和可预测性，
       可通过所有验证人的共识进行调整。
-    sec_4_title: 帕克图斯的专用去中心化存储
+    sec_4_title: 帕图斯的专用去中心化存储
     sec_4_desc: >
-      在帕克图斯中，用户可以购买一个专用存储文件，可每年更新，
+      在帕图斯中，用户可以购买一个专用存储文件，可每年更新，
       从而降低存储和智能合约执行成本。这一独特功能可以为去中心化平台开辟新的协议之路。
 
   blog:
@@ -85,10 +86,10 @@ dict:
     all_posts: 所有文章
 
   learn:
-    title: 学习
+    title: 资料
     reference: 参考资料
     welcome: >
-      在这里，您可以找到帕克图斯项目的技术文档。
+      在这里，您可以找到帕图斯项目的技术文档。
 
   roadmap:
     title: 路线图
@@ -98,21 +99,21 @@ dict:
 
   download:
     title: 下载
-    welcome: 在此页面上，您可以找到如何下载和获取帕克图斯软件的最新版本。
+    welcome: 在此页面上，您可以找到如何下载和获取帕图斯软件的最新版本。
     compile_from_source_code: 从源代码编译
     project_pactus_is_distributed: >
-      帕克图斯项目是作为开源软件分发的，因此安装的首选方法是从
+      帕图斯项目是作为开源软件分发的，因此安装的首选方法是从
       [GitHub](https://github.com/pactus-project/pactus)存储库克隆源代码并编译源代码。
     instructions_for_compiling: >
-      有关编译帕克图斯的说明在[安装](https://github.com/pactus-project/pactus/blob/main/docs/install.md)页面中提供。
+      有关编译帕图斯的说明在[安装](https://github.com/pactus-project/pactus/blob/main/docs/install.md)页面中提供。
     stable_releases: 下载稳定版
     stable_releases_desc: >
-      您还可以下载最新的稳定版本的帕克图斯。
+      您还可以下载最新的稳定版本的帕图斯。
       这些版本会在发布[GitHub存储库](https://github.com/pactus-project/pactus)中的新版本时自动更新。
     download_gui: >
-      您可以以图形用户界面（GUI）模式运行帕克图斯，适用于初学者和高级用户。
-    pactus_gui: 帕克图斯图形用户界面（GUI）
-    pactus_cli: 帕克图斯命令行界面（CLI）
+      您可以以图形用户界面（GUI）模式运行帕图斯，适用于初学者和高级用户。
+    pactus_gui: 帕图斯图形用户界面（GUI）
+    pactus_cli: 帕图斯命令行界面（CLI）
     untrusted_app: >
       <b>不受信任的应用程序</b>
       <br><br>
@@ -120,14 +121,14 @@ dict:
       <a href=https://pactus.org/user-guides/run-pactus-gui/#code-certificate-issue\>代码签名证书</a>。
       在Windows和macOS中，下载的二进制文件可能会被检测为不受信任的应用程序。
     gui_after_download: >
-      一旦您下载了帕克图斯GUI，您可以按照本教程设置和运行节点：
+      一旦您下载了帕图斯GUI，您可以按照本教程设置和运行节点：
     download_cli: >
-      高级用户可以以命令行界面（CLI）模式运行帕克图斯。
+      高级用户可以以命令行界面（CLI）模式运行帕图斯。
     cli_after_download: >
-      一旦您下载了帕克图斯CLI，您可以按照本教程设置和运行节点：
+      一旦您下载了帕图斯CLI，您可以按照本教程设置和运行节点：
     docker: Docker容器
     docker_desc: >
-      高级用户可以从[Docker Hub](https://hub.docker.com/r/pactus/pactus)获取帕克图斯docker镜像。
+      高级用户可以从[Docker Hub](https://hub.docker.com/r/pactus/pactus)获取帕图斯docker镜像。
     docker_after_download: >
       您可以按照本教程使用Docker设置和运行节点：
     downloader_script: Downloader script
@@ -363,13 +364,13 @@ dict:
 
   guide:
     title: 用户指南
-    welcome: 在这里，您可以找到一些指南，帮助您使用和与帕克图斯区块链进行交互。
+    welcome: 在这里，您可以找到一些指南，帮助您使用和与帕图斯区块链进行交互。
     back: « Back to the user guides list
     beginner: 初学者
     advanced: 高级
-    run_pactus_gui: 如何以图形模式运行帕克图斯？
-    run_pactus_cli: 如何以命令行模式运行帕克图斯？
-    run_pactus_docker: 如何使用Docker运行帕克图斯？
+    run_pactus_gui: 如何以图形模式运行帕图斯？
+    run_pactus_cli: 如何以命令行模式运行帕图斯？
+    run_pactus_docker: 如何使用Docker运行帕图斯？
     send_transactions_gui: 如何在图形模式下发送交易？
     use_wallet_cli: 如何在命令行模式下使用钱包？
     reduce_network: How to reduce the network usage?
