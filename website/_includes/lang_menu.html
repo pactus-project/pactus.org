@@ -4,7 +4,7 @@
       <i class="fa-solid fa-earth-americas"></i>
       {{ site.data.languages[site.lang] }}
     </a>
-    <ul class="dropdown-menu bg-light border-0 pe-0">
+    <ul class="dropdown-menu shadow-sm bg-light border-0 pe-0">
       {% for lang in site.data.languages %} {% if lang[0] == site.lang %}{% continue %}{% endif %} {% if lang[0] == 'en'
       %}
       <li>
