@@ -36,10 +36,3 @@ By default, this service is enabled.
 Disabling this service helps reduce traffic usage.
 Keep in mind that new nodes rely on other nodes to be able to sync.
 To disable the node-network service, set `node_network` to `false`.
-
-### Disabling Node-Gossip service
-
-The node-gossip is a type of node that helps the network by broadcasting data
-such as transactions and consensus votes.
-By default, this service is disabled. If you enable this service,
-the network usage of your node will increase.
