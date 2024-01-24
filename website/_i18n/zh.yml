@@ -21,7 +21,7 @@ dict:
 
   home:
     title: 主页
-    motto: 加入我们，让我们一起构建去中心化的未来！
+    motto: 帕图斯是一个由社区运营的区块链技术。<br>采用了革命性且安全的Solid Proof of Stake共识机制。<br>快来加入我们，共同构建去中心化的未来吧！
     run_a_node: <br>
       运行节点
     run_a_node_desc: >
