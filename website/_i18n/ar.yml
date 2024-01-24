@@ -22,7 +22,7 @@ dict:
   home:
     title: الصفحة الرئيسية
     motto: Building decentralized future together!
-    run_a_node: <br> 
+    run_a_node: <br>
       تشغيل عقدة
     run_a_node_desc: >
       قم بتنزيل أحدث إصدار من بلوكشين بكتوس، وقم بإنشاء محفظتك وابدأ في المزامنة مع الشبكة.
