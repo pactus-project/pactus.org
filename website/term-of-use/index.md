@@ -187,5 +187,4 @@ We collect standard server logs from our website.
 This data helps provide site statistics, improve content and information flow, analyze errors, and diagnose dead links.
 A segment of server logs gathers download statistics to better understand user needs.
 
-
 - Last update: 25 January 2024
