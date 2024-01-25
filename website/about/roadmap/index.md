@@ -19,7 +19,7 @@ permalink: /about/roadmap/index.html
       {% for item in roadmap_items %}
       <div class="timeline-card {{ item.status }} {% cycle 'right', 'left' %}">
         <div class="card">
-          <div class="card-body p-4">
+          <div class="card-body p-3">
             <div class="card-title">
               {% if item.link %}
                 <a href="{{ site.baseurl }}{{ item.link }}">{{ item.title }}</a>
