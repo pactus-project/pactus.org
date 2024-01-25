@@ -11,7 +11,8 @@ Pactus Mainnet started creating the first block on 24 Janary 2024 at 20:24:10 UT
 Pactus Mainnet is the result of years of hard work, research, and innovation.
 It started from one idea:
 
-**A low-cost, truly decentralized blockchain, built by the people for the people, where anyone could run and be their own validator.**
+<b>A low-cost, truly decentralized blockchain, built by the people for the people,
+where anyone could run and be their own validator.</b>
 
 We faced many challenges and obstacles along the way, but we never gave up.<br>
 We overcame them with our determination and perseverance.<br>
@@ -61,4 +62,3 @@ A reality that we have created together.<br>
 A reality that we have launched today. A reality that we can explore and enjoy together.<br>
 A reality that we can shape and improve together. <br>
 A reality that we can make better and brighter together!<br>
-
