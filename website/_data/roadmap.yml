@@ -1,15 +1,40 @@
 - status: upcoming
-  title: Smart Contract Engine
-  date: Q3 2024
+  title: Decentralized Storage Platform
+  date: Q1 2025
 
 - status: upcoming
-  title: Mobile Wallet
-  date: Q2 2024
+  title: Browser Extension Wallet
+  date: Q4 2024
 
 - status: ongoing
-  title: Main Net Launch
-  link: /2024/01/08/mainnet-announcement.html
-  date: 24 Jan 2024
+  title: Desktop and Mobile Friendly GUI
+  date: July 2024
+
+- status: ongoing
+  title: CLI tools for controlling Pactus node
+  date: Jun 2024
+
+- status: ongoing
+  title: First Interactive Block Explorer
+  date: March 2024
+
+- status: ongoing
+  title: Permanent testnet launch
+  date: February 2024
+
+- status: ongoing
+  title: Releasing Version 1.0.0
+  date: January 2024
+
+- status: completed
+  title: Main Net Launched 🚀
+  link: /2024/01/24/mainnet-launched.html
+  date: <b>24 January 2024</b>
+
+- status: completed
+  title: Testnet-2 Concluded
+  link: /2024/01/22/testnet-2-concluded.html
+  date: January 2024
 
 - status: completed
   title: Pactus 0.20 Released
@@ -37,7 +62,7 @@
   date: October 2023
 
 - status: completed
-  title: Testnet-2 Launched 🚀
+  title: Testnet-2 Launched
   link: /2023/10/15/testnet-2-launched.html
   date: October 2023
 
@@ -67,7 +92,7 @@
   date: May 2023
 
 - status: completed
-  title: Testnet-1 Launched 🚀
+  title: Testnet-1 Launched
   link: /2023/05/09/testnet-1-launched.html
   date: May 2023
 

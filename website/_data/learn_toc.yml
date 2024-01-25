@@ -32,7 +32,7 @@
     - doc: unbond
     - doc: withdraw
 
-- title: Smart Contract
-  path: learn/smart-contract
-  items:
-    - doc: storage
+# - title: Smart Contract
+#   path: learn/smart-contract
+#   items:
+#     - doc: storage
