@@ -176,7 +176,7 @@ The TOU and Terms of Service are intentionally in English, the governing languag
 
 ### Attributed Content
 
-Logos for operating systems, platforms, and sponsors we support are copyrighted by their respectiveowners.
+Logos for operating systems, platforms, and sponsors we support are copyrighted by their respective owners.
 Pactus does not own these copyrights but uses the logos with permission or in a clear, non- harmful way.
 
 ## Privacy Policy
