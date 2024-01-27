@@ -48,7 +48,7 @@ To create a new wallet, run the following command:
 {% tab create_wallet windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
-pactus-wallet.exe --path <PATH-To-NEW-WALLET> create --testnet
+pactus-wallet.exe --path <PATH-To-NEW-WALLET> create
 ```
 
 {% endtab %}
