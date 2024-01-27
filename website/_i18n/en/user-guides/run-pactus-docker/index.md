@@ -79,7 +79,7 @@ Now you can start the node and sync with the network. Run the following command 
 {% tab start-docker linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
-docker run -it -d -v ~/pactus:/root/pactus -p 21777:21777 -p 21777:21777/udp -p 50052:50052 -p 8080:8080 --name pactus-testnet pactus/pactus pactus-daemon start --password <WALLET_PASSWORD>
+docker run -it -d -v ~/pactus:/root/pactus -p 21888:21888 -p 21888:21888/udp -p 50051:50051 -p 8080:8080 --name pactus-testnet pactus/pactus pactus-daemon start --password <WALLET_PASSWORD>
 ```
 
 {% endtab %}
@@ -87,7 +87,7 @@ docker run -it -d -v ~/pactus:/root/pactus -p 21777:21777 -p 21777:21777/udp -p 
 {% tab start-docker windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```powershell
-docker run -it -d -v %USERPROFILE%\pactus:/root/pactus -p 21777:21777 -p 21777:21777/udp -p 50052:50052 -p 8080:8080 --name pactus-testnet pactus/pactus pactus-daemon start  --password {WALLET_PASSWORD}
+docker run -it -d -v %USERPROFILE%\pactus:/root/pactus -p 21888:21888 -p 21888:21888/udp -p 50051:50051 -p 8080:8080 --name pactus-testnet pactus/pactus pactus-daemon start  --password {WALLET_PASSWORD}
 ```
 
 {% endtab %}
