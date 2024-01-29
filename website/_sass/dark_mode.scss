@@ -1,0 +1,7 @@
+
+@include color-mode(dark) {
+  body {
+    color: $font-color-dark;
+    background-color: $bg-color-dark;
+  }
+}

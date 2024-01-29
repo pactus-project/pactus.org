@@ -9,12 +9,16 @@ To contribute, simply edit the relevant page or open a pull request.
 
 ## Running Locally
 
-First,Install [Jekyll](https://jekyllrb.com/docs/installation/) first. Jekyll is a simple static site generator.
-Then, clone this repository and run it locally using the following commands:
+To get started, install [Jekyll](https://jekyllrb.com/docs/installation/), first.
+Additionally, make sure to install [Yarn](https://yarnpkg.com/)
+for efficient dependency management, including [Bootstrap](https://getbootstrap.com/).
+
+Now, clone this repository and run it locally using the following commands:
 
 ```zsh
 git clone https://github.com/pactus-project/pactus.org.git
 cd pactus.org
+yarn install ## To install bootstrap
 bundle install
 bundle exec jekyll serve
 ```
@@ -47,30 +51,36 @@ There are some additional commands that help you to check and improve your chang
 First you need Install [yarn](https://yarnpkg.com/).
 
 - Check all HTML and markdown files:
-  ```
+
+  ```bash
   yarn run prettier::setup
   yarn run prettier
   ```
+
 - Lint markdown files:
-  ```
+
+  ```bash
   yarn run lint:md:setup
   yarn run lint:md
   ```
 
 - Lint YAML files:
-  ```
+
+  ```bash
   yarn run lint:yml:setup
   yarn run lint:yml
   ```
 
 - Check for broken links:
-  ```
+
+  ```bash
   yarn run htmlproofer:setup
   yarn run htmlproofer
   ```
 
 - Remove all metadata from PNG images using [ExifTool](https://exiftool.org/):
-  ```
+
+  ```bash
   yarn run exif
   ```
 
