@@ -207,7 +207,7 @@ dict:
     min_hardware_requirements: What are the minimum hardware requirements?
     min_hardware_requirements_answer: >
       [version: 1] After thorough testing we can conclude that the minimum requirements for hardware are as follows.<br>
-      VPS: A minimum of 1vCPU and 1GB Ram with 1TB connection.<br>  
+      VPS: A minimum of 1vCPU and 1GB Ram with 1TB connection.<br>
       PC: A minimum of 2cores and 4GB Ram with 15MBps connection.
     total_supply: What is the total supply of Pactus coins?
     total_supply_answer: >
