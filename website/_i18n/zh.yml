@@ -185,7 +185,8 @@ dict:
       [version: 1] 在Pactus中，没有质押币的最低限制，但您可以质押的最大金额为1000个币。如果您想质押超过1000个币，可以运行新的验证者。运行多个验证者可以保持网络更加去中心化，并有助于维护其安全性和稳定性。
     min_hardware_requirements: What are the minimum hardware requirements?
     min_hardware_requirements_answer: >
-      [version: 1] After thorough testing on multiple machines, we can conclude that the reccomended minimum hardware<br> requirements are as follows:<br><br>
+      [version: 1] After thorough testing on multiple machines, we can conclude that the reccomended minimum hardware<br>
+      requirements are as follows:<br><br>
       VPS:<br>
       * CPU's: 1/2 physical core / 1vCPU<br>
       * RAM: 1 GB Ram<br>
