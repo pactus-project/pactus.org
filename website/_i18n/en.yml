@@ -216,7 +216,8 @@ dict:
       * CPU's: 2 physical cores / 4vCPU<br>
       * RAM: 4 GB Ram<br>
       * Storage (SSD): 64 GB SSD Drive
-      * Network: stable internet connection with 15 MBps speed
+      * Network: stable internet connection with 15 MBps speed<br>
+      These specifications have been tested and provide an availabilty score of over 0.9.
     total_supply: What is the total supply of Pactus coins?
     total_supply_answer: >
       [version: 2] Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units.
