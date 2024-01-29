@@ -50,4 +50,3 @@ will receive bounty PAC coins to set up their validators.
 We are grateful to all those who participated in Testnet-0, and
 we encourage them to join our next Testnet to help us improve Pactus.
 As a community-based project, we rely on the support of our community members, and we value any help we receive.
-

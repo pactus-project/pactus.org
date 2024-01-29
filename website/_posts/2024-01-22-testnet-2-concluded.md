@@ -39,11 +39,13 @@ It proved that the consensus mechanism is in a stable situation.
 ## Networking issues
 
 In Testnet-2, the blockchain stopped twice, and each time it took more than 24 hours to fix the problem.
-In the second blockage, we had no choice but to ask active validators inside the committee to update their nodes to overcome the networking issue.
+In the second blockage, we had no choice but to ask active validators inside the committee to
+update their nodes to overcome the networking issue.
 The development team faced a difficult situation and had to make the proper decision to fix the networking issues.
 On one hand, the networking traffic increased significantly, and on the other hand, we had to
 make sure normal users with limited internet bandwidth could still participate in the consensus mechanism without any problems.
-After examining different scenarios, the networking issues were resolved, and no major problems were reported till the end of Testnet.
+After examining different scenarios, the networking issues were resolved, and
+no major problems were reported till the end of Testnet.
 
 ## Major updates
 
