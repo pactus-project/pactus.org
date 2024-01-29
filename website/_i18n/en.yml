@@ -210,11 +210,13 @@ dict:
       VPS:<br>
       * CPU's: 1/2 physical core / 1vCPU<br>
       * RAM: 1 GB Ram<br>
-      * Storage (SSD): 20 GB NVMe Drive<br>
+      * Storage: (SSD): 20 GB NVMe Drive<br>
+      * Network: stable internet connection with 1 TBps speed
       PC:<br>
       * CPU's: 2 physical cores / 4vCPU<br>
       * RAM: 4 GB Ram<br>
       * Storage (SSD): 64 GB SSD Drive
+      * Network: stable internet connection with 15 MBps speed
     total_supply: What is the total supply of Pactus coins?
     total_supply_answer: >
       [version: 2] Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units.
