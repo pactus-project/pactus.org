@@ -55,7 +55,7 @@ During Testnet-2, we introduced several updates, including versions
 [0.17.0]({{ site.url }}/2023/11/12/release-0-17-0.html),
 [0.18.0]({{ site.url }}/2023/12/12/release-0-18-0.html),
 [0.19.0]({{ site.url }}/2024/01/04/release-0-19-0.html), and
-[0.20.0]({{ site.url }}/2024/0107/11/release-0-20-0.html).
+[0.20.0]({{ site.url }}/2024/01/11/release-0-20-0.html).
 The update process went smoothly, and with the stability of Version 0.20.0 confirmed,
 the development team shifted its focus to the Mainnet launch.
 
