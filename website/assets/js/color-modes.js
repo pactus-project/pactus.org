@@ -16,7 +16,7 @@
       return storedTheme
     }
 
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark'
   }
 
   const setTheme = theme => {
@@ -38,15 +38,14 @@
 
     const themeSwitcherText = document.querySelector('#bd-theme-text')
     const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-    const faNameOfActiveBtn = btnToActive.querySelector('use').getAttribute('fa-name')
+    const activeFAClasses = btnToActive.querySelector('i').classList.value
 
     document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
       element.setAttribute('aria-pressed', 'false')
     })
 
     btnToActive.setAttribute('aria-pressed', 'true')
-    const themeSwitcherLabel = `fa-solid fa-fw ${faNameOfActiveBtn}`
-    themeSwitcherText.classList.value = themeSwitcherLabel
+    themeSwitcherText.classList.value = activeFAClasses
 
     if (focus) {
       themeSwitcher.focus()
