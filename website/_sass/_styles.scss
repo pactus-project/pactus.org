@@ -1,5 +1,14 @@
 @import "vars";
 
+// Variable overrides first
+$primary: $primary-color;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -253,7 +262,6 @@ blockquote {
 
 .edit-bar {
   padding-top: 30px;
-  // border-top: $border-top;
 
   .edit-btn,
   .edit-btn>a:hover {

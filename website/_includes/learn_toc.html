@@ -3,7 +3,7 @@
     {% for folder in site.data.learn_toc %}
     <li class="mb-1">
       <button
-        class="btn btn-section d-inline-flex align-items-center border-0 collapsed"
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
         data-bs-toggle="collapse"
         data-bs-target="#{{folder.title | slugify}}-collapse"
         aria-expanded="{% if page.url contains folder.path %}{{ 'true'}}{% else %}{{ 'false'}}{% endif %}">

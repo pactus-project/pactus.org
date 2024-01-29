@@ -1,5 +1,5 @@
 <div class="shadow-sm rounded-bottom">
-  <nav class="navbar rounded-bottom navbar-expand-lg bg-light">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
     <div class="container-fluid">
       <a class="navbar-brand logo px-4 pt-2" href="{{ site.baseurl }}/">
         <img src="{{ site.url }}/assets/images/logos/text-logo.png" alt="Pactus blockchain" />
@@ -16,89 +16,77 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="topnav navbar-nav" style="margin-left: auto !important">
-          <li class="nav-item dropdown ps-4">
+          <li class="nav-item dropdown ps-3">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {% t dict.about %}
             </a>
-            <ul class="dropdown-menu shadow-sm bg-light border-0 pe-0 fixed-menu">
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
               <li>
-                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/about/what-is-pactus/">
+                <a class="nav-link dropdown-item ps-3" href="{{ site.baseurl }}/about/what-is-pactus/">
                   {% t dict.what_is.title %}
                 </a>
               </li>
               <li>
-                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/about/roadmap/">
+                <a class="nav-link dropdown-item ps-3" href="{{ site.baseurl }}/about/roadmap/">
                   {% t dict.roadmap.title %}
                 </a>
               </li>
               <li>
-                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/about/faq/">{% t dict.faq.title %}</a>
+                <a class="nav-link dropdown-item ps-3" href="{{ site.baseurl }}/about/faq/">{% t dict.faq.title %}</a>
               </li>
             </ul>
           </li>
-          <li class="nav-item ps-4">
+          <li class="nav-item ps-3">
             <a class="nav-link" href="{{ site.baseurl }}/learn/">{% t dict.learn.title %}</a>
           </li>
-          <li class="nav-item ps-4">
+          <li class="nav-item ps-3">
             <a class="nav-link" href="{{ site.baseurl }}/download/">{% t dict.download.title %}</a>
           </li>
-          <li class="nav-item ps-4">
+          <li class="nav-item ps-3">
             <a class="nav-link" href="{{ site.baseurl }}/blog/">{% t dict.blog.title %}</a>
           </li>
-          <li class="nav-item dropdown ps-4">
+          <li class="nav-item dropdown ps-3">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {% t dict.resources %}
             </a>
-            <ul class="dropdown-menu shadow-sm bg-light border-0 pe-0 fixed-menu">
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
               <li>
-                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/community/">
+                <a class="nav-link dropdown-item ps-3" href="{{ site.baseurl }}/community/">
                   {% t dict.community.title %}
                 </a>
               </li>
               <li>
-                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/contributing/">
+                <a class="nav-link dropdown-item ps-3" href="{{ site.baseurl }}/contributing/">
                   {% t dict.contributing %}
                 </a>
               </li>
               <li>
-                <a class="nav-link dropdown-item ps-4" href="{{ site.baseurl }}/user-guides/">
+                <a class="nav-link dropdown-item ps-3" href="{{ site.baseurl }}/user-guides/">
                   {% t dict.guide.title %}
                 </a>
               </li>
               <li>
-                <a class="nav-link dropdown-item ps-4" href="https://pips.pactus.org" target="_blank">{% t dict.pips %}</a>
-              </li>
-              <!-- <li>
-                <a
-                  class="nav-link dropdown-item ps-4"
-                  href="https://labs.sensifia.com"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  {% t dict.laboratory %}
+                <a class="nav-link dropdown-item ps-3" href="https://pips.pactus.org" target="_blank">
+                  {% t dict.pips %}
                 </a>
-              </li> -->
+              </li>
               <li>
-                <a
-                  class="nav-link dropdown-item ps-4"
-                  href="https://pacscan.org/"
-                  target="_blank"
+                <a class="nav-link dropdown-item ps-3" href="https://pacscan.org/" target="_blank"
                   rel="noopener noreferrer">
                   {% t dict.block_explorer %}
                 </a>
               </li>
               <li>
-                <a
-                  class="nav-link dropdown-item ps-4"
-                  href="https://github.com/pactus-project/"
-                  target="_blank"
+                <a class="nav-link dropdown-item ps-3" href="https://github.com/pactus-project/" target="_blank"
                   rel="noopener noreferrer">
                   {% t dict.source_code %}
                 </a>
               </li>
             </ul>
           </li>
+          {% include lang_menu.html %}
+          {% include color_mode.html %}
         </ul>
-        {% include lang_menu.html %}
       </div>
     </div>
   </nav>
