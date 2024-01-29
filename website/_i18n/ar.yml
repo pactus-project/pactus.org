@@ -198,7 +198,7 @@ dict:
       تشغيل العديد من المحققين يحافظ على توزيع الشبكة بشكل أفضل ويساعد على الحفاظ على أمانها واستقرارها.
     min_hardware_requirements: What are the minimum hardware requirements?
     min_hardware_requirements_answer: >
-      [version: 1] After thorough testing on multiple machines, we can conclude that the reccomended minimum hardware requirements are as follows:<br><br>
+      [version: 1] After thorough testing on multiple machines, we can conclude that the reccomended minimum hardware<br> requirements are as follows:<br><br>
       VPS:<br>
       * CPU's: 1/2 physical core / 1vCPU<br>
       * RAM: 1 GB Ram<br>
