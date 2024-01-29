@@ -43,7 +43,7 @@ It helped us learn what we need to do to make Pactus work even better.
 Without the community that supports us and dedicates their time and resources to testing and feedback,
 we wouldn't have been able to progress as we have.
 
-we thank all of them for their valuable contributions.
+We thank all of them for their valuable contributions.
 As promised, **participants in Testnets will be given priority as validators for the MainNet**, and
 will receive bounty PAC coins to set up their validators.
 
