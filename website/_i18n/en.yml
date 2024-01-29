@@ -207,8 +207,14 @@ dict:
     min_hardware_requirements: What are the minimum hardware requirements?
     min_hardware_requirements_answer: >
       [version: 1] After thorough testing we can conclude that the minimum requirements for hardware are as follows.<br>
-      VPS: A minimum of 1vCPU and 1GB Ram with 1TB connection.<br>
-      PC: A minimum of 2cores and 4GB Ram with 15MBps connection.
+      VPS:<br>
+      * CPU's: 1/2 physical core / 1vCPU<br>
+      * RAM: 1 GB Ram<br>
+      * Storage (SSD): 20 GB NVMe Drive<br>
+      PC:<br>
+      * CPU's: 2 physical cores / 4vCPU<br>
+      * RAM: 4 GB Ram<br>
+      * Storage (SSD): 64 GB SSD Drive
     total_supply: What is the total supply of Pactus coins?
     total_supply_answer: >
       [version: 2] Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units.
