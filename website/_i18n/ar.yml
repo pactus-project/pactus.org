@@ -196,6 +196,21 @@ dict:
       [version: 1] في بكتوس، لا يوجد حد أدنى لتجميد العملات، ولكن الحد الأقصى للعملات التي يمكنك تجميدها هو 1000 عملة.
       إذا كنت ترغب في تجميد أكثر من 1000 عملة، يمكنك تشغيل محقق جديد.
       تشغيل العديد من المحققين يحافظ على توزيع الشبكة بشكل أفضل ويساعد على الحفاظ على أمانها واستقرارها.
+    min_hardware_requirements: What are the minimum hardware requirements?
+    min_hardware_requirements_answer: >
+      [version: 1] After thorough testing on multiple machines, we can conclude that the reccomended minimum hardware<br>
+      requirements are as follows:<br><br>
+      VPS:<br>
+      * CPU's: 1/2 physical core / 1vCPU<br>
+      * RAM: 1 GB Ram<br>
+      * Storage (SSD): 20 GB NVMe Drive<br>
+      * Network: stable internet connection with 1 TBps speed<br><br>
+      PC:<br>
+      * CPU's: 2 physical cores / 4vCPU<br>
+      * RAM: 4 GB Ram<br>
+      * Storage (SSD): 64 GB SSD Drive<br>
+      * Network: stable internet connection with over 15 MBps speed<br><br>
+      **Note** These specifications have been tested and provide an availabilty score of over 0.9.
     total_supply: ما هو إجمالي إمدادات عملة بكتوس؟
     total_supply_answer: >
       [version: 1] بكتوس لديها إجمالي إمدادات 21 مليون عملة، وكل عملة مقسمة إلى 1 مليار وحدة.

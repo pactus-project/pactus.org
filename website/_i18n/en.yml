@@ -204,6 +204,21 @@ dict:
       [version: 2] In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 1000 coins.
       If you want to stake more than 1000 coins, you can run a new validator.
       Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
+    min_hardware_requirements: What are the minimum hardware requirements?
+    min_hardware_requirements_answer: >
+      [version: 1] After thorough testing on multiple machines, we can conclude that the reccomended minimum hardware<br>
+      requirements are as follows:<br><br>
+      VPS:<br>
+      * CPU's: 1/2 physical core / 1vCPU<br>
+      * RAM: 1 GB Ram<br>
+      * Storage (SSD): 20 GB NVMe Drive<br>
+      * Network: stable internet connection with 1 TBps speed<br><br>
+      PC:<br>
+      * CPU's: 2 physical cores / 4vCPU<br>
+      * RAM: 4 GB Ram<br>
+      * Storage (SSD): 64 GB SSD Drive<br>
+      * Network: stable internet connection with over 15 MBps speed<br><br>
+      **Note** These specifications have been tested and provide an availabilty score of over 0.9.
     total_supply: What is the total supply of Pactus coins?
     total_supply_answer: >
       [version: 2] Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units.
