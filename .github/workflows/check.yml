@@ -51,6 +51,12 @@ jobs:
         with:
           ruby-version: '3.0'
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+
+      - name: Install Bootstrap
+        run: npm install
+
       - name: Build the website
         run: |
           bundle install
