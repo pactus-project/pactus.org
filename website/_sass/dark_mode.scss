@@ -1,7 +1,23 @@
-
 @include color-mode(dark) {
   body {
     color: $font-color-dark;
     background-color: $bg-color-dark;
+  }
+
+  .btn-primary {
+    color: $bg-color-dark-2;
+    background-color: $primary-color-dark;
+    border-color: $primary-color-dark;
+  }
+
+  .btn-outline-primary {
+    color: $primary-color-dark;
+    background-color: $bg-color-dark-2;
+    border-color: $primary-color-dark;
+
+    &:hover {
+      background-color: $primary-color-dark;
+      color: $bg-color-dark-2;
+    }
   }
 }
