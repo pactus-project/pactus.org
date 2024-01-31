@@ -58,7 +58,7 @@ Please note that after a certain period of time, when developers get satisfied w
 they launch Mainnet. Mainnet has its own independent genesis blocks;
 so the assets and addresses that users use in Testnet are not valid inside the new Mainnet Blockchain anymore.
 In fact the whole Blockchain network starts working from the scratch and users and validators start to
-work with real tokens and transactions instead of the simulated ones. But since Testnet has an important effect
+work with real coins and transactions instead of the simulated ones. But since Testnet has an important effect
 on the health and improvement of the network, in Pactus Blockchain, we have several advantages
 for the people who join the Testnet.
 
@@ -76,7 +76,7 @@ you might find it handy to give it a try and be familiar with Pactus-GUI and its
 While using the network, running a node or testing the Pactus-GUI in Testnet period, you are contributing to
 the community to find improvement potentials, that’s why there are more advantages contemplated for the Testnet users;
 Soon our Mainnet will be launched and also Pactus network will be announced and listed in well-known exchanges.
-As an early contributor, you will have the advantage of getting some extra initial tokens at the beginning of Mainnet launch.
+As an early contributor, you will have the advantage of getting some extra initial coins at the beginning of Mainnet launch.
 So that you can use it to run a validator node and earn more from staking your assets. This airdrop is considered
 for every individual who installs Pactus-GUI and starts a node in Testnet.
 
