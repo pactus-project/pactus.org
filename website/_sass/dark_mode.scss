@@ -20,4 +20,12 @@
       color: $bg-color-dark-2;
     }
   }
+
+  table {
+    tbody tr:nth-child(2n + 1) td {
+      background-color: #000;
+    }
+  }
+
+  .fa-linux { color: #ffffff; }
 }
