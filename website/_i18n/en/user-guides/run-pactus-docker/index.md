@@ -87,7 +87,7 @@ docker run -it -d -v ~/pactus:/root/pactus -p 21888:21888 -p 21888:21888/udp -p 
 {% tab start-docker windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```powershell
-docker run -it -d -v %USERPROFILE%\pactus:/root/pactus -p 21888:21888 -p 21888:21888/udp -p 50051:50051 -p 8080:8080 --name pactus-testnet pactus/pactus pactus-daemon start  --password {WALLET_PASSWORD}
+docker run -it -d -v %USERPROFILE%\pactus:/root/pactus -p 21888:21888 -p 21888:21888/udp -p 50051:50051 -p 8080:8080 --name pactus pactus/pactus pactus-daemon start  --password {WALLET_PASSWORD}
 ```
 
 {% endtab %}
@@ -112,7 +112,7 @@ You can manage the Pactus Docker container with these essential commands:
 **Stop the container:**
 
 ```bash
-docker stop pactus-testnet
+docker stop pactus
 ```
 
 This command gracefully stops the "pactus-testnet" container.
@@ -120,7 +120,7 @@ This command gracefully stops the "pactus-testnet" container.
 **Start the container:**
 
 ```bash
-docker start pactus-testnet
+docker start pactus
 ```
 
 This command starts the Pactus Docker container.
@@ -130,7 +130,7 @@ This command starts the Pactus Docker container.
 To check the logs:
 
 ```bash
-docker logs pactus-testnet --tail 1000 -f
+docker logs pactus --tail 1000 -f
 ```
 
 Here's an explanation of the Docker flags:
@@ -143,7 +143,7 @@ Here's an explanation of the Docker flags:
 If you want to upgrade the node, you should first remove the current container:
 
 ```bash
-docker rm pactus-testnet
+docker rm pactus
 ```
 
 After removing the Pactus Docker container, you can create and run a new version, as explained above.
