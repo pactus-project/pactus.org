@@ -32,14 +32,14 @@ $prefix: "pa-";
 // @import "../../node_modules/bootstrap/scss/breadcrumb";
 // @import "../../node_modules/bootstrap/scss/accordion";
 // @import "../../node_modules/bootstrap/scss/pagination";
-// @import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/badge";
 @import "../../node_modules/bootstrap/scss/alert";
 // @import "../../node_modules/bootstrap/scss/progress";
 // @import "../../node_modules/bootstrap/scss/list-group";
 // @import "../../node_modules/bootstrap/scss/close";
 // @import "../../node_modules/bootstrap/scss/toasts";
 // @import "../../node_modules/bootstrap/scss/modal"; // Requires transitions
-@import "../../node_modules/bootstrap/scss/tooltip";
+// @import "../../node_modules/bootstrap/scss/tooltip";
 // @import "../../node_modules/bootstrap/scss/popover";
 // @import "../../node_modules/bootstrap/scss/carousel";
 // @import "../../node_modules/bootstrap/scss/spinners";
@@ -47,7 +47,7 @@ $prefix: "pa-";
 // @import "../../node_modules/bootstrap/scss/placeholders";
 
 // Helpers
-// @import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/helpers";
 
 // Utilities
 @import "../../node_modules/bootstrap/scss/utilities/api";
@@ -79,7 +79,7 @@ a {
   text-decoration: none;
 
   a:hover:not(.btn) {
-    color: $primary-color  !important;
+    color: $primary-color !important;
   }
 }
 
@@ -93,6 +93,10 @@ h2 {
 
 h1 {
   font-weight: 600;
+}
+
+h3 {
+  padding-top: 16px;
 }
 
 .motto {
@@ -126,12 +130,12 @@ h1 {
 
 .footer {
   .text-muted {
-    color: $bg-color  !important;
+    color: $bg-color !important;
     font-size: 12px;
     border-radius: 15px 50px 30px 5px;
 
     a {
-      color: $bg-color  !important;
+      color: $bg-color !important;
     }
   }
 }
@@ -183,17 +187,21 @@ h1 {
 
     &:not(.active):hover {
       background-color: #808080 !important;
-      color: $bg-color  !important;
+      color: $bg-color !important;
     }
   }
 
   .active {
-    color: $bg-color  !important;
+    color: $bg-color !important;
     background-color: #404040 !important;
   }
 }
 
 table {
+  thead {
+    font-weight: 700 !important;
+  }
+
   tbody tr:nth-child(2n + 1) td {
     background-color: #eee;
   }
@@ -203,7 +211,7 @@ blockquote {
   background: #eee;
   border-left: 10px solid #ccc;
   padding: 16px;
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C" "\201D" "\2018" "\2019";
 
   &:before {
     color: #ccc;
@@ -225,8 +233,8 @@ blockquote {
 }
 
 .footer {
-  background-color: $primary-color  !important;
-  color: $bg-color  !important;
+  background-color: $primary-color !important;
+  color: $bg-color !important;
 
   .section {
     font-size: 1.75rem;
@@ -292,6 +300,7 @@ blockquote {
     padding-bottom: 10px;
     color: #808080;
   }
+
   .content {
     padding-top: 22px;
     min-height: 600px;
