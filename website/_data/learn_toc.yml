@@ -21,7 +21,7 @@
     - doc: committee
     - doc: parameters
 
-- title: Transactions
+- title: Transaction
   path: learn/transaction
   items:
     - doc: format
@@ -31,6 +31,11 @@
     - doc: sortition
     - doc: unbond
     - doc: withdraw
+
+- title: API Reference
+  path: learn/api
+  items:
+    - doc: grpc
 
 # - title: Smart Contract
 #   path: learn/smart-contract
