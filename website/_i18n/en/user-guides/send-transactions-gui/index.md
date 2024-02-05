@@ -1,5 +1,5 @@
 ---
-version: 2
+version: 3
 ---
 
 ## Preface
@@ -39,6 +39,11 @@ as well as the recipient's [validator]({{ site.baseurl }}/learn/blockchain/valid
 the amount you wish to stake.
 
 ![Bond Transaction Dialog]({{ site.url }}/user-guides/send-transactions-gui/bond-transaction-dialog.png)
+
+If a validator does not yet exist, the public key of the validator should be set.
+For an existing validator, a public key is not required.
+Also, note that if the public key is not set, the system tries to search for it inside the wallet.
+Therefore, if you want to stake on your own validators, you don't need to set the public key here.
 
 It's important to note that the [transaction fee]({{ site.baseurl }}/learn/transaction/fee/)
 will be calculated based on the amount you're sending.
