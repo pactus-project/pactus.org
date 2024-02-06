@@ -394,6 +394,35 @@ dict:
       [version: 1] Block confirmation refers to the number of blocks that need to be created
       before a transaction is considered final and irreversible. In Pactus, block confirmation is immediate,
       meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
+    support_distribution: How will the Support coins be spent?
+    support_distribution_answer: >
+      The support accounts are designed to provide financial backing for the project.
+      Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts.
+      The introduction of support coins was a strategic response to the absence of investors,
+      despite the significant progress of the project.
+      <br><br>
+      These coins are allocated in several ways:
+      <ul>
+        <li><b>Community</b>:
+          This portion will mainly support the community.
+          As part of this, the participants on Testnets receive initial staking coins to
+          setup their validator and secure the Mainnet.
+        </li>
+        <li><b>Team and Operations</b>:
+          Another portion supports the project team.
+          Team members receive a monthly distribution of these coins, which is estimated to sustain the team for over six years.
+        </li>
+        <li><b>Venture Capital (VC) Allocation</b>:
+          Another portion is set aside for any potential venture capitalists who
+          might show interest in investing in the project in the future.
+        </li>
+        <li><b>Foundation</b>:
+          The foundation coins are reserved for future use, potentially in supporting strong projects that align with Pactus's objectives.
+        </li>
+      </ul>
+
+      Transparency is a key aspect of this allocation, as all movements of these
+      coins are trackable due to the fully transparent nature of the blockchain.
 
   guide:
     title: دلائل المستخدم

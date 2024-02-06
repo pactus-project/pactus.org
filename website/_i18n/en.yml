@@ -206,7 +206,7 @@ dict:
       Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
     min_hardware_requirements: What are the minimum hardware requirements?
     min_hardware_requirements_answer: >
-      [version: 1] After thorough testing on multiple machines, we can conclude that the reccomended minimum hardware<br>
+      [version: 1] After thorough testing on multiple machines, we can conclude that the recommended minimum hardware
       requirements are as follows:<br><br>
       VPS:<br>
       * CPU's: 1/2 physical core / 1vCPU<br>
@@ -218,7 +218,7 @@ dict:
       * RAM: 4 GB Ram<br>
       * Storage (SSD): 64 GB SSD Drive<br>
       * Network: stable internet connection with over 15 MBps speed<br><br>
-      **Note** These specifications have been tested and provide an availabilty score of over 0.9.
+      **Note** These specifications have been tested and provide an availability score of over 0.9.
     total_supply: What is the total supply of Pactus coins?
     total_supply_answer: >
       [version: 2] Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units.
@@ -383,7 +383,7 @@ dict:
             </tr>
         </tbody>
       </table>
-    treasury_distribution: How are Treasury coins distributed?
+    treasury_distribution: How will the Treasury coins be distributed?
     treasury_distribution_answer: >
       [version: 1] Treasury coins are distributed as block rewards to the block proposers.
       Every 10 seconds, one coin from the Treasury account transfers to the block proposer account.
@@ -395,6 +395,35 @@ dict:
       [version: 1] Block confirmation refers to the number of blocks that need to be created
       before a transaction is considered final and irreversible. In Pactus, block confirmation is immediate,
       meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
+    support_distribution: How will the Support coins be spent?
+    support_distribution_answer: >
+      The support accounts are designed to provide financial backing for the project.
+      Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts.
+      The introduction of support coins was a strategic response to the absence of investors,
+      despite the significant progress of the project.
+      <br><br>
+      These coins are allocated in several ways:
+      <ul>
+        <li><b>Community</b>:
+          This portion will mainly support the community.
+          As part of this, the participants on Testnets receive initial staking coins to
+          setup their validator and secure the Mainnet.
+        </li>
+        <li><b>Team and Operations</b>:
+          Another portion supports the project team.
+          Team members receive a monthly distribution of these coins, which is estimated to sustain the team for over six years.
+        </li>
+        <li><b>Venture Capital (VC) Allocation</b>:
+          Another portion is set aside for any potential venture capitalists who
+          might show interest in investing in the project in the future.
+        </li>
+        <li><b>Foundation</b>:
+          The foundation coins are reserved for future use, potentially in supporting strong projects that align with Pactus's objectives.
+        </li>
+      </ul>
+
+      Transparency is a key aspect of this allocation, as all movements of these
+      coins are trackable due to the fully transparent nature of the blockchain.
 
   guide:
     title: User Guides
