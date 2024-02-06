@@ -420,7 +420,7 @@ dict:
     default_ports_explained: >
       The default network ports in Pactus are defined as follows. It is recommended not to change these default ports:
 
-        - [P2P](https://libp2p.io/) port is set to 21777 for the Testnet, supporting both UDP and TCP protocols.
-        - [gRPC](https://grpc.io/) port is set to 50052. The gRPC module is enabled by default.
-        - [gRPC-gateway](https://grpc-ecosystem.github.io/grpc-gateway/) is set to 8080. gRPC-gateway is enabled by default.
-        - [Nanomsg](https://nanomsg.org/) port is set to 40799. The Nanomsg service is disabled by default.
+        - [P2P](https://libp2p.io/) port is set to 21888. P2P supports both UDP and TCP protocols.
+        - [gRPC](https://grpc.io/) port is set to 50051. The gRPC module is enabled by default for localhost.
+        - [gRPC-gateway](https://grpc-ecosystem.github.io/grpc-gateway/) is set to 8080. gRPC-gateway is disabled by default.
+        - [Nanomsg](https://nanomsg.org/) port is set to 40899. The Nanomsg service is disabled by default.
