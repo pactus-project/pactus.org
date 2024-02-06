@@ -2,6 +2,9 @@
   body {
     color: $font-color-dark;
     background-color: $bg-color-dark;
+    --pa-body-bg-rgb: 34, 39, 46;
+  
+    --pa-body-bg: #22272e;
   }
 
   .btn-primary {
@@ -21,13 +24,51 @@
     }
   }
 
+  .edit-btn {
+    color: $font-color-2;
+  }
+
+  .faq h3 {
+      color: $font-color-2;
+    }
+
+  .toc a {
+      color: #8f8f8f;
+
+      &:hover {
+        background-color: #14171c;
+      }
+    }
+
+  .toc .btn {
+      color: $font-color-2;
+    } 
+
+  .toc .btn:hover {
+      background-color: #14171c;
+    }
+    
+  blockquote {
+      background: #14171c;
+    }
+
+  .highlight pre {
+      background-color: #14171c;
+    }
+
+  .learn h2 {
+      border-top: 1px solid #edeef0;
+    }
+
+  .faq h3 {
+      border-top: 1px solid #edeef0;
+    }
+
   table {
     tbody tr:nth-child(2n + 1) td {
-      background-color: #000;
+      background-color: #22272e;
     }
   }
 
-  .fa-linux {
-    color: #ffffff;
-  }
+  .fa-linux { color: #ffffff; }
 }
