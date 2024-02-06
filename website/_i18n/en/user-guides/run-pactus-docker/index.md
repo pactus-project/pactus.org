@@ -1,5 +1,5 @@
 ---
-version: 4
+version: 5
 ---
 
 ## Preface
@@ -79,7 +79,7 @@ Now you can start the node and sync with the network. Run the following command 
 {% tab start-docker linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```bash
-docker run -it -d -v ~/pactus:/root/pactus -p 21888:21888 -p 21888:21888/udp -p 50051:50051 -p 8080:8080 --name pactus-testnet pactus/pactus pactus-daemon start --password <WALLET_PASSWORD>
+docker run -it -d -v ~/pactus:/root/pactus -p 21888:21888 -p 21888:21888/udp -p 50051:50051 -p 8080:8080 --name pactus pactus/pactus pactus-daemon start --password <WALLET_PASSWORD>
 ```
 
 {% endtab %}
@@ -94,7 +94,7 @@ docker run -it -d -v %USERPROFILE%\pactus:/root/pactus -p 21888:21888 -p 21888:2
 
 {% endtabs %}
 
-This command creates and runs a Docker container named "pactus-testnet".
+This command creates and runs a Docker container named "pactus".
 Here's an explanation of the Docker flags:
 
 - `-p <host_port>:<container_port>`: Maps a port from your host machine to a port in the Docker container.
@@ -115,7 +115,7 @@ You can manage the Pactus Docker container with these essential commands:
 docker stop pactus
 ```
 
-This command gracefully stops the "pactus-testnet" container.
+This command gracefully stops the "pactus" container.
 
 **Start the container:**
 
