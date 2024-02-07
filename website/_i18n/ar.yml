@@ -186,6 +186,9 @@ dict:
     flat_reward_answer: >
       [version: 1] تكون مكافأة الكتلة في بكتوس ثابتة، وهي عملة واحدة دائمًا لكل كتلة.
       تساعد هذه الخطة الثابتة للمكافأة على ضمان البساطة والعدالة وتوزيع العملة بشكل أفضل.
+    coins_per_day: How many PAC coins are generated per day?
+    coins_per_day_answer: >
+      [version: 1] Daily, a total amount of 8640 PAC is generated. This figure translates to 241,000 every 28 days and 3,153,600 per year.
     unlimited_validators: ما هو عدد المعالجين الذي يدعمه بكتوس؟
     unlimited_validators_answer: >
       [version: 1] بكتوس عبارة عن بلوكتشين حقيقي للإثبات بالحصة، مما يعني أنه لا يوجد حد لعدد المعالجين في الشبكة.
