@@ -26,6 +26,7 @@
     - id: flat_reward
       img: pactus-reward.png
       more: /learn/blockchain/incentive/#flat-reward
+    - id: coins_per_day
 
 - title: consensus
   items:
