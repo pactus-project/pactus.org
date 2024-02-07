@@ -177,6 +177,9 @@ dict:
     flat_reward: Pactus中的区块奖励是多少？
     flat_reward_answer: >
       [version: 1] Pactus的区块奖励是固定的，每个区块始终为1枚币。这种平坦奖励方案有助于确保简单性、公平性和更好的币分配。
+    coins_per_day: How many PAC coins are generated per day?
+    coins_per_day_answer: >
+      [version: 1] Daily, a total amount of 8640 PAC is generated. This figure translates to 241,000 every 28 days and 3,153,600 per year.
     unlimited_validators: Pactus有多少个验证者？
     unlimited_validators_answer: >
       [version: 1] Pactus是一个真正的权益证明区块链，这意味着网络中的验证者数量没有限制。但是，由21个验证者组成的委员会负责创建区块。需要注意的是，委员会成员不固定，随时间变化。
