@@ -194,6 +194,9 @@ dict:
     flat_reward_answer: >
       [version: 1] Block reward in Pactus is fixed, and it is always one coin per block.
       This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
+    coins_per_day: How many PAC coins are generated per day?
+    coins_per_day_answer: >
+      [version: 1] Daily, a total amount of 8640 PAC is generated. This figure translates to 241,000 every 28 days and 3,153,600 per year.
     unlimited_validators: How many validators does Pactus have?
     unlimited_validators_answer: >
       [version: 2] Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network.
