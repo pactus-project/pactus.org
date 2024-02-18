@@ -1,13 +1,66 @@
 $primary-color: #021a34;
 $secondary-color: #075f94;
-$bg-color: #edeef0;
-$font-color: #4c4c4c;
-$font-color-2: #edeef0;
 
-$primary-color-dark: #edeef0;
-$secondary-color-dark: #075f94;
-$tertiary-color-dark: #22272e;
-$bg-color-dark: #14171c;
-$bg-color-dark-2: #22272e;
-$font-color-dark: #edeef0;
+:root {
+  // -- Light
+  --primary-color-light: #021a34;
+  --secondary-color-light: #075f94;
 
+  --bg-color-light: #edeef0;
+  --bg-color-reverse-light: #021a34;
+  --bg-color-tinted-light: #b0b2b4;
+
+  --text-color-light: #4c4c4c;
+  --text-color-reverse-light: #edeef0;
+  --text-muted-color-light: #4c4c4c;
+
+  --link-color-light: #4c4c4c;
+  --link-hover-color-light: #6c6c6c;
+
+  // -- Dark
+  --primary-color-dark: #edeef0;
+  --secondary-color-dark: #075f94;
+
+  --bg-color-dark: #14171c;
+  --bg-color-reverse-dark: #edeef0;
+  --bg-color-tinted-dark: #627191;
+
+  --text-color-dark: #edeef0;
+  --text-color-reverse-dark: #14171c;
+  --text-muted-color-dark: #edeef0;
+
+  --link-color-dark: #edeef0;
+  --link-hover-color-dark: #ffffff;
+}
+
+[data-bs-theme="light"] {
+  --primary-color: var(--primary-color-light);
+  --secondary-color: var(--secondary-color-light);
+  --bg-color-tinted: var(--bg-color-tinted-light);
+
+  --bg-color: var(--bg-color-light);
+  --bg-color-reverse: var(--bg-color-reverse-light);
+  --text-color: var(--text-color-light);
+
+  --text-color-reverse: var(--text-color-reverse-light);
+  --text-muted-color: var(--text-muted-color-light);
+
+  --link-color: var(--link-color-light);
+  --link-hover-color: var(--link-hover-color-light);
+}
+
+[data-bs-theme="dark"] {
+  --primary-color: var(--primary-color-dark);
+  --secondary-color: var(--secondary-color-dark);
+
+  --bg-color: var(--bg-color-dark);
+  --bg-color-reverse: var(--bg-color-reverse-dark);
+  --bg-color-tinted: var(--bg-color-tinted-dark);
+
+  --text-color: var(--text-color-dark);
+  --text-color-reverse: var(--text-color-reverse-dark);
+  --text-muted-color: var(--text-muted-color-dark);
+
+  --link-color: var(--link-color-dark);
+  --link-hover-color: var(--link-hover-color-dark);
+}

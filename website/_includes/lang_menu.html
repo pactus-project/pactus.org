@@ -1,7 +1,7 @@
-<li class="nav-item dropdown ps-3">
+<li class="nav-item dropdown ps-2">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="fa-solid fa-earth-americas"></i>
-    {{ site.data.languages[site.lang] }}
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">{{ site.data.languages[site.lang] }}</span>
   </a>
   <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
     {% for lang in site.data.languages %}

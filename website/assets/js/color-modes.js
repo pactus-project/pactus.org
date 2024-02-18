@@ -36,7 +36,7 @@
       return
     }
 
-    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const themeSwitcherText = document.querySelector('#bd-theme-icon')
     const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
     const activeFAClasses = btnToActive.querySelector('i').classList.value
 
