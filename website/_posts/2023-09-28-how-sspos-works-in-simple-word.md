@@ -18,7 +18,7 @@ Pactus Blockchain uses the SSPoS (Solid State Proof of State) which is a new con
 To explain how it works let's start with explaining one of the first and simplest
 consensus mechanisms (or if you already know them, just jump into the last part named SSPoS).
 
-![Solid State Proof of Stake](/blog/images/2023-09-28-how-sspos-works-in-simple-word/SSPoS.png)
+![Solid State Proof of Stake]({% image_url %}/SSPoS.png)
 
 ## PoW (Proof of Work)
 

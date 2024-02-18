@@ -7,7 +7,7 @@ tags: announcement
 
 ## Years to Launch
 
-Pactus Mainnet started creating the first block on 24 Janary 2024 at 20:24:10 UTC time.
+Pactus Mainnet started creating the first block on 24 January 2024 at 20:24:10 UTC time.
 Pactus Mainnet is the result of years of hard work, research, and innovation.
 It started from one idea:
 

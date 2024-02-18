@@ -5,7 +5,7 @@ date: 2022-09-24 00:00:00 +0000
 tags: announcement, testnet
 ---
 
-![testnet]({{ site.url }}/blog/images/2022-09-24-testnet-0-launched/testnet.gif)
+![testnet]({% image_url %}/testnet.gif)
 
 The Pactus blockchain Testnet-0 is now accessible.
 To participate, simply [download]({{ site.baseurl }}/download) the Pactus application version 0.9.0 and
