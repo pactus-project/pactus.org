@@ -7,7 +7,7 @@
         data-bs-toggle="collapse"
         data-bs-target="#{{folder.title | slugify}}-collapse"
         aria-expanded="{% if page.url contains folder.path %}{{ 'true'}}{% else %}{{ 'false'}}{% endif %}">
-        {{ folder.title }}
+        <i class="fa-solid fa-angle-right pe-1"></i> {{ folder.title }}
       </button>
       <div
         class="collapse {% if page.url contains folder.path %}{{'show'}}{% endif %}"
@@ -18,7 +18,7 @@
           <li>
             <a
               href="{{ item_page.url }}"
-              class="link-dark d-inline-flex text-decoration-none  {% if page.url contains item.url %} {{ 'selected'}} {% endif %}">
+              class="d-inline-flex text-decoration-none  {% if page.url contains item_page.url %} {{ 'selected'}} {% endif %}">
               {{ item_page.sidebar }}
             </a>
           </li>
