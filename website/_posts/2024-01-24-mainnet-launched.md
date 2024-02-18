@@ -2,6 +2,7 @@
 layout: post
 title: "Mainnet launched 🚀"
 date: 2024-01-24 20:24:00 +0000
+permalink: 2024/01/24/mainnet-launched.html
 tags: announcement
 ---
 
