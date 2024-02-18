@@ -27,6 +27,15 @@
     }
   }
 
+  const updateLogo = theme => {
+    const logoImage = document.getElementById("logo_image")
+    if (theme === 'dark') {
+      logoImage.src = '/assets/images/logos/pactus-logo-dark.png'
+    } else {
+      logoImage.src = '/assets/images/logos/pactus-logo-light.png'
+    }
+  }
+
   setTheme(getPreferredTheme())
 
   const showActiveTheme = (theme, focus = false) => {
@@ -68,6 +77,7 @@
           const theme = toggle.getAttribute('data-bs-theme-value')
           setStoredTheme(theme)
           setTheme(theme)
+          updateLogo(theme)
           showActiveTheme(theme, true)
         })
       })
