@@ -68,4 +68,3 @@ title: dict.community.title
     </a>
   </li>
 </ul>
-
