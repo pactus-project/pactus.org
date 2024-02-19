@@ -9,7 +9,7 @@ tags: dev-report
 
 there is several activities in Pactus github this month, here is a clear report and explain of activities.
 
-![Github Pactus](/blog/images/2023-08-22-dev-report/github-pactus.png)
+![Github Pactus]({% image_url %}/github-pactus.png)
 
 ### Linters
 

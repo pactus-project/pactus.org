@@ -22,7 +22,7 @@ The team discussed the relay nodes that enable communication for nodes behind NA
 Upon receiving a message, the module publishes an event.
 The two types of events are Gossip events and Steam events.
 
-![Network messages](/blog/images/2023-07-09-dev-meeting/network-messages.png)
+![Network messages]({% image_url %}/network-messages.png)
 
 The team discussed the issue of Relay connections resetting, and explored solutions such as
 [hole punching](https://docs.libp2p.io/concepts/nat/hole-punching/) or using UDP and IPv6.
