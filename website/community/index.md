@@ -68,7 +68,7 @@ title: dict.community.title
     </a>
   </li>
   <li>
-    <a href="https://t.me/nodesync_top">
+    <a href="https://discord.gg/H5vZkNnXCu">
       <img alt="Wechat" src="{{ site.url }}/assets/images/social-wechat.svg" width="32">
       {% t dict.community.wechat %}
     </a>
