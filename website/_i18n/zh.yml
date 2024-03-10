@@ -429,6 +429,7 @@ dict:
     use_wallet_cli: 如何在命令行模式下使用钱包？
     reduce_network: How to reduce the network usage?
     run_pactus_metrics: How to run Pactus Metrics?
+    grpc-sign-transactions: How to sign transaction using gRPC?
     wallet_seed_important: >
       <b>Wallet seed is important</b>
       <br><br>
