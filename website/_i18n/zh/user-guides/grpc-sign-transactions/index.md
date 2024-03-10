@@ -32,6 +32,7 @@ This helps you to create the same wallet with this tutorial. The first two addre
 tpc1zhv2hq30rnu9lkjusgwqk4f5qfdr72sd2mndnn6
 tpc1zsrvuvn0j80vc3we5q44apjrv8j7ta5807z7xc7
 ```
+
 We are going to transfer 1 PAC from the first account to the second one.
 
 ### Run the node
@@ -44,7 +45,8 @@ Now you can run the node simply with this command:
   --password "super-secret-password"
 ```
 
-By running the node, you will see that it starts creating blocks, and therefore the reward account address will be rewarded locally.
+By running the node, you will see that it starts creating blocks, and
+therefore the reward account address will be rewarded locally.
 We can use this balance for testing purposes.
 
 ### Interact with the node
@@ -85,7 +87,6 @@ The sender account is the first reward address in the wallet, therefore it shoul
 
 <i class="fa-solid fa-triangle-exclamation"></i> Please note that the amount here is in atomic units.
 There is a Working-In-Progress PR to accept and return all amounts in PAC units (10^9).
-
 
 ### Sign transaction
 
