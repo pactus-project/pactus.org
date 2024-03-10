@@ -15,7 +15,7 @@ This tutorial will guide you step-by-step on how to use gRPC to sign transaction
 To follow along with this tutorial, you'll first need to set up and run a localnet blockchain, which is suitable for testing:
 
 ```bash
-./build/pactus-daemon init \
+./pactus-daemon init \
   --localnet \
   --working-dir ./pactus-localnet \
   --password "super-secret-password" \
@@ -40,7 +40,7 @@ We are going to transfer 1 PAC from the first account to the second one.
 Now you can run the node simply with this command:
 
 ```bash
-./build/pactus-daemon start \
+./pactus-daemon start \
   --working-dir ./pactus-localnet \
   --password "super-secret-password"
 ```
