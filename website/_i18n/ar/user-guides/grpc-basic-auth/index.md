@@ -56,7 +56,7 @@ To generate basic authentication credentials, you can use the following form to 
   </button>
 <br>
 <br>
-<p id="output">Result:</p>
+<p id="output"></p>
 </form>
 <div id="output"></div>
 
