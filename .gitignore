@@ -7,3 +7,6 @@ npm-debug.log
 todo
 *.lock
 .vscode
+.idea
+package-lock.json
+.npmrc
