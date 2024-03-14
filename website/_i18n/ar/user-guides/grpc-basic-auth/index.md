@@ -17,7 +17,7 @@ tool or a predefined utility.
 
 Example Format:
 
-```
+```shell
 username: foo
 password: bar
 
@@ -54,7 +54,9 @@ This process results in a bcrypt-hashed password that can be used for basic auth
 
 To generate basic authentication credentials, you can use the following form to create a hashed credential.
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js" integrity="sha512-DNI/FJdkfyeuPUal7lDkRVg0mFY2n4IZJJYqPbQWLL0COxLi6G6nmf5gr1vW1Bd4wYC09hOvZVsSclfXxUTU/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js" 
+integrity="sha512-DNI/FJdkfyeuPUal7lDkRVg0mFY2n4IZJJYqPbQWLL0COxLi6G6nmf5gr1vW1Bd4wYC09hOvZVsSclfXxUTU/w==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
       function generateHtpasswd() {
         var username = document.getElementById("username").value;
@@ -90,8 +92,8 @@ To generate basic authentication credentials, you can use the following form to 
 
 1. Open the `config.toml` file in your Pactus directory.
 
-  - Windows:`C:\Users\{user}\pactus`
-  - Linux and Mac: `/home/{user}/pactus`
+- Windows:`C:\Users\{user}\pactus`
+- Linux and Mac: `/home/{user}/pactus`
 
 2. Insert the generated user with the hashed password into the `basic_auth_credential` field in the config file.
 
