@@ -4,15 +4,16 @@ version: 1
 
 ## Preface
 
-The Pactus Blockchain offers a gRPC interface, enabling users to interact with both the blockchain 
-and its native wallet. To enhance the security of gRPC APIs, we have implemented a Basic Authentication 
+The Pactus Blockchain offers a gRPC interface, enabling users to interact with both the blockchain
+and its native wallet. To enhance the security of gRPC APIs, we have implemented a Basic Authentication
 mechanism. This approach aims to provide a straightforward yet effective means for authenticating clients accessing the APIs.
 
 **Note:** This mechanism secures gRPC, gRPC gateway, and HTTP communications.
 
 ## Generate Basic Auth
 
-To enable basic authentication, you need to generate basic authentication credentials using an online tool or a predefined utility.
+To enable basic authentication, you need to generate basic authentication credentials using an online
+tool or a predefined utility.
 
 Example Format:
 
@@ -89,8 +90,8 @@ To generate basic authentication credentials, you can use the following form to 
 
 1. Open the `config.toml` file in your Pactus directory.
 
-  - **Windows:** `C:\Users\{user}\pactus`
-  - **Linux and Mac:** `/home/{user}/pactus`
+  - Windows:`C:\Users\{user}\pactus`
+  - Linux and Mac: `/home/{user}/pactus`
 
 2. Insert the generated user with the hashed password into the `basic_auth_credential` field in the config file.
 
