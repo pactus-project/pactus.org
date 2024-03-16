@@ -448,6 +448,7 @@ dict:
     reduce_network: How to reduce the network usage?
     run_pactus_metrics: How to run Pactus Metrics?
     grpc-sign-transactions: How to sign transaction using gRPC?
+    grpc-basic-auth: How to secure gRPC using basic authentication?
     wallet_seed_important: >
       <b>Wallet seed is important<b>
       <br><br>

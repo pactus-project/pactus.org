@@ -16,4 +16,5 @@ title: dict.guide.title
   <li><a href="{{ site.baseurl }}/user-guides/reduce-network">{% t dict.guide.reduce_network %}</a></li>
   <li><a href="{{ site.baseurl }}/user-guides/run-pactus-metrics">{% t dict.guide.run_pactus_metrics %}</a></li>
   <li><a href="{{ site.baseurl }}/user-guides/grpc-sign-transactions">{% t dict.guide.grpc-sign-transactions %}</a></li>
+  <li><a href="{{ site.baseurl }}/user-guides/grpc-basic-auth">{% t dict.guide.grpc-basic-auth %}</a></li>
 </ul>
