@@ -26,8 +26,6 @@ result: foo:$2a$10$nl6VKEzSENIK5dmzoADgKeTFtCusQxeVCZiXkRzzbyfG.bLpHtrda
 
 ### Generate by using htpasswd tool
 
-Your instructions are clear and informative. I've made minor edits for clarity and consistency:
-
 1. Install the `htpasswd` tool from [Apache](https://httpd.apache.org/docs/2.4/programs/htpasswd.html).
 2. Use the `htpasswd` command-line tool to generate a bcrypt-hashed password. Here's the general syntax:
 
@@ -45,7 +43,7 @@ htpasswd -bnBC 10 <username> <password>
 Example:
 
 ```shell
-htpasswd -bnBC 10 javad mypassword
+htpasswd -bnBC 10 user pass
 ```
 
 This process results in a bcrypt-hashed password that can be used for basic authentication.
@@ -99,10 +97,10 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 ```toml
 [grpc]
-  enable = true
-  enable_wallet = false
-  listen = "127.0.0.1:50051"
-  basic_auth_credential = "foo:$2a$10$nl6VKEzSENIK5dmzoADgKeTFtCusQxeVCZiXkRzzbyfG.bLpHtrda"
+enable = true
+enable_wallet = false
+listen = "127.0.0.1:50051"
+basic_auth_credential = "foo:$2a$10$nl6VKEzSENIK5dmzoADgKeTFtCusQxeVCZiXkRzzbyfG.bLpHtrda"
 ```
 
 3. Restart or run the node to apply this configuration.
