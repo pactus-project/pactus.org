@@ -170,9 +170,9 @@ Based on [PIP-8](https://pips.pactus.org/PIPs/pip-8), an address string conducts
 By default, the above command creates an account address.
 If you want to create a validator address instead, you can use the `--type validator` option with the command like this:
 
-{% tabs address_new_validator ltr %}
+{% tabs address_new_val ltr %}
 
-{% tab address_new_validator linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
+{% tab address_new_val linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
 ./pactus-wallet address new --type validator
@@ -180,7 +180,7 @@ If you want to create a validator address instead, you can use the `--type valid
 
 {% endtab %}
 
-{% tab address_new_validator windows <i class="fa-brands fa-windows"></i> Windows %}
+{% tab address_new_val windows <i class="fa-brands fa-windows"></i> Windows %}
 
 ```text
 pactus-wallet.exe address new --type validator
