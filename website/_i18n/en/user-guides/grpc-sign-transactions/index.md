@@ -54,13 +54,13 @@ We can use this balance for testing purposes.
 Open another terminal and run the following command:
 
 ```bash
-./pactus-ctl --server-addr localhost:50052 \
+./pactus-shell --server-addr localhost:50052 \
   blockchain get-blockchain-info
 ```
 
 It should print information about the localnet blockchain.
-The `pactus-ctl` application uses gRPC to interact with the blockchain.
-In this tutorial, we use `pactus-ctl` to interact with the blockchain.
+The `pactus-shell` application uses gRPC to interact with the blockchain.
+In this tutorial, we use `pactus-shell` to interact with the blockchain.
 You can either use gRPC-gateway REST APIs or make direct gRPC calls to interact with the node.
 They are more or less similar and all interact with the node using gRPC endpoints.
 
@@ -73,7 +73,7 @@ We can use the `get_raw_transfer_transaction` method to create a raw transfer tr
 Similar methods can be used to create raw bond, unbond, and withdraw transactions.
 
 ```bash
-./pactus-ctl --server-addr localhost:50052 \
+./pactus-shell --server-addr localhost:50052 \
   transaction get-raw-transfer-transaction \
     --sender tpc1zhv2hq30rnu9lkjusgwqk4f5qfdr72sd2mndnn6 \
     --receiver tpc1zsrvuvn0j80vc3we5q44apjrv8j7ta5807z7xc7 \
@@ -95,7 +95,7 @@ At the time of writing this document, Pactus only supports the "default_wallet".
 Soon, creating wallets through gRPC and loading them will be supported.
 
 ```bash
-./pactus-ctl --server-addr localhost:50052 \
+./pactus-shell --server-addr localhost:50052 \
   wallet load-wallet --wallet-name "default_wallet"
 {
   "walletName":  "default_wallet"
@@ -105,7 +105,7 @@ Soon, creating wallets through gRPC and loading them will be supported.
 Now that the "default_wallet" is loaded, we can proceed to sign the raw transaction:
 
 ```bash
-./pactus-ctl --server-addr localhost:50052 \
+./pactus-shell --server-addr localhost:50052 \
   wallet sign-raw-transaction \
     --wallet-name "default_wallet" \
     --password "super-secret-password" \
@@ -123,7 +123,7 @@ Transaction successfully signed.
 Now you can broadcast the signed transaction:
 
 ```bash
-./pactus-ctl --server-addr localhost:50052 \
+./pactus-shell --server-addr localhost:50052 \
   transaction broadcast-transaction \
     --signed-raw-transaction "AAGWBQAA6AcAAQK7FXBF458L+0uQQ4FqpoBLR+VBqgKA2cZN8jvZiLs0BWvQyGw8vL7Q7wG0VVIZZ6CfW7J91B0lcw8Ji7+hgRbB88uT8pWyxf9cTqWGLL3sIbnNA1zQol+GtO6C645tYQYi6FWxtOcgYuurrsTapgSa911ZBuToQxJ8D5hj/BPqBiAtfMFwSWlXXbUKr4CGOCCPsA+IEAY0zVpxFa/bl3VMcZF4mgeAoJLZ3hcjz2leLJG9oVvNdwqvu0U="
 {
