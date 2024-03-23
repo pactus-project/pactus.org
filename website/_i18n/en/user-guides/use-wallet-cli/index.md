@@ -1,5 +1,5 @@
 ---
-version: 7
+version: 8
 ---
 
 ## Preface
@@ -160,6 +160,30 @@ You can create a new address by running this command:
 
 ```text
 pactus-wallet.exe address new
+```
+
+{% endtab %}
+
+{% endtabs %}
+
+Based on [PIP-8](https://pips.pactus.org/PIPs/pip-8), an address string conducts its type and usage.
+By default, the above command creates an account address.
+If you want to create a validator address instead, you can use the `--type validator` option with the command like this:
+
+{% tabs address_new ltr %}
+
+{% tab address_new linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
+
+```text
+./pactus-wallet address new --type validator
+```
+
+{% endtab %}
+
+{% tab address_new windows <i class="fa-brands fa-windows"></i> Windows %}
+
+```text
+pactus-wallet.exe address new --type validator
 ```
 
 {% endtab %}
