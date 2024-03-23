@@ -18,6 +18,7 @@ The genesis block for the Testnet is available
 [here](https://github.com/pactus-project/pactus/blob/main/genesis/testnet.json).
 
 Currently, there are four active nodes running the Testnet, accessible at the following addresses:
+
 - testnet1.pactus.org
 - testnet2.pactus.org
 - testnet3.pactus.org
