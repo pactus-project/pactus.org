@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4BTY819M6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-Q4BTY819M6");
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sortition Algorithm | Welcome to Pactus</title>
+  <meta name="description" content="Pactus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!" />
+
+  <meta property="og:title" content="Sortition Algorithm | Welcome to Pactus" />
+  <meta property="og:description" content="Pactus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!" />
+  <meta property="og:site_name" content="Welcome to Pactus" />
+  <meta property="og:url" content="https://pactus.org/learn/consensus/sortition/" />
+  <meta property="og:type" content="website" />
+
+  <link href="https://pactus.org/assets/css/rouge.theme.vim.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.colorful.brands.css" rel="stylesheet" />
+  <link href="https://pactus.org/assets/css/custom.css" rel="stylesheet" />
+
+  <script src="https://pactus.org/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="https://pactus.org/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://pactus.org/assets/js/anchor.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://pactus.org/assets/js/custom.js"></script>
+  <script src="https://pactus.org/assets/js/color-modes.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png"  />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+
+  <body>
+    <div class="shadow-sm rounded-bottom">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand logo px-4 pt-2" href="/">
+        <img id="logo_image" src="https://pactus.org/assets/images/logos/pactus-logo-light.png" alt="Pactus blockchain" />
+      <div class="logo"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/about/what-is-pactus/">
+                  What is Pactus?
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/about/roadmap/">
+                  Roadmap
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/about/faq/">FAQ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/learn/">Learn</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/download/">Download</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/blog/">Blog</a>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/community/">
+                  Community
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/contributing/">
+                  Contributing
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/user-guides/">
+                  User Guides
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank"
+                  rel="noopener noreferrer">
+                  Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://pacviewer.com/" target="_blank"
+                  rel="noopener noreferrer">
+                  Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/" target="_blank"
+                  rel="noopener noreferrer">
+                  Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link dropdown-item ps-2" href="https://pips.pactus.org" target="_blank">
+                  PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">English</span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    
+
+    
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/ar/learn/consensus/sortition/">
+        العربية
+      </a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/zh/learn/consensus/sortition/">
+        中文
+      </a>
+    </li>
+    
+
+    
+  </ul>
+</li>
+
+          <li class="nav-item dropdown ps-2 ms-0">
+  <button class="btn btn-link nav-link dropdown-toggle"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-label="Toggle theme (auto)">
+    <i id="bd-theme-icon" class="fa-regular fa-fw fa-circle-half-stroke"></i>
+    <span class="d-lg-none bd-theme-text m-0 p-0" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="light">
+        <i class="fa-regular fa-fw fa-sun"></i> Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="dark">
+        <i class="fa-solid fa-fw fa-moon"></i> Dark
+      </button>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+    <div class="container-fluid shadow-sm mt-3 mb-3 learn">
+      <div class="row bg-body rounded p-3">
+        <div class="col-lg-3"><nav class="toc sticky-top">
+  <ul class="list-unstyled ps-0">
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#blockchain-collapse"
+        aria-expanded="false">
+        <i class="fa-solid fa-angle-right pe-1"></i> Blockchain
+      </button>
+      <div
+        class="collapse "
+        id="blockchain-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/blockchain/block/"
+              class="d-inline-flex text-decoration-none  ">
+              Block
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/account/"
+              class="d-inline-flex text-decoration-none  ">
+              Account
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/validator/"
+              class="d-inline-flex text-decoration-none  ">
+              Validator
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/state-hash/"
+              class="d-inline-flex text-decoration-none  ">
+              State Hash
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/genesis/"
+              class="d-inline-flex text-decoration-none  ">
+              Genesis
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/incentive/"
+              class="d-inline-flex text-decoration-none  ">
+              Incentive
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/cryptography/"
+              class="d-inline-flex text-decoration-none  ">
+              Cryptography
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/address/"
+              class="d-inline-flex text-decoration-none  ">
+              Address
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/serialization/"
+              class="d-inline-flex text-decoration-none  ">
+              Serialization
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#consensus-collapse"
+        aria-expanded="true">
+        <i class="fa-solid fa-angle-right pe-1"></i> Consensus
+      </button>
+      <div
+        class="collapse show"
+        id="consensus-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/consensus/proof-of-stake/"
+              class="d-inline-flex text-decoration-none  ">
+              Solid State Proof of Stake
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/protocol/"
+              class="d-inline-flex text-decoration-none  ">
+              Protocol
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/specification/"
+              class="d-inline-flex text-decoration-none  ">
+              Specification
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/sortition/"
+              class="d-inline-flex text-decoration-none   selected ">
+              Sortition
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/committee/"
+              class="d-inline-flex text-decoration-none  ">
+              Committee
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/parameters/"
+              class="d-inline-flex text-decoration-none  ">
+              Parameters
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#transaction-collapse"
+        aria-expanded="false">
+        <i class="fa-solid fa-angle-right pe-1"></i> Transaction
+      </button>
+      <div
+        class="collapse "
+        id="transaction-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/transaction/format/"
+              class="d-inline-flex text-decoration-none  ">
+              Transaction Format
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/fee/"
+              class="d-inline-flex text-decoration-none  ">
+              Transaction Fee
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/transfer/"
+              class="d-inline-flex text-decoration-none  ">
+              Transfer Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/bond/"
+              class="d-inline-flex text-decoration-none  ">
+              Bond Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/sortition/"
+              class="d-inline-flex text-decoration-none  ">
+              Sortition Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/unbond/"
+              class="d-inline-flex text-decoration-none  ">
+              Unbond Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/withdraw/"
+              class="d-inline-flex text-decoration-none  ">
+              Withdraw Transaction
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#api-reference-collapse"
+        aria-expanded="false">
+        <i class="fa-solid fa-angle-right pe-1"></i> API Reference
+      </button>
+      <div
+        class="collapse "
+        id="api-reference-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/api/grpc/"
+              class="d-inline-flex text-decoration-none  ">
+              gRPC API Reference
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+  </ul>
+</nav>
+</div>
+        <div class="col-lg-9 content"><h1 id="sortition-algorithm">Sortition Algorithm</h1>
+
+<p>The sortition algorithm is an important part of the Pactus blockchain, responsible for the fair, transparent
+and random selection of validators to join the <a href="/learn/consensus/committee/">committee</a>.
+It utilizes a Verifiable Random Function, or VRF for short, to generate a verifiable random number.</p>
+
+<p>The generated random number should be in the range of 0 to the total staked coins.
+If validators can prove that their generated number is less than their stake,
+they can send the <a href="/learn/transaction/sortition/">sortition transaction</a>.
+Once a sortition transaction is included in a block, the validator will join the committee,
+and the oldest validator in the committee will leave it.</p>
+
+<h2 id="verifiable-random-function">Verifiable Random Function</h2>
+
+<p>Verifiable Random Function is a pseudo-random function that the owner of key \(s\) can evaluate \(v = f_s(x)\) and also provides
+\(proof_{x}\) efficiently proving that \(v\) is correct. We call such a mathematical
+object a verifiable pseudo-random function, VRF for brevity <sup id="fnref:first" role="doc-noteref"><a href="#fn:first" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<p>Pactus uses the BLS signature scheme as the source of VRF.
+Since BLS signatures are <a href="/learn/blockchain/cryptography/#non-malleability">unique</a>,
+the hash of a BLS signature can be used to produce a secure and verifiable random number.</p>
+
+<p>The VRF takes three parameters:</p>
+
+<ol>
+  <li>The secret key of the validator</li>
+  <li>The sortition seed</li>
+  <li>The total stake of the blockchain.</li>
+</ol>
+
+<p>Once the VRF is executed, it produces an index with a proof.
+The index is a number between zero and the total staked coins, and the proof allows other validators to verify the correctness
+of the generated index.</p>
+
+<p>The pseudocode below demonstrates the evaluation of the VRF for the sortition algorithm:</p>
+
+\[\begin{align*}
+&amp; \textbf{function} \ VRF(sk, seed, total\_stake) \\
+&amp; \qquad pk \gets P_{BLS}(sk) \\
+&amp; \qquad proof \gets S_{BLS}(sk, seed \| pk) \\
+&amp; \qquad rnd \gets H(proof) \\
+&amp; \qquad index \gets \frac{(rnd \times total\_stake)}{2^{256}} \\
+&amp; \qquad \\
+&amp; \qquad \textbf{return} \ index, proof \\
+&amp; \textbf{end function}
+\end{align*}\]
+
+<p>where:</p>
+
+<ul>
+  <li>\(sk\) is the secret key of the validator</li>
+  <li>\(seed\) is the sortition seed</li>
+  <li>\(total\_stake\) is the total stake of the blockchain</li>
+  <li>\(P_{BLS}\) is a cryptographic function that derives the public key from the secret key for the BLS signature</li>
+  <li>\(S_{BLS}\) is a cryptographic function that signs a message with the secret key for the BLS signature.</li>
+  <li>\(H\) is a cryptographic hash function that generates a number between \(0\)to \(2 ^{256}\)</li>
+  <li>\(\|\) denotes the concatenation of two values</li>
+</ul>
+
+<p>To verify a sortition proof, both the validator’s public key and stake are required:</p>
+
+\[\begin{align*}
+&amp; \textbf{function} \ verifyVRF(pk, seed, proof, stake, total\_stake) \\
+&amp; \qquad \textbf{if} \ V_{BLS}(pk, seed \| pk, proof) = True \ \textbf{then} \\
+&amp; \qquad \qquad rnd \gets H(proof) \\
+&amp; \qquad \qquad index \gets \frac{(rnd \times total\_stake)}{2^{256}} \\
+&amp; \qquad \\
+&amp; \qquad  \qquad \textbf{return} \ index \leqslant stake \\
+&amp; \qquad  \textbf{else} \\
+&amp; \qquad  \qquad \textbf{return} \ False \\
+&amp; \qquad  \textbf{end if} \\
+&amp; \textbf{end function}
+\end{align*}\]
+
+<p>where:</p>
+
+<ul>
+  <li>\(V_{BLS}\) is a cryptographic function used to verify a signed message using the BLS signature scheme</li>
+</ul>
+
+<p>There is no need to send \(index\) alongside \(proof\) because the
+result should be less than the validator’s stake, and the validator’s stake is known at each block.</p>
+
+<h2 id="sortition-seed">Sortition Seed</h2>
+
+<p>The sortition algorithm relies on a random and publicly verifiable seed that cannot be manipulated by adversaries.
+Otherwise, adversaries may select a seed that favors the selection of corrupt users.</p>
+
+<p>To prevent this, the BLS signature scheme is used to generate the sortition seed.
+Since BLS signatures are unique and deterministic, adversaries cannot generate more than one valid signature per block.
+In each block, the block proposer generates a new sortition seed based on the previous seed using the following function:</p>
+
+\[\begin{align*}
+&amp; \textbf{function} \ generateSeed(sk, prev\_seed) \\
+&amp; \qquad \textbf{return} \ S_{BLS}(sk, H(prev\_seed)) \\
+&amp; \textbf{end function}
+\end{align*}\]
+
+<p>Since the proposer’s public key is known, the seed for the next block can be easily verified.
+If the seed is invalid, the proposed block will be rejected.
+The verification function is as follows:</p>
+
+\[\begin{align*}
+&amp; \textbf{function} \ verifySeed(pk, prev\_seed, seed) \\
+&amp; \qquad \textbf{return} \ V_{BLS}(pk, H(prev\_seed), seed) \\
+&amp; \textbf{end function}
+\end{align*}\]
+
+<p>The sortition seed for the genesis block set to 0.</p>
+
+<h2 id="sortition-probability">Sortition Probability</h2>
+
+<p>The Sortition probability refers to the expected number of validators that may join the committee in each block,
+assuming all validators are actively online and executing the sortition algorithm.</p>
+
+<p>The probability of a validator \(i\) being selected depends on their stake relative to the total stake in the system:</p>
+
+\[p_i=\frac{S_i}{S_t}\]
+
+<p>where:</p>
+
+<ul>
+  <li>\(p_i\) is the probability of validator \(i\) being selected</li>
+  <li>\(S_i\)​ is the stake of validator \(i\)</li>
+  <li>\(S_t\)​ is the total stake of all validators.</li>
+</ul>
+
+<p>Therefore, the expected number of validators joining the committee at each block can be represented as:</p>
+
+\[P=\sum_{i=1}^{n}{p_i}=\sum_{i=1}^{n}{\frac{S_i}{S_t}}=\frac{S_1+S_2+\ldots+S_n}{S_t}\]
+
+<p>where \(n\) is the total number of validators. We know that \(S_t={S_1+S_2+\ldots+S_n}\). Therefore we will have:</p>
+
+\[P=\frac{S_t}{S_t}=1\]
+
+<p>Thus, on average, we expect one validator to join the committee at each block.
+In practice, the actual number of validators joining the committee in each block
+may differ due to the randomness in the sortition algorithm, or the possibility of some validators being offline.</p>
+
+<h2 id="faq">FAQ</h2>
+
+<h3 id="how-is-the-total-staked-coin-calculated">How is the total staked coin calculated?</h3>
+
+<p>The total staked coin in each block is calculated by summing the staked coins of all active validators.
+An active validator is a validator that has not yet <a href="/learn/transaction/unbond/">unbonded</a>.</p>
+
+<h3 id="how-is-the-oldest-validator-determined">How is the oldest validator determined?</h3>
+
+<p>The height at which the validator joined the committee is recorded as the “Last Joined Height” field in
+the <a href="/learn/blockchain/validator/">validator</a> structure.
+The validator with the lowest “Last Joined Height” is considered the oldest.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:first" role="doc-endnote">
+      <p><a href="https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Pseudo%20Randomness/Verifiable_Random_Functions.pdf">Verifiable Random Function</a> <a href="#fnref:first" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+ <div class="row edit-bar">
+  <div class="col">
+    <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/learn/consensus/sortition/index.md">
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
+      Edit this page
+    </a>
+     
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+    <div class="shadow-sm rounded-top footer anchor">
+  <footer class="container-fluid py-4 pb-0 mb-0">
+    <div class="container pb-0 mb-0">
+      <div class="row around-xs footer-wrapper">
+        <div class="col-md-3 col-xs-6">
+          <div class="section">Pactus</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/about/what-is-pactus/">What is Pactus?</a>
+            </li>
+            <li>
+              <a class="anchor" href="/about/roadmap/">Roadmap</a>
+            </li>
+            <li>
+              <a class="anchor" href="/download/">Download</a>
+            </li>
+            <li>
+              <a class="anchor" href="/learn/">Learn</a>
+            </li>
+            <li>
+              <a class="anchor" href="/blog/">Blog</a>
+            </li>
+            <li>
+              <a class="anchor" href="/about/faq/">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">Resources</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/community/">Community</a>
+            </li>
+            <li>
+              <a class="anchor" href="/contributing/">Contributing</a>
+            </li>
+            <li>
+              <a class="anchor" href="/user-guides/">User Guides</a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank">Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </li>
+            <!-- <li>
+              <a class="anchor" href="https://labs.sensifia.com/" target="_blank" rel="noopener noreferrer">
+                Laboratory <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li> -->
+            <li>
+              <a class="anchor" href="https://pacviewer.com/" target="_blank" rel="noopener noreferrer">
+                Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/" target="_blank" rel="noopener noreferrer">
+                Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              <li>
+                <a class="anchor" href="https://pips.pactus.org" target="_blank">PIPs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </li>
+            <li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">Community</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="https://discord.gg/H5vZkNnXCu">
+                <i class="fa-brands fa-fw fa-discord"></i>
+                Pactus on Discord
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://x.com/pactuschain/">
+                <i class="fa-brands fa-fw fa-twitter"></i>
+                Pactus on Twitter
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://t.me/pactusblockchain">
+                <i class="fa-brands fa-fw fa-telegram"></i>
+                Pactus on Telegram
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://linkedin.com/company/pactus-blockchain">
+                <i class="fa-brands fa-fw fa-linkedin"></i>
+                Pactus on LinkedIn
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://bitcointalk.org/index.php?topic=5480867.0">
+                <i class="fa-brands fa-fw fa-bitcoin"></i>
+                Pactus on Bitcoin Talk
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="https://pactus.org/assets/images/logos/text-logo.png" />
+            </li>
+
+            <li>
+              <a class="anchor" href="https://goo.gl/maps/aYMYxy6pWJzAtxf56">
+                <i class="fa-solid fa-map"></i>
+                Dammstrasse 16, 6300 Zug, Switzerland
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="mailto:info@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                info@pactus.org
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="tel:+41767011335">
+                <i class="fa-solid fa-phone"></i>
+                +41 76 701 13 35
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row around-xs pt-4 pb-0 m-0">
+        <div class="col d-flex justify-content-center">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item"><a href="https://pactus.org/term-of-use/" class="px-2 legal"><i class="fa-solid fa-gavel"></i> Term of Use</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/sitemap.xml" class="px-2 legal"><i class="fa-solid fa-sitemap"></i> Sitemap</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/feed.xml" class="px-2 legal"><i class="fa-solid fa-rss"></i> RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <script>
+      anchors.add();
+    </script>
+  </body>
+</html>

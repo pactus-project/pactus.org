@@ -1,0 +1,293 @@
+WEBVTT
+
+1
+00:00:00.001 --> 00:00:02.262
+What is Pactus Blockchain?
+
+2
+00:00:02.347 --> 00:00:07.415
+Pactus is powered by a real Proof of stake consensus mechanism.
+
+3
+00:00:07.955 --> 00:00:11.444
+Pactus has an unlimited pool of validators that
+
+4
+00:00:11.444 --> 00:00:16.417
+anyone can become a validator by staking some coins.
+
+5
+00:00:16.417 --> 00:00:21.875
+On the other hand, there is a committee of validators that generates new blocks.
+
+6
+00:00:22.071 --> 00:00:25.784
+The size of the committee is fixed to 21 validators.
+
+7
+00:00:25.860 --> 00:00:31.632
+However the committee members are not fixed and they can change randomly.
+
+8
+00:00:31.710 --> 00:00:34.591
+But how does this change happen?
+
+9
+00:00:34.814 --> 00:00:38.269
+Pactus has a cryptographic sortition algorithm that
+
+10
+00:00:38.269 --> 00:00:41.502
+changes the committee members.
+
+11
+00:00:41.502 --> 00:00:42.715
+In each block,
+
+12
+00:00:42.715 --> 00:00:47.143
+each validator generates one and only one random number
+
+13
+00:00:47.143 --> 00:00:51.190
+between zero and the total stake.
+
+14
+00:00:52.144 --> 00:00:56.742
+If the generated number is less than the validators' stake,
+
+15
+00:00:56.742 --> 00:01:01.820
+the validator will be nominated to be inside the committee for the next block
+
+16
+00:01:01.821 --> 00:01:04.962
+and the last validator in the committee will leave the committee.
+
+17
+00:01:04.962 --> 00:01:06.057
+For example,
+
+18
+00:01:06.057 --> 00:01:08.003
+consider the situation that
+
+19
+00:01:08.003 --> 00:01:10.599
+100 coins have been staked so far,
+
+20
+00:01:10.599 --> 00:01:18.915
+Alice has staked 30 coins, Bob 20 coins, Carol 25 coins and so on and so on.
+
+21
+00:01:18.915 --> 00:01:23.434
+Validators start generating random numbers between zero and 100.
+
+22
+00:01:23.434 --> 00:01:27.692
+Remember that the total stake is 100.
+
+23
+00:01:27.773 --> 00:01:34.551
+Carol can generate a random number less than her stake which is 15.
+
+24
+00:01:34.731 --> 00:01:40.404
+Therefore she can enter the committee on the next block.
+
+25
+00:01:40.466 --> 00:01:45.866
+As you can see the chance of entering the committee depends on the amount of stake.
+
+26
+00:01:45.866 --> 00:01:50.807
+If you have more stakes, therefore you have more chances to enter the committee.
+
+27
+00:01:50.808 --> 00:01:54.000
+This sortition algorithm repeats per block.
+
+28
+00:01:54.001 --> 00:01:58.694
+When a validator joins the committee, it has a chance to propose a block
+
+29
+00:01:58.694 --> 00:02:02.481
+and if the block is accepted by other committee members,
+
+30
+00:02:02.482 --> 00:02:06.865
+the proposer will receive one coin as block reward.
+
+31
+00:02:06.865 --> 00:02:10.639
+Transactions in Pactus Blockchain are stamped.
+
+32
+00:02:10.639 --> 00:02:15.443
+Stamping transaction simply means putting something from the previous block
+
+33
+00:02:15.443 --> 00:02:16.550
+(like block ID)
+
+34
+00:02:16.550 --> 00:02:18.949
+into the header of the transaction.
+
+35
+00:02:18.949 --> 00:02:22.165
+Stamping the transactions has some benefits, like:
+
+36
+00:02:22.165 --> 00:02:25.742
+the stamped transactions are loyal to the main chain
+
+37
+00:02:25.742 --> 00:02:29.168
+and therefore the blockchain becomes immune against attacks
+
+38
+00:02:29.168 --> 00:02:33.984
+like Long-Range attack which is very deadly for Proof of Stake blockchains.
+
+39
+00:02:33.984 --> 00:02:37.770
+Also stamped transactions have a lifetime
+
+40
+00:02:37.770 --> 00:02:41.260
+and they are valid only for one day.
+
+41
+00:02:42.588 --> 00:02:46.840
+The economic model in Pactus is almost similar to Bitcoin.
+
+42
+00:02:46.840 --> 00:02:51.297
+The total supply in the Pactus Blockchain is 21 million coins
+
+43
+00:02:51.297 --> 00:02:56.294
+and therefore Pactus is a deflationary cryptocurrency (like Bitcoin).
+
+44
+00:02:56.294 --> 00:03:00.000
+So the value of the coins should increase by time,
+
+45
+00:03:00.000 --> 00:03:02.166
+since the number of coins is limited.
+
+46
+00:03:02.166 --> 00:03:03.559
+In order to achieve that,
+
+47
+00:03:03.559 --> 00:03:09.134
+there is a special account in the genesis block which is called “Treasury account”.
+
+48
+00:03:09.134 --> 00:03:13.538
+The Treasury account has 21 million coins at the genesis time,
+
+49
+00:03:13.538 --> 00:03:16.605
+and no one has access to the treasury account.
+
+50
+00:03:16.605 --> 00:03:17.802
+In each block,
+
+51
+00:03:17.802 --> 00:03:24.256
+one coin from the treasury account will move to the block proposer as block reward.
+
+52
+00:03:24.818 --> 00:03:29.388
+Unlike bitcoin which has a halving mechanism for block reward,
+
+53
+00:03:29.388 --> 00:03:34.490
+block reward in Pactus is fixed and it is always one coin per block.
+
+54
+00:03:34.490 --> 00:03:41.802
+After 21 million blocks or almost 6 and half years the rewards will be finished.
+
+55
+00:03:41.802 --> 00:03:48.475
+However the validators can be incentivized by the transaction fees at that time.
+
+56
+00:03:49.381 --> 00:03:52.226
+Since the block reward is fixed,
+
+57
+00:03:52.226 --> 00:03:56.518
+the token distribution in Pactus is linear compared to Bitcoin.
+
+58
+00:03:56.518 --> 00:03:59.207
+This is a fair and good mechanism for token distribution
+
+59
+00:03:59.207 --> 00:04:01.924
+in a Proof of Stake blockchain.
+
+60
+00:04:01.924 --> 00:04:05.935
+Since the validators are powered by stakes (or coins)
+
+61
+00:04:05.935 --> 00:04:11.186
+there is a good motivation for validators to join the network earlier.
+
+62
+00:04:11.186 --> 00:04:14.490
+Transaction fees in Pactus are fixed and
+
+63
+00:04:14.490 --> 00:04:19.369
+calculated based on the transferred values (not transferred bits).
+
+64
+00:04:19.369 --> 00:04:22.091
+There is a consensus between validators to
+
+65
+00:04:22.091 --> 00:04:25.244
+define the percentage and minimum fee amount.
+
+66
+00:04:25.244 --> 00:04:30.161
+The minimum fee amount secures the network against spam transactions.
+
+67
+00:04:30.161 --> 00:04:33.836
+Pactus starts with only 4 bootstrap validators.
+
+68
+00:04:33.836 --> 00:04:36.952
+These bootstrap validators have no stake.
+
+69
+00:04:36.952 --> 00:04:39.947
+Whenever the 21st validator joins the network,
+
+70
+00:04:39.947 --> 00:04:42.418
+these bootstrap validators will be retired and
+
+71
+00:04:42.418 --> 00:04:45.671
+the network will be secured by other validators.
+
+72
+00:04:45.671 --> 00:04:52.275
+In this time the new validators can join the committee by running the sortition algorithm.
+
+73
+00:04:54.223 --> 00:04:59.897
+Running a validator in Pactus is easy, see you there.

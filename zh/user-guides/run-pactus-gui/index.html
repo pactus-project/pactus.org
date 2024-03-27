@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh">
+  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4BTY819M6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-Q4BTY819M6");
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>如何以图形模式运行帕图斯？ | 帕图斯区块链</title>
+  <meta name="description" content="帕图斯是一个由社区运营的区块链技术。<br>采用了革命性且安全的Solid State Proof of Stake共识机制。<br>快来加入我们，共同构建去中心化的未来吧！" />
+
+  <meta property="og:title" content="如何以图形模式运行帕图斯？ | 帕图斯区块链" />
+  <meta property="og:description" content="帕图斯是一个由社区运营的区块链技术。<br>采用了革命性且安全的Solid State Proof of Stake共识机制。<br>快来加入我们，共同构建去中心化的未来吧！" />
+  <meta property="og:site_name" content="帕图斯区块链" />
+  <meta property="og:url" content="https://pactus.org/user-guides/run-pactus-gui/" />
+  <meta property="og:type" content="website" />
+
+  <link href="https://pactus.org/assets/css/rouge.theme.vim.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.colorful.brands.css" rel="stylesheet" />
+  <link href="https://pactus.org/assets/css/custom.css" rel="stylesheet" />
+
+  <script src="https://pactus.org/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="https://pactus.org/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://pactus.org/assets/js/anchor.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://pactus.org/assets/js/custom.js"></script>
+  <script src="https://pactus.org/assets/js/color-modes.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png"  />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+
+  <body>
+    <div class="shadow-sm rounded-bottom">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand logo px-4 pt-2" href="/zh/">
+        <img id="logo_image" src="https://pactus.org/assets/images/logos/pactus-logo-light.png" alt="Pactus blockchain" />
+      <div class="logo"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              关于
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/about/what-is-pactus/">
+                  什么是帕图斯？
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/about/roadmap/">
+                  路线图
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/about/faq/">常见问题解答</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/zh/learn/">资料</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/zh/download/">下载</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/zh/blog/">博客</a>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              资源
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/community/">
+                  社区
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/contributing/">
+                  贡献
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/user-guides/">
+                  用户指南
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank"
+                  rel="noopener noreferrer">
+                  Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://pacviewer.com/" target="_blank"
+                  rel="noopener noreferrer">
+                  区块浏览器 <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/" target="_blank"
+                  rel="noopener noreferrer">
+                  GitHub <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link dropdown-item ps-2" href="https://pips.pactus.org" target="_blank">
+                  PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">中文</span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/user-guides/run-pactus-gui/">English</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/ar/user-guides/run-pactus-gui/">
+        العربية
+      </a>
+    </li>
+    
+
+    
+
+    
+    
+  </ul>
+</li>
+
+          <li class="nav-item dropdown ps-2 ms-0">
+  <button class="btn btn-link nav-link dropdown-toggle"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-label="Toggle theme (auto)">
+    <i id="bd-theme-icon" class="fa-regular fa-fw fa-circle-half-stroke"></i>
+    <span class="d-lg-none bd-theme-text m-0 p-0" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="light">
+        <i class="fa-regular fa-fw fa-sun"></i> Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="dark">
+        <i class="fa-solid fa-fw fa-moon"></i> Dark
+      </button>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+    <div class="container-fluid shadow-sm rounded mt-3 mb-3">
+      <div class="row bg-body rounded p-3" dir="ltr">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 content">
+          <h1 id="如何以图形模式运行帕图斯">如何以图形模式运行帕图斯？</h1>
+
+<div class="alert alert-warning" role="alert">
+        <i class="fa fa-triangle-exclamation"></i> <span>该翻译已过时。您可以阅读它，但可能不准确。</span></div>
+<h2 id="序言">序言</h2>
+
+<p>Pactus 可以在不同的模式下运行，包括命令行界面 (CLI) 和图形用户界面 (GUI)。
+本教程将指导您完成在 GUI 模式下运行 Pactus，适合初学者到高级用户。</p>
+
+<h2 id="符合条件">符合条件</h2>
+
+<p>在继续执行以下步骤之前，请确保您具备以下条件：</p>
+
+<ul>
+  <li>运行 Windows、macOS 或 Linux 的计算机。</li>
+  <li>互联网连接。</li>
+</ul>
+
+<h2 id="下载">下载</h2>
+
+<p>从以下链接下载 Pactus GUI 安装程序。
+<a href="/zh/download/#gui">下链</a>.</p>
+
+<h3 id="代码证书警告">代码证书警告</h3>
+
+<p>Windows 和 macOS 用户可能会遇到一条警告消息，指出 Pactus 是不受信任的应用程序。
+这是因为 Pactus 没有<a href="https://en.wikipedia.org/wiki/Code_signing">代码签名证书</a>。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/code-certificate-warning.png" alt="Code certificate issue" /></p>
+
+<p>代码证书是验证软件发行者的身份和真实性的数字签名。然而，获得代码证书的过程复杂且昂贵，需要注册公司并
+通过认识你的客户(KYC)检查。</p>
+
+<p>由于 Pactus 是一个开源且基于社区的应用程序，所以我们还没有代码证书。
+因此，您可以安全地忽略警告消息并继续安装 Pactus。</p>
+
+<h2 id="安装">安装</h2>
+
+<p>要安装 Pactus GUI，只需按照安装程序提供的说明步骤进行操作即可。该过程非常简单，与在计算机上安装任何其他应用程序类似。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/installing.png" alt="Installing Pactus" /></p>
+
+<h2 id="初始化">初始化</h2>
+
+<p>当您第一次运行Pactus时，将出现一个向导界面，指导您完成钱包创建和初始化过程。这个过程由几个步骤组成：</p>
+
+<h3 id="初始化模式">初始化模式</h3>
+
+<p>在第一页上，您会被询问您要如何创建钱包。选择“开始创建新钱包” 选项，然后进入下一页。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/initialize-mode.png" alt="Initialize mode" /></p>
+
+<h3 id="钱包助记词">钱包助记词</h3>
+
+<p>下一页将显示您的钱包助记词，由12个单词组成。安全备份此助记词至关重要，因为钱包恢复需要它以防您的计算机丢失、损坏或被盗。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/wallet-seed.png" alt="Wallet seed" /></p>
+
+<p><strong>警告：</strong> 确保您的钱包助记词的私密性和安全性。
+如果其他人获得了您的助记词，他们就可以控制您的钱包和资金。</p>
+
+<h3 id="助记词确认">助记词确认</h3>
+
+<p>在此步骤中，系统将要求您确认助记词。
+将您在上一步中收到的12个单词输入到对话框中。
+如果助记词输入正确，您将能够进入下一页。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/seed-confirmation.png" alt="Seed confirmation" /></p>
+
+<h3 id="钱包密码">钱包密码</h3>
+
+<p>在此页面上，您将被要求为您的钱包设置密码。
+在第一个对话框中输入强密码，并在第二个对话框中再输入同样密码确认。
+该密码将用于加密您的钱包并防止未经授权的访问。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/wallet-password.png" alt="Set wallet password" /></p>
+
+<p>注意：选择一个强密码并妥善保管。
+如果您忘记或丢失密码，您将需要助记词才能重新访问您的钱包。</p>
+
+<h3 id="验证者数量">验证者数量</h3>
+
+<p>Pactus 区块链中的每个节点最多可以运行32个验证器，每个验证器最多可以质押1000代币。在这里，您可以定义要为节点创建多少个验证器。
+根据您想要质押的代币数量选择验证器的数量。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/number-of-validators.png" alt="Number of validators" /></p>
+
+<p>如果你想质押超过32,000个代币，你需要建立一个新节点。</p>
+
+<h3 id="节点信息">节点信息</h3>
+
+<p>初始化过程的最后一页显示节点信息，例如工作目录、验证器地址、
+以及奖励地址。查看此信息并单击“关闭”以完成初始化过程。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/node-information.png" alt="Node information" /></p>
+
+<p>关闭向导界面后，您的 Pactus 节点将开始运行。您现在已准备好在GUI模式下使用 Pactus。</p>
+
+<h2 id="运行-pactus-节点">运行 Pactus 节点</h2>
+
+<p>完成初始化过程后，您就可以运行 Pactus 节点了。运行 Pactus 节点允许您与网络同步，使您能够查看和管理您的钱包和
+发送交易。</p>
+
+<h3 id="网络同步">网络同步</h3>
+
+<p>当 Pactus 节点开始运行时，它开始与网络同步。这个过程可能需要一些时间，
+因为您的节点需要下载并验证整个区块链历史记录。
+您的节点同步时请耐心等待。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/syncing-progress.png" alt="Syncing progress" /></p>
+
+<h3 id="默认钱包">默认钱包</h3>
+
+<p>您可以检查“默认钱包”选项来访问您的钱包信息。请注意，显示的信息在同步完成之前可能不准确。</p>
+
+<p><img src="https://pactus.org/user-guides/run-pactus-gui/default-wallet.png" alt="Default Wallet tab" /></p>
+
+<p>在“默认钱包”选项中，您可以查看您的帐户详细信息，包括您的余额和
+地址信息，例如<strong>验证器和奖励地址</strong>。
+当您的计算机充当节点，您的验证器地址是被用来网络识别。
+奖励地址是您领取参与共识算法、提出新区块后所获得的奖励
+<a href="/zh/learn/blockchain/incentive/">奖励</a> 的账户地址。</p>
+
+<p>成为验证者并参与共识算法要获得奖励，你首先需要
+<a href="/zh/learn/consensus/proof-of-stake/">质押</a> 一些代币. 下一个
+<a href="/zh/user-guides/send-transactions-gui/">教程</a>,
+我们将教导如何发送契约交易以成为验证者。</p>
+
+<hr />
+
+<p>通过运行 Pactus 节点，您可以为 Pactus 区块链网络的去中心化和安全性做出贡献。
+感谢您的参与！</p>
+
+
+          <div class="row p-3">
+            <div class="col text-end">
+              <a href="/zh/user-guides/">« Back to the user guides list</a>
+            </div>
+          </div>
+          <div class="row edit-bar">
+  <div class="col">
+    <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/user-guides/run-pactus-gui/index.md">
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
+      编辑本页
+    </a>
+      |
+    <a
+      class="p-2 edit-btn"
+      href="https://github.com/pactus-project/pactus.org/edit/main/website/_i18n/zh/user-guides/run-pactus-gui/index.md">
+      <i class="fa fa-language" aria-hidden="true"></i>
+      改善翻译
+    </a>
+    
+  </div>
+</div>
+
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+    <div class="shadow-sm rounded-top footer anchor">
+  <footer class="container-fluid py-4 pb-0 mb-0">
+    <div class="container pb-0 mb-0">
+      <div class="row around-xs footer-wrapper">
+        <div class="col-md-3 col-xs-6">
+          <div class="section">帕图斯</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/zh/about/what-is-pactus/">什么是帕图斯？</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/about/roadmap/">路线图</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/download/">下载</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/learn/">资料</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/blog/">博客</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/about/faq/">常见问题解答</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">资源</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/zh/community/">社区</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/contributing/">贡献</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/user-guides/">用户指南</a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank">Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </li>
+            <!-- <li>
+              <a class="anchor" href="https://labs.sensifia.com/" target="_blank" rel="noopener noreferrer">
+                实验室 <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li> -->
+            <li>
+              <a class="anchor" href="https://pacviewer.com/" target="_blank" rel="noopener noreferrer">
+                区块浏览器 <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/" target="_blank" rel="noopener noreferrer">
+                GitHub <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              <li>
+                <a class="anchor" href="https://pips.pactus.org" target="_blank">PIPs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </li>
+            <li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">社区</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="https://discord.gg/H5vZkNnXCu">
+                <i class="fa-brands fa-fw fa-discord"></i>
+                帕图斯在 Discord 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://x.com/pactuschain/">
+                <i class="fa-brands fa-fw fa-twitter"></i>
+                帕图斯在 Twitter 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://t.me/pactusblockchain">
+                <i class="fa-brands fa-fw fa-telegram"></i>
+                帕图斯在 Telegram 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://linkedin.com/company/pactus-blockchain">
+                <i class="fa-brands fa-fw fa-linkedin"></i>
+                帕图斯在 LinkedIn 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://bitcointalk.org/index.php?topic=5480867.0">
+                <i class="fa-brands fa-fw fa-bitcoin"></i>
+                Pactus on Bitcoin Talk
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="https://pactus.org/assets/images/logos/text-logo.png" />
+            </li>
+
+            <li>
+              <a class="anchor" href="https://goo.gl/maps/aYMYxy6pWJzAtxf56">
+                <i class="fa-solid fa-map"></i>
+                Dammstrasse 16, 6300 Zug, Switzerland
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="mailto:info@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                info@pactus.org
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="tel:+41767011335">
+                <i class="fa-solid fa-phone"></i>
+                +41 76 701 13 35
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row around-xs pt-4 pb-0 m-0">
+        <div class="col d-flex justify-content-center">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item"><a href="https://pactus.org/term-of-use/" class="px-2 legal"><i class="fa-solid fa-gavel"></i> Term of Use</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/sitemap.xml" class="px-2 legal"><i class="fa-solid fa-sitemap"></i> Sitemap</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/feed.xml" class="px-2 legal"><i class="fa-solid fa-rss"></i> RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <script>
+      anchors.add();
+    </script>
+  </body>
+</html>

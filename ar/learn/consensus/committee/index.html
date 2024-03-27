@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ar">
+  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4BTY819M6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-Q4BTY819M6");
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Committee | بلوكشين بكتوس</title>
+  <meta name="description" content="Building decentralized future together!" />
+
+  <meta property="og:title" content="Committee | بلوكشين بكتوس" />
+  <meta property="og:description" content="Building decentralized future together!" />
+  <meta property="og:site_name" content="بلوكشين بكتوس" />
+  <meta property="og:url" content="https://pactus.org/learn/consensus/committee/" />
+  <meta property="og:type" content="website" />
+
+  <link href="https://pactus.org/assets/css/rouge.theme.vim.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.colorful.brands.css" rel="stylesheet" />
+  <link href="https://pactus.org/assets/css/custom.css" rel="stylesheet" />
+
+  <script src="https://pactus.org/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="https://pactus.org/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://pactus.org/assets/js/anchor.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://pactus.org/assets/js/custom.js"></script>
+  <script src="https://pactus.org/assets/js/color-modes.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png"  />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+
+  <body>
+    <div class="shadow-sm rounded-bottom">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand logo px-4 pt-2" href="/ar/">
+        <img id="logo_image" src="https://pactus.org/assets/images/logos/pactus-logo-light.png" alt="Pactus blockchain" />
+      <div class="logo"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              حول
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/about/what-is-pactus/">
+                  ما هو بكتوس؟
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/about/roadmap/">
+                  خارطة الطريق
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/about/faq/">الأسئلة المتكررة</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/ar/learn/">تعلم</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/ar/download/">تنزيل</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/ar/blog/">مدونة</a>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              الموارد
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/community/">
+                  المجتمع
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/contributing/">
+                  المساهمة
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/user-guides/">
+                  دلائل المستخدم
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank"
+                  rel="noopener noreferrer">
+                  Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://pacviewer.com/" target="_blank"
+                  rel="noopener noreferrer">
+                  Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/" target="_blank"
+                  rel="noopener noreferrer">
+                  Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link dropdown-item ps-2" href="https://pips.pactus.org" target="_blank">
+                  PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">العربية</span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/learn/consensus/committee/">English</a>
+    </li>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/zh/learn/consensus/committee/">
+        中文
+      </a>
+    </li>
+    
+
+    
+  </ul>
+</li>
+
+          <li class="nav-item dropdown ps-2 ms-0">
+  <button class="btn btn-link nav-link dropdown-toggle"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-label="Toggle theme (auto)">
+    <i id="bd-theme-icon" class="fa-regular fa-fw fa-circle-half-stroke"></i>
+    <span class="d-lg-none bd-theme-text m-0 p-0" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="light">
+        <i class="fa-regular fa-fw fa-sun"></i> Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="dark">
+        <i class="fa-solid fa-fw fa-moon"></i> Dark
+      </button>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+    <div class="container-fluid shadow-sm mt-3 mb-3 learn">
+      <div class="row bg-body rounded p-3">
+        <div class="col-lg-3"><nav class="toc sticky-top">
+  <ul class="list-unstyled ps-0">
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#blockchain-collapse"
+        aria-expanded="false">
+        <i class="fa-solid fa-angle-right pe-1"></i> Blockchain
+      </button>
+      <div
+        class="collapse "
+        id="blockchain-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/blockchain/block/"
+              class="d-inline-flex text-decoration-none  ">
+              Block
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/account/"
+              class="d-inline-flex text-decoration-none  ">
+              Account
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/validator/"
+              class="d-inline-flex text-decoration-none  ">
+              Validator
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/state-hash/"
+              class="d-inline-flex text-decoration-none  ">
+              State Hash
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/genesis/"
+              class="d-inline-flex text-decoration-none  ">
+              Genesis
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/incentive/"
+              class="d-inline-flex text-decoration-none  ">
+              Incentive
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/cryptography/"
+              class="d-inline-flex text-decoration-none  ">
+              Cryptography
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/address/"
+              class="d-inline-flex text-decoration-none  ">
+              Address
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/serialization/"
+              class="d-inline-flex text-decoration-none  ">
+              Serialization
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#consensus-collapse"
+        aria-expanded="true">
+        <i class="fa-solid fa-angle-right pe-1"></i> Consensus
+      </button>
+      <div
+        class="collapse show"
+        id="consensus-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/consensus/proof-of-stake/"
+              class="d-inline-flex text-decoration-none  ">
+              Solid State Proof of Stake
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/protocol/"
+              class="d-inline-flex text-decoration-none  ">
+              Protocol
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/specification/"
+              class="d-inline-flex text-decoration-none  ">
+              Specification
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/sortition/"
+              class="d-inline-flex text-decoration-none  ">
+              Sortition
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/committee/"
+              class="d-inline-flex text-decoration-none   selected ">
+              Committee
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/parameters/"
+              class="d-inline-flex text-decoration-none  ">
+              Parameters
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#transaction-collapse"
+        aria-expanded="false">
+        <i class="fa-solid fa-angle-right pe-1"></i> Transaction
+      </button>
+      <div
+        class="collapse "
+        id="transaction-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/transaction/format/"
+              class="d-inline-flex text-decoration-none  ">
+              Transaction Format
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/fee/"
+              class="d-inline-flex text-decoration-none  ">
+              Transaction Fee
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/transfer/"
+              class="d-inline-flex text-decoration-none  ">
+              Transfer Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/bond/"
+              class="d-inline-flex text-decoration-none  ">
+              Bond Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/sortition/"
+              class="d-inline-flex text-decoration-none  ">
+              Sortition Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/unbond/"
+              class="d-inline-flex text-decoration-none  ">
+              Unbond Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/withdraw/"
+              class="d-inline-flex text-decoration-none  ">
+              Withdraw Transaction
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#api-reference-collapse"
+        aria-expanded="false">
+        <i class="fa-solid fa-angle-right pe-1"></i> API Reference
+      </button>
+      <div
+        class="collapse "
+        id="api-reference-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/api/grpc/"
+              class="d-inline-flex text-decoration-none  ">
+              gRPC API Reference
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+  </ul>
+</nav>
+</div>
+        <div class="col-lg-9 content"><h1 id="committee">Committee</h1>
+
+<p>The committee is a group of 51 validators responsible for generating new blocks.
+Validators in the committee participate in the consensus algorithm by casting votes,
+with their voting power determined by their stake.
+While in the committee, validators cannot send Bond or Unbond transactions,
+meaning their voting power remains the same.
+The members of the committee changes randomly over time through Sortition transactions.
+Each block can contain zero or more Sortition transactions.</p>
+
+<p>These rules are applied when committing sortition transactions:</p>
+
+<ol>
+  <li>A minimum of ⅔ of the total stake must be maintained in the committee.</li>
+  <li>If a validator is already in the committee, they will remain in the committee.</li>
+  <li>If a validator is not in the committee, the oldest validator will exit the committee.</li>
+  <li>Each validator should stay in committee at least for 51 blocks.</li>
+</ol>
+
+<h2 id="proposer-selection">Proposer Selection</h2>
+
+<p>Proposer selection within the committee operates on a deterministic, clockwise rotation system.
+If a validator is unable to propose, for any reason, it stays within the committee, but
+the proposer’s role shifts to the next validator in the committee.</p>
+
+<p><img src="https://pactus.org/assets/images/pactus-committee-proposer-selection.png" alt="Proposer selection" /></p>
+
+<h2 id="adding-validators-to-the-committee">Adding Validators to the Committee</h2>
+
+<p>When a new validator joins the committee, they take a position before the current proposer.
+After the addition of a new validator, the committee adjusts to maintain the total number of validators at 51.
+This is achieved by removing the oldest validator from the committee,
+i.e., the one that has been in the committee for the longest time.</p>
+
+<p><img src="https://pactus.org/assets/images/pactus-committee-adding-validators.png" alt="Adding Validators to the Committee" /></p>
+
+<h2 id="security-of-the-committee">Security of the Committee</h2>
+
+<p>For an adversary to take control of the committee, they would need to control more than ⅔ of the stake within the committee.
+To assess the security of the committee, let’s assume all validators in the committee have the same voting power.
+In this case, an adversary would need to control more than ⅔ of the validators in the committee.</p>
+
+<p>Now, let’s imagine an adversary holds 10% of the total stake.
+As a result, one of their validators can enter the committee every 10 blocks.
+In the first 10 blocks, one of the adversary’s validators enters the committee.
+In the next 10 blocks, another validator enters the committee, giving the adversary two validators within the committee.
+In the subsequent 10 blocks, another validator enters, but at the same time, the first validator leaves the committee.
+Therefore, an adversary with 10 10% of the total stake can have, on average, two validators in a committee of 51 validators.</p>
+
+<p>Using the <a href="https://en.wikipedia.org/wiki/Poisson_distribution">Poisson distribution</a>,
+we can estimate the probability of an adversary controlling ⅔ of the committee:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adversarial Stake</th>
+      <th>Committee size</th>
+      <th>⅔+ of committee</th>
+      <th>Adversarial committee members</th>
+      <th>Probability of controlling ⅔+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15%</td>
+      <td>21</td>
+      <td>15</td>
+      <td>3</td>
+      <td>\(5.46 \times 10^{-07}\)</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>51</td>
+      <td>35</td>
+      <td>7</td>
+      <td>\(3.34 \times 10^{-14}\)</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>99</td>
+      <td>67</td>
+      <td>14</td>
+      <td>\(1.41 \times 10^{-24}\)</td>
+    </tr>
+    <tr>
+      <td>10%</td>
+      <td>21</td>
+      <td>15</td>
+      <td>2</td>
+      <td>\(3.39 \times 10^{-09}\)</td>
+    </tr>
+    <tr>
+      <td>10%</td>
+      <td>51</td>
+      <td>35</td>
+      <td>5</td>
+      <td>\(1.90 \times 10^{-18}\)</td>
+    </tr>
+    <tr>
+      <td>10%</td>
+      <td>99</td>
+      <td>67</td>
+      <td>9</td>
+      <td>\(2.91 \times 10^{-35}\)</td>
+    </tr>
+    <tr>
+      <td>5%</td>
+      <td>21</td>
+      <td>15</td>
+      <td>1</td>
+      <td>\(2.81 \times 10^{-13}\)</td>
+    </tr>
+    <tr>
+      <td>5%</td>
+      <td>51</td>
+      <td>35</td>
+      <td>2</td>
+      <td>\(4.50 \times 10^{-31}\)</td>
+    </tr>
+    <tr>
+      <td>5%</td>
+      <td>99</td>
+      <td>67</td>
+      <td>4</td>
+      <td>\(1.09 \times 10^{-56}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="faq">FAQ</h2>
+
+<h3 id="how-can-one-know-when-a-validator-has-joined-the-committee">How can one know when a validator has joined the committee?</h3>
+
+<p>The height at which the validator joined the committee is recorded as the “Last Joined Height” field in
+the <a href="/ar/learn/blockchain/validator/">validator</a> structure.
+Once a validator enters the committee, this field is set to the current height it
+evaluated the sortition proof.</p>
+
+<h3 id="can-a-validator-within-the-committee-run-the-sortition-algorithm">Can a validator within the committee run the sortition algorithm?</h3>
+
+<p>A validator within the committee can run the sortition algorithm.
+If they generate a valid sortition transaction, the height of their entry into the committee is set
+to the current block height, allowing them to stay in the committee for a longer period.</p>
+ <div class="row edit-bar">
+  <div class="col">
+    <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/learn/consensus/committee/index.md">
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
+      عدل هذه الصفحة
+    </a>
+     
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+    <div class="shadow-sm rounded-top footer anchor">
+  <footer class="container-fluid py-4 pb-0 mb-0">
+    <div class="container pb-0 mb-0">
+      <div class="row around-xs footer-wrapper">
+        <div class="col-md-3 col-xs-6">
+          <div class="section">مشروع بكتوس</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/ar/about/what-is-pactus/">ما هو بكتوس؟</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/about/roadmap/">خارطة الطريق</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/download/">تنزيل</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/learn/">تعلم</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/blog/">مدونة</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/about/faq/">الأسئلة المتكررة</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">الموارد</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/ar/community/">المجتمع</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/contributing/">المساهمة</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/user-guides/">دلائل المستخدم</a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank">Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </li>
+            <!-- <li>
+              <a class="anchor" href="https://labs.sensifia.com/" target="_blank" rel="noopener noreferrer">
+                Laboratory <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li> -->
+            <li>
+              <a class="anchor" href="https://pacviewer.com/" target="_blank" rel="noopener noreferrer">
+                Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/" target="_blank" rel="noopener noreferrer">
+                Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              <li>
+                <a class="anchor" href="https://pips.pactus.org" target="_blank">PIPs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </li>
+            <li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">المجتمع</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="https://discord.gg/H5vZkNnXCu">
+                <i class="fa-brands fa-fw fa-discord"></i>
+                بكتوس على ديسكورد
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://x.com/pactuschain/">
+                <i class="fa-brands fa-fw fa-twitter"></i>
+                بكتوس على تويتر
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://t.me/pactusblockchain">
+                <i class="fa-brands fa-fw fa-telegram"></i>
+                بكتوس على تيليجرام
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://linkedin.com/company/pactus-blockchain">
+                <i class="fa-brands fa-fw fa-linkedin"></i>
+                بكتوس على لينكدإن
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://bitcointalk.org/index.php?topic=5480867.0">
+                <i class="fa-brands fa-fw fa-bitcoin"></i>
+                Pactus on Bitcoin Talk
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="https://pactus.org/assets/images/logos/text-logo.png" />
+            </li>
+
+            <li>
+              <a class="anchor" href="https://goo.gl/maps/aYMYxy6pWJzAtxf56">
+                <i class="fa-solid fa-map"></i>
+                Dammstrasse 16, 6300 Zug, Switzerland
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="mailto:info@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                info@pactus.org
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="tel:+41767011335">
+                <i class="fa-solid fa-phone"></i>
+                +41 76 701 13 35
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row around-xs pt-4 pb-0 m-0">
+        <div class="col d-flex justify-content-center">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item"><a href="https://pactus.org/term-of-use/" class="px-2 legal"><i class="fa-solid fa-gavel"></i> Term of Use</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/sitemap.xml" class="px-2 legal"><i class="fa-solid fa-sitemap"></i> Sitemap</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/feed.xml" class="px-2 legal"><i class="fa-solid fa-rss"></i> RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <script>
+      anchors.add();
+    </script>
+  </body>
+</html>

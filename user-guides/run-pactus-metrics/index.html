@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4BTY819M6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-Q4BTY819M6");
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>How to run Pactus Metrics? | Welcome to Pactus</title>
+  <meta name="description" content="Pactus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!" />
+
+  <meta property="og:title" content="How to run Pactus Metrics? | Welcome to Pactus" />
+  <meta property="og:description" content="Pactus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!" />
+  <meta property="og:site_name" content="Welcome to Pactus" />
+  <meta property="og:url" content="https://pactus.org/user-guides/run-pactus-metrics/" />
+  <meta property="og:type" content="website" />
+
+  <link href="https://pactus.org/assets/css/rouge.theme.vim.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.colorful.brands.css" rel="stylesheet" />
+  <link href="https://pactus.org/assets/css/custom.css" rel="stylesheet" />
+
+  <script src="https://pactus.org/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="https://pactus.org/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://pactus.org/assets/js/anchor.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://pactus.org/assets/js/custom.js"></script>
+  <script src="https://pactus.org/assets/js/color-modes.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png"  />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+
+  <body>
+    <div class="shadow-sm rounded-bottom">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand logo px-4 pt-2" href="/">
+        <img id="logo_image" src="https://pactus.org/assets/images/logos/pactus-logo-light.png" alt="Pactus blockchain" />
+      <div class="logo"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/about/what-is-pactus/">
+                  What is Pactus?
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/about/roadmap/">
+                  Roadmap
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/about/faq/">FAQ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/learn/">Learn</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/download/">Download</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/blog/">Blog</a>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/community/">
+                  Community
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/contributing/">
+                  Contributing
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/user-guides/">
+                  User Guides
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank"
+                  rel="noopener noreferrer">
+                  Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://pacviewer.com/" target="_blank"
+                  rel="noopener noreferrer">
+                  Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/" target="_blank"
+                  rel="noopener noreferrer">
+                  Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link dropdown-item ps-2" href="https://pips.pactus.org" target="_blank">
+                  PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">English</span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    
+
+    
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/ar/user-guides/run-pactus-metrics/">
+        العربية
+      </a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/zh/user-guides/run-pactus-metrics/">
+        中文
+      </a>
+    </li>
+    
+
+    
+  </ul>
+</li>
+
+          <li class="nav-item dropdown ps-2 ms-0">
+  <button class="btn btn-link nav-link dropdown-toggle"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-label="Toggle theme (auto)">
+    <i id="bd-theme-icon" class="fa-regular fa-fw fa-circle-half-stroke"></i>
+    <span class="d-lg-none bd-theme-text m-0 p-0" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="light">
+        <i class="fa-regular fa-fw fa-sun"></i> Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="dark">
+        <i class="fa-solid fa-fw fa-moon"></i> Dark
+      </button>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+    <div class="container-fluid shadow-sm rounded mt-3 mb-3">
+      <div class="row bg-body rounded p-3" dir="ltr">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 content">
+          <h1 id="how-to-run-pactus-metrics">How to run Pactus Metrics?</h1>
+
+<h2 id="preface">Preface</h2>
+
+<p>Pactus can be run with metrics, providing you with the ability to monitor your node.
+This tutorial will guide you through the steps to run Pactus with metrics, suitable for advanced users.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before proceeding with the steps below, ensure that you have the following:</p>
+
+<ul>
+  <li>An understanding of <a href="https://prometheus.io">Prometheus</a> and <a href="https://grafana.com/">Grafana</a>.</li>
+  <li>Have a running Pactus Node.</li>
+</ul>
+
+<h2 id="configure-pactus-node-for-metrics">Configure Pactus Node for Metrics</h2>
+
+<p>To Configure the Pactus Node for Metrics, navigate to the Pactus directory; by default, it’s located at the following path.</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/YourUsername/pactus
+</code></pre></div></div>
+
+<p>There’s a file named <code class="language-plaintext highlighter-rouge">config.toml</code> that contains all the configurations for your node.
+There are two parameters that you should enable for metrics: the first is <code class="language-plaintext highlighter-rouge">enable_metrics</code>,
+and the second is enable <code class="language-plaintext highlighter-rouge">http</code>. After editing the <code class="language-plaintext highlighter-rouge">config.toml</code> you should restart your node.
+The metrics now can be accessed at <code class="language-plaintext highlighter-rouge">http://localhost:80/metrics/prometheus</code> (this url going to be use by prometheus).</p>
+
+<div class="alert alert-warning"><i class="fa fa-triangle-exclamation"></i>
+
+if you are running Pactus with docker image, make sure to expose :80 port.
+
+</div>
+
+<hr />
+
+<h2 id="configure-grafana-and-prometheus">Configure Grafana And Prometheus</h2>
+
+<p>You should run Grafana and Prometheus for gathering metrics and displaying them in charts.
+First, create a directory named <code class="language-plaintext highlighter-rouge">prometheus-grafana</code>. Inside the directory,
+create a <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> file and paste the code below.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">services</span><span class="pi">:</span>
+  <span class="na">prometheus</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">prom/prometheus</span>
+    <span class="na">container_name</span><span class="pi">:</span> <span class="s">prometheus</span>
+    <span class="na">command</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">--config.file=/etc/prometheus/prometheus.yml"</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">9090:9090</span>
+    <span class="na">restart</span><span class="pi">:</span> <span class="s">unless-stopped</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">./prometheus:/etc/prometheus</span>
+      <span class="pi">-</span> <span class="s">prom_data:/prometheus</span>
+  <span class="na">grafana</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">grafana/grafana</span>
+    <span class="na">container_name</span><span class="pi">:</span> <span class="s">grafana</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">3000:3000</span>
+    <span class="na">restart</span><span class="pi">:</span> <span class="s">unless-stopped</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">GF_SECURITY_ADMIN_USER=admin</span>
+      <span class="pi">-</span> <span class="s">GF_SECURITY_ADMIN_PASSWORD=admin</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">./grafana:/etc/grafana/provisioning/datasources</span>
+<span class="na">volumes</span><span class="pi">:</span> <span class="s">prom_data</span>
+</code></pre></div></div>
+
+<p>You can change the default username and password of Grafana by modifying the values of <code class="language-plaintext highlighter-rouge">GF_SECURITY_ADMIN_USER</code> and <code class="language-plaintext highlighter-rouge">GF_SECURITY_ADMIN_PASSWORD</code>.
+Now, save the file. Then, in the current directory (meaning you are inside the <code class="language-plaintext highlighter-rouge">prometheus-grafana</code> directory),
+create another directory named <code class="language-plaintext highlighter-rouge">grafana</code>. Then, go to the directory. So now you’re in the path <code class="language-plaintext highlighter-rouge">/prometheus-grafana/grafana/</code>.
+In the current directory, create a file named <code class="language-plaintext highlighter-rouge">datasource.yml</code> and paste the code below there.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="m">1</span>
+
+<span class="na">datasources</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Prometheus</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">prometheus</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">http://prometheus:9090</span>
+    <span class="na">isDefault</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="na">access</span><span class="pi">:</span> <span class="s">proxy</span>
+    <span class="na">editable</span><span class="pi">:</span> <span class="kc">true</span>
+</code></pre></div></div>
+
+<p>Then save the file and exit.
+Now, we should go up one directory level from the current directory and navigate to the <code class="language-plaintext highlighter-rouge">/prometheus-grafana</code> directory.
+In the current directory, which is <code class="language-plaintext highlighter-rouge">/prometheus-grafana</code>, create another directory named <code class="language-plaintext highlighter-rouge">prometheus</code>,
+then go into the directory.In the prometheus directory create a file named <code class="language-plaintext highlighter-rouge">prometheus.yml</code> and paste below code there.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">global</span><span class="pi">:</span>
+  <span class="na">scrape_interval</span><span class="pi">:</span> <span class="s">15s</span>
+  <span class="na">scrape_timeout</span><span class="pi">:</span> <span class="s">10s</span>
+  <span class="na">evaluation_interval</span><span class="pi">:</span> <span class="s">15s</span>
+<span class="na">alerting</span><span class="pi">:</span>
+  <span class="na">alertmanagers</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">static_configs</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">targets</span><span class="pi">:</span> <span class="pi">[]</span>
+      <span class="na">scheme</span><span class="pi">:</span> <span class="s">http</span>
+      <span class="na">timeout</span><span class="pi">:</span> <span class="s">10s</span>
+      <span class="na">api_version</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">scrape_configs</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">job_name</span><span class="pi">:</span> <span class="s">prometheus</span>
+    <span class="na">honor_timestamps</span><span class="pi">:</span> <span class="kc">true</span>
+    <span class="na">scrape_interval</span><span class="pi">:</span> <span class="s">15s</span>
+    <span class="na">scrape_timeout</span><span class="pi">:</span> <span class="s">10s</span>
+    <span class="na">metrics_path</span><span class="pi">:</span> <span class="s">/metrics/prometheus</span>
+    <span class="na">scheme</span><span class="pi">:</span> <span class="s">http</span>
+    <span class="na">static_configs</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">targets</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">127.0.0.1</span>
+</code></pre></div></div>
+
+<p>Then save the file and exit.</p>
+
+<div class="alert alert-info"><i class="fa fa-circle-info"></i>
+
+Tip: In the last section of the code, you will see the targets section where I’ve written 127.0.0.1.
+You can change it based on your localhost IP or your website domain.
+Please be aware that your target should match with your node http port.
+The default http port of pactus node is 80.
+
+</div>
+
+<h2 id="run-grafana-and-prometheus">Run Grafana and Prometheus</h2>
+
+<p>Go to the <code class="language-plaintext highlighter-rouge">/prometheus-grafana</code> directory where the <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> is located and run the command below.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker compose up <span class="nt">-d</span>
+</code></pre></div></div>
+
+<p>Congratulations! Grafana and Prometheus are now up and accessible at ports <code class="language-plaintext highlighter-rouge">3000</code> and <code class="language-plaintext highlighter-rouge">9090</code> respectively.</p>
+
+<h2 id="import-pactus-metrics-to-grafana-dashboard">Import Pactus Metrics to Grafana Dashboard</h2>
+
+<p>As Pactus uses <code class="language-plaintext highlighter-rouge">libp2p</code> for its peer-to-peer network, we should import <code class="language-plaintext highlighter-rouge">libp2p</code> metrics that you can find <a href="https://github.com/libp2p/go-libp2p/tree/master/dashboards">here</a>.
+Download one of the metrics config and then Import it into <code class="language-plaintext highlighter-rouge">Grafana Dashboard</code>.</p>
+
+<p>Congratulations! You did it. Now, you can perform the same operations for other configurations.</p>
+
+
+          <div class="row p-3">
+            <div class="col text-end">
+              <a href="/user-guides/">« Back to the user guides list</a>
+            </div>
+          </div>
+          <div class="row edit-bar">
+  <div class="col">
+    <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/user-guides/run-pactus-metrics/index.md">
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
+      Edit this page
+    </a>
+      |
+    <a
+      class="p-2 edit-btn"
+      href="https://github.com/pactus-project/pactus.org/edit/main/website/_i18n/en/user-guides/run-pactus-metrics/index.md">
+      <i class="fa fa-language" aria-hidden="true"></i>
+      Improve translation
+    </a>
+    
+  </div>
+</div>
+
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+    <div class="shadow-sm rounded-top footer anchor">
+  <footer class="container-fluid py-4 pb-0 mb-0">
+    <div class="container pb-0 mb-0">
+      <div class="row around-xs footer-wrapper">
+        <div class="col-md-3 col-xs-6">
+          <div class="section">Pactus</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/about/what-is-pactus/">What is Pactus?</a>
+            </li>
+            <li>
+              <a class="anchor" href="/about/roadmap/">Roadmap</a>
+            </li>
+            <li>
+              <a class="anchor" href="/download/">Download</a>
+            </li>
+            <li>
+              <a class="anchor" href="/learn/">Learn</a>
+            </li>
+            <li>
+              <a class="anchor" href="/blog/">Blog</a>
+            </li>
+            <li>
+              <a class="anchor" href="/about/faq/">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">Resources</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/community/">Community</a>
+            </li>
+            <li>
+              <a class="anchor" href="/contributing/">Contributing</a>
+            </li>
+            <li>
+              <a class="anchor" href="/user-guides/">User Guides</a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank">Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </li>
+            <!-- <li>
+              <a class="anchor" href="https://labs.sensifia.com/" target="_blank" rel="noopener noreferrer">
+                Laboratory <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li> -->
+            <li>
+              <a class="anchor" href="https://pacviewer.com/" target="_blank" rel="noopener noreferrer">
+                Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/" target="_blank" rel="noopener noreferrer">
+                Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              <li>
+                <a class="anchor" href="https://pips.pactus.org" target="_blank">PIPs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </li>
+            <li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">Community</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="https://discord.gg/H5vZkNnXCu">
+                <i class="fa-brands fa-fw fa-discord"></i>
+                Pactus on Discord
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://x.com/pactuschain/">
+                <i class="fa-brands fa-fw fa-twitter"></i>
+                Pactus on Twitter
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://t.me/pactusblockchain">
+                <i class="fa-brands fa-fw fa-telegram"></i>
+                Pactus on Telegram
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://linkedin.com/company/pactus-blockchain">
+                <i class="fa-brands fa-fw fa-linkedin"></i>
+                Pactus on LinkedIn
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://bitcointalk.org/index.php?topic=5480867.0">
+                <i class="fa-brands fa-fw fa-bitcoin"></i>
+                Pactus on Bitcoin Talk
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="https://pactus.org/assets/images/logos/text-logo.png" />
+            </li>
+
+            <li>
+              <a class="anchor" href="https://goo.gl/maps/aYMYxy6pWJzAtxf56">
+                <i class="fa-solid fa-map"></i>
+                Dammstrasse 16, 6300 Zug, Switzerland
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="mailto:info@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                info@pactus.org
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="tel:+41767011335">
+                <i class="fa-solid fa-phone"></i>
+                +41 76 701 13 35
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row around-xs pt-4 pb-0 m-0">
+        <div class="col d-flex justify-content-center">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item"><a href="https://pactus.org/term-of-use/" class="px-2 legal"><i class="fa-solid fa-gavel"></i> Term of Use</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/sitemap.xml" class="px-2 legal"><i class="fa-solid fa-sitemap"></i> Sitemap</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/feed.xml" class="px-2 legal"><i class="fa-solid fa-rss"></i> RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <script>
+      anchors.add();
+    </script>
+  </body>
+</html>

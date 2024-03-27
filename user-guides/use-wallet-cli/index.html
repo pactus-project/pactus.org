@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4BTY819M6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-Q4BTY819M6");
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>How to use wallet in Command Line Mode? | Welcome to Pactus</title>
+  <meta name="description" content="Pactus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!" />
+
+  <meta property="og:title" content="How to use wallet in Command Line Mode? | Welcome to Pactus" />
+  <meta property="og:description" content="Pactus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!" />
+  <meta property="og:site_name" content="Welcome to Pactus" />
+  <meta property="og:url" content="https://pactus.org/user-guides/use-wallet-cli/" />
+  <meta property="og:type" content="website" />
+
+  <link href="https://pactus.org/assets/css/rouge.theme.vim.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.colorful.brands.css" rel="stylesheet" />
+  <link href="https://pactus.org/assets/css/custom.css" rel="stylesheet" />
+
+  <script src="https://pactus.org/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="https://pactus.org/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://pactus.org/assets/js/anchor.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://pactus.org/assets/js/custom.js"></script>
+  <script src="https://pactus.org/assets/js/color-modes.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png"  />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+
+  <body>
+    <div class="shadow-sm rounded-bottom">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand logo px-4 pt-2" href="/">
+        <img id="logo_image" src="https://pactus.org/assets/images/logos/pactus-logo-light.png" alt="Pactus blockchain" />
+      <div class="logo"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/about/what-is-pactus/">
+                  What is Pactus?
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/about/roadmap/">
+                  Roadmap
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/about/faq/">FAQ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/learn/">Learn</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/download/">Download</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/blog/">Blog</a>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/community/">
+                  Community
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/contributing/">
+                  Contributing
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/user-guides/">
+                  User Guides
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank"
+                  rel="noopener noreferrer">
+                  Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://pacviewer.com/" target="_blank"
+                  rel="noopener noreferrer">
+                  Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/" target="_blank"
+                  rel="noopener noreferrer">
+                  Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link dropdown-item ps-2" href="https://pips.pactus.org" target="_blank">
+                  PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">English</span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    
+
+    
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/ar/user-guides/use-wallet-cli/">
+        العربية
+      </a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/zh/user-guides/use-wallet-cli/">
+        中文
+      </a>
+    </li>
+    
+
+    
+  </ul>
+</li>
+
+          <li class="nav-item dropdown ps-2 ms-0">
+  <button class="btn btn-link nav-link dropdown-toggle"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-label="Toggle theme (auto)">
+    <i id="bd-theme-icon" class="fa-regular fa-fw fa-circle-half-stroke"></i>
+    <span class="d-lg-none bd-theme-text m-0 p-0" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="light">
+        <i class="fa-regular fa-fw fa-sun"></i> Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="dark">
+        <i class="fa-solid fa-fw fa-moon"></i> Dark
+      </button>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+    <div class="container-fluid shadow-sm rounded mt-3 mb-3">
+      <div class="row bg-body rounded p-3" dir="ltr">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 content">
+          <h1 id="how-to-use-wallet-in-command-line-mode">How to use wallet in Command Line Mode?</h1>
+
+<h2 id="preface">Preface</h2>
+
+<p>The Pactus Blockchain provides a wallet application that allows users to interact with the Pactus blockchain
+without the need to run a node.
+This is ideal for users who do not wish to operate a node but still want to create a personal wallet to manage their funds.
+This tutorial will guide you step-by-step on how to use the wallet application.</p>
+
+<h2 id="download">Download</h2>
+
+<p>To get started, download and extract the Pactus CLI file from
+<a href="/download/#cli">here</a>.
+Once you have downloaded and extracted the Pactus CLI file, you can proceed to the next step.</p>
+
+<hr />
+
+<h2 id="wallet-commands">Wallet Commands</h2>
+
+<p>In this section, we will explore various wallet commands that help you create, manage,
+and recover your Pactus wallet.</p>
+
+<div class="alert alert-info"><i class="fa fa-circle-info"></i>
+  <b>Wallet Path</b>
+  <br /><br />
+  By default, the node’s wallet is stored at <code class="language-plaintext highlighter-rouge">~/pactus/wallets/default_wallet</code> on Unix-like systems.
+  On Windows, you can find it at <code class="language-plaintext highlighter-rouge">C:\Users\&lt;USER_NAME&gt;\pactus\wallets\default_wallet</code>.
+  <br /><br />
+  If you wish to select or specify a different wallet, use the <code class="language-plaintext highlighter-rouge">--path</code> option.
+</div>
+
+<h3 id="create-a-wallet">Create a Wallet</h3>
+
+<p>To create a new wallet, run the following command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-create_wallet-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-create_wallet-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-create_wallet-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet --path &lt;PATH-To-NEW-WALLET&gt; create
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-create_wallet-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe --path &lt;PATH-To-NEW-WALLET&gt; create
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">&lt;PATH-To-NEW-WALLET&gt;</code> with the file path where you want to create the wallet.</p>
+
+<h3 id="recover-wallet">Recover Wallet</h3>
+
+<p>If you lose your wallet or forget your password, you can recover it by running this command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-wallet_recover-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-wallet_recover-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-wallet_recover-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet --path &lt;PATH-To-NEW-WALLET&gt; recover
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-wallet_recover-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe --path &lt;PATH-To-NEW-WALLET&gt; recover
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">&lt;PATH-To-NEW-WALLET&gt;</code> with the file path where you want to restore the wallet.</p>
+
+<h3 id="wallet-password">Wallet Password</h3>
+
+<p>You can change the wallet password by running this command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-wallet_password-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-wallet_password-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-wallet_password-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet password
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-wallet_password-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe password
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>This command changes the password for the <code class="language-plaintext highlighter-rouge">default_wallet</code> if there is one, or sets a new password.</p>
+
+<h3 id="wallet-seed">Wallet Seed</h3>
+
+<p>You can obtain the wallet seed by running this command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-wallet_seed-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-wallet_seed-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-wallet_seed-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet seed
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-wallet_seed-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe seed
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>The wallet seed is encrypted within your wallet, and
+you’ll need to enter the wallet password to access it.</p>
+
+<hr />
+
+<h2 id="address-commands">Address Commands</h2>
+
+<p>In this section, we’ll cover address commands that help you manage your wallet addresses.</p>
+
+<h3 id="creating-new-address">Creating New Address</h3>
+
+<p>You can create a new address by running this command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-address_new-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-address_new-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-address_new-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet address new
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-address_new-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe address new
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>Based on <a href="https://pips.pactus.org/PIPs/pip-8">PIP-8</a>, an address string conducts its type and usage.
+By default, the above command creates an account address.
+If you want to create a validator address instead, you can use the <code class="language-plaintext highlighter-rouge">--type validator</code> option with the command like this:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-address_new_val-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-address_new_val-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-address_new_val-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet address new --type validator
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-address_new_val-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe address new --type validator
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>You can also assign a label to your address to better organize your address book.</p>
+
+<h3 id="list-of-addresses">List of Addresses</h3>
+
+<p>To view the list of wallet addresses, use this command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-address_all-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-address_all-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-address_all-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet address all
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-address_all-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe address all
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<h3 id="get-public-key">Get Public Key</h3>
+
+<p>To obtain the public key for a specific address, run this command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-address_pub-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-address_pub-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-address_pub-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet address pub &lt;ADDRESS&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-address_pub-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe address pub &lt;ADDRESS&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">&lt;ADDRESS&gt;</code> with the address for which you want to retrieve its public key.</p>
+
+<h3 id="get-private-key">Get Private Key</h3>
+
+<p>You can get the private key of your address by this command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-address_prv-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-address_prv-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-address_prv-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet address priv &lt;ADDRESS&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-address_prv-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe address priv &lt;ADDRESS&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">&lt;ADDRESS&gt;</code> with the address for which you want to retrieve its private key.
+Keep your private key secure. If someone gains access to your private key,
+they will have full control over that address.</p>
+
+<h3 id="get-address-balance">Get Address Balance</h3>
+
+<p>You can get the balance of your address by this command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-address_bal-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-address_bal-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-address_bal-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet address balance &lt;ADDRESS&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-address_bal-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe address balance &lt;ADDRESS&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">&lt;ADDRESS&gt;</code> with the address for which you want to retrieve your balance.</p>
+
+<hr />
+
+<h2 id="transaction-commands">Transaction Commands</h2>
+
+<p>In this section, we’ll cover transaction commands that help you create, sign, and
+broadcast transactions on the Pactus Blockchain.
+You’ll need to provide the password to sign the transaction.
+Please note that once a transaction is broadcasted, it cannot be reversed.</p>
+
+<h3 id="sending-transfer-transaction">Sending Transfer Transaction</h3>
+
+<p>To create, sign, and broadcast a
+<a href="/learn/transaction/transfer/">Transfer transaction</a>, use the following command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-tx_transfer-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-tx_transfer-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-tx_transfer-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet tx transfer &lt;FROM&gt; &lt;TO&gt; &lt;AMOUNT&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-tx_transfer-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe tx transfer &lt;FROM&gt; &lt;TO&gt; &lt;AMOUNT&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>In this command, <code class="language-plaintext highlighter-rouge">&lt;FROM&gt;</code> should be one of the addresses in your wallet as the sender address,
+and <code class="language-plaintext highlighter-rouge">&lt;TO&gt;</code> is the receiver address.</p>
+
+<h3 id="sending-bond-transaction">Sending Bond Transaction</h3>
+
+<p>To create, sign, and broadcast a
+<a href="/learn/transaction/bond/">Bond transaction</a>, use the following command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-tx_bond-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-tx_bond-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-tx_bond-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet tx bond &lt;FROM&gt; &lt;TO&gt; &lt;AMOUNT&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-tx_bond-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe tx bond &lt;FROM&gt; &lt;TO&gt; &lt;AMOUNT&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>In this command, <code class="language-plaintext highlighter-rouge">&lt;FROM&gt;</code> should be one of the addresses in your wallet as the sender address,
+and <code class="language-plaintext highlighter-rouge">&lt;TO&gt;</code> is the receiver validator address.</p>
+
+<p>If the validator associated with this address does not exist yet,
+you need to provide the public key to create it:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-tx_bond_pub-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-tx_bond_pub-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-tx_bond_pub-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet tx bond --pub &lt;PUBLIC_KEY&gt; &lt;FROM&gt; &lt;TO&gt; &lt;AMOUNT&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-tx_bond_pub-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe --pub &lt;PUBLIC_KEY&gt; &lt;FROM&gt; &lt;TO&gt; &lt;AMOUNT&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">&lt;PUBLIC_KEY&gt;</code> with the validator’s public key,
+which is the public key of the <code class="language-plaintext highlighter-rouge">&lt;TO&gt;</code> address.</p>
+
+<h3 id="sending-unbond-transaction">Sending Unbond Transaction</h3>
+
+<p>To create, sign, and broadcast a
+<a href="/learn/transaction/unbond/">Unbond transaction</a>, use the following command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-tx_unbond-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-tx_unbond-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-tx_unbond-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet tx unbond &lt;ADDRESS&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-tx_unbond-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe tx unbond &lt;ADDRESS&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+<p>In this command, <code class="language-plaintext highlighter-rouge">&lt;ADDRESS&gt;</code> is the address of the validator that you want to unbond.</p>
+
+<h3 id="sending-withdraw-transaction">Sending Withdraw Transaction</h3>
+
+<p>To create, sign, and broadcast a
+<a href="/learn/transaction/withdraw/">Withdraw transaction</a>, use the following command:</p>
+
+<ul class="nav nav-tabs" dir="ltr">
+  
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tabs-tx_withdraw-linux-mac">
+        <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link " data-bs-toggle="tab" href="#tabs-tx_withdraw-windows">
+        <i class="fa-brands fa-windows"></i> Windows
+      </a>
+    </li>
+  
+</ul>
+<div class="tab-content" dir="ltr">
+  
+    <div class="tab-pane show active" id="tabs-tx_withdraw-linux-mac">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pactus-wallet tx unbond &lt;FROM&gt; &lt;TO&gt; &lt;AMOUNT&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+    <div class="tab-pane " id="tabs-tx_withdraw-windows">
+      
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pactus-wallet.exe tx withdraw &lt;FROM&gt; &lt;TO&gt; &lt;AMOUNT&gt;
+</code></pre></div></div>
+
+
+     </div>
+  
+</div>
+
+
+          <div class="row p-3">
+            <div class="col text-end">
+              <a href="/user-guides/">« Back to the user guides list</a>
+            </div>
+          </div>
+          <div class="row edit-bar">
+  <div class="col">
+    <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/user-guides/use-wallet-cli/index.md">
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
+      Edit this page
+    </a>
+      |
+    <a
+      class="p-2 edit-btn"
+      href="https://github.com/pactus-project/pactus.org/edit/main/website/_i18n/en/user-guides/use-wallet-cli/index.md">
+      <i class="fa fa-language" aria-hidden="true"></i>
+      Improve translation
+    </a>
+    
+  </div>
+</div>
+
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+    <div class="shadow-sm rounded-top footer anchor">
+  <footer class="container-fluid py-4 pb-0 mb-0">
+    <div class="container pb-0 mb-0">
+      <div class="row around-xs footer-wrapper">
+        <div class="col-md-3 col-xs-6">
+          <div class="section">Pactus</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/about/what-is-pactus/">What is Pactus?</a>
+            </li>
+            <li>
+              <a class="anchor" href="/about/roadmap/">Roadmap</a>
+            </li>
+            <li>
+              <a class="anchor" href="/download/">Download</a>
+            </li>
+            <li>
+              <a class="anchor" href="/learn/">Learn</a>
+            </li>
+            <li>
+              <a class="anchor" href="/blog/">Blog</a>
+            </li>
+            <li>
+              <a class="anchor" href="/about/faq/">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">Resources</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/community/">Community</a>
+            </li>
+            <li>
+              <a class="anchor" href="/contributing/">Contributing</a>
+            </li>
+            <li>
+              <a class="anchor" href="/user-guides/">User Guides</a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank">Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </li>
+            <!-- <li>
+              <a class="anchor" href="https://labs.sensifia.com/" target="_blank" rel="noopener noreferrer">
+                Laboratory <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li> -->
+            <li>
+              <a class="anchor" href="https://pacviewer.com/" target="_blank" rel="noopener noreferrer">
+                Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/" target="_blank" rel="noopener noreferrer">
+                Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              <li>
+                <a class="anchor" href="https://pips.pactus.org" target="_blank">PIPs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </li>
+            <li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">Community</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="https://discord.gg/H5vZkNnXCu">
+                <i class="fa-brands fa-fw fa-discord"></i>
+                Pactus on Discord
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://x.com/pactuschain/">
+                <i class="fa-brands fa-fw fa-twitter"></i>
+                Pactus on Twitter
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://t.me/pactusblockchain">
+                <i class="fa-brands fa-fw fa-telegram"></i>
+                Pactus on Telegram
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://linkedin.com/company/pactus-blockchain">
+                <i class="fa-brands fa-fw fa-linkedin"></i>
+                Pactus on LinkedIn
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://bitcointalk.org/index.php?topic=5480867.0">
+                <i class="fa-brands fa-fw fa-bitcoin"></i>
+                Pactus on Bitcoin Talk
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="https://pactus.org/assets/images/logos/text-logo.png" />
+            </li>
+
+            <li>
+              <a class="anchor" href="https://goo.gl/maps/aYMYxy6pWJzAtxf56">
+                <i class="fa-solid fa-map"></i>
+                Dammstrasse 16, 6300 Zug, Switzerland
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="mailto:info@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                info@pactus.org
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="tel:+41767011335">
+                <i class="fa-solid fa-phone"></i>
+                +41 76 701 13 35
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row around-xs pt-4 pb-0 m-0">
+        <div class="col d-flex justify-content-center">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item"><a href="https://pactus.org/term-of-use/" class="px-2 legal"><i class="fa-solid fa-gavel"></i> Term of Use</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/sitemap.xml" class="px-2 legal"><i class="fa-solid fa-sitemap"></i> Sitemap</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/feed.xml" class="px-2 legal"><i class="fa-solid fa-rss"></i> RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <script>
+      anchors.add();
+    </script>
+  </body>
+</html>

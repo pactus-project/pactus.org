@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="zh">
+  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4BTY819M6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-Q4BTY819M6");
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Consensus protocol | 帕图斯区块链</title>
+  <meta name="description" content="帕图斯是一个由社区运营的区块链技术。<br>采用了革命性且安全的Solid State Proof of Stake共识机制。<br>快来加入我们，共同构建去中心化的未来吧！" />
+
+  <meta property="og:title" content="Consensus protocol | 帕图斯区块链" />
+  <meta property="og:description" content="帕图斯是一个由社区运营的区块链技术。<br>采用了革命性且安全的Solid State Proof of Stake共识机制。<br>快来加入我们，共同构建去中心化的未来吧！" />
+  <meta property="og:site_name" content="帕图斯区块链" />
+  <meta property="og:url" content="https://pactus.org/learn/consensus/protocol/" />
+  <meta property="og:type" content="website" />
+
+  <link href="https://pactus.org/assets/css/rouge.theme.vim.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.colorful.brands.css" rel="stylesheet" />
+  <link href="https://pactus.org/assets/css/custom.css" rel="stylesheet" />
+
+  <script src="https://pactus.org/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="https://pactus.org/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://pactus.org/assets/js/anchor.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://pactus.org/assets/js/custom.js"></script>
+  <script src="https://pactus.org/assets/js/color-modes.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png"  />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+
+  <body>
+    <div class="shadow-sm rounded-bottom">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand logo px-4 pt-2" href="/zh/">
+        <img id="logo_image" src="https://pactus.org/assets/images/logos/pactus-logo-light.png" alt="Pactus blockchain" />
+      <div class="logo"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              关于
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/about/what-is-pactus/">
+                  什么是帕图斯？
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/about/roadmap/">
+                  路线图
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/about/faq/">常见问题解答</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/zh/learn/">资料</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/zh/download/">下载</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/zh/blog/">博客</a>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              资源
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/community/">
+                  社区
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/contributing/">
+                  贡献
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/user-guides/">
+                  用户指南
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank"
+                  rel="noopener noreferrer">
+                  Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://pacviewer.com/" target="_blank"
+                  rel="noopener noreferrer">
+                  区块浏览器 <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="https://github.com/pactus-project/" target="_blank"
+                  rel="noopener noreferrer">
+                  GitHub <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link dropdown-item ps-2" href="https://pips.pactus.org" target="_blank">
+                  PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">中文</span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/learn/consensus/protocol/">English</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/ar/learn/consensus/protocol/">
+        العربية
+      </a>
+    </li>
+    
+
+    
+
+    
+    
+  </ul>
+</li>
+
+          <li class="nav-item dropdown ps-2 ms-0">
+  <button class="btn btn-link nav-link dropdown-toggle"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-label="Toggle theme (auto)">
+    <i id="bd-theme-icon" class="fa-regular fa-fw fa-circle-half-stroke"></i>
+    <span class="d-lg-none bd-theme-text m-0 p-0" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="light">
+        <i class="fa-regular fa-fw fa-sun"></i> Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="dark">
+        <i class="fa-solid fa-fw fa-moon"></i> Dark
+      </button>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+    <div class="container-fluid shadow-sm mt-3 mb-3 learn">
+      <div class="row bg-body rounded p-3">
+        <div class="col-lg-3"><nav class="toc sticky-top">
+  <ul class="list-unstyled ps-0">
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#blockchain-collapse"
+        aria-expanded="false">
+        <i class="fa-solid fa-angle-right pe-1"></i> Blockchain
+      </button>
+      <div
+        class="collapse "
+        id="blockchain-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/blockchain/block/"
+              class="d-inline-flex text-decoration-none  ">
+              Block
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/account/"
+              class="d-inline-flex text-decoration-none  ">
+              Account
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/validator/"
+              class="d-inline-flex text-decoration-none  ">
+              Validator
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/state-hash/"
+              class="d-inline-flex text-decoration-none  ">
+              State Hash
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/genesis/"
+              class="d-inline-flex text-decoration-none  ">
+              Genesis
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/incentive/"
+              class="d-inline-flex text-decoration-none  ">
+              Incentive
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/cryptography/"
+              class="d-inline-flex text-decoration-none  ">
+              Cryptography
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/address/"
+              class="d-inline-flex text-decoration-none  ">
+              Address
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/blockchain/serialization/"
+              class="d-inline-flex text-decoration-none  ">
+              Serialization
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#consensus-collapse"
+        aria-expanded="true">
+        <i class="fa-solid fa-angle-right pe-1"></i> Consensus
+      </button>
+      <div
+        class="collapse show"
+        id="consensus-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/consensus/proof-of-stake/"
+              class="d-inline-flex text-decoration-none  ">
+              Solid State Proof of Stake
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/protocol/"
+              class="d-inline-flex text-decoration-none   selected ">
+              Protocol
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/specification/"
+              class="d-inline-flex text-decoration-none  ">
+              Specification
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/sortition/"
+              class="d-inline-flex text-decoration-none  ">
+              Sortition
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/committee/"
+              class="d-inline-flex text-decoration-none  ">
+              Committee
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/consensus/parameters/"
+              class="d-inline-flex text-decoration-none  ">
+              Parameters
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#transaction-collapse"
+        aria-expanded="false">
+        <i class="fa-solid fa-angle-right pe-1"></i> Transaction
+      </button>
+      <div
+        class="collapse "
+        id="transaction-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/transaction/format/"
+              class="d-inline-flex text-decoration-none  ">
+              Transaction Format
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/fee/"
+              class="d-inline-flex text-decoration-none  ">
+              Transaction Fee
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/transfer/"
+              class="d-inline-flex text-decoration-none  ">
+              Transfer Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/bond/"
+              class="d-inline-flex text-decoration-none  ">
+              Bond Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/sortition/"
+              class="d-inline-flex text-decoration-none  ">
+              Sortition Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/unbond/"
+              class="d-inline-flex text-decoration-none  ">
+              Unbond Transaction
+            </a>
+          </li>
+            
+          <li>
+            <a
+              href="/learn/transaction/withdraw/"
+              class="d-inline-flex text-decoration-none  ">
+              Withdraw Transaction
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+    <li class="mb-1">
+      <button
+        class="btn btn-section shadow-none d-inline-flex align-items-center border-0 collapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#api-reference-collapse"
+        aria-expanded="false">
+        <i class="fa-solid fa-angle-right pe-1"></i> API Reference
+      </button>
+      <div
+        class="collapse "
+        id="api-reference-collapse">
+        <ul class="btn-page list-unstyled fw-normal pb-1 small">
+            
+          <li>
+            <a
+              href="/learn/api/grpc/"
+              class="d-inline-flex text-decoration-none  ">
+              gRPC API Reference
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </li>
+    
+  </ul>
+</nav>
+</div>
+        <div class="col-lg-9 content"><div class="alert alert-warning">
+  This post is obsolete. check <a href="https://pips.pactus.org/PIPs/pip-10">here</a> for more information.
+</div>
+
+<h1 id="consensus-protocol">Consensus Protocol</h1>
+
+<p>Pactus consensus algorithm is a <a href="https://en.wikipedia.org/wiki/Finite-state_machine">state machine</a>
+replication with <a href="https://en.wikipedia.org/wiki/Byzantine_fault">Byzantine fault</a> tolerance.
+The Pactus consensus algorithm starts with the block creation phase.
+In this phase one validator acts as the proposer. The proposer collects all the transactions,
+creates a block, and proposes it to other validators.</p>
+
+<p>When a proposed block is seen by other validators, they validate the block and
+cast their vote for the proposed block, moving to the “prepare” state.</p>
+
+<p>If more than two-thirds (⅔) of the total stakes cast their votes, the proposed block becomes prepared,
+and validators move to the “precommit” state.</p>
+
+<p>If, once again, more than two-thirds (⅔) of the total stakes cast their vote for the prepared block,
+the block is committed, and the next proposer is ready to propose a new block. This cycle repeats every 10 seconds.</p>
+
+<p>If a proposer fails to propose in any round, other validators start the “change proposer” phase to
+decide to change the proposer for this round.</p>
+
+<p><img src="https://pactus.org/assets/images/pactus-consensus-states.png" alt="Pactus consensus states" /></p>
+
+<h2 id="the-algorithm">The Algorithm</h2>
+
+<p>There are \(R = 3f+1\) validators. where \(f\) is the maximum
+number of validators that may be faulty or byzantine. For example, if there is one faulty validator,
+the resiliency of the algorithm is optimal if we have at least \(3\) non-faulty
+validators. So the minimum number of validators should be \(3+1=4\).</p>
+
+<p>We denote a message as \(\langle m \rangle\) tuple and a signed message by node \(i\) as
+\(\langle m \rangle_{\sigma_i}\).</p>
+
+<p>Pactus consensus algorithms has two phases: Block creation phase and change proposer phase.</p>
+
+<h3 id="block-creation">Block Creation</h3>
+
+<p>The block creation phase in Pactus consensus algorithm includes these three steps<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>:
+<strong>Propose</strong>, <strong>Prepare</strong> and <strong>Precommit</strong>.
+The protocol proceeds in rounds \(r = 0, 1, 2, \ldots\).</p>
+
+<h4 id="propose-step">Propose Step</h4>
+
+<p>In each round \(r\), one validator is the proposer and the others act as validators.
+The proposer \(p\) collects transactions and creates a proposal block \(B\). It signs and
+broadcasts a proposal message with the <strong>proposed</strong> block piggybacked to all the validators.
+Propose message has this form:</p>
+
+\[\langle \langle \text{PROPOSE},h,r \rangle_{\sigma_p}, B \rangle\]
+
+<p>where:</p>
+
+<ul>
+  <li>\(B\) is the proposed block</li>
+  <li>\(h\) indicates the block height</li>
+  <li>\(r\) is an assigned round number, which is zero for the first round</li>
+</ul>
+
+<h4 id="prepare-step">Prepare Step</h4>
+
+<p>If validator \(i\) accepts the proposal, it enters <em>prepare</em> step and signs and
+broadcasts <em>prepare</em> message to all other validators. Otherwise, it does nothing.
+The prepare message has this form:</p>
+
+\[\langle \text{PREPARE},h,r,d \rangle_{\sigma_i}\]
+
+<p>where:</p>
+
+<ul>
+  <li>\(d\) is digest or hash of proposed block \(B\)</li>
+</ul>
+
+<p>If validator \(i\) received \(2f+1\) prepare messages from other
+validators (including its own), it becomes <strong>prepared</strong> and enters to precommit step.</p>
+
+<h4 id="precommit-step">Precommit Step</h4>
+
+<p>In <em>precommit</em> step, validator \(i\) signs and broadcasts precommit message to
+the other validators.
+The precommit message has this form:</p>
+
+\[\langle \text{PRECOMMIT},h,r,d \rangle_{\sigma_i}\]
+
+<p>Each validator executes and commits block \(b\) after receiving
+\(2f+1\) precommit messages (including its own) and becomes <strong>committed</strong>.</p>
+
+<h4 id="block-announcement">Block Announcement</h4>
+
+<p>Each validator that receives a valid proposal and with \(2f+1\) precommit messages from other
+validators (including its own), can create a block-announce messages and broadcasts it to the network.
+The block-announce message has this form:</p>
+
+\[\langle \text{BLOCK-ANNOUNCE} ,h ,r ,B, C \rangle\]
+
+<p>where:</p>
+
+<ul>
+  <li>\(C\) is the quorum certificate for the precommit step.</li>
+</ul>
+
+<p>Validators can move to the next height and clear the message logs after receiving valid
+block-announce message, even if their timer has expired.</p>
+
+<p>The picture below shows the operation of the algorithm in the normal case. validator 1 is the
+proposer and validator 4 is faulty.</p>
+
+<p><img src="https://pactus.org/assets/images/pactus-consensus-normal-execution.png" alt="Normal execution" /></p>
+
+<h3 id="change-proposer">Change Proposer</h3>
+
+<p>The change-proposer provides liveness by allowing the system to make progress when the proposer fails.
+The change-proposer phase is triggered by timeouts that
+prevent validators from waiting indefinitely for the proposal to execute.</p>
+
+<p>If the timer of a validator expires in round \(r\), the validator starts a change-proposer phase.
+The change-proposer phase is an Asynchronous Byzantine Binary Agreement (ABBA) <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> that is biased toward zero (No).
+It means that during this phase, even if they don’t have the proposal, honest validators may decide to vote zero
+if they obtain a valid quorum Certificate for the prepare step.</p>
+
+<p>If a supermajority of the validators decide to change the proposer, they move to round \(r+1\). However,
+if they decide not to change the proposer, they will return to the prepare state and,
+since a supermajority of the validators attested to a valid proposal, they can commit the proposed block.</p>
+
+<p>The change proposer phase in Pactus consensus algorithm includes these three steps:
+<strong>Pre-vote</strong>, <strong>Main-vote</strong> and <strong>Decide</strong>
+The protocol proceeds in rounds \(r_{cp} = 0, 1, 2, \ldots\).</p>
+
+<h4 id="pre-vote-step">Pre-vote Step</h4>
+
+<p>In Pre-vote step each validator casts a pre-vote for a value \(b \in \{0, 1\}\)
+and broadcasts pre-vote message to the network.
+The pre-vote message has this form:</p>
+
+\[\langle\langle \text{CP:PRE-VOTE},h,r,r_{cp},b \rangle_{\sigma_i}, justification\rangle\]
+
+<p>The first round is a special round and each validator starts with an initial value.
+If the validator’s timer has expired in the prepare step, its initial value is zero,
+and if the validator’s timer has expired in the precommit step, its initial value is one.</p>
+
+\[b = \begin{cases}
+1 &amp; \text{if timer expired in prepare step,} \\
+0 &amp; \text{if timer expired in precommit step.}
+\end{cases}\]
+
+<p>In the next rounds, each validator select \(2f+1\) properly justified main-votes from round \(r − 1\) and</p>
+
+\[b = \begin{cases}
+0 &amp; \text{if there is a main-vote for 0,} \\
+1 &amp; \text{if there is a main-vote for 1,} \\
+0 (biased) &amp; \text{if all main-votes are abstain.}
+\end{cases}\]
+
+<p>These pre-votes must be justified with a appropriate justification.
+For the first round, if the validator’s timer has expired in the prepare step, the justification is \(nil\) ,
+and if the validator’s timer expired in the precommit step,
+the justification is the proper quorum certificate for the prepare step at round \(r\).</p>
+
+<p>In the next rounds, a pre-vote for \(b\) may be justified in two ways:</p>
+
+<ul>
+  <li><strong>Hard</strong>: that is the quorum certificate for \(\langle \text{CP:PRE-VOTE},h,r,r_{cp}-1,b \rangle\)</li>
+  <li><strong>Soft</strong>: that is the quorum certificate for \(\langle \text{CP:MAIN-VOTE},h,r,r_{cp}-1,abstain \rangle\)</li>
+</ul>
+
+<h4 id="main-vote-step">Main-vote Step</h4>
+
+<p>After collecting \(2f+1\) valid and justified pre-votes, each validator casts a main-vote \(v \in \{0, 1, abstain\}\)
+and broadcasts main-vote message to the network.
+The main-vote message has this form:</p>
+
+\[\langle\langle \text{CP:MAIN-VOTE},h,r,r_{cp},v \rangle_{\sigma_i}, justification\rangle\]
+
+<p>The main-vote value \(v\) determine as below:</p>
+
+\[v = \begin{cases}
+0 &amp; \text{if there are 2f+1 pre-vote for 0,} \\
+1 &amp; \text{if there are 2f+1 pre-vote for 1,} \\
+abstain &amp; \text{if there are pre-votes for 0 and 1.}
+\end{cases}\]
+
+<p>These main-votes must be justified with a appropriate justification.
+A main-vote for \(v\) may be justified in two ways:</p>
+
+<ul>
+  <li><strong>Non-conflicting</strong>: that is the quorum certificate for \(\langle \text{CP:PRE-VOTE},h,r,r_{cp},b \rangle\)</li>
+  <li><strong>Conflicting</strong>: that consists of the justifications for the two conflicting pre-votes.</li>
+</ul>
+
+<h4 id="decide-step">Decide Step</h4>
+
+<p>After collecting \(2f+1\) valid and justified main-votes, each validator examines these votes. If all
+votes are for a value \(b \in \{0, 1\}\), then the validator decides \(b\), but continues to
+participate in the protocol for one more round. Otherwise, the validator proceeds to the next round \(r_{cp}+1\).</p>
+
+<h3 id="comparison">Comparison</h3>
+
+<p>Pactus consensus protocl doesn’t have any lcoking mechanism or
+checkpointing and there will at most one valid proposla per round.
+This ensures that each round can begin with a new proposal.</p>
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Protocol</th>
+    <th colspan="2" style="text-align: center;">Normal case</th>
+    <th colspan="2" style="text-align: center;">Faulty case<br /></th>
+  </tr>
+  <tr>
+    <th style="text-align: center;">Steps</th>
+    <th style="text-align: center;">Complexity</th>
+    <th style="text-align: center;">Locking</th>
+    <th style="text-align: center;">Checkpointing</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="vertical-align: middle">PBFT</td>
+    <td style="text-align: center; vertical-align: middle">3</td>
+    <td style="text-align: center; vertical-align: middle">$$O(n^2)$$</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+    <td style="text-align: center; vertical-align: middle">Yes</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle">Tendermint</td>
+    <td style="text-align: center; vertical-align: middle">3</td>
+    <td style="text-align: center; vertical-align: middle">$$O(n^2)$$</td>
+    <td style="text-align: center; vertical-align: middle">Yes</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle">HotStuff</td>
+    <td style="text-align: center; vertical-align: middle">4</td>
+    <td style="text-align: center; vertical-align: middle">$$O(n)$$</td>
+    <td style="text-align: center; vertical-align: middle">Yes</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle">Pactus</td>
+    <td style="text-align: center; vertical-align: middle">3</td>
+    <td style="text-align: center; vertical-align: middle">$$O(n^2)$$</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+    <td style="text-align: center; vertical-align: middle">No</td>
+  </tr>
+</tbody>
+</table>
+
+<hr />
+
+<p>References:</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://pmg.csail.mit.edu/papers/osdi99.pdf">Practical Byzantine Fault Tolerance</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://link.springer.com/article/10.1007/s00145-005-0318-0">Random Oracles in Constantinople: Practical Asynchronous Byzantine Agreement Using Cryptography</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+ <div class="row edit-bar">
+  <div class="col">
+    <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/learn/consensus/protocol/index.md">
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
+      编辑本页
+    </a>
+     
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+    <div class="shadow-sm rounded-top footer anchor">
+  <footer class="container-fluid py-4 pb-0 mb-0">
+    <div class="container pb-0 mb-0">
+      <div class="row around-xs footer-wrapper">
+        <div class="col-md-3 col-xs-6">
+          <div class="section">帕图斯</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/zh/about/what-is-pactus/">什么是帕图斯？</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/about/roadmap/">路线图</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/download/">下载</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/learn/">资料</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/blog/">博客</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/about/faq/">常见问题解答</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">资源</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/zh/community/">社区</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/contributing/">贡献</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/user-guides/">用户指南</a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank">Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </li>
+            <!-- <li>
+              <a class="anchor" href="https://labs.sensifia.com/" target="_blank" rel="noopener noreferrer">
+                实验室 <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li> -->
+            <li>
+              <a class="anchor" href="https://pacviewer.com/" target="_blank" rel="noopener noreferrer">
+                区块浏览器 <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/" target="_blank" rel="noopener noreferrer">
+                GitHub <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              <li>
+                <a class="anchor" href="https://pips.pactus.org" target="_blank">PIPs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </li>
+            <li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">社区</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="https://discord.gg/H5vZkNnXCu">
+                <i class="fa-brands fa-fw fa-discord"></i>
+                帕图斯在 Discord 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://x.com/pactuschain/">
+                <i class="fa-brands fa-fw fa-twitter"></i>
+                帕图斯在 Twitter 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://t.me/pactusblockchain">
+                <i class="fa-brands fa-fw fa-telegram"></i>
+                帕图斯在 Telegram 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://linkedin.com/company/pactus-blockchain">
+                <i class="fa-brands fa-fw fa-linkedin"></i>
+                帕图斯在 LinkedIn 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://bitcointalk.org/index.php?topic=5480867.0">
+                <i class="fa-brands fa-fw fa-bitcoin"></i>
+                Pactus on Bitcoin Talk
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="https://pactus.org/assets/images/logos/text-logo.png" />
+            </li>
+
+            <li>
+              <a class="anchor" href="https://goo.gl/maps/aYMYxy6pWJzAtxf56">
+                <i class="fa-solid fa-map"></i>
+                Dammstrasse 16, 6300 Zug, Switzerland
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="mailto:info@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                info@pactus.org
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="tel:+41767011335">
+                <i class="fa-solid fa-phone"></i>
+                +41 76 701 13 35
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row around-xs pt-4 pb-0 m-0">
+        <div class="col d-flex justify-content-center">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item"><a href="https://pactus.org/term-of-use/" class="px-2 legal"><i class="fa-solid fa-gavel"></i> Term of Use</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/sitemap.xml" class="px-2 legal"><i class="fa-solid fa-sitemap"></i> Sitemap</a></li>
+            <li class="list-inline-item"><a href="https://pactus.org/feed.xml" class="px-2 legal"><i class="fa-solid fa-rss"></i> RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    <script>
+      anchors.add();
+    </script>
+  </body>
+</html>
