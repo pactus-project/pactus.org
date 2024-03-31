@@ -55,10 +55,33 @@ $prefix: "pa-";
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: $font-color;
-  background-color: $bg-color;
+  color: var(--text-color);
+  background-color: var(--bg-color);
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.btn-primary {
+  color: var(--text-color-reverse);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  background: none;
+  border-color: var(--primary-color);
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color-reverse);
+  }
+}
+
+.btn-secondary {
+  color: #ffffff;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .navbar {
@@ -76,10 +99,15 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: var(--link-color);
 
-  a:hover:not(.btn) {
-    color: $primary-color !important;
+  &:hover {
+    color: var(--link-hover-color);
+  }
+
+  &:active {
+    color: var(--link-color);
   }
 }
 
@@ -121,24 +149,13 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 5px 5px 5px 5px;
-  vertical-align: middle !important;
+  vertical-align: middle;
   line-height: 42px;
   padding: 0;
   margin: 16px;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 }
 
-.footer {
-  .text-muted {
-    color: $bg-color !important;
-    font-size: 12px;
-    border-radius: 15px 50px 30px 5px;
-
-    a {
-      color: $bg-color !important;
-    }
-  }
-}
 
 .pactus-video {
   video {
@@ -151,8 +168,9 @@ h3 {
 }
 
 .highlighter-rouge .highlight pre {
+  background-color: #0d1117;
   padding: 32px 12px 12px 12px;
-  color: $bg-color;
+  color: #cccccc;
   position: relative;
   overflow: auto;
   direction: ltr;
@@ -176,35 +194,32 @@ h3 {
 }
 
 .nav-tabs {
-  border-color: #404040 !important;
-
-  a {
-    color: #404040;
-  }
+  border-color: #0d1117 !important;
 
   .nav-link {
     border-width: 0 !important;
 
     &:not(.active):hover {
+      color: #ffffff !important;
       background-color: #808080 !important;
-      color: $bg-color !important;
     }
   }
 
   .active {
-    color: $bg-color !important;
-    background-color: #404040 !important;
+    color: #ffffff !important;
+    background-color: #0d1117 !important;
   }
 }
 
 table {
-  thead {
-    font-weight: 700 !important;
+  thead tr th {
+    font-weight: 700;
+    background-color: var(--bg-color) !important;
   }
 
-  tbody tr:nth-child(2n + 1) td {
-    background-color: #eee;
-  }
+  // tbody tr:nth-child(2n + 1) td {
+  //   background-color: #eee;
+  // }
 }
 
 blockquote {
@@ -233,8 +248,8 @@ blockquote {
 }
 
 .footer {
-  background-color: $primary-color !important;
-  color: $bg-color !important;
+  background-color: var(--primary-color);
+  color: var(--text-color-reverse);
 
   .section {
     font-size: 1.75rem;
@@ -244,23 +259,28 @@ blockquote {
   }
 
   li {
-    padding-bottom: 8px !important;
+    padding-bottom: 8px;
   }
 
   &.anchor {
     a {
-      color: #ffffff;
+      color: var(--text-color-reverse);
     }
 
     a:link {
-      color: rgb(239, 241, 239);
-      background-color: transparent !important;
-      text-decoration: none !important;
+      color: var(--text-color-reverse);
+      background-color: transparent;
+      text-decoration: none;
     }
 
     a:hover {
-      color: rgb(239, 241, 239) !important;
+      color: var(--text-color-reverse);
     }
+  }
+
+  .legal {
+    color: var(--text-color-reverse);
+    font-size: 12px;
   }
 }
 
@@ -270,9 +290,15 @@ blockquote {
   }
 }
 
+.community_ran {
+  img {
+    margin: 4px;
+  }
+}
+
 #btn-back-to-top {
-  background-color: $primary-color;
-  color: $bg-color;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -284,7 +310,7 @@ blockquote {
 
   .edit-btn,
   .edit-btn>a:hover {
-    color: $font-color;
+    color: var(--text-color);
     text-decoration: none;
   }
 }

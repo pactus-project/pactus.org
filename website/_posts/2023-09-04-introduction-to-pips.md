@@ -10,7 +10,7 @@ tags: pip
 In our commitment to transparency and innovation, we're excited to introduce a major step in Pactus's journey:
 the Pactus Improvement Proposals, or PIPs.
 
-![PIPs image](/blog/images/2023-09-04-introduction-to-pips/PIP.png)
+![PIPs image]({% image_url %}/PIP.png)
 
 ## What are PIPs?
 
@@ -46,4 +46,4 @@ Without approval from Pactus Laboratory team, changes won't be approved and adde
 For a complete list of Pactus Improvement Proposals, visit [this link](https://pips.pactus.org/).
 The corresponding GitHub repository is accessible [here](https://github.com/pactus-project/piPs/).
 
-![PIPs repository on Github](/blog/images/2023-09-04-introduction-to-pips/repository.png)
+![PIPs repository on Github]({% image_url %}/repository.png)

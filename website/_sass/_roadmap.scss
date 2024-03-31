@@ -20,14 +20,29 @@ $line-color: #939597;
 /* Container around content */
 .timeline-card {
   position: relative;
-  background-color: inherit;
   width: 50%;
+
+  .card {
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    border-radius: 5px;
+    background-color: #eeeeee;
+    color: #4c4c4c;
+
+    a {
+      color: #4c4c4c;
+    }
+
+    .text-muted {
+      color: #898b8d !important;
+    }
+  }
 
   .card-title {
     padding-bottom: 12px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
   }
+
   /* The circles on the timeline */
   &::after {
     line-height: 38px;
@@ -78,13 +93,14 @@ $line-color: #939597;
     position: absolute;
     height: 20px;
     width: 20px;
-    background: white;
+    background-color: #eeeeee;
     box-sizing: border-box;
     transform: rotate(45deg) translate(-50%);
     top: 34px;
     z-index: 0;
-    right: 34px;
-    border: 1px solid rgba(0, 0, 0, 0.175);
+    right: 33px;
+    border-right: 1px solid rgba(0, 0, 0, 0.175);
+    border-top: 1px solid rgba(0, 0, 0, 0.175);
   }
 
   /* Add arrows to the right container (pointing left) */
@@ -93,13 +109,14 @@ $line-color: #939597;
     position: absolute;
     height: 20px;
     width: 20px;
-    background: white;
+    background-color: #eeeeee !important;
     box-sizing: border-box;
     transform: rotate(45deg) translate(-50%);
-    top: 34px;
+    top: 33px;
     z-index: 0;
     left: 48px;
-    border: 1px solid rgba(0, 0, 0, 0.175);
+    border-left: 1px solid rgba(0, 0, 0, 0.175);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.175);
   }
 
   /* Fix the circle for containers on the right side */
@@ -110,6 +127,7 @@ $line-color: #939597;
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
+
   /* Place the timeline to the left */
   .timeline::after {
     left: 31px;
@@ -123,7 +141,7 @@ $line-color: #939597;
 
     /* Make sure that all arrows are pointing leftwards */
     &::before {
-      left: 80px !important;
+      left: 77px !important;
     }
 
     /* Make sure all circles are at the same spot */
@@ -133,6 +151,13 @@ $line-color: #939597;
     }
 
     &.left::before {
+      border-right: none;
+      border-top: none;
+      border-left: 1px solid rgba(0, 0, 0, 0.175);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+    }
+
+    &.right::before {
       right: auto;
     }
 

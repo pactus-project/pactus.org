@@ -16,11 +16,12 @@
 
 - status: ongoing
   title: First Interactive Block Explorer
-  date: March 2024
+  date: April 2024
 
-- status: ongoing
-  title: Permanent testnet launch
-  date: February 2024
+- status: completed
+  title: Public Phoenix Testnet Launched
+  link: /2024/03/16/testnet-phoenix-launched.html
+  date: March 2024
 
 - status: completed
   title: Pactus 1.0 (Beijing) Released

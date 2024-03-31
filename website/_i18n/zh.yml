@@ -18,6 +18,7 @@ dict:
   source_code: GitHub <i class="fa fa-external-link" aria-hidden="true"></i>
   laboratory: 实验室 <i class="fa fa-external-link" aria-hidden="true"></i>
   pips: PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+  whitepaper: Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
 
   home:
     title: 主页
@@ -57,6 +58,13 @@ dict:
     instagram: 帕图斯在 Instagram 上
     linkedin: 帕图斯在 LinkedIn 上
     bitcoin_talk: Pactus on Bitcoin Talk
+    community_ran: >
+      To explore the communities managed by members of the community, you can follow the links below.
+    telegram_chat: Pactus Chat
+    nigeria: Pactus Nigeria
+    facebook: Pactus on Facebook
+    nodesync: NodeSync.Top Community
+    wechat: WeChat Community - Please Join Discord and Request Invite from Community
 
   what_is:
     title: 什么是帕图斯？
@@ -422,6 +430,8 @@ dict:
     use_wallet_cli: 如何在命令行模式下使用钱包？
     reduce_network: How to reduce the network usage?
     run_pactus_metrics: How to run Pactus Metrics?
+    grpc-sign-transactions: How to sign transaction using gRPC?
+    grpc-basic-auth: How to secure gRPC using basic authentication?
     wallet_seed_important: >
       <b>Wallet seed is important</b>
       <br><br>

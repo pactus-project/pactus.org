@@ -18,6 +18,7 @@ dict:
   source_code: Source code <i class="fa fa-external-link" aria-hidden="true"></i>
   laboratory: Laboratory <i class="fa fa-external-link" aria-hidden="true"></i>
   pips: PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+  whitepaper: Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
 
   home:
     title: Home
@@ -45,7 +46,7 @@ dict:
       There are many ways you can support Pactus and help it grow, from being a valuable community member and sharing
       with your friends to contributing to our core development. Let's work together to make Pactus even better!
     partners: Our Partners
-    validators: Our Validators
+    validators: Featured Validators
 
   community:
     title: Community
@@ -63,6 +64,13 @@ dict:
     instagram: Pactus on Instagram
     linkedin: Pactus on LinkedIn
     bitcoin_talk: Pactus on Bitcoin Talk
+    community_ran: >
+      To explore the communities managed by members of the community, you can follow the links below.
+    telegram_chat: Pactus Chat
+    nigeria: Pactus Nigeria
+    facebook: Pactus on Facebook
+    nodesync: NodeSync.Top Community
+    wechat: WeChat Community - Please Join Discord and Request Invite from Community
 
   what_is:
     title: What is Pactus?
@@ -441,6 +449,8 @@ dict:
     use_wallet_cli: How to use wallet in Command Line Mode?
     reduce_network: How to reduce the network usage?
     run_pactus_metrics: How to run Pactus Metrics?
+    grpc-sign-transactions: How to sign transaction using gRPC?
+    grpc-basic-auth: How to secure gRPC using basic authentication?
     wallet_seed_important: >
       <b>Wallet seed is important</b>
       <br><br>
