@@ -424,7 +424,7 @@ To create, sign, and broadcast a
 {% tab tx_withdraw linux-mac <i class="fa-brands fa-linux"></i> Linux / <i class="fa-brands fa-apple"></i> macOS %}
 
 ```text
-./pactus-wallet tx unbond <FROM> <TO> <AMOUNT>
+./pactus-wallet tx withdraw <FROM> <TO> <AMOUNT>
 ```
 
 {% endtab %}
