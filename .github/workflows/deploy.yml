@@ -18,10 +18,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
 
-      - name: Install Bootstrap
+      - name: NPM Install
         run: npm install
 
-      - uses: jeffreytse/jekyll-deploy-action@v0.6.0
+      - uses: jeffreytse/jekyll-deploy-action@af39f51204a5b46d738cd5782ab31e4109eef533
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           cname: 'pactus.org'
