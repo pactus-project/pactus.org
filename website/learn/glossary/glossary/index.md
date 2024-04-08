@@ -15,7 +15,7 @@ which can send transactions on the blockchain, and make changes on blockchain st
 
 ## Account Address
 
-Account address is a unique identifier for account on Pactus, and they point to a balance, 
+Account address is a unique identifier for account on Pactus, and they point to a balance,
 hash and number.
 
 # B
@@ -28,14 +28,14 @@ A Bond is a transaction that you lock some amount of PAC coin to a validator add
 
 ## Committee
 
-The committee is a group of 51 validators responsible for generating new blocks. Oldest member will 
+The committee is a group of 51 validators responsible for generating new blocks. Oldest member will
 be replaced with a new validator in each 10 seconds (per block).
 
 # N
 
 ## Node
 
-A computer on Pactus that runs a Pactus protocol implementation, it's connected to network, and it 
+A computer on Pactus that runs a Pactus protocol implementation, it's connected to network, and it
 can get and provide new blocks. it **can** run validators too and participate in consensus.
 
 # P
@@ -52,7 +52,7 @@ The Pactus unique consensus algorithm.
 
 ## Sortition
 
-The sortition algorithm is responsible for the fair, transparent  and random selection of validators 
+The sortition algorithm is responsible for the fair, transparent  and random selection of validators
 to join the committee.
 
 # U
