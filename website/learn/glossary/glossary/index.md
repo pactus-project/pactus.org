@@ -64,7 +64,7 @@ takes 21 days time.
 
 # V
 
-## Vlidator
+## Validator
 
 A Validator is an entity that participates in the consensus process by sharing its votes.
 
