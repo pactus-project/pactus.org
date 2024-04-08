@@ -37,6 +37,11 @@
   items:
     - doc: grpc
 
+- title: Pactus Glossary
+  path: learn/glossary
+  items:
+    - doc: glossary
+
 # - title: Smart Contract
 #   path: learn/smart-contract
 #   items:
