@@ -52,7 +52,7 @@ The Pactus unique consensus algorithm.
 
 ## Sortition
 
-The sortition algorithm is responsible for the fair, transparent  and random selection of validators
+The sortition algorithm is responsible for the fair, transparent and random selection of validators
 to join the committee.
 
 # U
@@ -70,7 +70,7 @@ A Validator is an entity that participates in the consensus process by sharing i
 
 ## Validator Address
 
-Validator address is a unique identifier for validator on Pactus, and they point to a stake balance,
+Validator address is a unique identifier for validator on Pactus, they point to a stake balance,
 hash, number, last bonding height, last sortition height and last unbond height.
 
 # W
