@@ -6,24 +6,7 @@ sidebar: HTTP API Reference
 
 <link rel="stylesheet" href="./swagger-ui/swagger-ui.css" />
 <link rel="stylesheet" href="./swagger-ui/swagger-ui-dark.css" />
-<style>
-.swagger-ui .topbar {
-  display: none;
-}
-.swagger-ui .info .title {
-  border: none;
-}
-.swagger-ui .info {
-  margin: 0;
-}
-.swagger-ui .info .link {
-  display: none;
-}
-.swagger-ui .scheme-container {
-  background: inherit;
-  box-shadow: none;
-}
-</style>
+<link rel="stylesheet" href="./swagger-ui/swagger-ui-modify.css" />
 
 <div id="swagger-ui"></div>
 <script src="./swagger-ui/swagger-ui-bundle.js" crossorigin></script>
