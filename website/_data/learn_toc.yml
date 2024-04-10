@@ -36,6 +36,7 @@
   path: learn/api
   items:
     - doc: grpc
+    - doc: http
 
 # - title: Smart Contract
 #   path: learn/smart-contract

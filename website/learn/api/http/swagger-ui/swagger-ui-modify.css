@@ -1,0 +1,16 @@
+.swagger-ui .topbar {
+  display: none;
+}
+.swagger-ui .info .title {
+  border: none;
+}
+.swagger-ui .info {
+  margin: 0;
+}
+.swagger-ui .info .link {
+  display: none;
+}
+.swagger-ui .scheme-container {
+  background: inherit;
+  box-shadow: none;
+}
