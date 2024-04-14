@@ -35,7 +35,7 @@ For instance, if you want to connect to a remote server, you can execute:
 ./pactus-shell blockchain get-blockchain-info --server-addr example.com:50051
 ```
 
-## Security consideration:
+## Security consideration
 
 When connecting to a remote node, it's important to think about security.
 You can make the node more secure in a few ways.
