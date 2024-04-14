@@ -20,7 +20,7 @@
       more: https://pips.pactus.org/PIPs/pip-19
     - id: staking_limit
     - id: multiple_validators
-      more: /user-guides/run-pactus-gui/#number-of-validators
+      more: /user-guides/pactus-gui/#number-of-validators
     - id: validators_rewarded
       more: /learn/blockchain/incentive
     - id: flat_reward

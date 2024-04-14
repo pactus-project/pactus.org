@@ -65,7 +65,7 @@ Here's an explanation of the Docker flags:
 - `-v <local_dir>:<container_dir>`: Allows to choose where to store the Pactus data.
 
 {% alert_start warning %}
-  {% t dict.guide.wallet_seed_important %}
+{% t dict.guide.wallet_seed_important %}
 {% alert_end %}
 
 ---
@@ -182,7 +182,7 @@ docker run -it --rm -v %USERPROFILE%\pactus:/root/pactus pactus-wallet address a
 
 {% endtabs %}
 
-You can check [{% t dict.guide.use_wallet_cli %}]({{ site.baseurl }}/user-guides/use-wallet-cli)
+You can check [{% t dict.guide.use_wallet_cli %}]({{ site.baseurl }}/user-guides/pactus-wallet)
 for additional commands to manage your wallet.
 
 ---
