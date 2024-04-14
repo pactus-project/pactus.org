@@ -1,83 +1,53 @@
 ---
-layout: base
-title: dict.download.title
+layout: learn
+title: Genesis
+sidebar: Genesis
 ---
 
-# {% t dict.download_pactus %}
+# Genesis
 
-{% t dict.download.welcome %}
+The Pactus blockchain starts from scratch, with no pre-existing accounts or pre-allocated coins.
+Its starting point is known as the genesis block, which is created by the bootstrap validators.
 
----
+## Bootstrapping
 
-<h2 id="build">🏗️ {% t dict.download.compile_from_source_code %}</h2>
+The Pactus blockchain starts with four _bootstrap_ validators.
+These bootstrap validators do not have any stake, however their voting power is set to one within the consensus algorithm.
+Their primary role is to initiate the blockchain during a brief period known as the bootstrapping phase.
+As the bootstrapping phase progresses, these validators are able to earn rewards,
+which they can later use to invite other validators to join the network.
 
-{% t dict.download.project_pactus_is_distributed %}
+Once the network reaches 51 validators, the bootstrap validators will retire, and
+the blockchain will be secured by other validators.
 
-{% t dict.download.instructions_for_compiling %}
+## Genesis Block
 
----
+The genesis block is the first block in the Pactus blockchain, and it is created by the bootstrap validators.
+This block marks the beginning of the blockchain and serves as the foundation for subsequent blocks.
 
-<h2 id="binary">⬇️ {% t dict.download.stable_releases %}</h2>
+The previous [block hash]({{ site.baseurl }}/learn/blockchain/block/#block-hash) in the genesis block sets to 0,
+indicating that it has no predecessor.
+Additionally, the genesis block does not have a previous certificate.
 
-{% t dict.download.stable_releases_desc %}
+## Genesis Information
 
-<h3 id="gui">{% t dict.download.pactus_gui %}</h3>
+In Pactus, the Genesis Information is pre-defined and indicates the initial state of the network.
+These parameters are hardcoded into the project and include:
 
-{% t dict.download.download_gui %}
+- **Genesis Time** This is the time when the genesis block should be created.
+  The bootstrap validators must be operational before this time.
+- **Consensus Parameters**: The initial [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters)
+  are defined at genesis time and ensure that the entire network operates within the same configuration.
+  These consensus parameters are discussed in detail in the consensus section of the documentation.
+- **Treasury Account**: The [treasury account]({{ site.baseurl }}/learn/blockchain/account/#treasury-account)
+  holds  21 million coins at the genesis time. Each coin is divided into 1 billion units.
+- **Reserved Accounts**: Reserved account are defined at the Genesis time and at total they have 21 milion coins.
+  These coins are reserved and the main purpise is to support the project over time.
+- **Bootstrap Validators** The bootstrap validators are defined by their public keys.
 
-![{% t dict.download.pactus_gui %}]({{ site.url }}/assets/images/pactus-gui-main-window.png)
+## FAQ
 
-| **File name**                                                                                                                                                                                                                   | **Kind**  | **OS**                                       | **Arch** |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | -------------------------------------------- | -------- |
-| [pactus-gui_{{ site.latest_version }}_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest*version }}/pactus-gui*{{ site.latest_version }}\_darwin_amd64.tar.gz)                     | Archive   | <i class="fa-brands fa-apple"></i> macOS     | 64-bit   |
-| [**pactus-gui_{{ site.latest_version }}_darwin_amd64.dmg**](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest*version }}/pactus-gui*{{ site.latest_version }}\_darwin_amd64.dmg)                       | DMG       | <i class="fa-brands fa-apple"></i> macOS     | 64-bit   |
-| [pactus-gui_{{ site.latest_version }}_darwin_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest*version }}/pactus-gui*{{ site.latest_version }}\_darwin_arm64.tar.gz)                     | Archive   | <i class="fa-brands fa-apple"></i> macOS     | ARM64    |
-| [**pactus-gui_{{ site.latest_version }}_darwin_arm64.dmg**](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest*version }}/pactus-gui*{{ site.latest_version }}\_darwin_arm64.dmg)                       | DMG       | <i class="fa-brands fa-apple"></i> macOS     | ARM64    |
-| [pactus-gui_{{ site.latest_version }}_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest*version }}/pactus-gui*{{ site.latest_version }}\_linux_amd64.tar.gz)                       | Archive   | <i class="fa-brands fa-linux"></i> Linux     | 64-bit   |
-| [**pactus-gui_{{ site.latest_version }}_linux_amd64.AppImage**](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest*version }}/pactus-gui*{{ site.latest_version }}\_linux_amd64.AppImage)               | AppImage  | <i class="fa-brands fa-linux"></i> Linux     | 64-bit   |
-| [pactus-gui_{{ site.latest_version }}_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest*version }}/pactus-gui*{{ site.latest_version }}\_windows_amd64.zip)                         | Archive   | <i class="fa-brands fa-windows"></i> Windows | 64-bit   |
-| [**pactus-gui_{{ site.latest_version }}_windows_amd64_installer.exe**](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest*version }}/pactus-gui*{{ site.latest_version }}\_windows_amd64_installer.exe) | Installer | <i class="fa-brands fa-windows"></i> Windows | 64-bit   |
+### Where can I see the Genesis Information?
 
-{% alert_start warning %}
-{% t dict.download.untrusted_app %}
-{% alert_end %}
-
-{% t dict.download.gui_after_download %} [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/pactus-gui)
-
----
-
-<h3 id="cli">{% t dict.download.pactus_cli %}</h3>
-
-{% t dict.download.download_cli %}
-
-![{% t dict.download.pactus_cli %}]({{ site.url }}/assets/images/pactus-cli.png)
-
-| **File name**                                                                                                                                                                                                  | **OS**                                       | **Arch** |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | -------- |
-| [pactus-cli_{{ site.latest_version }}_android_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli\*{{ site.latest_version }}\_android_arm64.tar.gz) | <i class="fa-brands fa-android"></i> Android | ARM64    |
-| [pactus-cli_{{ site.latest_version }}_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli\*{{ site.latest_version }}\_darwin_amd64.tar.gz)   | <i class="fa-brands fa-apple"></i> macOS     | 64-bit   |
-| [pactus-cli_{{ site.latest_version }}_darwin_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli\*{{ site.latest_version }}\_darwin_arm64.tar.gz)   | <i class="fa-brands fa-apple"></i> macOS     | ARM64    |
-| [pactus-cli_{{ site.latest_version }}_freebsd_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli\*{{ site.latest_version }}\_freebsd_amd64.tar.gz) | <i class="fa-brands fa-freebsd"></i> FreeBSD | 64-bit   |
-| [pactus-cli_{{ site.latest_version }}_freebsd_arm.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli\*{{ site.latest_version }}\_freebsd_arm.tar.gz)     | <i class="fa-brands fa-freebsd"></i> FreeBSD | ARM      |
-| [pactus-cli_{{ site.latest_version }}_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli\*{{ site.latest_version }}\_linux_amd64.tar.gz)     | <i class="fa-brands fa-linux"></i> Linux     | 64-bit   |
-| [pactus-cli_{{ site.latest_version }}_linux_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli\*{{ site.latest_version }}\_linux_arm64.tar.gz)     | <i class="fa-brands fa-linux"></i> Linux     | ARM64    |
-| [pactus-cli_{{ site.latest_version }}_windows_386.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli\*{{ site.latest_version }}\_windows_386.zip)           | <i class="fa-brands fa-windows"></i> Windows | 32-bit   |
-| [pactus-cli_{{ site.latest_version }}_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli\*{{ site.latest_version }}\_windows_amd64.zip)       | <i class="fa-brands fa-windows"></i> Windows | 64-bit   |
-
-{% t dict.download.cli_after_download %} [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/pactus-daemon)
-
-<h3 id="downloader_script">{% t dict.download.downloader_script %}</h3>
-
-{% t dict.download.downloader_script_explained %}
-
-```sh
-curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus_downloader.sh | sh
-```
-
----
-
-<h2 id="docker">🐳 {% t dict.download.docker %}</h2>
-
-{% t dict.download.docker_desc %}
-
-{% t dict.download.docker_after_download %} [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/pactus-docker)
+You can find the pre-defined Genesis Information for the Testnet of the Pactus blockchain in the `genesis.json` file,
+which is located in the project repository, [here](https://github.com/pactus-project/pactus/blob/main/genesis/mainnet.json).

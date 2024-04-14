@@ -47,3 +47,14 @@ and select "Details."
 
 It's important to note that the [transaction fee]({{ site.baseurl }}/learn/transaction/fee/)
 will be calculated based on the amount you're sending.
+
+## Unbond and Withdraw
+
+- **Unbonding**: Unbonding is free. This means there are no fees associated with the process of unbonding your Pactus coins.
+
+![Unbond Transaction Dialog]({{site.url}}/user-guides/send-transactions-gui/unbond-transaction-dialog.png)
+
+- **Withdrawals**: After you've unbonded your Pactus coins from staking, it will take 21 days before your coins can be withdrawn.
+
+![Unbond Transaction Dialog]({{site.url}}/user-guides/send-transactions-gui/withdraw-transaction-dialog.png)
+
