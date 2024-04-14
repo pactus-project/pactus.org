@@ -20,12 +20,8 @@
       "name": "Wallet"
     }
   ],
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
-  ],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
   "paths": {
     "/pactus/blockchain/get_account": {
       "get": {
@@ -54,9 +50,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Blockchain"
-        ]
+        "tags": ["Blockchain"]
       }
     },
     "/pactus/blockchain/get_block": {
@@ -92,17 +86,11 @@
             "in": "query",
             "required": false,
             "type": "string",
-            "enum": [
-              "BLOCK_DATA",
-              "BLOCK_INFO",
-              "BLOCK_TRANSACTIONS"
-            ],
+            "enum": ["BLOCK_DATA", "BLOCK_INFO", "BLOCK_TRANSACTIONS"],
             "default": "BLOCK_DATA"
           }
         ],
-        "tags": [
-          "Blockchain"
-        ]
+        "tags": ["Blockchain"]
       }
     },
     "/pactus/blockchain/get_block_hash": {
@@ -133,9 +121,7 @@
             "format": "int64"
           }
         ],
-        "tags": [
-          "Blockchain"
-        ]
+        "tags": ["Blockchain"]
       }
     },
     "/pactus/blockchain/get_block_height": {
@@ -166,9 +152,7 @@
             "format": "byte"
           }
         ],
-        "tags": [
-          "Blockchain"
-        ]
+        "tags": ["Blockchain"]
       }
     },
     "/pactus/blockchain/get_blockchain_info": {
@@ -189,9 +173,7 @@
             }
           }
         },
-        "tags": [
-          "Blockchain"
-        ]
+        "tags": ["Blockchain"]
       }
     },
     "/pactus/blockchain/get_consensus_info": {
@@ -212,9 +194,7 @@
             }
           }
         },
-        "tags": [
-          "Blockchain"
-        ]
+        "tags": ["Blockchain"]
       }
     },
     "/pactus/blockchain/get_public_key": {
@@ -244,9 +224,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Blockchain"
-        ]
+        "tags": ["Blockchain"]
       }
     },
     "/pactus/blockchain/get_validator": {
@@ -276,9 +254,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Blockchain"
-        ]
+        "tags": ["Blockchain"]
       }
     },
     "/pactus/blockchain/get_validator_by_number": {
@@ -309,9 +285,7 @@
             "format": "int32"
           }
         ],
-        "tags": [
-          "Blockchain"
-        ]
+        "tags": ["Blockchain"]
       }
     },
     "/pactus/network/get_network_info": {
@@ -332,9 +306,7 @@
             }
           }
         },
-        "tags": [
-          "Network"
-        ]
+        "tags": ["Network"]
       }
     },
     "/pactus/network/get_node_info": {
@@ -355,9 +327,7 @@
             }
           }
         },
-        "tags": [
-          "Network"
-        ]
+        "tags": ["Network"]
       }
     },
     "/pactus/transaction/broadcast_transaction": {
@@ -388,9 +358,7 @@
             "format": "byte"
           }
         ],
-        "tags": [
-          "Transaction"
-        ]
+        "tags": ["Transaction"]
       }
     },
     "/pactus/transaction/calculate_fee": {
@@ -444,9 +412,7 @@
             "type": "boolean"
           }
         ],
-        "tags": [
-          "Transaction"
-        ]
+        "tags": ["Transaction"]
       }
     },
     "/pactus/transaction/get_raw_bond_transaction": {
@@ -521,9 +487,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Transaction"
-        ]
+        "tags": ["Transaction"]
       }
     },
     "/pactus/transaction/get_raw_transfer_transaction": {
@@ -591,9 +555,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Transaction"
-        ]
+        "tags": ["Transaction"]
       }
     },
     "/pactus/transaction/get_raw_unbond_transaction": {
@@ -638,9 +600,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Transaction"
-        ]
+        "tags": ["Transaction"]
       }
     },
     "/pactus/transaction/get_raw_withdraw_transaction": {
@@ -708,9 +668,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Transaction"
-        ]
+        "tags": ["Transaction"]
       }
     },
     "/pactus/transaction/get_transaction": {
@@ -746,16 +704,11 @@
             "in": "query",
             "required": false,
             "type": "string",
-            "enum": [
-              "TRANSACTION_DATA",
-              "TRANSACTION_INFO"
-            ],
+            "enum": ["TRANSACTION_DATA", "TRANSACTION_INFO"],
             "default": "TRANSACTION_DATA"
           }
         ],
-        "tags": [
-          "Transaction"
-        ]
+        "tags": ["Transaction"]
       }
     },
     "/pactus/wallet/create_wallet": {
@@ -806,9 +759,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Wallet"
-        ]
+        "tags": ["Wallet"]
       }
     },
     "/pactus/wallet/get_validator_address": {
@@ -838,9 +789,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Wallet"
-        ]
+        "tags": ["Wallet"]
       }
     },
     "/pactus/wallet/load_wallet": {
@@ -870,9 +819,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Wallet"
-        ]
+        "tags": ["Wallet"]
       }
     },
     "/pactus/wallet/lock_wallet": {
@@ -902,9 +849,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Wallet"
-        ]
+        "tags": ["Wallet"]
       }
     },
     "/pactus/wallet/sign_raw_transaction": {
@@ -949,9 +894,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Wallet"
-        ]
+        "tags": ["Wallet"]
       }
     },
     "/pactus/wallet/unload_wallet": {
@@ -981,9 +924,7 @@
             "type": "string"
           }
         ],
-        "tags": [
-          "Wallet"
-        ]
+        "tags": ["Wallet"]
       }
     },
     "/pactus/wallet/unlock_wallet": {
@@ -1028,9 +969,7 @@
             "format": "int32"
           }
         ],
-        "tags": [
-          "Wallet"
-        ]
+        "tags": ["Wallet"]
       }
     }
   },
@@ -1097,11 +1036,7 @@
     },
     "pactusBlockVerbosity": {
       "type": "string",
-      "enum": [
-        "BLOCK_DATA",
-        "BLOCK_INFO",
-        "BLOCK_TRANSACTIONS"
-      ],
+      "enum": ["BLOCK_DATA", "BLOCK_INFO", "BLOCK_TRANSACTIONS"],
       "default": "BLOCK_DATA",
       "description": "Enumeration for verbosity level when requesting block information.\n\n - BLOCK_DATA: Request block data only.\n - BLOCK_INFO: Request block information only.\n - BLOCK_TRANSACTIONS: Request block transactions only."
     },
@@ -1827,10 +1762,7 @@
     },
     "pactusTransactionVerbosity": {
       "type": "string",
-      "enum": [
-        "TRANSACTION_DATA",
-        "TRANSACTION_INFO"
-      ],
+      "enum": ["TRANSACTION_DATA", "TRANSACTION_INFO"],
       "default": "TRANSACTION_DATA",
       "description": "Enumeration for verbosity level when requesting transaction details.\n\n - TRANSACTION_DATA: Request only transaction data.\n - TRANSACTION_INFO: Request detailed transaction information."
     },
@@ -1943,12 +1875,7 @@
     },
     "pactusVoteType": {
       "type": "string",
-      "enum": [
-        "VOTE_UNKNOWN",
-        "VOTE_PREPARE",
-        "VOTE_PRECOMMIT",
-        "VOTE_CHANGE_PROPOSER"
-      ],
+      "enum": ["VOTE_UNKNOWN", "VOTE_PREPARE", "VOTE_PRECOMMIT", "VOTE_CHANGE_PROPOSER"],
       "default": "VOTE_UNKNOWN",
       "description": "Enumeration for types of votes.\n\n - VOTE_UNKNOWN: Unknown vote type.\n - VOTE_PREPARE: Prepare vote type.\n - VOTE_PRECOMMIT: Precommit vote type.\n - VOTE_CHANGE_PROPOSER: Change proposer vote type."
     },

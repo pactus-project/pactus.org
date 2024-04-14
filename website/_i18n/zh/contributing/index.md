@@ -15,9 +15,9 @@ ensure the network keeps running safe and decentralized.
 
 These guides can help you to run and configure your node:
 
-- [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/run-pactus-gui)
-- [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/run-pactus-cli)
-- [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/run-pactus-docker)
+- [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/pactus-gui)
+- [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/pactus-daemon)
+- [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/pactus-docker)
 
 ## Become a Validator
 
@@ -30,7 +30,7 @@ To become a validator, you will need to stake a certain amount of Pactus coins.
 These guides can help you to send a Bond transaction and stake some coins:
 
 - [{% t dict.guide.send_transactions_gui %}]({{ site.baseurl }}/user-guides/send-transactions-gui)
-- [{% t dict.guide.use_wallet_cli %}]({{ site.baseurl }}/user-guides/use-wallet-cli)
+- [{% t dict.guide.use_wallet_cli %}]({{ site.baseurl }}/user-guides/pactus-wallet)
 
 ## Develop
 

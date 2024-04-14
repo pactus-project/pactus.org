@@ -126,7 +126,7 @@ dict:
       <b>不受信任的应用程序</b>
       <br><br>
       请注意，预编译的二进制文件不包含任何
-      <a href=https://pactus.org/user-guides/run-pactus-gui/#code-certificate-issue\>代码签名证书</a>。
+      <a href=https://pactus.org/user-guides/pactus-gui/#code-certificate-issue\>代码签名证书</a>。
       在Windows和macOS中，下载的二进制文件可能会被检测为不受信任的应用程序。
     gui_after_download: >
       一旦您下载了帕图斯GUI，您可以按照本教程设置和运行节点：

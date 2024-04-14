@@ -27,21 +27,22 @@ title: dict.download.title
 
 ![{% t dict.download.pactus_gui %}]({{ site.url }}/assets/images/pactus-gui-main-window.png)
 
-| **File name**                                                                                                                                                                                                                  | **Kind**  | **OS**                                       | **Arch** |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | -------------------------------------------- | -------- |
+| **File name**                                                                                                                                                                                                                   | **Kind**  | **OS**                                       | **Arch** |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | -------------------------------------------- | -------- |
 | [pactus-gui_{{ site.latest_version }}_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_darwin_amd64.tar.gz)                     | Archive   | <i class="fa-brands fa-apple"></i> macOS     | 64-bit   |
 | [**pactus-gui_{{ site.latest_version }}_darwin_amd64.dmg**](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_darwin_amd64.dmg)                       | DMG       | <i class="fa-brands fa-apple"></i> macOS     | 64-bit   |
-| [pactus-gui_{{ site.latest_version }}_darwin_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_darwin_arm64.tar.gz)                     | Archive   | <i class="fa-brands fa-apple"></i> macOS     | ARM64   |
-| [**pactus-gui_{{ site.latest_version }}_darwin_arm64.dmg**](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_darwin_arm64.dmg)                       | DMG       | <i class="fa-brands fa-apple"></i> macOS     | ARM64   |
+| [pactus-gui_{{ site.latest_version }}_darwin_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_darwin_arm64.tar.gz)                     | Archive   | <i class="fa-brands fa-apple"></i> macOS     | ARM64    |
+| [**pactus-gui_{{ site.latest_version }}_darwin_arm64.dmg**](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_darwin_arm64.dmg)                       | DMG       | <i class="fa-brands fa-apple"></i> macOS     | ARM64    |
 | [pactus-gui_{{ site.latest_version }}_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_linux_amd64.tar.gz)                       | Archive   | <i class="fa-brands fa-linux"></i> Linux     | 64-bit   |
+| [**pactus-gui_{{ site.latest_version }}_linux_amd64.AppImage**](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_linux_amd64.AppImage)                       | AppImage   | <i class="fa-brands fa-linux"></i> Linux     | 64-bit   |
 | [pactus-gui_{{ site.latest_version }}_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_windows_amd64.zip)                         | Archive   | <i class="fa-brands fa-windows"></i> Windows | 64-bit   |
 | [**pactus-gui_{{ site.latest_version }}_windows_amd64_installer.exe**](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-gui_{{ site.latest_version }}_windows_amd64_installer.exe) | Installer | <i class="fa-brands fa-windows"></i> Windows | 64-bit   |
 
 {% alert_start warning %}
-  {% t dict.download.untrusted_app %}
+{% t dict.download.untrusted_app %}
 {% alert_end %}
 
-{% t dict.download.gui_after_download %} [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/run-pactus-gui)
+{% t dict.download.gui_after_download %} [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/pactus-gui)
 
 ---
 
@@ -51,19 +52,19 @@ title: dict.download.title
 
 ![{% t dict.download.pactus_cli %}]({{ site.url }}/assets/images/pactus-cli.png)
 
-| **File name**                                                                                                                                                                                                | **OS**                                       | **Arch** |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- | -------- |
-| [pactus-cli_{{ site.latest_version }}_android_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_android_arm64.tar.gz) | <i class="fa-brands fa-android"></i> Android | ARM64    |
-| [pactus-cli_{{ site.latest_version }}_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_darwin_amd64.tar.gz)   | <i class="fa-brands fa-apple"></i> macOS     | 64-bit   |
-| [pactus-cli_{{ site.latest_version }}_darwin_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_darwin_arm64.tar.gz)   | <i class="fa-brands fa-apple"></i> macOS     | ARM64    |
-| [pactus-cli_{{ site.latest_version }}_freebsd_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_freebsd_amd64.tar.gz) | <i class="fa-brands fa-freebsd"></i> FreeBSD | 64-bit   |
-| [pactus-cli_{{ site.latest_version }}_freebsd_arm.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_freebsd_arm.tar.gz)     | <i class="fa-brands fa-freebsd"></i> FreeBSD | ARM      |
-| [pactus-cli_{{ site.latest_version }}_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_linux_amd64.tar.gz)     | <i class="fa-brands fa-linux"></i> Linux     | 64-bit   |
-| [pactus-cli_{{ site.latest_version }}_linux_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_linux_arm64.tar.gz)     | <i class="fa-brands fa-linux"></i> Linux     | ARM64    |
-| [pactus-cli_{{ site.latest_version }}_windows_386.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_windows_386.zip)           | <i class="fa-brands fa-windows"></i> Windows | 32-bit   |
-| [pactus-cli_{{ site.latest_version }}_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_windows_amd64.zip)       | <i class="fa-brands fa-windows"></i> Windows | 64-bit   |
+| **File name**                                                                                                                                                                                                 | **OS**                                       | **Arch** |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | -------- |
+| [pactus-cli_{{ site.latest_version }}_android_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli*{{ site.latest_version }}_android_arm64.tar.gz) | <i class="fa-brands fa-android"></i> Android | ARM64    |
+| [pactus-cli_{{ site.latest_version }}_darwin_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli*{{ site.latest_version }}_darwin_amd64.tar.gz)   | <i class="fa-brands fa-apple"></i> macOS     | 64-bit   |
+| [pactus-cli_{{ site.latest_version }}_darwin_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli*{{ site.latest_version }}_darwin_arm64.tar.gz)   | <i class="fa-brands fa-apple"></i> macOS     | ARM64    |
+| [pactus-cli_{{ site.latest_version }}_freebsd_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli*{{ site.latest_version }}_freebsd_amd64.tar.gz) | <i class="fa-brands fa-freebsd"></i> FreeBSD | 64-bit   |
+| [pactus-cli_{{ site.latest_version }}_freebsd_arm.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli*{{ site.latest_version }}_freebsd_arm.tar.gz)     | <i class="fa-brands fa-freebsd"></i> FreeBSD | ARM      |
+| [pactus-cli_{{ site.latest_version }}_linux_amd64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli*{{ site.latest_version }}_linux_amd64.tar.gz)     | <i class="fa-brands fa-linux"></i> Linux     | 64-bit   |
+| [pactus-cli_{{ site.latest_version }}_linux_arm64.tar.gz](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli*{{ site.latest_version }}_linux_arm64.tar.gz)     | <i class="fa-brands fa-linux"></i> Linux     | ARM64    |
+| [pactus-cli_{{ site.latest_version }}_windows_386.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli*{{ site.latest_version }}_windows_386.zip)           | <i class="fa-brands fa-windows"></i> Windows | 32-bit   |
+| [pactus-cli_{{ site.latest_version }}_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli*{{ site.latest_version }}_windows_amd64.zip)       | <i class="fa-brands fa-windows"></i> Windows | 64-bit   |
 
-{% t dict.download.cli_after_download %} [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/run-pactus-cli)
+{% t dict.download.cli_after_download %} [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/pactus-daemon)
 
 <h3 id="downloader_script">{% t dict.download.downloader_script %}</h3>
 
@@ -79,4 +80,4 @@ curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/re
 
 {% t dict.download.docker_desc %}
 
-{% t dict.download.docker_after_download %} [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/run-pactus-docker)
+{% t dict.download.docker_after_download %} [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/pactus-docker)

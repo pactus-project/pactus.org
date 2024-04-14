@@ -12,7 +12,7 @@ Whether you are a beginner or an advanced user, this tutorial is suitable for yo
 ## Prerequisites
 
 Before we begin, you'll need to run the Pactus GUI application and ensure that it is synced with the network.
-You can find detailed instructions on how to do this in the following [tutorial]({{ site.baseurl }}/user-guides/run-pactus-gui/).
+You can find detailed instructions on how to do this in the following [tutorial]({{ site.baseurl }}/user-guides/pactus-gui/).
 
 ## Sending a Transfer Transaction
 

@@ -70,7 +70,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         var htpasswd = username + ":" + hash;
         document.getElementById("output").innerHTML =
           "<pre>" + htpasswd + "</pre>";
+
       }
+
 </script>
 
 <form id="passwdForm">
