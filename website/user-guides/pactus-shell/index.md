@@ -17,8 +17,8 @@ You can execute `pactus-shell` with the `-h` flag to display available commands 
 
 ## Example
 
-Suppose we aim to retrieve information related to the blockchain, such as `get-blockchain-info`.
-In that case, you can use the following command within the `pactus-shell`:
+Suppose you want to get the latest blockchain information.
+In that case, you can use the following command in the `pactus-shell`:
 
 ```bash
 ./pactus-shell blockchain get-blockchain-info
