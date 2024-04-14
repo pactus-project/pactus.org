@@ -48,7 +48,7 @@ Therefore, if you want to stake on your own validators, you don't need to set th
 It's important to note that the [transaction fee]({{ site.baseurl }}/learn/transaction/fee/)
 will be calculated based on the amount you're sending.
 
-## Unbond 
+## Unbond
 
 **Unbonding**: Unbonding is free. This means there are no fees associated with the process of unbonding your Pactus coins.
 
