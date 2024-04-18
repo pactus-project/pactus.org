@@ -22,7 +22,7 @@ permalink: /about/roadmap/index.html
           <div class="card-body p-3">
             <div class="card-title">
               {% if item.link %}
-                <a href="{{ site.baseurl }}{{ item.link }}">{{ item.title }}</a>
+                <a href="{{ item.link }}">{{ item.title }}</a>
               {% else %}
                 {{ item.title }}
               {% endif %}
