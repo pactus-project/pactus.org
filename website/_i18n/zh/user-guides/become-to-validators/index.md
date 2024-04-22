@@ -4,9 +4,18 @@ version: 1
 
 ## Preface
 
-Welcome to the exciting world of the Pactus blockchain, where decentralization and security are paramount. As the backbone of blockchain technology, validators play a crucial role in maintaining the integrity and efficiency of the network. Becoming a validator on the Pactus blockchain not only contributes to the robustness of the ecosystem but also offers the opportunity to engage deeply with cutting-edge technology and potentially earn rewards for participating in the network's governance and consensus mechanisms.
+Welcome to the exciting world of the Pactus blockchain, where decentralization and security 
+are paramount. As the backbone of blockchain technology, validators play a crucial role in 
+maintaining the integrity and efficiency of the network. Becoming a validator on the Pactus 
+blockchain not only contributes to the robustness of the ecosystem but also offers the opportunity 
+to engage deeply with cutting-edge technology and potentially earn rewards for participating in 
+the network's governance and consensus mechanisms.
 
-This guide is designed for individuals and organizations interested in becoming validators. We will walk you through each step of the process, from understanding the basic requirements to setting up your validator node. Whether you are a seasoned blockchain enthusiast or new to the field, this article will provide you with the necessary insights and tools to embark on your journey as a Pactus validator. Join us in securing the network and shaping the future of decentralized technology.
+This guide is designed for individuals and organizations interested in becoming validators.
+ We will walk you through each step of the process, from understanding the basic requirements 
+ to setting up your validator node. Whether you are a seasoned blockchain enthusiast or new to 
+ the field, this article will provide you with the necessary insights and tools to embark on your 
+ journey as a Pactus validator. Join us in securing the network and shaping the future of decentralized technology.
 
 - [Step 1: How to become a validator?](#step-1-how-to-become-to-validators)
   - [How to initialize Pactus GUI node?](#how-to-initilize-pactus-gui-node)
@@ -22,28 +31,35 @@ First need to download and install [Pactus GUI or CLI]( {{ site.baseurl }}/downl
 
 ### How to initilize Pactus GUI node?
 
-- Please download the appropriate Pactus GUI for your operating system and specific architecture by visiting the [download page]( {{ site.baseurl }}/download/#gui ){:target="\_blank"}.
+- Please download the appropriate Pactus GUI for your operating system and specific 
+architecture by visiting the [download page]( {{ site.baseurl }}/download/#gui ){:target="\_blank"}.
 
-- Extract the file named "pactus-gui*{latest_version}{os}{architecture}.tar.gz" or, if you're using Windows, run the installer named "pactus-gui*{latest_version}\_windows_amd64_installer.exe" in your user directory.
+- Extract the file named "pactus-gui*{latest_version}{os}{architecture}.tar.gz" or, 
+if you're using Windows, run the installer named "pactus-gui*{latest_version}\_windows_amd64_installer.exe" in your user directory.
 
 - Run file "pactus-gui" for initlize or run your node.
 
-- If you run the node for the first time, you will see a wizard page to initialize your node. The first page is the 'Initialize Mode' where you can select to create or restore a wallet using a seed phrase.
+- If you run the node for the first time, you will see a wizard page to initialize your node. 
+The first page is the 'Initialize Mode' where you can select to create or restore a wallet using a seed phrase.
   ![Initlize mode]({{ site.url }}/user-guides/become-to-validators/wizard-welcome.png)
 
-- After selecting "Create new wallet from scratch" the next page will generate a new seed phrase. It is crucial to back up these seed words either by writing them down or storing them in a secure document.
+- After selecting "Create new wallet from scratch" the next page will generate 
+a new seed phrase. It is crucial to back up these seed words either by writing them down or storing them in a secure document.
   {% alert_start warning %}
-  Do not share your seed words with other users, as they grant access to your wallet. Keeping your seed phrase private is essential for the security of your funds.
+  Do not share your seed words with other users, as they grant access to your wallet. 
+  Keeping your seed phrase private is essential for the security of your funds.
   {% alert_end %}
   ![Generated Seed words]({{ site.url }}/user-guides/become-to-validators/generated-seed.png)
 
 - On the next page, you will need to confirm your seed words by typing them into the input box provided.
   ![Confirm Seed words]({{ site.url }}/user-guides/become-to-validators/confirm-seed.png)
 
-- On the next page, you can set a password for wallet security. This password for any interactions with the wallet, such as creating transactions.
+- On the next page, you can set a password for wallet security. This password for any 
+interactions with the wallet, such as creating transactions.
   ![Wallet Password]({{ site.url }}/user-guides/become-to-validators/wallet-password.png)
 
-- On the next page, you can select the number of validators on your node for staking. You can choose between 7 and 32 validators for each node.
+- On the next page, you can select the number of validators on your node for staking. 
+You can choose between 7 and 32 validators for each node.
   ![Number of validators]({{ site.url }}/user-guides/become-to-validators/number-of-validators.png)
 
 - On the next page, the wizard is finished, and your node is initialized. You can now view your node information.
@@ -52,23 +68,26 @@ First need to download and install [Pactus GUI or CLI]( {{ site.baseurl }}/downl
   {% alert_end %}
   ![Finished Wizard]({{ site.url }}/user-guides/become-to-validators/finish-wizard.png)
 
-- Now that your node is initialized, you need to keep it running on your system to synchronize with the blockchain.
+- Now that your node is initialized, you need to keep it running on your system to synchronize with the blockchain
 ![Node information]({{ site.url }}/user-guides/become-to-validators/node-info.png)
 
   - Working directory: The path to the Pactus node configuration directory.
   - Network: The current network your node is connected to (default is mainnet).
   - Network ID: A specific identifier for your node within the network.
   - Connections: The current inbound or outbound connections established by your node.
-  - Moniker: Your node's name on the P2P network, which can be set or changed in the Pactus configuration file located at `{user home}/pactus/config.toml`.
+  - Moniker: Your node's name on the P2P network, which can be set or changed in the Pactus 
+  configuration file located at `{user home}/pactus/config.toml`.
   - Reachability: Your node's status within the network.
   - Last block height: The height of the last block synced on your node.
   - Last block time: The timestamp of the last block synced on your node.
   - Number of blocks left: The remaining number of blocks to be synced by your node.
   - Sync Progress: A progress bar indicating the synchronization progress of blocks.
-  - [Committee]( {{ site.baseurl }}/learn/consensus/committee/ ){:target="_blank"} size: The number of committee validators responsible for validating or proposing blocks.
-  - In committee now: Indicates whether your node is currently part of the committee. If yes, please keep your node running to earn rewards by proposing blocks.
+  - [Committee]( {{ site.baseurl }}/learn/consensus/committee/ ){:target="_blank"} size: The number of committee 
+  validators responsible for validating or proposing blocks.
+  - In committee now: Indicates whether your node is currently part of the committee. If yes, 
+  please keep your node running to earn rewards by proposing blocks.
 
-- On this page, you can view your validators and rewards addresses.
+- On this page, you can view your validators and rewards addresses
 ![wallets]({{ site.url }}/user-guides/become-to-validators/wallets.png)
 
   - Address: Here you can view the validators and rewards addresses.
@@ -79,17 +98,21 @@ First need to download and install [Pactus GUI or CLI]( {{ site.baseurl }}/downl
 
 ### How to initilize Pactus CLI node?
 
-- Please download the appropriate Pactus CLI for your operating system and specific architecture by visiting the [download page]( {{ site.baseurl }}/download/#cli ){:target="\_blank"}.
+- Please download the appropriate Pactus CLI for your operating system and specific 
+architecture by visiting the [download page]( {{ site.baseurl }}/download/#cli ){:target="\_blank"}.
 
 - Extract the file named "pactus-cli\_{latest_version}{os}{architecture}.tar.gz.
 
 - Run file "pactus-daemon" with init command for initlization.
 
 ```shell
-$ ./pactus-daemon init
+
+./pactus-daemon init
+
 ```
 
-- Generate new seed words and press "y" for continue, It is crucial to back up these seed words either by writing them down or storing them in a secure document.
+- Generate new seed words and press "y" for continue, It is crucial to back up these 
+seed words either by writing them down or storing them in a secure document.
 
 ```shell
 
@@ -103,10 +126,12 @@ Do you want to continue? [y/N] y
 ```
 
 {% alert_start warning %}
-Do not share your seed words with other users, as they grant access to your wallet. Keeping your seed phrase private is essential for the security of your funds.
+Do not share your seed words with other users, as they grant access to your wallet. 
+Keeping your seed phrase private is essential for the security of your funds.
 {% alert_end %}
 
-- You can set a password for wallet security. This password for any interactions with the wallet, such as creating transactions.
+- You can set a password for wallet security. This password for any interactions 
+with the wallet, such as creating transactions.
 
 ```shell
 
@@ -116,7 +141,8 @@ Confirm password: *******
 
 ```
 
-- You can select the number of validators on your node for staking. You can choose between 7 and 32 validators for each node.
+- You can select the number of validators on your node for staking. You can choose 
+between 7 and 32 validators for each node.
 
 ```shell
 
@@ -127,7 +153,8 @@ You can define validators based on the amount of coins you want to stake.
 
 ```
 
-- After select number of validators your inilized and you can start your node with command `./pactus-daemon start -w /home/{user}/pactus`,
+- After select number of validators your inilized and you can start your node with 
+command `./pactus-daemon start -w /home/{user}/pactus`,
 
 ```shell
 Validator addresses:
@@ -158,7 +185,10 @@ You can start the node by running this command:
 
 ## Step 2: Subscribe to the Pactus Newsletter for Important Updates
 
-Stay informed and up-to-date with the latest developments in the Pactus ecosystem by subscribing to the newsletter. Receive important news, updates, and announcements directly to your email inbox. Don't miss out on crucial information that could impact your involvement with Pactus blockchain. Sign up now to stay connected and informed.
+Stay informed and up-to-date with the latest developments in the Pactus ecosystem by 
+subscribing to the newsletter. Receive important news, updates, and announcements 
+directly to your email inbox. Don't miss out on crucial information that could impact 
+your involvement with Pactus blockchain. Sign up now to stay connected and informed.
 
 {% alert_start warning %}
 It's required to subscribe to "Pactus Update News" channel news.
@@ -201,9 +231,14 @@ It's required to subscribe to "Pactus Update News" channel news.
 
 ## Step 3: Purchase Coins for Staking on Your Validators
 
-Prepare to participate in the Pactus blockchain as a validator by acquiring the necessary coins for staking. Staking is essential for securing the network and participating in consensus. By purchasing coins, you'll have the resources needed to stake on your validators, contributing to the network's security and earning rewards in return. Take this step to actively engage with the Pactus blockchain and play a vital role in its ecosystem.
+Prepare to participate in the Pactus blockchain as a validator by acquiring the necessary coins for staking. 
+Staking is essential for securing the network and participating in consensus. By purchasing coins, 
+you'll have the resources needed to stake on your validators, contributing to the network's security 
+and earning rewards in return. Take this step to actively engage with the Pactus blockchain and 
+play a vital role in its ecosystem.
 
-<a class="btn btn-fixed btn-secondary" href="https://xeggex.com/asset/PACTUS" rel="nofollow  noreferrer" target="_blank" role="button">Purchase coins</a>
+<a class="btn btn-fixed btn-secondary" href="https://xeggex.com/asset/PACTUS" rel="nofollow  noreferrer"
+target="_blank" role="button">Purchase coins</a>
 
 ## Step 4: Join the Pactus Blockchain Community on Social Networks
 
