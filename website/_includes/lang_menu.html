@@ -4,24 +4,15 @@
     <span class="m-0 p-0">{{ site.data.languages[site.lang] }}</span>
   </a>
   <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
-    {% for lang in site.data.languages %}
-
-    {% if lang[0] == site.lang %}
-    {% continue %}
-    {% endif %}
-
-    {% if lang[0] == 'en' %}
+    {% for lang in site.data.languages %} {% if lang[0] == site.lang %} {% continue %} {% endif %} {% if lang[0] == 'en'
+    %}
     <li>
       <a class="nav-link dropdown-item ps-3" href="{{ site.baseurl_root }}{{ page.url}}">{{ lang[1] }}</a>
     </li>
     {% else %}
     <li>
-      <a class="nav-link dropdown-item ps-3" href="{{ site.baseurl_root }}/{{ lang[0] }}{{ page.url}}">
-        {{ lang[1] }}
-      </a>
+      <a class="nav-link dropdown-item ps-3" href="{{ site.baseurl_root }}/{{ lang[0] }}{{ page.url}}">{{ lang[1] }}</a>
     </li>
-    {% endif %}
-
-    {% endfor %}
+    {% endif %} {% endfor %}
   </ul>
 </li>
