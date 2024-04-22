@@ -252,3 +252,47 @@ permalink: index.html
     </div>
   </div>
 </div>
+
+<div class="shadow-sm bg-body mt-3 mb-3 rounded">
+  <div class="row p-5">
+    <div class="col-md-6 motto">       
+      <div class="row text-center" style="height: 60%">
+        <div class="title">{% t dict.home.newsletter %}</div>
+        <div class="motto">{% t dict.home.newsletter_desc %}</div>
+      </div>
+    </div>
+    <div class="col-md-6 motto">
+    </br><br>
+    <div class="pactus-video">
+      <form method="post" action="https://pacmail.org/subscription/form" class="listmonk-form">
+        <div>
+        <input type="hidden" name="nonce" />
+        <p><input type="email" name="email" required placeholder="E-mail" /> <input type="submit" value="Subscribe" /></p>  
+        <p>
+          <div class="short">
+            Please add <b>"noreply@pacmail.org"</b> to your 
+            <a href="https://blog.hubspot.com/marketing/email-whitelist" target="_blank">whitelist</a> email service<br>
+            to receive email in your inbox.
+          </div>
+        </p>
+
+      <div class="captcha">
+          <div class="h-captcha" data-sitekey="898156d4-1b49-4bb4-a3d9-f4c2214b9908"></div>
+          <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+      </div>
+  
+      <p>
+        <input id="90cc6" type="checkbox" name="l" checked value="90cc6b4e-c631-45f3-b1d5-c5027b379c7e" />
+        <label for="90cc6">Pactus Announcements</label>
+      </p>
+      <p>
+        <input id="647b6" type="checkbox" name="l" checked value="647b6294-eced-4887-9298-3ae6f79f12a6" />
+        <label for="647b6">Pactus Update News</label>
+      </p>
+    
+  </div>
+  </form>
+</div>
+    </div>
+  </div>
+</div>

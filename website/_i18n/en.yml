@@ -47,6 +47,10 @@ dict:
       with your friends to contributing to our core development. Let's work together to make Pactus even better!
     partners: Our Partners
     validators: Featured Validators
+    newsletter: Subscribe to the Pactus Newsletter
+    newsletter_desc: Dive into the latest updates and insights from the Pactus Blockchain.
+      Receive crucial information on new developments, enhancements, and partnerships directly to your inbox.
+      Stay connected and informed, whether you're an investor, developer, or blockchain enthusiast.
 
   community:
     title: Community
