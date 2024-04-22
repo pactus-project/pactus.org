@@ -124,7 +124,7 @@ Each PAC is equivalent to
 
 
 
-<a id="pactus.transaction.get_transaction"></a>
+<p id="pactus.transaction.get_transaction"></p>
 <h3>pactus.transaction.get_transaction <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.transaction.get_transaction retrieves transaction details based on the provided request
@@ -184,7 +184,7 @@ parameters.
 <hr/>
 
 
-<a id="pactus.transaction.calculate_fee"></a>
+<p id="pactus.transaction.calculate_fee"></p>
 <h3>pactus.transaction.calculate_fee <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.transaction.calculate_fee calculates the transaction fee based on the specified amount
@@ -211,7 +211,7 @@ and payload type.
 <hr/>
 
 
-<a id="pactus.transaction.broadcast_transaction"></a>
+<p id="pactus.transaction.broadcast_transaction"></p>
 <h3>pactus.transaction.broadcast_transaction <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.transaction.broadcast_transaction broadcasts a signed transaction to the network.
@@ -234,7 +234,7 @@ pactus.transaction.broadcast_transaction broadcasts a signed transaction to the 
 <hr/>
 
 
-<a id="pactus.transaction.get_raw_transfer_transaction"></a>
+<p id="pactus.transaction.get_raw_transfer_transaction"></p>
 <h3>pactus.transaction.get_raw_transfer_transaction <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.transaction.get_raw_transfer_transaction retrieves raw details of a transfer transaction.
@@ -262,7 +262,7 @@ pactus.transaction.get_raw_transfer_transaction retrieves raw details of a trans
 <hr/>
 
 
-<a id="pactus.transaction.get_raw_bond_transaction"></a>
+<p id="pactus.transaction.get_raw_bond_transaction"></p>
 <h3>pactus.transaction.get_raw_bond_transaction <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.transaction.get_raw_bond_transaction retrieves raw details of a bond transaction.
@@ -291,7 +291,7 @@ pactus.transaction.get_raw_bond_transaction retrieves raw details of a bond tran
 <hr/>
 
 
-<a id="pactus.transaction.get_raw_unbond_transaction"></a>
+<p id="pactus.transaction.get_raw_unbond_transaction"></p>
 <h3>pactus.transaction.get_raw_unbond_transaction <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.transaction.get_raw_unbond_transaction retrieves raw details of an unbond transaction.
@@ -316,7 +316,7 @@ pactus.transaction.get_raw_unbond_transaction retrieves raw details of an unbond
 <hr/>
 
 
-<a id="pactus.transaction.get_raw_withdraw_transaction"></a>
+<p id="pactus.transaction.get_raw_withdraw_transaction"></p>
 <h3>pactus.transaction.get_raw_withdraw_transaction <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.transaction.get_raw_withdraw_transaction retrieves raw details of a withdraw transaction.
@@ -348,7 +348,7 @@ pactus.transaction.get_raw_withdraw_transaction retrieves raw details of a withd
 
 
 
-<a id="pactus.blockchain.get_block"></a>
+<p id="pactus.blockchain.get_block"></p>
 <h3>pactus.blockchain.get_block <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_block retrieves information about a block based on the provided request
@@ -433,7 +433,7 @@ parameters.
 <hr/>
 
 
-<a id="pactus.blockchain.get_block_hash"></a>
+<p id="pactus.blockchain.get_block_hash"></p>
 <h3>pactus.blockchain.get_block_hash <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_block_hash retrieves the hash of a block at the specified height.
@@ -456,7 +456,7 @@ pactus.blockchain.get_block_hash retrieves the hash of a block at the specified 
 <hr/>
 
 
-<a id="pactus.blockchain.get_block_height"></a>
+<p id="pactus.blockchain.get_block_height"></p>
 <h3>pactus.blockchain.get_block_height <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_block_height retrieves the height of a block with the specified hash.
@@ -479,7 +479,7 @@ pactus.blockchain.get_block_height retrieves the height of a block with the spec
 <hr/>
 
 
-<a id="pactus.blockchain.get_blockchain_info"></a>
+<p id="pactus.blockchain.get_blockchain_info"></p>
 <h3>pactus.blockchain.get_blockchain_info <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_blockchain_info retrieves general information about the blockchain.
@@ -520,7 +520,7 @@ pactus.blockchain.get_blockchain_info retrieves general information about the bl
 <hr/>
 
 
-<a id="pactus.blockchain.get_consensus_info"></a>
+<p id="pactus.blockchain.get_consensus_info"></p>
 <h3>pactus.blockchain.get_consensus_info <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_consensus_info retrieves information about the consensus instances.
@@ -560,7 +560,7 @@ pactus.blockchain.get_consensus_info retrieves information about the consensus i
 <hr/>
 
 
-<a id="pactus.blockchain.get_account"></a>
+<p id="pactus.blockchain.get_account"></p>
 <h3>pactus.blockchain.get_account <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_account retrieves information about an account based on the provided
@@ -590,7 +590,7 @@ address.
 <hr/>
 
 
-<a id="pactus.blockchain.get_validator"></a>
+<p id="pactus.blockchain.get_validator"></p>
 <h3>pactus.blockchain.get_validator <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_validator retrieves information about a validator based on the provided
@@ -625,7 +625,7 @@ address.
 <hr/>
 
 
-<a id="pactus.blockchain.get_validator_by_number"></a>
+<p id="pactus.blockchain.get_validator_by_number"></p>
 <h3>pactus.blockchain.get_validator_by_number <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_validator_by_number retrieves information about a validator based on the
@@ -660,7 +660,7 @@ provided number.
 <hr/>
 
 
-<a id="pactus.blockchain.get_validator_addresses"></a>
+<p id="pactus.blockchain.get_validator_addresses"></p>
 <h3>pactus.blockchain.get_validator_addresses <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_validator_addresses retrieves a list of all validator addresses.
@@ -684,7 +684,7 @@ pactus.blockchain.get_validator_addresses retrieves a list of all validator addr
 <hr/>
 
 
-<a id="pactus.blockchain.get_public_key"></a>
+<p id="pactus.blockchain.get_public_key"></p>
 <h3>pactus.blockchain.get_public_key <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.blockchain.get_public_key retrieves the public key of an account based on the provided
@@ -712,7 +712,7 @@ address.
 
 
 
-<a id="pactus.network.get_network_info"></a>
+<p id="pactus.network.get_network_info"></p>
 <h3>pactus.network.get_network_info <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.network.get_network_info retrieves information about the overall network.
@@ -784,7 +784,7 @@ pactus.network.get_network_info retrieves information about the overall network.
 <hr/>
 
 
-<a id="pactus.network.get_node_info"></a>
+<p id="pactus.network.get_node_info"></p>
 <h3>pactus.network.get_node_info <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.network.get_node_info retrieves information about a specific node in the network.
@@ -829,7 +829,7 @@ pactus.network.get_node_info retrieves information about a specific node in the 
 
 
 
-<a id="pactus.wallet.create_wallet"></a>
+<p id="pactus.wallet.create_wallet"></p>
 <h3>pactus.wallet.create_wallet <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.create_wallet creates a new wallet with the specified parameters.
@@ -855,7 +855,7 @@ pactus.wallet.create_wallet creates a new wallet with the specified parameters.
 <hr/>
 
 
-<a id="pactus.wallet.load_wallet"></a>
+<p id="pactus.wallet.load_wallet"></p>
 <h3>pactus.wallet.load_wallet <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.load_wallet loads an existing wallet with the given name.
@@ -878,7 +878,7 @@ pactus.wallet.load_wallet loads an existing wallet with the given name.
 <hr/>
 
 
-<a id="pactus.wallet.unload_wallet"></a>
+<p id="pactus.wallet.unload_wallet"></p>
 <h3>pactus.wallet.unload_wallet <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.unload_wallet unloads a currently loaded wallet with the specified name.
@@ -901,7 +901,7 @@ pactus.wallet.unload_wallet unloads a currently loaded wallet with the specified
 <hr/>
 
 
-<a id="pactus.wallet.lock_wallet"></a>
+<p id="pactus.wallet.lock_wallet"></p>
 <h3>pactus.wallet.lock_wallet <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.lock_wallet locks a currently loaded wallet with the provided password and
@@ -925,7 +925,7 @@ timeout.
 <hr/>
 
 
-<a id="pactus.wallet.unlock_wallet"></a>
+<p id="pactus.wallet.unlock_wallet"></p>
 <h3>pactus.wallet.unlock_wallet <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.unlock_wallet unlocks a locked wallet with the provided password and
@@ -951,7 +951,7 @@ timeout.
 <hr/>
 
 
-<a id="pactus.wallet.get_total_balance"></a>
+<p id="pactus.wallet.get_total_balance"></p>
 <h3>pactus.wallet.get_total_balance <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.get_total_balance returns the total available balance of the wallet.
@@ -975,7 +975,7 @@ pactus.wallet.get_total_balance returns the total available balance of the walle
 <hr/>
 
 
-<a id="pactus.wallet.sign_raw_transaction"></a>
+<p id="pactus.wallet.sign_raw_transaction"></p>
 <h3>pactus.wallet.sign_raw_transaction <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.sign_raw_transaction signs a raw transaction for a specified wallet.
@@ -1001,7 +1001,7 @@ pactus.wallet.sign_raw_transaction signs a raw transaction for a specified walle
 <hr/>
 
 
-<a id="pactus.wallet.get_validator_address"></a>
+<p id="pactus.wallet.get_validator_address"></p>
 <h3>pactus.wallet.get_validator_address <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.get_validator_address retrieves the validator address associated with a
@@ -1025,7 +1025,7 @@ public key.
 <hr/>
 
 
-<a id="pactus.wallet.get_new_address"></a>
+<p id="pactus.wallet.get_new_address"></p>
 <h3>pactus.wallet.get_new_address <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.get_new_address generates a new address for the specified wallet.
@@ -1056,7 +1056,7 @@ pactus.wallet.get_new_address generates a new address for the specified wallet.
 <hr/>
 
 
-<a id="pactus.wallet.get_address_history"></a>
+<p id="pactus.wallet.get_address_history"></p>
 <h3>pactus.wallet.get_address_history <span class="badge text-bg-primary fs-6 align-top">Method</span></h3>
 
 pactus.wallet.get_address_history retrieve transaction history of an address.
