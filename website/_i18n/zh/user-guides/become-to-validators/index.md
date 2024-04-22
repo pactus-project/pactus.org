@@ -18,8 +18,8 @@ This guide is designed for individuals and organizations interested in becoming 
  journey as a Pactus validator. Join us in securing the network and shaping the future of decentralized technology.
 
 - [Step 1: How to become a validator?](#step-1-how-to-become-to-validators)
-  - [How to initialize Pactus GUI node?](#how-to-initilize-pactus-gui-node)
-  - [How to initialize Pactus CLI node?](#how-to-initilize-pactus-cli-node)
+    - [How to initialize Pactus GUI node?](#how-to-initilize-pactus-gui-node)
+    - [How to initialize Pactus CLI node?](#how-to-initilize-pactus-cli-node)
 - [Step 2: Subscribe to the Pactus Newsletter for Important Updates](#step-2-subscribe-to-the-pactus-newsletter-for-important-updates)
 - [Step 3: Purchase Coins for Staking on Your Validators](#step-3-purchase-coins-for-staking-on-your-validators)
 - [Step 4: Join the Pactus Blockchain Community on Social Networks](#step-4-join-the-pactus-blockchain-community-on-social-networks)
@@ -27,73 +27,86 @@ This guide is designed for individuals and organizations interested in becoming 
 
 ## Step 1: How to become to validators?
 
-First need to download and install [Pactus GUI or CLI]( {{ site.baseurl }}/download/ ){:target="\_blank"} for initlize your node.
+First need to download and install [Pactus GUI 
+or CLI]( {{ site.baseurl }}/download/ ){:target="\_blank"} for initlize your node
 
 ### How to initilize Pactus GUI node?
 
 - Please download the appropriate Pactus GUI for your operating system and specific
 architecture by visiting the [download page]( {{ site.baseurl }}/download/#gui ){:target="\_blank"}.
 
-- Extract the file named "pactus-gui*{latest_version}{os}{architecture}.tar.gz" or,
-if you're using Windows, run the installer named "pactus-gui*{latest_version}\_windows_amd64_installer.exe" in your user directory.
+- Extract the file named "pactus-gui*{latest_version}{os}{architecture}.tar.gz" 
+or, if you're using Windows, run the installer 
+named "pactus-gui*{latest_version}\_windows_amd64_installer.exe" in your user directory.
 
 - Run file "pactus-gui" for initlize or run your node.
 
 - If you run the node for the first time, you will see a wizard page to initialize your node.
 The first page is the 'Initialize Mode' where you can select to create or restore a wallet using a seed phrase.
-  ![Initlize mode]({{ site.url }}/user-guides/become-to-validators/wizard-welcome.png)
+
+![Initlize mode]({{ site.url }}/user-guides/become-to-validators/wizard-welcome.png)
 
 - After selecting "Create new wallet from scratch" the next page will generate
 a new seed phrase. It is crucial to back up these seed words either by writing them down or storing them in a secure document.
+
   {% alert_start warning %}
   Do not share your seed words with other users, as they grant access to your wallet.
   Keeping your seed phrase private is essential for the security of your funds.
   {% alert_end %}
+
   ![Generated Seed words]({{ site.url }}/user-guides/become-to-validators/generated-seed.png)
 
 - On the next page, you will need to confirm your seed words by typing them into the input box provided.
-  ![Confirm Seed words]({{ site.url }}/user-guides/become-to-validators/confirm-seed.png)
+
+![Confirm Seed words]({{ site.url }}/user-guides/become-to-validators/confirm-seed.png)
 
 - On the next page, you can set a password for wallet security. This password for any
 interactions with the wallet, such as creating transactions.
-  ![Wallet Password]({{ site.url }}/user-guides/become-to-validators/wallet-password.png)
+
+![Wallet Password]({{ site.url }}/user-guides/become-to-validators/wallet-password.png)
 
 - On the next page, you can select the number of validators on your node for staking.
 You can choose between 7 and 32 validators for each node.
-  ![Number of validators]({{ site.url }}/user-guides/become-to-validators/number-of-validators.png)
+
+![Number of validators]({{ site.url }}/user-guides/become-to-validators/number-of-validators.png)
 
 - On the next page, the wizard is finished, and your node is initialized. You can now view your node information.
-  {% alert_start info %}
-  Your node configuration is located at "{user home}/pactus".
-  {% alert_end %}
-  ![Finished Wizard]({{ site.url }}/user-guides/become-to-validators/finish-wizard.png)
+
+{% alert_start info %}
+Your node configuration is located at "{user home}/pactus".
+{% alert_end %}
+
+![Finished Wizard]({{ site.url }}/user-guides/become-to-validators/finish-wizard.png)
 
 - Now that your node is initialized, you need to keep it running on your system to synchronize with the blockchain
+
 ![Node information]({{ site.url }}/user-guides/become-to-validators/node-info.png)
-  - Working directory: The path to the Pactus node configuration directory.
-  - Network: The current network your node is connected to (default is mainnet).
-  - Network ID: A specific identifier for your node within the network.
-  - Connections: The current inbound or outbound connections established by your node.
-  - Moniker: Your node's name on the P2P network, which can be set or changed in the Pactus
-  configuration file located at `{user home}/pactus/config.toml`.
-  - Reachability: Your node's status within the network.
-  - Last block height: The height of the last block synced on your node.
-  - Last block time: The timestamp of the last block synced on your node.
-  - Number of blocks left: The remaining number of blocks to be synced by your node.
-  - Sync Progress: A progress bar indicating the synchronization progress of blocks.
-  - [Committee]( {{ site.baseurl }}/learn/consensus/committee/ ){:target="_blank"} size: The number of committee
-  validators responsible for validating or proposing blocks.
-  - In committee now: Indicates whether your node is currently part of the committee. If yes,
-  please keep your node running to earn rewards by proposing blocks.
+
+    - Working directory: The path to the Pactus node configuration directory.
+    - Network: The current network your node is connected to (default is mainnet).
+    - Network ID: A specific identifier for your node within the network.
+    - Connections: The current inbound or outbound connections established by your node.
+    - Moniker: Your node's name on the P2P network, which can be set or changed in the Pactus
+    configuration file located at `{user home}/pactus/config.toml`.
+    - Reachability: Your node's status within the network.
+    - Last block height: The height of the last block synced on your node.
+    - Last block time: The timestamp of the last block synced on your node.
+    - Number of blocks left: The remaining number of blocks to be synced by your node.
+    - Sync Progress: A progress bar indicating the synchronization progress of blocks.
+    - [Committee]( {{ site.baseurl }}/learn/consensus/committee/ ){:target="_blank"} size: The number of committee
+    validators responsible for validating or proposing blocks.
+    - In committee now: Indicates whether your node is currently part of the committee. If yes,
+    please keep your node running to earn rewards by proposing blocks.
 
 - On this page, you can view your validators and rewards addresses
+
 ![wallets]({{ site.url }}/user-guides/become-to-validators/wallets.png)
 
-  - Address: Here you can view the validators and rewards addresses.
-  - Label: This field allows you to set or change the address label.
-  - Balance: Displays the balance of the account-type address.
-  - Stake: Shows the total stake of the validator-type address.
-  - Availability Score: Indicates the score of your validators. [Please check this for insights into your node's availability](https://medium.com/pactuschain/pactus-pip-19-explained-what-is-availability-score-9ac279c193a8).
+    - Address: Here you can view the validators and rewards addresses.
+    - Label: This field allows you to set or change the address label.
+    - Balance: Displays the balance of the account-type address.
+    - Stake: Shows the total stake of the validator-type address.
+    - Availability Score: Indicates the score of your validators. [Please check this for insights into your node's availability](https://medium.com/pactuschain/pactus-pip-19-explained-what-is-availability-score-9ac279c193a8).
 
 ### How to initilize Pactus CLI node?
 
