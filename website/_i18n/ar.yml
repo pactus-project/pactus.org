@@ -8,7 +8,7 @@ dict:
   improve_translation: تحسين الترجمة
   edit_this_page: عدل هذه الصفحة
   resources: الموارد
-  know_more: اعرف المزيد
+  know_more: تصبح للمدققين
   join_community: انضم إلى المجتمع
   contributing: المساهمة
   outdated_translation: الترجمة قديمة. يمكنك قراءتها، لكن قد لا تكون دقيقة.
@@ -454,6 +454,7 @@ dict:
     run_pactus_metrics: How to run Pactus Metrics?
     grpc-sign-transactions: How to sign transaction using gRPC?
     grpc-basic-auth: How to secure gRPC using basic authentication?
+    become-to-validators: Become to validators
     wallet_seed_important: >
       <b>Wallet seed is important<b>
       <br><br>
