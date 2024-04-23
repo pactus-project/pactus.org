@@ -8,7 +8,7 @@ title: dict.guide.title
 {% t dict.guide.welcome %}
 
 <ul class="list-bullet">
-  <li><a href="{{ site.baseurl }}/user-guides/become-to-validators">{% t dict.guide.become-to-validators %}</a></li>
+  <li><a href="{{ site.baseurl }}/user-guides/become-a-validator">{% t dict.guide.become-a-validator %}</a></li>
   <li><a href="{{ site.baseurl }}/user-guides/pactus-gui">{% t dict.guide.run_pactus_gui %}</a></li>
   <li><a href="{{ site.baseurl }}/user-guides/send-transactions-gui">{% t dict.guide.send_transactions_gui %}</a></li>
   <li><a href="{{ site.baseurl }}/user-guides/pactus-daemon">{% t dict.guide.run_pactus_cli %}</a></li>

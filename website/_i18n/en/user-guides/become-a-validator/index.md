@@ -17,7 +17,7 @@ This guide is designed for individuals and organizations interested in becoming 
  the field, this article will provide you with the necessary insights and tools to embark on your
  journey as a Pactus validator. Join us in securing the network and shaping the future of decentralized technology.
 
-- [Step 1: How to become a validator?](#step-1-how-to-become-to-validators)
+- [Step 1: How to become a validator?](#step-1-how-to-become-a-validator)
    - [How to initialize Pactus GUI node?](#how-to-initilize-pactus-gui-node)
    - [How to initialize Pactus CLI node?](#how-to-initilize-pactus-cli-node)
 - [Step 2: Subscribe to the Pactus Newsletter for Important Updates](#step-2-subscribe-to-the-pactus-newsletter-for-important-updates)
@@ -25,7 +25,7 @@ This guide is designed for individuals and organizations interested in becoming 
 - [Step 4: Join the Pactus Blockchain Community on Social Networks](#step-4-join-the-pactus-blockchain-community-on-social-networks)
 - [Step 5: Expand Your Knowledge with Pactus Tutorials](#step-5-expand-your-knowledge-with-pactus-tutorials)
 
-## Step 1: How to become to validators?
+## Step 1: How to become a validator?
 
 First need to download and install [Pactus GUI
 or CLI]( {{ site.baseurl }}/download/ ){:target="\_blank"} for initlize your node
@@ -44,7 +44,7 @@ or CLI]( {{ site.baseurl }}/download/ ){:target="\_blank"} for initlize your nod
 - If you run the node for the first time, you will see a wizard page to initialize your node.
   The first page is the 'Initialize Mode' where you can select to create or restore a wallet using a seed phrase.
 
-![Initlize mode]({{ site.url }}/user-guides/become-to-validators/wizard-welcome.png)
+![Initlize mode]({{ site.url }}/user-guides/become-a-validator/wizard-welcome.png)
 
 - After selecting "Create new wallet from scratch" the next page will generate
   a new seed phrase. It is crucial to back up these seed words either by writing them down or storing them in a secure document.
@@ -54,21 +54,21 @@ or CLI]( {{ site.baseurl }}/download/ ){:target="\_blank"} for initlize your nod
   Keeping your seed phrase private is essential for the security of your funds.
   {% alert_end %}
 
-  ![Generated Seed words]({{ site.url }}/user-guides/become-to-validators/generated-seed.png)
+  ![Generated Seed words]({{ site.url }}/user-guides/become-a-validator/generated-seed.png)
 
 - On the next page, you will need to confirm your seed words by typing them into the input box provided.
 
-![Confirm Seed words]({{ site.url }}/user-guides/become-to-validators/confirm-seed.png)
+![Confirm Seed words]({{ site.url }}/user-guides/become-a-validator/confirm-seed.png)
 
 - On the next page, you can set a password for wallet security. This password for any
   interactions with the wallet, such as creating transactions.
 
-![Wallet Password]({{ site.url }}/user-guides/become-to-validators/wallet-password.png)
+![Wallet Password]({{ site.url }}/user-guides/become-a-validator/wallet-password.png)
 
 - On the next page, you can select the number of validators on your node for staking.
   You can choose between 7 and 32 validators for each node.
 
-![Number of validators]({{ site.url }}/user-guides/become-to-validators/number-of-validators.png)
+![Number of validators]({{ site.url }}/user-guides/become-a-validator/number-of-validators.png)
 
 - On the next page, the wizard is finished, and your node is initialized. You can now view your node information.
 
@@ -76,11 +76,11 @@ or CLI]( {{ site.baseurl }}/download/ ){:target="\_blank"} for initlize your nod
 Your node configuration is located at "{user home}/pactus".
 {% alert_end %}
 
-![Finished Wizard]({{ site.url }}/user-guides/become-to-validators/finish-wizard.png)
+![Finished Wizard]({{ site.url }}/user-guides/become-a-validator/finish-wizard.png)
 
 - Now that your node is initialized, you need to keep it running on your system to synchronize with the blockchain
 
-![Node information]({{ site.url }}/user-guides/become-to-validators/node-info.png)
+![Node information]({{ site.url }}/user-guides/become-a-validator/node-info.png)
 
 1. Working directory: The path to the Pactus node configuration directory.
 2. Network: The current network your node is connected to (default is mainnet).
@@ -100,7 +100,7 @@ Your node configuration is located at "{user home}/pactus".
 
 - On this page, you can view your validators and rewards addresses
 
-![wallets]({{ site.url }}/user-guides/become-to-validators/wallets.png)
+![wallets]({{ site.url }}/user-guides/become-a-validator/wallets.png)
 
 1. Address: Here you can view the validators and rewards addresses.
 2. Label: This field allows you to set or change the address label.

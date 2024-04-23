@@ -8,7 +8,7 @@ dict:
   improve_translation: Improve translation
   edit_this_page: Edit this page
   resources: Resources
-  know_more: Become To Validators
+  become-a-validator: Become a Validator
   join_community: Join community
   contributing: Contributing
   outdated_translation: The translation is outdated. You can read it, but it might not be accurate.
@@ -454,7 +454,7 @@ dict:
     run_pactus_metrics: How to run Pactus Metrics?
     grpc-sign-transactions: How to sign transaction using gRPC?
     grpc-basic-auth: How to secure gRPC using basic authentication?
-    become-to-validators: Become to validators
+    become-a-validator: Become a validator
     wallet_seed_important: >
       <b>Wallet seed is important</b>
       <br><br>
