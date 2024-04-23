@@ -37,6 +37,7 @@
   items:
     - doc: grpc
     - doc: http
+    - doc: json-rpc
 # - title: Smart Contract
 #   path: learn/smart-contract
 #   items:
