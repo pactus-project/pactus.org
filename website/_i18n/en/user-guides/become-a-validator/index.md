@@ -56,21 +56,21 @@ or CLI]( {{ site.baseurl }}/download/ ){:target="\_blank"} for initlize your nod
 
   ![Generated Seed words]({{ site.url }}/user-guides/become-a-validator/generated-seed.png)
 
-- On the next page, you will need to confirm your seed words by typing them into the input box provided.
+- You will need to confirm your seed words by typing them into the input box provided.
 
 ![Confirm Seed words]({{ site.url }}/user-guides/become-a-validator/confirm-seed.png)
 
-- On the next page, you can set a password for wallet security. This password for any
+- You can set a password for wallet security. This password for any
   interactions with the wallet, such as creating transactions.
 
 ![Wallet Password]({{ site.url }}/user-guides/become-a-validator/wallet-password.png)
 
-- On the next page, you can select the number of validators on your node for staking.
+- Yyou can select the number of validators on your node for staking.
   You can choose between 7 and 32 validators for each node.
 
 ![Number of validators]({{ site.url }}/user-guides/become-a-validator/number-of-validators.png)
 
-- On the next page, the wizard is finished, and your node is initialized. You can now view your node information.
+- The wizard is finished, and your node is initialized. You can now view your node information.
 
 {% alert_start info %}
 Your node configuration is located at "{user home}/pactus".
