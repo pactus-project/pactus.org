@@ -8,7 +8,8 @@ permalink: index.html
   <div class="row p-5">
     <div class="col-md-6">
       <div class="pactus-video">
-        <img src="{{ site.url }}/assets/images/welcome-video-placeholder.png"
+        <img
+          src="{{ site.url }}/assets/images/welcome-video-placeholder.png"
           alt="Pactus - a real Proof-of-Stake blockchain" />
       </div>
     </div>
@@ -20,8 +21,11 @@ permalink: index.html
       <div class="row d-flex align-items-end" style="height: 40%">
         <div class="col-md-6 bottom-align-text">
           <div class="text-center pt-md-4">
-            <a class="btn btn-fixed btn-primary" href="{{ site.baseurl }}/about/faq" role="button">
-              {% t dict.know_more %}
+            <a
+              class="btn btn-fixed btn-primary"
+              href="{{ site.baseurl }}/user-guides/become-a-validator/"
+              role="button">
+              {% t dict.become-a-validator %}
             </a>
           </div>
         </div>
@@ -248,6 +252,55 @@ permalink: index.html
       </div>
       <div class="col-md-1 text-center">
         <img alt="you-logo" src="{{ site.url }}/assets/images/validators/you-logo-here.png" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="shadow-sm bg-body mt-3 mb-3 rounded">
+  <div class="row p-5">
+    <div class="col-md-6 motto">
+      <div class="row text-center" style="height: 60%">
+        <div class="title">{% t dict.home.newsletter %}</div>
+        <div class="motto">{% t dict.home.newsletter_desc %}</div>
+      </div>
+    </div>
+    <div class="col-md-6 motto">
+      <div class="pactus-video">
+        <form method="post" action="https://pacmail.org/subscription/form" class="listmonk-form">
+          <div>
+            <input type="hidden" name="nonce" />
+            <p>
+              <input type="email" name="email" required placeholder="E-mail" />
+              <input type="submit" value="Subscribe" />
+            </p>
+            <p></p>
+            <div class="short">
+              Please add
+              <b>"noreply@pacmail.org"</b>
+              to your email service's
+              <a href="https://blog.hubspot.com/marketing/email-whitelist" rel="nofollow noreferrer" target="_blank">
+                whitelist
+              </a>
+              <br />
+              to ensure you receive our emails in your inbox.
+            </div>
+
+            <div class="captcha">
+              <div class="h-captcha" data-sitekey="898156d4-1b49-4bb4-a3d9-f4c2214b9908"></div>
+              <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+            </div>
+
+            <p>
+              <input id="90cc6" type="checkbox" name="l" checked value="90cc6b4e-c631-45f3-b1d5-c5027b379c7e" />
+              <label for="90cc6">Pactus Announcements</label>
+            </p>
+            <p>
+              <input id="647b6" type="checkbox" name="l" checked value="647b6294-eced-4887-9298-3ae6f79f12a6" />
+              <label for="647b6">Pactus Update News</label>
+            </p>
+          </div>
+        </form>
       </div>
     </div>
   </div>

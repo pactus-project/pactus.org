@@ -8,7 +8,7 @@ dict:
   improve_translation: تحسين الترجمة
   edit_this_page: عدل هذه الصفحة
   resources: الموارد
-  know_more: اعرف المزيد
+  become-a-validator: تصبح للمدققين
   join_community: انضم إلى المجتمع
   contributing: المساهمة
   outdated_translation: الترجمة قديمة. يمكنك قراءتها، لكن قد لا تكون دقيقة.
@@ -45,6 +45,10 @@ dict:
       لنعمل معًا لجعل بكتوس أفضل!
     partners: Our Partners
     validators: Our Validators
+    newsletter: Subscribe to the Pactus Newsletter
+    newsletter_desc: Dive into the latest updates and insights from the Pactus Blockchain.
+      Receive crucial information on new developments, enhancements, and partnerships directly to your inbox.
+      Stay connected and informed, whether you're an investor, developer, or blockchain enthusiast.
 
   community:
     title: المجتمع
@@ -450,6 +454,7 @@ dict:
     run_pactus_metrics: How to run Pactus Metrics?
     grpc-sign-transactions: How to sign transaction using gRPC?
     grpc-basic-auth: How to secure gRPC using basic authentication?
+    become-a-validator: Become a validator
     wallet_seed_important: >
       <b>Wallet seed is important<b>
       <br><br>

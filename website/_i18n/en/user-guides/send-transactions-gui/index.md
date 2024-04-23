@@ -31,7 +31,7 @@ It's important to note that the [transaction fee]({{ site.baseurl }}/learn/trans
 will be calculated based on the amount you're sending.
 
 When sending or receiving a transaction from either exchange or another person that's not you,
-it is important to  use a memo to ensure the transaction is attributed to the intended recipient.
+it is important to use a memo to ensure the transaction is attributed to the intended recipient.
 
 ## Sending a Bond Transaction
 
