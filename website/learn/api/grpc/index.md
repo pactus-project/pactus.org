@@ -16,7 +16,7 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
 <div id="toc-container">
   <ul class="">
     <li> Transaction Service
-      <ul>  
+      <ul>
         <li>
           <a href="#pactus.Transaction.GetTransaction">
           <span class="badge text-bg-primary">rpc</span> GetTransaction</a>
@@ -46,9 +46,9 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
           <span class="badge text-bg-primary">rpc</span> GetRawWithdrawTransaction</a>
         </li>
       </ul>
-    </li>  
+    </li>
     <li> Blockchain Service
-      <ul>  
+      <ul>
         <li>
           <a href="#pactus.Blockchain.GetBlock">
           <span class="badge text-bg-primary">rpc</span> GetBlock</a>
@@ -90,9 +90,9 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
           <span class="badge text-bg-primary">rpc</span> GetPublicKey</a>
         </li>
       </ul>
-    </li>  
+    </li>
     <li> Network Service
-      <ul>  
+      <ul>
         <li>
           <a href="#pactus.Network.GetNetworkInfo">
           <span class="badge text-bg-primary">rpc</span> GetNetworkInfo</a>
@@ -102,9 +102,9 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
           <span class="badge text-bg-primary">rpc</span> GetNodeInfo</a>
         </li>
       </ul>
-    </li>  
+    </li>
     <li> Wallet Service
-      <ul>  
+      <ul>
         <li>
           <a href="#pactus.Wallet.CreateWallet">
           <span class="badge text-bg-primary">rpc</span> CreateWallet</a>
@@ -513,7 +513,7 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
           <a href="#pactus.UnlockWalletResponse">
             <span class="badge text-bg-secondary">msg</span> UnlockWalletResponse
           </a>
-        </li>  
+        </li>
 
         <li>
           <a href="#pactus.PayloadType">
@@ -524,7 +524,7 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
           <a href="#pactus.TransactionVerbosity">
             <span class="badge text-bg-info">enum</span> TransactionVerbosity
           </a>
-        </li>  
+        </li>
         <li>
           <a href="#pactus.BlockVerbosity">
             <span class="badge text-bg-info">enum</span> BlockVerbosity
@@ -549,7 +549,7 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
 </div>
 
 <h2>Transaction Service <span class="badge text-bg-warning fs-6 align-top">transaction.proto</span></h2>
-<p>Transaction service defines various RPC methods for interacting with</p><p>transactions.</p>  
+<p>Transaction service defines various RPC methods for interacting with</p><p>transactions.</p>
 <h3 id="pactus.Transaction.GetTransaction">GetTransaction <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetTransactionRequest">GetTransactionRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetTransactionResponse">GetTransactionResponse</a></div>
@@ -579,7 +579,7 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
 <div class="response pb-3">Response message: <a href="#pactus.GetRawTransactionResponse">GetRawTransactionResponse</a></div>
 <p>GetRawWithdrawTransaction retrieves raw details of a withdraw transaction.</p>
 <h2>Blockchain Service <span class="badge text-bg-warning fs-6 align-top">blockchain.proto</span></h2>
-<p>Blockchain service defines RPC methods for interacting with the blockchain.</p>  
+<p>Blockchain service defines RPC methods for interacting with the blockchain.</p>
 <h3 id="pactus.Blockchain.GetBlock">GetBlock <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetBlockRequest">GetBlockRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetBlockResponse">GetBlockResponse</a></div>
@@ -621,7 +621,7 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
 <div class="response pb-3">Response message: <a href="#pactus.GetPublicKeyResponse">GetPublicKeyResponse</a></div>
 <p>GetPublicKey retrieves the public key of an account based on the provided</p><p>address.</p>
 <h2>Network Service <span class="badge text-bg-warning fs-6 align-top">network.proto</span></h2>
-<p>Network service provides RPCs for retrieving information about the network.</p>  
+<p>Network service provides RPCs for retrieving information about the network.</p>
 <h3 id="pactus.Network.GetNetworkInfo">GetNetworkInfo <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetNetworkInfoRequest">GetNetworkInfoRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetNetworkInfoResponse">GetNetworkInfoResponse</a></div>
@@ -631,7 +631,7 @@ Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
 <div class="response pb-3">Response message: <a href="#pactus.GetNodeInfoResponse">GetNodeInfoResponse</a></div>
 <p>GetNodeInfo retrieves information about a specific node in the network.</p>
 <h2>Wallet Service <span class="badge text-bg-warning fs-6 align-top">wallet.proto</span></h2>
-<p>Define the Wallet service with various RPC methods for wallet management.</p>  
+<p>Define the Wallet service with various RPC methods for wallet management.</p>
 <h3 id="pactus.Wallet.CreateWallet">CreateWallet <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.CreateWalletRequest">CreateWalletRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.CreateWalletResponse">CreateWalletResponse</a></div>
@@ -692,7 +692,7 @@ BroadcastTransactionRequest
       <td>Signed raw transaction data. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.BroadcastTransactionResponse">
 BroadcastTransactionResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -712,7 +712,7 @@ BroadcastTransactionResponse
       <td>Transaction ID. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.CalculateFeeRequest">
 CalculateFeeRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -744,7 +744,7 @@ CalculateFeeRequest
       <td>Indicates that amount should be fixed and includes the fee. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.CalculateFeeResponse">
 CalculateFeeResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -770,7 +770,7 @@ CalculateFeeResponse
       <td>Calculated transaction fee in NanoPAC. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetRawBondTransactionRequest">
 GetRawBondTransactionRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -829,7 +829,7 @@ If not explicitly set, it is calculated based on the stake. </td>
       <td>Transaction memo. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetRawTransactionResponse">
 GetRawTransactionResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -849,7 +849,7 @@ GetRawTransactionResponse
       <td>Raw transaction data. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetRawTransferTransactionRequest">
 GetRawTransferTransactionRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -902,7 +902,7 @@ If not explicitly set, it is calculated based on the amount. </td>
       <td>Transaction memo. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetRawUnbondTransactionRequest">
 GetRawUnbondTransactionRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -935,7 +935,7 @@ If not explicitly set, it sets to the last block height. </td>
       <td>Transaction memo. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetRawWithdrawTransactionRequest">
 GetRawWithdrawTransactionRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -988,7 +988,7 @@ If not explicitly set, it is calculated based on the amount. </td>
       <td>Transaction memo. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetTransactionRequest">
 GetTransactionRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1014,7 +1014,7 @@ GetTransactionRequest
       <td>Verbosity level for transaction details. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetTransactionResponse">
 GetTransactionResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1046,7 +1046,7 @@ GetTransactionResponse
       <td>Information about the transaction. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.PayloadBond">
 PayloadBond
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1078,7 +1078,7 @@ PayloadBond
       <td>Stake amount in NanoPAC. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.PayloadSortition">
 PayloadSortition
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1104,7 +1104,7 @@ PayloadSortition
       <td>Proof for the sortition. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.PayloadTransfer">
 PayloadTransfer
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1136,7 +1136,7 @@ PayloadTransfer
       <td>Transaction amount in NanoPAC. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.PayloadUnbond">
 PayloadUnbond
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1156,7 +1156,7 @@ PayloadUnbond
       <td>Address of the validator to unbond from. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.PayloadWithdraw">
 PayloadWithdraw
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1188,7 +1188,7 @@ PayloadWithdraw
       <td>Withdrawal amount in NanoPAC. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.TransactionInfo">
 TransactionInfo
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1336,7 +1336,7 @@ AccountInfo
       <td>Address of the account. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.BlockHeaderInfo">
 BlockHeaderInfo
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1380,7 +1380,7 @@ BlockHeaderInfo
       <td>Address of the proposer of the block. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.CertificateInfo">
 CertificateInfo
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1424,7 +1424,7 @@ CertificateInfo
       <td>Certificate signature. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.ConsensusInfo">
 ConsensusInfo
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1468,7 +1468,7 @@ ConsensusInfo
       <td>List of votes in the consensus instance. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetAccountRequest">
 GetAccountRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1488,7 +1488,7 @@ GetAccountRequest
       <td>Address of the account. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetAccountResponse">
 GetAccountResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1508,7 +1508,7 @@ GetAccountResponse
       <td>Account information. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetBlockHashRequest">
 GetBlockHashRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1528,7 +1528,7 @@ GetBlockHashRequest
       <td>Height of the block. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetBlockHashResponse">
 GetBlockHashResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1548,7 +1548,7 @@ GetBlockHashResponse
       <td>Hash of the block. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetBlockHeightRequest">
 GetBlockHeightRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1568,7 +1568,7 @@ GetBlockHeightRequest
       <td>Hash of the block. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetBlockHeightResponse">
 GetBlockHeightResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1588,7 +1588,7 @@ GetBlockHeightResponse
       <td>Height of the block. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetBlockRequest">
 GetBlockRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1614,7 +1614,7 @@ GetBlockRequest
       <td>Verbosity level for block information. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetBlockResponse">
 GetBlockResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1671,13 +1671,13 @@ GetBlockResponse
 Transaction information is available when the verbosity level is set to BLOCK_TRANSACTIONS. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetBlockchainInfoRequest">
 GetBlockchainInfoRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
 </h3>
   <p>Message to request general information about the blockchain.</p>
- Message has no fields.  
+ Message has no fields.
 <h3 id="pactus.GetBlockchainInfoResponse">
 GetBlockchainInfoResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1733,13 +1733,13 @@ GetBlockchainInfoResponse
       <td>List of committee validators. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetConsensusInfoRequest">
 GetConsensusInfoRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
 </h3>
   <p>Message to request consensus information.</p>
- Message has no fields.  
+ Message has no fields.
 <h3 id="pactus.GetConsensusInfoResponse">
 GetConsensusInfoResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1759,7 +1759,7 @@ GetConsensusInfoResponse
       <td>List of consensus instances. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetPublicKeyRequest">
 GetPublicKeyRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1779,7 +1779,7 @@ GetPublicKeyRequest
       <td>Address for which public key is requested. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetPublicKeyResponse">
 GetPublicKeyResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1799,13 +1799,13 @@ GetPublicKeyResponse
       <td>Public key of the account. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetValidatorAddressesRequest">
 GetValidatorAddressesRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
 </h3>
   <p>Message to request validator addresses.</p>
- Message has no fields.  
+ Message has no fields.
 <h3 id="pactus.GetValidatorAddressesResponse">
 GetValidatorAddressesResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1825,7 +1825,7 @@ GetValidatorAddressesResponse
       <td>List of validator addresses. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetValidatorByNumberRequest">
 GetValidatorByNumberRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1845,7 +1845,7 @@ GetValidatorByNumberRequest
       <td>Validator number. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetValidatorRequest">
 GetValidatorRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1865,7 +1865,7 @@ GetValidatorRequest
       <td>Address of the validator. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetValidatorResponse">
 GetValidatorResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1885,7 +1885,7 @@ GetValidatorResponse
       <td>Validator information. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.ValidatorInfo">
 ValidatorInfo
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -1959,7 +1959,7 @@ ValidatorInfo
       <td>Availability score of the validator. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.VoteInfo">
 VoteInfo
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2015,7 +2015,7 @@ GetNetworkInfoRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
 </h3>
   <p>Request message for retrieving overall network information.</p>
- Message has no fields.  
+ Message has no fields.
 <h3 id="pactus.GetNetworkInfoResponse">
 GetNetworkInfoResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2071,7 +2071,7 @@ GetNetworkInfoResponse
       <td>Bytes received per peer ID. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetNetworkInfoResponse.ReceivedBytesEntry">
 GetNetworkInfoResponse.ReceivedBytesEntry
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2097,7 +2097,7 @@ GetNetworkInfoResponse.ReceivedBytesEntry
       <td> </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetNetworkInfoResponse.SentBytesEntry">
 GetNetworkInfoResponse.SentBytesEntry
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2123,13 +2123,13 @@ GetNetworkInfoResponse.SentBytesEntry
       <td> </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetNodeInfoRequest">
 GetNodeInfoRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
 </h3>
   <p>Request message for retrieving information about a specific node in the</p><p>network.</p>
- Message has no fields.  
+ Message has no fields.
 <h3 id="pactus.GetNodeInfoResponse">
 GetNodeInfoResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2197,7 +2197,7 @@ GetNodeInfoResponse
       <td>List of protocols supported by the node. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.PeerInfo">
 PeerInfo
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2331,7 +2331,7 @@ PeerInfo
       <td>Completed sessions with the peer. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.PeerInfo.ReceivedBytesEntry">
 PeerInfo.ReceivedBytesEntry
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2357,7 +2357,7 @@ PeerInfo.ReceivedBytesEntry
       <td> </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.PeerInfo.SentBytesEntry">
 PeerInfo.SentBytesEntry
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2421,7 +2421,7 @@ AddressInfo
       <td> </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.CreateWalletRequest">
 CreateWalletRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2459,7 +2459,7 @@ CreateWalletRequest
       <td>Password for securing the wallet. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.CreateWalletResponse">
 CreateWalletResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2479,7 +2479,7 @@ CreateWalletResponse
       <td>Name of the created wallet. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetAddressHistoryRequest">
 GetAddressHistoryRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2505,7 +2505,7 @@ GetAddressHistoryRequest
       <td>Address to get the transaction history of it. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetAddressHistoryResponse">
 GetAddressHistoryResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2525,7 +2525,7 @@ GetAddressHistoryResponse
       <td>Array of address history and activities. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetNewAddressRequest">
 GetNewAddressRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2557,7 +2557,7 @@ GetNewAddressRequest
       <td>Label for the new address. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetNewAddressResponse">
 GetNewAddressResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2583,7 +2583,7 @@ GetNewAddressResponse
       <td>Address information. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetTotalBalanceRequest">
 GetTotalBalanceRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2603,7 +2603,7 @@ GetTotalBalanceRequest
       <td>Name of the wallet. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetTotalBalanceResponse">
 GetTotalBalanceResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2629,7 +2629,7 @@ GetTotalBalanceResponse
       <td>The total balance of the wallet in NanoPAC. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetValidatorAddressRequest">
 GetValidatorAddressRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2649,7 +2649,7 @@ GetValidatorAddressRequest
       <td>Public key for which the validator address is requested. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.GetValidatorAddressResponse">
 GetValidatorAddressResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2669,7 +2669,7 @@ GetValidatorAddressResponse
       <td>Validator address associated with the public key. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.HistoryInfo">
 HistoryInfo
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2713,7 +2713,7 @@ HistoryInfo
       <td>amount of transaction. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.LoadWalletRequest">
 LoadWalletRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2733,7 +2733,7 @@ LoadWalletRequest
       <td>Name of the wallet to load. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.LoadWalletResponse">
 LoadWalletResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2753,7 +2753,7 @@ LoadWalletResponse
       <td>Name of the loaded wallet. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.LockWalletRequest">
 LockWalletRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2773,7 +2773,7 @@ LockWalletRequest
       <td>Name of the wallet to lock. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.LockWalletResponse">
 LockWalletResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2793,7 +2793,7 @@ LockWalletResponse
       <td>Name of the locked wallet. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.SignRawTransactionRequest">
 SignRawTransactionRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2825,7 +2825,7 @@ SignRawTransactionRequest
       <td>Password for unlocking the wallet for signing. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.SignRawTransactionResponse">
 SignRawTransactionResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2851,7 +2851,7 @@ SignRawTransactionResponse
       <td>Signed raw transaction data. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.UnloadWalletRequest">
 UnloadWalletRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2871,7 +2871,7 @@ UnloadWalletRequest
       <td>Name of the wallet to unload. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.UnloadWalletResponse">
 UnloadWalletResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2891,7 +2891,7 @@ UnloadWalletResponse
       <td>Name of the unloaded wallet. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.UnlockWalletRequest">
 UnlockWalletRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -2923,7 +2923,7 @@ UnlockWalletRequest
       <td>Timeout duration for the unlocked state. </td>
     </tr>
   </tbody>
-</table>  
+</table>
 <h3 id="pactus.UnlockWalletResponse">
 UnlockWalletResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
@@ -3081,7 +3081,7 @@ AddressType
         <td></td>
       </tr>
   </tbody>
-</table>  
+</table>
 
 <h3 id="scalar-value-types">Scalar Value Types</h3>
 <table class="table table-bordered table-sm">
