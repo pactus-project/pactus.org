@@ -13,7 +13,7 @@ sidebar: Protocol
 Pactus consensus algorithm is a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
 replication with [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault) tolerance.
 The Pactus consensus algorithm starts with the block creation phase.
-In this phase one validator acts as the proposer. The proposer collects all the transactions,
+In this phase, one validator acts as the proposer. The proposer collects all the transactions,
 creates a block, and proposes it to other validators.
 
 When a proposed block is seen by other validators, they validate the block and
@@ -157,7 +157,7 @@ b = \begin{cases}
 \end{cases}
 $$
 
-These pre-votes must be justified with a appropriate justification.
+These pre-votes must be justified with an appropriate justification.
 For the first round, if the validator's timer has expired in the prepare step, the justification is $$nil$$ ,
 and if the validator's timer expired in the precommit step,
 the justification is the proper quorum certificate for the prepare step at round $$r$$.
@@ -185,7 +185,7 @@ abstain & \text{if there are pre-votes for 0 and 1.}
 \end{cases}
 $$
 
-These main-votes must be justified with a appropriate justification.
+These main-votes must be justified with an appropriate justification.
 A main-vote for $$v$$ may be justified in two ways:
 
 - **Non-conflicting**: that is the quorum certificate for $$\langle \text{CP:PRE-VOTE},h,r,r_{cp},b \rangle$$
@@ -199,8 +199,8 @@ participate in the protocol for one more round. Otherwise, the validator proceed
 
 ### Comparison
 
-Pactus consensus protocl doesn't have any lcoking mechanism or
-checkpointing and there will at most one valid proposla per round.
+Pactus consensus protocol doesn't have any locking mechanism or
+checkpointing and there will at most one valid proposal per round.
 This ensures that each round can begin with a new proposal.
 
 <table>
