@@ -26,7 +26,7 @@ version: 1
 
 成为验证者，您可以为为网络的安全性和去中心化做出贡献而获得 [奖励]({{ site.baseurl }}/learn/blockchain/incentive/) 。
 
-要成为验证者，您需要抵押一定数量的Pactus币。 
+要成为验证者，您需要抵押一定数量的Pactus币。
 以下指南可以帮助您发送一个质押交易并抵押一些币：
 
 - [{% t dict.guide.send_transactions_gui %}]({{ site.baseurl }}/user-guides/send-transactions-gui)
