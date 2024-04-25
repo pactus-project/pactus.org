@@ -18,7 +18,7 @@ dict:
   source_code: GitHub <i class="fa fa-external-link" aria-hidden="true"></i>
   laboratory: 实验室 <i class="fa fa-external-link" aria-hidden="true"></i>
   pips: PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
-  whitepaper: Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+  whitepaper: 白皮书 <i class="fa fa-external-link" aria-hidden="true"></i>
 
   home:
     title: 主页
@@ -41,11 +41,11 @@ dict:
       相信帕图斯在所有验证者和社区贡献者的支持下会变的更好。<br>
       让我们一起努力，共同创造属于我们的世界！
     partners: 合作伙伴
-    validators: Our Validators
-    newsletter: Subscribe to the Pactus Newsletter
-    newsletter_desc: Dive into the latest updates and insights from the Pactus Blockchain.
-      Receive crucial information on new developments, enhancements, and partnerships directly to your inbox.
-      Stay connected and informed, whether you're an investor, developer, or blockchain enthusiast.
+    validators: 我们的验证者
+    newsletter: 订阅Pactus的最新消息
+    newsletter_desc: 深入了解来自Pactus区块链的最新更新和见解.
+      将最新发展、改进以及合作伙伴关系的重要信息发送到您的收件箱.
+      无论您是投资者、开发者还是区块链爱好者，都可以与我们保持联系并了解最新信息.
 
   community:
     title: 社区
@@ -61,9 +61,9 @@ dict:
     twitter: 帕图斯在 Twitter 上
     instagram: 帕图斯在 Instagram 上
     linkedin: 帕图斯在 LinkedIn 上
-    bitcoin_talk: Pactus on Bitcoin Talk
+    bitcoin_talk: 帕图斯在Bitcoin Talk上
     community_ran: >
-      To explore the communities managed by members of the community, you can follow the links below.
+      要探索由社区成员管理的社区，请跟随下面的链接.
     telegram_chat: Pactus Chat
     nigeria: Pactus Nigeria
     facebook: Pactus on Facebook
@@ -94,7 +94,7 @@ dict:
 
   blog:
     title: 博客
-    back: « Back to the blog list
+    back: « 返回列表
     all_posts: 所有文章
 
   learn:
@@ -143,13 +143,13 @@ dict:
       高级用户可以从[Docker Hub](https://hub.docker.com/r/pactus/pactus)获取帕图斯docker镜像。
     docker_after_download: >
       您可以按照本教程使用Docker设置和运行节点：
-    downloader_script: Downloader script
+    downloader_script: 下载脚本
     downloader_script_explained: >
-      For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
-      (e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
-      there is a downloader script available.
-      This script can download the archived file, verify it, and extract it for you.
-      To use it, simply run the following command in your terminal:
+      对于 [类Unix系统](https://en.wikipedia.org/wiki/Unix-like)
+      (例如, Linux, macOS, 或 [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
+      使用的是同一个下载脚本.
+      该脚本可以下载存档文件，验证它，并为您解压缩它.
+      要使用它，只需在终端中运行以下命令:
 
   faq:
     title: 常见问题解答
@@ -166,7 +166,7 @@ dict:
     pactus_meaning_answer: >
       [version: 1] Pactus一词源自拉丁语，意为共同协议、契约或交易。
       在英语中，Pact一词源自拉丁词汇Pactus。
-    pactus_vs_bitcoin: Pactus与比特币有何不同？
+    pactus_vs_bitcoin: Pactus与比特币有何不同?
     pactus_vs_bitcoin_answer: >
       [version: 1] Pactus和比特币是两种不同类型的区块链网络。
        比特币使用称为工作量证明的过程来保护其网络，而Pactus使用一种称为股权证明的不同方法。
@@ -189,30 +189,30 @@ dict:
     flat_reward: Pactus中的区块奖励是多少？
     flat_reward_answer: >
       [version: 1] Pactus的区块奖励是固定的，每个区块始终为1枚币。这种平坦奖励方案有助于确保简单性、公平性和更好的币分配。
-    coins_per_day: How many PAC coins are generated per day?
+    coins_per_day: 每天生成多少个PAC币?
     coins_per_day_answer: >
-      [version: 1] Daily, a total amount of 8640 PAC is generated. This figure translates to 241,000 every 28 days and 3,153,600 per year.
+      [version: 1] 每天总共生成8640个PAC币。这个数字相当于每28天生成241,000个，每年生成3,153,600个.
     unlimited_validators: Pactus有多少个验证者？
     unlimited_validators_answer: >
       [version: 1] Pactus是一个真正的权益证明区块链，这意味着网络中的验证者数量没有限制。但是，由21个验证者组成的委员会负责创建区块。需要注意的是，委员会成员不固定，随时间变化。
     min_and_max_stake: 我可以质押的最小和最大金额是多少？
     min_and_max_stake_answer: >
       [version: 1] 在Pactus中，没有质押币的最低限制，但您可以质押的最大金额为1000个币。如果您想质押超过1000个币，可以运行新的验证者。运行多个验证者可以保持网络更加去中心化，并有助于维护其安全性和稳定性。
-    min_hardware_requirements: What are the minimum hardware requirements?
+    min_hardware_requirements: 硬件最低要求什么配置?
     min_hardware_requirements_answer: >
-      [version: 1] After thorough testing on multiple machines, we can conclude that the reccomended minimum hardware<br>
-      requirements are as follows:<br><br>
+      [version: 1] 经过在多台机器上的彻底测试，我们可以得出推荐的最低硬件要求<br>
+      要求如下:<br><br>
       VPS:<br>
-      * CPU's: 1/2 physical core / 1vCPU<br>
-      * RAM: 1 GB Ram<br>
-      * Storage (SSD): 20 GB NVMe Drive<br>
-      * Network: stable internet connection with 1 TBps speed<br><br>
+      * CPU's: 1/2 物理核 / 1vCPU<br>
+      * 内存: 1 GB Ram<br>
+      * 硬盘 (SSD): 20 GB NVMe 硬盘<br>
+      * 网络: 稳定的互联网连接，速度为1 TBps<br><br>
       PC:<br>
-      * CPU's: 2 physical cores / 4vCPU<br>
-      * RAM: 4 GB Ram<br>
-      * Storage (SSD): 64 GB SSD Drive<br>
-      * Network: stable internet connection with over 15 MBps speed<br><br>
-      **Note** These specifications have been tested and provide an availabilty score of over 0.9.
+      * CPU's: 2 物理核 / 4vCPU (或4个虚拟核)<br>
+      * 内存: 4 GB 内存<br>
+      * 硬盘 (SSD): 64 GB SSD 硬盘<br>
+      * 网络: 稳定的互联网连接，速度为15MBps<br><br>
+      **提示** 这些规格经过测试，可提供超过0.9的可用性得分.
     total_supply: Pactus币的总供应量是多少？
     total_supply_answer: >
       [version: 1] Pactus的总供应量为2100万枚币，每枚币被分为10亿个单位。每10秒钟会生成一枚新的币，每天会产生8640枚币，每年约300万枚币。所有币将在7年内产生。
@@ -222,16 +222,16 @@ dict:
     treasury_account: 什么是国库账户？
     treasury_account_answer: >
       [version: 1] 国库账户是Pactus区块链中的一个特殊账户，持有总供应量2100万个币。它在创世时创建，没有与之关联的密钥对，这意味着任何人都无法访问或控制它。每当创建一个区块时，从国库账户中转移一枚币到提案者账户作为区块奖励。
-    without_ico: Did Pactus have an ICO?
+    without_ico: Pactus进行了ICO吗?
     without_ico_answer: >
       [version: 1] 不，Pactus没有ICO（首次代币发行），也没有预定义或特权账户。
       Pactus区块链从零开始，所有的币都是通过共识机制铸造的。
       这确保了币的分配是公平的，没有财富的集中化。
-    no_pre_sales: Where can I buy Pactus coins?
+    no_pre_sales: 在哪里可以购买Pactus币?
     no_pre_sales_answer: >
-      [version: 1] Pactus does not have any pre-sales coins.
-      The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation.
-      By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
+      [version: 1] Pactus没有任何预售币.
+      目前获得Pactus币的唯一方式是安装Pactus软件并积极参与区块验证.
+      通过参与网络并为区块验证做出贡献，您将获得Pactus币作为奖励.
     fee_model: Pactus的交易费是如何计算的？
     fee_model_answer: >
       [version: 1] Pactus的交易费是使用基于百分比的费用模型来计算的。
