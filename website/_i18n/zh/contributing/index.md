@@ -2,55 +2,49 @@
 version: 1
 ---
 
-As an open-source platform, Pactus blockchain empowers from its community.
-Whether you're a developer, designer, or enthusiast, your contributions can make a meaningful impact.
+作为一个开源平台，Pactus区块链从其社区中获得力量。  
+无论您是开发人员、设计师还是爱好者，您的贡献都能产生深远的影响。  
 
-There are several ways to support the Pactus project:
+支持Pactus项目有几种方式：
 
-## Run a Node
+## 运行节点
 
-One of the most effective ways to contribute to the Pactus network is by running a node.
-A "node" is a software program that downloads a copy of the Pactus blockchain and
-ensure the network keeps running safe and decentralized.
+贡献给Pactus网络最有效的方式之一是运行一个节点。  
+"node"是一个软件程序，它下载Pactus区块链的副本，并确保网络持续安全和去中心化。  
 
-These guides can help you to run and configure your node:
+这些指南可以帮助您运行和配置您的节点:
 
 - [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/pactus-gui)
 - [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/pactus-daemon)
 - [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/pactus-docker)
 
-## Become a Validator
+## 成为一名验证者
 
-Validators play an important role in the Pactus blockchain by verifying transactions and
-adding them to the blockchain.
-By becoming a validator, you can earn [rewards]({{ site.baseurl }}/learn/blockchain/incentive/)
-for contributing to the network's security and decentralization.
+通过验证交易并将其添加到区块链，验证者在Pactus区块链中发挥着重要作用。  
+成为验证者，您可以为为网络的安全性和去中心化做出贡献而获得 [奖励]({{ site.baseurl }}/learn/blockchain/incentive/) 。  
 
-To become a validator, you will need to stake a certain amount of Pactus coins.
-These guides can help you to send a Bond transaction and stake some coins:
+要成为验证者，您需要抵押一定数量的Pactus币。 
+以下指南可以帮助您发送一个质押交易并抵押一些币：
 
 - [{% t dict.guide.send_transactions_gui %}]({{ site.baseurl }}/user-guides/send-transactions-gui)
 - [{% t dict.guide.use_wallet_cli %}]({{ site.baseurl }}/user-guides/pactus-wallet)
 
-## Develop
+## 开发
 
-Pactus is an open-source project that welcomes and encourages contributions from developers.
-By contributing to the project, you can help improve the Pactus platform and create new features that
-benefit the entire community.
+Pactus是一个开源项目，欢迎并鼓励开发者做出贡献。
+通过为项目做出贡献，您可以帮助改进Pactus平台，并创建新功能，使整个社区受益。
 
-You can check our [Contributing](https://github.com/pactus-project/pactus/blob/main/CONTRIBUTING.md) page
-for more information on how to get involved and contribute to the project.
+你可以查看我们的 [贡献](https://github.com/pactus-project/pactus/blob/main/CONTRIBUTING.md) 页面，了解如何参与并为项目做出贡献的更多信息。
 
-## Translation
+## 翻译
 
-Another way to contribute to the Pactus project is by translating this website into other languages and
-improving its content.
+另一种支持Pactus项目的方式是将该网站翻译成其他语言，并改进其内容。
 
-## Spread the Word
+## 宣传推广
 
-The more people who know about Pactus, the more opportunities there are for collaboration and growth.
-Share our project on social media, attend Pactus events, or simply tell your friends and colleagues about us.
+了解Pactus的人越多，合作和增长的机会就越多。  
+在社交媒体上分享我们的项目，参加Pactus活动，或者简单地告诉您的朋友和同事关于我们。
 
 ---
 
-Together, Let's build a better future for blockchain technology.
+一起来，让我们为区块链技术构建一个更美好的未来。
