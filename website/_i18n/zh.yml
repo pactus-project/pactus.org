@@ -153,10 +153,10 @@ dict:
 
   faq:
     title: 常见问题解答
-    read_more: Read more
+    read_more: 阅读全文
     general: 常规问题
     validator: 验证节点问题
-    economy: Economy
+    economy: 经济问题
     consensus: 共识问题
     transaction: 交易问题
     fee: 手续费问题
@@ -201,13 +201,13 @@ dict:
     min_hardware_requirements: 硬件最低要求什么配置?
     min_hardware_requirements_answer: >
       [version: 1] 经过在多台机器上的彻底测试，我们可以得出推荐的最低硬件要求<br>
-      要求如下:<br><br>
-      VPS:<br>
-      * CPU's: 1/2 物理核 / 1vCPU<br>
+      要求如下: <br><br>
+      VPS: <br>
+      * CPU's: 1/2 物理核 / 1vCPU (或1个虚拟核) <br>
       * 内存: 1 GB Ram<br>
       * 硬盘 (SSD): 20 GB NVMe 硬盘<br>
       * 网络: 稳定的互联网连接，速度为1 TBps<br><br>
-      PC:<br>
+      PC: <br>
       * CPU's: 2 物理核 / 4vCPU (或4个虚拟核)<br>
       * 内存: 4 GB 内存<br>
       * 硬盘 (SSD): 64 GB SSD 硬盘<br>
@@ -325,106 +325,93 @@ dict:
     withdraw_transaction: 什么是提现交易？
     withdraw_transaction_answer: >
       [version: 1] 提现交易是一种交易类型，允许验证者从网络中提取他们抵押的币。
-    multiple_validators: Can I run multiple validators on one computer?
+    multiple_validators: 我可以在一台节点上运行多个验证器吗?
     multiple_validators_answer: >
-      [version: 1] The Pactus software allows you to run up to 32 validators on a single node.
-      Running multiple validators may require slightly more memory, but it has no impact on storage,
-      and has a negligible effect on CPU and networking usage.
-      Running multiple validators on a single node enables users to distribute their stake across multiple validators,
-      especially when they want to stake more than the maximum stake per validator.
-      This eliminates the need for additional resources and simplifies node management.
-    staking_limit: Why is there a limit for maximum stake?
+      [version: 1] Pactus软件允许您在单个节点上运行多达32个验证器。
+      运行多个验证器可能需要稍多的内存，但对存储没有影响，对CPU和网络使用量的影响可以忽略不计。
+      在单个节点上运行多个验证器使用户能够将他们的股份分散到多个验证器上。
+      特别是当他们想要对每个验证器的最大股份进行抵押时。
+      这消除了对额外资源的需求，并简化了节点管理。
+    staking_limit: 为什么有最大抵押限制?
     staking_limit_answer: >
-      [version: 1] The limit for the maximum stake per validator enhances decentralization and
-      prevents validators from gaining too much power, which could potentially lead them to control the committee.
-      The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
-    genesis_allocation: How are Genesis Coins allocated in Pactus?
+      [version: 1] 最大验证器抵押限制的设立增强了去中心化，并防止验证器获得过多权力，可能导致他们控制委员会。
+      最大抵押限制是共识参数的一部分，可以通过验证器之间的共识在将来进行更改。
+    genesis_allocation: Genesis Coins在Pactus中是如何分配的?
     genesis_allocation_answer: >
-      [version: 1] The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
+      [version: 1] Pactus区块链中Genesis Coins的初始分配如下:
       <br><br>
       <table>
-        <caption>Genesis Coin Allocation for Pactus</caption>
+        <caption>Pactus的Genesis代币分配</caption>
         <thead>
             <tr>
-                <th>Category</th>
-                <th>Coin Allocation</th>
-                <th>Percentage</th>
+                <th>类型</th>
+                <th>代币分配</th>
+                <th>百分比</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Treasury</td>
-                <td>21 Million coins</td>
+                <td>国库</td>
+                <td>2100万枚代币</td>
                 <td>50%</td>
             </tr>
             <tr>
-                <td>Foundation</td>
-                <td>8.4 Million coins</td>
+                <td>基金</td>
+                <td>840万枚代币</td>
                 <td>20%</td>
             </tr>
             <tr>
-                <td>VC Allocation</td>
-                <td>6.3 Million coins</td>
+                <td>VC分配</td>
+                <td>630万枚代币</td>
                 <td>15%</td>
             </tr>
             <tr>
-                <td>Team and Operations</td>
-                <td>4.2 Million coins</td>
+                <td>团队和运营</td>
+                <td>420万枚代币</td>
                 <td>10%</td>
             </tr>
             <tr>
-                <td>Community</td>
-                <td>2.1 Million coins</td>
+                <td>社区</td>
+                <td>210万枚代币</td>
                 <td>5%</td>
             </tr>
         </tbody>
       </table>
-    treasury_distribution: How are Treasury coins distributed?
+    treasury_distribution: 国库中的代币是如何分配的?
     treasury_distribution_answer: >
-      [version: 1] Treasury coins are distributed as block rewards to the block proposers.
-      Every 10 seconds, one coin from the Treasury account transfers to the block proposer account.
-      This process is called "coin minting".
-      As a result, the total number of Pactus coins in circulation gradually increases over time as new blocks are added to the blockchain.
-      Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually by the Treasury account.
-    block_confirmation: How much is the block confirmation in the Pactus Blockchain?
+      [version: 1] 国库币是作为区块奖励分配给区块提议者的，每10秒钟，国库帐户中的一枚硬币转移到区块提议者帐户，这个过程称为“铸币”。
+      因此，随着新的区块被添加到区块链中，Pactus币的总量会随时间逐渐增加。每天铸造8,640个硬币，这意味着国库帐户每年大约铸造约300万个硬币。
+    block_confirmation: Pactus链的区块确认时间是多少?
     block_confirmation_answer: >
-      [version: 1] Block confirmation refers to the number of blocks that need to be created
-      before a transaction is considered final and irreversible. In Pactus, block confirmation is immediate,
-      meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
-    support_distribution: How will the Support coins be spent?
+      [version: 1] 在Pactus中，区块确认是立即的，这意味着一旦交易被添加到区块中，它就被认为是已确认的，并且不能被撤销。
+    support_distribution: 支持币将如何被支出?
     support_distribution_answer: >
-      The support accounts are designed to provide financial backing for the project.
-      Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts.
-      The introduction of support coins was a strategic response to the absence of investors,
-      despite the significant progress of the project.
+      支持帐户旨在为项目提供财务支持。
+      最初，Pactus Genesis仅包含国库帐户，没有任何备份或支持帐户。
+      支持币的引入是对缺乏投资者的战略性回应，尽管项目取得了显着进展。
       <br><br>
-      These coins are allocated in several ways:
+      这些币的分配方式有几种:
       <ul>
-        <li><b>Community</b>:
-          This portion will mainly support the community.
-          As part of this, the participants on Testnets receive initial staking coins to
-          setup their validator and secure the Mainnet.
+        <li><b>社区</b>:
+          这部分主要将支持社区。作为其中的一部分，测试网上的参与者将获得初始抵押币来建立他们的验证器并保护主网。
         </li>
-        <li><b>Team and Operations</b>:
-          Another portion supports the project team.
-          Team members receive a monthly distribution of these coins, which is estimated to sustain the team for over six years.
+        <li><b>团队运营</b>:
+          另一部分支持项目团队。团队成员每月分配这些币，预计可以维持团队超过六年的时间。
         </li>
-        <li><b>Venture Capital (VC) Allocation</b>:
-          Another portion is set aside for any potential venture capitalists who
-          might show interest in investing in the project in the future.
+        <li><b>风险投资（VC）分配</b>:
+          另一部分被留出，以供未来可能对项目感兴趣的风险投资者投资。
         </li>
-        <li><b>Foundation</b>:
-          The foundation coins are reserved for future use, potentially in supporting strong projects that align with Pactus's objectives.
+        <li><b>基金</b>:
+          基金被保留以备将来使用，可能用于支持与Pactus目标相一致的优秀项目。
         </li>
       </ul>
 
-      Transparency is a key aspect of this allocation, as all movements of these
-      coins are trackable due to the fully transparent nature of the blockchain.
+      透明度是这种分配的关键方面，因为所有这些币的流动都是可追踪的，这是由于区块链的完全透明性质所致。
 
   guide:
     title: 用户指南
     welcome: 在这里，您可以找到一些指南，帮助您使用和与帕图斯区块链进行交互。
-    back: « Back to the user guides list
+    back: « 返回
     beginner: 初学者
     advanced: 高级
     run_pactus_gui: 如何以图形模式运行帕图斯？
@@ -432,24 +419,23 @@ dict:
     run_pactus_docker: 如何使用Docker运行帕图斯？
     send_transactions_gui: 如何在图形模式下发送交易？
     use_wallet_cli: 如何在命令行模式下使用钱包？
-    reduce_network: How to reduce the network usage?
-    run_pactus_metrics: How to run Pactus Metrics?
-    grpc-sign-transactions: How to sign transaction using gRPC?
-    grpc-basic-auth: How to secure gRPC using basic authentication?
-    become-a-validator: Become a validator
+    reduce_network: 如何减少网络使用量？
+    run_pactus_metrics: 如何运行Pactus Metrics指标？
+    grpc-sign-transactions: 如何使用 gRPC 签署交易？
+    grpc-basic-auth: 如何使用基本身份验证来保护 gRPC？
+    become-a-validator: 成为一名验证者
     wallet_seed_important: >
-      <b>Wallet seed is important</b>
+      <b>钱包种子(seed)非常重要</b>
       <br><br>
-      Keep your wallet seed phrase private and secure.
-      If someone else gains access to your seed phrase, they can control your wallet and funds.
+      保护您的钱包种子短语私密并且安全。如果其他人获得了您的种子短语，他们就可以控制您的钱包和资金。
     by_running_pactus: >
-      By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
-      Thank you for your participation!
-    default_ports: Default Ports
+      通过运行Pactus节点，您为Pactus区块链网络的去中心化和安全做出了贡献。
+      感谢您的参与！
+    default_ports: 默认端口
     default_ports_explained: >
-      The default network ports in Pactus are defined as follows. It is recommended not to change these default ports:
+      Pactus中的默认网络端口定义如下。建议不要更改这些默认端口:
 
-        - [P2P](https://libp2p.io/) port is set to 21888. P2P supports both UDP and TCP protocols.
-        - [gRPC](https://grpc.io/) port is set to 50051. The gRPC module is enabled by default for localhost.
-        - [gRPC-gateway](https://grpc-ecosystem.github.io/grpc-gateway/) is set to 8080. gRPC-gateway is disabled by default.
-        - [Nanomsg](https://nanomsg.org/) port is set to 40899. The Nanomsg service is disabled by default.
+        - [P2P](https://libp2p.io/) 端口设置为21888。P2P支持UDP和TCP协议。
+        - [gRPC](https://grpc.io/) 端口设置为50051。gRPC模块默认启用为localhost。
+        - [gRPC-gateway](https://grpc-ecosystem.github.io/grpc-gateway/) 设置为8080。gRPC-gateway默认禁用。
+        - [Nanomsg](https://nanomsg.org/) 端口设置为40899。Nanomsg服务默认禁用。
