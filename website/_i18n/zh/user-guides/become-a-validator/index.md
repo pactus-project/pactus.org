@@ -66,7 +66,7 @@ or CLI]( {{ site.baseurl }}/download/ ){:target="\_blank"} for initlize your nod
 
 ![Wallet Password]({{ site.url }}/user-guides/become-a-validator/wallet-password.png)
 
-- Yyou can select the number of validators on your node for staking.
+- You can select the number of validators on your node for staking.
   You can choose between 7 and 32 validators for each node.
 
 ![Number of validators]({{ site.url }}/user-guides/become-a-validator/number-of-validators.png)
