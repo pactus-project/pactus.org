@@ -139,6 +139,11 @@ h3 {
     font-size: 20px;
   }
 
+  .short {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
 }
 
 .btn-fixed {
@@ -211,7 +216,7 @@ h3 {
   }
 }
 
-table {
+.table {
   thead tr th {
     font-weight: 700;
     background-color: var(--bg-color) !important;
@@ -337,4 +342,8 @@ blockquote {
   img {
     padding-top: 24px;
   }
+}
+
+.sensifai{
+  max-width: 300px;
 }

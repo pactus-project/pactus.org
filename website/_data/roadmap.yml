@@ -10,12 +10,19 @@
   title: Desktop and Mobile Friendly GUI
   date: July 2024
 
-- status: ongoing
-  title: CLI tools for controlling Pactus node
-  date: Jun 2024
+- status: completed
+  title: Pactus 1.1 (Hanoi) Released
+  link: /2024/04/14/release-1-1-0.html
+  date: January 2024
 
-- status: ongoing
-  title: First Interactive Block Explorer
+- status: completed
+  title: Pactus Shell
+  link: /user-guides/pactus-shell/
+  date: April 2024
+
+- status: completed
+  title: Block Explorer
+  link: https://pacviewer.com/
   date: April 2024
 
 - status: completed

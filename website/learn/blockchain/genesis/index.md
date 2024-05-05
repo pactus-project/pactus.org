@@ -40,7 +40,7 @@ These parameters are hardcoded into the project and include:
   are defined at genesis time and ensure that the entire network operates within the same configuration.
   These consensus parameters are discussed in detail in the consensus section of the documentation.
 - **Treasury Account**: The [treasury account]({{ site.baseurl }}/learn/blockchain/account/#treasury-account)
-  holds  21 million coins at the genesis time. Each coin is divided into 1 billion units.
+  holds 21 million coins at the genesis time. Each coin is divided into 1 billion units.
 - **Reserved Accounts**: Reserved account are defined at the Genesis time and at total they have 21 milion coins.
   These coins are reserved and the main purpise is to support the project over time.
 - **Bootstrap Validators** The bootstrap validators are defined by their public keys.

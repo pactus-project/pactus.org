@@ -36,12 +36,14 @@
   path: learn/api
   items:
     - doc: grpc
+    - doc: http
+    - doc: json-rpc
 
 - title: Pactus Glossary
   path: learn/glossary
   items:
     - doc: glossary
-
+    
 # - title: Smart Contract
 #   path: learn/smart-contract
 #   items:

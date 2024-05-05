@@ -3,11 +3,13 @@ layout: learn
 title: gRPC API Reference
 sidebar: gRPC API Reference
 ---
-
 <h1 id="title">gRPC API Reference</h1>
 
 Each node in the Pactus network can be configured to use the [gRPC](https://grpc.io/) protocol for communication.
 Here you can find the list of all gRPC methods and messages.
+
+All the amounts and values in gRPC endpoints are in NanoPAC units, which are atomic and the smallest unit in the Pactus blockchain.
+Each PAC is equivalent to 1,000,000,000 or 10<sup>9</sup> NanoPACs.
 
 <h2>Table of Contents</h2>
 
@@ -36,8 +38,8 @@ Here you can find the list of all gRPC methods and messages.
           <span class="badge text-bg-primary">rpc</span> GetRawBondTransaction</a>
         </li>
         <li>
-          <a href="#pactus.Transaction.GetRawUnBondTransaction">
-          <span class="badge text-bg-primary">rpc</span> GetRawUnBondTransaction</a>
+          <a href="#pactus.Transaction.GetRawUnbondTransaction">
+          <span class="badge text-bg-primary">rpc</span> GetRawUnbondTransaction</a>
         </li>
         <li>
           <a href="#pactus.Transaction.GetRawWithdrawTransaction">
@@ -124,6 +126,10 @@ Here you can find the list of all gRPC methods and messages.
           <span class="badge text-bg-primary">rpc</span> UnlockWallet</a>
         </li>
         <li>
+          <a href="#pactus.Wallet.GetTotalBalance">
+          <span class="badge text-bg-primary">rpc</span> GetTotalBalance</a>
+        </li>
+        <li>
           <a href="#pactus.Wallet.SignRawTransaction">
           <span class="badge text-bg-primary">rpc</span> SignRawTransaction</a>
         </li>
@@ -131,9 +137,16 @@ Here you can find the list of all gRPC methods and messages.
           <a href="#pactus.Wallet.GetValidatorAddress">
           <span class="badge text-bg-primary">rpc</span> GetValidatorAddress</a>
         </li>
+        <li>
+          <a href="#pactus.Wallet.GetNewAddress">
+          <span class="badge text-bg-primary">rpc</span> GetNewAddress</a>
+        </li>
+        <li>
+          <a href="#pactus.Wallet.GetAddressHistory">
+          <span class="badge text-bg-primary">rpc</span> GetAddressHistory</a>
+        </li>
       </ul>
     </li>
-
     <li>Messages and Enums
       <ul>
         <li>
@@ -172,8 +185,8 @@ Here you can find the list of all gRPC methods and messages.
           </a>
         </li>
         <li>
-          <a href="#pactus.GetRawUnBondTransactionRequest">
-            <span class="badge text-bg-secondary">msg</span> GetRawUnBondTransactionRequest
+          <a href="#pactus.GetRawUnbondTransactionRequest">
+            <span class="badge text-bg-secondary">msg</span> GetRawUnbondTransactionRequest
           </a>
         </li>
         <li>
@@ -392,6 +405,11 @@ Here you can find the list of all gRPC methods and messages.
           </a>
         </li>
         <li>
+          <a href="#pactus.AddressInfo">
+            <span class="badge text-bg-secondary">msg</span> AddressInfo
+          </a>
+        </li>
+        <li>
           <a href="#pactus.CreateWalletRequest">
             <span class="badge text-bg-secondary">msg</span> CreateWalletRequest
           </a>
@@ -402,6 +420,36 @@ Here you can find the list of all gRPC methods and messages.
           </a>
         </li>
         <li>
+          <a href="#pactus.GetAddressHistoryRequest">
+            <span class="badge text-bg-secondary">msg</span> GetAddressHistoryRequest
+          </a>
+        </li>
+        <li>
+          <a href="#pactus.GetAddressHistoryResponse">
+            <span class="badge text-bg-secondary">msg</span> GetAddressHistoryResponse
+          </a>
+        </li>
+        <li>
+          <a href="#pactus.GetNewAddressRequest">
+            <span class="badge text-bg-secondary">msg</span> GetNewAddressRequest
+          </a>
+        </li>
+        <li>
+          <a href="#pactus.GetNewAddressResponse">
+            <span class="badge text-bg-secondary">msg</span> GetNewAddressResponse
+          </a>
+        </li>
+        <li>
+          <a href="#pactus.GetTotalBalanceRequest">
+            <span class="badge text-bg-secondary">msg</span> GetTotalBalanceRequest
+          </a>
+        </li>
+        <li>
+          <a href="#pactus.GetTotalBalanceResponse">
+            <span class="badge text-bg-secondary">msg</span> GetTotalBalanceResponse
+          </a>
+        </li>
+        <li>
           <a href="#pactus.GetValidatorAddressRequest">
             <span class="badge text-bg-secondary">msg</span> GetValidatorAddressRequest
           </a>
@@ -409,6 +457,11 @@ Here you can find the list of all gRPC methods and messages.
         <li>
           <a href="#pactus.GetValidatorAddressResponse">
             <span class="badge text-bg-secondary">msg</span> GetValidatorAddressResponse
+          </a>
+        </li>
+        <li>
+          <a href="#pactus.HistoryInfo">
+            <span class="badge text-bg-secondary">msg</span> HistoryInfo
           </a>
         </li>
         <li>
@@ -482,7 +535,11 @@ Here you can find the list of all gRPC methods and messages.
             <span class="badge text-bg-info">enum</span> VoteType
           </a>
         </li>
-
+        <li>
+          <a href="#pactus.AddressType">
+            <span class="badge text-bg-info">enum</span> AddressType
+          </a>
+        </li>
         <li>
           <a href="#scalar-value-types">Scalar Value Types</a>
         </li>
@@ -492,15 +549,15 @@ Here you can find the list of all gRPC methods and messages.
 </div>
 
 <h2>Transaction Service <span class="badge text-bg-warning fs-6 align-top">transaction.proto</span></h2>
-<p>Transaction service defines various RPC methods for interacting with transactions.</p>
+<p>Transaction service defines various RPC methods for interacting with</p><p>transactions.</p>
 <h3 id="pactus.Transaction.GetTransaction">GetTransaction <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetTransactionRequest">GetTransactionRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetTransactionResponse">GetTransactionResponse</a></div>
-<p>GetTransaction retrieves transaction details based on the provided request parameters.</p>
+<p>GetTransaction retrieves transaction details based on the provided request</p><p>parameters.</p>
 <h3 id="pactus.Transaction.CalculateFee">CalculateFee <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.CalculateFeeRequest">CalculateFeeRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.CalculateFeeResponse">CalculateFeeResponse</a></div>
-<p>CalculateFee calculates the transaction fee based on the specified amount and payload type.</p>
+<p>CalculateFee calculates the transaction fee based on the specified amount</p><p>and payload type.</p>
 <h3 id="pactus.Transaction.BroadcastTransaction">BroadcastTransaction <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.BroadcastTransactionRequest">BroadcastTransactionRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.BroadcastTransactionResponse">BroadcastTransactionResponse</a></div>
@@ -513,10 +570,10 @@ Here you can find the list of all gRPC methods and messages.
 <div class="request pt-3">Request message: <a href="#pactus.GetRawBondTransactionRequest">GetRawBondTransactionRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetRawTransactionResponse">GetRawTransactionResponse</a></div>
 <p>GetRawBondTransaction retrieves raw details of a bond transaction.</p>
-<h3 id="pactus.Transaction.GetRawUnBondTransaction">GetRawUnBondTransaction <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
-<div class="request pt-3">Request message: <a href="#pactus.GetRawUnBondTransactionRequest">GetRawUnBondTransactionRequest</a></div>
+<h3 id="pactus.Transaction.GetRawUnbondTransaction">GetRawUnbondTransaction <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
+<div class="request pt-3">Request message: <a href="#pactus.GetRawUnbondTransactionRequest">GetRawUnbondTransactionRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetRawTransactionResponse">GetRawTransactionResponse</a></div>
-<p>GetRawUnBondTransaction retrieves raw details of an unbond transaction.</p>
+<p>GetRawUnbondTransaction retrieves raw details of an unbond transaction.</p>
 <h3 id="pactus.Transaction.GetRawWithdrawTransaction">GetRawWithdrawTransaction <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetRawWithdrawTransactionRequest">GetRawWithdrawTransactionRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetRawTransactionResponse">GetRawTransactionResponse</a></div>
@@ -526,7 +583,7 @@ Here you can find the list of all gRPC methods and messages.
 <h3 id="pactus.Blockchain.GetBlock">GetBlock <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetBlockRequest">GetBlockRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetBlockResponse">GetBlockResponse</a></div>
-<p>GetBlock retrieves information about a block based on the provided request parameters.</p>
+<p>GetBlock retrieves information about a block based on the provided request</p><p>parameters.</p>
 <h3 id="pactus.Blockchain.GetBlockHash">GetBlockHash <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetBlockHashRequest">GetBlockHashRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetBlockHashResponse">GetBlockHashResponse</a></div>
@@ -546,15 +603,15 @@ Here you can find the list of all gRPC methods and messages.
 <h3 id="pactus.Blockchain.GetAccount">GetAccount <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetAccountRequest">GetAccountRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetAccountResponse">GetAccountResponse</a></div>
-<p>GetAccount retrieves information about an account based on the provided address.</p>
+<p>GetAccount retrieves information about an account based on the provided</p><p>address.</p>
 <h3 id="pactus.Blockchain.GetValidator">GetValidator <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetValidatorRequest">GetValidatorRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetValidatorResponse">GetValidatorResponse</a></div>
-<p>GetValidator retrieves information about a validator based on the provided address.</p>
+<p>GetValidator retrieves information about a validator based on the provided</p><p>address.</p>
 <h3 id="pactus.Blockchain.GetValidatorByNumber">GetValidatorByNumber <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetValidatorByNumberRequest">GetValidatorByNumberRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetValidatorResponse">GetValidatorResponse</a></div>
-<p>GetValidatorByNumber retrieves information about a validator based on the provided number.</p>
+<p>GetValidatorByNumber retrieves information about a validator based on the</p><p>provided number.</p>
 <h3 id="pactus.Blockchain.GetValidatorAddresses">GetValidatorAddresses <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetValidatorAddressesRequest">GetValidatorAddressesRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetValidatorAddressesResponse">GetValidatorAddressesResponse</a></div>
@@ -562,7 +619,7 @@ Here you can find the list of all gRPC methods and messages.
 <h3 id="pactus.Blockchain.GetPublicKey">GetPublicKey <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetPublicKeyRequest">GetPublicKeyRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetPublicKeyResponse">GetPublicKeyResponse</a></div>
-<p>GetPublicKey retrieves the public key of an account based on the provided address.</p>
+<p>GetPublicKey retrieves the public key of an account based on the provided</p><p>address.</p>
 <h2>Network Service <span class="badge text-bg-warning fs-6 align-top">network.proto</span></h2>
 <p>Network service provides RPCs for retrieving information about the network.</p>
 <h3 id="pactus.Network.GetNetworkInfo">GetNetworkInfo <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
@@ -590,11 +647,15 @@ Here you can find the list of all gRPC methods and messages.
 <h3 id="pactus.Wallet.LockWallet">LockWallet <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.LockWalletRequest">LockWalletRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.LockWalletResponse">LockWalletResponse</a></div>
-<p>LockWallet locks a currently loaded wallet with the provided password and timeout.</p>
+<p>LockWallet locks a currently loaded wallet with the provided password and</p><p>timeout.</p>
 <h3 id="pactus.Wallet.UnlockWallet">UnlockWallet <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.UnlockWalletRequest">UnlockWalletRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.UnlockWalletResponse">UnlockWalletResponse</a></div>
-<p>UnlockWallet unlocks a locked wallet with the provided password and timeout.</p>
+<p>UnlockWallet unlocks a locked wallet with the provided password and</p><p>timeout.</p>
+<h3 id="pactus.Wallet.GetTotalBalance">GetTotalBalance <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
+<div class="request pt-3">Request message: <a href="#pactus.GetTotalBalanceRequest">GetTotalBalanceRequest</a></div>
+<div class="response pb-3">Response message: <a href="#pactus.GetTotalBalanceResponse">GetTotalBalanceResponse</a></div>
+<p>GetTotalBalance returns the total available balance of the wallet.</p>
 <h3 id="pactus.Wallet.SignRawTransaction">SignRawTransaction <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.SignRawTransactionRequest">SignRawTransactionRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.SignRawTransactionResponse">SignRawTransactionResponse</a></div>
@@ -602,7 +663,15 @@ Here you can find the list of all gRPC methods and messages.
 <h3 id="pactus.Wallet.GetValidatorAddress">GetValidatorAddress <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
 <div class="request pt-3">Request message: <a href="#pactus.GetValidatorAddressRequest">GetValidatorAddressRequest</a></div>
 <div class="response pb-3">Response message: <a href="#pactus.GetValidatorAddressResponse">GetValidatorAddressResponse</a></div>
-<p>GetValidatorAddress retrieves the validator address associated with a public key.</p>
+<p>GetValidatorAddress retrieves the validator address associated with a</p><p>public key.</p>
+<h3 id="pactus.Wallet.GetNewAddress">GetNewAddress <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
+<div class="request pt-3">Request message: <a href="#pactus.GetNewAddressRequest">GetNewAddressRequest</a></div>
+<div class="response pb-3">Response message: <a href="#pactus.GetNewAddressResponse">GetNewAddressResponse</a></div>
+<p>GetNewAddress generates a new address for the specified wallet.</p>
+<h3 id="pactus.Wallet.GetAddressHistory">GetAddressHistory <span class="badge text-bg-primary fs-6 align-top">rpc</span></h3>
+<div class="request pt-3">Request message: <a href="#pactus.GetAddressHistoryRequest">GetAddressHistoryRequest</a></div>
+<div class="response pb-3">Response message: <a href="#pactus.GetAddressHistoryResponse">GetAddressHistoryResponse</a></div>
+<p>GetAddressHistory retrieve transaction history of an address.</p>
 <h2>Messages and Enums</h2>
 <h3 id="pactus.BroadcastTransactionRequest">
 BroadcastTransactionRequest
@@ -615,7 +684,7 @@ BroadcastTransactionRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">signed_raw_transaction</td>
       <td>
         <a href="#bytes">bytes</a>
@@ -635,7 +704,7 @@ BroadcastTransactionResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">id</td>
       <td>
         <a href="#bytes">bytes</a>
@@ -655,19 +724,24 @@ CalculateFeeRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">amount</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Transaction amount. </td>
-    </tr>
-    <tr>
-      <td class="fw-bold">payloadType</td>
+      <td>Transaction amount in NanoPAC. </td>
+    </tr><tr>
+      <td class="fw-bold">payload_type</td>
       <td>
         <a href="#pactus.PayloadType">PayloadType</a>
       </td>
       <td>Type of transaction payload. </td>
+    </tr><tr>
+      <td class="fw-bold">fixed_amount</td>
+      <td>
+        <a href="#bool">bool</a>
+      </td>
+      <td>Indicates that amount should be fixed and includes the fee. </td>
     </tr>
   </tbody>
 </table>
@@ -682,12 +756,18 @@ CalculateFeeResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
+      <td class="fw-bold">amount</td>
+      <td>
+        <a href="#int64">int64</a>
+      </td>
+      <td>Calculated amount in NanoPAC. </td>
+    </tr><tr>
       <td class="fw-bold">fee</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Calculated transaction fee. </td>
+      <td>Calculated transaction fee in NanoPAC. </td>
     </tr>
   </tbody>
 </table>
@@ -702,49 +782,46 @@ GetRawBondTransactionRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">lock_time</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
-      <td>Lock time for the transaction. </td>
-    </tr>
-    <tr>
+      <td>Lock time for the transaction.
+If not explicitly set, it sets to the last block height. </td>
+    </tr><tr>
       <td class="fw-bold">sender</td>
       <td>
         <a href="#string">string</a>
       </td>
-      <td>Sender's address. </td>
-    </tr>
-    <tr>
+      <td>Sender's account address. </td>
+    </tr><tr>
       <td class="fw-bold">receiver</td>
       <td>
         <a href="#string">string</a>
       </td>
-      <td>Receiver's address. </td>
-    </tr>
-    <tr>
+      <td>Receiver's validator address. </td>
+    </tr><tr>
       <td class="fw-bold">stake</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Stake amount. </td>
-    </tr>
-    <tr>
+      <td>Stake amount in NanoPAC.
+It should be greater than 0. </td>
+    </tr><tr>
       <td class="fw-bold">public_key</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Public key of the validator. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">fee</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Transaction fee. </td>
-    </tr>
-    <tr>
+      <td>Transaction fee in NanoPAC.
+If not explicitly set, it is calculated based on the stake. </td>
+    </tr><tr>
       <td class="fw-bold">memo</td>
       <td>
         <a href="#string">string</a>
@@ -764,7 +841,7 @@ GetRawTransactionResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">raw_transaction</td>
       <td>
         <a href="#bytes">bytes</a>
@@ -784,42 +861,40 @@ GetRawTransferTransactionRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">lock_time</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
-      <td>Lock time for the transaction. </td>
-    </tr>
-    <tr>
+      <td>Lock time for the transaction.
+If not explicitly set, it sets to the last block height. </td>
+    </tr><tr>
       <td class="fw-bold">sender</td>
       <td>
         <a href="#string">string</a>
       </td>
-      <td>Sender's address. </td>
-    </tr>
-    <tr>
+      <td>Sender's account address. </td>
+    </tr><tr>
       <td class="fw-bold">receiver</td>
       <td>
         <a href="#string">string</a>
       </td>
-      <td>Receiver's address. </td>
-    </tr>
-    <tr>
+      <td>Receiver's account address. </td>
+    </tr><tr>
       <td class="fw-bold">amount</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Transaction amount. </td>
-    </tr>
-    <tr>
+      <td>Transfer amount in NanoPAC.
+It should be greater than 0. </td>
+    </tr><tr>
       <td class="fw-bold">fee</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Transaction fee. </td>
-    </tr>
-    <tr>
+      <td>Transaction fee in NanoPAC.
+If not explicitly set, it is calculated based on the amount. </td>
+    </tr><tr>
       <td class="fw-bold">memo</td>
       <td>
         <a href="#string">string</a>
@@ -828,8 +903,8 @@ GetRawTransferTransactionRequest
     </tr>
   </tbody>
 </table>
-<h3 id="pactus.GetRawUnBondTransactionRequest">
-GetRawUnBondTransactionRequest
+<h3 id="pactus.GetRawUnbondTransactionRequest">
+GetRawUnbondTransactionRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
 </h3>
   <p>Request message for retrieving raw details of an unbond transaction.</p>
@@ -839,21 +914,20 @@ GetRawUnBondTransactionRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">lock_time</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
-      <td>Lock time for the transaction. </td>
-    </tr>
-    <tr>
+      <td>Lock time for the transaction.
+If not explicitly set, it sets to the last block height. </td>
+    </tr><tr>
       <td class="fw-bold">validator_address</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Address of the validator to unbond from. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">memo</td>
       <td>
         <a href="#string">string</a>
@@ -873,42 +947,40 @@ GetRawWithdrawTransactionRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">lock_time</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
-      <td>Lock time for the transaction. </td>
-    </tr>
-    <tr>
+      <td>Lock time for the transaction.
+If not explicitly set, it sets to the last block height. </td>
+    </tr><tr>
       <td class="fw-bold">validator_address</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Address of the validator to withdraw from. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">account_address</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Address of the account to withdraw to. </td>
-    </tr>
-    <tr>
-      <td class="fw-bold">fee</td>
-      <td>
-        <a href="#int64">int64</a>
-      </td>
-      <td>Transaction fee. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">amount</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Withdrawal amount. </td>
-    </tr>
-    <tr>
+      <td>Withdrawal amount in NanoPAC.
+It should be greater than 0. </td>
+    </tr><tr>
+      <td class="fw-bold">fee</td>
+      <td>
+        <a href="#int64">int64</a>
+      </td>
+      <td>Transaction fee in NanoPAC.
+If not explicitly set, it is calculated based on the amount. </td>
+    </tr><tr>
       <td class="fw-bold">memo</td>
       <td>
         <a href="#string">string</a>
@@ -928,14 +1000,13 @@ GetTransactionRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">id</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Transaction ID. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">verbosity</td>
       <td>
         <a href="#pactus.TransactionVerbosity">TransactionVerbosity</a>
@@ -955,21 +1026,19 @@ GetTransactionResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">block_height</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Height of the block containing the transaction. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">block_time</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Time of the block containing the transaction. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">transaction</td>
       <td>
         <a href="#pactus.TransactionInfo">TransactionInfo</a>
@@ -989,26 +1058,24 @@ PayloadBond
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">sender</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Sender's address. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">receiver</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Receiver's address. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">stake</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Stake amount. </td>
+      <td>Stake amount in NanoPAC. </td>
     </tr>
   </tbody>
 </table>
@@ -1023,14 +1090,13 @@ PayloadSortition
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">address</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Address associated with the sortition. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">proof</td>
       <td>
         <a href="#bytes">bytes</a>
@@ -1050,26 +1116,24 @@ PayloadTransfer
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">sender</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Sender's address. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">receiver</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Receiver's address. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">amount</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Transaction amount. </td>
+      <td>Transaction amount in NanoPAC. </td>
     </tr>
   </tbody>
 </table>
@@ -1084,7 +1148,7 @@ PayloadUnbond
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">validator</td>
       <td>
         <a href="#string">string</a>
@@ -1104,26 +1168,24 @@ PayloadWithdraw
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">from</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Address to withdraw from. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">to</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Address to withdraw to. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">amount</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Withdrawal amount. </td>
+      <td>Withdrawal amount in NanoPAC. </td>
     </tr>
   </tbody>
 </table>
@@ -1138,105 +1200,91 @@ TransactionInfo
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">id</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Transaction ID. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">data</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Transaction data. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">version</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Transaction version. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">lock_time</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Lock time for the transaction. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">value</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Transaction value. </td>
-    </tr>
-    <tr>
+      <td>Transaction value in NanoPAC. </td>
+    </tr><tr>
       <td class="fw-bold">fee</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Transaction fee. </td>
-    </tr>
-    <tr>
-      <td class="fw-bold">payloadType</td>
+      <td>Transaction fee in NanoPAC. </td>
+    </tr><tr>
+      <td class="fw-bold">payload_type</td>
       <td>
         <a href="#pactus.PayloadType">PayloadType</a>
       </td>
       <td>Type of transaction payload. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">transfer</td>
       <td>
         <a href="#pactus.PayloadTransfer">PayloadTransfer</a>
       </td>
       <td>Transfer payload. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">bond</td>
       <td>
         <a href="#pactus.PayloadBond">PayloadBond</a>
       </td>
       <td>Bond payload. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">sortition</td>
       <td>
         <a href="#pactus.PayloadSortition">PayloadSortition</a>
       </td>
       <td>Sortition payload. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">unbond</td>
       <td>
         <a href="#pactus.PayloadUnbond">PayloadUnbond</a>
       </td>
       <td>Unbond payload. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">withdraw</td>
       <td>
         <a href="#pactus.PayloadWithdraw">PayloadWithdraw</a>
       </td>
       <td>Withdraw payload. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">memo</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Transaction memo. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">public_key</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Public key associated with the transaction. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">signature</td>
       <td>
         <a href="#bytes">bytes</a>
@@ -1256,35 +1304,31 @@ AccountInfo
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">hash</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Hash of the account. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">data</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Account data. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">number</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Account number. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">balance</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Account balance. </td>
-    </tr>
-    <tr>
+      <td>Account balance in NanoPAC. </td>
+    </tr><tr>
       <td class="fw-bold">address</td>
       <td>
         <a href="#string">string</a>
@@ -1304,35 +1348,31 @@ BlockHeaderInfo
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">version</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Block version. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">prev_block_hash</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Hash of the previous block. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">state_root</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>State root of the block. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">sortition_seed</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Sortition seed of the block. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">proposer_address</td>
       <td>
         <a href="#string">string</a>
@@ -1352,35 +1392,31 @@ CertificateInfo
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">hash</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Hash of the certificate. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">round</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Round of the certificate. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">committers</td>
       <td>repeated
         <a href="#int32">int32</a>
       </td>
       <td>List of committers in the certificate. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">absentees</td>
       <td>repeated
         <a href="#int32">int32</a>
       </td>
       <td>List of absentees in the certificate. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">signature</td>
       <td>
         <a href="#bytes">bytes</a>
@@ -1400,35 +1436,31 @@ ConsensusInfo
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">address</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Address of the consensus instance. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">Active</td>
       <td>
         <a href="#bool">bool</a>
       </td>
       <td>Whether the consensus instance is active. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">height</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Height of the consensus instance. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">round</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Round of the consensus instance. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">votes</td>
       <td>repeated
         <a href="#pactus.VoteInfo">VoteInfo</a>
@@ -1448,7 +1480,7 @@ GetAccountRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">address</td>
       <td>
         <a href="#string">string</a>
@@ -1468,7 +1500,7 @@ GetAccountResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">account</td>
       <td>
         <a href="#pactus.AccountInfo">AccountInfo</a>
@@ -1488,7 +1520,7 @@ GetBlockHashRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">height</td>
       <td>
         <a href="#uint32">uint32</a>
@@ -1508,7 +1540,7 @@ GetBlockHashResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">hash</td>
       <td>
         <a href="#bytes">bytes</a>
@@ -1528,7 +1560,7 @@ GetBlockHeightRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">hash</td>
       <td>
         <a href="#bytes">bytes</a>
@@ -1548,7 +1580,7 @@ GetBlockHeightResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">height</td>
       <td>
         <a href="#uint32">uint32</a>
@@ -1568,14 +1600,13 @@ GetBlockRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">height</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Height of the block. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">verbosity</td>
       <td>
         <a href="#pactus.BlockVerbosity">BlockVerbosity</a>
@@ -1595,54 +1626,49 @@ GetBlockResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">height</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Height of the block. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">hash</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Hash of the block. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">data</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
-      <td>Block data. </td>
-    </tr>
-    <tr>
+      <td>Block data, only available if the verbosity level is set to BLOCK_DATA. </td>
+    </tr><tr>
       <td class="fw-bold">block_time</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Block timestamp. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">header</td>
       <td>
         <a href="#pactus.BlockHeaderInfo">BlockHeaderInfo</a>
       </td>
       <td>Block header information. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">prev_cert</td>
       <td>
         <a href="#pactus.CertificateInfo">CertificateInfo</a>
       </td>
       <td>Certificate information of the previous block. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">txs</td>
       <td>repeated
         <a href="#pactus.TransactionInfo">TransactionInfo</a>
       </td>
-      <td>List of transactions in the block. </td>
+      <td>List of transactions in the block.
+Transaction information is available when the verbosity level is set to BLOCK_TRANSACTIONS. </td>
     </tr>
   </tbody>
 </table>
@@ -1663,49 +1689,43 @@ GetBlockchainInfoResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">last_block_height</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Height of the last block. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">last_block_hash</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Hash of the last block. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">total_accounts</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Total number of accounts. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">total_validators</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Total number of validators. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">total_power</td>
       <td>
         <a href="#int64">int64</a>
       </td>
       <td>Total power in the blockchain. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">committee_power</td>
       <td>
         <a href="#int64">int64</a>
       </td>
       <td>Power of the committee. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">committee_validators</td>
       <td>repeated
         <a href="#pactus.ValidatorInfo">ValidatorInfo</a>
@@ -1731,7 +1751,7 @@ GetConsensusInfoResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">instances</td>
       <td>repeated
         <a href="#pactus.ConsensusInfo">ConsensusInfo</a>
@@ -1751,7 +1771,7 @@ GetPublicKeyRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">address</td>
       <td>
         <a href="#string">string</a>
@@ -1771,7 +1791,7 @@ GetPublicKeyResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">public_key</td>
       <td>
         <a href="#string">string</a>
@@ -1797,7 +1817,7 @@ GetValidatorAddressesResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">addresses</td>
       <td>repeated
         <a href="#string">string</a>
@@ -1817,7 +1837,7 @@ GetValidatorByNumberRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">number</td>
       <td>
         <a href="#int32">int32</a>
@@ -1837,7 +1857,7 @@ GetValidatorRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">address</td>
       <td>
         <a href="#string">string</a>
@@ -1857,7 +1877,7 @@ GetValidatorResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">validator</td>
       <td>
         <a href="#pactus.ValidatorInfo">ValidatorInfo</a>
@@ -1877,70 +1897,61 @@ ValidatorInfo
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">hash</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Hash of the validator. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">data</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Validator data. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">public_key</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Public key of the validator. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">number</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Validator number. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">stake</td>
       <td>
         <a href="#int64">int64</a>
       </td>
-      <td>Validator stake. </td>
-    </tr>
-    <tr>
+      <td>Validator stake in NanoPAC. </td>
+    </tr><tr>
       <td class="fw-bold">last_bonding_height</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Last bonding height. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">last_sortition_height</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Last sortition height. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">unbonding_height</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Unbonding height. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">address</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Address of the validator. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">availability_score</td>
       <td>
         <a href="#double">double</a>
@@ -1960,42 +1971,37 @@ VoteInfo
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">type</td>
       <td>
         <a href="#pactus.VoteType">VoteType</a>
       </td>
       <td>Type of the vote. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">voter</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Voter's address. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">block_hash</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Hash of the block being voted on. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">round</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Round of the vote. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">cp_round</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Consensus round of the vote. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">cp_value</td>
       <td>
         <a href="#int32">int32</a>
@@ -2021,49 +2027,43 @@ GetNetworkInfoResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">network_name</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Name of the network. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">total_sent_bytes</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Total bytes sent across the network. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">total_received_bytes</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Total bytes received across the network. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">connected_peers_count</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Number of connected peers. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">connected_peers</td>
       <td>repeated
         <a href="#pactus.PeerInfo">PeerInfo</a>
       </td>
       <td>List of connected peers. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">sent_bytes</td>
       <td>repeated
         <a href="#pactus.GetNetworkInfoResponse.SentBytesEntry">GetNetworkInfoResponse.SentBytesEntry</a>
       </td>
       <td>Bytes sent per peer ID. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">received_bytes</td>
       <td>repeated
         <a href="#pactus.GetNetworkInfoResponse.ReceivedBytesEntry">GetNetworkInfoResponse.ReceivedBytesEntry</a>
@@ -2083,14 +2083,13 @@ GetNetworkInfoResponse.ReceivedBytesEntry
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">key</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td> </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">value</td>
       <td>
         <a href="#uint64">uint64</a>
@@ -2110,14 +2109,13 @@ GetNetworkInfoResponse.SentBytesEntry
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">key</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td> </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">value</td>
       <td>
         <a href="#uint64">uint64</a>
@@ -2130,7 +2128,7 @@ GetNetworkInfoResponse.SentBytesEntry
 GetNodeInfoRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
 </h3>
-  <p>Request message for retrieving information about a specific node in the network.</p>
+  <p>Request message for retrieving information about a specific node in the</p><p>network.</p>
  Message has no fields.
 <h3 id="pactus.GetNodeInfoResponse">
 GetNodeInfoResponse
@@ -2143,63 +2141,55 @@ GetNodeInfoResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">moniker</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Moniker of the node. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">agent</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Agent information of the node. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">peer_id</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Peer ID of the node. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">started_at</td>
       <td>
         <a href="#uint64">uint64</a>
       </td>
       <td>Timestamp when the node started. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">reachability</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Reachability status of the node. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">services</td>
       <td>repeated
         <a href="#int32">int32</a>
       </td>
       <td>List of services provided by the node. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">services_names</td>
       <td>repeated
         <a href="#string">string</a>
       </td>
       <td>Names of services provided by the node. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">addrs</td>
       <td>repeated
         <a href="#string">string</a>
       </td>
       <td>List of addresses associated with the node. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">protocols</td>
       <td>repeated
         <a href="#string">string</a>
@@ -2219,140 +2209,121 @@ PeerInfo
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">status</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Status of the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">moniker</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Moniker of the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">agent</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Agent information of the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">peer_id</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Peer ID of the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">consensus_keys</td>
       <td>repeated
         <a href="#string">string</a>
       </td>
       <td>Consensus keys used by the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">consensus_address</td>
       <td>repeated
         <a href="#string">string</a>
       </td>
       <td>Consensus address of the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">services</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Services provided by the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">last_block_hash</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Hash of the last block the peer knows. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">height</td>
       <td>
         <a href="#uint32">uint32</a>
       </td>
       <td>Height of the peer in the blockchain. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">received_messages</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Count of received messages. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">invalid_messages</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Count of invalid messages received. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">last_sent</td>
       <td>
         <a href="#int64">int64</a>
       </td>
       <td>Timestamp of the last sent message. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">last_received</td>
       <td>
         <a href="#int64">int64</a>
       </td>
       <td>Timestamp of the last received message. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">sent_bytes</td>
       <td>repeated
         <a href="#pactus.PeerInfo.SentBytesEntry">PeerInfo.SentBytesEntry</a>
       </td>
       <td>Bytes sent per message type. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">received_bytes</td>
       <td>repeated
         <a href="#pactus.PeerInfo.ReceivedBytesEntry">PeerInfo.ReceivedBytesEntry</a>
       </td>
       <td>Bytes received per message type. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">address</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Network address of the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">direction</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Direction of connection with the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">protocols</td>
       <td>repeated
         <a href="#string">string</a>
       </td>
       <td>List of protocols supported by the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">total_sessions</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td>Total sessions with the peer. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">completed_sessions</td>
       <td>
         <a href="#int32">int32</a>
@@ -2372,14 +2343,13 @@ PeerInfo.ReceivedBytesEntry
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">key</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td> </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">value</td>
       <td>
         <a href="#int64">int64</a>
@@ -2399,17 +2369,54 @@ PeerInfo.SentBytesEntry
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">key</td>
       <td>
         <a href="#int32">int32</a>
       </td>
       <td> </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">value</td>
       <td>
         <a href="#int64">int64</a>
+      </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="pactus.AddressInfo">
+AddressInfo
+<span class="badge text-bg-secondary fs-6 align-top">msg</span>
+</h3>
+  <p>Message of address information.</p>
+
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr><td>Field</td><td>Type</td><td>Description</td></tr>
+  </thead>
+  <tbody class="table-group-divider">
+  <tr>
+      <td class="fw-bold">address</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td> </td>
+    </tr><tr>
+      <td class="fw-bold">public_key</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td> </td>
+    </tr><tr>
+      <td class="fw-bold">label</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td> </td>
+    </tr><tr>
+      <td class="fw-bold">path</td>
+      <td>
+        <a href="#string">string</a>
       </td>
       <td> </td>
     </tr>
@@ -2426,28 +2433,25 @@ CreateWalletRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Name of the new wallet. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">mnemonic</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Mnemonic for wallet recovery. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">language</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Language for the mnemonic. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">password</td>
       <td>
         <a href="#string">string</a>
@@ -2467,7 +2471,7 @@ CreateWalletResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
@@ -2476,18 +2480,168 @@ CreateWalletResponse
     </tr>
   </tbody>
 </table>
-<h3 id="pactus.GetValidatorAddressRequest">
-GetValidatorAddressRequest
+<h3 id="pactus.GetAddressHistoryRequest">
+GetAddressHistoryRequest
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
 </h3>
-  <p>Request message for obtaining the validator address associated with a public key.</p>
+  <p>Request message to get an address transaction history.</p>
 
 <table class="table table-bordered table-sm">
   <thead>
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
+      <td class="fw-bold">wallet_name</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>Name of the wallet. </td>
+    </tr><tr>
+      <td class="fw-bold">address</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>Address to get the transaction history of it. </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="pactus.GetAddressHistoryResponse">
+GetAddressHistoryResponse
+<span class="badge text-bg-secondary fs-6 align-top">msg</span>
+</h3>
+  <p>Response message to get an address transaction history.</p>
+
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr><td>Field</td><td>Type</td><td>Description</td></tr>
+  </thead>
+  <tbody class="table-group-divider">
+  <tr>
+      <td class="fw-bold">history_info</td>
+      <td>repeated
+        <a href="#pactus.HistoryInfo">HistoryInfo</a>
+      </td>
+      <td>Array of address history and activities. </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="pactus.GetNewAddressRequest">
+GetNewAddressRequest
+<span class="badge text-bg-secondary fs-6 align-top">msg</span>
+</h3>
+  <p>Request message for generating a new address.</p>
+
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr><td>Field</td><td>Type</td><td>Description</td></tr>
+  </thead>
+  <tbody class="table-group-divider">
+  <tr>
+      <td class="fw-bold">wallet_name</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>Name of the wallet for which the new address is requested. </td>
+    </tr><tr>
+      <td class="fw-bold">address_type</td>
+      <td>
+        <a href="#pactus.AddressType">AddressType</a>
+      </td>
+      <td>Address type for the new address. </td>
+    </tr><tr>
+      <td class="fw-bold">label</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>Label for the new address. </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="pactus.GetNewAddressResponse">
+GetNewAddressResponse
+<span class="badge text-bg-secondary fs-6 align-top">msg</span>
+</h3>
+  <p>Response message containing the new address.</p>
+
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr><td>Field</td><td>Type</td><td>Description</td></tr>
+  </thead>
+  <tbody class="table-group-divider">
+  <tr>
+      <td class="fw-bold">wallet_name</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>Name of the wallet. </td>
+    </tr><tr>
+      <td class="fw-bold">address_info</td>
+      <td>
+        <a href="#pactus.AddressInfo">AddressInfo</a>
+      </td>
+      <td>Address information. </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="pactus.GetTotalBalanceRequest">
+GetTotalBalanceRequest
+<span class="badge text-bg-secondary fs-6 align-top">msg</span>
+</h3>
+  <p>Request message for obtaining the available balance of a wallet.</p>
+
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr><td>Field</td><td>Type</td><td>Description</td></tr>
+  </thead>
+  <tbody class="table-group-divider">
+  <tr>
+      <td class="fw-bold">wallet_name</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>Name of the wallet. </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="pactus.GetTotalBalanceResponse">
+GetTotalBalanceResponse
+<span class="badge text-bg-secondary fs-6 align-top">msg</span>
+</h3>
+  <p>Response message containing the available balance of the wallet.</p>
+
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr><td>Field</td><td>Type</td><td>Description</td></tr>
+  </thead>
+  <tbody class="table-group-divider">
+  <tr>
+      <td class="fw-bold">wallet_name</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>Name of the wallet. </td>
+    </tr><tr>
+      <td class="fw-bold">total_balance</td>
+      <td>
+        <a href="#int64">int64</a>
+      </td>
+      <td>The total balance of the wallet in NanoPAC. </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="pactus.GetValidatorAddressRequest">
+GetValidatorAddressRequest
+<span class="badge text-bg-secondary fs-6 align-top">msg</span>
+</h3>
+  <p>Request message for obtaining the validator address associated with a public</p><p>key.</p>
+
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr><td>Field</td><td>Type</td><td>Description</td></tr>
+  </thead>
+  <tbody class="table-group-divider">
+  <tr>
       <td class="fw-bold">public_key</td>
       <td>
         <a href="#string">string</a>
@@ -2500,19 +2654,63 @@ GetValidatorAddressRequest
 GetValidatorAddressResponse
 <span class="badge text-bg-secondary fs-6 align-top">msg</span>
 </h3>
-  <p>Response message containing the validator address corresponding to a public key.</p>
+  <p>Response message containing the validator address corresponding to a public</p><p>key.</p>
 
 <table class="table table-bordered table-sm">
   <thead>
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">address</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Validator address associated with the public key. </td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="pactus.HistoryInfo">
+HistoryInfo
+<span class="badge text-bg-secondary fs-6 align-top">msg</span>
+</h3>
+  <p>Message of address history information.</p>
+
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr><td>Field</td><td>Type</td><td>Description</td></tr>
+  </thead>
+  <tbody class="table-group-divider">
+  <tr>
+      <td class="fw-bold">transaction_id</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>Hash of transaction. </td>
+    </tr><tr>
+      <td class="fw-bold">time</td>
+      <td>
+        <a href="#uint32">uint32</a>
+      </td>
+      <td>transaction timestamp. </td>
+    </tr><tr>
+      <td class="fw-bold">payload_type</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>payload type of transaction. </td>
+    </tr><tr>
+      <td class="fw-bold">description</td>
+      <td>
+        <a href="#string">string</a>
+      </td>
+      <td>description of transaction. </td>
+    </tr><tr>
+      <td class="fw-bold">amount</td>
+      <td>
+        <a href="#int64">int64</a>
+      </td>
+      <td>amount of transaction. </td>
     </tr>
   </tbody>
 </table>
@@ -2527,7 +2725,7 @@ LoadWalletRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
@@ -2547,7 +2745,7 @@ LoadWalletResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
@@ -2567,7 +2765,7 @@ LockWalletRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
@@ -2587,7 +2785,7 @@ LockWalletResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
@@ -2607,21 +2805,19 @@ SignRawTransactionRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Name of the wallet used for signing. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">raw_transaction</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>Raw transaction data to be signed. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">password</td>
       <td>
         <a href="#string">string</a>
@@ -2641,14 +2837,13 @@ SignRawTransactionResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">transaction_id</td>
       <td>
         <a href="#bytes">bytes</a>
       </td>
       <td>ID of the signed transaction. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">signed_raw_transaction</td>
       <td>
         <a href="#bytes">bytes</a>
@@ -2668,7 +2863,7 @@ UnloadWalletRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
@@ -2688,7 +2883,7 @@ UnloadWalletResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
@@ -2708,21 +2903,19 @@ UnlockWalletRequest
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Name of the wallet to unlock. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">password</td>
       <td>
         <a href="#string">string</a>
       </td>
       <td>Password for unlocking the wallet. </td>
-    </tr>
-    <tr>
+    </tr><tr>
       <td class="fw-bold">timeout</td>
       <td>
         <a href="#int32">int32</a>
@@ -2742,7 +2935,7 @@ UnlockWalletResponse
     <tr><td>Field</td><td>Type</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
+  <tr>
       <td class="fw-bold">wallet_name</td>
       <td>
         <a href="#string">string</a>
@@ -2762,43 +2955,31 @@ PayloadType
     <tr><td>Name</td><td>Number</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-
-      <tr>
+    <tr>
         <td class="fw-bold">UNKNOWN</td>
         <td>0</td>
         <td>Unknown payload type.</td>
-      </tr>
-
-      <tr>
+      </tr><tr>
         <td class="fw-bold">TRANSFER_PAYLOAD</td>
         <td>1</td>
         <td>Transfer payload type.</td>
-      </tr>
-
-      <tr>
+      </tr><tr>
         <td class="fw-bold">BOND_PAYLOAD</td>
         <td>2</td>
         <td>Bond payload type.</td>
-      </tr>
-
-      <tr>
+      </tr><tr>
         <td class="fw-bold">SORTITION_PAYLOAD</td>
         <td>3</td>
         <td>Sortition payload type.</td>
-      </tr>
-
-      <tr>
+      </tr><tr>
         <td class="fw-bold">UNBOND_PAYLOAD</td>
         <td>4</td>
         <td>Unbond payload type.</td>
-      </tr>
-
-      <tr>
+      </tr><tr>
         <td class="fw-bold">WITHDRAW_PAYLOAD</td>
         <td>5</td>
         <td>Withdraw payload type.</td>
       </tr>
-
   </tbody>
 </table>
 <h3 id="pactus.TransactionVerbosity">
@@ -2811,19 +2992,15 @@ TransactionVerbosity
     <tr><td>Name</td><td>Number</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-
-      <tr>
+    <tr>
         <td class="fw-bold">TRANSACTION_DATA</td>
         <td>0</td>
-        <td>Request only transaction data.</td>
-      </tr>
-
-      <tr>
+        <td>Request transaction data only.</td>
+      </tr><tr>
         <td class="fw-bold">TRANSACTION_INFO</td>
         <td>1</td>
-        <td>Request detailed transaction information.</td>
+        <td>Request transaction details.</td>
       </tr>
-
   </tbody>
 </table>
 <h3 id="pactus.BlockVerbosity">
@@ -2836,25 +3013,19 @@ BlockVerbosity
     <tr><td>Name</td><td>Number</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-
-      <tr>
+    <tr>
         <td class="fw-bold">BLOCK_DATA</td>
         <td>0</td>
         <td>Request block data only.</td>
-      </tr>
-
-      <tr>
+      </tr><tr>
         <td class="fw-bold">BLOCK_INFO</td>
         <td>1</td>
-        <td>Request block information only.</td>
-      </tr>
-
-      <tr>
+        <td>Request block information and transaction IDs.</td>
+      </tr><tr>
         <td class="fw-bold">BLOCK_TRANSACTIONS</td>
         <td>2</td>
-        <td>Request block transactions only.</td>
+        <td>Request block information and transaction details.</td>
       </tr>
-
   </tbody>
 </table>
 <h3 id="pactus.VoteType">
@@ -2867,31 +3038,48 @@ VoteType
     <tr><td>Name</td><td>Number</td><td>Description</td></tr>
   </thead>
   <tbody class="table-group-divider">
-
-      <tr>
+    <tr>
         <td class="fw-bold">VOTE_UNKNOWN</td>
         <td>0</td>
         <td>Unknown vote type.</td>
-      </tr>
-
-      <tr>
+      </tr><tr>
         <td class="fw-bold">VOTE_PREPARE</td>
         <td>1</td>
         <td>Prepare vote type.</td>
-      </tr>
-
-      <tr>
+      </tr><tr>
         <td class="fw-bold">VOTE_PRECOMMIT</td>
         <td>2</td>
         <td>Precommit vote type.</td>
-      </tr>
-
-      <tr>
+      </tr><tr>
         <td class="fw-bold">VOTE_CHANGE_PROPOSER</td>
         <td>3</td>
         <td>Change proposer vote type.</td>
       </tr>
-
+  </tbody>
+</table>
+<h3 id="pactus.AddressType">
+AddressType
+<span class="badge text-bg-info fs-6 align-top">enum</span>
+</h3>
+<p>Enum for the address type.</p>
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr><td>Name</td><td>Number</td><td>Description</td></tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr>
+        <td class="fw-bold">ADDRESS_TYPE_TREASURY</td>
+        <td>0</td>
+        <td></td>
+      </tr><tr>
+        <td class="fw-bold">ADDRESS_TYPE_VALIDATOR</td>
+        <td>1</td>
+        <td></td>
+      </tr><tr>
+        <td class="fw-bold">ADDRESS_TYPE_BLS_ACCOUNT</td>
+        <td>2</td>
+        <td></td>
+      </tr>
   </tbody>
 </table>
 

@@ -12,7 +12,7 @@ Whether you are a beginner or an advanced user, this tutorial is suitable for yo
 ## Prerequisites
 
 Before we begin, you'll need to run the Pactus GUI application and ensure that it is synced with the network.
-You can find detailed instructions on how to do this in the following [tutorial]({{ site.baseurl }}/user-guides/run-pactus-gui/).
+You can find detailed instructions on how to do this in the following [tutorial]({{ site.baseurl }}/user-guides/pactus-gui/).
 
 ## Sending a Transfer Transaction
 
@@ -29,6 +29,9 @@ click on the "Send" button to sign and broadcast the transaction to the Pactus b
 
 It's important to note that the [transaction fee]({{ site.baseurl }}/learn/transaction/fee/)
 will be calculated based on the amount you're sending.
+
+When sending or receiving a transaction from either exchange or another person that's not you,
+it is important to use a memo to ensure the transaction is attributed to the intended recipient.
 
 ## Sending a Bond Transaction
 
@@ -47,3 +50,15 @@ Therefore, if you want to stake on your own validators, you don't need to set th
 
 It's important to note that the [transaction fee]({{ site.baseurl }}/learn/transaction/fee/)
 will be calculated based on the amount you're sending.
+
+## Unbond
+
+**Unbonding**: Unbonding is free. This means there are no fees associated with the process of unbonding your Pactus coins.
+
+![Unbond Transaction Dialog]({{ site.url }}/user-guides/send-transactions-gui/unbond-transaction-dialog.png)
+
+## Withdraw
+
+**Withdrawals**: After you've unbonded your Pactus coins from staking, it will take 21 days before your coins can be withdrawn.
+
+![Withdraw Transaction Dialog]({{ site.url }}/user-guides/send-transactions-gui/withdraw-transaction-dialog.png)

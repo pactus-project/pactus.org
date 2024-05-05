@@ -8,7 +8,7 @@ dict:
   improve_translation: Improve translation
   edit_this_page: Edit this page
   resources: Resources
-  know_more: Explore Pactus
+  become-a-validator: Become a Validator
   join_community: Join community
   contributing: Contributing
   outdated_translation: The translation is outdated. You can read it, but it might not be accurate.
@@ -47,6 +47,10 @@ dict:
       with your friends to contributing to our core development. Let's work together to make Pactus even better!
     partners: Our Partners
     validators: Featured Validators
+    newsletter: Subscribe to the Pactus Newsletter
+    newsletter_desc: Dive into the latest updates and insights from the Pactus Blockchain.
+      Receive crucial information on new developments, enhancements, and partnerships directly to your inbox.
+      Stay connected and informed, whether you're an investor, developer, or blockchain enthusiast.
 
   community:
     title: Community
@@ -136,7 +140,7 @@ dict:
       <b>Untrusted application</b>
       <br><br>
       Be aware that the precompiled binaries are not shipped with any
-      <a href="https://pactus.org/user-guides/run-pactus-gui/#code-certificate-issue">code signing certificate</a>.
+      <a href="https://pactus.org/user-guides/pactus-gui/#code-certificate-issue">code signing certificate</a>.
       Most probability in Windows
       and macOS the downloaded binaries are detected as untrusted application.
     gui_after_download: >
@@ -157,7 +161,6 @@ dict:
       there is a downloader script available.
       This script can download the archived file, verify it, and extract it for you.
       To use it, simply run the following command in your terminal:
-
 
   faq:
     title: FAQ
@@ -451,6 +454,7 @@ dict:
     run_pactus_metrics: How to run Pactus Metrics?
     grpc-sign-transactions: How to sign transaction using gRPC?
     grpc-basic-auth: How to secure gRPC using basic authentication?
+    become-a-validator: Become a validator
     wallet_seed_important: >
       <b>Wallet seed is important</b>
       <br><br>
