@@ -20,6 +20,7 @@ This guide is designed for individuals and organizations interested in becoming 
 - [Step 1: How to become a validator?](#step-1-how-to-become-a-validator)
    - [How to initialize Pactus GUI node?](#how-to-initilize-pactus-gui-node)
    - [How to initialize Pactus CLI node?](#how-to-initilize-pactus-cli-node)
+   - [Use the latest offline data for fast synchronization to the latest blocks in the chain](#use-the-latest-offline-data-for-fast-synchronization-to-the-latest-blocks-in-the-chain)
 - [Step 2: Subscribe to the Pactus Newsletter for Important Updates](#step-2-subscribe-to-the-pactus-newsletter-for-important-updates)
 - [Step 3: Purchase Coins for Staking on Your Validators](#step-3-purchase-coins-for-staking-on-your-validators)
 - [Step 4: Join the Pactus Blockchain Community on Social Networks](#step-4-join-the-pactus-blockchain-community-on-social-networks)
@@ -65,7 +66,7 @@ or CLI]( {{ site.baseurl }}/download/ ){:target="\_blank"} for initlize your nod
 
 ![Wallet Password]({{ site.url }}/user-guides/become-a-validator/wallet-password.png)
 
-- Yyou can select the number of validators on your node for staking.
+- You can select the number of validators on your node for staking.
   You can choose between 7 and 32 validators for each node.
 
 ![Number of validators]({{ site.url }}/user-guides/become-a-validator/number-of-validators.png)
@@ -193,6 +194,16 @@ A pactus node is successfully initialized at /home/{user}/pactus
 You can start the node by running this command:
 ./pactus-daemon start -w /home/{user}/pactus
 ```
+
+### Use the latest offline data for fast synchronization to the latest blocks in the chain
+
+1. Download the file `pactus-data-{date}.zip` from [https://data.pacviewer.com/pactus-data/](https://data.pacviewer.com/pactus-data/).
+2. Verify the checksum hash file with `SHA256SUMS`.
+3. Stop the running node before updating the data.
+4. Extract the file `pactus-data-{date}.zip` and overwrite the "data" folder at the following locations:
+   - For Linux and Mac: `/home/{user}/pactus/data`
+   - For Windows: `C:\Users\{user}\pactus\data`
+5. Restart the node.
 
 ## Step 2: Subscribe to the Pactus Newsletter for Important Updates
 
