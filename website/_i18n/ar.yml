@@ -450,6 +450,7 @@ dict:
     run_pactus_docker: كيفية تشغيل بكتوس باستخدام دوكر؟
     send_transactions_gui: كيفية إرسال المعاملات في الوضع الرسومي؟
     use_wallet_cli: كيفية استخدام المحفظة في وضع سطر الأوامر؟
+    pactus_testnet: كيفية الاستخدام والتفاعل مع Pactus Testnet (Phoenix)؟
     reduce_network: How to reduce the network usage?
     run_pactus_metrics: How to run Pactus Metrics?
     grpc-sign-transactions: How to sign transaction using gRPC?

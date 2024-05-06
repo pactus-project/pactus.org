@@ -419,6 +419,7 @@ dict:
     run_pactus_docker: 如何使用Docker运行帕图斯？
     send_transactions_gui: 如何在图形模式下发送交易？
     use_wallet_cli: 如何在命令行模式下使用钱包？
+    pactus_testnet: 如何使用 Pactus 测试网（Phoenix）并与之交互？
     reduce_network: 如何减少网络使用量？
     run_pactus_metrics: 如何运行Pactus Metrics指标？
     grpc-sign-transactions: 如何使用 gRPC 签署交易？
