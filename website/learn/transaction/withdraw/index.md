@@ -7,7 +7,7 @@ sidebar: Withdraw Transaction
 # Withdraw Transaction
 
 Withdraw transaction is used to withdraw the staked coins from an unbonded
-[validator]({{ site.baseurl }}/learn/blockchain/validator/)
+[validator](https://docs.pactus.org/docs/concepts/blockchain/validator/)
 
 ## Payload Structure
 
@@ -20,5 +20,5 @@ The withdraw transaction has a payload consists the following fields:
 | Variant  | Amount           |
 
 - **Sender address** is the address of the sender validator.
-- **Receiver address** is the address of the receiver [account]({{ site.baseurl }}/learn/blockchain/account/).
+- **Receiver address** is the address of the receiver [account](https://docs.pactus.org/docs/concepts/blockchain/account/).
 - **Amount** is the amount of coins that should be withdrawn

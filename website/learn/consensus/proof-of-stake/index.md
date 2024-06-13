@@ -52,13 +52,13 @@ which goes against the principle of "don't trust, verify".
 ## Consensus without delegation or Solid State Proof of Stake (SSPoS)
 
 Pactus introduced a mechanism that doesn't rely on delegation, we call it Solid State Proof of Stake.
-It utilizes a dynamic [committee]({{ site.baseurl }}/learn/consensus/committee/) of validators
+It utilizes a dynamic [committee](https://docs.pactus.org/docs/concepts/consensus/committee/) of validators
 that are responsible for creating new blocks.
 The size of the committee is fixed, but the members of the committee are randomly changed.
 On the other hand, the number of validators outside the committee is unlimited, allowing anyone to
 become a validator by staking coins.
 
-At each block, validators participate in a [sortition]({{ site.baseurl }}/learn/consensus/sortition/) algorithm
+At each block, validators participate in a [sortition](https://docs.pactus.org/docs/concepts/consensus/sortition/) algorithm
 by generating a random number between zero and the total staked coins.
 If the number is less than the validator's stake, they can enter the committee and replaces the oldest committee member.
 

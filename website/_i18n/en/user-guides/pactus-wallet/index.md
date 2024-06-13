@@ -308,7 +308,7 @@ Please note that once a transaction is broadcasted, it cannot be reversed.
 ### Sending Transfer Transaction
 
 To create, sign, and broadcast a
-[Transfer transaction]({{ site.baseurl }}/learn/transaction/transfer/), use the following command:
+[Transfer transaction](https://docs.pactus.org/docs/concepts/transaction/transfer/), use the following command:
 
 {% tabs tx_transfer ltr %}
 
@@ -336,7 +336,7 @@ and `<TO>` is the receiver address.
 ### Sending Bond Transaction
 
 To create, sign, and broadcast a
-[Bond transaction]({{ site.baseurl }}/learn/transaction/bond/), use the following command:
+[Bond transaction](https://docs.pactus.org/docs/concepts/transaction/bond/), use the following command:
 
 {% tabs tx_bond ltr %}
 
@@ -390,7 +390,7 @@ which is the public key of the `<TO>` address.
 ### Sending Unbond Transaction
 
 To create, sign, and broadcast a
-[Unbond transaction]({{ site.baseurl }}/learn/transaction/unbond/), use the following command:
+[Unbond transaction](https://docs.pactus.org/docs/concepts/transaction/unbond/), use the following command:
 
 {% tabs tx_unbond ltr %}
 
@@ -417,7 +417,7 @@ In this command, `<ADDRESS>` is the address of the validator that you want to un
 ### Sending Withdraw Transaction
 
 To create, sign, and broadcast a
-[Withdraw transaction]({{ site.baseurl }}/learn/transaction/withdraw/), use the following command:
+[Withdraw transaction](https://docs.pactus.org/docs/concepts/transaction/withdraw/), use the following command:
 
 {% tabs tx_withdraw ltr %}
 

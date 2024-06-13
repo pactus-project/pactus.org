@@ -182,7 +182,7 @@ docker run -it --rm -v %USERPROFILE%\pactus:/root/pactus pactus-wallet address a
 
 {% endtabs %}
 
-You can check [{% t dict.guide.use_wallet_cli %}]({{ site.baseurl }}/user-guides/pactus-wallet)
+You can check [{% t dict.guide.use_wallet_cli %}](https://docs.pactus.org/docs/tutorials/pactus-wallet)
 for additional commands to manage your wallet.
 
 ---

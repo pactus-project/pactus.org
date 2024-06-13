@@ -106,7 +106,7 @@ dict:
     all_posts: All posts
 
   learn:
-    title: Learn
+    title: Documentation
     reference: Reference
     welcome: >
       Here you can find the technical documentations for the Pactus project.

@@ -37,8 +37,57 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item ps-2">
-            <a class="nav-link" href="{{ site.baseurl }}/learn/">{% t dict.learn.title %}</a>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="https://docs.pactus.org" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documentation
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/docs/get-started/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Get Started
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/docs/get-started/become-a-validator/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Become a validator
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/docs/concepts/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Blockchain concepts
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/docs/tutorials/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Tutorials
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/docs/api/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  API Reference
+                </a>
+              </li>
+        </ul>
           </li>
           <li class="nav-item ps-2">
             <a class="nav-link" href="{{ site.baseurl }}/download/">{% t dict.download.title %}</a>
@@ -59,11 +108,6 @@
               <li>
                 <a class="nav-link dropdown-item ps-2" href="{{ site.baseurl }}/contributing/">
                   {% t dict.contributing %}
-                </a>
-              </li>
-              <li>
-                <a class="nav-link dropdown-item ps-2" href="{{ site.baseurl }}/user-guides/">
-                  {% t dict.guide.title %}
                 </a>
               </li>
               <li>

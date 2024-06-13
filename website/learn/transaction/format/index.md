@@ -23,11 +23,11 @@ Transactions in Pactus consists the following fields:
   a different layout, and the current transaction version is set to 1.
 - **Lock Time** specifies the block number at which the transaction can be unlocked.
 - **Fee** contains the fee paid by the sender to the network for processing the transaction.
-  The fee is calculated based on the [percentage fee]({{ site.baseurl }}/learn/transaction/fee/) model.
+  The fee is calculated based on the [percentage fee](https://docs.pactus.org/docs/concepts/transaction/fee/) model.
 - **Memo** is an optional message that can be included in the transaction.
   The message can be used to provide additional information about the transaction or to communicate with the recipient.
   The maximum size of the memo is 64 characters that is defined in the
-  [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters/)
+  [consensus parameters](https://docs.pactus.org/docs/concepts/consensus/parameters/)
 - **Payload Type** specifies the type of the transaction payload.
   Depending on the payload type, the payload data field is decoded differently.
 - **Payload Data** contains the actual data payload of the transaction.
@@ -44,11 +44,11 @@ The payload type field determines the format of the payload data field in the tr
 Different payload types have different formats for the payload data.
 The following are the supported transactions in Pactus blockchain:
 
-1. [Transfer transaction]({{ site.baseurl }}/learn/transaction/transfer)
-2. [Bond transaction]({{ site.baseurl }}/learn/transaction/bond)
-3. [Sortition transaction]({{ site.baseurl }}/learn/transaction/sortition)
-4. [Unbond transaction]({{ site.baseurl }}/learn/transaction/unbond)
-5. [Withdraw transaction]({{ site.baseurl }}/learn/transaction/withdraw)
+1. [Transfer transaction](https://docs.pactus.org/docs/concepts/transaction/transfer)
+2. [Bond transaction](https://docs.pactus.org/docs/concepts/transaction/bond)
+3. [Sortition transaction](https://docs.pactus.org/docs/concepts/transaction/sortition)
+4. [Unbond transaction](https://docs.pactus.org/docs/concepts/transaction/unbond)
+5. [Withdraw transaction](https://docs.pactus.org/docs/concepts/transaction/withdraw)
 
 ## Transaction ID
 

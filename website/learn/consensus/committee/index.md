@@ -71,7 +71,7 @@ we can estimate the probability of an adversary controlling ⅔ of the committee
 ### How can one know when a validator has joined the committee?
 
 The height at which the validator joined the committee is recorded as the "Last Joined Height" field in
-the [validator]({{ site.baseurl }}/learn/blockchain/validator/) structure.
+the [validator](https://docs.pactus.org/docs/concepts/blockchain/validator/) structure.
 Once a validator enters the committee, this field is set to the current height it
 evaluated the sortition proof.
 
