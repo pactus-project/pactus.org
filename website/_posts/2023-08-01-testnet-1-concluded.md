@@ -20,7 +20,7 @@ The main purpose of this Testnet was to measure block time creation and the resp
 The development team also focused on evaluating the network's performance.
 Additionally, the overall performance of the software and the syncing process were closely examined and assessed.
 
-The [committee](https://docs.pactus.org/docs/concepts/consensus/committee/) for Testnet-1 was set to 21 validators,
+The [committee](https://docs.pactus.org/protocol/consensus/committee/) for Testnet-1 was set to 21 validators,
 and 584 validators [joined]({{ site.baseurl }}/2023/07/05/testnet-500-validators.html) during the Testnet period.
 More than 600,000 blocks were created, and more than 1 million transactions were processed during this time.
 The size of the blockchain is about 300 megabytes.

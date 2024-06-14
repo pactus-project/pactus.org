@@ -42,7 +42,7 @@ title: dict.download.title
 {% t dict.download.untrusted_app %}
 {% alert_end %}
 
-{% t dict.download.gui_after_download %} [{% t dict.guide.run_pactus_gui %}](https://docs.pactus.org/docs/get-started/pactus-gui)
+{% t dict.download.gui_after_download %} [{% t dict.guide.run_pactus_gui %}](https://docs.pactus.org/get-started/pactus-gui)
 
 ---
 
@@ -64,7 +64,7 @@ title: dict.download.title
 | [pactus-cli_{{ site.latest_version }}_windows_386.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_windows_386.zip)           | <i class="fa-brands fa-windows"></i> Windows | 32-bit   |
 | [pactus-cli_{{ site.latest_version }}_windows_amd64.zip](https://github.com/pactus-project/pactus/releases/download/v{{ site.latest_version }}/pactus-cli_{{ site.latest_version }}_windows_amd64.zip)       | <i class="fa-brands fa-windows"></i> Windows | 64-bit   |
 
-{% t dict.download.cli_after_download %} [{% t dict.guide.run_pactus_cli %}](https://docs.pactus.org/docs/get-started/pactus-daemon)
+{% t dict.download.cli_after_download %} [{% t dict.guide.run_pactus_cli %}](https://docs.pactus.org/get-started/pactus-daemon)
 
 <h3 id="downloader_script">{% t dict.download.downloader_script %}</h3>
 
@@ -80,4 +80,4 @@ curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/re
 
 {% t dict.download.docker_desc %}
 
-{% t dict.download.docker_after_download %} [{% t dict.guide.run_pactus_docker %}](https://docs.pactus.org/docs/get-started/pactus-docker)
+{% t dict.download.docker_after_download %} [{% t dict.guide.run_pactus_docker %}](https://docs.pactus.org/get-started/pactus-docker)

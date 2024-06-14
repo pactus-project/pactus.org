@@ -140,7 +140,7 @@ dict:
       <b>Untrusted application</b>
       <br><br>
       Be aware that the precompiled binaries are not shipped with any
-      <a href="https://pactus.org/user-guides/pactus-gui/#code-certificate-issue">code signing certificate</a>.
+      <a href="https://docs.pactus.org/get-started/pactus-gui/#code-certificate-issue">code signing certificate</a>.
       Most probability in Windows
       and macOS the downloaded binaries are detected as untrusted application.
     gui_after_download: >

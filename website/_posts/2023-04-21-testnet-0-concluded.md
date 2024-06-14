@@ -17,13 +17,13 @@ If you like to read more about the Testnet you can check out our post on
 
 In September 2022, we launched [Testnet-0]({{ site.baseurl }}/2022/09/24/testnet-0-launched.html).
 The purpose of this Testnet was to
-check the [consensus protocol](https://docs.pactus.org/docs/concepts/consensus/protocol/),
-test different [transaction](https://docs.pactus.org/docs/concepts/transaction/format/) types,
+check the [consensus protocol](https://docs.pactus.org/protocol/consensus/protocol/),
+test different [transaction](https://docs.pactus.org/protocol/transaction/format/) types,
 and ensure the stability of the blockchain.
-We also wanted to test the [sortition algorithm](https://docs.pactus.org/docs/concepts/consensus/sortition/)
+We also wanted to test the [sortition algorithm](https://docs.pactus.org/protocol/consensus/sortition/)
 to make sure it works properly.
 
-The [committee](https://docs.pactus.org/docs/concepts/consensus/committee/)
+The [committee](https://docs.pactus.org/protocol/consensus/committee/)
 for the Testnet-0 was set to five validators, and more than 19 validators joined during the Testnet period.
 **Over 2 million blocks were created, and more than 3.2 million transactions were processed during this time.
 The size of the blockchain is approximately 1 gigabyte.

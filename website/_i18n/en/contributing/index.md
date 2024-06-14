@@ -15,22 +15,22 @@ ensure the network keeps running safe and decentralized.
 
 These guides can help you to run and configure your node:
 
-- [{% t dict.guide.run_pactus_gui %}](https://docs.pactus.org/docs/get-started/pactus-gui)
-- [{% t dict.guide.run_pactus_cli %}](https://docs.pactus.org/docs/get-started/pactus-daemon)
-- [{% t dict.guide.run_pactus_docker %}](https://docs.pactus.org/docs/get-started/pactus-docker)
+- [{% t dict.guide.run_pactus_gui %}](https://docs.pactus.org/get-started/pactus-gui)
+- [{% t dict.guide.run_pactus_cli %}](https://docs.pactus.org/get-started/pactus-daemon)
+- [{% t dict.guide.run_pactus_docker %}](https://docs.pactus.org/get-started/pactus-docker)
 
 ## Become a Validator
 
 Validators play an important role in the Pactus blockchain by verifying transactions and
 adding them to the blockchain.
-By becoming a validator, you can earn [rewards](https://docs.pactus.org/docs/concepts/blockchain/incentive/)
+By becoming a validator, you can earn [rewards](https://docs.pactus.org/protocol/blockchain/incentive/)
 for contributing to the network's security and decentralization.
 
 To become a validator, you will need to stake a certain amount of Pactus coins.
 These guides can help you to send a Bond transaction and stake some coins:
 
-- [{% t dict.guide.send_transactions_gui %}](https://docs.pactus.org/docs/tutorials/send-transactions-gui)
-- [{% t dict.guide.use_wallet_cli %}](https://docs.pactus.org/docs/tutorials/pactus-wallet)
+- [{% t dict.guide.send_transactions_gui %}](https://docs.pactus.org/tutorials/send-transaction-gui/)
+- [{% t dict.guide.use_wallet_cli %}](https://docs.pactus.org/tutorials/pactus-wallet)
 
 ## Develop
 
