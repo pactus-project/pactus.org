@@ -24,7 +24,7 @@ version: 1
 
 通过验证交易并将其添加到区块链，验证者在Pactus区块链中发挥着重要作用。
 
-成为验证者，您可以为为网络的安全性和去中心化做出贡献而获得 [奖励](https://docs.pactus.org/concepts/blockchain/incentive/) 。
+成为验证者，您可以为为网络的安全性和去中心化做出贡献而获得 [奖励](https://docs.pactus.org/protocol/blockchain/incentive/) 。
 
 要成为验证者，您需要抵押一定数量的Pactus币。
 以下指南可以帮助您发送一个质押交易并抵押一些币：

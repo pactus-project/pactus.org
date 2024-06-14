@@ -12,9 +12,9 @@
 - title: validator
   items:
     - id: validators
-      more: https://docs.pactus.org/concepts/blockchain/validator/
+      more: https://docs.pactus.org/protocol/blockchain/validator/
     - id: unlimited_validators
-      more: https://docs.pactus.org/concepts/consensus/proof-of-stake/
+      more: https://docs.pactus.org/protocol/consensus/proof-of-stake/
     - id: min_and_max_stake
     - id: min_hardware_requirements
       more: https://pips.pactus.org/PIPs/pip-19
@@ -22,26 +22,26 @@
     - id: multiple_validators
       more: https://docs.pactus.org/get-started/pactus-gui/#number-of-validators
     - id: validators_rewarded
-      more: https://docs.pactus.org/concepts/blockchain/incentive
+      more: https://docs.pactus.org/protocol/blockchain/incentive
     - id: flat_reward
       img: pactus-reward.png
-      more: https://docs.pactus.org/concepts/blockchain/incentive/#flat-reward
+      more: https://docs.pactus.org/protocol/blockchain/incentive/#flat-reward
     - id: coins_per_day
 
 - title: consensus
   items:
     - id: how_pactus_works
       img: pactus-validator-pool.png
-      more: https://docs.pactus.org/concepts/consensus/proof-of-stake/
+      more: https://docs.pactus.org/protocol/consensus/proof-of-stake/
     - id: how_enter_committee
-      more: https://docs.pactus.org/concepts/consensus/sortition/
+      more: https://docs.pactus.org/protocol/consensus/sortition/
     - id: proposer_selection
-      more: https://docs.pactus.org/concepts/consensus/committee/
+      more: https://docs.pactus.org/protocol/consensus/committee/
     - id: multiple_committee_entry
     - id: fork_possibility
-      more: https://docs.pactus.org/concepts/consensus/protocol/
+      more: https://docs.pactus.org/protocol/consensus/protocol/
     - id: block_confirmation
-      more: https://docs.pactus.org/concepts/consensus/protocol/
+      more: https://docs.pactus.org/protocol/consensus/protocol/
 
 - title: economy
   items:
@@ -49,21 +49,21 @@
     - id: genesis_allocation
       img: pactus-coin-allocation.png
     - id: treasury_account
-      more: https://docs.pactus.org/concepts/blockchain/account/#treasury-account
+      more: https://docs.pactus.org/protocol/blockchain/account/#treasury-account
     - id: treasury_distribution
       img: pactus-coin-distribution.png
-      more: https://docs.pactus.org/concepts/blockchain/incentive/#coin-distribution
+      more: https://docs.pactus.org/protocol/blockchain/incentive/#coin-distribution
     - id: support_distribution
 
 - title: transaction
   items:
     - id: transfer_transaction
-      more: https://docs.pactus.org/concepts/transaction/transfer/
+      more: https://docs.pactus.org/protocol/transaction/transfer/
     - id: bond_transaction
-      more: https://docs.pactus.org/concepts/transaction/bond/
+      more: https://docs.pactus.org/protocol/transaction/bond/
     - id: sortition_transaction
-      more: https://docs.pactus.org/concepts/transaction/sortition/
+      more: https://docs.pactus.org/protocol/transaction/sortition/
     - id: unbond_transaction
-      more: https://docs.pactus.org/concepts/transaction/unbond/
+      more: https://docs.pactus.org/protocol/transaction/unbond/
     - id: withdraw_transaction
-      more: https://docs.pactus.org/concepts/transaction/withdraw/
+      more: https://docs.pactus.org/protocol/transaction/withdraw/

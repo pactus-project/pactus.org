@@ -5,7 +5,7 @@ date: 2023-07-05 00:00:00 +0000
 tags: validators, testnet
 ---
 
-For a [Proof of Stake](https://docs.pactus.org/concepts/consensus/proof-of-stake/) blockchain, validators are important for
+For a [Proof of Stake](https://docs.pactus.org/protocol/consensus/proof-of-stake/) blockchain, validators are important for
 maintaining the network's integrity and security. They are similar to miners in Proof of Work blockchains like Bitcoin.
 
 Pactus as a real Proof of Stake blockchain, has achieved a significant milestone.
@@ -17,7 +17,7 @@ in the blockchain world. In fact, **the Pactus Testnet is even more decentralize
 ![500 validators of Testnet]({% image_url %}/500-validators.png)
 
 One key reason why Pactus can accommodate more validators is its powerful
-[consensus mechanism](https://docs.pactus.org/concepts/consensus/protocol/).
+[consensus mechanism](https://docs.pactus.org/protocol/consensus/protocol/).
 The consensus mechanism in Pactus eliminates the need for delegation, making it possible for anyone to become a validator.
 Additionally, the user-friendly application ensures that even those new to blockchain can easily contribute to the network.
 
