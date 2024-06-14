@@ -29,7 +29,7 @@ for contributing to the network's security and decentralization.
 To become a validator, you will need to stake a certain amount of Pactus coins.
 These guides can help you to send a Bond transaction and stake some coins:
 
-- [{% t dict.guide.send_transactions_gui %}](https://docs.pactus.org/tutorials/send-transactions-gui)
+- [{% t dict.guide.send_transactions_gui %}](https://docs.pactus.org/tutorials/send-transaction-gui/)
 - [{% t dict.guide.use_wallet_cli %}](https://docs.pactus.org/tutorials/pactus-wallet)
 
 ## Develop

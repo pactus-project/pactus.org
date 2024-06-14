@@ -29,7 +29,7 @@ version: 1
 要成为验证者，您需要抵押一定数量的Pactus币。
 以下指南可以帮助您发送一个质押交易并抵押一些币：
 
-- [{% t dict.guide.send_transactions_gui %}](https://docs.pactus.org/tutorials/send-transactions-gui)
+- [{% t dict.guide.send_transactions_gui %}](https://docs.pactus.org/tutorials/send-transaction-gui/)
 - [{% t dict.guide.use_wallet_cli %}](https://docs.pactus.org/tutorials/pactus-wallet)
 
 ## 开发

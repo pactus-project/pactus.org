@@ -18,7 +18,7 @@ If you like to read more about the Testnet you can check out our post on
 In September 2022, we launched [Testnet-0]({{ site.baseurl }}/2022/09/24/testnet-0-launched.html).
 The purpose of this Testnet was to
 check the [consensus protocol](https://docs.pactus.org/concepts/consensus/protocol/),
-test different [transaction](https://docs.pactus.org/concepts/transaction/format/) types,
+test different [transaction](https://docs.pactus.org/concepts/transaction/fomart/) types,
 and ensure the stability of the blockchain.
 We also wanted to test the [sortition algorithm](https://docs.pactus.org/concepts/consensus/sortition/)
 to make sure it works properly.
