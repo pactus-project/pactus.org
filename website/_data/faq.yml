@@ -68,10 +68,3 @@
     - id: withdraw_transaction
       more: https://docs.pactus.org/concepts/transaction/withdraw/
 
-- title: fee
-  items:
-    - id: fee_model
-      more: https://docs.pactus.org/concepts/transaction/fee/
-    - id: fee_min_max
-      more: https://docs.pactus.org/concepts/transaction/fee/
-    - id: why_percentage_fee
