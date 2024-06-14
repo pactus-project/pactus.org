@@ -39,5 +39,5 @@ For instance, if you want to connect to a remote server, you can execute:
 
 When connecting to a remote node, it's important to think about security.
 You can make the node more secure in a few ways.
-For instance, [set a password]({{ site.baseurl }}/user-guides/grpc-basic-auth/) for the gRPC service,
+For instance, [set a password](https://docs.pactus.org/docs/tutorials/grpc-basic-auth/) for the gRPC service,
 or use [NGINX](https://www.nginx.com/blog/nginx-1-13-10-grpc/) to enable TLS/SSL for your node.

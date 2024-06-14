@@ -117,11 +117,11 @@ Pactus 区块链中的每个节点最多可以运行 32 个验证器，每个验
 地址信息，例如**验证器和奖励地址**。
 当您的计算机充当节点，您的验证器地址是被用来网络识别。
 奖励地址是您领取参与共识算法、提出新区块后所获得的奖励
-[奖励]({{ site.baseurl }}/learn/blockchain/incentive/) 的账户地址。
+[奖励](https://docs.pactus.org/docs/concepts/blockchain/incentive/) 的账户地址。
 
 成为验证者并参与共识算法要获得奖励，你首先需要
-[质押]({{ site.baseurl }}/learn/consensus/proof-of-stake/) 一些代币. 下一个
-[教程]({{ site.baseurl }}/user-guides/send-transactions-gui/),
+[质押](https://docs.pactus.org/docs/concepts/consensus/proof-of-stake/) 一些代币. 下一个
+[教程](https://docs.pactus.org/docs/tutorials/send-transactions-gui/),
 我们将教导如何发送契约交易以成为验证者。
 
 ---

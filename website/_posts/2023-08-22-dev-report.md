@@ -31,7 +31,7 @@ as you know we had some problem with consensus in Testnet-1, we fixed the issues
 
 [link to changes](https://github.com/pactus-project/pactus/pull/641)
 
-if you wish you can learn more about Pactus [consensus](https://pactus.org/learn/consensus/specification/) here.
+if you wish you can learn more about Pactus [consensus](https://docs.pactus.org/docs/concepts/consensus/specification/) here.
 
 ### Refactoring
 

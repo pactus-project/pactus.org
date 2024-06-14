@@ -1,5 +1,5 @@
 - title: Blockchain
-  path: learn/blockchain
+  path: https://docs.pactus.org/docs/concepts/blockchain
   items:
     - doc: block
     - doc: account
@@ -12,7 +12,7 @@
     - doc: serialization
 
 - title: Consensus
-  path: learn/consensus
+  path: https://docs.pactus.org/docs/concepts/consensus
   items:
     - doc: proof-of-stake
     - doc: protocol
@@ -22,7 +22,7 @@
     - doc: parameters
 
 - title: Transaction
-  path: learn/transaction
+  path: https://docs.pactus.org/docs/concepts/transaction
   items:
     - doc: format
     - doc: fee
@@ -33,12 +33,8 @@
     - doc: withdraw
 
 - title: API Reference
-  path: learn/api
+  path: https://docs.pactus.org/docs/api/
   items:
     - doc: grpc
     - doc: http
     - doc: json-rpc
-# - title: Smart Contract
-#   path: learn/smart-contract
-#   items:
-#     - doc: storage

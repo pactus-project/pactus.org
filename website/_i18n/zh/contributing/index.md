@@ -16,21 +16,21 @@ version: 1
 
 这些指南可以帮助您运行和配置您的节点:
 
-- [{% t dict.guide.run_pactus_gui %}]({{ site.baseurl }}/user-guides/pactus-gui)
-- [{% t dict.guide.run_pactus_cli %}]({{ site.baseurl }}/user-guides/pactus-daemon)
-- [{% t dict.guide.run_pactus_docker %}]({{ site.baseurl }}/user-guides/pactus-docker)
+- [{% t dict.guide.run_pactus_gui %}](https://docs.pactus.org/docs/get-started/pactus-gui)
+- [{% t dict.guide.run_pactus_cli %}](https://docs.pactus.org/docs/get-started/pactus-daemon)
+- [{% t dict.guide.run_pactus_docker %}](https://docs.pactus.org/docs/get-started/pactus-docker)
 
 ## 成为一名验证者
 
 通过验证交易并将其添加到区块链，验证者在Pactus区块链中发挥着重要作用。
 
-成为验证者，您可以为为网络的安全性和去中心化做出贡献而获得 [奖励]({{ site.baseurl }}/learn/blockchain/incentive/) 。
+成为验证者，您可以为为网络的安全性和去中心化做出贡献而获得 [奖励](https://docs.pactus.org/docs/concepts/blockchain/incentive/) 。
 
 要成为验证者，您需要抵押一定数量的Pactus币。
 以下指南可以帮助您发送一个质押交易并抵押一些币：
 
-- [{% t dict.guide.send_transactions_gui %}]({{ site.baseurl }}/user-guides/send-transactions-gui)
-- [{% t dict.guide.use_wallet_cli %}]({{ site.baseurl }}/user-guides/pactus-wallet)
+- [{% t dict.guide.send_transactions_gui %}](https://docs.pactus.org/docs/tutorials/send-transactions-gui)
+- [{% t dict.guide.use_wallet_cli %}](https://docs.pactus.org/docs/tutorials/pactus-wallet)
 
 ## 开发
 

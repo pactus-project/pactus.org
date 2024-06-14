@@ -98,7 +98,7 @@ dict:
     all_posts: 所有文章
 
   learn:
-    title: 资料
+    title: 文档
     reference: 参考资料
     welcome: >
       在这里，您可以找到帕图斯项目的技术文档。

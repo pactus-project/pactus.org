@@ -18,7 +18,7 @@ If you like to read more about the Testnet you can check out our post on
 In October 2023, we launched [Testnet-2]({{ site.baseurl }}/2023/10/15/testnet-2-launched.html).
 The main purpose of this Testnet was to closely monitor the new consensus mechanism and the stability of the P2P network.
 
-The [committee]({{ site.baseurl }}/learn/consensus/committee/) for Testnet-2 was set to 51 validators,
+The [committee](https://docs.pactus.org/docs/concepts/consensus/committee/) for Testnet-2 was set to 51 validators,
 and 2084 validators [joined]({{ site.baseurl }}/2023/07/05/testnet-500-validators.html) during the Testnet period.
 More than 1500 computers and servers joined the network, and we experienced a high volume of data transmission in the network.
 More than 800,000 blocks were created, and about 2 million transactions were processed during this time.

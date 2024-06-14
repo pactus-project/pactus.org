@@ -6,11 +6,11 @@ sidebar: Sortition Transaction
 
 # Sortition Transaction
 
-Sortition transaction is used to enter a [validator]({{ site.baseurl }}/learn/blockchain/validator/)
-in the [committee]({{ site.baseurl }}/learn/consensus/committee/).
+Sortition transaction is used to enter a [validator](https://docs.pactus.org/docs/concepts/blockchain/validator/)
+in the [committee](https://docs.pactus.org/docs/concepts/consensus/committee/).
 By committing a sortition transaction, the validator will enter the committee.
 Sortition transactions are valid for 7 blocks, which is defined as "sortition interval" in the
-[consensus parameters]({{ site.baseurl }}/learn/consensus/parameters/).
+[consensus parameters](https://docs.pactus.org/docs/concepts/consensus/parameters/).
 
 ## Payload Structure
 

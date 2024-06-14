@@ -7,12 +7,12 @@ sidebar: Sortition
 # Sortition Algorithm
 
 The sortition algorithm is an important part of the Pactus blockchain, responsible for the fair, transparent
-and random selection of validators to join the [committee]({{ site.baseurl }}/learn/consensus/committee/).
+and random selection of validators to join the [committee](https://docs.pactus.org/docs/concepts/consensus/committee/).
 It utilizes a Verifiable Random Function, or VRF for short, to generate a verifiable random number.
 
 The generated random number should be in the range of 0 to the total staked coins.
 If validators can prove that their generated number is less than their stake,
-they can send the [sortition transaction]({{ site.baseurl }}/learn/transaction/sortition/).
+they can send the [sortition transaction](https://docs.pactus.org/docs/concepts/transaction/sortition/).
 Once a sortition transaction is included in a block, the validator will join the committee,
 and the oldest validator in the committee will leave it.
 
@@ -23,7 +23,7 @@ $$proof_{x}$$ efficiently proving that $$v$$ is correct. We call such a mathemat
 object a verifiable pseudo-random function, VRF for brevity [^first].
 
 Pactus uses the BLS signature scheme as the source of VRF.
-Since BLS signatures are [unique]({{ site.baseurl }}/learn/blockchain/cryptography/#non-malleability),
+Since BLS signatures are [unique](https://docs.pactus.org/docs/concepts/blockchain/cryptography/#non-malleability),
 the hash of a BLS signature can be used to produce a secure and verifiable random number.
 
 The VRF takes three parameters:
@@ -154,12 +154,12 @@ may differ due to the randomness in the sortition algorithm, or the possibility 
 ### How is the total staked coin calculated?
 
 The total staked coin in each block is calculated by summing the staked coins of all active validators.
-An active validator is a validator that has not yet [unbonded]({{ site.baseurl }}/learn/transaction/unbond/).
+An active validator is a validator that has not yet [unbonded](https://docs.pactus.org/docs/concepts/transaction/unbond/).
 
 ### How is the oldest validator determined?
 
 The height at which the validator joined the committee is recorded as the "Last Joined Height" field in
-the [validator]({{ site.baseurl }}/learn/blockchain/validator/) structure.
+the [validator](https://docs.pactus.org/docs/concepts/blockchain/validator/) structure.
 The validator with the lowest "Last Joined Height" is considered the oldest.
 
 [^first]: [Verifiable Random Function](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Pseudo%20Randomness/Verifiable_Random_Functions.pdf)

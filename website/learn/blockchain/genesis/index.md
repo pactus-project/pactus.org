@@ -25,7 +25,7 @@ the blockchain will be secured by other validators.
 The genesis block is the first block in the Pactus blockchain, and it is created by the bootstrap validators.
 This block marks the beginning of the blockchain and serves as the foundation for subsequent blocks.
 
-The previous [block hash]({{ site.baseurl }}/learn/blockchain/block/#block-hash) in the genesis block sets to 0,
+The previous [block hash](https://docs.pactus.org/docs/concepts/blockchain/block/#block-hash) in the genesis block sets to 0,
 indicating that it has no predecessor.
 Additionally, the genesis block does not have a previous certificate.
 
@@ -36,10 +36,10 @@ These parameters are hardcoded into the project and include:
 
 - **Genesis Time** This is the time when the genesis block should be created.
   The bootstrap validators must be operational before this time.
-- **Consensus Parameters**: The initial [consensus parameters]({{ site.baseurl }}/learn/consensus/parameters)
+- **Consensus Parameters**: The initial [consensus parameters](https://docs.pactus.org/docs/concepts/consensus/parameters)
   are defined at genesis time and ensure that the entire network operates within the same configuration.
   These consensus parameters are discussed in detail in the consensus section of the documentation.
-- **Treasury Account**: The [treasury account]({{ site.baseurl }}/learn/blockchain/account/#treasury-account)
+- **Treasury Account**: The [treasury account](https://docs.pactus.org/docs/concepts/blockchain/account/#treasury-account)
   holds 21 million coins at the genesis time. Each coin is divided into 1 billion units.
 - **Reserved Accounts**: Reserved account are defined at the Genesis time and at total they have 21 milion coins.
   These coins are reserved and the main purpise is to support the project over time.

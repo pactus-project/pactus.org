@@ -33,10 +33,10 @@ The block header is 138 bytes long and consists the following fields:
 - **Version** is used to track the software or protocol upgrade, and the current block version is set to 1.
 - **Timestamp** is the time of the block as the number of seconds since January 1, 1970 (Unix Epoch).
 - **Previous Block Hash** is the hash of the previous block in the blockchain.
-- **State Hash** is the [state hash]({{ site.baseurl }}/learn/blockchain/state-hash) of the blockchain at this block.
+- **State Hash** is the [state hash](https://docs.pactus.org/docs/concepts/blockchain/state-hash) of the blockchain at this block.
   The State Hash ensures that all nodes in the network have the same state.
 - **Sortition Seed** is a verifiable and unpredictable seed data used by
-  the [sortition]({{ site.baseurl }}/learn/consensus/sortition) algorithm.
+  the [sortition](https://docs.pactus.org/docs/concepts/consensus/sortition) algorithm.
 - **Proposer Address** is the address of the validator who created and proposed the block.
 
 ## Block Certificate
@@ -67,8 +67,8 @@ The block certificate consists the following fields:
 
 Each block in the Pactus blockchain contains a list of transactions.
 The maximum number of transactions in a block is determined by the
-[consensus parameters]({{ site.baseurl }}/learn/consensus/parameters), and currently set to 1000.
-The first transaction in each block is the [reward transaction]({{ site.baseurl }}/learn/transaction/transfer/#reward-transaction).
+[consensus parameters](https://docs.pactus.org/docs/concepts/consensus/parameters), and currently set to 1000.
+The first transaction in each block is the [reward transaction](https://docs.pactus.org/docs/concepts/transaction/transfer/#reward-transaction).
 Once a block is committed and added to the blockchain, all the transactions inside the block will be executed.
 This means that the state of the blockchain will be updated based on the transactions in the committed block.
 
@@ -78,7 +78,7 @@ The block hash is a unique identifier for each block, which is computed by hashi
 
 - Block header data (138 bytes)
 - Previous certificate hash (32 bytes)
-- [Merkle root]({{ site.baseurl }}/learn/blockchain/state-hash/#merkle-tree) hash of transactions (32 bytes)
+- [Merkle root](https://docs.pactus.org/docs/concepts/blockchain/state-hash/#merkle-tree) hash of transactions (32 bytes)
 - Number of transactions (variant)
 
 The previous certificate hash and the Merkle root hash of transactions are included in the block hash to
@@ -100,7 +100,7 @@ The Proposer broadcasts the proposed block to other validators inside the commit
 Other validators verify the proposed block, and if it is valid, they cast their votes in favor of the proposed block by
 signing the combination of the block hash and the consensus round.
 More details about the consensus mechanism can be found in the
-[consensus protocol]({{ site.baseurl }}/learn/consensus/protocol) document.
+[consensus protocol](https://docs.pactus.org/docs/concepts/consensus/protocol) document.
 
 To issue a valid certificate, signatures from validators who hold more than ⅔ of the stake in
 the committee are required.
