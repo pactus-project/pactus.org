@@ -1,5 +1,5 @@
 - title: Blockchain
-  path: https://docs.pactus.org/docs/concepts/blockchain
+  path: https://docs.pactus.org/concepts/blockchain
   items:
     - doc: block
     - doc: account
@@ -12,7 +12,7 @@
     - doc: serialization
 
 - title: Consensus
-  path: https://docs.pactus.org/docs/concepts/consensus
+  path: https://docs.pactus.org/concepts/consensus
   items:
     - doc: proof-of-stake
     - doc: protocol
@@ -22,7 +22,7 @@
     - doc: parameters
 
 - title: Transaction
-  path: https://docs.pactus.org/docs/concepts/transaction
+  path: https://docs.pactus.org/concepts/transaction
   items:
     - doc: format
     - doc: fee
@@ -33,7 +33,7 @@
     - doc: withdraw
 
 - title: API Reference
-  path: https://docs.pactus.org/docs/api/
+  path: https://docs.pactus.org/api/
   items:
     - doc: grpc
     - doc: http

@@ -29,7 +29,7 @@ If you're new to the concept of Testnet, check out our informative post:
 Testnet-2 has important tasks ahead.
 Firstly, we aim to confirm that the new consensus mechanism is both safe and efficient.
 A close eye will be kept on the network's performance, ensuring it operates as expected.
-For Testnet-2, the [committee](https://docs.pactus.org/docs/concepts/consensus/committee/)
+For Testnet-2, the [committee](https://docs.pactus.org/concepts/consensus/committee/)
 size has been expanded to 51 members.
 Both the committee's performance and block production will be closely monitored.
 The goal is a blockchain that remains stable and trustworthy,
