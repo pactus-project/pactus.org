@@ -263,15 +263,37 @@ permalink: index.html
 
 <div class="shadow-sm bg-body mt-3 mb-3 rounded">
   <div class="row p-5">
-    <div class="col-md-6 motto">
-      <div class="row text-center" style="height: 60%">
-        <div class="title">{% t dict.home.newsletter %}</div>
-        <div class="motto">{% t dict.home.newsletter_desc %}</div>
+    <div class="col-md-6">
+      <div class="row text-center">
+        <h3>Subscribe to the Pactus Newsletter</h3>
+        <p></p>
+        <p>Dive into the latest updates and insights from the Pactus Blockchain. 
+          Receive crucial information on new developments, enhancements, and partnerships 
+          directly to your inbox. Stay connected and informed, whether you're an investor, developer, 
+          or blockchain enthusiast.</p>
       </div>
     </div>
     <div class="col-md-6 motto">
       <div class="pactus-video">
-      </br></br>
+
+        <div id="signupMainDiv" name="SIGNUPFORM">
+          <div style="position:relative;">
+              <div id="Zc_SignupSuccess" style="display:none;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tbody>
+                          <tr>
+                              <td width="10%">
+                                  <img class="successicon" src="https://zcsub-cmpzourl.maillist-manage.com/images/challangeiconenable.jpg" align="absmiddle">
+                              </td>
+                              <td>
+                                  <span id="signupSuccessMsg">&nbsp;&nbsp;Thank you for Signing Up</span>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+
         <form method="POST" id="zcampaignOptinForm" action="https://zcsub-cmpzourl.maillist-manage.com/weboptin.zc" target="_zcSignup">
           <div id="SIGNUP_BODY_ALL">
               <div id="SIGNUP_BODY" name="SIGNUP_BODY">
@@ -288,7 +310,7 @@ permalink: index.html
                           <div class="g-recaptcha" data-sitekey="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs" data-callback="onSubmit"></div>
                           </br>
                           <div>
-                              <button class="g-recaptcha" data-sitekey="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs" data-callback="onSubmit">Subscribe</button>
+                            <button class="btn btn-fixed btn-outline-primary g-recaptcha" data-sitekey="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs" data-callback="onSubmit">Subscribe</button>
                           </div>
                       </div>
                   </div>
@@ -305,12 +327,9 @@ permalink: index.html
               <input type="hidden" name="zc_formIx" value="3z791cc136c2b7c862f274c028d64a7a99807952474c7b166958eb0046cce6ccfe">
           </div>
       </form>
-  </div>
-</div>
-<input type="hidden" id="isCaptchaNeeded" value="true">
-<input type="hidden" id="superAdminCap" value="0">
-</div>
-
+      <div>
+        <input type="hidden" id="isCaptchaNeeded" value="true">
+        <input type="hidden" id="superAdminCap" value="0">
       </div>
     </div>
   </div>
