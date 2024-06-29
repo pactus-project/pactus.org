@@ -4,6 +4,13 @@ title: dict.home.title
 permalink: index.html
 ---
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script type="text/javascript">
+    function onSubmit(token) {
+        document.getElementById("zcampaignOptinForm").submit();
+    }
+</script>
+
 <div class="shadow-sm bg-body mt-3 mb-3 rounded">
   <div class="row p-5">
     <div class="col-md-6">
@@ -264,40 +271,46 @@ permalink: index.html
     </div>
     <div class="col-md-6 motto">
       <div class="pactus-video">
-        <form method="post" action="https://pacmail.org/subscription/form" class="listmonk-form">
-          <div>
-            <input type="hidden" name="nonce" />
-            <p>
-              <input type="email" name="email" required placeholder="E-mail" />
-              <input type="submit" value="Subscribe" />
-            </p>
-            <p></p>
-            <div class="short">
-              Please add
-              <b>"noreply@pacmail.org"</b>
-              to your email service's
-              <a href="https://blog.hubspot.com/marketing/email-whitelist" rel="nofollow noreferrer" target="_blank">
-                whitelist
-              </a>
-              <br />
-              to ensure you receive our emails in your inbox.
-            </div>
-
-            <div class="captcha">
-              <div class="h-captcha" data-sitekey="898156d4-1b49-4bb4-a3d9-f4c2214b9908"></div>
-              <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-            </div>
-
-            <p>
-              <input id="90cc6" type="checkbox" name="l" checked value="90cc6b4e-c631-45f3-b1d5-c5027b379c7e" />
-              <label for="90cc6">Pactus Announcements</label>
-            </p>
-            <p>
-              <input id="647b6" type="checkbox" name="l" checked value="647b6294-eced-4887-9298-3ae6f79f12a6" />
-              <label for="647b6">Pactus Update News</label>
-            </p>
+      </br></br>
+        <form method="POST" id="zcampaignOptinForm" action="https://zcsub-cmpzourl.maillist-manage.com/weboptin.zc" target="_zcSignup">
+          <div id="SIGNUP_BODY_ALL">
+              <div id="SIGNUP_BODY" name="SIGNUP_BODY">
+                  <div>
+                      <div id="errorMsgDiv" style="display:none;">&nbsp;&nbsp;Please correct the marked field(s) below.</div>
+                      <div>
+                          <div>
+                              <div>
+                                  <input style="width: 97%;" maxlength="100" placeholder="Contact Email" name="CONTACT_EMAIL" type="email" required>
+                                  <span>*</span>
+                              </div>
+                          </div>
+                                                                  </br>
+                          <div class="g-recaptcha" data-sitekey="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs" data-callback="onSubmit"></div>
+                          </br>
+                          <div>
+                              <button class="g-recaptcha" data-sitekey="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs" data-callback="onSubmit">Subscribe</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW">
+              <input type="hidden" name="viewFrom" id="viewFrom" value="URL_ACTION">
+              <input type="hidden" name="submitType" value="optinCustomView">
+              <input type="hidden" name="lD" value="112123bce6a87486f">
+              <input type="hidden" name="zx" id="cmpZuid" value="13218bf6c">
+              <input type="hidden" name="zcvers" value="3.0">
+              <input type="hidden" name="mode" value="OptinCreateView">
+              <input type="hidden" name="zcld" value="112123bce6a87486f">
+              <input type="hidden" name="zctd" value="112123bce6a8747a9">
+              <input type="hidden" name="zc_formIx" value="3z791cc136c2b7c862f274c028d64a7a99807952474c7b166958eb0046cce6ccfe">
           </div>
-        </form>
+      </form>
+  </div>
+</div>
+<input type="hidden" id="isCaptchaNeeded" value="true">
+<input type="hidden" id="superAdminCap" value="0">
+</div>
+
       </div>
     </div>
   </div>
