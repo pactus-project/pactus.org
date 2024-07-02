@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ar">
+  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q08QEQK55Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-Q08QEQK55Q");
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>What is a Testnet? | بلوكشين بكتوس</title>
+  <meta name="description" content="Building decentralized future together!" />
+
+  <meta property="og:title" content="What is a Testnet? | بلوكشين بكتوس" />
+  <meta property="og:description" content="Building decentralized future together!" />
+  <meta property="og:site_name" content="بلوكشين بكتوس" />
+  <meta property="og:url" content="https://pactus.org/2023/03/01/what-is-testnet.html" />
+  <meta property="og:type" content="website" />
+
+  <link href="/assets/css/rouge.theme.vim.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.colorful.brands.css" rel="stylesheet" />
+  <link href="/assets/css/custom.css" rel="stylesheet" />
+
+  <script src="/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/anchor.min.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="/assets/js/color-modes.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+
+
+  <body>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+  A Fresh New Look is Coming Soon! Stay Tuned! 🌟
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<div class="shadow-sm rounded-bottom">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand logo px-4 pt-2" href="/ar/">
+        <img id="logo_image" src="https://pactus.org/assets/images/logos/pactus-logo-light.png" alt="Pactus blockchain" />
+        <div class="logo"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              حول
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/about/what-is-pactus/">
+                  ما هو بكتوس؟
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/about/roadmap/">
+                  خارطة الطريق
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/about/faq/">الأسئلة المتكررة</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="https://docs.pactus.org" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documentation
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/get-started/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Get Started
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/get-started/become-a-validator/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Become a validator
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/protocol/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Protocol
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/tutorials/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Tutorials
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/api/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  API Reference
+                </a>
+              </li>
+        </ul>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/ar/download/">تنزيل</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/ar/blog/">مدونة</a>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              الموارد
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/community/">
+                  المجتمع
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/contributing/">
+                  المساهمة
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://pacviewer.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://github.com/pactus-project/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link dropdown-item ps-2" href="https://pips.pactus.org" target="_blank">
+                  PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">العربية</span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+      
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/2023/03/01/what-is-testnet.html">English</a>
+    </li>
+         
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/zh/2023/03/01/what-is-testnet.html">中文</a>
+    </li>
+     
+  </ul>
+</li>
+ <li class="nav-item dropdown ps-2 ms-0">
+  <button
+    class="btn btn-link nav-link dropdown-toggle"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-label="Toggle theme (auto)">
+    <i id="bd-theme-icon" class="fa-regular fa-fw fa-circle-half-stroke"></i>
+    <span class="d-lg-none bd-theme-text m-0 p-0" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="light">
+        <i class="fa-regular fa-fw fa-sun"></i>
+        Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="dark">
+        <i class="fa-solid fa-fw fa-moon"></i>
+        Dark
+      </button>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+    <div class="container-fluid shadow-sm mt-3 mb-3 blog-post">
+      <div class="row bg-body rounded p-3">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 content">
+          <h1>What is a Testnet?</h1>
+          <div class="post-date">01 March 2023</div>
+          <h2 id="mainnet-vs-testnet">Mainnet vs Testnet?</h2>
+
+<p>If you have ever wondered what Testnet is and how it is different from Mainnet, read this article to the end to find out!</p>
+
+<p>Mainnet and Testnet are two widely used terminologies in the Blockchain ecosystem;
+so it is important to understand the meaning and differences while working in the industry or
+following announcements of the Blockchain projects like Pactus.</p>
+
+<p>Here’s a quick explanation:
+Before the actual live version of a Blockchain network that is used for real transactions,
+functions and smart-contracts (which is referred as Mainnet),
+there is a test version of the Blockchain network for testing purposes (which is referred as Testnet).
+In Testnet, a safe environment is provided to help developers experiment and test their applications,
+and make sure that everything functions smoothly in the Mainnet version.</p>
+
+<h2 id="testnet">Testnet</h2>
+
+<p>A Testnet is a simulation of a Blockchain, in which developers can test all the functionalities of
+their Blockchain network without risking their assets and convenience of end-users.
+Using Testnet, any possible error, bug or malfunctions can be fixed before the Mainnet launch.
+Testnet also can be an experimental environment for new features, updates and upgrades.
+So several Testnet networks of the same version or newer version of the Mainnet can be implemented on the roadmap.</p>
+
+<h2 id="what-are-use-cases-of-testnet">What are use cases of Testnet?</h2>
+
+<p><strong>A secure environment to test development ideas and updates.</strong>
+So many features and minor details in Pactus project have been successfully developed so far using the Testnet; such as:</p>
+
+<ul>
+  <li>extra details and information on Pactus-GUI;</li>
+  <li>well-functioning Pactus Blockchain explorer to access transactions and block details;</li>
+  <li>Upgrades that led to decreasing the size of the Pactus network</li>
+</ul>
+
+<p><strong>Providing a safe testing ground for resolve scalability and security problems, as well as decentralization issues.</strong>
+Pactus network is also a secure and purely decentralized network. However in the last updates during the Testnet,
+developers are now able to decrease the database size by approximately 10% without compromising performance.
+They did it by utilizing block height instead of hash to store blocks within the database. (you can find out more
+<a href="https://github.com/pactus-project/pactus/pull/416">here</a>).</p>
+
+<p><strong>Testing new versions, patches and features on Testnet.</strong> it is vital for enhancing the security, load testing,
+Blockchain migration, integration tests, and etc. This is why you can now use the latest version of Pactus-GUI
+that works like clockwork and is extremely secure.</p>
+
+<p><strong>Testing the functions of cryptocurrency without disrupting the Mainnet.</strong> In the Testnet of Pactus Blockchain,
+you as a user or validator can use all the features to send, receive, bond or unbond your assets in the Pactus-GUI.</p>
+
+<p><strong>Development and simulation of smart contract features and DApps.</strong> Note that many Blockchain projects like Pactus,
+can be used as smart-contract platforms. So the Testnet can be designed in different stages to test and improve
+different applications of the network.</p>
+
+<p>Please note that after a certain period of time, when developers get satisfied with the functionality and debugging process,
+they launch Mainnet. Mainnet has its own independent genesis blocks;
+so the assets and addresses that users use in Testnet are not valid inside the new Mainnet Blockchain anymore.
+In fact the whole Blockchain network starts working from the scratch and users and validators start to
+work with real coins and transactions instead of the simulated ones. But since Testnet has an important effect
+on the health and improvement of the network, in Pactus Blockchain, we have several advantages
+for the people who join the Testnet.</p>
+
+<h2 id="why-should-you-join-the-testnet">Why should you join the Testnet?</h2>
+
+<p>There are different contributors in a Blockchain network;
+Some people are developers and programmers that use the Testnet to contribute, enhance and lead the project to a better future.
+Testnet is actually vital for them to perform their changes and try their innovations and ideas.</p>
+
+<p>But you might also be an end user; you might want to either be a validator and stake your assets to earn more Pactus coins,
+or you might want to learn <strong>how to use the network for future</strong> personal applications. Either way,
+you might find it handy to give it a try and be familiar with Pactus-GUI and its different features.</p>
+
+<p><strong>However, there is another advantage for end users who join the Testnet.</strong>
+While using the network, running a node or testing the Pactus-GUI in Testnet period, you are contributing to
+the community to find improvement potentials, that’s why there are more advantages contemplated for the Testnet users;
+Soon our Mainnet will be launched and also Pactus network will be announced and listed in well-known exchanges.
+As an early contributor, you will have the advantage of getting some extra initial coins at the beginning of Mainnet launch.
+So that you can use it to run a validator node and earn more from staking your assets. This airdrop is considered
+for every individual who installs Pactus-GUI and starts a node in Testnet.</p>
+
+<p>There are other positive conditions you may experience as an early contributor.</p>
+
+<ul>
+  <li>Advanced and very responsive support for your issues (we dedicate more time to provide you with solutions)</li>
+  <li>Embracing your suggestions, improvement ideas, needs and information you may require to have a better user experience.</li>
+</ul>
+
+          <div class="row p-3">
+            <div class="col text-end">
+              <a href="/ar/blog/">« Back to the blog list</a>
+            </div>
+          </div>
+          <div class="row edit-bar">
+  <div class="col">
+    <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/_posts/2023-03-31-what-is-testnet.md">
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
+      عدل هذه الصفحة
+    </a>
+     
+  </div>
+</div>
+
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+    <div class="shadow-sm rounded-top footer anchor">
+  <footer class="container-fluid py-4 pb-0 mb-0">
+    <div class="container pb-0 mb-0">
+      <div class="row around-xs footer-wrapper">
+        <div class="col-md-3 col-xs-6">
+          <div class="section">مشروع بكتوس</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/ar/about/what-is-pactus/">ما هو بكتوس؟</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/about/roadmap/">خارطة الطريق</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/download/">تنزيل</a>
+            </li>
+            <li>
+              <a class="anchor" href="https://docs.pactus.org">Documentation</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/blog/">مدونة</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/about/faq/">الأسئلة المتكررة</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">الموارد</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/ar/community/">المجتمع</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/contributing/">المساهمة</a>
+            </li>
+            <li>
+              <a class="anchor"
+                href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf"
+                target="_blank">
+                Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://pacviewer.com/" target="_blank" rel="noopener noreferrer">
+                Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/" target="_blank" rel="noopener noreferrer">
+                Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a class="anchor" href="https://pips.pactus.org" target="_blank">PIPs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">المجتمع</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="https://discord.gg/H5vZkNnXCu">
+                <i class="fa-brands fa-fw fa-discord"></i>
+                بكتوس على ديسكورد
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://x.com/pactuschain/">
+                <i class="fa-brands fa-fw fa-twitter"></i>
+                بكتوس على تويتر
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://t.me/pactusblockchain">
+                <i class="fa-brands fa-fw fa-telegram"></i>
+                بكتوس على تيليجرام
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://linkedin.com/company/pactus-blockchain">
+                <i class="fa-brands fa-fw fa-linkedin"></i>
+                بكتوس على لينكدإن
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://bitcointalk.org/index.php?topic=5480867.0">
+                <i class="fa-brands fa-fw fa-bitcoin"></i>
+                Pactus on Bitcoin Talk
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="https://pactus.org/assets/images/logos/text-logo.png" />
+            </li>
+            <li>
+              <a class="anchor" href="mailto:info@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                info@pactus.org
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row around-xs pt-4 pb-0 m-0">
+        <div class="col d-flex justify-content-center">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item">
+              <a href="https://pactus.org/term-of-use/" class="px-2 legal">
+                <i class="fa-solid fa-gavel"></i>
+                Term of Use
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://pactus.org/sitemap.xml" class="px-2 legal">
+                <i class="fa-solid fa-sitemap"></i>
+                Sitemap
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://pactus.org/feed.xml" class="px-2 legal">
+                <i class="fa-solid fa-rss"></i>
+                RSS Feed
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>
