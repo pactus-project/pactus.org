@@ -275,15 +275,14 @@ permalink: index.html
     </div>
     <div class="col-md-6 motto">
       <div class="pactus-video">
-
-        <div id="signupMainDiv" name="SIGNUPFORM">
+        <div id="signupMainDiv">
           <div style="position:relative;">
               <div id="Zc_SignupSuccess" style="display:none;">
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <table style="width:100%; border-spacing:0; border:none;">
                       <tbody>
                           <tr>
-                              <td width="10%">
-                                  <img class="successicon" src="https://zcsub-cmpzourl.maillist-manage.com/images/challangeiconenable.jpg" align="absmiddle">
+                              <td style="width:10%;">
+                                  <img class="successicon" src="https://zcsub-cmpzourl.maillist-manage.com/images/challangeiconenable.jpg" style="vertical-align:middle;" alt="Success Icon">
                               </td>
                               <td>
                                   <span id="signupSuccessMsg">&nbsp;&nbsp;Thank you for Signing Up</span>
@@ -293,43 +292,45 @@ permalink: index.html
                   </table>
               </div>
           </div>
-
-        <form method="POST" id="zcampaignOptinForm" action="https://zcsub-cmpzourl.maillist-manage.com/weboptin.zc" target="_zcSignup">
-          <div id="SIGNUP_BODY_ALL">
-              <div id="SIGNUP_BODY" name="SIGNUP_BODY">
-                  <div>
-                      <div id="errorMsgDiv" style="display:none;">&nbsp;&nbsp;Please correct the marked field(s) below.</div>
-                      <div>
-                          <div>
-                              <div>
-                                  <input style="width: 97%;" maxlength="100" placeholder="Contact Email" name="CONTACT_EMAIL" type="email" required>
-                                  <span>*</span>
-                              </div>
-                          </div>
-                                                                  </br>
-                          <div class="g-recaptcha" data-sitekey="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs" data-callback="onSubmit"></div>
-                          </br>
-                          <div>
-                            <button class="btn btn-fixed btn-outline-primary g-recaptcha" data-sitekey="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs" data-callback="onSubmit">Subscribe</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW">
-              <input type="hidden" name="viewFrom" id="viewFrom" value="URL_ACTION">
-              <input type="hidden" name="submitType" value="optinCustomView">
-              <input type="hidden" name="lD" value="112123bce6a87486f">
-              <input type="hidden" name="zx" id="cmpZuid" value="13218bf6c">
-              <input type="hidden" name="zcvers" value="3.0">
-              <input type="hidden" name="mode" value="OptinCreateView">
-              <input type="hidden" name="zcld" value="112123bce6a87486f">
-              <input type="hidden" name="zctd" value="112123bce6a8747a9">
-              <input type="hidden" name="zc_formIx" value="3z791cc136c2b7c862f274c028d64a7a99807952474c7b166958eb0046cce6ccfe">
-          </div>
-      </form>
-      <div>
-        <input type="hidden" id="isCaptchaNeeded" value="true">
-        <input type="hidden" id="superAdminCap" value="0">
+      
+            <form method="POST" id="zcampaignOptinForm" action="https://zcsub-cmpzourl.maillist-manage.com/weboptin.zc" target="_blank">
+                <div id="SIGNUP_BODY_ALL">
+                    <div id="SIGNUP_BODY">
+                        <div>
+                            <div id="errorMsgDiv" style="display:none;">&nbsp;&nbsp;Please correct the marked field(s) below.</div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <input style="width: 97%;" maxlength="100" placeholder="Contact Email" name="CONTACT_EMAIL" type="email" required>
+                                        <span>*</span>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="g-recaptcha" data-sitekey="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs" data-callback="onSubmit"></div>
+                                <br>
+                                <div>
+                                    <button class="btn btn-fixed btn-outline-primary g-recaptcha" data-sitekey="6LdNeDUUAAAAAG5l7cJfv1AA5OKLslkrOa_xXxLs" data-callback="onSubmit">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW">
+                    <input type="hidden" name="viewFrom" id="viewFrom" value="URL_ACTION">
+                    <input type="hidden" name="submitType" value="optinCustomView">
+                    <input type="hidden" name="lD" value="112123bce6a87486f">
+                    <input type="hidden" name="zx" id="cmpZuid" value="13218bf6c">
+                    <input type="hidden" name="zcvers" value="3.0">
+                    <input type="hidden" name="mode" value="OptinCreateView">
+                    <input type="hidden" name="zcld" value="112123bce6a87486f">
+                    <input type="hidden" name="zctd" value="112123bce6a8747a9">
+                    <input type="hidden" name="zc_formIx" value="3z791cc136c2b7c862f274c028d64a7a99807952474c7b166958eb0046cce6ccfe">
+                </div>
+            </form>
+            <div>
+                <input type="hidden" id="isCaptchaNeeded" value="true">
+                <input type="hidden" id="superAdminCap" value="0">
+            </div>      
+          </div>      
       </div>
     </div>
   </div>
