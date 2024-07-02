@@ -102,7 +102,7 @@ dict:
     all_posts: جميع المقالات
 
   learn:
-    title: تعلم
+    title: توثيق
     reference: المرجع
     welcome: >
       هنا يمكنك العثور على الوثائق التقنية لمشروع بكتوس.
@@ -135,7 +135,7 @@ dict:
       <b>تطبيق غير موثوق</b>
       <br><br>
       كن على علم بأن الثنائيات المجمعة مسبقًا لا يتم شحنها مع أي
-      <a href="https://pactus.org/user-guides/pactus-gui/#code-certificate-issue">شهادة توقيع الكود</a>.
+      <a href="https://docs.pactus.org/get-started/pactus-gui/#code-certificate-issue">شهادة توقيع الكود</a>.
       من المحتمل أن تكون الثنائيات المجمعة مسبقًا غير موثوقة على نظام ويندوز
       و ماك أو إس.
     gui_after_download: >

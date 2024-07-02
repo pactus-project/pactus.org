@@ -6,7 +6,7 @@ tags: announcement
 ---
 
 The much-awaited Mainnet Launch of The Pactus Blockchain is finally here!
-On January 24, 2024, at 20:24:00 UTC, the first block, known as the [Genesis block]({{ site.url }}/learn/blockchain/genesis/),
+On January 24, 2024, at 20:24:00 UTC, the first block, known as the [Genesis block](https://docs.pactus.org/protocol/blockchain/genesis/),
 will be minted by four Bootstrap validators.
 After that, every 10 seconds, a new block will be added to the blockchain.
 Each block contains the committed transactions in the network.
