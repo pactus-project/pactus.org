@@ -193,7 +193,9 @@ dict:
       and you can run the Pactus blockchain on your personal computer with basic hardware.
     validators: What are validators?
     validators_answer: >
-      [version: 1] Validators on Pactus are responsible for processing transactions and creating blocks and, by doing so,
+      [version: 2]
+      Pactus Validator is software that you can run on your personal computer or a remote server.
+      Validators on Pactus are responsible for processing transactions and creating blocks and, by doing so,
       helping to secure the network and keep it decentralized.
       They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
     validators_rewarded: How do validators get rewarded?
