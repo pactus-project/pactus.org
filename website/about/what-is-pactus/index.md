@@ -28,11 +28,4 @@ title: dict.what_is.title
     </div>
   </div>
 
-  <div class="row bg-body p-4">
-    <div class="col-md-12">
-      <h4>{% t dict.what_is.sec_4_title %}</h4>
-      {% t dict.what_is.sec_4_desc %}
-    </div>
-  </div>
-
 </div>

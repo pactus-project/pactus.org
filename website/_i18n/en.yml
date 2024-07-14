@@ -89,13 +89,8 @@ dict:
       Pactus aims to create a user-friendly blockchain that can be easily used by anyone, not just tech experts.
       Our protocol is designed to be simple, easy to maintain, and develop.
       Pactus offers a simple GUI application that makes it easy for users to run a node.
-    sec_3_title: Pactus uses a percentage-based fee model
+    sec_3_title: Dedicated Decentralized Storage in Pactus
     sec_3_desc: >
-      Transaction fees are calculated based on a percentage model with a minimum and maximum fee.
-      These parameters provide greater control over the fee structure and prevent overpaying or underpaying.
-      The percentage-based model ensures fairness and predictability, and can be adjusted through consensus among all validators.
-    sec_4_title: Dedicated Decentralized Storage in Pactus
-    sec_4_desc: >
       In Pactus, users can purchase a dedicated storage file that can be renewed annually,
       leading to reduced costs for storage and smart contract execution.
       This unique feature can pave the way for a new protocols in the decentralized platforms.
@@ -256,27 +251,6 @@ dict:
       [version: 1] Pactus does not have any pre-sales coins.
       The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation.
       By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
-    fee_model: How are transaction fees calculated in Pactus?
-    fee_model_answer: >
-      [version: 1] Transaction fees in Pactus are calculated using a percentage-based fee model.
-      This means that the fee is a percentage of the transferred amount, with a minimum and maximum fee.
-      The percentage, minimum fee, and maximum fee parameters are part of the blockchain parameters and
-      can be changed through a agreement upon all validators.
-    fee_min_max: What is the minimum and maximum fee?
-    fee_min_max_answer: >
-      [version: 1] These parameters are designed to provide greater control over the fee structure and
-      ensure that fees remain within a certain range.
-      If the calculated fee for a transaction falls below the minimum fee, the minimum fee is used instead.
-      Similarly, if the calculated fee exceeds the maximum fee, the maximum fee is used instead.
-      This helps prevent users from overpaying or underpaying for transactions and provides greater predictability and fairness
-      in the fee structure.
-    why_percentage_fee: Why was a percentage-based fee model chosen for Pactus?
-    why_percentage_fee_answer: >
-      [version: 1] The percentage-based fee model was chosen for Pactus because it provides a more equitable and
-      predictable fee structure for users,
-      as fees are proportional to the transferred amount.
-      It also allows for greater flexibility in adjusting the fee structure to better align with the needs of the blockchain and its users,
-      as the percentage, minimum fee, and maximum fee parameters can be changed through a consensus mechanism agreed upon by all validators.
     why_develop_pactus: Why was  Pactus developed?
     why_develop_pactus_answer: >
       [version: 2] Pactus was developed with the goal of scaling blockchain without compromising security and decentralization.
