@@ -29,8 +29,7 @@ for the Testnet-0 was set to five validators, and more than 19 validators joined
 The size of the blockchain is approximately 1 gigabyte.
 The maximum number of transactions recorded in a single block was 386**. With a block time of 10 seconds,
 we can confirm that Pactus blockchain can support up to 30 transactions per second (TPS),
-which is a reasonable number for TPS. Based on real-time statistics available at [realtps](https://realtps.net/),
-we can see that Pactus is among the top 10 blockchains in terms of TPS.
+which is a reasonable number for TPS.
 
 At this point, the development team decided to **end the Testnet-0** and move on to the next one,
 Testnet-1. We are planning to run the Testnet-1 to prepare for the MainNet launch.
