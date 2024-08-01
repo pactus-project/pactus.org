@@ -12,7 +12,7 @@
     "lint:md": "mdl --style=.mdlrc.rb ./website",
     "lint:yml:setup": "pip install --upgrade yamllint",
     "lint:yml": "yamllint ./website",
-    "exif": "for i in $(find ./website -name *.png -o -name *.gif -o -name *.jpg -o -name *.jpeg); do echo \"Processing $i\"; exiftool -all= \"$i\"; done"
+    "exif": "for i in $(find ./website -name '*.png' -o -name '*.gif' -o -name '*.jpg' -o -name '*.jpeg'); do echo \"Processing $i\"; exiftool -all= \"$i\"; done"
   },
   "optionalDependencies": {
     "prettier": "^3.2.5"
