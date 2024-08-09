@@ -7,7 +7,7 @@
   date: Q4 2025
 
 - status: upcoming
-  title: Decentralized Password Manger
+  title: Decentralized Password Manager
   date: Q4 2025
 
 - status: upcoming
@@ -31,12 +31,16 @@
   date: Q1 2025
 
 - status: ongoing
-  title: Gas-Less Transactions
+  title: Consumptional Fee Model
   date: Q4 2024
 
 - status: ongoing
-  title: One-To-Many Transactions
+  title: Nanomsg service
   date: Q3 2024
+
+# - status: ongoing
+#   title: Batch Transactions
+#   date: Q3 2024
 
 - status: completed
   title: Pruned Node
