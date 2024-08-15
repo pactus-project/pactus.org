@@ -38,6 +38,10 @@
   title: Nanomsg service
   date: Q3 2024
 
+- status: ongoing
+  title: Supporting Secp256k1 Curve
+  date: Q3 2024
+
 # - status: ongoing
 #   title: Batch Transactions
 #   date: Q3 2024
