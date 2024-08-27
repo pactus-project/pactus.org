@@ -49,10 +49,10 @@ title: dict.community.title
       {% t dict.community.telegram_chat %}
     </a>
   </li>
-  <li>
-    <a href="https://twitter.com/PactusNaija">
-      <img alt="Discord" src="{{ site.url }}/assets/images/social-twitter.svg" width="32">
-      {% t dict.community.nigeria %}
+   <li>
+    <a href="https://www.facebook.com/PactusChain">
+      <img alt="Facebook" src="{{ site.url }}/assets/images/social-facebook.svg" width="32">
+      {% t dict.community.facebook %}
     </a>
   </li>
   <li>
