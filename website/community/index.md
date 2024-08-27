@@ -56,12 +56,6 @@ title: dict.community.title
     </a>
   </li>
   <li>
-    <a href="https://www.facebook.com/PactusChain">
-      <img alt="Facebook" src="{{ site.url }}/assets/images/social-facebook.svg" width="32">
-      {% t dict.community.facebook %}
-    </a>
-  </li>
-  <li>
     <a href="https://t.me/nodesync_top">
       <img alt="Discord" src="{{ site.url }}/assets/images/social-telegram.svg" width="32">
       {% t dict.community.nodesync %}
