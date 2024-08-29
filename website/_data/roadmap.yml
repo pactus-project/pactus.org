@@ -39,7 +39,7 @@
   date: Q3 2024
 
 - status: ongoing
-  title: Supporting Secp256k1 Curve
+  title: Supporting Ed25519 Curve
   date: Q3 2024
 
 # - status: ongoing
