@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh">
+  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q08QEQK55Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-Q08QEQK55Q");
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Story of Testnet-2 | 帕图斯区块链</title>
+  <meta name="description" content="帕图斯是一个由社区运营的区块链技术。<br>采用了革命性且安全的Solid State Proof of Stake共识机制。<br>快来加入我们，共同构建去中心化的未来吧！" />
+
+  <meta property="og:title" content="Story of Testnet-2 | 帕图斯区块链" />
+  <meta property="og:description" content="帕图斯是一个由社区运营的区块链技术。<br>采用了革命性且安全的Solid State Proof of Stake共识机制。<br>快来加入我们，共同构建去中心化的未来吧！" />
+  <meta property="og:site_name" content="帕图斯区块链" />
+  <meta property="og:url" content="https://pactus.org/2024/01/22/testnet-2-concluded.html" />
+  <meta property="og:type" content="website" />
+
+  <link href="/assets/css/rouge.theme.vim.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.colorful.brands.css" rel="stylesheet" />
+  <link href="/assets/css/custom.css" rel="stylesheet" />
+
+  <script src="/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/anchor.min.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="/assets/js/color-modes.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+
+
+  <body>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+  A Fresh New Look is Coming Soon! Stay Tuned! 🌟
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<div class="shadow-sm rounded-bottom">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand logo px-4 pt-2" href="/zh/">
+        <img id="logo_image" src="https://pactus.org/assets/images/logos/pactus-logo-light.png" alt="Pactus blockchain" />
+        <div class="logo"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              关于
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/about/what-is-pactus/">
+                  什么是帕图斯？
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/about/roadmap/">
+                  路线图
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/about/faq/">常见问题解答</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="https://docs.pactus.org" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documentation
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/get-started/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Get Started
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/get-started/become-a-validator/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Become a validator
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/protocol/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Protocol
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/tutorials/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Tutorials
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/api/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  API Reference
+                </a>
+              </li>
+        </ul>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/zh/download/">下载</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/zh/blog/">博客</a>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              资源
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/community/">
+                  社区
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/zh/contributing/">
+                  贡献
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  白皮书 <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://pacviewer.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  区块浏览器 <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://github.com/pactus-project/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  GitHub <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link dropdown-item ps-2" href="https://pips.pactus.org" target="_blank">
+                  PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">中文</span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+      
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/2024/01/22/testnet-2-concluded.html">English</a>
+    </li>
+       
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/ar/2024/01/22/testnet-2-concluded.html">العربية</a>
+    </li>
+       
+  </ul>
+</li>
+ <li class="nav-item dropdown ps-2 ms-0">
+  <button
+    class="btn btn-link nav-link dropdown-toggle"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-label="Toggle theme (auto)">
+    <i id="bd-theme-icon" class="fa-regular fa-fw fa-circle-half-stroke"></i>
+    <span class="d-lg-none bd-theme-text m-0 p-0" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="light">
+        <i class="fa-regular fa-fw fa-sun"></i>
+        Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="dark">
+        <i class="fa-solid fa-fw fa-moon"></i>
+        Dark
+      </button>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+    <div class="container-fluid shadow-sm mt-3 mb-3 blog-post">
+      <div class="row bg-body rounded p-3">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 content">
+          <h1>Story of Testnet-2</h1>
+          <div class="post-date">22 January 2024</div>
+          <h2 id="what-is-testnet">What is Testnet?</h2>
+
+<p>Testnet is a testing environment where developers and users can try out the functionality of a blockchain project,
+without putting real assets or data at risk.
+It helps to ensure that the final product is reliable and secure for users to use.
+If you like to read more about the Testnet you can check out our post on
+“<a href="/zh/2023/03/01/what-is-testnet.html">What is Testnet?</a>”.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>In October 2023, we launched <a href="/zh/2023/10/15/testnet-2-launched.html">Testnet-2</a>.
+The main purpose of this Testnet was to closely monitor the new consensus mechanism and the stability of the P2P network.</p>
+
+<p>The <a href="https://docs.pactus.org/protocol/consensus/committee/">committee</a> for Testnet-2 was set to 51 validators,
+and 2084 validators <a href="/zh/2023/07/05/testnet-500-validators.html">joined</a> during the Testnet period.
+More than 1500 computers and servers joined the network, and we experienced a high volume of data transmission in the network.
+More than 800,000 blocks were created, and about 2 million transactions were processed during this time.
+The size of the blockchain is about 450 megabytes.</p>
+
+<p>About 500,000 coins were staked during this period, almost 60% of the total generated coins.
+It shows that users, even in Testnet, tend to stake their coins.</p>
+
+<h2 id="stability-of-consensus">Stability of Consensus</h2>
+
+<p>In Testnet-1, we had one consensus failure that caused us to
+<a href="/zh/2023/08/01/testnet-1-concluded.html">conclude the Testnet-1</a>.
+During Testnet-2, there were no issues with the consensus mechanism, and
+we had no case of failure during the testing period,
+although the number of validators and nodes significantly increased on Testnet-2 compared to its predecessor.
+It proved that the consensus mechanism is in a stable situation.</p>
+
+<h2 id="networking-issues">Networking issues</h2>
+
+<p>In Testnet-2, the blockchain stopped twice, and each time it took more than 24 hours to fix the problem.
+In the second blockage, we had no choice but to ask active validators inside the committee to
+update their nodes to overcome the networking issue.
+The development team faced a difficult situation and had to make the proper decision to fix the networking issues.
+On one hand, the networking traffic increased significantly, and on the other hand, we had to
+make sure normal users with limited internet bandwidth could still participate in the consensus mechanism without any problems.
+After examining different scenarios, the networking issues were resolved, and
+no major problems were reported till the end of Testnet.</p>
+
+<h2 id="major-updates">Major updates</h2>
+
+<p>During Testnet-2, we introduced several updates, including versions
+<a href="https://pactus.org/2023/10/15/release-0-15-0.html">0.15.0</a>,
+<a href="https://pactus.org/2023/10/29/release-0-16-0.html">0.16.0</a>,
+<a href="https://pactus.org/2023/11/12/release-0-17-0.html">0.17.0</a>,
+<a href="https://pactus.org/2023/12/12/release-0-18-0.html">0.18.0</a>,
+<a href="https://pactus.org/2024/01/04/release-0-19-0.html">0.19.0</a>, and
+<a href="https://pactus.org/2024/01/11/release-0-20-0.html">0.20.0</a>.
+The update process went smoothly, and with the stability of Version 0.20.0 confirmed,
+the development team shifted its focus to the Mainnet launch.</p>
+
+<h2 id="special-thanks-to-the-community">Special thanks to the community</h2>
+
+<p>This Testnet was important for us.
+It helped us learn what we need to do to make Pactus work even better.
+Without the community that supports us and dedicates their time and resources to testing and feedback,
+we wouldn’t have been able to progress as we have.</p>
+
+<p>We thank all of them for their valuable contributions.
+As promised, <strong>participants in Testnets will be given priority as validators for the MainNet</strong>, and
+will receive bounty PAC coins to set up their validators.</p>
+
+<p>We are grateful to all those who participated in Testnets, and we encourage them to join the Mainnet.
+As a community-based project, we rely on the support of our community members, and we value any help we receive.</p>
+
+          <div class="row p-3">
+            <div class="col text-end">
+              <a href="/zh/blog/">« 返回列表</a>
+            </div>
+          </div>
+          <div class="row edit-bar">
+  <div class="col">
+    <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/_posts/2024-01-22-testnet-2-concluded.md">
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
+      编辑本页
+    </a>
+     
+  </div>
+</div>
+
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+    <div class="shadow-sm rounded-top footer anchor">
+  <footer class="container-fluid py-4 pb-0 mb-0">
+    <div class="container pb-0 mb-0">
+      <div class="row around-xs footer-wrapper">
+        <div class="col-md-3 col-xs-6">
+          <div class="section">帕图斯</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/zh/about/what-is-pactus/">什么是帕图斯？</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/about/roadmap/">路线图</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/download/">下载</a>
+            </li>
+            <li>
+              <a class="anchor" href="https://docs.pactus.org">Documentation</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/blog/">博客</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/about/faq/">常见问题解答</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">资源</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/zh/community/">社区</a>
+            </li>
+            <li>
+              <a class="anchor" href="/zh/contributing/">贡献</a>
+            </li>
+            <li>
+              <a class="anchor"
+                href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf"
+                target="_blank">
+                白皮书 <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://pacviewer.com/" target="_blank" rel="noopener noreferrer">
+                区块浏览器 <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/" target="_blank" rel="noopener noreferrer">
+                GitHub <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a class="anchor" href="https://pips.pactus.org" target="_blank">PIPs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">社区</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="https://discord.gg/H5vZkNnXCu">
+                <i class="fa-brands fa-fw fa-discord"></i>
+                帕图斯在 Discord 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://x.com/pactuschain/">
+                <i class="fa-brands fa-fw fa-twitter"></i>
+                帕图斯在 Twitter 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://t.me/pactusblockchain">
+                <i class="fa-brands fa-fw fa-telegram"></i>
+                帕图斯在 Telegram 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://linkedin.com/company/pactus-blockchain">
+                <i class="fa-brands fa-fw fa-linkedin"></i>
+                帕图斯在 LinkedIn 上
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://bitcointalk.org/index.php?topic=5480867.0">
+                <i class="fa-brands fa-fw fa-bitcoin"></i>
+                帕图斯在Bitcoin Talk上
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="https://pactus.org/assets/images/logos/text-logo.png" />
+            </li>
+            <li>
+              <a class="anchor" href="mailto:info@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                info@pactus.org
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row around-xs pt-4 pb-0 m-0">
+        <div class="col d-flex justify-content-center">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item">
+              <a href="https://pactus.org/term-of-use/" class="px-2 legal">
+                <i class="fa-solid fa-gavel"></i>
+                Term of Use
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://pactus.org/sitemap.xml" class="px-2 legal">
+                <i class="fa-solid fa-sitemap"></i>
+                Sitemap
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://pactus.org/feed.xml" class="px-2 legal">
+                <i class="fa-solid fa-rss"></i>
+                RSS Feed
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ar">
+  
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q08QEQK55Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-Q08QEQK55Q");
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dev meeting | بلوكشين بكتوس</title>
+  <meta name="description" content="Building decentralized future together!" />
+
+  <meta property="og:title" content="Dev meeting | بلوكشين بكتوس" />
+  <meta property="og:description" content="Building decentralized future together!" />
+  <meta property="og:site_name" content="بلوكشين بكتوس" />
+  <meta property="og:url" content="https://pactus.org/2022/09/18/dev-meeting.html" />
+  <meta property="og:type" content="website" />
+
+  <link href="/assets/css/rouge.theme.vim.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/assets/css/fontawesome.colorful.brands.css" rel="stylesheet" />
+  <link href="/assets/css/custom.css" rel="stylesheet" />
+
+  <script src="/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/anchor.min.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="/assets/js/color-modes.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+
+
+  <body>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+  A Fresh New Look is Coming Soon! Stay Tuned! 🌟
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<div class="shadow-sm rounded-bottom">
+  <nav class="navbar rounded-bottom navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand logo px-4 pt-2" href="/ar/">
+        <img id="logo_image" src="https://pactus.org/assets/images/logos/pactus-logo-light.png" alt="Pactus blockchain" />
+        <div class="logo"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="topnav navbar-nav" style="margin-left: auto !important">
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              حول
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/about/what-is-pactus/">
+                  ما هو بكتوس؟
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/about/roadmap/">
+                  خارطة الطريق
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/about/faq/">الأسئلة المتكررة</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="https://docs.pactus.org" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documentation
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/get-started/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Get Started
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/get-started/become-a-validator/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Become a validator
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/protocol/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Protocol
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/tutorials/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Tutorials
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://docs.pactus.org/api/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  API Reference
+                </a>
+              </li>
+        </ul>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/ar/download/">تنزيل</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link" href="/ar/blog/">مدونة</a>
+          </li>
+          <li class="nav-item dropdown ps-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              الموارد
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/community/">
+                  المجتمع
+                </a>
+              </li>
+              <li>
+                <a class="nav-link dropdown-item ps-2" href="/ar/contributing/">
+                  المساهمة
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://pacviewer.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-item ps-2"
+                  href="https://github.com/pactus-project/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a class="nav-link dropdown-item ps-2" href="https://pips.pactus.org" target="_blank">
+                  PIPs <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ps-2">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-fw fa-earth-americas"></i>
+    <span class="m-0 p-0">العربية</span>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+      
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/2022/09/18/dev-meeting.html">English</a>
+    </li>
+         
+    <li>
+      <a class="nav-link dropdown-item ps-3" href="/zh/2022/09/18/dev-meeting.html">中文</a>
+    </li>
+     
+  </ul>
+</li>
+ <li class="nav-item dropdown ps-2 ms-0">
+  <button
+    class="btn btn-link nav-link dropdown-toggle"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-label="Toggle theme (auto)">
+    <i id="bd-theme-icon" class="fa-regular fa-fw fa-circle-half-stroke"></i>
+    <span class="d-lg-none bd-theme-text m-0 p-0" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow-sm pe-0 fixed-menu">
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="light">
+        <i class="fa-regular fa-fw fa-sun"></i>
+        Light
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item ps-2" data-bs-theme-value="dark">
+        <i class="fa-solid fa-fw fa-moon"></i>
+        Dark
+      </button>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+    <div class="container-fluid shadow-sm mt-3 mb-3 blog-post">
+      <div class="row bg-body rounded p-3">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 content">
+          <h1>Dev meeting</h1>
+          <div class="post-date">18 September 2022</div>
+          <h2 id="meeting-summary">Meeting Summary</h2>
+
+<p>The meeting took place on 18 September 2022, at 2:00 PM UTC via Google Meet,
+with team members from different time zones joining to discuss key aspects of the Pactus project.</p>
+
+<h3 id="discussion-about-testnet">Discussion about Testnet</h3>
+
+<p>The team discussed Testnet and related issues, including IP block issues that were found by Hadi.
+Due to sanctions, some IPs are blocked, so the team will run a support node to assist users inside Iran.
+The GUI application had some issues on Windows, but they were fixed and tested by Hadi.</p>
+
+<h3 id="discussion-about-website">Discussion about Website</h3>
+
+<p>The website still has some issues, such as the need to rename the animation to “Pactus” and the lack of a logo.
+The community suggested some logos. Additionally, the roadmap page is missing.</p>
+
+<h3 id="status-of-social-medias">Status of social medias</h3>
+
+<p>The team discussed the status of social media platforms, including:</p>
+
+<ul>
+  <li>Discord: 70 members</li>
+  <li>Instagram: 87 followers</li>
+  <li>Telegram: 20 followers</li>
+  <li>Linkedin: 20 followers</li>
+  <li>Twitter: Not yet</li>
+</ul>
+
+<p>The team also decided to announce the project on social media on 29 September.</p>
+
+<h3 id="consensus-parameters">Consensus parameters</h3>
+
+<p>The team discussed the current consensus parameters:</p>
+
+<ul>
+  <li>Total supply: 21 million coins</li>
+  <li>Reward: 1 coin per block</li>
+  <li>Block time: 10 second</li>
+  <li>Committee size: 21 members</li>
+  <li>Bond interval: one hour</li>
+  <li>Unbond interval: 21 days</li>
+  <li>Fee fraction: 0.0001</li>
+  <li>Min fee: 0.0000001</li>
+  <li>Max fee: 0.01</li>
+  <li>Maximum stake: 12381</li>
+</ul>
+
+          <div class="row p-3">
+            <div class="col text-end">
+              <a href="/ar/blog/">« Back to the blog list</a>
+            </div>
+          </div>
+          <div class="row edit-bar">
+  <div class="col">
+    <a class="p-2 edit-btn" href="https://github.com/pactus-project/pactus.org/edit/main/website/_posts/2022-09-18-dev-meeting.md">
+      <i class="fa fa-pen-to-square" aria-hidden="true"></i>
+      عدل هذه الصفحة
+    </a>
+     
+  </div>
+</div>
+
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+    <div class="shadow-sm rounded-top footer anchor">
+  <footer class="container-fluid py-4 pb-0 mb-0">
+    <div class="container pb-0 mb-0">
+      <div class="row around-xs footer-wrapper">
+        <div class="col-md-3 col-xs-6">
+          <div class="section">مشروع بكتوس</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/ar/about/what-is-pactus/">ما هو بكتوس؟</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/about/roadmap/">خارطة الطريق</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/download/">تنزيل</a>
+            </li>
+            <li>
+              <a class="anchor" href="https://docs.pactus.org">Documentation</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/blog/">مدونة</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/about/faq/">الأسئلة المتكررة</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">الموارد</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="/ar/community/">المجتمع</a>
+            </li>
+            <li>
+              <a class="anchor" href="/ar/contributing/">المساهمة</a>
+            </li>
+            <li>
+              <a class="anchor"
+                href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf"
+                target="_blank">
+                Whitepaper <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://pacviewer.com/" target="_blank" rel="noopener noreferrer">
+                Block explorer <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://github.com/pactus-project/" target="_blank" rel="noopener noreferrer">
+                Source code <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a class="anchor" href="https://pips.pactus.org" target="_blank">PIPs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div class="section">المجتمع</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="anchor" href="https://discord.gg/H5vZkNnXCu">
+                <i class="fa-brands fa-fw fa-discord"></i>
+                بكتوس على ديسكورد
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://x.com/pactuschain/">
+                <i class="fa-brands fa-fw fa-twitter"></i>
+                بكتوس على تويتر
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://t.me/pactusblockchain">
+                <i class="fa-brands fa-fw fa-telegram"></i>
+                بكتوس على تيليجرام
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://linkedin.com/company/pactus-blockchain">
+                <i class="fa-brands fa-fw fa-linkedin"></i>
+                بكتوس على لينكدإن
+              </a>
+            </li>
+            <li>
+              <a class="anchor" href="https://bitcointalk.org/index.php?topic=5480867.0">
+                <i class="fa-brands fa-fw fa-bitcoin"></i>
+                Pactus on Bitcoin Talk
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <ul class="list-unstyled">
+            <li>
+              <img alt="Pactus" src="https://pactus.org/assets/images/logos/text-logo.png" />
+            </li>
+            <li>
+              <a class="anchor" href="mailto:info@pactus.org">
+                <i class="fa-solid fa-envelope"></i>
+                info@pactus.org
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row around-xs pt-4 pb-0 m-0">
+        <div class="col d-flex justify-content-center">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item">
+              <a href="https://pactus.org/term-of-use/" class="px-2 legal">
+                <i class="fa-solid fa-gavel"></i>
+                Term of Use
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://pactus.org/sitemap.xml" class="px-2 legal">
+                <i class="fa-solid fa-sitemap"></i>
+                Sitemap
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://pactus.org/feed.xml" class="px-2 legal">
+                <i class="fa-solid fa-rss"></i>
+                RSS Feed
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </body>
+</html>
